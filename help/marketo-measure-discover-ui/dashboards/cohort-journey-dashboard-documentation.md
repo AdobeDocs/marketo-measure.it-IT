@@ -3,18 +3,32 @@ unique-page-id: 42762648
 description: Documentazione del dashboard del Percorso di coorte - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Documentazione del dashboard del Percorso di coorte
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+source-git-commit: 28f1400e8e13c091e8ea2a3bef115a0db810c2e0
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Documentazione del dashboard del Percorso di coorte {#cohort-journey-dashboard-documentation}
 
-Il dashboard Percorso coorte consente agli addetti al marketing di visualizzare la progressione da una fase di coorte iniziale per un intervallo di tempo selezionato e di misurare il tasso di conversione.
+Le dashboard Impatto coorte e Funnel consentono agli addetti al marketing di visualizzare la progressione da una fase di coorte iniziale per un intervallo di tempo selezionato e di misurare il tasso di conversione.
 
-Questo dashboard ha due riquadri:
+La differenza principale è il modo in cui conteggiamo ogni entità dalla fase coorte.
+
+* Funnel coorte: Il risultato di ciascuna fase è direttamente derivato dalla fase precedente.
+
+   * Vengono conteggiati solo i record che attraversano ogni fase dell’imbuto dopo l’ora di inizio della coorte impostata.
+
+![](assets/cohort-journey-dashboard-documentation-1.png)
+
+* Impatto sulla coorte: Il risultato di ogni fase è derivato dalla fase coorte, non dalla fase precedente.
+
+   * Tutti i record in ogni fase vengono conteggiati purché siano accaduti dopo l’ora di inizio della coorte impostata. Questo dashboard avrà naturalmente più record del dashboard Funnel, dato che stiamo osservando come le entità sono state influenzate dal passaggio della coorte, non solo il movimento attraverso il funnel.
+
+![](assets/cohort-journey-dashboard-documentation-2.png)
+
+Ogni dashboard ha due riquadri:
 
 * Entrate coorte: L&#39;importo totale delle opportunità da tutte le opportunità nella fase Offerte del Percorso Cohort.
 * Percorso per coorte: La progressione a ogni fase del percorso dalla fase iniziale della coorte per un intervallo di tempo selezionato.
@@ -23,7 +37,7 @@ Questo dashboard ha due riquadri:
 >
 >In tutte le dashboard di Discover, è possibile segnalare un solo oggetto persona, Lead o Contatto. È impostato in [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
 
-Questo dashboard supporta i seguenti filtri:
+Le dashboard supportano i seguenti filtri:
 
 * Fase coorte: seleziona la fase di coorte iniziale. I record in tutte le fasi successive vengono evoluti dai record nella fase coorte.
 * Intervallo date coorte: seleziona l’intervallo di tempo per lo stadio coorte selezionato. Insieme a Cohort Stage, definisce il set di dati iniziale.
@@ -39,8 +53,6 @@ In tutti i filtri viene utilizzata la logica &quot;AND&quot; (E).
 >[!NOTE]
 >
 >I filtri dei segmenti si applicano solo allo stadio LC e dopo. Se Cohort Stage è sconosciuto o noto e uno dei filtri del segmento ha un valore, il dashboard non restituirà alcun risultato.
-
-![](assets/one-2.png)
 
 Le fasi includono Sconosciuto, Noto, LC, le fasi funnel selezionate in Stadi lead/contatti aperti (Impostazioni > CRM > Mappatura stage), OC, le fasi funnel selezionate in Fasi opportunità aperte (Impostazioni > CRM > Mappatura stage) e Offerte (Opportunità di esecuzione chiuse).
 
