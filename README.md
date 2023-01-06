@@ -1,7 +1,7 @@
 ---
-source-git-commit: ea1e867b7169bac473d8e9754cbb97a0fdcb57fd
+source-git-commit: a5648e73c470f61720741a5dd828e00fa532c4d5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '424'
 ht-degree: 6%
 
 ---
@@ -16,13 +16,13 @@ Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of
 
 ## Informazioni sui contributi al contenuto di Adobe
 
-Consulta la sezione [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consulta la sezione [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Il tuo contributo dipende da chi sei e dal tipo di modifiche che desideri apportare:
 
 ### Modifiche minori
 
-Se stai contribuendo piccoli aggiornamenti per la bontà del tuo cuore, visita l&#39;articolo e fai clic sul **Modifica** nell’articolo che accede all’origine GitHub per l’articolo. Quindi, utilizza l’interfaccia utente GitHub per apportare i tuoi aggiornamenti. Vedi il generale [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) per ulteriori informazioni.
+Se stai contribuendo piccoli aggiornamenti per la bontà del tuo cuore, visita l&#39;articolo e fai clic sul **Modifica** nell’articolo che accede all’origine GitHub per l’articolo. Quindi, utilizza l’interfaccia utente GitHub per apportare i tuoi aggiornamenti. Vedi il generale [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) per ulteriori informazioni.
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo repository sono coperti dai termini di utilizzo Adobi.
 
@@ -44,7 +44,7 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 
 I collaboratori della community possono utilizzare l’interfaccia utente GitHub per effettuare modifiche di base o creare un fork dell’archivio per apportare contributi importanti.
 
-Consulta la sezione [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) per i dettagli.
+Consulta la sezione [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) per i dettagli.
 
 ## Come utilizzare markdown per formattare l’argomento
 
