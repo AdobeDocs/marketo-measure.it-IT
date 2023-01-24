@@ -3,9 +3,9 @@ unique-page-id: 18874763
 description: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM - Misura Marketo - Documentazione del prodotto"
 title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 9de82556ca543aa8e6c53242eacae5c87019886c
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -138,11 +138,11 @@ Quando aggiungi un utente al rispettivo gruppo, viene visualizzata la relativa [
 
 >[!NOTE]
 >
->Per essere un [!DNL Marketo Measure] amministratore (in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}), un utente deve essere aggiunto come utente _e_ un amministratore per qualsiasi [!DNL Marketo Measure] profilo di prodotto [!DNL Marketo Measure] scheda prodotto.
+>Per essere un [!DNL Marketo Measure] amministratore (in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}), un utente deve essere aggiunto come utente _e_ un amministratore per qualsiasi [!DNL Marketo Measure] profilo di prodotto [!DNL Marketo Measure] scheda prodotto.
 
 **Accesso a[!DNL Marketo Measure]**
 
-Dopo essere stato aggiunto a un profilo di prodotto, un utente può accedere ai [!DNL Marketo Measure] le istanze scegliendo la **Accesso con Adobe ID** opzione in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}.
+Dopo essere stato aggiunto a un profilo di prodotto, un utente può accedere ai [!DNL Marketo Measure] le istanze scegliendo la **Accesso con Adobe ID** opzione in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 ![](assets/microsoft-dynamics-crm-installation-guide-15.png)
 
@@ -217,3 +217,7 @@ Per [!DNL Marketo Measure] per tenere traccia delle attività web, sono disponib
    >Per impostazione predefinita, [!DNL Marketo Measure] esporta 200 record per credito API ogni volta che un lavoro invia dati al tuo CRM. Per la maggior parte dei clienti, questo offre un equilibrio ottimale tra i crediti API utilizzati da [!DNL Marketo Measure] e i requisiti delle risorse della CPU nel sistema di gestione delle relazioni con i clienti. Tuttavia, per i clienti con configurazioni CRM complesse, come flussi di lavoro e trigger, una dimensione batch più piccola potrebbe essere utile per migliorare le prestazioni CRM. A tal fine, [!DNL Marketo Measure] consente ai clienti di configurare la dimensione batch di esportazione CRM. Questa impostazione è disponibile nella pagina Impostazioni > CRM > Generale della [!DNL Marketo Measure] le applicazioni web e i clienti possono scegliere tra le dimensioni batch di 200 (impostazione predefinita), 100, 50 o 25.
    >
    >Quando modifichi questa impostazione, tieni presente che dimensioni batch più piccole utilizzeranno più crediti API dal tuo CRM. È consigliabile ridurre la dimensione del batch solo se si verifica un timeout della CPU o un elevato carico della CPU nel CRM.
+
+   >[!NOTE]
+   >
+   >Quando disattivi l’esportazione di dati in Dynamics da Marketo Measure, non vengono rimossi dati esistenti. Per informazioni sulla rimozione dei dati esistenti, contatta il supporto per Dynamics.
