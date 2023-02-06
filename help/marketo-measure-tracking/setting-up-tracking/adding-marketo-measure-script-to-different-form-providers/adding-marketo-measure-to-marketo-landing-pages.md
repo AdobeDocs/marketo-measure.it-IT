@@ -5,7 +5,7 @@ title: Aggiunta [!DNL Marketo Measure] alle pagine di destinazione Marketo
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ Esempio nella schermata sottostante
 
 * È probabile che siano in uso più modelli di pagina di destinazione, assicurarsi di aggiungere il codice a tutti i modelli che contengono moduli.
 
-* A volte, quando modifichi il modello per le pagine di destinazione, devi riapprovare le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target=&quot;_blank&quot;}.
+* A volte, quando modifichi il modello per le pagine di destinazione, devi riapprovare le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.

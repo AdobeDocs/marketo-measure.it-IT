@@ -5,7 +5,7 @@ title: "[!DNL Marketo Measure] Manutenzione"
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Aggiornare la memoria su come caricare le informazioni sui costi leggendo [artic
 
 **Aggiorna elenco di domini da monitorare (1x/mese)**
 
-Marketo Measure tiene traccia di tutte le pagine e i sottodomini in cui è attivo il nostro JavaScript, ma solo dei domini di cui siamo a conoscenza. Se hai recentemente debuttato un nuovo dominio, esteso a livello internazionale o modificato il dominio primario, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;} per assicurarci che l&#39;account venga aggiornato di conseguenza.
+Marketo Measure tiene traccia di tutte le pagine e i sottodomini in cui è attivo il nostro JavaScript, ma solo dei domini di cui siamo a conoscenza. Se hai recentemente debuttato un nuovo dominio, esteso a livello internazionale o modificato il dominio primario, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per essere certi di aggiornare il tuo account di conseguenza.
 
 **Esamina la mappatura dei canali personalizzati per la precisione (1x/mese)**
 
-Durante l’onboarding, configuri la mappatura dei canali personalizzati per le tue attività di marketing online e offline. Man mano che la tua strategia di marketing e l’utilizzo di Marketo Measure evolvono, vuoi tenere d’occhio tale logica di mappatura per garantire che tutti i tuoi punti di contatto siano organizzati in modo appropriato.
+Durante l’onboarding, configuri la mappatura dei canali personalizzati per le tue attività di marketing online e offline. Con l’evolversi della tua strategia di marketing e dell’utilizzo di Marketo Measure, dovrai tenere sotto controllo tale logica di mappatura per garantire che tutti i tuoi punti di contatto siano categorizzati in modo appropriato.
 
 Ricorda, [!DNL Marketo Measure] rielabora i dati quando modifichi la logica di mappatura, pertanto non potrai modificare queste regole più di una volta ogni 7 giorni.
 

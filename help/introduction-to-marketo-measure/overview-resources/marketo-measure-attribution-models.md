@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874568
-description: Modelli di attribuzione delle misure Marketo - Misura Marketo - Documentazione del prodotto
-title: Modelli di attribuzione delle misure Marketo
+description: Modelli di attribuzione Marketo Measure - Marketo Measure - Documentazione del prodotto
+title: Modelli di attribuzione Marketo Measure
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 source-git-commit: 0aa263053aa8dd804b03a67ab446dc0cda3850c5
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Modelli di attribuzione delle misure Marketo {#marketo-measure-attribution-models}
+# Modelli di attribuzione Marketo Measure {#marketo-measure-attribution-models}
 
 Marketo Measure offre sei tipi di modelli di attribuzione:
 
@@ -69,7 +69,7 @@ La prima visita di Kate a www.adobe.com tramite un annuncio Adwords riceverebbe 
 
 Tre dei punti di contatto cardine sono inclusi nel modello a forma di W. In questo modello, ai punti di contatto FT, LC e OC viene attribuito il 30% del credito di attribuzione. Il restante 10% è attribuito in modo proporzionale a qualsiasi punto di contatto intermedio che si verifica tra i tre punti di contatto cardine.
 
-Kate e Austin citano Marketo Measure al loro collega, Hillary. Trova un contenuto tramite una ricerca su Google e compila un modulo. In seguito, Austin riceve un&#39;e-mail per una registrazione del webinar e compila il modulo di registrazione sul sito web. Kate ha una conversazione con un rappresentante commerciale sul prodotto Marketo Measure.
+Kate e Austin parlano di Marketo Measure al loro collega, Hillary. Trova un contenuto tramite una ricerca su Google e compila un modulo. In seguito, Austin riceve un&#39;e-mail per una registrazione del webinar e compila il modulo di registrazione sul sito web. Kate ha una conversazione con un rappresentante delle vendite sul prodotto Marketo Measure.
 
 Hillary riceve un&#39;e-mail con un collegamento alla pagina dei prezzi e visita la pagina. Quindi viene creata un&#39;opportunità per il loro account. La visita web di Hillary alla pagina dei prezzi riceve credito per la creazione delle opportunità, perché è stata l&#39;interazione di marketing più vicina alla data di creazione delle opportunità. A ciascun punto di contatto cardine viene assegnato il 30% del credito di attribuzione, mentre ai punti di contatto intermedi viene attribuito il restante 10%.
 
@@ -79,7 +79,7 @@ Hillary riceve un&#39;e-mail con un collegamento alla pagina dei prezzi e visita
 
 Il modello di percorso completo include tutti e quattro i punti di contatto cardine. FT, LC, OC e CW ricevono ciascuno il 22,5% del credito sul ricavo e il restante 10% è distribuito equamente tra i contatti intermedi.
 
-Dopo la creazione di opportunità, Kate, Austin e Hillary decidono di piazzare Marketo Measure alla loro CMO, Elizabeth. Elizabeth partecipa a una conferenza in cui Marketo Measure ospita un evento. Kate vede un post di Linkedin su un caso di studio e compila un modulo per scaricare il contenuto. Elizabeth partecipa a una cena di vendita ospitata da Marketo Measure. Dopo la cena decide di acquistare Marketo Measure e diventa cliente. In questo scenario, alla cena di vendita verrebbe attribuito il 22,5% del credito di ricavo dall&#39;operazione chiusa. Anche i punti di contatto FT, LC e OC ricevono il 22,5% del credito. Ai punti di contatto intermedi viene assegnato anche il restante 10% del credito sul reddito.
+Dopo la creazione di opportunità, Kate, Austin e Hillary decidono di piazzare Marketo Measure al loro CMO, Elizabeth. Elizabeth partecipa a una conferenza in cui Marketo Measure ospita un evento. Kate vede un post di Linkedin su un caso di studio e compila un modulo per scaricare il contenuto. Elizabeth partecipa a una cena di vendita ospitata da Marketo Measure. Dopo la cena decide di acquistare Marketo Measure e diventa cliente. In questo scenario, alla cena di vendita verrebbe attribuito il 22,5% del credito di ricavo dall&#39;operazione chiusa. Anche i punti di contatto FT, LC e OC ricevono il 22,5% del credito. Ai punti di contatto intermedi viene assegnato anche il restante 10% del credito sul reddito.
 
 ![](assets/6.png)
 

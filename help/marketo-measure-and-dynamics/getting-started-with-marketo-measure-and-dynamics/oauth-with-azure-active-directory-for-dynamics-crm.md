@@ -112,7 +112,7 @@ Una volta effettuata la registrazione dell&#39;applicazione, è possibile creare
 
 a) L&#39;ID client è l&#39;ID del passaggio 7 nella sezione precedente. Se non l&#39;hai annotata, l&#39;ID applicazione viene visualizzato nelle Impostazioni della registrazione dell&#39;app.
 
-b) Segreto client è il segreto dell’applicazione creato nel portale di Azure per l’applicazione in Certificati e segreti.
+b) Segreto client è il segreto applicazione creato nel portale di Azure per la tua applicazione in Certificati e segreti.
 
 ![](assets/creating-2e.png)
 

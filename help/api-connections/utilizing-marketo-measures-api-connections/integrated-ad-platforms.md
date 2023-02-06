@@ -5,7 +5,7 @@ title: Piattaforme integrate di annunci
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1696'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Il modello di tracciamento è uno strumento fornito da Google per aggiungere i c
 [!DNL Marketo Measure] Cerca modelli di tracciamento nel tuo [!DNL AdWords] account:
 
 * *Opzione A*: Modello di tracciamento trovato. [!DNL Marketo Measure] aggiunge i relativi parametri al modello.
-* *Opzione B*: Reindirizzamento di terze parti trovato. Se nel modello di tracciamento si trova un reindirizzamento di terze parti, [!DNL Marketo Measure] non può intraprendere alcuna azione. Sarà necessario aggiungere manualmente il [!DNL Marketo Measure] al sistema di terze parti. Un esempio di reindirizzamento di terze parti sarebbe uno strumento di gestione delle offerte come Kenshoo o Marin. Ulteriori informazioni su come [gli strumenti di gestione delle offerte [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target=&quot;_blank&quot;}.
+* *Opzione B*: Reindirizzamento di terze parti trovato. Se nel modello di tracciamento si trova un reindirizzamento di terze parti, [!DNL Marketo Measure] non può intraprendere alcuna azione. Sarà necessario aggiungere manualmente il [!DNL Marketo Measure] al sistema di terze parti. Un esempio di reindirizzamento di terze parti sarebbe uno strumento di gestione delle offerte come Kenshoo o Marin. Ulteriori informazioni su come [gli strumenti di gestione delle offerte [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 * *Opzione C*: Nessun modello di tracciamento trovato. [!DNL Marketo Measure] eseguirà la scansione di tutti gli URL di destinazione dell&#39;annuncio per [!DNL Marketo Measure] Parametri. In base alla scansione, se:
    * Parametri trovati: configurazione completata.
    * Parametri non trovati: [!DNL Marketo Measure] aggiungerà i suoi parametri alla fine degli URL di destinazione dell’annuncio. [!DNL Marketo Measure] aggiunge nuovi annunci entro due ore dalla loro creazione. Tieni presente che i parametri non verranno aggiunti a un modello.
 
-Ulteriori informazioni sulle nostre [[!DNL AdWords] funzionalità di assegnazione tag automatica](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target=&quot;_blank&quot;}.
+Ulteriori informazioni sulle nostre [[!DNL AdWords] funzionalità di assegnazione tag automatica](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}.
 
 ## Come abilitare [!DNL Marketo Measure] Assegnazione automatica tag per Adwords {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
@@ -51,7 +51,7 @@ Prima di attivare [!DNL Marketo Measure] assegnazione di tag automatici, **assic
 
 Una volta installato un modello di tracciamento, segui le istruzioni riportate di seguito per abilitare [!DNL Marketo Measure] Assegnazione tag automatica. Nota: [!DNL Marketo Measure] taggerà automaticamente anche tutti gli annunci in pausa nel tuo account.
 
-1. Accedi al tuo [!DNL Marketo Measure] conto a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}.
+1. Accedi al tuo [!DNL Marketo Measure] conto a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 1. Vai a [!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections].
 
@@ -67,7 +67,7 @@ Una volta installato un modello di tracciamento, segui le istruzioni riportate d
 
 ## Come impostare un modello di tracciamento in AdWords con [!DNL Marketo Measure] Parametri {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
-È necessario aggiungere modelli di tracciamento nella sezione [!UICONTROL Account], [!UICONTROL Campaign] o a livello di gruppo di annunci in AdWords. Se aggiungi modelli di tracciamento a livello di Parola chiave, Sitelink o Annuncio, il tuo annuncio dovrà passare attraverso il processo di revisione e approvazione e rischiare di riavviare la cronologia delle prestazioni degli annunci. Ulteriori informazioni [creazione di modelli di tracciamento](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target=&quot;_blank&quot;}.
+È necessario aggiungere modelli di tracciamento nella sezione [!UICONTROL Account], [!UICONTROL Campaign] o a livello di gruppo di annunci in AdWords. Se aggiungi modelli di tracciamento a livello di Parola chiave, Sitelink o Annuncio, il tuo annuncio dovrà passare attraverso il processo di revisione e approvazione e rischiare di riavviare la cronologia delle prestazioni degli annunci. Ulteriori informazioni [creazione di modelli di tracciamento](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"}.
 
 1. Accedi al tuo [!DNL Google AdWords] Conto.
 1. Vai al tuo [!UICONTROL Campaigns] vista dalla barra di navigazione a sinistra
@@ -96,21 +96,21 @@ I tag UTM possono sembrare difficili da creare inizialmente, ma sono disponibili
 
 **[!DNL Google URL]Builder**
 
-Google URL Builder è uno strumento standard per la creazione di URL formattati correttamente con tag UTM. Inserisci semplicemente l’URL e il valore desiderato di ciascun parametro e fai clic su &quot;[!UICONTROL Generate URL]&quot;. Si tratta di uno strumento ideale da utilizzare se devi assegnare un solo numero limitato di URL. Accedere allo strumento [qui](https://support.google.com/analytics/answer/1033867?hl=en){target=&quot;_blank&quot;}.
+Google URL Builder è uno strumento standard per la creazione di URL formattati correttamente con tag UTM. Inserisci semplicemente l’URL e il valore desiderato di ciascun parametro e fai clic su &quot;[!UICONTROL Generate URL]&quot;. Si tratta di uno strumento ideale da utilizzare se devi assegnare un solo numero limitato di URL. Accedere allo strumento [qui](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}.
 
 **Foglio di calcolo Google generato da EpikOne**
 
-Questo foglio di calcolo contiene una formula che genera automaticamente gli URL di destinazione con tag. Si tratta di un ottimo strumento per assegnare tag a un numero elevato di collegamenti. Accedere al foglio di calcolo [qui](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&amp;hl=en){target=&quot;_blank&quot;}.
+Questo foglio di calcolo contiene una formula che genera automaticamente gli URL di destinazione con tag. Si tratta di un ottimo strumento per assegnare tag a un numero elevato di collegamenti. Accedere al foglio di calcolo [qui](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&amp;hl=en){target="_blank"}.
 
 **Strumento per l’assegnazione tag dei collegamenti Rafflecopter**
 
 Il foglio di calcolo creato da Rafflecopter è una versione modificata di [!DNL EpikOne's] foglio di calcolo. Contiene anche una formula che genererà automaticamente collegamenti di destinazione con tag da utilizzare.
 
-Ognuno di questi strumenti contiene istruzioni dettagliate su come utilizzarlo e modificarlo in base alle tue esigenze. Lo strumento è disponibile [qui](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target=&quot;_blank&quot;}.
+Ognuno di questi strumenti contiene istruzioni dettagliate su come utilizzarlo e modificarlo in base alle tue esigenze. Lo strumento è disponibile [qui](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"}.
 
 **Generatore UTM straordinario**
 
-Questo strumento è un&#39;estensione Chrome che consente di generare rapidamente tag UTM. Trova [qui](https://chrome.google.com/webstore/detail/effin-amazing-utm-builder/eoaapiimcaimddnfhfnifgkinmpcbccp?hl=en){target=&quot;_blank&quot;}.
+Questo strumento è un&#39;estensione Chrome che consente di generare rapidamente tag UTM. Trova [qui](https://chrome.google.com/webstore/detail/effin-amazing-utm-builder/eoaapiimcaimddnfhfnifgkinmpcbccp?hl=en){target="_blank"}.
 
 ## Annunci Bing {#bing-ads}
 
@@ -136,17 +136,17 @@ Se lo desideri, puoi utilizzare un modello di tracciamento, ma non è necessario
 
 L’assegnazione automatica dei tag deve essere abilitata tramite [!DNL Marketo Measure] in modo che [!DNL Marketo Measure] i parametri possono essere aggiunti automaticamente. Non c&#39;è alcun rischio di perdere la storia passata delle prestazioni pubblicitarie con Bing Ads.
 
-Visita il [[!DNL Bing Ads]](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2016/upgraded-urls-now-available-in-bing-ads-an-easier-way-to-manage-your-tracking-urls)Sito Web {target=&quot;_blank&quot;} per ulteriori informazioni sull&#39;aggiunta di tag sulla piattaforma.
+Visita il [[!DNL Bing Ads]](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2016/upgraded-urls-now-available-in-bing-ads-an-easier-way-to-manage-your-tracking-urls){target="_blank"} per ulteriori informazioni sull’aggiunta di tag sulla piattaforma.
 
 ## Facebook Ads {#facebook-ads}
 
-La [!DNL Marketo Measure] integrazione con [!DNL Facebook] consente di scaricare automaticamente le informazioni sugli annunci e di assegnare all’URL i relativi parametri. [!DNL Marketo Measure] riceverà le informazioni sulla campagna e sul set di annunci tramite l’assegnazione tag automatica. Il set di annunci compilerà il campo Nome gruppo di annunci . Per ulteriori informazioni sulla configurazione dei tag URL nel [!DNL Facebook] piattaforma, visita [!DNL Facebook] [business](https://www.facebook.com/business/help/1016122818401732/?ref=u2u)pagina {target=&quot;_blank&quot;}.
+La [!DNL Marketo Measure] integrazione con [!DNL Facebook] consente di scaricare automaticamente le informazioni sugli annunci e di assegnare all’URL i relativi parametri. [!DNL Marketo Measure] riceverà le informazioni sulla campagna e sul set di annunci tramite l’assegnazione tag automatica. Il set di annunci compilerà il campo Nome gruppo di annunci . Per ulteriori informazioni sulla configurazione dei tag URL nel [!DNL Facebook] piattaforma, visita [!DNL Facebook] [business](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"} pagina.
 
 Prima di abilitare l’assegnazione tag automatica con [!DNL Facebook Ads], è importante esportare la cronologia delle prestazioni precedenti come CSV. A questo punto, quando [!DNL Marketo Measure] tag [!DNL Facebook Ads] con il parametro _bf, [!DNL Facebook] legge gli annunci come nuovi di zecca e cancella la cronologia delle prestazioni. Pertanto è importante esportare un record delle prestazioni precedenti se questo rappresenta un valore per te e per la tua organizzazione.
 
 È possibile collegare il [!DNL Facebook] in qualsiasi momento al [!DNL Marketo Measure] l’app e nessun dato andrà perso; solo quando l’assegnazione tag automatica è abilitata, la cronologia delle prestazioni viene cancellata.
 
-[Vedi questo articolo](https://www.facebook.com/business/help/393890194130036){target=&quot;_blank&quot;} da Facebook per ulteriori informazioni sull&#39;esportazione [!DNL Facebook] Rapporti sugli annunci.
+[Vedi questo articolo](https://www.facebook.com/business/help/393890194130036){target="_blank"} da Facebook per ulteriori informazioni sull&#39;esportazione [!DNL Facebook] Rapporti sugli annunci.
 
 ## Contenuto sponsorizzato da linkedIn {#linkedin-sponsored-content}
 

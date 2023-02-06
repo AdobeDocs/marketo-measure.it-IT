@@ -5,7 +5,7 @@ title: Perché Non Eliminare Mai I Punti Di Contatto
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -20,4 +20,4 @@ Quando un punto di contatto viene eliminato, crea un buco nei dati di attribuzio
 
 ![](assets/1.png)
 
-Se i punti di contatto sono stati cancellati dal tuo SFDC, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;} per richiedere una reimportazione dei dati.
+Se i punti di contatto sono stati cancellati dal tuo SFDC, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per richiedere una reimportazione dei dati.

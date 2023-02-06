@@ -4,7 +4,7 @@ title: Best practice per [!DNL Marketo Measure] Pacchetto di gestione delle rela
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 source-git-commit: 00268f49ff6e5dfc105fa7ea21837375eae49647
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -49,12 +49,12 @@ Altri motivi potrebbero provocare una revisione...
 
 >[!NOTE]
 >
->Quando disattivi l’esportazione di dati da Marketo Measure a Salesforce, non verranno rimossi i dati esistenti. Per rimuoverlo, segui i passaggi descritti in [questo articolo della guida Salesforce](https://help.salesforce.com/s/articleView?id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target=&quot;_blank&quot;}.
+>Quando disattivi l’esportazione di dati da Marketo Measure a Salesforce, non verranno rimossi i dati esistenti. Per rimuoverlo, segui i passaggi descritti in [questo articolo della guida Salesforce](https://help.salesforce.com/s/articleView?id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target="_blank"}.
 
 >[!MORELIKETHIS]
 >
 >* [Aggiorna pacchetto punto di contatto dell&#39;acquirente](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
 >* [[!DNL Marketo Measure] Set di autorizzazioni](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 >* [Condivisione di cartelle di report e dashboard](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0)
->* [Collegare la misura Marketo a Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
+>* [Collegare Marketo Measure a Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
 

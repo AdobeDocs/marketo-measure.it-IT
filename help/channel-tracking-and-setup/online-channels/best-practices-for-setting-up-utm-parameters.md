@@ -5,7 +5,7 @@ title: Procedure consigliate per l’impostazione dei parametri UTM
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 I parametri UTM sono un ottimo modo per suddividere i dati di marketing. [!DNL Marketo Measure] utilizza e acquisisce tutti i parametri UTM per compilare i campi in Salesforce e in [!DNL Marketo Measure] app. Con queste informazioni, sarai in grado di ottenere una comprensione granulare di da dove provengono i tuoi lead, opportunità e offerte chiuse/vinte.
 
-È possibile utilizzare [Generatore URL Google](https://support.google.com/analytics/answer/1033867?hl=en){target=&quot;_blank&quot;} per impostare i parametri UTM e aggiungerli ai tuoi collegamenti all&#39;interno delle tue attività di marketing. Utilizza questo [Foglio di calcolo Google](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target=&quot;_blank&quot;} se desideri un modo più semplice per tenere traccia di tutti i tuoi collegamenti UTM.
+È possibile utilizzare [Generatore URL Google](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"} to set up your UTM parameters and add them to your links within your marketing efforts. Use this [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"} se si desidera un modo più semplice per tenere traccia di tutti i collegamenti UTM.
 
 ## Valori di livello elevato per ciascun parametro {#high-level-values-for-each-parameter}
 
@@ -68,4 +68,4 @@ fakewebsite.com/
 
 Tieni presente che i termini/canale non sono duplicati e che in questo caso non viene utilizzato utm_term.
 
-In caso di domande, contatta il tuo Customer Success Manager o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}.
+In caso di domande, contatta il tuo Customer Success Manager o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

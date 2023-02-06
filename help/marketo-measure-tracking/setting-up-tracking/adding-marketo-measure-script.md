@@ -5,7 +5,7 @@ title: Aggiunta [!DNL Marketo Measure] Script
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Assicurati di [ha richiesto tutti i domini appropriati nel [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target=&quot;_blank&quot;} oltre alla distribuzione [!DNL Marketo Measure] JavaScript.
+>Assicurati di [ha richiesto tutti i domini appropriati nel [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"} oltre a distribuire il [!DNL Marketo Measure] JavaScript.
 
 Quando iniziare con [!DNL Marketo Measure], sono disponibili due modi per aggiungere il [!DNL Marketo Measure] JavaScript sul tuo sito web:
 
@@ -33,7 +33,7 @@ Codifica di JavaScript nel `<head>` delle pagine assicura [!DNL Marketo Measure]
 
 >[!TIP]
 >
->Scopri come verificare che lo script sia [Conformità al RGPD](/help/security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target=&quot;_blank&quot;}.
+>Scopri come verificare che lo script sia [Conformità al RGPD](/help/security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target="_blank"}.
 
 ## Sistemi Tag Management {#tag-management-systems}
 
@@ -47,7 +47,7 @@ Per aggiungere [!DNL Marketo Measure] esegui lo script attraverso una soluzione 
 
 [!DNL Marketo Measure] consiglia di attivare il tag in qualsiasi visualizzazione di pagina. Inoltre, è meglio dare [!DNL Marketo Measure] la priorità più alta nell&#39;ordine di attivazione e assicurati che non ci siano script sincroni davanti al [!DNL Marketo Measure] per garantire la qualità dei dati più elevata.
 
-Ulteriori informazioni possono essere [qui](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target=&quot;_blank&quot;}.
+Ulteriori informazioni possono essere [qui](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target="_blank"}.
 
 ## Considerazioni aggiuntive {#additional-considerations}
 
@@ -57,7 +57,7 @@ Tuttavia, se utilizzi domini separati o internazionali, assicurati di lasciare [
 
 Se utilizzi pagine di terze parti, assicurati di parlare del tuo caso d’uso con il tuo [!DNL Marketo Measure] Consulente. In generale, è necessario sapere se è possibile aggiungere una versione personalizzata di [!DNL Marketo Measure] JavaScript per tenere traccia di quelle pagine, se appropriato. Se questo non è possibile, il tracciamento tramite i punti di contatto di Campaign CRM verrà esplorato con il tuo [!DNL Marketo Measure] Consulente.
 
-Sono presenti moduli che NON devono essere tracciati da [!DNL Marketo Measure] poiché non hanno necessariamente senso per l’attribuzione (ad esempio, moduli di annullamento dell’abbonamento, accessi cliente, ecc.)? In tal caso, aggiungi il codice di esclusione [nel presente articolo](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target=&quot;_blank&quot;} in ogni modulo
+Sono presenti moduli che NON devono essere tracciati da [!DNL Marketo Measure] poiché non hanno necessariamente senso per l’attribuzione (ad esempio, moduli di annullamento dell’abbonamento, accessi cliente, ecc.)? In tal caso, aggiungi il codice di esclusione [nel presente articolo](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} a ciascun modulo
 
 Hai delle pagine non sicure? In tal caso, è consigliabile proteggerli perché la navigazione tra una pagina protetta e non protetta interromperà la sessione di tracciamento.
 
@@ -72,7 +72,7 @@ Se [!DNL Web Application Firewall (WAF)] l’avviso viene attivato durante la co
 **Invio a più moduli**
 
 * Problema: Se si dispone di più moduli collegati come parte di un singolo modulo, è possibile che il primo modulo generi un punto di contatto anche se il modulo completo non viene inviato.
-* Soluzione: È necessario forzare uno dei moduli a cui inviare i rapporti per l’utente [!DNL Marketo Measure] in base ai dati memorizzati nella cache e discutere le pratiche di abbandono. In generale, [codice utente del report](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target=&quot;_blank&quot;} può risolvere questo problema.
+* Soluzione: È necessario forzare uno dei moduli a cui inviare i rapporti per l’utente [!DNL Marketo Measure] in base ai dati memorizzati nella cache e discutere le pratiche di abbandono. In generale, [codice utente del report](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} può risolvere questo.
 
 **Accesso all’account (non creazione)**
 
@@ -106,7 +106,7 @@ Se [!DNL Web Application Firewall (WAF)] l’avviso viene attivato durante la co
 **Forms organizzato in `<div>` format**
 
 * Problema: [!DNL Marketo Measure] JS ha difficoltà a riconoscere i moduli organizzati in `<div>` in modo che il codice personalizzato possa essere necessario.
-* Soluzione: Tali [modelli utente di report](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target=&quot;_blank&quot;} può essere utilizzato dal team di sviluppo web per aggiungere il codice necessario.
+* Soluzione: Tali [modelli utente di report](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} può essere utilizzato dal team di sviluppo web per aggiungere il codice necessario.
 
 **Chat**
 

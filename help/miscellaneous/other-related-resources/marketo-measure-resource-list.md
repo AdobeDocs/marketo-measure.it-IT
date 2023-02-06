@@ -5,7 +5,7 @@ title: "[!DNL Marketo Measure] Elenco risorse"
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Qui ci sono vari collegamenti a articoli/video pertinenti per aiutarti a iniziar
 **Risoluzione dei problemi**
 
 * [Concessione [!DNL Marketo Measure] Accesso al supporto SFDC](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
-* Contatto: [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}
+* Contatto: [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}
 
 ## Video {#videos}
 

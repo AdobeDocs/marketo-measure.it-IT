@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874586
-description: Glossario dei campi di misura di Marketo - Misura di Marketo - Documentazione del prodotto
-title: Glossario dei campi di misura di Marketo
+description: Glossario dei campi Marketo Measure - Marketo Measure - Documentazione del prodotto
+title: Glossario dei campi Marketo Measure
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 source-git-commit: 334dcd3dcbddacc4920d182d94908babd3cb8c89
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# Glossario dei campi di misura di Marketo {#glossary-of-marketo-measure-fields}
+# Glossario dei campi Marketo Measure {#glossary-of-marketo-measure-fields}
 
-Questo articolo fornisce un glossario di tutti i campi di misura Marketo che vengono aggiunti alla tua Salesforce dal pacchetto di base delle misure di Marketo. Troverai inoltre informazioni su quale oggetto è possibile trovare il campo e su come ogni campo è compilato con le informazioni.
+Questo articolo fornisce un glossario di tutti i campi Marketo Measure che vengono aggiunti al tuo Salesforce dal pacchetto di base Marketo Measure. Troverai inoltre informazioni su quale oggetto è possibile trovare il campo e su come ogni campo è compilato con le informazioni.
 
-Per una mappa dell&#39;oggetto a cui si riferisce ciascun campo di misura Marketo, si prega di contattare [fai clic qui](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
+Per una mappa dell&#39;oggetto a cui si riferisce ogni campo Marketo Measure, si prega di: [fai clic qui](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
 [A](#a) ・ [B](#b) ・ [C](#c) ・ [D](#d) ・ [E](#e) ・ [F](#f) ・ [G](#g) ・ H ・ I ・ J ・ [K](#k) ・ [L](#l) ・ [M](#m) ・ N ・ [O](#o) ・ [P](#p) ・ Q ・ [R](#r) ・ [S](#s) ・ [T](#t) ・ [U](#u) ・ [V](#v) ・ W ・ X ・ Y ・ Z
 
@@ -48,7 +48,7 @@ In caso contrario, questo campo sarà vuoto.
 
 `3)` Se il punto di contatto proviene da una campagna Salesforce, il nome della campagna Salesforce verrà visualizzato qui.
 
-`4)` Questo si popolerà con il Nome campagna definito per i punti di contatto generati dalle attività come generato all’interno del tuo account di misura Marketo.
+`4)` Questo si popolerà con il Nome campagna definito per i punti di contatto generati dalle attività come generato nel tuo account Marketo Measure.
 
 In caso contrario, questo campo sarà vuoto.
 
@@ -126,9 +126,9 @@ In questo campo viene visualizzata la percentuale di ricavi attribuiti a un punt
 
 ## B {#b}
 
-**Importo opportunità misura Marketo** | Opportunità Salesforce
+**Importo opportunità Marketo Measure** | Opportunità Salesforce
 
-Se si utilizza un campo Importo personalizzato per segnalare i ricavi Opportunità, Marketo Measure non è in grado di leggere questi campi Importo personalizzati. L&#39;importo opportunità misura Marketo è un campo nascosto utilizzato per creare un flusso di lavoro che consente a Marketo Measure di leggere i campi Importo personalizzati sull&#39;opportunità.
+Se si utilizza un campo Importo personalizzato per generare un rapporto sui ricavi opportunità, Marketo Measure non è in grado di leggere questi campi Importo personalizzati. L&#39;importo opportunità di Marketo Measure è un campo nascosto utilizzato per creare un flusso di lavoro che consente a Marketo Measure di leggere i campi dell&#39;importo personalizzato sull&#39;opportunità.
 
 **Browser** | Punto di contatto dell&#39;acquirente, punto di contatto dell&#39;attribuzione dell&#39;acquirente
 
@@ -198,9 +198,9 @@ Questo campo mostra, in forma decimale, la percentuale di credito attribuita a u
 
 Data Segnalata | Marketo Measure ABTest, evento Marketo Measure
 
-Evento di misura Marketo : la data in cui un utente ha eseguito un’azione specifica sul sito web attivando un evento
+Marketo Measure Event : la data in cui un utente ha eseguito un’azione specifica sul sito web attivando un evento
 
-Marketo Measure ABTest : la data in cui un utente ha partecipato a un test A/B sul sito web
+Marketo Measure ABTest: la data in cui un utente ha partecipato a un test A/B sul tuo sito web
 
 [Fai clic qui per tornare alla parte superiore della pagina](#top)
 
@@ -214,11 +214,11 @@ In questo campo viene visualizzato il nome dell’azione che ha attivato l’eve
 
 Descrizione dell’evento (ad es. Homepage)
 
-**Nome esperimento** | Misura Marketo ABTest
+**Nome esperimento** | Marketo Measure ABTest
 
 In questo campo viene visualizzato il nome dell’esperimento (ad es. Pulsante di prova)
 
-**ID esperimento** |Test AB della misura Marketo
+**ID esperimento** |Test AB Marketo Measure
 
 Codice identificativo unico per ogni esperimento
 
@@ -288,7 +288,7 @@ Questo campo visualizza la versione ridotta dell’URL (nessun parametro UTM) de
 
 Questo campo visualizza l’intero URL (inclusi i parametri UTM) della prima pagina web visitata durante una sessione web.
 
-**Lead** | Punto di contatto dell&#39;acquirente, persona di misura Marketo
+**Lead** | Punto di contatto dell&#39;acquirente, persona Marketo Measure
 
 In questo campo viene visualizzato il nome del lead a cui appartiene un punto di contatto.
 
@@ -298,7 +298,7 @@ In questo campo viene visualizzato il nome del lead a cui appartiene un punto di
 
 **Canale di marketing** | Punto di contatto dell&#39;acquirente, punto di contatto dell&#39;attribuzione dell&#39;acquirente
 
-Questo campo ti mostra il gruppo generale di attività di marketing o di canale di marketing a cui appartiene il punto di contatto (ad esempio Ricerca a pagamento, Diretta, Social, ecc.). I punti di contatto sono raggruppati in base alla configurazione dei canali nell’app di misura di Marketo. Per ulteriori informazioni sui canali di marketing o su come impostare i canali, [fai clic qui](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
+Questo campo ti mostra il gruppo generale di attività di marketing o di canale di marketing a cui appartiene il punto di contatto (ad esempio Ricerca a pagamento, Diretta, Social, ecc.). I punti di contatto sono raggruppati in base alla configurazione dei canali nell’app Marketo Measure. Per ulteriori informazioni sui canali di marketing o su come impostare i canali, [fai clic qui](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
 **Canale di marketing - Percorso** | Punto di contatto dell&#39;acquirente, punto di contatto dell&#39;attribuzione dell&#39;acquirente
 
@@ -316,7 +316,7 @@ Questo campo mostra il canale di marketing e il canale secondario a cui appartie
 
 `4)` Questo si popolerà con il valore Tipo di attività dell’attività correlata che ha generato il punto di contatto.
 
-In caso contrario, Marketo Measure imposta automaticamente un valore Medium.
+In caso contrario, Marketo Measure imposta automaticamente un valore Medium .
 
 [Fai clic qui per tornare alla parte superiore della pagina](#top)
 
@@ -392,7 +392,7 @@ Se il punto di contatto proviene da una ricerca a pagamento o organica, in quest
 
 **Segmento** | Punto di contatto dell’attribuzione dell’acquirente
 
-In questo campo vengono visualizzati i segmenti a cui appartiene il punto di contatto. Questo dipenderà da come hai configurato le regole di segmentazione nell’app Marketo Measure.
+In questo campo vengono visualizzati i segmenti a cui appartiene il punto di contatto. Questo dipende dalla modalità di configurazione delle regole di segmentazione nell’app Marketo Measure.
 
 [Fai clic qui per tornare alla parte superiore della pagina](#top)
 
@@ -462,7 +462,7 @@ U
 
 ID univoco associato a ciascun punto di contatto
 
-**ID utente** | Misura Marketo ABTest
+**ID utente** | Marketo Measure ABTest
 
 Codice di identificazione univoco di ogni utilizzo
 
@@ -470,11 +470,11 @@ Codice di identificazione univoco di ogni utilizzo
 
 ## V {#v}
 
-**Variazione** | Misura Marketo ABTest
+**Variazione** | Marketo Measure ABTest
 
 Nome della variazione del test A/B
 
-**ID variante** | Misura Marketo ABTest
+**ID variante** | Marketo Measure ABTest
 
 Codice di identificazione univoco per ciascuna variante del test A/B.
 

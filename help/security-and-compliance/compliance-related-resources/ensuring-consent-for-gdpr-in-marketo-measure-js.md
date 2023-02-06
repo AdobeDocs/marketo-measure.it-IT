@@ -1,7 +1,7 @@
 ---
 unique-page-id: 35586069
 description: Garantire il consenso per il RGPD in Marketo Measure Js - Marketo Measure - Documentazione del prodotto
-title: Garantire il consenso per il RGPD nelle Js di misura di Marketo
+title: Garantire il consenso per il RGPD in Marketo Measure Js
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 source-git-commit: c7d3bbce1f0c6a99409822c06c43961c93cd9458
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Garantire il consenso per il RGPD nelle Js di misura di Marketo {#ensuring-consent-for-gdpr-in-marketo-measure-js}
+# Garantire il consenso per il RGPD in Marketo Measure Js {#ensuring-consent-for-gdpr-in-marketo-measure-js}
 
 Il Regolamento generale sulla protezione dei dati (RGPD) è una normativa dell’Unione Europea entrata in vigore il 25 maggio 2018.
 

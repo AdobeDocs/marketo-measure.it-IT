@@ -5,7 +5,7 @@ title: Definizione di [!DNL Marketo Measure] Sessioni web
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,4 +65,4 @@ _Tuttavia_, se la prima sessione web di Haley ha avuto origine da Web Direct, e 
 
 ## Google Analytics Sessions {#google-analytics-sessions}
 
-Ci sono alcune somiglianze con come [!DNL Marketo Measure] e Google Analytics definisce le sessioni. Per ulteriori informazioni su come Google Analytics definisce le sessioni, visita: [https://support.google.com/analytics/answer/2731565?hl=en](http://support.google.com/analytics/answer/2731565?hl=en){target=&quot;_blank&quot;}
+Ci sono alcune somiglianze con come [!DNL Marketo Measure] e Google Analytics definisce le sessioni. Per ulteriori informazioni su come Google Analytics definisce le sessioni, visita: [https://support.google.com/analytics/answer/2731565?hl=en](http://support.google.com/analytics/answer/2731565?hl=en){target="_blank"}

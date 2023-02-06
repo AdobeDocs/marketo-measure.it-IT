@@ -5,7 +5,7 @@ title: Casi d’uso comuni
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -80,4 +80,4 @@ Modifica il filtro Dimension per modificare il raggruppamento in: Canale seconda
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Università: Introduzione a [!DNL Marketo Measure Discover]](https://universityonline.marketo.com/courses/bizible-discover/#/page/5c645586a7863a73ad3b23e6){target=&quot;_blank&quot;}
+>[[!DNL Marketo Measure] Università: Introduzione a [!DNL Marketo Measure Discover]](https://universityonline.marketo.com/courses/bizible-discover/#/page/5c645586a7863a73ad3b23e6){target="_blank"}

@@ -5,7 +5,7 @@ title: IFrame Forms e [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ In molti casi, il IFrame viene gestito tramite un provider di automazione market
 
 ![](assets/1-1.png)
 
-Per domande sull’aggiunta di JavaScript ai moduli IFrame, contatta il tuo responsabile di successo del cliente o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}.
+Per domande sull’aggiunta di JavaScript ai moduli IFrame, contatta il tuo responsabile di successo del cliente o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

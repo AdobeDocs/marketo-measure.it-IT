@@ -5,7 +5,7 @@ title: Campi punto di contatto
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Per creare un campo calcolato, ricorda che un utente può eseguire tre azioni di
 
 Estratti
 
-L’operatore estrae il valore da un campo da un’altra posizione, ad esempio: un campo Campaign, un campo Lead o in un caso d’uso più avanzato, [estrarre parametri personalizzati dalla pagina di destinazione](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target=&quot;_blank&quot;}. quindi lo inserisce in un campo punto di contatto (consulta [Mappe all&#39;esempio](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target=&quot;_blank&quot;} #2).
+L’operatore estrae il valore da un campo da un’altra posizione, ad esempio: un campo Campaign, un campo Lead o in un caso d’uso più avanzato, [estrarre parametri personalizzati dalla pagina di destinazione](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} 2).
 
 **Esempio n. 1**
 
@@ -220,7 +220,7 @@ Sono necessari ulteriori lavori per esporre i nuovi campi nel [!DNL Marketo Meas
 
 **Come posso verificare che la mia espressione di estrazione sia valida e richiamare il valore corretto?**
 
-È disponibile uno strumento online ([https://regex101.com/](https://regex101.com/){target=&quot;_blank&quot;}) che è possibile eseguire e testare l&#39;espressione. Se è valida o rossa, l’espressione verrà visualizzata in verde. Inoltre, la casella di spiegazione in alto a destra è utile e indica cosa stai estraendo.
+È disponibile uno strumento online ([https://regex101.com/](https://regex101.com/){target="_blank"}) che è possibile eseguire e testare l’espressione. Se è valida o rossa, l’espressione verrà visualizzata in verde. Inoltre, la casella di spiegazione in alto a destra è utile e indica cosa stai estraendo.
 
 ![](assets/twelve.png)
 

@@ -98,7 +98,7 @@ Definizione: Ricavi totali della pipeline per mese tramite grafico a barre e tab
 
 **Ricavi dalla pipeline nel tempo**
 
-Definizione: Ricavi totali della pipeline per mese tramite grafico a barre e tabella. Poiché il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
+Definizione: Ricavi totali della pipeline per mese tramite grafico a barre e tabella. Dato che il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
 
 _Totale ricavi della pipeline per mese suddivisi per settimana o data._
 
@@ -110,7 +110,7 @@ Definizione: Numero totale di lead per mese tramite grafico a barre e tabella. D
 
 **Lead nel tempo**
 
-Definizione: Numero totale di lead per mese tramite grafico a barre e tabella. Poiché il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
+Definizione: Numero totale di lead per mese tramite grafico a barre e tabella. Dato che il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
 
 _Numero totale di lead per mese suddivisi per settimana o data._
 
@@ -120,7 +120,7 @@ Definizione: Totale contatti per mese tramite grafico a barre e tabella. Da lì,
 
 **Contatti nel tempo**
 
-Definizione: Totale contatti per mese tramite grafico a barre e tabella. Poiché il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
+Definizione: Totale contatti per mese tramite grafico a barre e tabella. Dato che il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
 
 _Totale contatti per mese suddivisi per settimana o data._
 
@@ -334,7 +334,7 @@ Definizione: Un elenco di URL di pagina in base al numero di visualizzazioni di 
 
 **Visualizzazioni pagina nel tempo**
 
-Definizione: Totale visualizzazioni pagina per mese tramite grafico a barre e tabella. Dato che il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
+Definizione: Totale visualizzazioni pagina per mese tramite grafico a barre e tabella. Poiché il riquadro principale è già un grafico, l&#39;analisi in Mostra dettagli mostrerà solo un mese.
 
 _Visualizzazioni di pagina totali per mese suddivise per settimana, data o ora._
 

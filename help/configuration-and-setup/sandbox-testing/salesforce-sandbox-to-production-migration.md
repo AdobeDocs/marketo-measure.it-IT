@@ -5,7 +5,7 @@ title: Migrazione da Salesforce Sandbox alla produzione
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ Se hai scelto di eseguire il test [!DNL Marketo Measure] in [!DNL Salesforce] Am
 
 * Installa i due [!DNL Marketo Measure] pacchetti in produzione con &quot;[!UICONTROL All Users]&quot; impostazione
 
-   * [Pacchetto di base](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target=&quot;_blank&quot;}
-   * [Pacchetto di estensione del dashboard](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target=&quot;_blank&quot;}
+   * [Pacchetto di base](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
+   * [Pacchetto di estensione del dashboard](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}
 
 * Per ulteriori informazioni sulla [!DNL Marketo Measure] rapporto con [!DNL Salesforce], dai un&#39;occhiata [articolo](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * Un po&#39; [!DNL Salesforce] la configurazione è necessaria. I punti specifici dell&#39;azione sono descritti di seguito in [Passaggio 4:](#salesforce-configuration)
@@ -51,7 +51,7 @@ Se hai scelto di eseguire il test [!DNL Marketo Measure] in [!DNL Salesforce] Am
 
 [Set di autorizzazioni](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 
-[Condivisione di rapporti](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target=&quot;_blank&quot;}
+[Condivisione di rapporti](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target="_blank"}
 
 [Nascondere tipi di report non necessari](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
 

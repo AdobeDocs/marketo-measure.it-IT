@@ -5,7 +5,7 @@ title: Modello di attribuzione e configurazione personalizzati
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ La [!DNL Marketo Measure] Il modello Attribution personalizzato consente agli ut
 
    Per iniziare a creare il modello di attribuzione personalizzato, dovrai selezionare gli stadi importanti per il team di marketing. Oltre al [!DNL Marketo Measure] le fasi cardine (FT, LC, OC, Closed) possono aggiungere fino a sei ulteriori stati di lead/contatti o opportunità nel modello personalizzato. Ad esempio, è comune che l’area di visualizzazione MQL sia inclusa nel modello personalizzato. I team di marketing spesso desiderano sapere quali sforzi o canali stanno portando le transizioni al passaggio MQL.
 
-   Accedi a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}. Vai a [!UICONTROL My Account] > [!UICONTROL Settings] > e nella sezione CRM, seleziona **[!UICONTROL Stage Mapping]**.
+   Accedi a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Vai a [!UICONTROL My Account] > [!UICONTROL Settings] > e nella sezione CRM, seleziona **[!UICONTROL Stage Mapping]**.
 
    Una volta qui, è necessario selezionare gli stadi Lead/Contatti e Opportunità da includere selezionando la **[!UICONTROL Include in Model]** scatola.
 

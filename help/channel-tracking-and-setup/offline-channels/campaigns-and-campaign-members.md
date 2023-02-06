@@ -5,7 +5,7 @@ title: Campagne e membri della campagna
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ La data del punto di contatto dell&#39;aggiornamento in blocco è inclusa nella 
 
 Se è necessario aggiornare un numero elevato di record dei membri della campagna, puoi utilizzare il [!UICONTROL Bulk Update Touchpoint Date] pulsante per l&#39;editing di massa.
 
-Se ci sono casi d&#39;uso unici che questa interfaccia non copre, puoi anche utilizzare il [Caricatore dati](https://dataloader.io/){target=&quot;_blank&quot;} per esportare i record, apportare la modifica e caricare nuovamente i record.
+Se ci sono casi d&#39;uso unici che questa interfaccia non copre, puoi anche utilizzare il [Caricatore dati](https://dataloader.io/){target="_blank"} per esportare i record, apportare le modifiche e caricare nuovamente i record.
 
 Per iniziare, cerca i record e filtra quelli per i quali vuoi impostare una data punto di contatto dell’acquirente.
 
@@ -117,7 +117,7 @@ Per aggirare questo problema, [!DNL Marketo Measure] creato [!DNL Marketo Measur
 
 >[!CAUTION]
 >
->Tieni presente che questo trigger non tiene traccia dei membri della campagna rimossi in passato, pertanto funziona solo in futuro. Se devi rimuovere un numero elevato di punti di contatto dei membri della campagna precedente, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}.
+>Tieni presente che questo trigger non tiene traccia dei membri della campagna rimossi in passato, pertanto funziona solo in futuro. Se devi rimuovere un numero elevato di punti di contatto dei membri della campagna precedente, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

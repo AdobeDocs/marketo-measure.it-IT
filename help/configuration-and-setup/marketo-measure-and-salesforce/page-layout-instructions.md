@@ -72,7 +72,7 @@ Per iniziare, passa prima al tuo [!DNL Salesforce] Impostazioni e individua le [
 
 1. Fai clic sulla chiave inglese [!DNL VisualForce] modifica l&#39;altezza a 100 e abilita le barre di scorrimento.
 
-1. Nel menu , seleziona la [!UICONTROL Canvas Apps] e crea una nuova sezione denominata &quot;Marketo Measure Insights&quot; (Approfondimenti misura) sotto i punti di contatto [!DNL VisualForce] sezione appena creata.
+1. Nel menu , seleziona la [!UICONTROL Canvas Apps] e crea una nuova sezione denominata &quot;Marketo Measure Insights&quot; sotto i punti di contatto [!DNL VisualForce] sezione appena creata.
 
    >[!NOTE]
    >

@@ -5,14 +5,14 @@ title: Impostazione delle fasi di Boomerang
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
 # Impostazione delle fasi di Boomerang {#setting-up-boomerang-stages}
 
-Per abilitare [!UICONTROL Boomerang] Le fasi per il tuo account devono essere un amministratore account. Oppure, può essere attivato contattando [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}. Una volta che la funzione è stata abilitata, segui queste istruzioni per configurarle.
+Per abilitare [!UICONTROL Boomerang] Le fasi per il tuo account devono essere un amministratore account. Oppure, può essere attivato contattando [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. Una volta che la funzione è stata abilitata, segui queste istruzioni per configurarle.
 
 ## Configurazione della fase Boomerang {#boomerang-stage-setup}
 

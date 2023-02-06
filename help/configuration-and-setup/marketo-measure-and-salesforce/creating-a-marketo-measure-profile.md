@@ -5,7 +5,7 @@ title: Creazione di una [!DNL Marketo Measure] Profilo
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Scopri come creare un [!DNL Marketo Measure] profilo. Creazione di una [!DNL Mar
 1. Escludi questo profilo da tutti gli attivatori, i flussi di lavoro e i processi.
 1. Accedi al tuo [!DNL Marketo Measure] Account e riautorizza il [!DNL Salesforce] connessione con il nuovo utente:
 
-   * Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;} e accedi con le nuove credenziali Salesforce di produzione utente
+   * Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e accedi con le nuove credenziali Salesforce di produzione utente
    * Seleziona &quot;[!UICONTROL Settings]&quot; all&#39;interno di &quot;[!UICONTROL My Account]&quot; a discesa
    * Seleziona &quot;[!UICONTROL Connections]&quot; all&#39;interno di &quot;[!UICONTROL Integrations]&quot; raggruppamento
    * Fai clic sull&#39;icona a forma di chiave a destra della connessione corrente [!DNL Salesforce] e seleziona per riautorizzare con produzione. Quindi, se richiesto, effettua nuovamente l&#39;accesso con le nuove credenziali utente
 
    Completato!
 
-   Se hai domande sulla creazione di un [!DNL Marketo Measure] profilo, contatta il tuo responsabile di successo del cliente o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}.
+   Se hai domande sulla creazione di un [!DNL Marketo Measure] profilo, contatta il tuo responsabile di successo del cliente o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

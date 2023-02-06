@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874791
 description: Concessione [!DNL Salesforce] Accesso a [!DNL Marketo Measure] Supporto - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Concessione [!DNL Salesforce] Accesso al supporto per le misure Marketo
+title: Concessione [!DNL Salesforce] Accesso al supporto Marketo Measure
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# Concessione [!DNL Salesforce] Accesso al supporto per le misure Marketo {#granting-salesforce-access-to-marketo-measure-support}
+# Concessione [!DNL Salesforce] Accesso al supporto Marketo Measure {#granting-salesforce-access-to-marketo-measure-support}
 
 In alcuni casi, [!DNL Marketo Measure] Il supporto può richiedere l&#39;accesso al tuo [!DNL Salesforce] ambiente per assistenza nella risoluzione dei problemi diagnostici o nella configurazione di Salesforce durante l&#39;implementazione.
 

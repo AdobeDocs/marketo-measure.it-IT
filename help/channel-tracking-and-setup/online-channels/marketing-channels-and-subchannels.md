@@ -6,7 +6,7 @@ exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -72,7 +72,7 @@ Altri esempi...
 * Doppio clic
 * Capterra
 * Campagne Drip
-* linkedIn Ads
+* LinkedIn Ads
 
 **Contenuto (white paper, URL della pagina, post di blog)**
 

@@ -1,6 +1,6 @@
 ---
 unique-page-id: 35586140
-description: Data Warehouse schema - Misura Marketo - Documentazione del prodotto
+description: Data Warehouse schema - Marketo Measure - Documentazione del prodotto
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d

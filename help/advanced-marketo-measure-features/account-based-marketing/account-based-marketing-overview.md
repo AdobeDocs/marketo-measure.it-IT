@@ -5,16 +5,16 @@ title: Panoramica del marketing basato su account
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
 # Panoramica del marketing basato su account {#account-based-marketing-overview}
 
-Di seguito è riportata una breve panoramica di ABM, i componenti di [!DNL Marketo Measure] Funzione ABM e come aggiungerla al tuo [!DNL Salesforce] layout di pagina. Per saperne di più su ABM, consulta [questa pagina](https://www.marketo.com/account-based-marketing/){target=&quot;_blank&quot;}.
+Di seguito è riportata una breve panoramica di ABM, i componenti di [!DNL Marketo Measure] Funzione ABM e come aggiungerla al tuo [!DNL Salesforce] layout di pagina. Per saperne di più su ABM, consulta [questa pagina](https://www.marketo.com/account-based-marketing/){target="_blank"}.
 
-Per accedere direttamente alle istruzioni per l’impostazione di ABM all’interno della [!DNL Salesforce] istanza, per favore [fai clic qui](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target=&quot;_blank&quot;}.
+Per accedere direttamente alle istruzioni per l’impostazione di ABM all’interno della [!DNL Salesforce] istanza, per favore [fai clic qui](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}.
 
 ## Cos’è l’ABM {#what-is-abm}
 

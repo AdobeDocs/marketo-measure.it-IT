@@ -5,7 +5,7 @@ title: Consigliato [!DNL Salesforce] Autorizzazioni per [!DNL Marketo Measure] U
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -44,4 +44,4 @@ Se l’utente dedicato non ha accesso ai lead in coda, non può modificare i lea
 
 La sicurezza a livello di campo e l’accessibilità dei campi sono correlate, ma presentano alcune differenze chiave. Sicurezza a livello di campo definisce la visibilità del campo per un determinato profilo, mentre l’accessibilità del campo determina se un campo è modificabile in base alla protezione a livello di campo e alla configurazione del layout di pagina. Utilizzo della [!DNL Marketo Measure] i set di autorizzazioni del pacchetto ti verranno fornite le impostazioni di protezione dell’oggetto campo necessarie. In alcuni casi, per garantire la corretta accessibilità dei campi, l’utente connesso deve disporre della [!DNL Marketo Measure] campi nei layout di pagina. [!DNL Marketo Measure] i campi nel layout consentono [!DNL Marketo Measure] dati da mappare in [!DNL Salesforce]. Questo dipenderà dal vostro particolare [!DNL Salesforce] ambiente.
 
-Ogni organizzazione [!DNL Salesforce] ha esigenze individuali ma vi forniamo i nostri requisiti per bilanciare il [!DNL Marketo Measure] le esigenze di accesso con i protocolli di sicurezza. Non esitate a contattarci [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}.
+Ogni organizzazione [!DNL Salesforce] ha esigenze individuali ma vi forniamo i nostri requisiti per bilanciare il [!DNL Marketo Measure] le esigenze di accesso con i protocolli di sicurezza. Non esitate a contattarci [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

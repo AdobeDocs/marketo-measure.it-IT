@@ -5,7 +5,7 @@ title: Parametri UTM
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L’assegnazione tag agli URL è un modo semplice ed efficace per acquisire dati sulle attività di marketing digitale. È il processo di aggiunta di parametri alla fine degli URL che raccolgono e registrano i dati. I parametri più comunemente utilizzati sono i moduli di monitoraggio di Urchin (UTM), supportati da Google. Sono disponibili cinque parametri principali di UTM: Media, Origine, Campagna, Contenuto e Termine. Questi sono descritti più dettagliatamente nella sezione successiva.
 
-I parametri UTM possono essere aggiunti manualmente agli URL o aggiunti tramite l’assegnazione tag automatica a determinate piattaforme, ad esempio AdWords. L’assegnazione tag automatica automatizza il processo di aggiunta di parametri agli URL. C&#39;è anche la possibilità di [Generatori di URL](https://ga-dev-tools.appspot.com/campaign-url-builder/){target=&quot;_blank&quot;} per velocizzare manualmente gli URL di assegnazione tag. Con un generatore di URL, devi solo specificare i valori da utilizzare per ogni parametro e il generatore formatta l’URL per te.
+I parametri UTM possono essere aggiunti manualmente agli URL o aggiunti tramite l’assegnazione tag automatica a determinate piattaforme, ad esempio AdWords. L’assegnazione tag automatica automatizza il processo di aggiunta di parametri agli URL. C&#39;è anche la possibilità di [Generatori di URL](https://ga-dev-tools.appspot.com/campaign-url-builder/){target="_blank"} per velocizzare l’assegnazione di tag agli URL manualmente. Con un generatore di URL, devi solo specificare i valori da utilizzare per ogni parametro e il generatore formatta l’URL per te.
 
 ## Cosa sono i parametri UTM? {#what-are-utm-parameters}
 

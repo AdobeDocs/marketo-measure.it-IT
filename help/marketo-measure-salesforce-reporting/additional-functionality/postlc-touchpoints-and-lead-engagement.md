@@ -1,11 +1,11 @@
 ---
 unique-page-id: 18874562
-description: Punti di contatto post-LC e lead Engagement - Misura Marketo - Documentazione del prodotto
+description: Punti di contatto post-LC e lead Engagement - Marketo Measure - Documentazione del prodotto
 title: Punti di contatto post-LC e coinvolgimento lead
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Per regolare le impostazioni dei punti di contatto PostLC per i lead o i contatt
 
 **Lead**
 
-1. Accedi al tuo [!DNL Marketo Measure] conto a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;} e vai a [!UICONTROL Settings].
+1. Accedi al tuo [!DNL Marketo Measure] conto a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e vai a [!UICONTROL Settings].
 
 1. In CRM, seleziona **[!UICONTROL Leads]**.
 
@@ -46,7 +46,7 @@ Per regolare le impostazioni dei punti di contatto PostLC per i lead o i contatt
 
 **Contatti**
 
-1. Accedi al tuo [!DNL Marketo Measure] conto a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;} e vai a [!UICONTROL Settings].
+1. Accedi al tuo [!DNL Marketo Measure] conto a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e vai a [!UICONTROL Settings].
 
 1. In CRM, seleziona **[!UICONTROL Contacts]**.
 

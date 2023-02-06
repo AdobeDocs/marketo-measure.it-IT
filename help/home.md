@@ -10,25 +10,25 @@ ht-degree: 0%
 
 ---
 
-# Documentazione della guida di Marketo Measure
+# Documentazione dell’Aiuto di Marketo Measure
 
 ![banner](/help/assets/marketo-measure-banner.jpg)
 
-Marketo Measure (in precedenza Bizible) unisce i dati comportamentali e degli annunci con i risultati di vendita e l’apprendimento automatico, in modo da poter prendere le decisioni di marketing giuste.
+Marketo Measure (precedentemente Bizible) unifica i dati comportamentali e degli annunci con i risultati di vendita e l’apprendimento automatico in modo da poter prendere le decisioni di marketing giuste.
 
 ## Introduzione
 
 * [Attribuzione di marketing](/help/introduction-to-marketo-measure/overview-resources/marketing-attribution.md)
 
-* [Modelli di attribuzione delle misure Marketo](/help/introduction-to-marketo-measure/overview-resources/marketo-measure-attribution-models.md)
+* [Modelli di attribuzione Marketo Measure](/help/introduction-to-marketo-measure/overview-resources/marketo-measure-attribution-models.md)
 
-* [Framework delle misure di Marketo](/help/introduction-to-marketo-measure/overview-resources/marketo-measure-framework.md)
+* [Framework Marketo Measure](/help/introduction-to-marketo-measure/overview-resources/marketo-measure-framework.md)
 
-* [Glossario dei campi di misura di Marketo](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
+* [Glossario dei campi Marketo Measure](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 ## Articoli popolari
 
-* [Aggiunta di script di misura Marketo](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
+* [Aggiunta di script Marketo Measure](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
 * [Differenza tra punti di contatto dell’acquirente e punti di contatto dell’attribuzione dell’acquirente](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
 * [Configurazione del canale personalizzato online](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
 * [Configurazione del canale personalizzato offline](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)

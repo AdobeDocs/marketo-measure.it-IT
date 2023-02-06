@@ -5,7 +5,7 @@ title: Riautorizzazione degli account collegati
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Se la piattaforma CRM viene disconnessa, [!DNL Marketo Measure] non sarà in gra
 
 ## Riautorizzazione account disconnessi {#re-authorizing-disconnected-accounts}
 
-1. Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;} e accedi.
+1. Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e accedi.
 1. Seleziona **[!UICONTROL Settings]** in [!UICONTROL My Account] nell&#39;angolo in alto a sinistra.
 1. Trova la sezione Integrazioni a sinistra e fai clic su **[!UICONTROL Connections]**.
 1. Seleziona il simbolo di Chiave rossa accanto all’account da riconnettere.

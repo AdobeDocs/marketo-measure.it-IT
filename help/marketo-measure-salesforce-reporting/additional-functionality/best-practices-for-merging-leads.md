@@ -5,7 +5,7 @@ title: Best practice per l’unione dei lead
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,6 @@ Se sono presenti più record con [!DNL Marketo Measure] Assicurati che nel Recor
 
 Da lì, dovresti essere libero di unire i Lead e [!DNL Marketo Measure] i dati verranno trasferiti al nuovo record.
 
-In caso di domande, non esitare a contattare il tuo Customer Success Manager o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}.
+In caso di domande, non esitare a contattare il tuo Customer Success Manager o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 ![](assets/1.jpg)

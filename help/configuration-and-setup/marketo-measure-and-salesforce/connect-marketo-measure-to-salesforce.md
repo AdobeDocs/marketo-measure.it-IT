@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874580
-description: Collegare la misura Marketo a Salesforce - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Collegare la misura Marketo a Salesforce
+description: Collegare Marketo Measure a Salesforce - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Collegare Marketo Measure a Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 source-git-commit: 993a326c377b3b6ff48c4e0114b59297f9ca2ca6
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Collegare la misura Marketo a Salesforce {#connect-marketo-measure-to-salesforce}
+# Collegare Marketo Measure a Salesforce {#connect-marketo-measure-to-salesforce}
 
 Questo articolo fornisce una panoramica su come collegare le [!DNL Salesforce] l&#39;account [!DNL Marketo Measure] conto.
 

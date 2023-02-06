@@ -5,7 +5,7 @@ title: Comprensione [!DNL Marketo Measure] Assegnazione tag adWords
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Tuttavia, lo stesso URL fornirà dati granulari a causa del [!DNL Marketo Measur
 **Se [!DNL Marketo Measure] trova un modello di tracciamento:**
 
 * [!DNL Marketo Measure] aggiungerà i relativi parametri al modello di tracciamento.
-* Se un reindirizzamento di terze parti si trova in un modello di tracciamento come Kenshoo o Marin, [!DNL Marketo Measure] non intraprenderà alcuna azione. Invece, devi [add [!DNL Marketo Measure] parametri per lo strumento di terze parti nel tuo account](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target=&quot;_blank&quot;}.
+* Se un reindirizzamento di terze parti si trova in un modello di tracciamento come Kenshoo o Marin, [!DNL Marketo Measure] non intraprenderà alcuna azione. Invece, devi [add [!DNL Marketo Measure] parametri per lo strumento di terze parti nel tuo account](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 Tuttavia, se non viene trovato alcun modello di tracciamento, [!DNL Marketo Measure] :
 
@@ -40,7 +40,7 @@ Tuttavia, se non viene trovato alcun modello di tracciamento, [!DNL Marketo Meas
 
 ## Modelli di tracciamento {#tracking-templates}
 
-Come spiegato da [!DNL Google AdWords], un modello di tracciamento è l’URL utilizzato per raggiungere una pagina di destinazione. Le informazioni di tracciamento raccolte vengono utilizzate per comprendere il traffico degli annunci. [Fai clic qui](https://support.google.com/adwords/answer/7197008?hl=en){target=&quot;_blank&quot;} per ulteriori informazioni da Google.
+Come spiegato da [!DNL Google AdWords], un modello di tracciamento è l’URL utilizzato per raggiungere una pagina di destinazione. Le informazioni di tracciamento raccolte vengono utilizzate per comprendere il traffico degli annunci. [Fai clic qui](https://support.google.com/adwords/answer/7197008?hl=en){target="_blank"} per ulteriori informazioni da Google.
 
 [!DNL Marketo Measure] consiglia di utilizzare un modello di tracciamento a livello di account, di campagna o di gruppo di annunci, in quanto consente l’aggiunta e la sottrazione di parametri per tutti gli annunci senza il rischio di interruzioni o eliminazioni della cronologia annunci.
 
@@ -108,6 +108,6 @@ R: 4 ore
 
 >[!NOTE]
 >
->Dopo aver apportato le modifiche, effettua l’operazione. Sentiti libero di contattare [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;} in caso di domande durante l&#39;installazione.
+>Dopo aver apportato le modifiche, effettua l’operazione. Sentiti libero di contattare [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} in caso di domande durante la configurazione.
 
-[Fai clic qui](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target=&quot;_blank&quot;} per istruzioni da Google sulla creazione di modelli di tracciamento a livello di account.
+[Fai clic qui](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"} per istruzioni da Google sulla creazione di modelli di tracciamento a livello di account.

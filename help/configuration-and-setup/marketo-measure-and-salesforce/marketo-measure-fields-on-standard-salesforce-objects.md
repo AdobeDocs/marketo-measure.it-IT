@@ -66,11 +66,11 @@ Aggiorna [!DNL Marketo Measure] Attribuzione (regola di convalida): Questa regol
 
 Ci sono 5 campi e 1 trigger Apex aggiunto con il pacchetto.
 
-Stato punto di contatto (lead): Questo è un campo diagnostico relativo a una funzione che non è attivata come predefinita. Questo viene utilizzato per capire se un punto di contatto è stato creato rispetto al relativo record Lead o, in caso contrario, perché.
+Stato punto di contatto (lead): Si tratta di un campo diagnostico relativo a una funzione che non è attivata. Questo viene utilizzato per capire se un punto di contatto è stato creato rispetto al relativo record Lead o, in caso contrario, perché.
 
-Stato punto di contatto (contatto): Questo è un campo diagnostico relativo a una funzione che non è attivata come predefinita. Questo viene utilizzato per capire se è stato creato un punto di contatto rispetto al record Contatto correlato o, in caso contrario, perché.
+Stato punto di contatto (contatto): Si tratta di un campo diagnostico relativo a una funzione che non è attivata. Questo viene utilizzato per capire se è stato creato un punto di contatto rispetto al record Contatto correlato o, in caso contrario, perché.
 
-Stato punto di contatto (opportunità): Questo è un campo diagnostico relativo a una funzione che non è attivata come predefinita. Questo viene utilizzato per capire se un punto di contatto è stato creato rispetto al record Opportunità correlato o, in caso contrario, perché.
+Stato punto di contatto (opportunità): Si tratta di un campo diagnostico relativo a una funzione che non è attivata. Questo viene utilizzato per capire se un punto di contatto è stato creato rispetto al record Opportunità correlato o, in caso contrario, perché.
 
 Data stato punto di contatto: Data di compilazione dei campi di diagnostica.
 

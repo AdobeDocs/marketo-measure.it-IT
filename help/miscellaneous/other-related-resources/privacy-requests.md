@@ -4,7 +4,7 @@ title: Richieste sulla privacy
 exl-id: 883e475f-9868-412a-b505-230556f38484
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Questo documento fornisce una panoramica sulla gestione delle singole richieste 
 
 Puoi inviare singole richieste per accedere e cancellare i dati dei consumatori da [!DNL Marketo Measure] in due modi:
 
-* Attraverso il [[!DNL Privacy Service] Interfaccia](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target=&quot;_blank&quot;}.
-* Attraverso il **[!DNL Privacy Service]API**. Consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target=&quot;_blank&quot;} e riferimento API [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target=&quot;_blank&quot;}.
+* Attraverso il [[!DNL Privacy Service] Interfaccia](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
+* Attraverso il **[!DNL Privacy Service]API**. Consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
-La [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;} supporta due tipi di richieste: accesso ai dati ed eliminazione dei dati.
+La [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"} supporta due tipi di richieste: accesso ai dati ed eliminazione dei dati.
 
 Vediamo come creare le richieste di accesso ed eliminazione.
 
