@@ -3,9 +3,9 @@ unique-page-id: 18874763
 description: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM - Marketo Measure - Documentazione del prodotto"
 title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
-source-git-commit: 9de82556ca543aa8e6c53242eacae5c87019886c
+source-git-commit: 7141c1f73754160707ddb0af203cadc89ef917d8
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Per la connessione e l&#39;autenticazione, [!DNL Marketo Measure] supporta le se
 
 ## Installare la soluzione gestita {#install-the-managed-solution}
 
-[Scarica e installa](assets/marketo-measure-dynamics-extension.zip) il file zip in Dynamics CRM.
+[Scarica e installa](assets/marketo-measure-dynamics-extension.zip) il file zip all’interno di Dynamics CRM.
 
 **[!UICONTROL Settings]** > **[!UICONTROL Customizations]** > **[!UICONTROL Solutions]** > **[!UICONTROL Import]** (pulsante) > **[!UICONTROL Choose File]**.
 
