@@ -3,9 +3,9 @@ unique-page-id: 35586140
 description: Data Warehouse schema - Marketo Measure - Documentazione del prodotto
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+source-git-commit: 6e2d438da273511c3465d02eef6813f64e7aec5d
 workflow-type: tm+mt
-source-wordcount: '22593'
+source-wordcount: '22615'
 ht-degree: 4%
 
 ---
@@ -15554,14 +15554,16 @@ order by 1
 
 **Mostra tutti i punti di contatto di attribuzione dell’acquirente (BAT) e i relativi ricavi attribuiti per un’unica opportunità.**
 
+>[!NOTE]
+>
+>Questa query restituisce i ricavi attribuiti per il modello a forma w. Modificare il modello aggiornando il campo nel calcolo dei ricavi attribuiti.
+
 ```
---Note: This query returns attributed revenue for the w shape model.  Change the model by updating the field in the attributed revenue calculation.  
- 
 select bat.id
       ,bat.touchpoint_date
       ,bat.email
-      ,listagg(osd.stage_name)                        as touchpoint_position
-      ,sum(opp.amount*(bat.w_shape_percentage/100))   as attributed_revenue
+      ,opp.amount*(bat.w_shape_percentage/100)             as attributed_revenue
+      ,listagg(osd.stage_name,', ')                        as touchpoint_position
   from biz_opportunities               opp
        inner join
        biz_attribution_touchpoints     bat
@@ -15579,8 +15581,8 @@ select bat.id
        and osd._deleted_date        is null
  where opp._deleted_date    is null
    and opp.id               = [opportunity id]
-group by 1,2,3, osd.rank
-order by touchpoint_date, osd.rank
+group by 1,2,3,4
+order by touchpoint_date
 ```
 
 [Torna all&#39;inizio](#data-warehouse-schema)
