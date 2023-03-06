@@ -1,84 +1,88 @@
 ---
 unique-page-id: 18874730
-description: Panoramica del marketing basato su account - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Panoramica del marketing basato su account
+description: Panoramica del marketing basato sull’account - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Panoramica del marketing basato sull’account
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 48bff0d1cade7c216988170b16942ebffb71cc63
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
-# Panoramica del marketing basato su account {#account-based-marketing-overview}
+# Panoramica del marketing basato sull’account {#account-based-marketing-overview}
 
-Di seguito è riportata una breve panoramica di ABM, i componenti di [!DNL Marketo Measure] Funzione ABM e come aggiungerla al tuo [!DNL Salesforce] layout di pagina. Per saperne di più su ABM, consulta [questa pagina](https://www.marketo.com/account-based-marketing/){target="_blank"}.
+Di seguito è riportata una breve panoramica di ABM, i [!DNL Marketo Measure] e come aggiungerla al tuo [!DNL Salesforce] layout di pagina. Per ulteriori informazioni su ABM, vedi [questa pagina](https://www.marketo.com/account-based-marketing/){target="_blank"}.
 
-Per accedere direttamente alle istruzioni per l’impostazione di ABM all’interno della [!DNL Salesforce] istanza, per favore [fai clic qui](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}.
+Per passare direttamente alle istruzioni per la configurazione di ABM in [!DNL Salesforce] istanza, per favore [fai clic qui](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}.
 
-## Cos’è l’ABM {#what-is-abm}
+## Cos’è ABM {#what-is-abm}
 
-Il marketing basato su account, ABM, è una strategia di marketing in cui ti rivolgi e vendi a aziende e account nel loro insieme, non solo come individui. [!DNL Marketo Measure] aiuta i team di marketing e vendita a eseguire strategie ABM di successo con la funzionalità di mappatura lead-to-account e il punteggio di coinvolgimento predittivo.
+Il marketing basato sull&#39;account, ABM, è una strategia di marketing in cui il targeting e la vendita vengono effettuati a società e account nel loro complesso, non solo come individui. [!DNL Marketo Measure] Con la funzionalità di mappatura lead-account e il punteggio di coinvolgimento predittivo, i team di marketing e vendita possono implementare strategie ABM di successo.
 
-Affinché il nostro modello di marketing basato su account inizi a popolarsi nel tuo CRM, [!DNL Marketo Measure] richiede il rispetto dei seguenti criteri:
+Affinché il nostro modello di marketing basato sull’account possa iniziare a essere popolato nel tuo CRM, [!DNL Marketo Measure] ha bisogno che siano soddisfatti i seguenti criteri:
 
-* Il tuo CRM ha bisogno di almeno 25 account con almeno un&#39;opportunità di chiusura per la tua attività, in modo da poter valutare meglio i comuni di un account/opportunità di &quot;successo&quot; per la tua attività.
-* Dall&#39;altro lato della moneta, il CRM ha bisogno di almeno 25 account senza opportunità di vittoria chiusa (tutte le opp devono essere nella nostra categoria stadio &quot;Open&quot;, o in una categoria &quot;Closed Lost&quot; - questo ci aiuta a valutare ciò che rende un conto di livello inferiore nella tua organizzazione.
+* Il tuo CRM ha bisogno di almeno 25 account che abbiano almeno un’opportunità di vincita chiusa su di essi, in modo da poter valutare meglio le caratteristiche comuni di un account/opportunità &quot;di successo&quot; per la tua azienda.
+* L&#39;altra faccia della medaglia, il tuo CRM ha bisogno di almeno 25 Account senza Opportunità Closed Won (tutti gli opp devono essere nella nostra categoria di fase &quot;Open&quot;, o in una categoria &quot;Closed Lost&quot; - questo ci aiuta a misurare ciò che rende un conto di livello inferiore nella tua organizzazione.
 
 >[!NOTE]
 >
->I suddetti conti &quot;cattivi&quot; devono essere aperti per almeno 12 mesi senza accumulare un opp chiuso; questa è la nostra linea guida di base per stabilire se un Opp è diventato obsoleto ai fini del modello.
+>Gli account &quot;cattivi&quot; di cui sopra devono essere aperti per almeno 12 mesi senza accumulare un&#39;opzione di acquisto Closed Won; questa è la nostra linea guida di base per sapere se un&#39;opzione di acquisto è diventata obsoleta per gli scopi del modello.
 
-## Mappatura lead-to-account {#lead-to-account-mapping}
+## Mappatura lead-account {#lead-to-account-mapping}
 
-La mappatura &quot;lead-to-account&quot; è una parte fondamentale di un approccio ABM efficace. Con la mappatura lead-to-account, i potenziali clienti o i lead vengono raggruppati nello stesso account aziendale in cui interagiscono con il tuo marchio. Questo ti consente di eseguire il targeting e vendere a singoli utenti della stessa azienda in modo coerente. Non sono disponibili ulteriori [!DNL Salesforce] configurazione necessaria per iniziare a sfruttare questa funzione. La [!DNL Marketo Measure] Lead to Account Mapping: cinque diversi metodi di corrispondenza:
+La mappatura lead-account è una parte fondamentale di un approccio ABM efficace. Con la mappatura lead-account, i potenziali clienti o i lead sono raggruppati nello stesso account aziendale in cui interagiscono con il tuo marchio. Questo ti consente di eseguire il targeting e vendere a singoli utenti della stessa azienda in modo coerente. Non sono disponibili [!DNL Salesforce] per iniziare a beneficiare di questa funzione. Il [!DNL Marketo Measure] Lead to Account Mapping cinque diversi metodi di corrispondenza:
 
-* Sito Web principale per l&#39;account
-* Dominio e-mail lead a dominio sito Web account
-* Nome società lead sul nome del conto
-* Dominio del sito Web dell&#39;azienda lead
-* Corrispondenza del dominio sull&#39;indirizzo e-mail del lead all&#39;account tramite l&#39;indirizzo e-mail del contatto
+* Sito Web lead per sito Web account
+* Lead del dominio e-mail al dominio del sito web dell’account
+* Nome società cliente potenziale al nome account
+* Dominio del sito Web da società lead a account
+* Corrispondenza del dominio sull&#39;indirizzo e-mail del lead con l&#39;account tramite l&#39;indirizzo e-mail del contatto
+
+>[!NOTE]
+>
+>Si tenta di abbinare ogni lead a un account nell’ordine preferenziale dei metodi di cui sopra. Una volta trovata una corrispondenza, l’AccountId viene immediatamente impostato sul Lead e non viene trovato utilizzando un altro metodo. Se il lead ha già un AccountId valido, viene ignorato.
 
 ## Punteggio di coinvolgimento predittivo {#predictive-engagement-score}
 
-La [!DNL Marketo Measure] Punteggio di coinvolgimento predittivo, o PES, è un valore dinamico che illustra il coinvolgimento di un particolare account nelle attività di marketing. Questo punteggio è utile per segmentare gli account a destinazione. Si tratta di uno strumento utile per identificare i conti in modo da mirare in modo più efficace ed efficiente.
+Il [!DNL Marketo Measure] Il Predictive Engagement Score (Punteggio di coinvolgimento predittivo), o PES, è un valore dinamico che illustra il coinvolgimento di un particolare account con le tue attività di marketing. Questo punteggio è utile per segmentare gli account da targetizzare. Si tratta di uno strumento prezioso per identificare i conti ed eseguire il targeting in modo più efficace ed efficiente.
 
-Ci sono molti componenti che entrano nell&#39;algoritmo che calcola gli SPI. La recency e l’età hanno una grande influenza sulle modifiche ai punteggi, insieme all’ultima attività del punto di contatto o alle visualizzazioni di pagina. Anche l&#39;aggiunta di nuovi contatti a un account ha un impatto sugli SPI. Di seguito è riportato un elenco di alcuni input di PES:
+Ci sono molti componenti che entrano nell’algoritmo che calcola l’PES. Recency ed età hanno una grande influenza sulle modifiche di punteggio, insieme all&#39;ultima attività di contatto o alle visualizzazioni di pagina. Anche l’aggiunta di nuovi contatti a un account ha un impatto su PES. Di seguito è riportato un elenco di alcuni input di PES:
 
 * Numero totale di visualizzazioni di pagina dall’account
 * Numero medio di visualizzazioni di pagina
-* Numero medio di persone nel conto
-* Età dell’ultima visualizzazione della pagina
+* Numero medio di persone nell’account
+* Età di visualizzazione dell’ultima pagina
 * Età media delle visualizzazioni di pagina
-* Numero di persone nel conto
-* Pagine importanti specifiche e se c&#39;è stata una visita negli ultimi 30/60/90 giorni
-* Se il conto ha un&#39;operazione persa/vinta chiusa
-* Con quale probabilità verrà chiuso perso/vinto
+* Numero di persone nell’account
+* Pagine importanti specifiche e se vi è stata una visita negli ultimi 30/60/90 giorni
+* Se l&#39;account ha un&#39;offerta persa/vinta chiusa
+* Probabilità di chiusura persa/vinta
 
 >[!NOTE]
 >
->È possibile notare un livello di &quot;N/A&quot; o &quot;-&quot; (il simbolo del trattino) nel Punteggio di coinvolgimento predittivo per alcuni account.
+>Potresti notare un livello di &quot;N/A&quot; o &quot;-&quot; (il simbolo del trattino) nel Punteggio di Coinvolgimento Predittivo per alcuni Account.
 
-_Un grado di &quot;N/A&quot; significa semplicemente che non disponiamo ancora di dati sufficienti su quel conto perché il nostro modello generi un vero grado - con più dati, un grado sarà dato alla fine._
-_Un grado di &quot;-&quot; (il simbolo del trattino) significa che questo account deve ancora essere elaborato dal nostro processo ABM, a causa di vincoli di tempo, processi occasionalmente persi, ecc. Se ritieni che un account debba avere un grado, in base ad altri account o scadenze simili, contatta e lascia [!DNL Marketo Measure] Lo so._
+_Un livello &quot;N/D&quot; significa semplicemente che non disponiamo ancora di dati sufficienti su tale account per consentire al modello di generare un livello effettivo. Con un numero maggiore di dati, alla fine verrà assegnato un livello._
+_Un livello di &quot;-&quot; (il simbolo del trattino) significa che questo account deve ancora essere elaborato dal nostro processo ABM, a causa di vincoli di tempo, processi saltati occasionalmente, ecc. Se ritieni che un account debba avere un livello, basato su altri account o tempistiche simili, contatta e lascia [!DNL Marketo Measure] lo so._
 
 ## Impostazione del layout di pagina ABM in [!DNL Salesforce] {#setting-up-abm-page-layout-in-salesforce}
 
-Per iniziare a utilizzare gli PES, è sufficiente aggiungere il campo PES e l&#39;elenco correlato ai layout di pagina appropriati in [!DNL Salesforce].
+Per iniziare a utilizzare PES, è sufficiente aggiungere il campo PES e l’elenco correlato ai layout di pagina appropriati in [!DNL Salesforce].
 
-1. Passa a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Accounts]** > **[!UICONTROL Page Layout]**. Quindi seleziona il layout di pagina da modificare.
-1. Vai a [!UICONTROL Fields] e sposta il campo &quot;Punteggio di coinvolgimento predittivo&quot; nella sezione Informazioni sull’account .
+1. Accedi a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Accounts]** > **[!UICONTROL Page Layout]**. Quindi seleziona il layout di pagina da modificare.
+1. Vai a [!UICONTROL Fields] e spostare il campo &quot;Punteggio di coinvolgimento predittivo&quot; nella sezione Informazioni account.
 
    ![](assets/1.png)
 
-1. Infine, vai a [!UICONTROL Related Lists] e spostare l&#39;elenco correlato &quot;Lead&quot; nel layout della pagina.
+1. Infine, vai a [!UICONTROL Related Lists] e spostare l’elenco correlato &quot;Lead&quot; nel layout della pagina.
 
    ![](assets/2.png)
 
-1. Quindi, passa a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Leads]** > **[!UICONTROL Page Layout]** e selezionare il layout di pagina appropriato da modificare.
-1. Fai clic su **[!UICONTROL Fields]** e aggiungi la [!UICONTROL Account] campo in cui viene visualizzata l’adattamento alla pagina.
+1. Quindi, passa a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Leads]** > **[!UICONTROL Page Layout]** e selezionare i layout di pagina appropriati da modificare.
+1. Clic **[!UICONTROL Fields]** e aggiungi [!UICONTROL Account] in cui si trova nella pagina.
 
    ![](assets/3.png)
 
-Siete pronti!
+È tutto pronto!
 
