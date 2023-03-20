@@ -1,12 +1,10 @@
 ---
 description: '''[!DNL Marketo Measure] Panoramica finale - [!DNL Marketo Measure] - Documentazione del prodotto"'
 title: '''[!DNL Marketo Measure] Panoramica finale"'
-hide: true
-hidefromtoc: true
 exl-id: fada9479-0671-4698-8043-c67d7977577b
-source-git-commit: 604db0227cc48e09743db317cc72488755586a48
+source-git-commit: 59d42e5065ec0db7143208743fd053f5e6c1af7b
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -28,29 +26,29 @@ ht-degree: 0%
 
 * Integrazione con RTCDP (B2B o B2P Edition), fornendo una soluzione di attribuzione B2B integrata per i clienti RTCDP come RTCDP e [!DNL Marketo Measure] entrambi funzionano a partire da dati Adobe Experience Platform centralizzati (AEP).
 
-**Livelli Marketo Measure 1-3**
+**[!DNL Marketo Measure]Livelli 1-3**
 
 ![](assets/marketo-measure-ultimate-overview-1.png)
 
-**Marketo Measure Ultimate**
+**[!DNL Marketo Measure Ultimate]**
 
 ![](assets/marketo-measure-ultimate-overview-2.png)
 
 ## Novità di [!DNL Marketo Measure Ultimate] {#whats-new-in-marketo-measure-ultimate}
 
-**TITOLO INTESTAZIONE - Importare dati B2B tramite AEP**
+**Importare dati B2B tramite AEP**
 
 Gli addetti al marketing devono portare i loro dati B2B (ad esempio account, opportunità, contatto, lead, campagna, membro della campagna, attività) tramite AEP. Le connessioni dirette CRM e al Marketo Engage non sono più disponibili per Ultimate. Gli addetti al marketing continueranno a fornire dati ad Platform tramite connessioni dirette e tracciando attività web tramite [!DNL Marketo Measure] javascript.
 
 ![](assets/marketo-measure-ultimate-overview-3.png)
 
-**TITOLO INTESTAZIONE - Impostazione valuta predefinita**
+**Impostazione valuta predefinita**
 
-BREVE INTRO???
+[!DNL Marketo Measure Ultimate] imposta la valuta predefinita su USD finché l’utente non la modifica. L&#39;impostazione di una nuova valuta predefinita aggiornerà i dati senza rielaborarli. Finché la valuta selezionata è presente come codice ISO di destinazione, non è necessario inviare i tassi di conversione.
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
-**TITOLO HEADER - Sandbox Marketo Measure Ultimate**
+**[!DNL Marketo Measure Ultimate]Sandbox**
 
 [!DNL Marketo Measure Ultimate] L&#39;istanza deve essere mappata su una sandbox AEP prima di creare la [!DNL Marketo Measure] flussi di dati di destinazione in AEP.
 
@@ -64,7 +62,7 @@ I dati di una determinata entità (ad esempio, Account) provenienti da una deter
 
 ![](assets/marketo-measure-ultimate-overview-5.png)
 
-**TITOLO INTESTAZIONE - Mappatura fase**
+**Mappatura della fase**
 
 Tutto [!DNL Marketo Measure Ultimate] le regole sono specifiche per i set di dati. È necessario creare regole di mappatura stage per tutti i set di dati e per tutte le fasi selezionate.
 
