@@ -3,16 +3,16 @@ unique-page-id: 27656441
 description: Domande frequenti sull’integrazione delle versioni precedenti - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Domande frequenti sull’integrazione delle versioni
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # Domande frequenti sull’integrazione delle versioni {#drift-integration-faq}
 
-Come parte del [!DNL Marketo Measure] integrazione con Drift, abbiamo delineato alcune delle domande più frequenti. In caso di domande non descritte di seguito, contatta il tuo Customer Success Manager o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+Come parte del [!DNL Marketo Measure] integrazione con Drift, abbiamo delineato alcune delle domande più frequenti. In caso di domande non descritte di seguito, contatta il team dell’account Adobe (il tuo Account Manager) o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 **Come è abilitata l’integrazione?**
 

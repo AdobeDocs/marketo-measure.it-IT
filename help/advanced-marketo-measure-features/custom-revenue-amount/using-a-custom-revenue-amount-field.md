@@ -3,9 +3,9 @@ unique-page-id: 18874793
 description: Utilizzo di un campo Importo ricavi personalizzato - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Utilizzo di un campo Importo ricavi personalizzato
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Da qui inizieremo a creare il flusso di lavoro.
 
    Questo può essere realizzato eseguendo le tue opportunità tramite Data Loader all&#39;interno di SFDC. Per informazioni sull&#39;utilizzo di Data Loader in [articolo](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
 
-In caso di domande lungo il percorso, non esitare a contattare il tuo Customer Success Manager o [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+In caso di domande lungo il percorso, non esitare a contattare il team dell&#39;account Adobe (il tuo Account Manager) o [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

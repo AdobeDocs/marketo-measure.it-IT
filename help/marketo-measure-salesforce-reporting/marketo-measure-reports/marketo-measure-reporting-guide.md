@@ -2,9 +2,9 @@
 description: "[!DNL Marketo Measure] Guida al reporting - [!DNL Marketo Measure] - Documentazione del prodotto"
 title: "[!DNL Marketo Measure] Guida al reporting"
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '6392'
+source-wordcount: '6395'
 ht-degree: 0%
 
 ---
@@ -557,7 +557,7 @@ Quando si cerca di misurare l&#39;impatto del marketing sulle offerte vinte chiu
 
 >[!NOTE]
 >
->Il modello di attribuzione personalizzato è un’ulteriore funzione non disponibile per tutti i clienti. Contatta il tuo Customer Success Manager per saperne di più su come aggiungere questa funzione al tuo account.
+>Il modello di attribuzione personalizzato è un’ulteriore funzione non disponibile per tutti i clienti. Per ulteriori informazioni su come aggiungere questa funzione al tuo account, contatta il team dell’account Adobe (il tuo Account Manager).
 
 Comunemente, gli esperti di marketing devono sapere, &quot;da dove vengono le mie opportunità?&quot; Analogamente al reporting a livello di lead, questa domanda ha ricevuto una risposta storica con un singolo valore unidimensionale (ad esempio, Origine campagna principale). Tuttavia, sappiamo che molto di più va nello sviluppo di un&#39;opportunità rispetto a un singolo punto di contatto da un unico contatto. In genere esistono diversi punti di contatto provenienti da diversi canali e da più parti interessate che influenzano un’opportunità nella creazione. Con [!DNL Marketo Measure], possiamo visualizzare tutti i punti di contatto da un account per capire meglio da dove proviene un’opportunità. Oltre a questo, tuttavia, possiamo continuare a far emergere qualsiasi punto di contatto che si è verificato dopo la creazione dell’opportunità e fino al punto in cui l’opportunità viene chiusa. Questo ci consente non solo di adottare un approccio multi-touch per capire da dove proviene un&#39;opportunità, ma anche cosa l&#39;ha influenzata a chiudersi e, in ultima analisi, a rappresentare i ricavi propri chiusi. Questo offre informazioni approfondite su diverse domande come, &quot;qual è l&#39;impatto del marketing sull&#39;influenza la chiusura delle offerte?&quot;, &quot;quale marketing sta guidando la chiusura dei ricavi vinti?&quot; e infine, &quot;quali delle mie attività di marketing stanno vedendo il maggiore ROI?&quot;
 

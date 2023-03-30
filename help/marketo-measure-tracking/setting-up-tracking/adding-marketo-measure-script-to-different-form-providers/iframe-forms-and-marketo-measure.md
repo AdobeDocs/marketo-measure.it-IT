@@ -3,9 +3,9 @@ unique-page-id: 18874741
 description: IFrame Forms e [!DNL Marketo Measure] - [!DNL Marketo Measure] - Documentazione del prodotto
 title: IFrame Forms e [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
-source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ In molti casi, il IFrame viene gestito tramite un provider di automazione market
 
 ![](assets/1-1.png)
 
-Per domande sull’aggiunta di JavaScript ai moduli IFrame, contatta il tuo responsabile di successo del cliente o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+Per domande sull’aggiunta di JavaScript ai moduli IFrame, contatta il team dell’account Adobe (il tuo Account Manager) o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

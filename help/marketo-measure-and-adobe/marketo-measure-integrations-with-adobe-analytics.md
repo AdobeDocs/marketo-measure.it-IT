@@ -2,9 +2,9 @@
 description: "[!DNL Marketo Measure] Integrazioni con Adobe Analytics - [!DNL Marketo Measure] - Documentazione del prodotto"
 title: "[!DNL Marketo Measure] Integrazioni con [!DNL Adobe Analytics]"
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ L’integrazione degli attributi del cliente B2B consente agli utenti reciproci 
 
 1. Fai clic sul pulsante **[!UICONTROL Set Up New Customer Attributes Connection]** e segui le istruzioni per configurare l&#39;integrazione Attributi del cliente. Nell’interfaccia utente vengono richieste le informazioni relative all’ID alias e alla connessione FTP acquisite durante la creazione dell’origine degli attributi del cliente nella console Servizi di base, nonché il set di attributi dell’account che si desidera sincronizzare con la [!DNL Adobe Analytics] conto.
 
-   Devi anche inserire il tuo ID organizzazione Adobe IMS. Questo ID viene visualizzato nell&#39;angolo in basso a destra del tuo Admin Console Adobe Experience Cloud. Per ulteriori informazioni su come trovare questo ID, consulta il tuo Customer Success Manager.
+   Devi anche inserire il tuo ID organizzazione Adobe IMS. Questo ID viene visualizzato nell&#39;angolo in basso a destra del tuo Admin Console Adobe Experience Cloud. Per ulteriori informazioni su come trovare questo ID, consulta l’ Adobe Account Team (il tuo Account Manager).
 
 1. Una volta completata la creazione della connessione nel [!DNL Marketo Measure] account, dovrai tornare alla console Experience Cloud per [convalida dello schema](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/validate-schema.html). Non devi preoccuparti del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato quella parte per te. Tutto quello che devi fare è andare alla schermata dello schema &quot;Visualizza/Modifica&quot; per l&#39;origine dell&#39;attributo del cliente creata nel passaggio 1 e dire ad Adobe quali sono i tipi di dati per ciascuno degli attributi che [!DNL Marketo Measure] è stato caricato per tuo conto. Puoi anche creare nuovi nomi descrittivi della visualizzazione per gli attributi caricati, se necessario.
 

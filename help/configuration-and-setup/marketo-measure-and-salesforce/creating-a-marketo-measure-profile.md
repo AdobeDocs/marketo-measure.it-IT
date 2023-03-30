@@ -3,9 +3,9 @@ unique-page-id: 18874698
 description: Creazione di una [!DNL Marketo Measure] Profilo [!DNL Marketo Measure] - Documentazione del prodotto
 title: Creazione di una [!DNL Marketo Measure] Profilo
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ Scopri come creare un [!DNL Marketo Measure] profilo. Creazione di una [!DNL Mar
 
    Completato!
 
-   Se hai domande sulla creazione di un [!DNL Marketo Measure] profilo, contatta il tuo responsabile di successo del cliente o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+   Se hai domande sulla creazione di un [!DNL Marketo Measure] profilo, contatta il team dell&#39;account Adobe (il tuo Account Manager) o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
