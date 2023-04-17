@@ -3,9 +3,9 @@ unique-page-id: 35586140
 description: Data Warehouse schema - Marketo Measure - Documentazione del prodotto
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: d1f1a3d1d0dd3111b984fbe9d0a8e8d3ed9289d2
+source-git-commit: e7993619e2dcfdfcab1a02d95d404e76fe1366c1
 workflow-type: tm+mt
-source-wordcount: '22622'
+source-wordcount: '22610'
 ht-degree: 5%
 
 ---
@@ -4331,10 +4331,10 @@ Contatti importati dal sistema di origine.
         <p>numero(38,19)</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] algoritmo per stimare se un contatto aiuterà un'opportunità a chiudersi in base all'età e allo stadio</p>
+        <p>Questa funzione è stata rimossa. Non utilizzare questa colonna.</p>
       </td>
       <td>
-        <p>.290034</p>
+        <p>N/D</p>
       </td>
     </tr>
     <tr>
@@ -9557,10 +9557,10 @@ Lead importati dal sistema di origine.
         <p>numero(38,19)</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] algoritmo di stima se un lead verrà convertito in base all’età e allo stadio.</p>
+        <p>Questa funzione è stata rimossa. Non utilizzare questa colonna.</p>
       </td>
       <td>
-        <p>.290034</p>
+        <p>N/D</p>
       </td>
     </tr>
     <tr>
@@ -10175,10 +10175,10 @@ Opportunità importate dal sistema di origine.
         <p>numero(38,19)</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] algoritmo per stimare se un'opportunità verrà chiusa in base all'età e allo stadio.</p>
+        <p>Questa funzione è stata rimossa. Non utilizzare questa colonna.</p>
       </td>
       <td>
-        <p>0.8225108385086060000</p>
+        <p>N/D</p>
       </td>
     </tr>
     <tr>
