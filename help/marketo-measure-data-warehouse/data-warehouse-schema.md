@@ -3,10 +3,10 @@ unique-page-id: 35586140
 description: Data Warehouse schema - Marketo Measure - Documentazione del prodotto
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: 6e2d438da273511c3465d02eef6813f64e7aec5d
+source-git-commit: d1f1a3d1d0dd3111b984fbe9d0a8e8d3ed9289d2
 workflow-type: tm+mt
-source-wordcount: '22615'
-ht-degree: 4%
+source-wordcount: '22622'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,9 @@ Data Warehouse ti consente di tenere traccia di quanto desideri, di eseguire rap
 
 >[!IMPORTANT]
 >
->Le righe con un valore per _DELETED_DATE verranno mantenute per 15 giorni, quindi rimosse dal Snowflake. Le unità orarie Snowflake sono in UTC.
+>* Le righe con un valore per _DELETED_DATE verranno mantenute per 7 giorni, quindi rimosse dal Snowflake.
+>* I fusi orari utilizzati nel Snowflake aderiscono all’Ora universale coordinata (UTC).
+
 
 >[!NOTE]
 >
@@ -119,7 +121,7 @@ Account importati dal sistema di origine.
       <td>IS_DELETED</td>
       <td>booleano</td>
       <td>Se il record viene eliminato o meno nel sistema di origine.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
@@ -233,7 +235,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
         <p>Se il record viene considerato eliminato o meno.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -373,7 +375,7 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
       <td>IS_DELETD</td>
       <td>booleano</td>
       <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>AD_FORM_ID</td>
@@ -573,7 +575,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>Indica se l’annuncio è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -587,7 +589,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>Se l’annuncio è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -644,7 +646,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -941,7 +943,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>Se l’inserzionista è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -955,7 +957,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>Se l’inserzionista è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -1012,7 +1014,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -1237,7 +1239,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>Se l'account dell'annuncio è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -1251,7 +1253,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>Se l’account annuncio è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -1306,7 +1308,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -1695,7 +1697,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>Indica se la campagna è ancora attiva o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -1709,7 +1711,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>Se la campagna è stata eliminata o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -1766,7 +1768,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -1973,7 +1975,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>Stato eliminato dal sistema di origine. Impostato su eliminato se lo stato è Bozza, Archiviato o Annullato.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -2306,7 +2308,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se l'account dell'annuncio è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -2320,7 +2322,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se l’account annuncio è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -2377,7 +2379,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3501,7 +3503,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se questo punto di contatto viene trattato o meno come il primo tocco del percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3515,7 +3517,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se questo punto di contatto viene trattato o meno come punto di contatto per la creazione di un lead, viene toccato dal percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3529,7 +3531,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se questo punto di contatto viene trattato o meno come la creazione di opportunità tocca il percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3543,7 +3545,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se questo punto di contatto viene trattato o meno come il tocco di chiusura del percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3565,7 +3567,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Indica se questo punto di contatto ha compilato un modulo durante la sessione.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -3579,7 +3581,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se questo punto di contatto viene trattato o meno come la prima impressione del percorso di opportunità</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3671,7 +3673,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Se questo punto di contatto viene eliminato.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -3950,7 +3952,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>Indica se il membro della campagna è stato contrassegnato come "Risposta" dal selettore di stato.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -4076,7 +4078,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>Se il record viene considerato eliminato o meno nel sistema di origine .</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4359,13 +4361,13 @@ Contatti importati dal sistema di origine.
       <td>
         <p>Se il record viene eliminato o meno nel sistema di origine.</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>IS_DUPLICATE</td>
       <td>booleano</td>
       <td>Utilizzato per deduplicare i record se è configurata sia un’integrazione CRM che Marketo. Se sono presenti duplicati, il contatto Marketo è contrassegnato come true.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
@@ -4472,7 +4474,7 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>IS_CURRENT</td>
       <td>booleano</td>
       <td>La semantica di questo campo è stata danneggiata. Non usare.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>CREATED_DATE</td>
@@ -4490,7 +4492,7 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>IS_DELETED</td>
       <td>booleano</td>
       <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -4595,7 +4597,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
       <td>CHANNEL_IS_AGGREGATABLE_COST</td>
       <td>booleano</td>
       <td>Indica se la riga contiene il costo che può essere sommato dal canale. (ad esempio, per ottenere Costo canale, somma le righe in cui questa colonna è uguale a vero).</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>ADVERTISER_UNIQUE_ID</td>
@@ -4613,7 +4615,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
       <td>ADVERTISER_IS_AGGREGATABLE_COST</td>
       <td>booleano</td>
       <td>Indica se la riga contiene il costo che può essere sommato da Advertiser (Inserzionista). (ovvero per ottenere Costo inserzionista, somma le righe in cui questa colonna è uguale a true).</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -4654,7 +4656,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato da Conto. (ovvero per ottenere Costo conto, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4696,7 +4698,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato da Campaign. (ovvero per ottenere il costo della campagna, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -4738,7 +4740,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato dal gruppo di annunci. (ad esempio, per ottenere Costo gruppo di annunci, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4780,7 +4782,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato dall’annuncio. (ovvero per ottenere Ad Cost, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4822,7 +4824,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato da Creative. (ovvero per ottenere Costo creativo, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4864,7 +4866,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato da Parola chiave. (ovvero per ottenere il costo delle parole chiave, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4906,7 +4908,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato per Posizionamento. (ovvero, per ottenere il costo di posizionamento, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4948,7 +4950,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Indica se la riga contiene il costo che può essere sommato dal sito . (ovvero per ottenere il costo del sito, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -4962,7 +4964,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Se il record viene considerato eliminato o meno nel sistema di origine .</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -5233,7 +5235,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>Se il Creativo è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -5247,7 +5249,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>Se il Creativo è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -5304,7 +5306,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -5435,7 +5437,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>Indica se il contenuto creativo utilizza o meno gli URL aggiornati.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -5953,7 +5955,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
       </td>
       <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -6014,14 +6016,14 @@ Tabella di tutte le valute ISO.
       <td>booleano</td>
       <td>Indica se la valuta è la valuta aziendale.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
       <td>IS_ENABLED</td>
       <td>booleano</td>
       <td>Indica se la divisa è abilitata nel sistema di origine.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -6226,7 +6228,7 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
       <td>
         <p>Se il record è stato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -6355,7 +6357,7 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
       <td>
         <p>Se il record è stato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -6758,14 +6760,14 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
         <p>Se il record viene considerato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
       <td>IS_IGNORE</td>
       <td>booleano</td>
       <td>Indica se l’ID e-mail o visitatore è considerato rumore o spam, utilizzato per l’elaborazione interna.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -7285,7 +7287,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se l'opportunità è stata spostata in un passaggio classificato come vinto.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7299,7 +7301,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se l'opportunità è stata spostata in un'area di visualizzazione classificata come chiusa.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7414,7 +7416,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
       <td>
         <p>Indica se la riga contiene il costo che può essere sommato dall’annuncio. (ovvero per ottenere Ad Cost, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -7426,7 +7428,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
       <td>
         <p>Indica se la riga contiene il costo che può essere sommato da Advertiser (Inserzionista). (ovvero per ottenere Costo inserzionista, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>
@@ -7439,7 +7441,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato da Conto. (ovvero per ottenere Costo conto, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7453,7 +7455,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato dal gruppo di annunci. (ad esempio, per ottenere Costo gruppo di annunci, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7467,7 +7469,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato da Campaign. (ovvero per ottenere il costo della campagna, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -7480,7 +7482,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
       <td>
         <p>Indica se la riga contiene il costo che può essere sommato dal canale. (ad esempio, per ottenere Costo canale, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -7493,7 +7495,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato da Creative. (ovvero per ottenere Costo creativo, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7507,7 +7509,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato da Parola chiave. (ovvero per ottenere il costo delle parole chiave, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7521,7 +7523,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato per Posizionamento. (ovvero, per ottenere il costo di posizionamento, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7535,7 +7537,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Indica se la riga contiene il costo che può essere sommato dal sito . (ovvero per ottenere il costo del sito, somma le righe in cui questa colonna è uguale a vero).</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7549,7 +7551,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>Se il record è stato eliminato o meno, utilizzato come traccia di audit.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7784,7 +7786,7 @@ Invio Di Moduli Acquisiti.
       </td>
       <td>Indica se il record è considerato un duplicato.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -7796,7 +7798,7 @@ Invio Di Moduli Acquisiti.
       </td>
       <td>Utilizzato per elaborazione interna.</td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -8079,7 +8081,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
       </td>
       <td>Indica se il record è considerato un duplicato.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -8091,7 +8093,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
       </td>
       <td>Utilizzato per elaborazione interna.</td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -8808,7 +8810,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>Indica se la parola chiave è ancora attiva nel sistema di origine.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -8822,7 +8824,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>Indica se la parola chiave è stata eliminata o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -8877,7 +8879,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>(Campo diagnostico, utilizzato per l’elaborazione interna.)</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -8964,7 +8966,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
       </td>
       <td>Campo diagnostico per l'elaborazione interna.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -9460,7 +9462,7 @@ Lead importati dal sistema di origine.
         <p>Se il lead è stato convertito o meno in un contatto.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -9614,7 +9616,7 @@ Lead importati dal sistema di origine.
         <p>Se il record viene eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -9639,7 +9641,7 @@ Lead importati dal sistema di origine.
       <td>IS_DUPLICATE</td>
       <td>booleano</td>
       <td>Utilizzato per deduplicare i record se è configurata sia un’integrazione CRM che Marketo. In presenza di duplicati, il lead Marketo è contrassegnato come true.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
@@ -9857,7 +9859,7 @@ Transizioni di stage per lead o contatti.
         <p>Indica se il punto di contatto è considerato in sospeso e non ancora chiuso. Viene visualizzato solo per i clienti con modello di attribuzione percorso completo.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -9871,7 +9873,7 @@ Transizioni di stage per lead o contatti.
         <p>Indica se la riga è associata a una transizione di fase cardine. Ad esempio, se ci sono 3 fasi/ingressi (FT, LC, MQL) e 4 punti di contatto, il 1 punto di contatto senza una fase su di esso è considerato "non transitorio" in modo che il valore sia uguale a vero.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -9927,7 +9929,7 @@ Transizioni di stage per lead o contatti.
         <p>Se il record di transizione viene considerato eliminato o meno.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -10048,7 +10050,7 @@ Opportunità importate dal sistema di origine.
         <p>Indica se l'opportunità è stata spostata in uno stadio considerato vinto.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -10062,7 +10064,7 @@ Opportunità importate dal sistema di origine.
         <p>Indica se l'opportunità è stata spostata in uno stadio considerato chiuso.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -10217,7 +10219,7 @@ Opportunità importate dal sistema di origine.
       <td>
         <p>Se il record viene eliminato o meno nel sistema di origine.</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -10467,7 +10469,7 @@ Transizioni stage per Opportunità.
         <p>Indica se il punto di contatto è considerato in sospeso e non ancora chiuso. Viene visualizzato solo per i clienti con modello di attribuzione percorso completo.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -10481,7 +10483,7 @@ Transizioni stage per Opportunità.
         <p>Indica se la riga è associata a una transizione di fase cardine. Ad esempio, se ci sono 3 fasi/ingressi (FT, LC, MQL) e 4 punti di contatto, il 1 punto di contatto senza una fase su di esso è considerato "non transitorio" in modo che il valore sia uguale a vero.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -10537,7 +10539,7 @@ Transizioni stage per Opportunità.
         <p>Se il record di transizione viene considerato eliminato o meno.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -10767,7 +10769,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>booleano</p>
       </td>
       <td>Indica se il record è considerato un duplicato.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -10777,7 +10779,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>booleano</p>
       </td>
       <td>Utilizzato per elaborazione interna.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>
@@ -10863,7 +10865,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
       <td>HAS_USER_CONSENT</td>
       <td>booleano</td>
       <td>Indica se l’utente ha acconsentito al tracciamento. False indica che la visualizzazione pagina è stata raccolta perché non è richiesto il consenso dell’utente. True indica che la visualizzazione pagina è stata raccolta e che l'utente ha dato il consenso per il tracciamento.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -11034,7 +11036,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
       <td>
         <p>Se il Posizionamento è ancora attivo nel sistema di origine.</p>
       </td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>
@@ -11046,7 +11048,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
       <td>
         <p>Se il Posizionamento è stato eliminato o meno nel sistema di origine.</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -11095,7 +11097,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>Se è necessario aggiornare o meno il posizionamento per [!DNL Marketo Measure] assegnazione tag.</p>
         <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -11313,13 +11315,13 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
       <td>IS_ACTIVE</td>
       <td>booleano</td>
       <td>Indica se la categoria è in uso.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>booleano</td>
       <td>Indica se il record viene eliminato.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -11432,7 +11434,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       <td>IS_FIRST_SESSION</td>
       <td>booleano</td>
       <td>Indica se si tratta della prima sessione per l’ID visitatore.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>
@@ -11571,7 +11573,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Se la sessione conteneva o meno una compilazione del modulo,</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -11585,7 +11587,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Se la sessione conteneva o meno una chat web.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -11599,7 +11601,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Se la sessione aveva o meno un indirizzo e-mail.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -11613,7 +11615,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Indica se la sessione proviene o meno da un record di attività CRM.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -12107,7 +12109,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Determina se questa sessione è stata unita a un'altra e deve essere eliminata.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -12365,7 +12367,7 @@ Siti importati da qualsiasi account annuncio connesso.
       <td>
         <p>Indica se il sito è ancora attivo nel sistema di origine.</p>
       </td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>
@@ -12377,7 +12379,7 @@ Siti importati da qualsiasi account annuncio connesso.
       <td>
         <p>Se il Sito è stato eliminato o meno nel sistema di origine.</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -12426,7 +12428,7 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>Se il sito deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
         <p>(Campo diagnostico, utilizzato per l’elaborazione interna.)</p>
       </td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>
@@ -12907,7 +12909,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
       </td>
       <td>Indica se lo stage è considerato inattivo.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -12921,7 +12923,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>Indica se lo stage è selezionato per il tracciamento nel modello personalizzato.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -12935,7 +12937,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>Indica se lo stage è selezionato per il tracciamento come stadio boomerang.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -12947,7 +12949,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
       </td>
       <td>Indica se l’opzione Stage è selezionata per il tracciamento delle transizioni.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -12975,7 +12977,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>Indica se lo stage viene importato da un sistema di origine esterno.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -12987,7 +12989,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
       </td>
       <td>Indica se lo stage è impostato come predefinito.</td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -13015,7 +13017,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>Se lo stage è stato eliminato o meno.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -13940,7 +13942,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Se questo punto di contatto viene trattato o meno come il primo tocco del percorso di opportunità.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -13954,7 +13956,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Se questo punto di contatto viene trattato o meno come punto di contatto per la creazione di un lead, viene toccato dal percorso di opportunità.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -13968,7 +13970,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Se questo punto di contatto viene trattato o meno come la creazione di opportunità tocca il percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -13982,7 +13984,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Se questo punto di contatto viene trattato o meno come il tocco di chiusura del percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -14002,7 +14004,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Indica se questo punto di contatto ha compilato un modulo durante la sessione.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -14016,7 +14018,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Se questo punto di contatto viene trattato o meno come la prima impressione del percorso di opportunità</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -14107,7 +14109,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Se questo punto di contatto viene eliminato.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -14502,7 +14504,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       <td>IS_FIRST_KNOWN_TOUCH</td>
       <td>booleano</td>
       <td>Se questo punto di contatto viene trattato o meno come il primo tocco del percorso di opportunità.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>VISITOR_ID</td>
@@ -15133,7 +15135,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Indica se questo punto di contatto ha compilato un modulo durante la sessione.</p>
       </td>
       <td>
-        <p>true</p>
+        <p>vero</p>
       </td>
     </tr>
     <tr>
@@ -15147,7 +15149,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Se questo punto di contatto viene trattato o meno come la prima impressione del percorso di opportunità.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -15161,7 +15163,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Se il punto di contatto viene eliminato o meno.</p>
       </td>
       <td>
-        <p>false</p>
+        <p>falso</p>
       </td>
     </tr>
     <tr>
@@ -15413,13 +15415,13 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       <td>IS_DUPLICATO</td>
       <td>booleano</td>
       <td>Indica se il record è considerato un duplicato.</td>
-      <td>false</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>IS_PROCESSED</td>
       <td>booleano</td>
       <td>Utilizzato per elaborazione interna.</td>
-      <td>true</td>
+      <td>vero</td>
     </tr>
     <tr>
       <td>MAPPING_TYPE</td>
