@@ -3,9 +3,9 @@ unique-page-id: 18874554
 description: Generazione e mappatura di punti di contatto - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Generazione e mappatura di punti di contatto
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 950dbfacf48cbb81acad9c40033c25a765287bee
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Per ottenere il massimo da [!DNL Marketo Measure], dovresti lavorare con [!DNL M
 Metodi di generazione dei punti di contatto
 
 Il processo di generazione dei punti di contatto risponde alla domanda, &quot;Com&#39;è [!DNL Marketo Measure] per sapere che è successo?&quot; A seconda del set di funzioni e dei tipi di interazioni che i potenziali clienti possono avere, sono disponibili fino a tre modi [!DNL Marketo Measure] è in grado di rilevare un’interazione e creare un punto di contatto per rappresentarla.
+
+>[!IMPORTANT]
+>
+>[!DNL Marketo Measure] genera un solo punto di contatto per sessione. Se sono stati compilati più moduli, verrà acquisito solo il primo.
 
 | **Tipo di interazione** | **Esempio** | **Metodo di generazione punto di contatto** |
 |---|---|---|
