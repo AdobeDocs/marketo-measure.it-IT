@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 product: Bizible
 audience: end-user
-user-guide-title: "[!DNL Marketo Measure] Guida"
+user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: "[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda."
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
@@ -189,7 +189,7 @@ ht-degree: 3%
       + [[!DNL Marketo Measure] Panoramica dei report 101](marketo-measure-salesforce-reporting/marketo-measure-reports/marketo-measure-101-reports-overview.md)
       + [Opportunità per canale di marketing](marketo-measure-salesforce-reporting/marketo-measure-reports/opportunities-by-marketing-channel.md)
       + [Opportunità perdute chiuse per canale di marketing](marketo-measure-salesforce-reporting/marketo-measure-reports/closed-lost-opportunities-by-marketing-channel.md)
-      + [[!UICONTROL Leads with Buyer Touchpoints] Rapporto](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
+      + [[!UICONTROL Leads with Buyer Touchpoints] Report](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
       + [Generazione di rapporti sulle opportunità con o senza punti di contatto per l’attribuzione dell’acquirente](marketo-measure-salesforce-reporting/marketo-measure-reports/reporting-on-opportunities-with-or-without-buyer-attribution-touchpoints.md)
       + [Record duplicati nel rapporto personale](marketo-measure-salesforce-reporting/marketo-measure-reports/duplicate-records-in-my-report.md)
    + Funzionalità aggiuntive {#additional-functionality}
