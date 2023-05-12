@@ -2,16 +2,16 @@
 description: Gestione del dominio - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Gestione dei domini
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 148cc203f1fd2a3b90771f2223bbacacdcfad7b0
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
 # Gestione dei domini {#domain-management}
 
-Per gli inquilini abilitati IMS in esecuzione [!DNL Marketo Measure] nella shell unificata, [!DNL Marketo Measure] fornisce un’interfaccia che consente agli utenti di gestire il proprio elenco di domini. [!DNL Marketo Measure] gli utenti devono prima verificare tutti i domini che desiderano monitorare nel [Adobe Admin Console](https://adminconsole.adobe.com/). Una volta verificati i domini nell’Admin Console, gli utenti possono gestire se [!DNL Marketo Measure] utilizza questi domini per tenere traccia del traffico del sito web.
+Per gli inquilini abilitati IMS in esecuzione [!DNL Marketo Measure] nell’interfaccia Experience Cloud, [!DNL Marketo Measure] fornisce un’interfaccia che consente agli utenti di gestire il proprio elenco di domini. [!DNL Marketo Measure] gli utenti devono prima verificare tutti i domini che desiderano monitorare nel [Adobe Admin Console](https://adminconsole.adobe.com/). Una volta verificati i domini nell’Admin Console, gli utenti possono gestire se [!DNL Marketo Measure] utilizza questi domini per tenere traccia del traffico del sito web.
 
 ## Aggiunta di domini nell’Admin Console {#adding-domains-in-admin-console}
 
