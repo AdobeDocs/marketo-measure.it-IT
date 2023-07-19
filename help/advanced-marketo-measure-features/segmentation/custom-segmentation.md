@@ -3,75 +3,79 @@ unique-page-id: 18874604
 description: Segmentazione personalizzata - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 01be819ccee1b3079b15a748480e9dacf6adb488
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 # Segmentazione personalizzata {#custom-segmentation}
 
-I segmenti consentono di filtrare i dati nel [!DNL Marketo Measure] Dashboard sul ROI per approfondire l’analisi su un set di dati specifico. Ad esempio, un segmento può essere definito per territorio geografico o per un sistema di classificazione.
+I segmenti consentono di filtrare i dati nella [!DNL Marketo Measure] Dashboard ROI per approfondire ulteriormente un set di dati specifico. Ad esempio, un segmento può essere definito per territorio geografico o sistema di scarpate.
 
 **Perché la segmentazione personalizzata?**
 
-La funzione Segmentazione personalizzata consente di filtrare i punti di contatto in base a una categoria e fino a cinque segmenti. A seconda dell’oggetto a cui il Dash del ROI è puntato (Lead o Contatto), puoi creare segmenti in base ai campi presenti nell’oggetto Lead/Contatto. Inoltre, potrai creare segmenti in base a qualsiasi campo trovato nell’oggetto Opportunity.
+La funzione di segmentazione personalizzata consente di filtrare i punti di contatto per una categoria e fino a cinque segmenti. A seconda dell’oggetto a cui punta il trattino ROI (lead o contatto), puoi creare segmenti in base ai campi presenti nell’oggetto lead/contatto. Inoltre, potrai creare segmenti in base a qualsiasi campo trovato nell’oggetto Opportunità.
+
+>[!NOTE]
+>
+>La segmentazione personalizzata consente di filtrare i punti di contatto per categorie (nome filtro) e regole (valori filtro). Il livello 1 ottiene un segmento, il livello 2 e il livello 10.
 
 **Quando è utile la funzione di segmentazione personalizzata?**
 
-La segmentazione personalizzata può essere utilizzata per visualizzare i dati per un particolare tipo di record. Una volta mappata la logica del filtro, dovresti essere in grado di visualizzare nella [!DNL Marketo Measure] Vista a cascata domanda del dashboard: gli stessi dati che visualizzeresti nel tuo CRM.
+La segmentazione personalizzata può essere utilizzata per visualizzare i dati per un particolare tipo di record. Una volta mappata la logica del filtro, dovresti essere in grado di visualizzare nel [!DNL Marketo Measure] Vista cascata della domanda del dashboard: gli stessi dati visualizzati nel CRM.
 
-**Come la configuro?**
+**Come si configura?**
 
-Passaggio 1: determina quali informazioni desideri visualizzare.
+Passaggio 1: determinare quali informazioni si desidera visualizzare.
 
-Prima di utilizzare questa funzione, specifica le informazioni sui punti di contatto in base alle quali desideri filtrare. Ricorda di utilizzare i valori esatti nel CRM per i tipi di record. La configurazione filtrerà i punti di contatto dall’alto verso il basso del funnel di marketing.
+Prima di utilizzare questa funzione, individua le informazioni sui punti di contatto in base alle quali desideri filtrare. Ricorda di utilizzare i valori esatti nel CRM per i tipi di record. La configurazione filtrerà i punti di contatto dalla parte superiore a quella inferiore del funnel di marketing.
 
-Passaggio 2: accedere e individuare la funzione Segmenti.
+Passaggio 2: accedi e individua la funzione Segmenti.
 
 * Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e accedi
-* Sotto la [!UICONTROL My Account] scheda , seleziona [!UICONTROL Settings]
-* Seleziona [!UICONTROL Segments] dalle opzioni sulla barra laterale a sinistra, sotto il [!UICONTROL Reporting] sezione
+* Sotto [!UICONTROL My Account] , seleziona [!UICONTROL Settings]
+* Seleziona [!UICONTROL Segments] dalle opzioni sulla barra laterale a sinistra, sotto [!UICONTROL Reporting] sezione
 
 Passaggio 3: comprendere i componenti.
 
-* Usa questa legenda per capire le varie icone presenti in questa pagina
+* Utilizza questa legenda per comprendere le varie icone presenti in questa pagina.
 
 ![](assets/1.png)
 
-Passaggio 4 - Aggiungere regole di filtro.
+Passaggio 4: Aggiungere Regole Di Filtro.
 
-* Innanzitutto, inserisci il nome della categoria. Tipo di business è un esempio. Al termine, fai clic sul segno di spunta. È necessario immettere un nome per la categoria prima di poter aggiungere segmenti
+* Immettere innanzitutto il nome della categoria. Il tipo di azienda è un esempio. Al termine, fai clic sul segno di spunta. Inserisci un nome per la categoria prima di poter aggiungere segmenti
 * Fai clic sul segno più per aggiungere un segmento
-* Inserisci un nome Segmento. Ad esempio, puoi avere un segmento per Nuove attività, Partner, Rinnovo o Rivendita
+* Immetti un nome per il segmento. Ad esempio, puoi avere un segmento per Nuova azienda, Partner, Rinnovo o Upselling
 
 ![](assets/2.png)
 
-* Fai clic sull’icona più per visualizzare i campi di input della regola. Le opzioni nell’elenco di selezione Campo richiamano i campi direttamente dal CRM
+* Fai clic sull’icona più per visualizzare i campi di input della regola. Le opzioni nell’elenco a discesa Campo estraggono i campi direttamente dal CRM
 
 ![](assets/3.png)
 
 >[!NOTE]
 >
->I campi Formula non possono essere utilizzati all&#39;interno delle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule si calcolano in background e non modificano un record, [!DNL Marketo Measure] impossibile rilevare se un record soddisfa una regola o meno.
+>I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background senza modificare un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
-* L’opzione Valore non è un elenco a discesa e il relativo valore deve essere immesso manualmente. Verifica i valori nella tua organizzazione Salesforce
+* L’opzione Valore non è un elenco a discesa e il suo valore deve essere immesso manualmente. Verifica i valori nell’organizzazione Salesforce
 * Ripeti questo processo per le regole del segmento Opportunità
-* La categoria &quot;Altro&quot; è un segmento predefinito che acquisirà eventuali punti di contatto non definiti. Puoi modificare il nome predefinito del segmento
-* Fai clic sull’icona del cestino per eliminare un’intera categoria o una singola regola all’interno di una categoria. In alternativa, fai clic sull’icona a forma di matita per modificare la categoria o la regola
-* Noterai di avere un pulsante &quot;Save&quot; e un pulsante &quot;Save and Process&quot;. Utilizza il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO una volta verificato che:
+* La categoria &quot;Altro&quot; è un segmento predefinito che acquisirà eventuali punti di contatto non definiti. Puoi modificare il nome del segmento predefinito
+* Fai clic sull’icona del cestino per eliminare un’intera categoria o una singola regola all’interno di una categoria. In alternativa, fai clic sull’icona della matita per modificare la categoria o la regola
+* Sono disponibili un pulsante Salva e un pulsante Elabora. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
 
    * La mappatura è accurata
-   * Hai aggiunto tutti i segmenti che desideri tracciare all’interno di una categoria
-   * Viene attivato il pulsante Salva ed elabora . [!DNL Marketo Measure] per sincronizzare tutti i punti di contatto e applicare le nuove informazioni aggiunte. Questo processo richiede 7 giorni e le regole non possono essere modificate durante questo periodo
+   * Hai aggiunto tutti i segmenti di cui desideri tenere traccia all’interno di una categoria
+   * Il pulsante Salva ed elabora attiva [!DNL Marketo Measure] per sincronizzare tutti i punti di contatto e applicare le nuove informazioni aggiunte. Questo processo richiede 7 giorni e non è possibile modificare le regole durante questo periodo
 
 **_Note aggiuntive:_**
 
-Se le regole non sono impostate sia per Lead/Contatti che per Opportunità, visualizzerai solo una parte dei tuoi dati. Per elaborare, se non si impostano le regole Opportunità, verranno visualizzati solo i dati Lead/Contatto senza le opportunità associate. Lo stesso vale se non si impostano le regole per Lead/Contatti: verranno visualizzate solo le opportunità senza i lead/contatti associati.
+Se le regole non sono impostate sia per lead/contatti che per opportunità, verrà visualizzata solo una parte dei dati. Per approfondire, se non configuri le regole Opportunità, visualizzerai solo i dati di lead/contatti senza le opportunità associate. Lo stesso vale se non si impostano regole per lead/contatti: verranno visualizzate solo le opportunità senza i lead/contatti associati.
 
-Al termine, fai clic su [!UICONTROL Save] prima, controlla tutto e poi fai clic su [!UICONTROL Save and Process]. Ricorda che non potrai modificare le impostazioni per sette giorni al momento del salvataggio e dell&#39;elaborazione, come [!DNL Marketo Measure] sta riformattando i dati in questo momento.
+Al termine, fai clic su [!UICONTROL Save] innanzitutto, verificare tutto e quindi fare clic su [!UICONTROL Save and Process]. Ricorda che non potrai modificare le impostazioni per sette giorni quando esegui il salvataggio ed elabora, come [!DNL Marketo Measure] sta riformattando i dati in questo periodo di tempo.
 
 **Come si salvano i rapporti generati?**
 
-Non puoi salvare i rapporti generati direttamente nell’interfaccia utente. Tuttavia, [!DNL Marketo Measure] salva i nomi dei segmenti nell’URL in modo da poter tenere un record di ciascun rapporto segnalando la pagina.
+Non puoi salvare i rapporti generati direttamente nell’interfaccia utente. Tuttavia, [!DNL Marketo Measure] salva i nomi dei segmenti nell’URL, in modo da poter conservare un record di ciascun rapporto inserendo un segnalibro nella pagina.
