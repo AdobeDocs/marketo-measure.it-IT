@@ -3,9 +3,9 @@ unique-page-id: 18874604
 description: Segmentazione personalizzata - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
-source-git-commit: 01be819ccee1b3079b15a748480e9dacf6adb488
+source-git-commit: 7d037783805567370daa412629d58a5dee175722
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ La funzione di segmentazione personalizzata consente di filtrare i punti di cont
 
 >[!NOTE]
 >
->La segmentazione personalizzata consente di filtrare i punti di contatto per categorie (nome filtro) e regole (valori filtro). Il livello 1 ottiene un segmento, il livello 2 e il livello 10.
+>La segmentazione personalizzata consente di filtrare i punti di contatto per categorie (nome filtro) e regole (valori filtro). I clienti di livello 1 ottengono un segmento, quelli di livello 2 e dieci.
 
 **Quando è utile la funzione di segmentazione personalizzata?**
 
