@@ -1,50 +1,51 @@
 ---
-description: Tecniche consigliate per la mappatura dello stage - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Tecniche consigliate per la mappatura dello stage
+description: Best practice per la mappatura degli stadi - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Best practice per la mappatura degli staging
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: b8388c4f89734f55ec779ef23b75b34b07da6f58
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-# Tecniche consigliate per la mappatura dello stage {#best-practices-for-stage-mapping}
+# Best practice per la mappatura degli staging {#best-practices-for-stage-mapping}
 
 ## Panoramica {#overview}
 
-La sezione Mappatura fase del [!DNL Marketo Measure] delinea le fasi che [!DNL Marketo Measure] richiama automaticamente dal CRM e da qualsiasi fase personalizzata definita se si utilizza il modello di attribuzione personalizzato. La validità del tuo [!DNL Marketo Measure] i dati si basano sul fatto che queste fasi siano state ordinate correttamente in modo che [!DNL Marketo Measure] può capire accuratamente il tuo imbuto e la progressione dei record in tutto detto imbuto.
+La sezione Mappatura fase del [!DNL Marketo Measure] conto delinea le fasi che [!DNL Marketo Measure] estrae automaticamente dal CRM ed eventuali stadi personalizzati definiti se utilizzi il modello di attribuzione personalizzato. La validità del tuo [!DNL Marketo Measure] i dati si basano sul fatto che queste fasi vengano ordinate correttamente in modo che [!DNL Marketo Measure] è in grado di comprendere con precisione il funnel e la progressione dei record in tutto il funnel.
 
-Nella sezione Mappatura fase della [!DNL Marketo Measure] ad esempio, vedrai sia gli stadi attivi che quelli inattivi dal tuo CRM. Ordinate tutte le fasi al meglio delle vostre capacità in allineamento con come il vostro funnel è oggi.
+Nella sezione Mappatura area di visualizzazione della [!DNL Marketo Measure] dell’istanza, visualizzerai le fasi attiva e inattiva dal tuo sistema CRM. Ordina tutte le fasi al meglio delle tue capacità in base a come è oggi il funnel.
 
-Un’ulteriore funzione gestita in questa sezione è Funnel Stages, che consente di aggiungere aree di visualizzazione al funnel senza applicare l’attribuzione. Gli stadi funnel verranno tracciati come punti di contatto e verranno compilati nel campo Posizioni dei punti di contatto nel CRM. Questi stadi funnel saranno rappresentati anche all&#39;interno di varie schede di percorso in [!DNL Marketo Measure] Scoprite.
+Una funzione aggiuntiva gestita in questa sezione sono gli Stadi funnel, che consentono di aggiungere stadi al funnel senza applicare l’attribuzione. Gli stadi funnel verranno tracciati come punti di contatto e popolati nel campo Posizioni punto di contatto nel CRM. Questi stadi funnel saranno anche rappresentati in varie bacheche di percorso in [!DNL Marketo Measure] Scopri.
 
 ## Best practice {#best-practices}
 
-Sia che stiate valutando la Mappatura fase per la prima volta o semplicemente rivedendo l’ordine funnel, è importante tenere a mente le seguenti best practice.
+Sia che stiate valutando la mappatura dello staging per la prima volta o semplicemente rivedendo l&#39;ordine del funnel, è importante tenere a mente le seguenti best practice.
 
 * L&#39;ordine è tutto!
-   * Considerazione [!DNL Marketo Measure] estrae sia le fasi attive che inattive dal CRM, conferma che qualsiasi fase che può essere utilizzata su un lead/contatto o opportunità sono raggruppate e ordinate di conseguenza
-* Quando definisci un’area di visualizzazione personalizzata, assicurati che il tracciamento della cronologia dei campi sia abilitato per qualsiasi campo utilizzato per definire l’area di visualizzazione
-* Non utilizzare un campo formula per definire uno stadio personalizzato
-   * Un campo booleano è una raccomandazione di best practice
-* Nota che la sezione della fase Lead o Contatto è divisa in Lost, Open e Convertito; verificare che le fasi si trovino nella sezione della fase appropriata
-   * Avere una fase nella sezione della fase errata può causare un errore molto grave [!DNL Marketo Measure] dati
-* La sezione della fase Opportunità è divisa in Perdita, Apri e Vinto; verificare che le fasi si trovino nella sezione della fase appropriata
-   * Avere una fase nella sezione della fase errata può causare un errore molto grave [!DNL Marketo Measure] dati sulle entrate o sulle entrate della pipeline
+   * Considerazione [!DNL Marketo Measure] richiama dal CRM le fasi sia attive che inattive; verifica che tutte le fasi che potrebbero essere utilizzate su un lead/contatto o un’opportunità siano raggruppate e ordinate di conseguenza
+* Quando definisci una fase personalizzata, assicurati che il tracciamento della cronologia dei campi sia abilitato per tutti i campi utilizzati per definire la fase
+* Non utilizzare un campo formula per definire una fase personalizzata
+   * Un campo booleano è la best practice consigliata
+* La sezione Fase lead o fase contatto è divisa in Perso, Aperto e Convertito; verificare che le fasi siano nella sezione relativa alla fase appropriata
+   * Se una fase si trova nella sezione di fase errata, è possibile che si verifichino errori [!DNL Marketo Measure] dati
+* La sezione relativa alla fase Opportunità è divisa in Persa, Aperta e Vinta; verificare che le fasi si trovino nella sezione corrispondente
+   * Se una fase si trova nella sezione di fase errata, è possibile che si verifichino errori [!DNL Marketo Measure] dati sui ricavi o sulla pipeline
 * Evita di usare nomi di fase duplicati (il nostro sistema li rileverà e ne rimuoverà automaticamente uno).
+* Per impostare una regola che verifichi la presenza di valori NULL, lasciare vuota la casella di testo del valore.
 
-## Tecniche consigliate per la manutenzione {#best-practices-for-maintenance}
+## Best practice per la manutenzione {#best-practices-for-maintenance}
 
-Esaminare la mappatura della fase una volta all’anno garantirà che i dati relativi alle opportunità in [!DNL Marketo Measure] è accurato e aggiornato.
+Rivedere la mappatura dello staging una volta all’anno assicurerà che i dati dell’opportunità in [!DNL Marketo Measure] è accurato e aggiornato.
 
-Altri motivi per cui potrebbe essere attivata una revisione di Stage Mapping sono...
+Altri motivi che potrebbero attivare una revisione della mappatura dello staging includono...
 
-* Fatturato del team di marketing
-* Qualsiasi modifica alle tue fasi CRM
+* Fatturato del team marketing
+* Eventuali modifiche alle fasi del CRM
 * Aggiornamenti al funnel della tua organizzazione
-* Visualizzazione di dati di ricavi errati nel [!DNL Marketo Measure] reporting
+* Visualizzazione dei dati errati dei ricavi nel tuo [!DNL Marketo Measure] reportistica
 
 >[!MORELIKETHIS]
 >
->[Differenza tra le fasi funnel e le fasi del modello personalizzato](/help/advanced-marketo-measure-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)
+>[La differenza tra gli stadi funnel e gli stadi del modello personalizzato](/help/advanced-marketo-measure-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)
