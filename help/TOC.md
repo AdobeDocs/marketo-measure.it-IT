@@ -4,7 +4,7 @@ product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: "[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda."
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: faa04b417c5f0512d294bf2483aef3061b10d621
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 3%
@@ -81,13 +81,13 @@ ht-degree: 3%
       + [Impostazione canale personalizzato offline](channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
       + [Sincronizzazione campagna personalizzata](channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
       + [Configurazioni per più tipi di record campagna](channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
-         + Processi obsoleti {#deprecated-processes}
-            + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
-            + [Date di sincronizzazione della campagna](channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
-            + [Creazione di una vista a elenco campagne per [!DNL Salesforce] Campagne](channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
-            + [Campagne Dynamics ed elenchi marketing](channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
-            + [Sincronizzazione dei dati cronologici](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
-            + [Sincronizzazione delle campagne offline](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+      + Processi obsoleti {#deprecated-processes}
+         + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
+         + [Date di sincronizzazione della campagna](channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
+         + [Creazione di una vista a elenco campagne per [!DNL Salesforce] Campagne](channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+         + [Campagne Dynamics ed elenchi marketing](channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
+         + [Sincronizzazione dei dati cronologici](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
+         + [Sincronizzazione delle campagne offline](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
 + Connessioni API {#api-connections}
    + Utilizzo [!DNL Marketo Measure]Connessioni API {#utilizing-marketo-measures-api-connections}
       + [Piattaforme di annunci integrate](api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md)
