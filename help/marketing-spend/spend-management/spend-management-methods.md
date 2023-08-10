@@ -3,7 +3,7 @@ description: Metodi di gestione della spesa - [!DNL Marketo Measure] - Documenta
 title: Metodi di gestione della spesa
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Ogni [!DNL Marketo Measure] l’account ha accesso a una funzione denominata [Si
 
 Una volta abilitata, questa funzione richiama automaticamente la spesa da qualsiasi campagna/programma di gestione delle relazioni con i clienti che soddisfa i seguenti criteri
 
-i. [!DNL Marketo Measure] cerca innanzitutto di verificare se la campagna/il programma sta creando punti di contatto, da un [Regola di sincronizzazione della campagna](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) creato o un corrispondente [Regola di sincronizzazione programmi](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) che è stato creato o [Abilita valore punti di contatto acquirenti](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) è &quot;Includi tutti i membri della campagna&quot; o &quot;Includi i membri della campagna &quot;Con risposta&quot;.&quot;
+i. [!DNL Marketo Measure] cerca innanzitutto di verificare se la campagna/il programma sta creando punti di contatto, da un [Regola di sincronizzazione della campagna](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) creato o un corrispondente [Regola di sincronizzazione programmi](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) che è stato creato o [Abilita valore punti di contatto acquirenti](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) è &quot;Includi tutti i membri della campagna&quot; o &quot;Includi i membri della campagna &quot;Con risposta&quot;.&quot;
 
 ii. È necessario inserire una data di inizio nella campagna/nel programma
 

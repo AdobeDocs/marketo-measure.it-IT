@@ -4,7 +4,7 @@ description: Impostazione canale personalizzato offline - [!DNL Marketo Measure]
 title: Impostazione canale personalizzato offline
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Eventuali tipi di campagna esistenti devono essere inclusi nella mappa del canal
 
 Prenditi del tempo per entrare in [!DNL Salesforce] per determinare il numero e la natura dei tipi di record esistenti che si desidera includere e se è necessario creare ulteriori campagne in base alle informazioni riportate sopra. Una volta completate tutte le informazioni necessarie, puoi procedere al caricamento.
 
-Ulteriori informazioni su [sincronizzazione offline [!DNL Salesforce] Campagne con [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md).
+Ulteriori informazioni su [sincronizzazione offline [!DNL Salesforce] Campagne con [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md).
 
 ## Gestione delle campagne SFDC per le attività di marketing online {#handling-sfdc-campaigns-for-online-marketing-efforts}
 
