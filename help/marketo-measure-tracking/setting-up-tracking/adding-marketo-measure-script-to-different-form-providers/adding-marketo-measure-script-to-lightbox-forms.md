@@ -1,34 +1,35 @@
 ---
 unique-page-id: 18874519
-description: Aggiunta [!DNL Marketo Measure] Script su Forms Lightbox - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Aggiunta [!DNL Marketo Measure] Script to Lightbox Forms
+description: Aggiunta [!DNL Marketo Measure] Script per Lightbox Forms - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Aggiunta [!DNL Marketo Measure] Script per Lightbox Forms
 exl-id: fa9ce480-fc4f-4abd-8555-dbb74849747e
-source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
+feature: Tracking
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# Aggiunta [!DNL Marketo Measure] Script to Lightbox Forms {#adding-marketo-measure-script-to-lightbox-forms}
+# Aggiunta [!DNL Marketo Measure] Script per Lightbox Forms {#adding-marketo-measure-script-to-lightbox-forms}
 
-Scopri come aggiungere correttamente il [!DNL Marketo Measure] JavaScript per un modulo all’interno di una Lightbox.
+Scopri come aggiungere correttamente il [!DNL Marketo Measure] JavaScript in un modulo all’interno di un lightbox.
 
-Una Lightbox apre un modulo davanti al contenuto quando il visitatore esegue un’azione specifica (ad esempio, facendo clic su una particolare parte della pagina, trascorrendo un certo periodo di tempo sulla pagina, ecc.). In genere chiediamo solo di avere [!DNL Marketo Measure] JavaScript inserito nella parte superiore della pagina di destinazione, ma per i moduli all’interno di una Lightbox c’è un ulteriore passaggio necessario.
+Una lightbox apre un modulo di fronte al contenuto quando il visitatore esegue un’azione specifica (ad esempio, facendo clic su una parte specifica della pagina, trascorrendo un determinato periodo di tempo sulla pagina e così via). In genere si richiede di avere [!DNL Marketo Measure] JavaScript posizionato nella parte superiore della pagina di destinazione, ma per i moduli all’interno di una lightbox è necessario un ulteriore passaggio.
 
-Poiché un modulo all&#39;interno di una Lightbox è fondamentalmente una forma all&#39;interno di un iFrame, avremo bisogno del nostro script posizionato all&#39;interno di quell&#39;iFrame.
+Poiché un modulo all’interno di un lightbox è fondamentalmente un modulo all’interno di un iFrame, sarà necessario inserire lo script in tale iFrame.
 
-Per prima cosa, individua l’iFrame come [!UICONTROL lightbox] Forma vite in.
+Per prima cosa, individua l’iFrame [!UICONTROL lightbox] La forma vive in.
 
 ![](assets/1.png)
 
-Quindi, inserisci il [!DNL Marketo Measure] JavaScript all’interno dell’iFrame.
+Quindi, inserisci [!DNL Marketo Measure] JavaScript all’interno dell’iFrame.
 
 ![](assets/2.png)
 
-Infine, quando viene aggiunto JavaScript, ti consigliamo di convalidare che gli invii dei moduli vengano tracciati seguendo queste indicazioni:
+Infine, quando viene aggiunto JavaScript, ti invitiamo a verificare che gli invii dei moduli vengano tracciati seguendo queste istruzioni:
 
 1. Copia l’URL della pagina di destinazione contenente [!UICONTROL lightbox] modulo.
 1. Apri un browser in incognito e incolla l’URL.
 1. Invia il modulo utilizzando un indirizzo e-mail univoco.
-1. Conferma che il test sia stato tracciato controllando il CRM per l’indirizzo e-mail univoco utilizzato, assicurati che i dati del punto di contatto si popolino.
+1. Conferma che il test sia stato tracciato controllando nel CRM l’indirizzo e-mail univoco utilizzato, assicurati che i dati del punto di contatto vengano popolati.

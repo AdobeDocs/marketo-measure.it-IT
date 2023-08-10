@@ -3,7 +3,8 @@ unique-page-id: 18874660
 description: Domande frequenti - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Domande frequenti
 exl-id: f1896bf8-2216-427e-ac3e-98d87efede76
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -18,88 +19,88 @@ ht-degree: 0%
 
 Come oggi, i risultati delle query vengono salvati nell’URL e possono essere salvati o condivisi con l’URL copiato.
 
-**Come si utilizzano gli intervalli di date predefiniti come Ultimo anno o Trimestre corrente?**
+**Come si utilizzano intervalli di date predefiniti, ad esempio Ultimo anno o Trimestre corrente?**
 
-Invece di utilizzare intervalli di date predefiniti, ora è disponibile una maggiore flessibilità. È ancora possibile impostare l&#39;Anno scorso, ma è possibile selezionare Ultimo 1 anno, che è l&#39;ultimo 365 giorni da oggi o Ultimo 1 Anno completo, che è l&#39;ultimo anno completo dall&#39;1/1 al 12/31. Un altro buon utilizzo del nuovo selettore data è quello di impostare un intervallo di date relativo, che tenderà a fornire una finestra temporale continua per una data in movimento.
+Invece di utilizzare intervalli di date predefiniti, ora abbiamo aggiunto la flessibilità delle date. Puoi ancora impostare Ultimo anno, ma puoi selezionare Ultimo anno 1 che è gli ultimi 365 giorni da oggi o Ultimo anno completo che è l’ultimo anno completo da 1/1 a 12/31. Un altro buon utilizzo del nuovo selettore di date è quello di impostare un intervallo di date relativo, che tenderà a fornire un intervallo di tempo continuo per una data mobile.
 
-**Come posso ottenere dati CPL o CPC?**
+**Come si ottengono i dati CPL o CPC?**
 
-Queste metriche si trovano solo sulla scheda a pagamento.
+Queste metriche sono disponibili solo sulla scheda Paid Media.
 
-**Perché non visualizzi Visualizzazioni pagina sulla scheda Crescita?**
+**Perché non mostri le Visualizzazioni pagina sulla bacheca Crescita?**
 
-Una delle caratteristiche della scheda Crescita è che non è possibile raggruppare i grafici di tendenza per una dimensione, come Canale o Campagna. Non disponiamo di tali dati a livello di Visualizzazione pagina, in quanto le Visualizzazioni pagina non hanno sempre un’origine come Canale o Campagna perché si verificano nel mezzo delle visite web. Utilizza File multimediali a pagamento o Traffico web per visualizzare i dati Visualizzazioni pagina.
+Una delle caratteristiche della bacheca Crescita è che non è possibile raggruppare i grafici di tendenza per una dimensione, come Canale o Campagna. Non disponiamo di tali dati a livello di visualizzazione pagina, in quanto le visualizzazioni di pagina non hanno sempre un’origine come Canale o Campagna, perché si verificano nel mezzo di visite web. Utilizza il traffico web o a pagamento per visualizzare i dati delle visualizzazioni di pagina.
 
-**Quando modifico il raggruppamento, i totali non corrispondono sempre alla stessa quantità. Perché?**
+**Quando modifico il raggruppamento, i totali non equivalgono sempre allo stesso importo. Perché?**
 
-I valori non esistono per ogni singola gerarchia di dati perché la gerarchia non è sempre un flusso di taglio trasparente. Ad esempio, se i costi vengono segnalati o importati da un provider di annunci, il costo totale per Channel 1 potrebbe essere di $ 10.000, ma per singola campagna è stato effettivamente riportato solo un totale di $ 5.500, quindi quando il raggruppamento cambia tra Channel e Campaign, i totali variano.
+Non esistono valori per ogni singola gerarchia di dati perché la gerarchia non è sempre un flusso di taglio chiaro. Ad esempio, sia che i costi vengano autodichiarati o importati da un provider di annunci, il costo totale per Canale 1 potrebbe essere di 10.000 dollari ma per singola campagna, è stato effettivamente segnalato solo un totale di 5.500 dollari, quindi quando il raggruppamento cambia tra Canale e Campagna, i totali variano.
 
-**Cosa significa &quot;corrisponde a un attributo utente&quot; negli operatori Filter?**
+**Che cos’è &quot;corrisponde a un attributo utente&quot; negli operatori di filtro?**
 
-Gli attributi utente vengono applicati agli utenti come ID business, nome o cognome, ma poiché i nostri utenti siete voi (i nostri clienti) e non i vostri clienti, gli attributi utente non possono essere utilizzati nel [!DNL Marketo Measure Discover] esperienza. Non esitare a ignorare questa opzione. Stiamo lavorando a una migliore esperienza di filtro personalizzata che rimuoverà i filtri che non si applicano ai nostri clienti.
+Gli attributi utente vengono applicati a utenti quali ID business, nome o cognome. Poiché tuttavia si tratta di utenti (clienti) e non di clienti, gli attributi utente non possono essere utilizzati in [!DNL Marketo Measure Discover] esperienza. Non esitare a ignorare questa opzione. Stiamo lavorando a una migliore esperienza di filtro personalizzata che rimuoverà i filtri non applicabili ai nostri clienti.
 
-**Perché alcuni intervalli di date predefiniti passano attraverso il primo del mese successivo?**
+**Come mai alcuni intervalli di date predefiniti attraversano il primo del mese successivo?**
 
-Anche se l’intervallo di date non è sempre intuitivo, l’interfaccia utente del filtro predefinito dispone dell’utile testo &quot;prima&quot; che corrisponde alla data di fine, questo ti dovrebbe aiutare a ricordare che la data di fine utilizzata deve essere 1 giorno al di fuori dell’intervallo desiderato.
+Anche se l’intervallo di date non è sempre intuitivo, l’interfaccia utente filtro predefinita include un utile testo &quot;prima&quot; che corrisponde alla data di fine; questo dovrebbe ricordare all’utente che la data di fine utilizzata dovrebbe essere 1 giorno al di fuori dell’intervallo desiderato.
 
 **Quale modello di attribuzione viene utilizzato per lead e contatti?**
 
-I punti di contatto dell’acquirente mappati su Lead e contatti consentono di misurare fino al tocco Creazione lead, pertanto si consiglia il modello Primo contatto, Creazione lead e A forma di U. Se si modifica il modello di attribuzione in W-Shaped o Full Path, viene applicato automaticamente un modello a forma di U per lead e contatti.
+I punti di contatto dell’acquirente mappati su lead e contatti misurano fino al contatto di creazione del lead, pertanto si consiglia di utilizzare i modelli Primo contatto, Creazione di lead e A forma di U. Se si modifica il modello di attribuzione impostandolo su A forma di W o Percorso completo, viene automaticamente applicato un modello a forma di U per lead e contatti.
 
-**Perché le mie visite, visite univoche e i riquadri Forms sono vuoti sulla Crescita?**
+**Perché le sezioni Visite, Visite univoche e Forms sono vuote nella bacheca Crescita?**
 
-Se questi riquadri sono uguali a 0 o vuoti nella visualizzazione, significa che non è stato effettuato il provisioning dei riquadri per il tuo account. In caso di domande, contatta il tuo Success Manager.
+Se nella vista questi riquadri sono vuoti o uguali a 0, significa che non è stato eseguito il provisioning dei riquadri per il tuo account. Per eventuali domande relative a questo argomento, contatta il tuo Success Manager.
 
-**Per i lead nel tempo e i contatti nel tempo, quale è il riferimento al conteggio?**
+**Per i lead nel tempo e i contatti nel tempo, a cosa fa riferimento il conteggio?**
 
-Utilizza i conteggi dei punti di contatto, distribuiti in base al modello di attribuzione selezionato. Sarà il totale dei lead e dei conteggi distribuiti nel tempo. Non è un conteggio univoco.
+Utilizza i conteggi dei punti di contatto, distribuiti in base al modello di attribuzione selezionato. Si tratta del totale di lead e conteggi distribuiti nel tempo. Non è un conteggio univoco.
 
-**Il grafico per gli URL dei moduli per canale in Content Marketing mostra visite web o riempimenti dei moduli?**
+**Il grafico relativo agli URL dei moduli per canale nel marketing dei contenuti mostra visite web o riempimenti di moduli?**
 
-Sono solo riempimenti dei moduli tracciati.
+Questi sono solo riempimenti modulo tracciati.
 
-**Qual è il vantaggio di Discover rispetto a Measure?**
+**Quali vantaggi offre Discover rispetto a Measure?**
 
-[!DNL Marketo Measure Discover] fornisce funzionalità migliori, ad esempio drill-through, e filtri migliori, come canali secondari e canali. Stiamo anche tramontando Misura un po&#39; di tempo nel 2019.
+[!DNL Marketo Measure Discover] offre funzionalità migliori, ad esempio drill-through, e un filtro migliore, ad esempio Sottocanali e Canali. Siamo anche sunsetting Misura un po&#39; di tempo nel 2019.
 
-**In Misura, sono stato in grado di filtrare per gruppo di annunci e account quando vengono filtrati negli account di annunci - come posso vedere questo in Discover?**
+**In Measure, ho potuto filtrare per gruppo di annunci e account quando sono filtrati in account di annunci - come posso vedere questo in Discover?**
 
-Questo sarà disponibile solo con la scheda a pagamento.
+Questo sarà disponibile solo con la scheda Paid Media.
 
-**In che modo l’Funnel coorte è diverso dall’Funnel Passport?**
+**In che modo il funnel di coorte è diverso da Passport Funnel?**
 
-L’imbuto per coorte ti consente di controllare il tasso di conversione dell’imbuto di vendita, misurando l’impatto tra le varie fasi. È possibile selezionare l’area di visualizzazione da misurare utilizzando i filtri, che consentono di visualizzare il tasso di conversione da tale fase a tutte le fasi successive. La scheda Passport mostra tutti i lead/contatti e le opportunità che hanno attraversato ogni fase della pipeline entro un determinato intervallo di tempo.
+Il funnel di coorte ti consente di esaminare il tasso di conversione del funnel di vendita e di misurare l’impatto tra le fasi. È possibile selezionare la fase da misurare utilizzando i filtri, che consentono di visualizzare il tasso di conversione da quella fase a tutte le fasi successive. La bacheca Passport mostra tutti i lead/contatti e le opportunità che hanno attraversato ogni fase della pipeline in un determinato intervallo di tempo.
 
-**Come vengono determinati i contenuti della scheda a pagamento?**
+**Come viene determinato il contenuto della bacheca Supporti a pagamento?**
 
-Su ciascuno dei riquadri della bacheca, abbiamo aggiunto un filtro per includere solo i dati in cui disponiamo di un Ad Provider noto da Facebook, Google, Bing, LinkedIn o Doubleclick, poiché la nostra integrazione ci consente di estrarre i dati dell&#39;annuncio da tali fonti. Inoltre, abbiamo aggiunto un nome sfocato che corrisponde a Canali e Sottocanali per Visualizzazione, Ricerca a pagamento, Social a pagamento, PPC, SEM, Mobile a pagamento, Twitter a pagamento, Adroll, Terminus, Madison Logic, Madisonlogic e Demandbase.
+In ciascuna sezione della bacheca, abbiamo aggiunto un filtro per includere solo i dati in cui disponiamo di un provider di annunci noto da Facebook, Google, Bing, LinkedIn o Doubleclick, poiché la nostra integrazione ci consente di estrarre i dati dell’annuncio da tali sorgenti. Inoltre, abbiamo aggiunto un nome fuzzy corrispondente a Canali e Sottocanali per Display, Paid Search, Paid Social, PPC, SEM, Paid Mobile, Paid Twitter, Adroll, Terminus, Madison Logic, Madisonlogic e Demandbase.
 
-**Qual è la differenza tra visite e visite univoche?**
+**Qual è la differenza tra Visite e Visite univoche?**
 
-Le visite univoche sono un sottoinsieme di visite. Mentre le visite sono un conteggio di ogni visita del sito, le Visite univoche sono cookie unici di quelle visite del sito. Una persona può tenere conto di più visite univoche se restituisce con un diverso identificatore di cookie.
+Visite univoche è un sottoinsieme di Visite. Mentre Visite è un conteggio di ogni visita del sito, Visite univoche sono cookie univoci di tali visite del sito. Una persona può rendere conto di più visite univoche se restituisce un identificatore di cookie diverso.
 
-**Conteggia i punti di contatto dell’acquirente o dei punti di contatto dell’attribuzione dell’acquirente?**
+**I punti di contatto sono conteggiati come punti di contatto dell’acquirente o come punti di contatto di attribuzione dell’acquirente?**
 
-È un conteggio di ciò che consideriamo punti di contatto &quot;grezzi&quot;, o &quot;punti di contatto utente&quot;, in cui è un aggregato di entrambi, oltre a quelli che non hanno portato a un punto di contatto sul lead/contatto o opportunità.
+Si tratta di un conteggio di quelli che consideriamo punti di contatto &quot;grezzi&quot;, o &quot;punti di contatto dell’utente&quot;, in cui si tratta di un aggregato di entrambi, più i contatti che non hanno generato un punto di contatto su lead/contatto o opportunità.
 
-**Quando filtro per URL, perché il costo per riquadri mostra solo $ 0,00?**
+**Quando si filtra in base all&#39;URL, perché nelle sezioni Costo per viene visualizzato solo $0,00?**
 
 Questo è il comportamento previsto a causa del fatto che non abbiamo costi segmentati per URL, quindi non è applicabile in quello scenario.
 
 **Perché non vengono visualizzate tutte le opzioni Segmento per i filtri Categoria?**
 
-Nel filtro Segmenti verranno visualizzati solo i Segmenti con record validi mappati ad essi. Ad esempio, se non ci sono record con il segmento &quot;Altro&quot;, allora &quot;Altro&quot; non verrà visualizzato come opzione.
+Solo i segmenti a cui sono mappati record validi verranno visualizzati nel filtro Segmenti. Ad esempio, se non ci sono record con il segmento &quot;Altro&quot;, &quot;Altro&quot; non verrà visualizzato come opzione.
 
 **Does [!DNL Marketo Measure Discover] supporta il set di caratteri GB18030?**
 
 Discover utilizza strumenti di terze parti e al momento non supporta il set di caratteri GB18030.
 
-**Quando si carica Discover, perché viene visualizzato un errore 401 che indica &quot;Non sei autenticato per visualizzare questa pagina&quot;?**
+**Quando si carica Discover, perché viene visualizzato un errore 401 che indica &quot;Non si è autenticati per visualizzare questa pagina&quot;?**
 
-[!DNL Marketo Measure Discover] richiede la corretta visualizzazione dei cookie di terze parti. Per utilizzare Discover, abilita i cookie di terze parti nel browser e aggiorna la pagina.
+[!DNL Marketo Measure Discover] richiede che i cookie di terze parti vengano visualizzati correttamente. Per utilizzare Discover, abilita i cookie di terze parti nel browser e aggiorna la pagina.
 
 >[!NOTE]
 >
->Alcuni browser, tra cui Chrome in Incognito, disattivano i cookie di terze parti per impostazione predefinita.
+>Per impostazione predefinita, alcuni browser, tra cui Chrome in Incognito, disabilitano i cookie di terze parti.
 
 ![](assets/faq-1.png)

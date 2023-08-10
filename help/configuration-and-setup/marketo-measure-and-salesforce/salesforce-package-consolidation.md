@@ -2,7 +2,8 @@
 description: '[!DNL Salesforce] Consolidamento dei pacchetti - [!DNL Marketo Measure] - Documentazione del prodotto'
 title: '[!DNL Salesforce] Consolidamento dei pacchetti'
 exl-id: f1bd5dcb-d021-4140-b6b9-cdb40e566c4b
-source-git-commit: dd3795288b1d579b078a32c78c9f08fd67a5f0e1
+feature: Salesforce
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%

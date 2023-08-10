@@ -1,22 +1,23 @@
 ---
 unique-page-id: 18874777
 description: Impostazione modello personalizzato - Abilita tracciamento cronologia campi - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Impostazione del modello personalizzato - Abilita tracciamento cronologia campi
+title: Impostazione modello personalizzato - Abilita tracciamento cronologia campi
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+feature: Custom Models
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
-# Impostazione del modello personalizzato: Abilita tracciamento cronologia campi {#custom-model-setup-enable-field-history-tracking}
+# Impostazione modello personalizzato: abilita tracciamento cronologia campi {#custom-model-setup-enable-field-history-tracking}
 
 ## Perché e quando abilitare il tracciamento della cronologia dei campi {#why-and-when-to-enable-field-history-tracking}
 
-Se decidi di includere un campo personalizzato come fase nel modello di attribuzione personalizzato, tieni traccia della cronologia dei campi **deve essere abilitato** per questo campo. L’abilitazione del tracciamento della cronologia dei campi consentirà [!DNL Salesforce] per tenere traccia di ogni modifica del campo personalizzato creando un record nella tabella Tracking della cronologia. [!DNL Marketo Measure] può scaricare la tabella e utilizzare queste informazioni per misurare l’ora e il giorno in cui si è verificata una &quot;transizione&quot;. Senza tracciamento della cronologia dei campi, [!DNL Marketo Measure] non è in grado di tenere traccia delle modifiche relative a questo campo.
+Se decidi di includere un campo personalizzato come fase nel modello di attribuzione personalizzato, verifica della cronologia dei campi **deve essere abilitato** per questo campo. L’abilitazione del tracciamento della cronologia dei campi consentirà [!DNL Salesforce] per tenere traccia delle modifiche apportate al campo personalizzato, creare un record nella tabella Tracciamento cronologia. [!DNL Marketo Measure] può scaricare quella tabella e utilizzare queste informazioni per misurare il giorno e l’ora in cui si è verificata una &quot;transizione&quot;. Senza tracciamento cronologia campi, [!DNL Marketo Measure] non è in grado di tenere traccia delle modifiche relative a questo campo.
 
-Solo se [!UICONTROL Lead Status] Per gli stadi opportunità utilizzati nel modello personalizzato, non è necessario attivare il tracciamento della cronologia dei campi, perché verrà tracciato automaticamente come transizione di fase.
+Solo se [!UICONTROL Lead Status] o nel modello personalizzato vengono utilizzati gli stadi dell’opportunità, non è necessario attivare il tracciamento della cronologia dei campi, in quanto verrà tracciato automaticamente come transizione dell’area di visualizzazione.
 
 Per abilitare il tracciamento della cronologia dei campi, segui le istruzioni riportate di seguito.
 
@@ -24,14 +25,14 @@ Per abilitare il tracciamento della cronologia dei campi, segui le istruzioni ri
 
 >[!NOTE]
 >
->È necessario essere un amministratore di sistema per apportare queste modifiche ai campi dell’oggetto Lead/Contact/Opportunity.
+>Per apportare queste modifiche ai campi dell&#39;oggetto Lead/Contatto/Opportunità, è necessario essere amministratore di sistema.
 
-1. Passa all’oggetto in cui si trova il campo personalizzato e fai clic sul pulsante **[!UICONTROL Set History Tracking]** pulsante .
+1. Vai all’oggetto in cui si trova il campo personalizzato e fai clic sul pulsante **[!UICONTROL Set History Tracking]** pulsante.
 
    ![](assets/1.png)
 
-1. Seleziona i campi sui quali desideri tenere traccia delle modifiche.
+1. Seleziona i campi in cui desideri tenere traccia delle modifiche.
 
    ![](assets/2.png)
 
-[!DNL Marketo Measure] può reimportare un record solo se rileva che il record è stato modificato di recente. I campi Formula tecnicamente non modificano un record quando viene modificato poiché esegue il calcolo in background. Sono stati riscontrati problemi a causa dei quali una regola viene ignorata [!DNL Marketo Measure] non ha visto la modifica del record, quindi si consiglia di **non utilizzare i campi formula nelle definizioni delle regole**. La soluzione consiste nel creare un campo di testo e utilizzare un flusso di lavoro per popolare tale campo con il valore o il calcolo appropriati ogni volta che il record viene modificato o si adatta ai criteri. Questo richiede che tutti i record vengano modificati in modo che il flusso di lavoro possa funzionare retroattivamente sui vecchi record.
+[!DNL Marketo Measure] può reimportare un record solo se vede che è stato modificato di recente. I campi formula tecnicamente non modificano un record quando viene modificato, in quanto il calcolo viene eseguito in background. Si sono verificati dei problemi in cui una regola viene saltata perché [!DNL Marketo Measure] non ha visto la modifica del record, pertanto si consiglia di **non utilizzare i campi formula nelle definizioni delle regole**. La soluzione consiste nel creare un campo di testo e utilizzare un flusso di lavoro per compilare tale campo con il valore o il calcolo corretto ogni volta che il record viene modificato o soddisfa i criteri. Questo richiede che tutti i record vengano modificati in modo che il flusso di lavoro possa funzionare retroattivamente sui record precedenti.

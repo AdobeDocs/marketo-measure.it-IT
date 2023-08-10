@@ -1,24 +1,25 @@
 ---
 unique-page-id: 18874757
-description: Aggiunta [!DNL Marketo Measure] JavaScript in [!DNL Pardot] - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Aggiunta [!DNL Marketo Measure] JavaScript in [!DNL Pardot]
+description: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot] - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
-source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
+feature: Tracking
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-# Aggiunta [!DNL Marketo Measure] JavaScript in [!DNL Pardot] {#adding-marketo-measure-javascript-to-pardot}
+# Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot] {#adding-marketo-measure-javascript-to-pardot}
 
-[!DNL Pardot] i moduli richiedono una gestione aggiuntiva all’interno del modello di modulo, oltre a inserire script sul sito per [!DNL Marketo Measure] per riconoscere gli invii dei moduli. Il processo è semplice; richiede solo il posizionamento [!DNL Marketo Measure] script di tracciamento nel [!DNL Pardot] modello di modulo.
+[!DNL Pardot] i moduli richiedono una gestione aggiuntiva all&#39;interno del modello di modulo, oltre all&#39;inserimento di script nel sito per [!DNL Marketo Measure] per riconoscere gli invii di moduli. Il processo è semplice e richiede solo l&#39;inserimento [!DNL Marketo Measure] script di tracciamento in [!DNL Pardot] modello di modulo.
 
 ## Istruzioni dettagliate {#step-by-step-instructions}
 
-Una volta effettuato l’accesso al [!DNL Pardot] , segui i passaggi seguenti.
+Dopo aver effettuato l’accesso a [!DNL Pardot] account, segui i passaggi seguenti.
 
-1. Passa a **[!UICONTROL Marketing]**.
+1. Accedi a **[!UICONTROL Marketing]**.
 
 1. Fai clic su **[!UICONTROL Landing Pages]**.
 
@@ -26,19 +27,19 @@ Una volta effettuato l’accesso al [!DNL Pardot] , segui i passaggi seguenti.
 
    ![](assets/1-3.png)
 
-1. Determina il modello di layout appropriato e fai clic su **[!UICONTROL Edit]** a destra.
+1. Determinare il modello di layout appropriato e fare clic su **[!UICONTROL Edit]** a destra.
 
    ![](assets/2-1.png)
 
-1. Copiare e incollare [!DNL Marketo Measure] Codice JavaScript subito prima del tag di intestazione di chiusura nella pagina HTML.
+1. Copiare e incollare [!DNL Marketo Measure] Codice JavaScript immediatamente prima del tag di intestazione close nella pagina HTML.
 
    `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
-1. Segui questi passaggi per tutti i modelli di layout di pagina di destinazione applicabili.
+1. Segui questi passaggi per tutti i modelli di layout della pagina di destinazione applicabili.
 
-1. Assicurati che [!DNL Marketo Measure] JavaScript si trova anche nella pagina del sito generale.
+1. Assicurati che le [!DNL Marketo Measure] JavaScript si trova anche nella pagina generale del sito.
 
-   All&#39;interno di [!DNL Pardot] Modello di layout, il codice avrà un aspetto simile al seguente:
+   All&#39;interno del [!DNL Pardot] Modello di layout, il codice sarà simile al seguente:
 
 ```text
 <script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>
@@ -48,14 +49,14 @@ Una volta effettuato l’accesso al [!DNL Pardot] , segui i passaggi seguenti.
 
 ## Note aggiuntive {#additional-notes}
 
-Se la [!DNL Pardot] IFrame ha il seguente tag HTML:
+Se il [!DNL Pardot] IFrame ha il seguente tag HTML:
 
 `<base href="http://go.pardot.com">`
 
-_E_ IFrame stesso si trova in una pagina protetta (HTTPS) invece di una pagina non protetta (HTTP), quando si tenta di caricare il proprio script sul [!DNL Pardot] IFrame, il browser cercherà di caricare una versione HTTP del nostro script su una pagina HTTPS che avrà esito negativo e ci impedirà di tenere traccia. La soluzione è aggiornare lo script sul [!DNL Pardot] IFrame per caricare la versione sicura del nostro script:
+_E_ IFrame si trova effettivamente su una pagina protetta (HTTPS) invece di una pagina non protetta (HTTP), quando si tenta di caricare lo script sul [!DNL Pardot] IFrame, il browser tenterà di caricare una versione HTTP del nostro script su una pagina HTTPS che avrà esito negativo e ci impedirà di tracciare. La soluzione consiste nell&#39;aggiornare lo script [!DNL Pardot] IFrame per caricare la versione protetta del nostro script:
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
-Anche in quest’area possono essere già presenti altri frammenti di codice di tracciamento, ad esempio un [!DNL Google Analytics] codice. Assicurati di separarli con un punto e virgola `;` e un singolo spazio, come mostrato in questo esempio:
+In quest’area potrebbero essere già presenti altri snippet di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Assicurarsi di separarli con un punto e virgola `;` e un singolo spazio, come mostrato in questo esempio:
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>; <script async="true" type="othercode_example" src="otherfile_example.js" ></script>`

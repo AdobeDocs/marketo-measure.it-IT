@@ -1,18 +1,19 @@
 ---
 unique-page-id: 18874755
 description: Aggiunta [!DNL Marketo Measure] a [!DNL Marketo] Pagine di destinazione - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Aggiunta [!DNL Marketo Measure] alle pagine di destinazione Marketo
+title: Aggiunta [!DNL Marketo Measure] alle pagine di destinazione di Marketo
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
-source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
+feature: Tracking
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# Aggiunta [!DNL Marketo Measure] alle pagine di destinazione Marketo {#adding-marketo-measure-to-marketo-landing-pages}
+# Aggiunta [!DNL Marketo Measure] alle pagine di destinazione di Marketo {#adding-marketo-measure-to-marketo-landing-pages}
 
-Scopri come aggiungere il tracciamento a [!DNL Marketo Engage] Pagine di destinazione in quanto richiedono una gestione aggiuntiva. [!DNL Marketo Measure] JavaScript deve essere installato sia sulla pagina di destinazione che sul [!DNL Marketo Engage] formare se stesso. A questo scopo, dovrai caricare il [!DNL Marketo Measure] JavaScript in [!DNL Marketo Engage] come spiegato nelle seguenti direzioni.
+Scopri come aggiungere il tracciamento a [!DNL Marketo Engage] Pagine di destinazione in quanto richiedono una gestione aggiuntiva. [!DNL Marketo Measure] JavaScript deve essere presente sia nella pagina di destinazione che nella [!DNL Marketo Engage] la forma stessa. A questo scopo, è necessario caricare [!DNL Marketo Measure] JavaScript in [!DNL Marketo Engage] come spiegato nelle seguenti direzioni.
 
 >[!NOTE]
 >
@@ -20,14 +21,14 @@ Scopri come aggiungere il tracciamento a [!DNL Marketo Engage] Pagine di destina
 
 ## Come aggiungere [!DNL Marketo Measure] Script per [!DNL Marketo Engage] Pagine di destinazione {#how-to-add-marketo-measure-script-to-marketo-engage-landing-pages}
 
-1. Accedi al tuo [!DNL Marketo Engage] conto.
+1. Accedi al tuo [!DNL Marketo Engage] account.
 1. Seleziona la pagina di destinazione e fai clic su **[!UICONTROL Edit Draft]**.
-1. Trascina l’elemento HTML .
-1. Inserisci il [!DNL Marketo Measure] JavaScript nel [!UICONTROL head] sezione:
+1. Trascina nell’elemento HTML.
+1. Inserisci il [!DNL Marketo Measure] JavaScript in [!UICONTROL head] sezione:
 
    `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
-Esempio nella schermata sottostante
+Esempio nella schermata seguente
 
 1. Clic **[!UICONTROL Save]**.
 
@@ -35,10 +36,10 @@ Esempio nella schermata sottostante
 
 ## Note aggiuntive {#additional-notes}
 
-* Potrebbero essere già presenti altri frammenti di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Non c&#39;è problema, basta essere sicuri di separarli con un punto e virgola `;` e un unico spazio. Un esempio di come dovrebbe essere:
+* Potresti avere già altri snippet di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Non c&#39;è alcun problema con questo, basta assicurarsi di separarli con un punto e virgola `;` e un singolo spazio. Ecco un esempio di come apparirebbe:
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>; <script async="true" type="someothercode" src="someotherfile.js" ></script>`
 
-* È probabile che siano in uso più modelli di pagina di destinazione, assicurarsi di aggiungere il codice a tutti i modelli che contengono moduli.
+* È probabile che siano in uso più modelli di pagina di destinazione; assicurati di aggiungere il codice a tutti i modelli che contengono moduli.
 
-* A volte, quando modifichi il modello per le pagine di destinazione, devi riapprovare le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.
+* A volte, quando modifichi il modello per le pagine di destinazione, devi approvare nuovamente le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [approvazione di massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.

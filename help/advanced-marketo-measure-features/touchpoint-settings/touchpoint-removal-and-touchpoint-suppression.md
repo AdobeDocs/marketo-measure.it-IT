@@ -1,37 +1,38 @@
 ---
 unique-page-id: 18874710
-description: Rimozione di punti di contatto e soppressione di punti di contatto - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Rimozione di punti di contatto e soppressione di punti di contatto
+description: Rimozione e soppressione dei punti di contatto - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Rimozione e soppressione dei punti di contatto
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+feature: Touchpoints
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 0%
 
 ---
 
-# Rimozione di punti di contatto e soppressione di punti di contatto {#touchpoint-removal-and-touchpoint-suppression}
+# Rimozione e soppressione dei punti di contatto {#touchpoint-removal-and-touchpoint-suppression}
 
-Scopri come rimuovere o eliminare i punti di contatto che soddisfano criteri specifici dal CRM. Questo può essere utile per liberare spazio dati se si dispone di [!DNL Salesforce] limiti di archiviazione dei dati.
+Scopri come rimuovere o eliminare dal CRM i punti di contatto che soddisfano criteri specifici. Questo può essere utile per liberare spazio di dati se si hanno [!DNL Salesforce] limiti di archiviazione dei dati.
 
 Esiste una differenza chiave tra le regole di rimozione dei punti di contatto e le regole di eliminazione dei punti di contatto:
 
-* Rimozione punto di contatto - [!DNL Marketo Measure] eliminerà (ovvero rimuoverà) tutti i punti di contatto dal CRM che soddisfano i criteri della regola. I dati _può_ sono segnalati all&#39;interno del [!DNL Marketo Measure] Dashboard sul ROI, ma non più nel CRM.
-* Soppressione dei punti di contatto : simile alla rimozione dei punti di contatto, ma i dati NON possono essere segnalati all’interno del dashboard del ROI.
+* Rimozione punto di contatto - [!DNL Marketo Measure] rimuoverà (ossia rimuoverà) dal CRM tutti i punti di contatto che soddisfano i criteri della regola. I dati _può_ essere segnalati all&#39;interno del [!DNL Marketo Measure] Dashboard ROI, ma non più nel sistema CRM.
+* Eliminazione dei punti di contatto: simile alla rimozione dei punti di contatto, ma i dati NON POSSONO essere segnalati nella dashboard del ROI.
 
-Prima di iniziare a creare regole di rimozione/soppressione dei punti di contatto, è consigliabile condividere il piano di implementazione con il team che gestisce le attività di marketing e vendita. Dovresti già avere un&#39;idea dei tipi o valori che desideri rimuovere. Alcuni dei casi d’uso più comuni sono:
+Prima di iniziare a creare regole di rimozione/eliminazione dei punti di contatto, è consigliabile condividere il piano di implementazione con il team delle operazioni di marketing e vendita. Dovresti avere già un’idea dei tipi o dei valori da rimuovere. Alcuni dei casi d’uso comuni sono:
 
 * Elimina punti di contatto da opportunità perse chiuse
 * Elimina punti di contatto da lead molto vecchi
 * Elimina punti di contatto da lead non qualificati
 
-Una volta salvate le regole, [!DNL Marketo Measure] pulirà e ridistribuirà il modello di attribuzione. Ciò significa che le tappe e le posizioni cambieranno, e il credito di attribuzione del tuo canale cambierà! In questo modo i dati verranno modificati, quindi contatta il tuo Success Manager se hai bisogno di assistenza.
+Una volta salvate le regole, [!DNL Marketo Measure] pulirà e ridistribuirà il modello di attribuzione. Ciò significa che cambieranno le tappe e le posizioni e cambierà anche il merito di attribuzione del tuo canale! In questo modo i dati verranno modificati; se hai bisogno di assistenza, contatta quindi il tuo Success Manager.
 
-`1)` Sono disponibili due sezioni per le impostazioni di rimozione/soppressione. Puoi configurarlo per i punti di contatto dell’acquirente (Lead e contatti) o per i punti di contatto dell’attribuzione dell’acquirente (Contatti, Opportunità e Account).
+`1)` Sono disponibili due sezioni per le impostazioni di rimozione/soppressione. È possibile impostarla per i punti di contatto dell&#39;acquirente (lead e contatti) o per i punti di contatto di attribuzione dell&#39;acquirente (contatti, opportunità e account).
 
-Inizia con l’aggiunta di una regola e seleziona il Campo che definirà i criteri.
+Inizia aggiungendo una regola e selezionando il Campo che definirà i criteri.
 
-Scegli tra un elenco di Operatori che si relazioneranno al successivo set di valori, che verrà aggiunto nella colonna successiva.
+Scegliere da un elenco di operatori che verranno correlati al set di valori successivo, che verrà aggiunto nella colonna successiva.
 
 ![](assets/1-1.png)
 
@@ -41,36 +42,36 @@ Scegli tra un elenco di Operatori che si relazioneranno al successivo set di val
 
 >[!TIP]
 >
->Per tenere conto di un valore vuoto o NULL in un campo, è sufficiente lasciare vuota la casella Valore. Questo terrà conto di scenari come la valutazione rispetto a un punto di contatto senza URL del modulo.
+>Per tenere conto di un valore vuoto o NULL in un campo, è sufficiente lasciare vuota la casella Valore. Questo prenderà in considerazione scenari come la valutazione rispetto a un punto di contatto senza URL modulo.
 
 >[!NOTE]
 >
->I campi Formula non possono essere utilizzati all&#39;interno delle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule si calcolano in background e non modificano un record, [!DNL Marketo Measure] impossibile rilevare se un record soddisfa una regola o meno.
+>I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background senza modificare un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
 `2)` Aggiungi regole all’interno dello stesso gruppo per utilizzare la logica &quot;AND&quot; nell’istruzione.
-Oppure, aggiungi nuove istruzioni all’esterno del gruppo per utilizzare la logica &quot;OR&quot; nell’istruzione.
+In alternativa, aggiungere nuove istruzioni all&#39;esterno del gruppo per utilizzare la logica &quot;OR&quot; nell&#39;istruzione.
 
 ![](assets/2.png)
 
-`3)` Se le regole diventano complesse e devi ricreare i gruppi e apportare piccole modifiche a ciascuna istruzione, utilizza l&#39;opzione Clona per semplificare le operazioni.
+`3)` Se le regole diventano complesse ed è necessario ricreare i gruppi e apportare piccole modifiche a ogni istruzione, utilizzare l&#39;opzione Clona per semplificare le operazioni.
 
 ![](assets/3.png)
 
-Se fai un errore, non ti preoccupare. È inoltre possibile eliminare singole righe dell’istruzione o gruppi completi.
+Se fai un errore, non preoccuparti. È inoltre possibile eliminare singole righe dell&#39;istruzione o gruppi completi.
 
 ![](assets/4.png)
 
-`4)` Imposta le regole per i punti di contatto dell’attribuzione dell’acquirente se desideri che vengano applicati a entrambi gli oggetti. La nostra flessibilità consente di impostare regole per un oggetto o per entrambi gli oggetti e può scegliere di impostarle per entrambi, se applicabili.
+`4)` Impostare le regole per i punti di contatto di attribuzione buyer se si desidera applicarle a entrambi gli oggetti. La nostra flessibilità consente di impostare regole per uno o entrambi gli oggetti e, se applicabili, può scegliere di impostarle per entrambi.
 
 ![](assets/5.png)
 
-Per terminare, salvare ed elaborare le regole. Se apporti molte modifiche, accertati di salvare le modifiche durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i tuoi punti di contatto finché non fai clic sul pulsante **Salvataggio e processo** pulsante .
+Per terminare, salva ed elabora le regole. Se stai apportando molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i punti di contatto finché non fai clic su **Salva ed elabora** pulsante.
 
 | **Operatore** | **Caso d’uso** |
 |---|---|
-| È uguale a | Valore singolo - corrispondenza esatta |
+| È uguale a | Valore singolo - Corrispondenza esatta |
 | Contiene | Valore singolo - contiene valore |
-| Corrisponde a qualsiasi | Valori multipli - Corrispondenza esatta |
-| Corrisponde a qualsiasi (contiene) | Valori multipli - &#42;value&#42;, &#42;valore, &#42;value&#42; |
+| Corrisponde a qualsiasi | Più valori - Corrispondenza esatta |
+| Corrisponde a qualsiasi (contiene) | Più valori - &#42;valore&#42;, &#42;valore, &#42;valore&#42; |
 
-Per i clienti che utilizzano Dynamics che desiderano impostare regole di eliminazione basate su Stato e/o codice di stato, è necessaria la seguente formattazione durante l’impostazione della regola: `[Object].Statecode` è uguale o diverso da `[Status Value]`. Ad esempio, se il codice di stato all’interno di Dynamics riporta &quot;1&quot; su un contatto e lo stato riporta &quot;Inattivo&quot; e si desidera eliminare tutti i contatti, il formato seguente non è corretto per la regola di eliminazione: Contact.State è uguale a 1. Utilizzare invece il formato seguente, dal momento che Statcode e Status funzionano come coppia, [!DNL Marketo Measure] legge il valore da Status nella nostra query: Contact.State è uguale a Inattivo.
+Per i clienti che utilizzano Dynamics e che desiderano impostare regole di soppressione basate su Status e/o Status code, è necessaria la seguente formattazione durante la configurazione della regola: `[Object].Statecode` è uguale/non uguale a `[Status Value]`. Ad esempio, se il codice di stato di Dynamics legge &quot;1&quot; su un contatto e lo stato è &quot;Inattivo&quot; e si desidera eliminare tutti i contatti di questo tipo, il seguente formato non è corretto per la regola di eliminazione: Contact.Statecode è uguale a 1. Al contrario, è preferibile utilizzare il formato seguente: poiché Codice di stato e Stato funzionano in coppia, [!DNL Marketo Measure] legge il valore da Status nella query: Contact.Statecode è uguale a Inactive.

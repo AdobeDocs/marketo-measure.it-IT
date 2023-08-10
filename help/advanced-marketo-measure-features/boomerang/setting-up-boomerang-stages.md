@@ -3,7 +3,8 @@ unique-page-id: 18874767
 description: Impostazione delle fasi del boomerang - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Impostazione delle fasi del boomerang
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
-source-git-commit: 01be819ccee1b3079b15a748480e9dacf6adb488
+feature: Boomerang
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

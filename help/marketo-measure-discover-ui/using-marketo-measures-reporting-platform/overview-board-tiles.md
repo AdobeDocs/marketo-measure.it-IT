@@ -1,18 +1,19 @@
 ---
 unique-page-id: 34406468
-description: Pannelli della scheda panoramica - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Tessere della scheda panoramica
+description: Riquadri della bacheca Panoramica - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Riquadri della bacheca Panoramica
 exl-id: 35180928-6b75-4271-9bb5-7617bc2f9c74
-source-git-commit: 334dcd3dcbddacc4920d182d94908babd3cb8c89
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 1%
 
 ---
 
-# Tessere della scheda panoramica {#overview-board-tiles}
+# Riquadri della bacheca Panoramica {#overview-board-tiles}
 
-La Panoramica fornisce una panoramica delle prestazioni di marketing più completa, consentendo ai team di marketing di prendere le decisioni giuste quando crescono il team, il budget o le entrate.
+La bacheca Panoramica fornisce una panoramica più completa delle prestazioni di marketing, aiutando i team di marketing a prendere le decisioni giuste durante la crescita del team, del budget o dei ricavi.
 
 <table> 
  <colgroup> 
@@ -37,13 +38,13 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><p><strong>Metrica</strong></p></td> 
    <td><p><strong>Dimensione</strong></p></td> 
    <td><p><strong>Canale</strong></p></td> 
-   <td><p><strong>Canale secondario</strong></p></td> 
-   <td><p><strong>Campaign</strong></p></td> 
+   <td><p><strong>Sottocanale</strong></p></td> 
+   <td><p><strong>Campagna</strong></p></td> 
    <td><p><strong>ID account annuncio</strong></p></td> 
    <td><p><strong>Nome account CRM</strong></p></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Entrate</strong></p></td> 
+   <td><p><strong>Ricavi</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -108,7 +109,7 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Costo per transazione</strong></p></td> 
+   <td><p><strong>Costo per offerta</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -121,7 +122,7 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Ricavi dalla pipeline</strong></p></td> 
+   <td><p><strong>Ricavi pipeline</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -134,7 +135,7 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Dimensione dell'offerta</strong></p></td> 
+   <td><p><strong>Dimensione offerta</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -147,7 +148,7 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Riepilogo del canale</strong></p></td> 
+   <td><p><strong>Riepilogo canale</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -160,7 +161,7 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Riepilogo dei sottocanali</strong></p></td> 
+   <td><p><strong>Riepilogo sottocanale</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -199,7 +200,7 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>Riepilogo del ROI</strong></p></td> 
+   <td><p><strong>Riepilogo ROI</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
@@ -214,114 +215,114 @@ La Panoramica fornisce una panoramica delle prestazioni di marketing più comple
  </tbody> 
 </table>
 
-## Riquadro ricavi {#revenue-tile}
+## Sezione ricavi {#revenue-tile}
 
 ![](assets/one.png)
 
-Totale dei ricavi attribuiti da opportunità chiuse basate sul modello di attribuzione.
+Ricavi attribuiti totali da opportunità chiuse realizzate in base al modello di attribuzione.
 
-- Dettagli opportunità: Visualizza un raggruppamento degli ID opportunità correlati, Data creazione, Data chiusura, Codice ISO e Attribuzione ricavi.\
-- Mostra dettagli: Disaggregazione per mese.
+-Dettagli opportunità: visualizza un raggruppamento degli ID opportunità, della data di creazione, della data di chiusura, del codice ISO e dell&#39;attribuzione dei ricavi correlati.\
+-Show Details (Mostra dettagli): una suddivisione per mese.
 
-## Panoramica (grafico) {#overview-chart-tile}
+## Sezione Panoramica (grafico) {#overview-chart-tile}
 
 ![](assets/two.png)
 
-Il grafico mostrerà i ricavi attribuiti a ciascun canale, mostrati nel tempo.
+Il grafico mostra i ricavi attribuiti a ciascun canale, visualizzati nel tempo.
 
-- Dettagli opportunità: Visualizza un raggruppamento degli ID opportunità correlati, Data creazione, Data chiusura, Codice ISO e Attribuzione ricavi.\
-- Visualizza un raggruppamento degli ID Opp contributori:
+-Dettagli opportunità: visualizza un raggruppamento degli ID opportunità, della data di creazione, della data di chiusura, del codice ISO e dell&#39;attribuzione dei ricavi correlati.\
+-Visualizza un raggruppamento degli ID Opp partecipanti:
 
-* Per settimana sul ROI
-* Per i dati sul ROI
+* Per Settimana ROI
+* In base ai dati sul ROI
 * Per ora ROI
-* Per minuto ROI
-* In base al tempo del ROI
+* Per minuto di ROI
+* Per tempo ROI
 
-## Riquadro di spesa {#spend-tile}
+## Sezione spesa {#spend-tile}
 
 ![](assets/three.png)
 
-L’importo totale della spesa derivante sia dai costi API che dai costi segnalati autonomamente per il periodo di tempo specificato.
+L’importo totale della spesa derivante sia dai costi API che dai costi dichiarati autonomamente per il periodo di tempo specificato.
 
 >[!NOTE]
 >
->Quando si perforano in meno di un mese, [!DNL Marketo Measure] la spesa media per quel mese e quella media viene allocata a ogni giorno.
+>Quando esegui il drilling in su meno di un mese, [!DNL Marketo Measure] calcolerà la media della spesa per quel mese e assegnerà tale media a ogni giorno.
 
-- Dettagli di spesa: Visualizza un raggruppamento del relativo ID univoco campagna di spesa, Nome campagna, Canale, Canale secondario, Data, Valuta originale, Spesa.  - Mostra dettagli: Disaggregazione per mese.
+-Spend Details (Dettagli spesa): visualizza un raggruppamento del relativo ID univoco della campagna di spesa, nome della campagna, canale, sottocanale, data, valuta originale, spesa.  -Show Details (Mostra dettagli): una suddivisione per mese.
 
-## Tessera ROI {#roi-tile}
+## Sezione ROI {#roi-tile}
 
 ![](assets/four.png)
 
-Il ROI calcolato (ritorno sull’investimento) dai ricavi totali (dal modello di attribuzione selezionato) e dalla spesa totale (sezione Ricavo ÷ porzione spesa = riquadro ROI).
+Il ROI calcolato (ritorno sull’investimento) dai ricavi totali (dal modello di attribuzione selezionato) e dalla spesa totale (sezione Ricavi ÷ sezione spesa = sezione ROI).
 
-## Affianca offerte {#deals-tile}
+## Sezione Offerte {#deals-tile}
 
 ![](assets/five.png)
 
-Visualizza il numero totale di offerte attribuite (le offerte sono un conteggio delle opportunità chiuse).
+Visualizza il numero totale di offerte attribuite (le offerte sono un conteggio di opportunità di tipo Closed Won).
 
 >[!NOTE]
 >
->Se è selezionato il tipo di data &quot;Data punto di contatto&quot;, i conteggi parziali sono possibili perché potrebbero esserci alcuni punti di contatto che non rientrano nell’intervallo di tempo.
+>Se selezioni il tipo di data &quot;Data punto di contatto&quot;, sono possibili conteggi parziali perché alcuni punti di contatto potrebbero non rientrare nell’intervallo di tempo.
 
-- Dettagli opportunità: Visualizza un raggruppamento degli ID opportunità correlati, Data creazione, Data chiusura e Attribuzione (conteggio).  - Mostra dettagli: Disaggregazione per mese.
+-Dettagli opportunità: visualizza un raggruppamento degli ID opportunità, della data di creazione, della data di chiusura e dell&#39;attribuzione correlati (conteggio).  -Show Details (Mostra dettagli): una suddivisione per mese.
 
-## Riquadro dei costi per transazione {#cost-per-deal-tile}
+## Sezione Costo per offerta {#cost-per-deal-tile}
 
 ![](assets/six.png)
 
-Costo medio che ci vuole per acquisire un&#39;opportunità di vittoria chiusa. La spesa totale divisa per il numero totale di offerte (Tile di spesa ÷ Titolo offerte = Costo per offerta porzione).
+Costo medio necessario per acquisire un’opportunità acquisita chiusa. La spesa totale divisa per il numero totale di offerte (sezione Spesa ÷ sezione Offerte = sezione Costo per offerta).
 
-## Riquadro ricavi pipeline {#pipeline-revenue-tile}
+## Sezione ricavi pipeline {#pipeline-revenue-tile}
 
 ![](assets/seven.png)
 
-Il potenziale totale di entrate attribuite per le opportunità aperte
+Totale dei ricavi attribuiti potenziali per le opportunità aperte
 
 >[!NOTE]
 >
->I ricavi verranno riportati per il modello di attribuzione specificato.
+>I ricavi verranno rispecchiati per il modello di attribuzione specificato.
 
-- Dettagli opportunità: Visualizza un raggruppamento degli ID opportunità correlati, Data creazione, Data chiusura, Codice ISO e Attribuzione ricavi.  - Mostra dettagli: Disaggregazione per mese.
+-Dettagli opportunità: visualizza un raggruppamento degli ID opportunità, della data di creazione, della data di chiusura, del codice ISO e dell&#39;attribuzione dei ricavi correlati.  -Show Details (Mostra dettagli): una suddivisione per mese.
 
-## Riquadro dimensioni offerta {#deal-size-tile}
+## Sezione dimensioni offerta {#deal-size-tile}
 
 ![](assets/eight.png)
 
-Ricavo medio di opportunità di vincita chiuse (Titolo ricavi ÷ Titolo offerte = Titolo dimensioni offerte).
+Il ricavo medio delle opportunità di acquisto chiuse (sezione Ricavi ÷ sezione Offerte = sezione Dimensione offerta).
 
-## Riquadro di riepilogo del canale {#channel-summary-tile}
+## Sezione riepilogo canale {#channel-summary-tile}
 
 ![](assets/nine.png)
 
-Visualizza un elenco di canali in base alle metriche selezionate (ricavi, ricavi della pipeline, spesa, offerte, opportunità, lead, contatti).
+Visualizza un elenco di canali in base alla metrica selezionata (ricavi, ricavi pipeline, spesa, offerte, lead, contatti).
 
-## Riquadro di riepilogo dei sottocanali {#subchannel-summary-tile}
+## Sezione riepilogo sottocanale {#subchannel-summary-tile}
 
 ![](assets/ten.png)
 
-Visualizza un elenco di sottocanali in base alla metrica selezionata (ricavi, ricavi della pipeline, spesa, offerte, opportunità, lead, contatti).
+Visualizza un elenco di canali secondari in base alla metrica selezionata (ricavi, ricavi pipeline, spesa, offerte, lead, contatti).
 
-## Riquadro di riepilogo della campagna {#campaign-summary-tile}
+## Sezione riepilogo campagna {#campaign-summary-tile}
 
 ![](assets/eleven.png)
 
-Visualizza un elenco di campagne in base alla metrica selezionata (ricavi, ricavi della pipeline, spesa, offerte, opportunità, lead, contatti).
+Visualizza un elenco di campagne in base alla metrica selezionata (ricavi, ricavi pipeline, spesa, offerte, opportunità, lead, contatti).
 
-## Riquadro ROI (grafico) {#roi-chart-tile}
+## Sezione ROI (grafico) {#roi-chart-tile}
 
 ![](assets/twelve.png)
 
-Visualizza il ROI attribuito alla metrica selezionata (canale, canale secondario, campagna, account, gruppo di annunci, inserzionista, creativo, parola chiave, posizionamento, sito) in base al modello di attribuzione selezionato.
+Visualizza il ROI attribuito alla metrica selezionata (canale, sottocanale, campagna, account, adgroup, annuncio, inserzionista, creativo, parola chiave, posizionamento, sito) in base al modello di attribuzione selezionato.
 
-## Riquadro di riepilogo del ROI {#roi-summary-tile}
+## Sezione Riepilogo ROI {#roi-summary-tile}
 
 ![](assets/thirteen.png)
 
-Visualizza il ROI attribuito alla metrica selezionata (canale, canale secondario, campagna, account, gruppo di annunci, inserzionista, creativo, parola chiave, posizionamento, sito) in base al modello di attribuzione selezionato.
+Visualizza il ROI attribuito alla metrica selezionata (canale, sottocanale, campagna, account, adgroup, annuncio, inserzionista, creativo, parola chiave, posizionamento, sito) in base al modello di attribuzione selezionato.
 
-- Dettagli opportunità: Visualizza un raggruppamento degli ID opportunità correlati, Data creazione, Data chiusura e Attribuzione (conteggio).
+-Dettagli opportunità: visualizza un raggruppamento degli ID opportunità, della data di creazione, della data di chiusura e dell&#39;attribuzione correlati (conteggio).
 
-- Mostra dettagli: Disaggregazione per mese.
+-Show Details (Mostra dettagli): una suddivisione per mese.

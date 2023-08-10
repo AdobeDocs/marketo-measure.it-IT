@@ -1,44 +1,45 @@
 ---
 unique-page-id: 18874799
-description: Istruzioni di layout della pagina - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Istruzioni di layout della pagina
+description: Istruzioni di layout pagina - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Istruzioni di layout pagina
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
-source-git-commit: b910e5aedb9e178058f7af9a6907a1039458ce7a
+feature: Salesforce
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 1%
 
 ---
 
-# Istruzioni di layout della pagina {#page-layout-instructions}
+# Istruzioni di layout pagina {#page-layout-instructions}
 
 >[!NOTE]
 >
->È possibile visualizzare istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riflesso nel tuo CRM presto.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Facile da vedere [!DNL Marketo Measure] è consigliabile aggiornare i layout di pagina per [!UICONTROL Account], [!UICONTROL Contact], [!UICONTROL Lead], [!UICONTROL Opportunity]e [!UICONTROL Campaign] Oggetti. Le istruzioni sono suddivise per ciascun layout della pagina oggetto riportato di seguito.
+Per vedere facilmente [!DNL Marketo Measure] è consigliabile aggiornare i layout di pagina per i [!UICONTROL Account], [!UICONTROL Contact], [!UICONTROL Lead], [!UICONTROL Opportunity], e [!UICONTROL Campaign] Oggetti. Le istruzioni vengono suddivise per ogni layout di pagina oggetto riportato di seguito.
 
-Per iniziare, passa prima al tuo [!DNL Salesforce] Impostazioni e individua le [!UICONTROL Customize] scheda .
+Per iniziare, accedi al [!DNL Salesforce] Impostazioni di configurazione e individuazione [!UICONTROL Customize] scheda.
 
 ## Oggetto Campaign {#campaign-object}
 
-È consigliabile aggiungere [!DNL Marketo Measure] nella tua campagna SFDC solo per la tua sandbox. I campi possono essere utilizzati per testare la generazione di punti di contatto. In produzione consigliamo di aggiungere solo la variabile [!DNL Marketo Measure] Pulsante Aggiorna in blocco data punto di contatto. Non è consigliabile aggiungere il [!DNL Marketo Measure] campi in produzione, in quanto puoi creare regole per la sincronizzazione delle campagne.
+È consigliabile aggiungere [!DNL Marketo Measure] campi nella tua Campagna SFDC solo per la sandbox. I campi possono essere utilizzati per testare la generazione di punti di contatto. In produzione si consiglia di aggiungere solo [!DNL Marketo Measure] Pulsante Bulk Update Touchpoint Date (Data punto di contatto per aggiornamento in blocco). Si sconsiglia di aggiungere [!DNL Marketo Measure] campi in produzione, in quanto è possibile creare regole di sincronizzazione di Campaign.
 
-1. All’interno dell’opzione Genera, seleziona **[!UICONTROL Campaigns]**.
+1. All’interno dell’opzione Build, seleziona **[!UICONTROL Campaigns]**.
 
 1. Clic **[!UICONTROL Page Layouts]**.
 
    ![](assets/1-1.jpg)
 
-1. Fai clic su **[!UICONTROL Edit]** accanto al layout di pagina da aggiornare.
+1. Clic **[!UICONTROL Edit]** accanto al layout di pagina da aggiornare.
 
    ![](assets/2-1.jpg)
 
-1. All&#39;interno di [!UICONTROL fields] seleziona l’opzione **[!UICONTROL Enable Buyer Touchpoints]** e trascinalo ovunque desideri sulla pagina. Quindi, aggiungi la **[!UICONTROL Touchpoint Start Date]** e **[!UICONTROL Touchpoint End Date]** campi.
+1. All&#39;interno del [!UICONTROL fields] , seleziona l&#39;opzione **[!UICONTROL Enable Buyer Touchpoints]** e trascinarlo nella posizione desiderata sulla pagina. Quindi, aggiungere **[!UICONTROL Touchpoint Start Date]** e **[!UICONTROL Touchpoint End Date]** campi.
 
    ![](assets/3-2.png)
 
-1. Quindi, nella parte superiore della pagina fai clic su &quot;[!UICONTROL Buttons]&quot; nel menu di ricerca rapida.
+1. Quindi, nella parte superiore della pagina, fai clic su &quot;[!UICONTROL Buttons]&quot; nel menu ricerca rapida.
 
 1. Trascina **[!UICONTROL Bulk Update Touchpoint Date]** nella sezione dei pulsanti personalizzati.
 
@@ -48,15 +49,15 @@ Per iniziare, passa prima al tuo [!DNL Salesforce] Impostazioni e individua le [
 
    >[!NOTE]
    >
-   >Se utilizzi più tipi di record Campaign, i valori della lista di selezione per **[!UICONTROL Enable Buyer Touchpoints]** Il campo dovrà essere aggiornato. Riferimento [articolo](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md) per istruzioni.
+   >Se utilizzi più tipi di record Campaign, i valori dell’elenco a discesa per **[!UICONTROL Enable Buyer Touchpoints]** sarà necessario aggiornare il campo. Fai riferimento a [questo articolo](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md) per istruzioni.
 
 ## Lead {#leads}
 
-1. All’interno dell’opzione Genera, seleziona **[!UICONTROL Leads]**.
+1. All’interno dell’opzione Build, seleziona **[!UICONTROL Leads]**.
 
 1. Clic **[!UICONTROL Page Layouts]**.
 
-1. Fai clic su **[!UICONTROL Edit]** accanto al layout di pagina da aggiornare. Tieni presente che più layout di pagina possono contenere le sezioni Punti di contatto dell’acquirente .
+1. Clic **[!UICONTROL Edit]** accanto al layout di pagina da aggiornare. Tieni presente che più layout di pagina possono contenere le sezioni Punti di contatto dell’acquirente.
 
 1. Fare clic sull&#39;opzione della pagina VisualForce a sinistra nel menu di ricerca rapida.
 
@@ -64,21 +65,21 @@ Per iniziare, passa prima al tuo [!DNL Salesforce] Impostazioni e individua le [
 
    >[!NOTE]
    >
-   >Selezionare il formato &quot;una colonna&quot; per ciascuna di queste sezioni.
+   >Seleziona il formato &quot;una colonna&quot; per ciascuna di queste sezioni.
 
 1. Trascina **[!UICONTROL Marketo Measure Lead Related List]** Pagina VisualForce nella sezione di layout della pagina.
 
    ![](assets/5-1.png)
 
-1. Fai clic sulla chiave inglese [!DNL VisualForce] modifica l&#39;altezza a 100 e abilita le barre di scorrimento.
+1. Fai clic sulla chiave all’interno del [!DNL VisualForce] e impostare l&#39;altezza su 100 e attivare le barre di scorrimento.
 
-1. Nel menu , seleziona la [!UICONTROL Canvas Apps] e crea una nuova sezione denominata &quot;Marketo Measure Insights&quot; sotto i punti di contatto [!DNL VisualForce] sezione appena creata.
+1. Nel menu, seleziona la [!UICONTROL Canvas Apps] e crea una nuova sezione denominata &quot;Marketo Measure Insights&quot; sotto i punti di contatto [!DNL VisualForce] sezione appena creata.
 
    >[!NOTE]
    >
-   >Selezionare il formato &quot;una colonna&quot; per ciascuna di queste sezioni.
+   >Seleziona il formato &quot;una colonna&quot; per ciascuna di queste sezioni.
 
-1. Trascina [!DNL Marketo Measure Insights] App canvas in quella nuova sezione creata. Fai clic su **Salva**. A volte è necessario salvare il layout di pagina prima di rilasciarlo nell’app Canvas, perché Salesforce non lo riconosce istantaneamente. Quindi, dopo aver creato la nuova sezione, salva il layout di pagina e quindi modifica nuovamente per trascinare l’app canvas all’interno di tale sezione. Questo vale per ogni oggetto.
+1. Trascina [!DNL Marketo Measure Insights] Canvas App nella sezione appena creata. Clic **Salva**. A volte è necessario salvare il layout di pagina prima di rilasciarlo nell’app Canvas, perché Salesforce non lo riconosce immediatamente. Quindi, dopo aver creato la nuova sezione, salva il layout di pagina e quindi modificalo nuovamente per trascinare l’app nell’area di lavoro all’interno di tale sezione. Questo vale per ogni oggetto.
 
    >[!NOTE]
    >
@@ -86,30 +87,30 @@ Per iniziare, passa prima al tuo [!DNL Salesforce] Impostazioni e individua le [
 
    >[!TIP]
    >
-   >La maggior parte dei clienti non utilizza i campi che terminano con (FT) o (LC) perché sono campi legacy da prima del [!DNL Marketo Measure] Il punto di contatto era un oggetto.
+   >La maggior parte dei clienti non utilizza i campi che terminano con (FT) o (LC) perché sono campi precedenti a [!DNL Marketo Measure] Il punto di contatto esisteva come oggetto.
 
-Se utilizzi il [!DNL Marketo Measure] caratteristica ABM, [fai clic qui per ulteriori istruzioni sul layout della pagina](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
+Se utilizzi il [!DNL Marketo Measure] funzione ABM, [fare clic qui per ulteriori istruzioni sul layout della pagina](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
 
 ## Contatti {#contacts}
 
-1. All’interno dell’opzione Genera, seleziona **[!UICONTROL Contacts]**.
+1. All’interno dell’opzione Build, seleziona **[!UICONTROL Contacts]**.
 
 1. Clic **[!UICONTROL Page Layouts]**.
 
-1. Selezionare il layout di pagina da modificare.
+1. Seleziona il Layout di pagina da modificare.
 
-   Passa all’opzione Elenchi correlati nel menu di ricerca rapida e aggiungi la **[!UICONTROL Buyer Touchpoints]** elenco correlato.
+   Passa all’opzione Elenchi correlati nel menu di ricerca rapida e aggiungi **[!UICONTROL Buyer Touchpoints]** elenco correlato.
 
-1. Fai clic sull’icona a forma di chiave inglese e aggiungi le seguenti colonne in questo ordine:
+1. Fai clic sull’icona chiave inglese e aggiungi le seguenti colonne in questo ordine:
 
    * Punto di contatto dell&#39;acquirente
    * Canale di marketing
-   * Origine punto di contatto
-   * Nome della campagna pubblicitaria
+   * Sorgente punto di contatto
+   * Nome campagna pubblicitaria
    * Posizione punto di contatto
    * Data punto di contatto
 
-1. Ordina per: Data punto di contatto, crescente.
+1. Ordina Per: Data Punto Di Contatto, Crescente.
 
    ![](assets/6.jpg)
 
@@ -117,76 +118,76 @@ Se utilizzi il [!DNL Marketo Measure] caratteristica ABM, [fai clic qui per ulte
 
    ![](assets/7.png)
 
-1. Torna alla pagina [!UICONTROL Related List] nel menu e ora aggiungi la **[!UICONTROL Buyer Attribution Touchpoint]** elenco correlato.
+1. Torna a [!UICONTROL Related List] nel menu e ora aggiungi il **[!UICONTROL Buyer Attribution Touchpoint]** elenco correlato.
 
-1. Fai clic sull’icona a forma di chiave inglese e aggiungi le seguenti colonne in questo ordine:
+1. Fai clic sull’icona chiave inglese e aggiungi le seguenti colonne in questo ordine:
 
-   * Punto di contatto attribuzione
+   * Punto di contatto di attribuzione
    * Canale di marketing
    * Opportunità
-   * Nome della campagna pubblicitaria
-   * Tipo punto di contatto
+   * Nome campagna pubblicitaria
+   * Tipo di punto di contatto
    * Posizione punto di contatto
-   * A forma di W dell’attribuzione (_o modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
-   * A forma di W ricavi (_o modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
+   * Attribuzione a forma di % W (_o il modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
+   * Ricavi a forma di W (_o il modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
    * Data punto di contatto
 
 1. Ordina per punto di contatto [!UICONTROL Date] > [!UICONTROL Ascending].
 
-1. Espandi la sezione Pulsanti e deseleziona **[!UICONTROL New]**.
+1. Espandere la sezione Pulsanti e deselezionare **[!UICONTROL New]**.
 
 1. Clic **[!UICONTROL Save]**.
 
 ## Opportunità {#opportunities}
 
-1. All’interno dell’opzione Genera, seleziona **[!UICONTROL Opportunities]**.
+1. All’interno dell’opzione Build, seleziona **[!UICONTROL Opportunities]**.
 
 1. Clic **[!UICONTROL Page Layouts]**.
 
-1. Selezionare il layout di pagina da modificare.
+1. Seleziona il Layout di pagina da modificare.
 
-1. Aggiungi il **[!UICONTROL Buyer Attribution Touchpoint]** Elenco correlato e fai clic sulla chiave inglese per aggiungere le colonne seguenti per Opportunità:
+1. Aggiungi il **[!UICONTROL Buyer Attribution Touchpoint]** Elenco correlato e fare clic sulla chiave inglese per aggiungere le seguenti colonne per Opportunità:
 
-   * Punto di contatto attribuzione
+   * Punto di contatto di attribuzione
    * Canale di marketing
    * Contatto
-   * Nome della campagna pubblicitaria
-   * Tipo punto di contatto
+   * Nome campagna pubblicitaria
+   * Tipo di punto di contatto
    * Posizione punto di contatto
-   * A forma di W dell’attribuzione (_o modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
-   * A forma di W ricavi (_o modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
+   * Attribuzione a forma di % W (_o il modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
+   * Ricavi a forma di W (_o il modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
    * Data punto di contatto
 
 1. Ordina per [!UICONTROL Touchpoint Date] > [!UICONTROL Ascending].
 
-1. Deseleziona **[!UICONTROL New]** all&#39;interno del [!UICONTROL Buttons] sezione .
+1. Deseleziona **[!UICONTROL New]** all&#39;interno del [!UICONTROL Buttons] sezione.
 
 1. Clic **[!UICONTROL Save]**.
 
 ## Account {#accounts}
 
-1. All’interno dell’opzione Genera, seleziona **[!UICONTROL Accounts]**.
+1. All’interno dell’opzione Build, seleziona **[!UICONTROL Accounts]**.
 
 1. Clic **[!UICONTROL Page Layouts]**.
 
-1. Selezionare il layout di pagina da modificare.
+1. Seleziona il Layout di pagina da modificare.
 
-1. Aggiungi il **[!UICONTROL Buyer Attribution Touchpoint]** Elenco correlato e fai clic sulla chiave inglese per aggiungere le colonne seguenti:
+1. Aggiungi il **[!UICONTROL Buyer Attribution Touchpoint]** Elenco correlato e fare clic sulla chiave inglese per aggiungere le colonne seguenti:
 
-   * Punto di contatto attribuzione
+   * Punto di contatto di attribuzione
    * Canale di marketing
    * Opportunità
-   * Nome della campagna pubblicitaria
-   * Tipo punto di contatto
+   * Nome campagna pubblicitaria
+   * Tipo di punto di contatto
    * Posizione punto di contatto
-   * A forma di W dell’attribuzione (_o modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
-   * A forma di W ricavi (_o modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
+   * Attribuzione a forma di % W (_o il modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
+   * Ricavi a forma di W (_o il modello di attribuzione più affidabile, ad esempio Percorso completo o Personalizzato_)
    * Data punto di contatto
 
-1. Ordina per data punto di contatto > Crescente.
+1. Ordina per Data punto di contatto > Crescente.
 
-1. Deseleziona **[!UICONTROL New]** all&#39;interno del [!UICONTROL Buttons] sezione .
+1. Deseleziona **[!UICONTROL New]** all&#39;interno del [!UICONTROL Buttons] sezione.
 
 1. Clic **[!UICONTROL Save]**.
 
-Se utilizzi il [!DNL Marketo Measure] caratteristica ABM,  [fai clic qui per ulteriori istruzioni sul layout della pagina](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
+Se utilizzi il [!DNL Marketo Measure] funzione ABM,  [fare clic qui per ulteriori istruzioni sul layout della pagina](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).

@@ -3,7 +3,8 @@ unique-page-id: 18874678
 description: Informazioni [!DNL Marketo Measure] Assegnazione tag AdWords - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Informazioni [!DNL Marketo Measure] Assegnazione tag AdWords
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
-source-git-commit: 7ee55e3493558880408e76a4572667348ffedd8e
+feature: APIs, Integration, UTM Parameters
+source-git-commit: 3bad77a72c0dea6caf0daadbb594f10f791af715
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%

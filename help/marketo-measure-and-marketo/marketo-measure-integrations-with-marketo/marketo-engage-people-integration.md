@@ -3,7 +3,8 @@ unique-page-id: 37356395
 description: "[!DNL Marketo Engage] Integrazione delle persone - [!DNL Marketo Measure] - Documentazione del prodotto"
 title: "[!DNL Marketo Engage] Integrazione delle persone"
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -12,40 +13,40 @@ ht-degree: 0%
 
 # [!DNL Marketo Engage] Integrazione delle persone {#marketo-engage-people-integration}
 
-L&#39;integrazione Marketo People consente [!DNL Marketo Measure] per iniziare a scaricare persone da Marketo e iniziare a collegare le loro sessioni tracciate al singolo utente e mappare i punti di contatto ai loro impegni. Storicamente, [!DNL Marketo Measure] è stato in grado di mappare solo i punti di contatto a una persona dal CRM, pertanto questo aiuta gli esperti di marketing a misurare le proprie attività di marketing prima che aspettare uno stadio o un trigger per sincronizzarlo con il CRM.
+L&#39;integrazione Marketo People consente [!DNL Marketo Measure] per iniziare a scaricare persone da Marketo e iniziare a collegare le loro sessioni tracciate all&#39;individuo e mappare i punti di contatto ai loro impegni. Storicamente, [!DNL Marketo Measure] È stato in grado di mappare i punti di contatto solo per una persona dal sistema CRM, in modo da aiutare gli addetti al marketing a misurare le loro attività di marketing prima di aspettare una fase o un trigger per sincronizzarla con il sistema CRM.
 
 ## Requisiti {#requirements}
 
 * Istanza Marketo di produzione
 * Produzione [!DNL Salesforce] o [!DNL Microsoft Dynamics] istanza
-* Qualsiasi pagamento [!DNL Marketo Measure] abbonamento
-* SOLR abilitato (contattare [Supporto Marketo](https://nation.marketo.com/t5/Support/ct-p/Support) per abilitare questa opzione)
+* Qualsiasi pagamento effettuato [!DNL Marketo Measure] abbonamento
+* SOLR abilitato (contattare il [Supporto Marketo](https://nation.marketo.com/t5/Support/ct-p/Support) per abilitare questa funzione)
 
 ## Come funziona {#how-it-works}
 
-Come cliente attuale, [!DNL Marketo Measure] sta già scaricando persone dal tuo CRM. Il processo standard è che [!DNL Marketo Measure] scarica le persone e mappa l’indirizzo e-mail a una sessione web che abbiamo monitorato tramite bizible.js.
+In qualità di cliente attuale, [!DNL Marketo Measure] sta già scaricando persone dal tuo CRM. Il processo standard è quello [!DNL Marketo Measure] scarica le persone e mappa l’indirizzo e-mail su una sessione web tracciata tramite bizible.js.
 
-Con l&#39;introduzione di scaricare persone Marketo, [!DNL Marketo Measure] è ora in grado di mappare le sessioni web a un pool più ampio di utenti, quelli che non sono stati sincronizzati con il CRM. Questo accade solitamente a causa di processi interni che attendono che le persone raggiungano un certo stato prima di essere inviate al CRM.
+Con l&#39;introduzione del download di persone Marketo, [!DNL Marketo Measure] è ora in grado di mappare le sessioni web su un pool più ampio di singoli utenti, quelli che non sono stati sincronizzati con il sistema CRM. Di solito questo accade a causa di processi interni che attendono che le persone raggiungano un determinato stato prima di essere inviate al sistema CRM.
 
-Quando [!DNL Marketo Measure] mappa con successo la persona Marketo a una sessione web, la nostra elaborazione genererà qualsiasi punto di contatto pertinente per essa, che sono in ultima analisi segnalabili in [!DNL Marketo Measure Discover]. Se la persona Marketo viene spinta al CRM, [!DNL Marketo Measure] gestisce lo scenario duplicato e ricreerà il punto di contatto per la persona CRM e contrassegnerà il set iniziale come &quot;duplicato&quot;.
+Quando [!DNL Marketo Measure] mappa con successo la persona Marketo su una sessione web; la nostra elaborazione genererà eventuali punti di contatto pertinenti per essa, che sono infine segnalabili in [!DNL Marketo Measure Discover]. Se la persona Marketo viene inviata al CRM, [!DNL Marketo Measure] Gestirà lo scenario duplicato e ricreeremo il punto di contatto per la persona del sistema di gestione delle relazioni con i clienti e contrassegneremo il set iniziale come &quot;duplicato&quot;.
 
-Per poter rilevare questi duplicati, assicurati che [!DNL Marketo-Salesforce] o [!DNL Marketo-Dynamics] La sincronizzazione sta popolando gli ID lead e contatti sulla persona Marketo. Se l&#39;ID si sincronizza correttamente, dovresti essere in grado di visualizzare l&#39;ID CRM nel record Persona, come riportato di seguito:
+Per rilevare questi duplicati, assicurati che il tuo [!DNL Marketo-Salesforce] o [!DNL Marketo-Dynamics] La sincronizzazione sta popolando gli ID lead e contatto nella persona Marketo. Se l’ID viene sincronizzato correttamente, dovresti essere in grado di visualizzare l’ID del sistema di gestione delle relazioni con i clienti nel record Persona, come segue:
 
 ![](assets/5a.png)
 
 ![](assets/5b.png)
 
-I clienti possono scegliere di segnalare l&#39;intero set di persone Marketo e di persone CRM all&#39;interno di [!DNL Marketo Measure] Scoprite. Se sei interessato a generare rapporti solo sulle persone CRM, ti consigliamo di creare un segmento per filtrarli.
+I clienti hanno la possibilità di segnalare l’intero set di persone Marketo e CRM all’interno di [!DNL Marketo Measure] Scopri. Se sei interessato a generare rapporti solo sulle persone CRM, ti consigliamo di creare un segmento per filtrarle.
 
 ## [!DNL Marketo Measure Discover] {#marketo-measure-discover}
 
-Quando si riferiscono a lead (persone) in [!DNL Marketo Measure Discover], vedrai il totale dei lead Marketo e CRM. Per creare rapporti solo sulle persone Marketo o solo sui lead CRM, vuoi creare una categoria di segmenti per la tua origine, quindi creare regole di segmento per Marketo e CRM utilizzando il campo &quot;Sistema sorgente&quot; per definire la regola. Una volta creati i segmenti, visualizzerai la categoria Origine disponibile per filtrare tra i tuoi [!DNL Marketo Measure Discover] dashboard.
+Quando si generano rapporti sui lead (persone) in [!DNL Marketo Measure Discover], visualizzerai il totale dei lead Marketo e CRM. Per creare rapporti solo sulle persone Marketo o solo sui lead CRM, devi creare una categoria di segmenti per la tua origine, quindi creare regole di segmenti per Marketo e CRM utilizzando il campo &quot;Sistema di origine&quot; per definire la regola. Una volta creati i segmenti, vedrai la categoria Origine disponibile per filtrare in base al [!DNL Marketo Measure Discover] dashboard.
 
 ![](assets/bizible-discover-1.png)
 
 ![](assets/bizible-discover-2.png)
 
-## Mappature dei campi {#field-mappings}
+## Mappature campi {#field-mappings}
 
 <table> 
  <colgroup> 
@@ -63,18 +64,18 @@ Quando si riferiscono a lead (persone) in [!DNL Marketo Measure Discover], vedra
   </tr> 
   <tr> 
    <td><p>MODIFIED_DATE</p></td> 
-   <td><p>updateAt<strong>*</strong></p></td> 
+   <td><p>updatedAt<strong>*</strong></p></td> 
   </tr> 
   <tr> 
-   <td><p>CREATED_DATE</p></td> 
+   <td><p>DATA_CREAZIONE</p></td> 
    <td><p>createdAt</p></td> 
   </tr> 
   <tr> 
-   <td><p>E-MAIL</p></td> 
+   <td><p>EMAIL</p></td> 
    <td><p>e-mail</p></td> 
   </tr> 
   <tr> 
-   <td><p>WEB_SITE</p></td> 
+   <td><p>SITO_WEB</p></td> 
    <td><p>sito web</p></td> 
   </tr> 
   <tr> 
@@ -100,28 +101,28 @@ Quando si riferiscono a lead (persone) in [!DNL Marketo Measure Discover], vedra
  </tbody> 
 </table>
 
-*Esiste un problema comportamentale noto in cui i campi dell&#39;entità Società Marketo non influiscono sul valore aggiornato della PersonaAt, quindi se i campi rilevanti come Sito Web o Società vengono aggiornati, [!DNL Marketo Measure] non saprà che tali valori vengono modificati perché il valore data/ora aggiornato non viene aggiornato. Questo influisce sulla funzione ABM, che non dispone di nuovi dati per risolvere l’Account per il lead. Non c&#39;è soluzione al momento, ma ci sono piani per affrontare questo problema in futuro.
+*Esiste un problema di comportamento noto in cui i campi dell’entità Marketo Company non influiscono sul valore updateAt della persona, quindi se vengono aggiornati campi rilevanti come Sito web o Azienda, [!DNL Marketo Measure] non è a conoscenza del fatto che tali valori vengono modificati perché il valore di data/ora updateAt non è aggiornato. Questo influisce sulla funzione ABM, in cui non avremmo dati aggiornati per risolvere l’account per il lead. Al momento non esiste una soluzione alternativa, ma si prevede di affrontarla in futuro.
 
 ## Domande frequenti {#faq}
 
-**Perché i conteggi dei lead differiscono tra CRM e [!DNL Marketo Measure Discover]?**
+**Perché i conteggi dei lead differiscono tra il sistema CRM e [!DNL Marketo Measure Discover]?**
 
-Poiché questa integrazione ci consente di creare punti di contatto per i lead che abbiamo importato direttamente da Marketo, potrebbero esserci lead che non sono stati sincronizzati con il CRM, pertanto il conteggio all’interno di Discover potrebbe essere superiore al CRM, in quanto i punti di contatto vengono inviati solo per i lead CRM.
+Poiché questa integrazione ci consente di creare punti di contatto per i lead importati direttamente da Marketo, potrebbero esserci lead che non sono stati sincronizzati con il sistema di gestione delle relazioni con i clienti, pertanto il conteggio all’interno di Discover potrebbe essere più alto di quello del sistema di gestione delle relazioni con i clienti, in quanto i punti di contatto vengono inviati solo per i lead di gestione delle relazioni con i clienti.
 
-**In che modo questi sostituiscono i miei dati?**
+**In che modo questo sostituirà i miei dati?**
 
-Questa integrazione unisce effettivamente i set di dati all’interno dell’attuale [!DNL Marketo Measure] istanza in modo che non venga sostituito nulla. Ciò che ci aspetteremmo dai vostri attuali lead CRM è che quando scarichiamo il valore di 2 anni di Marketo Leads, aggiorneremmo semplicemente quel record Lead per dimostrare che c&#39;era anche una corrispondenza con un lead Marketo. Tutto questo avviene nel backend e i punti di contatto dovrebbero rimanere gli stessi. Ci aspetteremmo anche di vedere più punti di contatto a causa dei Marketo Leads idonei. Se riusciamo a trovare sessioni web abbinate a quelle persone di Marketo, inizieremo a vedere i punti di contatto conteggiati in [!DNL Marketo Measure].
+Questa integrazione unisce effettivamente i set di dati all’interno del [!DNL Marketo Measure] così nulla viene sostituito. Quello che ci aspetteremmo dai tuoi lead CRM correnti è che quando scaricassimo il valore di 2 anni di lead Marketo, semplicemente aggiorneremmo quel record di lead per mostrare che c&#39;è stata anche una corrispondenza con un lead Marketo. Che tutto accada nel backend e che i punti di contatto rimangano gli stessi. Ci aspetteremmo inoltre di vedere più punti di contatto a causa dei lead Marketo idonei. Se riusciamo a trovare sessioni web che corrispondano a quelle di Marketo, inizieremo a vedere i punti di contatto conteggiati in [!DNL Marketo Measure].
 
-**Posso scaricare solo le mie persone da Marketo e interrompere la connessione CRM?**
+**È possibile scaricare da Marketo solo persone personali e interrompere la connessione CRM?**
 
-Al momento, no. Avremo questa opzione in futuro, ma dobbiamo sviluppare altre fasi di questa integrazione Marketo in modo da collegare i programmi, le opportunità e le offerte da Marketo a [!DNL Marketo Measure].
+In questo momento, no. Avremo questa opzione in futuro, ma dobbiamo sviluppare altre fasi di questa integrazione Marketo in modo da collegare i programmi, le opportunità e gli accordi di Marketo a [!DNL Marketo Measure].
 
 **Importa TUTTI i miei Marketo?**
 
-Al momento, il più presto importeremo persone a partire dall’1/1/2018 in modo da avere un minimo di 2 anni di dati, che è lo stesso comportamento che applichiamo dai download CRM. Implementeremo un comportamento migliorato per scaricare una finestra continua di 2 anni dopo che la connessione Marketo è stata stabilita.
+Al momento, la prima persona che importeremo è dal 1/1/2018 in modo che abbiamo un minimo di 2 anni di dati, che è lo stesso comportamento che applichiamo dai download CRM. Implementeremo un comportamento migliorato per scaricare una finestra continua di 2 anni una volta stabilita la connessione Marketo.
 
-Inoltre, non viene applicato alcun filtro per i tipi di persone, pertanto tutte le persone all’interno della finestra di due anni verranno importate e possono essere utilizzate per i punti di contatto.
+Inoltre, non filtra per nessun tipo di persona, quindi tutte le persone nella finestra di due anni verranno importate e saranno idonee per i punti di contatto.
 
-**Cos&#39;è SOLR e perché ho bisogno che sia abilitato per utilizzare questa funzione?**
+**Cos&#39;è la funzione SOLR e perché è necessario che sia abilitata per l&#39;utilizzo di questa funzione?**
 
-Abilitare SOLR per la tua istanza Marketo è un passaggio banale che apre spazio hardware in Marketo in modo che l&#39;abbonamento possa utilizzare il [!DNL Marketo Measure] integrazione. Senza SOLR abilitato, non abbiamo accesso a determinate chiamate che altrimenti ci permetterebbero di scaricare le persone appropriate dalla tua istanza Marketo.
+L&#39;abilitazione di SOLR per l&#39;istanza Marketo è un passaggio insignificante che apre spazio hardware in Marketo in modo che l&#39;abbonamento possa utilizzare [!DNL Marketo Measure] integrazione. Se la funzione SOLR non è abilitata, non abbiamo accesso a determinate chiamate che altrimenti ci consentirebbero di scaricare le persone appropriate dalla tua istanza di Marketo.

@@ -1,18 +1,19 @@
 ---
 unique-page-id: 34406495
-description: Porzioni Ops Marketing - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Porzioni Ops di marketing
+description: Riquadri Marketing Ops - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Riquadri Marketing Ops
 exl-id: e7978a79-6f6e-4bfd-9962-b35b7d46a9ac
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
-# Porzioni Ops di marketing {#marketing-ops-tiles}
+# Riquadri Marketing Ops {#marketing-ops-tiles}
 
-Marketing Ops consente di convalidare e diagnosticare [!DNL Marketo Measure] dati con visibilità completa nei singoli punti di contatto per lead, contatti, account, campagne e opportunità.
+Operazioni di marketing consente di convalidare e diagnosticare [!DNL Marketo Measure] dati con visibilità completa su singoli punti di contatto per lead, contatti, account, campagne e opportunità.
 
 <table> 
  <colgroup> 
@@ -38,7 +39,7 @@ Marketing Ops consente di convalidare e diagnosticare [!DNL Marketo Measure] dat
    <td><p><strong>ID Opp</strong></p></td> 
    <td><p><strong>Nome Opp</strong></p></td> 
    <td><p><strong>ID lead o contatto</strong></p></td> 
-   <td><p><strong>Indirizzo e-mail lead o contatto</strong></p></td> 
+   <td><p><strong>E-mail lead o contatto</strong></p></td> 
    <td><p><strong>ID campagna</strong></p></td> 
    <td><p><strong>Opp Won</strong></p></td> 
    <td><p><strong>Data creazione Opp</strong></p></td> 
@@ -124,51 +125,51 @@ Marketing Ops consente di convalidare e diagnosticare [!DNL Marketo Measure] dat
  </tbody> 
 </table>
 
-## Riquadro account {#account-tile}
+## Sezione account {#account-tile}
 
 ![](assets/one-1.png)
 
-Visualizza i seguenti dati relativi ai conti specificati.
+Visualizza i dati seguenti relativi agli account specificati.
 
-**Gli account devono disporre di dati punto di contatto (applicabili solo se ABM è abilitato)**
+**Gli account devono disporre di dati punto di contatto (applicabile solo se è abilitato ABM)**
 
-- ID account: ID account in CRM
+-ID account: ID account in CRM
 
-- Nome account: Nome account in CRM
+-Nome account: nome account in CRM
 
-Data creazione: Data di creazione dell&#39;account nel CRM
+-Data di creazione: data di creazione dell’account nel sistema di gestione delle relazioni con i clienti
 
-* Drill-down: Vedere Data creazione per ora, minuto, ora
+* Drill-down: vedi Data di creazione per ora, minuto e ora
 
-Sito Web: Valore trovato nel campo Sito Web sull&#39;account
+-Sito Web: valore trovato nel campo Sito Web dell&#39;account
 
-- Livello di coinvolgimento: Punteggio di coinvolgimento predittivo (PES) popolato da [!DNL Marketo Measure]^1
+-Valutazione del coinvolgimento: punteggio di coinvolgimento predittivo (PES) popolato da [!DNL Marketo Measure]^1
 
--Opportunità: Numero di opportunità connesse all&#39;account
+-Opportunità: numero di opportunità collegate all&#39;account
 
-* Drill-down: Visualizza i dettagli delle opportunità associate
+* Drill-down: consulta i dettagli per le opportunità associate
 
--Contatti: Numero di contatti elencati in questo account
+-Contatti: numero di contatti elencati in questo account
 
-* Drill-down: Visualizza i dettagli dei contatti associati
+* Drill-down: consulta i dettagli dei contatti associati
 
--Lead: Numero di lead mappati a questo account tramite la mappatura dei lead verso account^1
+-Lead: numero di lead mappati a questo conto tramite il mapping lead-account^1
 
-* Drill-down: Visualizza i dettagli dei lead mappati all’account
+* Drill-down: consulta i dettagli per i lead mappati sul conto
 
--Punti di contatto di attribuzione: Numero di punti di contatto dell’attribuzione dell’acquirente per l’account
+-Punti di contatto di attribuzione: numero di punti di contatto di attribuzione acquirente per l&#39;account
 
-* Drill-down: Consulta Dettagli punto di contatto di attribuzione dell’acquirente (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing, modello di attribuzione)
+* Drill-down: consulta i dettagli del punto di contatto di attribuzione dell’acquirente (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing, modello di attribuzione)
 
--Punti di contatto: Numero di punti di contatto presenti nei contatti dell&#39;account^2
+-Punti di contatto: numero di punti di contatto che i contatti di questo account hanno^2
 
-* Drill-down: Consulta Punti di contatto sui dettagli del punto di contatto dell’account (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing)
+* Drill-down: vedi i punti di contatto nei dettagli dell’account punto di contatto (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing)
 
 >[!NOTE]
 >
->Se disponi di ABM, vengono visualizzati i punti di contatto relativi ai lead mappati tramite Mappatura lead su account.
+>Se disponi di ABM, verranno visualizzati i punti di contatto relativi ai lead mappati tramite la mappatura lead-account.
 
-## Riquadro opportunità {#opportunity-tile}
+## Sezione opportunità {#opportunity-tile}
 
 ![](assets/two-1.png)
 
@@ -176,92 +177,92 @@ Visualizza i seguenti dati relativi alle opportunità specificate.
 
 -ID opportunità: ID opportunità in CRM
 
--Nome opportunità: Nome opportunità in CRM
+-Nome opportunità: nome dell&#39;opportunità in CRM
 
-- Nome account: Nome account associato all’opportunità
+-Nome account: nome account associato all&#39;opportunità
 
-Data creazione: Data di creazione dell&#39;opportunità nel CRM
+-Data di creazione: data di creazione dell’opportunità nel CRM
 
-Drill-down: Vedere Data creazione per ora, minuto, ora
+Drill-down: vedi Data di creazione per ora, minuto e ora
 
--Chiudi data: Data di chiusura dell&#39;opportunità nel CRM
+-Data di chiusura: data di chiusura dell&#39;opportunità nel CRM
 
-Drill-down: Vedere Chiudi data per ora, minuto, ora
+Drill-down: vedi Data di chiusura per ora, minuto, ora
 
--Importo: Importo totale dell&#39;opportunità
+-Importo: importo totale dell&#39;opportunità
 
--Contatti: Numero di contatti associati all&#39;opportunità
+-Contatti: numero di contatti associati all&#39;opportunità
 
-Drill-down: Visualizza i dettagli dei contatti associati
+Drill-down: consulta i dettagli dei contatti associati
 
--Punti di contatto di attribuzione: Numero di punti di contatto relativi all’attribuzione dell’acquirente
+-Punti di contatto di attribuzione: numero di punti di contatto di attribuzione buyer correlati
 
-Drill-down: Consulta Dettagli punto di contatto di attribuzione dell’acquirente (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing, modello di attribuzione)
+Drill-down: consulta i dettagli del punto di contatto di attribuzione dell’acquirente (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing, modello di attribuzione)
 
-## Riquadro contatti {#contacts-tile}
+## Sezione Contatti {#contacts-tile}
 
 ![](assets/three-1.png)
 
-Visualizza i seguenti dati relativi ai contatti specificati.
+Visualizza i dati seguenti relativi ai contatti specificati.
 
 -ID contatto: ID contatto in CRM
 
--Email: Indirizzo e-mail del record di contatto
+-Email: Indirizzo email del record di contatto
 
-Data creazione: Data di creazione del contatto nel CRM
+-Data di creazione: data di creazione del contatto nel CRM
 
-* Drill-down: Vedere Data creazione per ora, minuto, ora
+* Drill-down: vedi Data di creazione per ora, minuto e ora
 
-- Nome account: Nome account associato al contatto
+-Nome account: nome account associato al contatto
 
--Punti di contatto di attribuzione: Numero di punti di contatto per l’attribuzione dell’acquirente per il contatto
+-Punti di contatto di attribuzione: numero di punti di contatto di attribuzione acquirente per il contatto
 
-* Drill-down: Consulta Dettagli punto di contatto di attribuzione dell’acquirente (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing, modello di attribuzione)
+* Drill-down: consulta i dettagli del punto di contatto di attribuzione dell’acquirente (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing, modello di attribuzione)
 
--Punti di contatto: Numero di punti di contatto dell&#39;acquirente per il contatto
+-Punti di contatto: numero di punti di contatto dell&#39;acquirente per il contatto
 
-* Drill-down: Consulta Contatti sui dettagli del punto di contatto dell’account (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing)
+* Drill-down: consulta Contatti nei dettagli del punto di contatto dell’account (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing)
 
-## Riquadro lead {#leads-tile}
+## Sezione lead {#leads-tile}
 
 ![](assets/four-1.png)
 
-Visualizza i dati seguenti relativi ai lead specificati.
+Visualizza i seguenti dati relativi ai lead specificati.
 
-ID lead: ID lead in CRM
+-ID lead: ID lead in CRM
 
--Email: Indirizzo e-mail record lead
+-E-mail: indirizzo e-mail record lead
 
-Data creazione: Quando il lead è stato creato nel CRM
+-Data di creazione: quando il lead è stato creato nel CRM
 
-* Drill-down: Vedere Data creazione per ora, minuto, ora
+* Drill-down: vedi Data di creazione per ora, minuto e ora
 
--Azienda (dal lead): Società elencata nel record nel CRM popolato dal cliente
+-Società (da lead): la società indicata nel record nel CRM compilato dal cliente
 
-- Nome account: Nome account [!DNL Marketo Measure] si popola in base alla mappatura lead su account
+-Nome account: il nome dell&#39;account [!DNL Marketo Measure] compila in base alla mappatura lead per account
 
--Punti di contatto: Numero di punti di contatto associati al lead
+-Punti di contatto: il numero di punti di contatto associati ai lead
 
-* Drill-down: Consulta Contatti sui dettagli del punto di contatto dell’account (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing)
+* Drill-down: consulta Contatti nei dettagli del punto di contatto dell’account (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing)
 
-## Riquadro Campagne {#campaigns-tile}
+## Sezione campagne {#campaigns-tile}
 
 ![](assets/five-1.png)
 
 Visualizza i seguenti dati relativi alle campagne specificate.
 
-ID campagna: ID campagna in CRM
+-ID campagna: ID campagna nel CRM
 
--Nome campagna: Nome campagna in CRM
+-Nome campagna: nome campagna in CRM
 
--Spesa campagna: La spesa [!DNL Marketo Measure] è stato registrato come associato alla campagna
+-Spesa campagna: la spesa [!DNL Marketo Measure] ha registrato associato alla campagna
 
-Modello di attribuzione: Verrà mostrata l’attribuzione appropriata in base al modello selezionato
+-Modello di attribuzione: mostra l’attribuzione appropriata in base al modello selezionato
 
--Punti di contatto di attribuzione: Numero di punti di contatto di attribuzione dell’acquirente associati alle campagne
+-Punti di contatto di attribuzione: il numero di punti di contatto di attribuzione buyer associati alle campagne
 
-* Drill-down: Consulta Dettagli punto di contatto di attribuzione dell’acquirente (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing, modello di attribuzione)
+* Drill-down: consulta i dettagli del punto di contatto di attribuzione dell’acquirente (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing, modello di attribuzione)
 
--Punti di contatto: Numero di punti di contatto associati alle campagne
+-Punti di contatto: numero di punti di contatto associati alle campagne
 
-* Drill-down: Consulta Contatti sui dettagli del punto di contatto dell’account (ID, E-mail, data punto di contatto, nome account, campagna, canale, canale secondario, tipo di contatto marketing)
+* Drill-down: consulta Contatti nei dettagli del punto di contatto dell’account (ID, e-mail, data punto di contatto, nome account, campagna, canale, sottocanale, tipo di contatto marketing)

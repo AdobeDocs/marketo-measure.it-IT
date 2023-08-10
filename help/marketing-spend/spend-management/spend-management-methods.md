@@ -1,42 +1,43 @@
 ---
-description: Metodi di gestione delle spese - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Metodi di gestione delle spese
+description: Metodi di gestione della spesa - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Metodi di gestione della spesa
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Spend Management
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-# Metodi di gestione delle spese {#spend-management-methods}
+# Metodi di gestione della spesa {#spend-management-methods}
 
-I dati di spesa sono fondamentali per il successo del reporting sul ROI con [!DNL Marketo Measure]. Per ottenere un reporting accurato e completo sul ROI su tutti i canali e i sottocanali, è necessario assicurarsi di disporre dei dati di spesa appropriati [!DNL Marketo Measure].
+I dati di spesa sono fondamentali per il successo dei rapporti sul ROI con [!DNL Marketo Measure]. Per ottenere rapporti sul ROI precisi e completi su tutti i canali e i sottocanali, è necessario assicurarsi di disporre dei dati di spesa appropriati da inserire in [!DNL Marketo Measure].
 
-Ci sono tre modi per spenderli in [!DNL Marketo Measure]. Ogni metodo è progettato per estrarre i dati da particolari input di dati.
+Esistono tre modi per inserire i dati di spesa in [!DNL Marketo Measure]. Ogni metodo è progettato per estrarre i dati di spesa da input di dati specifici.
 
-**1) Account collegati API**
+**1) Account connessi all’API**
 
-Qualsiasi account annuncio a cui ti sei connesso [!DNL Marketo Measure] tramite un’API la spesa viene automaticamente inserita in [!DNL Marketo Measure] per la generazione di rapporti sul ROI. Per verificare quali account si sono connessi e quindi tirare in spesa, vai al [!DNL Marketo Measure] L&#39;app e seleziona la [!UICONTROL Connections] sotto la scheda [!UICONTROL Integrations] sezione . Per maggiori dettagli su come impostare le connessioni API, consulta la nostra [Piattaforme integrate di annunci](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) articolo.
+Qualsiasi account annuncio a cui ti sei connesso [!DNL Marketo Measure] tramite un’API le sue spese verranno automaticamente inserite in [!DNL Marketo Measure] per il reporting sul ROI. Per verificare quali account hai connesso e quindi richiamare la spesa, vai al tuo [!DNL Marketo Measure] App e seleziona la [!UICONTROL Connections] sotto il [!UICONTROL Integrations] sezione. Per ulteriori dettagli su come impostare le connessioni API, consulta la [Piattaforme di annunci integrate](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) articolo.
 
-**2) Sincronizzazione dei costi della campagna CRM**
+**2) Sincronizzazione costi campagna CRM**
 
-Ogni [!DNL Marketo Measure] ha accesso a una funzione denominata [Sincronizza i costi della campagna CRM](/help/marketing-spend/spend-management/crm-campaign-costs.md#availability). Per impostazione predefinita, questo bit di funzione è impostato su &quot;No&quot; ma può essere attivato in qualsiasi momento.
+Ogni [!DNL Marketo Measure] l’account ha accesso a una funzione denominata [Sincronizza costi campagna CRM](/help/marketing-spend/spend-management/crm-campaign-costs.md#availability). Per impostazione predefinita, questo bit di funzione è impostato su &quot;No&quot; ma può essere attivato in qualsiasi momento.
 
 ![](assets/spend-management-methods-1.png)
 
-Una volta abilitata questa funzione, estrarrà automaticamente la spesa da qualsiasi campagna/programma CRM che soddisfi i seguenti criteri
+Una volta abilitata, questa funzione richiama automaticamente la spesa da qualsiasi campagna/programma di gestione delle relazioni con i clienti che soddisfa i seguenti criteri
 
-i. [!DNL Marketo Measure] cerca innanzitutto se Campaign/Program sta creando punti di contatto, da una corrispondenza [Regola di sincronizzazione della campagna](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) creato o corrispondente [Regola di sincronizzazione del programma](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) creato, oppure [Abilita valore punti di contatto acquirenti](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) è &quot;Includi tutti i membri della campagna&quot; o &quot;Includi i membri della campagna &quot;rispondi&quot;.&quot;
+i. [!DNL Marketo Measure] cerca innanzitutto di verificare se la campagna/il programma sta creando punti di contatto, da un [Regola di sincronizzazione della campagna](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) creato o un corrispondente [Regola di sincronizzazione programmi](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) che è stato creato o [Abilita valore punti di contatto acquirenti](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) è &quot;Includi tutti i membri della campagna&quot; o &quot;Includi i membri della campagna &quot;Con risposta&quot;.&quot;
 
-ii) Una data di inizio deve essere compilata nella campagna o nel programma
+ii. È necessario inserire una data di inizio nella campagna/nel programma
 
-iii) È inoltre necessario compilare una data di fine per la campagna o il programma
+iii. Anche la data di fine deve essere inserita nella campagna/programma
 
-IV. Infine, è necessario specificare un costo effettivo (per le campagne in SFDC) o il costo del periodo (per i programmi in Marketo).
+iv. È infine necessario specificare un costo effettivo (per le campagne in SFDC) o un costo periodo (per i programmi in Marketo).
 
 **3) Caricamento manuale dei costi**
 
-Questo metodo consente di: [caricare manualmente i dati di spesa](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs) per i canali e i sottocanali che non sono coperti da account connessi API o dalla sincronizzazione dei costi della campagna di gestione delle relazioni con i clienti. Passando alla sezione Marketing Spend (Spesa di marketing) nel vostro [!DNL Marketo Measure] puoi caricare i dati di spesa tramite un file CSV per uno qualsiasi dei tuoi canali.
+Questo metodo consente di: [carica manualmente i dati di spesa](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs) per i canali e i sottocanali che non sono coperti dagli account API connessi o dalla sincronizzazione dei costi delle campagne CRM. Passando alla sezione Spese di marketing nel tuo [!DNL Marketo Measure] , puoi caricare i dati di spesa tramite un file CSV per qualsiasi canale.
 
-I clienti possono utilizzare una combinazione di tutti e tre questi metodi per gestire la spesa e dipenderanno dalla configurazione specifica della [!DNL Marketo Measure]. Perché esistono tre metodi per importare le spese in [!DNL Marketo Measure], consigliamo vivamente di utilizzare la bacheca di spesa per il marketing disponibile in Discover per ottenere una visione completa di tutti i dati di spesa. Questa bacheca è l&#39;unico luogo in cui potrete vedere tutti i vostri canali e le relative spese. La bacheca delle spese di marketing può aiutarti a identificare rapidamente dove potrebbero esserci lacune nei dati di spesa e come migliorare il reporting sul ROI.
+I clienti possono utilizzare una combinazione di tutti e tre questi metodi per gestire la propria spesa e dipenderà dalla configurazione specifica del [!DNL Marketo Measure]. Perché esistono tre metodi per importare la spesa in [!DNL Marketo Measure], consigliamo vivamente di utilizzare la bacheca Marketing Spend che si trova in Discover per ottenere una visualizzazione completa di tutti i dati di spesa. Questa bacheca è l’unico posto in cui potrai vedere tutti i tuoi canali e la relativa spesa associata. Il comitato per le spese di marketing può aiutarti a identificare rapidamente dove potrebbero essere presenti delle lacune nei dati di spesa e come migliorare il reporting sul ROI.

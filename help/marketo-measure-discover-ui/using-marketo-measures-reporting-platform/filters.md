@@ -3,7 +3,8 @@ unique-page-id: 18874656
 description: Filtri - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Filtri
 exl-id: 249266c8-9ff5-4895-979c-4f377423d031
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 1%
@@ -16,103 +17,103 @@ Scopri di più sui diversi filtri disponibili in Scopri e come utilizzarli.
 
 >[!NOTE]
 >
->Gli operatori &quot;corrisponde a un attributo utente&quot; e &quot;corrisponde a (avanzato)&quot; all’interno dei filtri Discover sono puramente amministrativi e possono essere ignorati in modo sicuro.
+>Gli operatori &quot;corrisponde a un attributo utente&quot; e &quot;corrisponde a (avanzato)&quot; all’interno dei filtri di individuazione sono puramente amministrativi e possono essere tranquillamente ignorati.
 
 **ID account**
 
-_Utilizzato in: Marketing basato su account_
+_Utilizzato in: marketing basato sull’account_
 
-Seleziona o incolla una serie di ID account dal CRM per filtrare i risultati. Gli ID account forniscono una maggiore univocità rispetto a Nome account, poiché i nomi possono essere gli stessi.
+Seleziona o incolla una serie di ID account dal CRM per filtrare i risultati. Gli ID account forniscono maggiore univocità rispetto al nome account, in quanto i nomi possono essere uguali.
 
 **Nome account**
 
-_Utilizzato in: Marketing basato su account_
+_Utilizzato in: marketing basato sull’account_
 
-Seleziona o incolla una serie di nomi di account dal CRM per filtrare i risultati. Le stringhe possono avere duplicati, quindi è possibile avere più &quot;[!DNL Marketo Measure]&quot;, ad esempio. Se in questo caso è necessario un singolo account, utilizza invece il filtro ID account .
+Seleziona o incolla una serie di nomi account dal CRM per filtrare i risultati. Le stringhe possono avere duplicati, quindi è possibile avere più elementi &quot;[!DNL Marketo Measure]&quot; ad esempio. Se in questo caso è necessario un singolo account, utilizza invece il filtro ID account.
 
 **Modello di attribuzione**
 
-_Utilizzato in: Panoramica, spese di marketing, ROI degli annunci, marketing basato su account, traffico web, CMO, media a pagamento, marketing dei contenuti, passaporto_
+_Utilizzato in: Panoramica, Spese di marketing, ROI annunci, Marketing basato su account, Traffico web, CMO, Supporti a pagamento, Marketing dei contenuti, Passport_
 
-Scegliete un singolo modello di attribuzione da applicare alla bacheca: Primo contatto, contatto per la creazione di lead, a forma di U, a forma di W, a percorso completo o a modello personalizzato. Percorso completo e modello personalizzato non sono disponibili su tutti i livelli.
+Scegli un singolo modello di attribuzione da applicare alla bacheca: Primo contatto, Tocco creazione lead, A forma di U, A forma di W, Percorso completo o Modello personalizzato. Il percorso completo e il modello personalizzato non sono disponibili su tutti i livelli.
 
-**Campaign**
+**Campagna**
 
-_Utilizzato in: Panoramica, crescita, ROI annunci, traffico web, CMO, media a pagamento, marketing contenuti, Passport_
+_Utilizzato in: Panoramica, Crescita, ROI annunci, Traffico web, CMO, Supporti a pagamento, Marketing dei contenuti, Passport_
 
-Filtrate la bacheca per uno o più nomi di campagne. Gli operatori offrono al filtro una flessibilità aggiuntiva, ad esempio utilizzando gli operatori &quot;contiene&quot; o &quot;inizia con&quot;. Se è stato applicato un filtro Canale o Sottocanale, l’elenco delle campagne visualizzate sarà un sottoinsieme dei filtri applicati.
+Filtra la bacheca in base a uno o più nomi di campagna. Gli operatori offrono al filtro ulteriore flessibilità, ad esempio utilizzando gli operatori &quot;contiene&quot; o &quot;inizia con&quot;. Se è stato applicato un filtro Canale o Sottocanale, l’elenco delle campagne visualizzate sarà un sottoinsieme dei filtri applicati.
 
 **Categoria 1-10**
 
-_Utilizzato in: Panoramica, crescita, ROI annunci, CMO, media a pagamento, marketing dei contenuti, Velocity, snapshot, funnel coorte, Passport_
+_Utilizzato in: Panoramica, Crescita, ROI annunci, CMO, Paid Media, Content Marketing, Velocity, Snapshot, Cohort Funnel, Passport_
 
-Applicate filtri di segmento alla bacheca, utilizzando le categorie e i segmenti creati nella [!DNL Marketo Measure] Impostazioni. L’elenco delle categorie create verrà visualizzato nel menu dei filtri, pertanto se non è stata impostata alcuna categoria, nel menu non saranno presenti filtri di categoria. Le categorie di segmenti non sono disponibili in tutti i livelli e il numero di categorie disponibili varia anche in base al livello.
+Applica i filtri segmento alla bacheca, utilizzando le Categorie e i Segmenti creati in [!DNL Marketo Measure] Impostazioni. L&#39;elenco delle Categorie create verrà visualizzato nel menu dei filtri, quindi se non è stata impostata alcuna Categoria, nel menu non sarà presente alcun filtro Categoria. Le categorie di segmenti non sono disponibili in tutti i livelli e anche il numero di categorie disponibili varia in base al livello.
 
 **Canale**
 
-_Utilizzato in: Panoramica, crescita, spesa marketing, ROI degli annunci, traffico web, CMO, media a pagamento, marketing dei contenuti, Velocity, Passport_
+_Utilizzato in: Panoramica, Crescita, Spesa marketing, ROI annunci, Traffico web, CMO, Supporti a pagamento, Marketing dei contenuti, Velocity, Passport_
 
-Filtrate la bacheca per uno o più canali. Gli operatori offrono al filtro una flessibilità aggiuntiva, ad esempio utilizzando gli operatori &quot;contiene&quot; o &quot;inizia con&quot;. Una volta inserito un canale, i valori mostrati nei filtri Subchannel e Campaign verranno ricavati dal filtro del canale secondario applicato.
+Filtra la scheda per uno o più canali. Gli operatori offrono al filtro ulteriore flessibilità, ad esempio utilizzando gli operatori &quot;contiene&quot; o &quot;inizia con&quot;. Una volta inserito un canale, i valori mostrati nei filtri Subchannel e Campaign provengono dal filtro subchannel applicato.
 
 **Fase coorte**
 
 _Utilizzato in: Funnel coorte_
 
-Seleziona l’area di visualizzazione di cui desideri visualizzare una coorte. L’area di visualizzazione selezionata verrà visualizzata nella parte superiore dell’imbuto, con tutte le conversioni che scorrono dall’alto verso il basso.
+Selezionare l&#39;area di visualizzazione di cui si desidera visualizzare una coorte. L’area di visualizzazione selezionata apparirà nella parte superiore dell’imbuto, con tutte le conversioni che scorrono dalla parte superiore.
 
 **Data**
 
-_Utilizzato in: Panoramica, crescita, spesa marketing, ROI degli annunci, marketing basato su account, traffico web, CMO, media a pagamento, marketing dei contenuti, Velocity, snapshot, funnel coorte, Passport_
+_Utilizzato in: Panoramica, Crescita, Spese di marketing, ROI annunci, Marketing basato su account, Traffico web, CMO, Paid Media, Marketing dei contenuti, Velocity, Snapshot, Funnel coorte, Passport_
 
-Seleziona un intervallo di date per filtrare i dati nelle bacheche, utilizzando operatori di date flessibili come ad esempio &quot;è nell’intervallo&quot; &quot;è nell’anno&quot;, &quot;è nell’anno&quot; o &quot;è prima&quot;. L’eccezione è Istantanea, in cui verrà selezionata una singola data per visualizzare un’istantanea dei dati.
+Seleziona un intervallo di date per filtrare i dati nelle bacheche, utilizzando operatori di date flessibili come, ad esempio, &quot;è nell’intervallo&quot;, &quot;è nell’anno&quot; o &quot;è prima&quot;. L&#39;eccezione è Snapshot, in cui è possibile selezionare una singola data per visualizzare un&#39;istantanea dei dati.
 
 **Tipo di data**
 
-_Utilizzato in: Panoramica, crescita, spesa marketing, ROI degli annunci, marketing basato su account, traffico web, CMO, media a pagamento, marketing dei contenuti, Passport_
+_Utilizzato in: Panoramica, Crescita, Spese di marketing, ROI annunci, Marketing basato su account, Traffico web, CMO, Supporti a pagamento, Marketing dei contenuti, Passport_
 
-Scegliere il tipo di data da utilizzare, associato al filtro Data. Il tipo di data predefinito varia a seconda della bacheca. Per data punto di contatto si intende la data in cui è avvenuta l’attività di marketing, Data creazione è la data in cui è stato creato il lead o il contatto o l’opportunità nel CRM e Data chiusura è la data in cui l’opportunità è stata chiusa.
+Scegliere il tipo di data da utilizzare, associato al filtro Data. Il tipo di data predefinito varia in base alla bacheca. Data punto di contatto si riferisce alla data in cui è avvenuta l’attività di marketing, Data di creazione è la data in cui il lead, il contatto o l’opportunità è stato creato nel CRM e Data di chiusura è la data in cui l’opportunità è stata chiusa.
 
 **Dimensione**
 
-_Utilizzato in: Supporti a pagamento_
+_Utilizzato in: File multimediali a pagamento_
 
-Il Dimension è simile alla funzione Raggruppa per, con la differenza che viene utilizzato sulla scheda Media a pagamento in modo leggermente diverso. Anziché sovrapporre un grafico, il Dimension modifica le linee del grafico Panoramica e l’oggetto iniziale delle tabelle.
+La funzione Dimension è simile alla funzione Raggruppa per, con la differenza che viene utilizzata nella scheda File multimediali pagati in modo leggermente diverso. Anziché impilare un grafico, Dimension modifica le linee del grafico Panoramica e l&#39;oggetto iniziale delle tabelle.
 
 ![](assets/1.png)
 
-Per impostazione predefinita, il Dimension è impostato su Subchannel e può essere modificato in:
+Per impostazione predefinita, Dimension è impostato su Sottocanale e può essere modificato in:
 
-* Nessuno: Visualizza tutti gli elementi aggregati senza interruzioni
-* Canale: Elenca i dati per canale di marketing
-* Canale secondario: Elenca i dati per canale secondario di marketing
-* Campagna: Elenca i dati per campagna
-* Account: Elenca i dati per account. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Gruppo di annunci: Elenca i dati per gruppo di annunci. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Annuncio: Elenca i dati per annuncio. Si applica agli annunci Doubleclick, quindi se Doubleclick non è utilizzato, non verrà visualizzato alcun risultato
-* Inserzionista: Elenca i dati per inserzionista. Si applica all&#39;inserzionista Doubleclick, quindi se Doubleclick non è utilizzato, non verrà visualizzato alcun risultato
-* Creativo: Elenca i dati per creativo. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Parola chiave: Elenca i dati per parola chiave. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Posizionamento: Elenca i dati in base al posizionamento. Si applica ai posizionamenti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
-* Sito: Elenca i dati per sito. Si applica ai siti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Nessuno: visualizza tutto in forma aggregata senza suddivisioni
+* Canale: elenca i dati per canale di marketing
+* Sottocanale: elenca i dati per sottocanale di marketing
+* Campagna: elenca i dati per campagna
+* Account: elenca i dati per account. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Gruppo di annunci: elenca i dati per gruppo di annunci. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Ad: elenca i dati per annuncio. Si applica agli annunci Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Inserzionista: elenca i dati per inserzionista. Si applica all’inserzionista Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Creativo: elenca i dati per creativo. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Parola chiave: elenca i dati per parola chiave. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Posizionamento: elenca i dati in base al posizionamento. Si applica ai posizionamenti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Sito: elenca i dati per sito. Si applica ai siti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
 
 **Raggruppa per**
 
-_Utilizzato in: Panoramica, crescita, spesa marketing, marketing basato su account, traffico web, CMO_
+_Utilizzato in: Panoramica, Crescita, Spesa marketing, Marketing basato su account, Traffico web, CMO_
 
-Consente di regolare i grafici per modificare la dimensione sovrapposta e raggruppata. Per impostazione predefinita, Raggruppa per è impostato su Canale e può essere modificato in:
+Regola i grafici per modificare le dimensioni che vengono sovrapposte e raggruppate. Per impostazione predefinita, Raggruppa per è impostato su Canale e può essere modificato in:
 
-* Nessuno: Visualizza tutti gli elementi aggregati senza interruzioni
-* Canale: Raggruppa i dati per canale di marketing
-* Canale secondario: Raggruppa i dati per canale secondario marketing
-* Campagna: Raggruppa i dati per campagna
-* Account: Raggruppa i dati per account. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Gruppo di annunci: Raggruppa i dati per gruppo di annunci. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Annuncio: Raggruppa i dati per annuncio. Si applica agli annunci Doubleclick, quindi se Doubleclick non è utilizzato, non verrà visualizzato alcun risultato
-* Inserzionista: Raggruppa i dati per inserzionista. Si applica all&#39;inserzionista Doubleclick, quindi se Doubleclick non è utilizzato, non verrà visualizzato alcun risultato
-* Creativo: Raggruppa i dati per creativo. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Parola chiave: Raggruppa i dati per parola chiave. Si applica a [!DNL AdWords], [!DNL Bing]e [!DNL Facebook].
-* Posizionamento: Raggruppa i dati per posizione. Si applica ai posizionamenti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
-* Sito: Raggruppa i dati per sito. Si applica ai siti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Nessuno: visualizza tutto in forma aggregata senza suddivisioni
+* Canale: raggruppa i dati per canale di marketing
+* Sottocanale: raggruppa i dati per sottocanale di marketing
+* Campagna: raggruppa i dati per campagna
+* Conto: raggruppa i dati per conto. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Gruppo di annunci: raggruppa i dati per gruppo di annunci. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Annuncio: raggruppa i dati per annuncio. Si applica agli annunci Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Inserzionista: raggruppa i dati per inserzionista. Si applica all’inserzionista Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Creativo: raggruppa i dati per creativo. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Parola chiave: raggruppa i dati per parola chiave. Applicabile a [!DNL AdWords], [!DNL Bing], e [!DNL Facebook].
+* Posizionamento: raggruppa i dati in base al posizionamento. Si applica ai posizionamenti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
+* Sito: raggruppa i dati per sito. Si applica ai siti Doubleclick, quindi se Doubleclick non viene utilizzato, non verrà visualizzato alcun risultato
 
 ![](assets/2.png)
 
@@ -120,35 +121,35 @@ Consente di regolare i grafici per modificare la dimensione sovrapposta e raggru
 
 _Utilizzato in: Marketing dei contenuti_
 
-Approfondisci le prestazioni di una singola pagina di destinazione o, forse, delle pagine di destinazione che contengono una determinata parola, ad esempio &quot;blog&quot;.
+Approfondisci le prestazioni di una singola pagina di destinazione, o forse di pagine di destinazione che contengono una certa parola come &quot;blog&quot;.
 
 **Metrica**
 
-_Utilizzato in: Panoramica, Traffico web, CMO, Media a pagamento, Marketing dei contenuti_
+_Utilizzato in: Panoramica, Traffico web, CMO, Supporti a pagamento, Content Marketing_
 
-Esistono due selettori di metriche diverse che vengono utilizzati su diverse bacheche. Il selettore delle metriche modifica la misura in un grafico, in modo da poter passare, ad esempio, dalla visualizzazione di entrate, spese o impression.
+Esistono due selettori di metriche diversi utilizzati in pannelli diversi. Il selettore delle metriche modifica la misura in un grafico, in modo da poter alternare, ad esempio, la visualizzazione delle entrate o delle spese o delle impression.
 
-Nelle bacheche Panoramica e CMO è disponibile un elenco abbreviato di valori relativi alle metriche ROI:
+Nelle schede Panoramica e CMO, è disponibile un elenco ridotto di valori relativi alle metriche ROI:
 
-* Entrate
+* Ricavi
 * Spesa
 * Offerte
-* Ricavi dalla pipeline
+* Ricavi pipeline
 * Opportunità
 * Contatti
 * Lead
 
-Nelle bacheche Traffico web, File multimediali a pagamento e Content Marketing è disponibile un elenco più lungo di valori relativi alle metriche ROI e funnel:
+Sulle bacheche Traffico web, Contenuti multimediali a pagamento e Marketing dei contenuti, è disponibile un elenco più lungo di valori relativi sia al ROI che alle metriche funnel:
 
-* Entrate
+* Ricavi
 * Spesa
 * Offerte
-* Ricavi dalla pipeline
+* Ricavi pipeline
 * Opportunità
 * Contatti
 * Lead
 * Clic
-* impression
+* impressioni
 * Visite
 * Visite univoche
 * Visualizzazioni pagina
@@ -158,22 +159,22 @@ Nelle bacheche Traffico web, File multimediali a pagamento e Content Marketing �
 
 _Utilizzato in: Velocity_
 
-Per impostazione predefinita, la bacheca di Velocity visualizza i tempi di tutte le fasi, ma per eseguire il drill-in a uno specifico stadio, utilizzate il filtro Stage per selezionare l&#39;area di visualizzazione.
+Per impostazione predefinita, la scheda Velocity visualizza i tempi per tutti gli stadi, ma per eseguire il drill-in a uno stadio specifico, utilizzate il filtro Stadio per selezionare lo stadio.
 
-**Canale secondario**
+**Sottocanale**
 
-_Utilizzato in: Panoramica, crescita, spesa marketing, ROI degli annunci, traffico web, CMO, media a pagamento, marketing dei contenuti, Passport_
+_Utilizzato in: Panoramica, Crescita, Spesa marketing, ROI annunci, Traffico web, CMO, Supporti a pagamento, Marketing dei contenuti, Passport_
 
-Filtrate la bacheca per uno o più sottocanali. Gli operatori offrono al filtro una flessibilità aggiuntiva, ad esempio utilizzando gli operatori &quot;contiene&quot; o &quot;inizia con&quot;. Se è stato applicato un filtro Canale, l’elenco dei sottocanali visualizzati sarà un sottoinsieme dei filtri applicati. Una volta inserito un canale secondario, i valori mostrati nei filtri Campagna saranno ricavati dal filtro del canale secondario applicato.
+Filtra la scheda in base a uno o più sottocanali. Gli operatori offrono al filtro ulteriore flessibilità, ad esempio utilizzando gli operatori &quot;contiene&quot; o &quot;inizia con&quot;. Se è stato applicato un filtro Canale, l’elenco dei canali secondari visualizzati sarà un sottoinsieme dei filtri applicati. Una volta inserito un sottocanale, i valori mostrati nei filtri di Campaign provengono dal filtro del sottocanale applicato.
 
 **URL**
 
 _Utilizzato in: Traffico web_
 
-Approfondisci il traffico di un singolo URL o forse degli URL che contengono una determinata parola, ad esempio &quot;product&quot;.
+Approfondisci il traffico di un singolo URL, o forse URL che contengono una certa parola come &quot;prodotto&quot;.
 
-**Vinto**
+**Vincitore**
 
 _Utilizzato in: Velocity_
 
-Per impostazione predefinita, la scheda Velocity riporta solo le opportunità di vincita chiuse, ma regola questo filtro per vedere la velocità delle opportunità di vincita o di perdita chiuse chiuse.
+Per impostazione predefinita, la bacheca Velocity riporta solo le opportunità realizzate chiuse, ma regola questo filtro per esaminare la velocità delle opportunità realizzate chiuse o perse chiuse.

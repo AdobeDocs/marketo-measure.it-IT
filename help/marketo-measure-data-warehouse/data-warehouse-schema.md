@@ -1,9 +1,10 @@
 ---
 unique-page-id: 35586140
-description: Data Warehouse schema - Marketo Measure - Documentazione del prodotto
+description: Schema Data Warehouse - Marketo Measure - Documentazione del prodotto
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: e7993619e2dcfdfcab1a02d95d404e76fe1366c1
+feature: Data Warehouse
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '22610'
 ht-degree: 5%
@@ -12,25 +13,24 @@ ht-degree: 5%
 
 # Data Warehouse schema {#data-warehouse-schema}
 
-Data Warehouse ti consente di tenere traccia di quanto desideri, di eseguire rapporti sui dati di attribuzione ovunque ti trovi e di collegarli ad altri set di dati.
+Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti sui dati di attribuzione ovunque desideri e collegarli ad altri set di dati.
 
 >[!IMPORTANT]
 >
->* Le righe con un valore per _DELETED_DATE verranno mantenute per 7 giorni, quindi rimosse dal Snowflake.
->* I fusi orari utilizzati nel Snowflake aderiscono all’Ora universale coordinata (UTC).
-
+>* Le righe con un valore per _DELETED_DATE verranno mantenute per 7 Snowflake e quindi rimosse.
+>* I fusi orari utilizzati nel Snowflake sono conformi al tempo coordinato universale (UTC).
 
 >[!NOTE]
 >
->[Fai clic qui](#sample-queries) per visualizzare query di esempio in fondo a questo articolo.
+>[Fai clic qui](#sample-queries) per visualizzare le query di esempio in fondo a questo articolo.
 
 ## Diagrammi di relazione entità {#entity-relationship-diagrams}
 
-La _Data Warehouse modello dati_ ERD mostra come i dati nel data warehouse devono fluire e essere collegati tra loro. Questo diagramma non include tutte le tabelle disponibili nel data warehouse perché alcune di esse rappresentano tabelle di mappatura, visualizzazioni di altre tabelle già presenti o tabelle obsolete che non è consigliabile utilizzare. Di seguito sono riportate le descrizioni dettagliate delle tabelle e delle colonne presenti nel data warehouse. Molte di queste tabelle contengono campi denormalizzati, tuttavia, questo diagramma è il modello dati consigliato, sfruttando invece i dati provenienti da tabelle dimensionali.
+Il _Data Warehouse modello dati_ ERD mostra il modo in cui i dati nel data warehouse devono fluire ed essere collegati tra loro. Questo diagramma non include tutte le tabelle disponibili nel data warehouse perché alcune di esse rappresentano tabelle di mappatura, viste di altre tabelle già presenti o tabelle obsolete che non si consiglia di utilizzare più. Di seguito sono riportate le descrizioni dettagliate delle tabelle e delle colonne presenti nel data warehouse. Molte di queste tabelle contengono campi denormalizzati, tuttavia questo diagramma è il modello dati consigliato, che sfrutta i dati provenienti da tabelle dimensionali.
 
-L&#39;ulteriore _Modello dati dimensionale annunci_ ERD presenta una panoramica del modo in cui le tabelle per le dimensioni specifiche degli annunci possono essere collegate meglio alle tabelle nel modello dati principale. Anche se le dimensioni degli annunci vengono denormalizzate in altre tabelle, questo rappresenta il modello consigliato per l’unione di queste dimensioni.
+Il valore aggiuntivo _Aggiunge il modello dati dimensionale_ ERD presenta una visualizzazione del modo migliore per collegare le tabelle per le dimensioni specifiche degli annunci alle tabelle del modello dati principale. Anche se le dimensioni degli annunci vengono denormalizzate in altre tabelle, questo rappresenta il modello consigliato per unire queste dimensioni.
 
-_Fare clic su un&#39;immagine per la relativa versione a dimensione intera_
+_Fare clic su un&#39;immagine per la versione a schermo intero_
 
 <table style="table-layout:auto"> 
  <colgroup> 
@@ -40,7 +40,7 @@ _Fare clic su un&#39;immagine per la relativa versione a dimensione intera_
  <tbody> 
   <tr> 
    <td><strong>Data Warehouse modello dati</strong></td> 
-   <td><strong>Modello dati dimensionale annunci</strong></td> 
+   <td><strong>Aggiunge il modello dati dimensionale</strong></td> 
   </tr> 
   <tr> 
    <td> 
@@ -55,9 +55,9 @@ _Fare clic su un&#39;immagine per la relativa versione a dimensione intera_
  </tbody> 
 </table>
 
-## Viste {#views}
+## Visualizzazioni {#views}
 
-### BIZ_ACCOUNTS {#biz-accounts}
+### BIZ_ACCOUNT {#biz-accounts}
 
 Account importati dal sistema di origine.
 
@@ -72,62 +72,62 @@ Account importati dal sistema di origine.
     <tr>
       <td>ID</td>
       <td>varchar</td>
-      <td>L'ID account dal sistema di origine.</td>
+      <td>L’ID account dal sistema di origine.</td>
       <td>0013100001kpAZxAAM</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione dell'account dal sistema di origine.</td>
+      <td>La data di creazione dell’account, dal sistema di origine.</td>
       <td>2016-08-28 00:32:55.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data ultima modifica dell'account dal sistema di origine.</td>
+      <td>Data dell’ultima modifica dell’account, dal sistema di origine.</td>
       <td>2018-08-01 17:38:30.000</td>
     </tr>
     <tr>
       <td>NOME</td>
       <td>varchar</td>
-      <td>Nome account dal sistema di origine.</td>
+      <td>Nome account, dal sistema di origine.</td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
     <tr>
-      <td>WEB_SITE</td>
+      <td>SITO_WEB</td>
       <td>varchar</td>
-      <td>Sito web per l'account, come registrato nel sistema di origine, utilizzato per la mappatura da lead a account.</td>
+      <td>Sito web dell’account, come registrato nel sistema di origine, utilizzato per la mappatura lead in account.</td>
       <td>www.adobe.com</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_RATING</td>
       <td>varchar</td>
-      <td>Un grado di lettera (A, B, C, D, N/D) generato dal [!DNL Marketo Measure] Modello di apprendimento automatico. Se ABM è disattivato, questo valore sarà nullo.</td>
+      <td>Un livello di lettera (A, B, C, D, N/A) generato dal [!DNL Marketo Measure] Modello di apprendimento automatico. Il valore sarà nullo se ABM è disabilitato.</td>
       <td>B</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_SCORE</td>
       <td>numero(38,19)</td>
-      <td>Punteggio numerico calcolato da [!DNL Marketo Measure] Apprendimento automatico per generare il punteggio di coinvolgimento predittivo (Engagement_Rating). Se ABM è disattivato, questo valore sarà nullo.</td>
+      <td>Un punteggio numerico calcolato da [!DNL Marketo Measure] Machine Learning per generare il punteggio di coinvolgimento predittivo (Engagement_Rating). Il valore sarà nullo se ABM è disabilitato.</td>
       <td>0.1417350147058800000</td>
     </tr>
     <tr>
       <td>DOMINIO</td>
       <td>varchar</td>
-      <td>La versione ridotta del sito web, che memorizza solo il dominio.</td>
+      <td>Versione analizzata del sito web, in cui è memorizzato solo il dominio.</td>
       <td>adobe</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>booleano</td>
-      <td>Se il record viene eliminato o meno nel sistema di origine.</td>
+      <td>Indica se il record viene eliminato o meno nel sistema di origine.</td>
       <td>falso</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
       <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
-      <td>{"Account_Type__c": "Sicurezza", "Foo":"Bar"}</td>
+      <td>{"Account_Type__c": "Security", "Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -138,7 +138,7 @@ Account importati dal sistema di origine.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -150,9 +150,9 @@ Account importati dal sistema di origine.
   </tbody>
 </table>
 
-### BIZ_ACCOUNT_TO_EMAILS {#biz-account-to-emails}
+### BIZ_ACCOUNT_TO_EMAIL {#biz-account-to-emails}
 
-Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. Questa tabella sarà vuota se ABM è disattivato.
+Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli account. Questa tabella sarà vuota se ABM è disabilitato.
 
 <table>
   <tbody>
@@ -165,7 +165,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
     <tr>
       <td>ID</td>
       <td>varchar</td>
-      <td>Un ID univoco per il record.</td>
+      <td>ID univoco del record.</td>
       <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13,000</td>
     </tr>
     <tr>
@@ -176,7 +176,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
         <p>varchar</p>
       </td>
       <td>
-        <p>ID account del sistema di origine.</p>
+        <p>ID dell’account del sistema di origine.</p>
       </td>
       <td>
         <p>0013100001phrBAAAY</p>
@@ -184,13 +184,13 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo e-mail mappato sull'account tramite relazioni di contatto o mappatura lead su account.</p>
+        <p>Indirizzo e-mail mappato sull’account, tramite le relazioni di contatto o la mappatura lead-account.</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -204,7 +204,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data ultima modifica dell'account dal sistema di origine.</p>
+        <p>Data dell’ultima modifica dell’account, dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-31 23:53:39.000</p>
@@ -212,13 +212,13 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di creazione dell'account dal sistema di origine.</p>
+        <p>La data di creazione dell’account, dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-18 22:01:32.000</p>
@@ -232,7 +232,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene considerato eliminato o meno.</p>
+        <p>Indica se il record viene considerato eliminato o meno.</p>
       </td>
       <td>
         <p>falso</p>
@@ -247,7 +247,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -261,7 +261,7 @@ Tabella di mappatura tra gli indirizzi e-mail e gli account lead/contatti noti. 
 
 ### BIZ_ACTIVITIES {#biz-activities}
 
-Attività importate da un sistema sorgente o da un account annuncio connesso.
+Attività importate da un sistema di origine o da un account annuncio connesso.
 
 <table>
   <tbody>
@@ -292,7 +292,7 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Id per il lead associato all’attività.</td>
+      <td>ID del lead associato all’attività.</td>
       <td>
         <p>15530482</p>
       </td>
@@ -305,7 +305,7 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del contatto associato all'attività.</p>
+        <p>ID del contatto associato all’attività.</p>
       </td>
       <td>
         <p>13792552</p>
@@ -326,41 +326,41 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
       </td>
     </tr>
     <tr>
-      <td>ACTIVITY_TYPE_NAME</td>
+      <td>NOME_TIPO_ATTIVITÀ</td>
       <td>varchar</td>
-      <td>Nome attività dal sistema di origine.</td>
+      <td>Nome dell’attività, dal sistema di origine.</td>
       <td>
-        <p>cambia stato in avanzamento</p>
+        <p>modifica stato in progressione</p>
       </td>
     </tr>
     <tr>
-      <td>START_DATE</td>
+      <td>DATA_INIZIALE</td>
       <td>timestamp_ntz</td>
-      <td>Data di inizio dell'attività, dal sistema di origine.</td>
+      <td>Data di inizio dell’attività, dal sistema di origine.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>DATA_FINE</td>
+      <td>END_DATE</td>
       <td>timestapm_ntz</td>
-      <td>Data di fine dell’attività, dal sistema di origine.</td>
+      <td>Data di fine dell'attività, dal sistema di origine.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>CAMPAIGN_ID</td>
+      <td>ID_CAMPAGNA</td>
       <td>varchar</td>
-      <td>ID per la campagna di cui l’attività fa parte dal sistema di origine.</td>
+      <td>ID della campagna di cui fa parte l’attività, dal sistema di origine.</td>
       <td>
         <p>li.508038570.147643566</p>
       </td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>SISTEMA_DI_ORIGINE</td>
       <td>varchar</td>
       <td>Identifica il tipo di sistema di origine.</td>
       <td>Marketo</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione della riga nel sistema di origine.</td>
       <td>2020-01-01 01:01:00.000</td>
@@ -368,19 +368,19 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica apportata alla riga nel sistema di origine.</td>
+      <td>Data dell’ultima modifica apportata alla riga nel sistema di origine.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>IS_DELETD</td>
       <td>booleano</td>
-      <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
+      <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>falso</td>
     </tr>
     <tr>
       <td>AD_FORM_ID</td>
       <td>varchar</td>
-      <td>ID per il modulo annuncio di cui l’attività fa parte dal sistema di origine.</td>
+      <td>ID del modulo annuncio di cui fa parte l’attività, dal sistema di origine.</td>
       <td>li.507063119.3757704</td>
     </tr>
     <tr>
@@ -392,7 +392,7 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -406,7 +406,7 @@ Attività importate da un sistema sorgente o da un account annuncio connesso.
 
 ### BIZ_ADS {#biz-ads}
 
-Annunci importati da qualsiasi account annuncio connesso.
+Annunci importati da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -432,10 +432,10 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per l'annuncio.</p>
+        <p>Un ID univoco per l’annuncio.</p>
       </td>
       <td>
-        <p>fb.106851586409075.6052044288804.605204429004.60534577 66804</p>
+        <p>fb.106851586409075.6052044288804.6052044290004.6053457066804</p>
       </td>
     </tr>
     <tr>
@@ -446,7 +446,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'ID dell'annuncio dal sistema di origine.</p>
+        <p>L’ID dell’annuncio dal sistema di origine.</p>
       </td>
       <td>
         <p>6053457066804</p>
@@ -460,7 +460,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stato importato l’annuncio.</p>
+        <p>ID dell’account annuncio da cui è stato importato l’annuncio.</p>
       </td>
       <td>
         <p>fb.106851586409075</p>
@@ -488,7 +488,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell’inserzionista per l’annuncio, in particolare per Doubleclick.</p>
+        <p>ID dell’inserzionista per l’annuncio, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -496,7 +496,7 @@ Annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -516,7 +516,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del gruppo di annunci per l’annuncio.</p>
+        <p>ID del gruppo di annunci dell’annuncio.</p>
       </td>
       <td>
         <p>fb.106851586409075.6052044288804.6052044290004</p>
@@ -561,7 +561,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>Nome della campagna per l’annuncio.</p>
       </td>
       <td>
-        <p>Campagna per la generazione di lead</p>
+        <p>Campagna di generazione di lead</p>
       </td>
     </tr>
     <tr>
@@ -572,7 +572,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l’annuncio è ancora attivo nel sistema di origine.</p>
+        <p>Se l’annuncio è ancora attivo o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -600,7 +600,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:59.000</p>
@@ -608,13 +608,13 @@ Annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:59.000</p>
@@ -628,7 +628,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’annuncio dal sistema di origine.</p>
+        <p>Nome dell’annuncio, dal sistema di origine.</p>
       </td>
       <td>
         <p>Annuncio 2</p>
@@ -636,14 +636,14 @@ Annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
         <p>Se l’annuncio deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -651,7 +651,7 @@ Annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -669,7 +669,7 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Aggiungi".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Ad".</p>
       </td>
       <td>
         <p>Annuncio</p>
@@ -677,13 +677,13 @@ Annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di annunci per l’annuncio.</p>
+        <p>Nome del provider dell’annuncio per l’annuncio.</p>
       </td>
       <td>
         <p>Facebook</p>
@@ -698,7 +698,7 @@ Annunci importati da qualsiasi account annuncio connesso.
       </td>
       <td>
         <p>L’URL della pagina di destinazione.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
@@ -711,20 +711,20 @@ Annunci importati da qualsiasi account annuncio connesso.
       </td>
       <td>
         <p>Valore precedente per URL_CURRENT.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL_RICHIESTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Di cosa sarà decorato l’URL [!DNL Marketo Measure] Parametri.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>Con cosa verrà decorato l’URL [!DNL Marketo Measure] parametri.</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
@@ -736,8 +736,8 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Importata dal sistema di origine.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>Importato dal sistema di origine.</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
@@ -746,10 +746,10 @@ Annunci importati da qualsiasi account annuncio connesso.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>6008900572523230000</p>
@@ -764,7 +764,7 @@ Annunci importati da qualsiasi account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -776,9 +776,9 @@ Annunci importati da qualsiasi account annuncio connesso.
   </tbody>
 </table>
 
-### BIZ_ADVERTISERS {#biz-advertisers}
+### BIZ_INSERZIONISTI {#biz-advertisers}
 
-Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
+Inserzionisti importati da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -804,7 +804,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per l'inserzionista.</p>
+        <p>Un ID univoco per l’inserzionista.</p>
       </td>
       <td>
         <p>dc.6114.9143143</p>
@@ -817,7 +817,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>L'ID inserzionista dal sistema di origine.</td>
+      <td>L'ID dell'inserzionista dal sistema di origine.</td>
       <td>9143143</td>
     </tr>
     <tr>
@@ -828,7 +828,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stato importato l’annuncio.</p>
+        <p>ID dell’account annuncio da cui è stato importato l’annuncio.</p>
       </td>
       <td>
         <p>fb.106851586409075</p>
@@ -856,7 +856,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell’inserzionista, in particolare per Doubleclick.</p>
+        <p>ID dell’inserzionista, specifico per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -864,13 +864,13 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'inserzionista, in particolare per Doubleclick.</p>
+        <p>Nome dell’inserzionista, specificamente per Doubleclick.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing analytics</p>
@@ -884,10 +884,10 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra l’inserzionista in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci sopra l’inserzionista in alcuna gerarchia di annunci.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -898,10 +898,10 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra l’inserzionista in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci sopra l’inserzionista in alcuna gerarchia di annunci.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -912,10 +912,10 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste una campagna pubblicitaria sopra l’inserzionista in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché nessuna campagna pubblicitaria si trova al di sopra dell’inserzionista in alcuna gerarchia di annunci.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -926,10 +926,10 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste una campagna al di sopra dell’inserzionista pubblicitario in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché nessuna campagna si trova al di sopra dell’inserzionista in alcuna gerarchia di annunci.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -940,7 +940,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’inserzionista è ancora attivo nel sistema di origine.</p>
+        <p>Indica se l'inserzionista è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
         <p>vero</p>
@@ -954,7 +954,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’inserzionista è stato eliminato o meno nel sistema di origine.</p>
+        <p>Indica se l'inserzionista è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -968,7 +968,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:59.000</p>
@@ -976,13 +976,13 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:59.000</p>
@@ -996,7 +996,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'inserzionista dal sistema di origine.</p>
+        <p>Nome dell'inserzionista, dal sistema di origine.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing analytics</p>
@@ -1004,14 +1004,14 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>Indica se l'inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -1019,7 +1019,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1035,7 +1035,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Inserzionista".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Inserzionista".</p>
       </td>
       <td>
         <p>Inserzionista</p>
@@ -1043,16 +1043,16 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Provider di annunci per l’inserzionista.</p>
+        <p>Il provider dell’annuncio per l’inserzionista.</p>
       </td>
       <td>
-        <p>Doppio</p>
+        <p>Doubleclick</p>
       </td>
     </tr>
     <tr>
@@ -1060,10 +1060,10 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>6008900572523230000</p>
@@ -1078,7 +1078,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1092,7 +1092,7 @@ Gli inserzionisti hanno importato da qualsiasi account pubblicitario collegato.
 
 ### BIZ_AD_ACCOUNTS {#biz-ad-accounts}
 
-Account annunci importati da qualsiasi account annuncio connesso.
+Account annuncio importati da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -1118,7 +1118,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un identificatore univoco per l'account dell'annuncio.</p>
+        <p>Un identificatore univoco per l’account dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -1131,7 +1131,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>L'ID account dell'annuncio dal sistema di origine.</td>
+      <td>L’ID dell’account dell’annuncio dal sistema di origine.</td>
       <td>
         <p>6601259029</p>
       </td>
@@ -1143,8 +1143,8 @@ Account annunci importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Si prevede che sia nullo perché si tratta del record per gli Ad Accounts nella gerarchia degli annunci.</td>
-      <td>null</td>
+      <td>Previsto null poiché questo è il record per gli account annuncio nella gerarchia annunci.</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1153,8 +1153,8 @@ Account annunci importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Si prevede che sia nullo perché si tratta del record per gli Ad Accounts nella gerarchia degli annunci.</td>
-      <td>null</td>
+      <td>Previsto null poiché questo è il record per gli account annuncio nella gerarchia annunci.</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1164,21 +1164,21 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un inserzionista sopra gli Ad Accounts in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun inserzionista al di sopra degli Account annuncio in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un inserzionista sopra gli Ad Accounts in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun inserzionista al di sopra degli Account annuncio in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1188,9 +1188,9 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Si prevede che sia nullo perché non esiste un gruppo di annunci sopra gli account annunci in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci al di sopra della gerarchia degli account di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1200,9 +1200,9 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Si prevede che sia nullo perché non esiste un gruppo di annunci sopra gli account annunci in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci al di sopra della gerarchia degli account di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1212,9 +1212,9 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Si prevede che sia nullo perché non vi è alcuna campagna pubblicitaria sopra gli Account annuncio in alcuna gerarchia di annunci.</p>
+        <p>Il valore atteso è nullo poiché nessuna campagna pubblicitaria si trova al di sopra della gerarchia degli account pubblicitari in qualsiasi gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1224,9 +1224,9 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Si prevede che sia nullo perché non vi è alcuna campagna pubblicitaria sopra gli Account annuncio in alcuna gerarchia di annunci.</p>
+        <p>Il valore atteso è nullo poiché nessuna campagna pubblicitaria si trova al di sopra della gerarchia degli account pubblicitari in qualsiasi gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1236,7 +1236,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l'account dell'annuncio è ancora attivo nel sistema di origine.</p>
+        <p>Indica se l'account dell'annuncio è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
         <p>vero</p>
@@ -1250,7 +1250,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’account annuncio è stato eliminato o meno nel sistema di origine.</p>
+        <p>Indica se l'account dell'annuncio è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -1264,7 +1264,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-09-06 12:54:37.000</p>
@@ -1272,13 +1272,13 @@ Account annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -1291,21 +1291,21 @@ Account annunci importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Nome dell'account dell'annuncio dal sistema di origine.</td>
+      <td>Nome dell’account dell’annuncio, dal sistema di origine.</td>
       <td>
         <p>[!DNL Marketo Measure] Account annuncio</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>Indica se l'inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -1313,7 +1313,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1329,7 +1329,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Account".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Account".</p>
       </td>
       <td>
         <p>Account</p>
@@ -1337,13 +1337,13 @@ Account annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di annunci per l'account dell'annuncio.</p>
+        <p>Il nome del provider dell’annuncio per l’account dell’annuncio.</p>
       </td>
       <td>
         <p>AdWords</p>
@@ -1357,7 +1357,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il codice valuta utilizzato per l'Ad Account dal sistema di origine.</p>
+        <p>Il codice valuta utilizzato per l’account annuncio dal sistema di origine.</p>
       </td>
       <td>
         <p>USD</p>
@@ -1370,7 +1370,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Utilizzato per elaborazione interna.</td>
+      <td>Utilizzato per l’elaborazione interna.</td>
       <td>1933789</td>
     </tr>
     <tr>
@@ -1380,19 +1380,19 @@ Account annunci importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Viene analizzato dall’URL da utm_source.</td>
+      <td>Analizzato dall’URL da utm_source.</td>
       <td>
         <p>Social</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>MEDIO</p>
+        <p>MEDIA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>Viene analizzato dall’URL da utm_medium.</td>
+      <td>Analizzato dall’URL da utm_medium.</td>
       <td>
         <p>lisu07261601</p>
       </td>
@@ -1416,7 +1416,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>LAST_30_DAYS_IMPRESSIONS</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
         <p>Il numero di impression degli ultimi 30 giorni, applicabile solo ad AdWords.</p>
@@ -1430,7 +1430,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>LAST_30_DAYS_CLICKS</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
         <p>Il numero di clic degli ultimi 30 giorni, applicabile solo ad AdWords.</p>
@@ -1444,10 +1444,10 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>LAST_30_DAYS_CONVERSIONS</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Il numero di conversioni riportate negli ultimi 30 giorni, applicabile solo ad AdWords.</p>
+        <p>Il numero di conversioni segnalate dagli ultimi 30 giorni, applicabile solo ad AdWords.</p>
       </td>
       <td>
         <p>180</p>
@@ -1477,7 +1477,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
+        <p>TRACKING_URL_TEMPLATE_REQUIRED</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1504,10 +1504,10 @@ Account annunci importati da qualsiasi account annuncio connesso.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-4609512587744160000</p>
@@ -1522,7 +1522,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1536,7 +1536,7 @@ Account annunci importati da qualsiasi account annuncio connesso.
 
 ### BIZ_AD_CAMPAIGNS {#biz-ad-campaigns}
 
-Campagne importate da account annunci, sistemi di origine, utm e rapporti automatici collegati.
+Campagne importate da account di annunci, sistemi di origine, utm e auto-segnalati collegati.
 
 <table>
   <tbody>
@@ -1562,7 +1562,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Id univoco per la campagna.</p>
+        <p>ID univoco della campagna.</p>
       </td>
       <td>
         <p>aw.6601259029.285114995</p>
@@ -1575,7 +1575,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
       <td>
         <p>varchar</p>
       </td>
-      <td>L'ID campagna dal sistema di origine.</td>
+      <td>L’ID della campagna dal sistema di origine.</td>
       <td>
         <p>285114995</p>
       </td>
@@ -1588,7 +1588,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata importata la campagna.</p>
+        <p>ID dell’account annuncio da cui è stata importata la campagna.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -1602,7 +1602,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stata importata la campagna.</p>
+        <p>Nome dell’account annuncio da cui è stata importata la campagna.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -1616,7 +1616,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell’inserzionista per la campagna, in particolare per Doubleclick.</p>
+        <p>ID dell’inserzionista per la campagna, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -1624,7 +1624,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1644,10 +1644,10 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra la campagna in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci sopra la campagna in alcuna gerarchia di annunci.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -1658,9 +1658,9 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra la campagna in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci sopra la campagna in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -1670,7 +1670,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Id univoco per la campagna, utilizza invece il campo ID .</p>
+        <p>ID univoco per la campagna, utilizza il campo ID.</p>
       </td>
       <td></td>
     </tr>
@@ -1682,7 +1682,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna, utilizza invece il campo Nome .</p>
+        <p>Nome della campagna, utilizza invece il campo Nome.</p>
       </td>
       <td></td>
     </tr>
@@ -1694,7 +1694,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la campagna è ancora attiva o meno nel sistema di origine.</p>
+        <p>Indica se la campagna è ancora attiva nel sistema di origine.</p>
       </td>
       <td>
         <p>vero</p>
@@ -1708,7 +1708,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>booleano</p>
       </td>
       <td>
-        <p>Se la campagna è stata eliminata o meno nel sistema di origine.</p>
+        <p>Indica se la campagna è stata eliminata o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -1722,7 +1722,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -1730,13 +1730,13 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -1758,14 +1758,14 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
         <p>Se la campagna deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -1773,7 +1773,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1789,15 +1789,15 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Campaign".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Campaign".</p>
       </td>
       <td>
-        <p>Campaign</p>
+        <p>Campagna</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1817,7 +1817,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>numero(38,19)</p>
       </td>
       <td>
-        <p>Il budget giornaliero impostato nell’Ad Platform per la campagna.</p>
+        <p>Il budget giornaliero impostato nella piattaforma di annunci per la campagna.</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -1845,7 +1845,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
     </tr>
     <tr>
       <td>
-        <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
+        <p>TRACKING_URL_TEMPLATE_REQUIRED</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1861,7 +1861,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>varchar</p>
       </td>
       <td>
-        <p>Il modello di tracciamento aggiunto a livello di Campaign per AdWords o Bing per assegnare tag alle pagine di destinazione.</p>
+        <p>Modello di tracciamento aggiunto a livello di campagna per AdWords o Bing per l’assegnazione di tag alle pagine di destinazione.</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -1872,10 +1872,10 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-6008900572523230000</p>
@@ -1890,7 +1890,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1904,7 +1904,7 @@ Campagne importate da account annunci, sistemi di origine, utm e rapporti automa
 
 ### BIZ_AD_FORMS {#biz-ad-forms}
 
-Ad Forms importato da qualsiasi account annuncio collegato.
+Ad Forms importato da qualsiasi account Ad connesso.
 
 <table>
   <tr>
@@ -1944,7 +1944,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stato importato il modulo dell’annuncio.</p>
+        <p>ID dell’account annuncio da cui è stato importato il modulo annuncio.</p>
       </td>
       <td>
         <p>li.507063119</p>
@@ -1958,7 +1958,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stato importato il modulo dell’annuncio.</p>
+        <p>Nome dell’account annuncio da cui è stato importato il modulo annuncio.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -1972,7 +1972,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Stato eliminato dal sistema di origine. Impostato su eliminato se lo stato è Bozza, Archiviato o Annullato.</p>
+        <p>Stato eliminato dal sistema di origine. Impostate questa opzione su Eliminato se lo stato è Bozza, Archiviato o Annullato.</p>
       </td>
       <td>
         <p>falso</p>
@@ -1986,7 +1986,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -1994,13 +1994,13 @@ Ad Forms importato da qualsiasi account annuncio collegato.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -2017,7 +2017,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>Nome del modulo annuncio.</p>
       </td>
       <td>
-        <p>Ebook NSPA LGF (maggio 2020)</p>
+        <p>NSPA Ebook LGF (maggio 2020)</p>
       </td>
     </tr>
     <tr>
@@ -2028,7 +2028,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "AdForm".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "AdForm".</p>
       </td>
       <td>
         <p>AdForm</p>
@@ -2036,13 +2036,13 @@ Ad Forms importato da qualsiasi account annuncio collegato.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di annunci per il modulo di annuncio.</p>
+        <p>Nome del provider dell’annuncio per il modulo dell’annuncio.</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -2059,19 +2059,19 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>Descrizione del modulo annuncio.</p>
       </td>
       <td>
-        <p>Scopri come l'automazione intelligente può aumentare l'efficienza dei processi nelle applicazioni di credito per il rifinanziamento dei mutui ipotecari.</p>
+        <p>Scopri come l’automazione intelligente può aumentare l’efficienza dei processi nelle applicazioni di rifinanziamento dei mutui ipotecari.</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>LINEA GUIDA</p>
+        <p>TITOLO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>Titolo del modulo annuncio.</td>
       <td>
-        <p>È ora di automatizzare il processo di rifinanziamento delle applicazioni</p>
+        <p>È ora di automatizzare il processo di richiesta di rifinanziamento</p>
       </td>
     </tr>
     <tr>
@@ -2093,9 +2093,9 @@ Ad Forms importato da qualsiasi account annuncio collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Elenco delle domande per il modulo annuncio.</td>
+      <td>Elenco di domande per il modulo annuncio.</td>
       <td>
-        <p>Nome:Cognome:Indirizzo e-mail:Paese/Regione:Titolo del lavoro:Nome della società</p>
+        <p>Nome:Cognome:Indirizzo e-mail:Paese/Regione:Qualifica:Nome società</p>
       </td>
     </tr>
     <tr>
@@ -2109,7 +2109,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
         <p>Stato del modulo annuncio.</p>
       </td>
       <td>
-        <p>presentato</p>
+        <p>inviato</p>
       </td>
     </tr>
     <tr>
@@ -2121,7 +2121,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -2133,7 +2133,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
     <tr>
       <td>SOURCE_ID</td>
       <td>varchar</td>
-      <td>ID per l'origine da cui è stato creato il record.</td>
+      <td>ID dell’origine del record.</td>
       <td>aw.3284209</td>
     </tr>
   </tbody>
@@ -2141,7 +2141,7 @@ Ad Forms importato da qualsiasi account annuncio collegato.
 
 ### BIZ_AD_GROUPS {#biz-ad-groups}
 
-Gruppi di annunci importati da qualsiasi account di annunci collegato.
+Gruppi di annunci importati da qualsiasi account di annunci connesso.
 
 <table>
   <tbody>
@@ -2180,7 +2180,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>ID gruppo di annunci dal sistema di origine.</td>
+      <td>L’ID del gruppo di annunci dal sistema di origine.</td>
       <td>
         <p>23105326115</p>
       </td>
@@ -2193,7 +2193,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account dell'annuncio da cui è stato importato il gruppo di annunci.</p>
+        <p>ID dell’account annuncio da cui è stato importato il gruppo di annunci.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -2207,7 +2207,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stato importato il gruppo di annunci.</p>
+        <p>Nome dell’account annuncio da cui è stato importato il gruppo di annunci.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -2221,24 +2221,24 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci nella gerarchia degli annunci Doubleclick.</p>
+        <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia degli annunci Doubleclick.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci nella gerarchia degli annunci Doubleclick.</p>
+        <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia degli annunci Doubleclick.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -2249,10 +2249,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché si tratta del record per il gruppo di annunci nella gerarchia.</p>
+        <p>Previsto null poiché questo è il record per il gruppo di annunci nella gerarchia.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -2263,10 +2263,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché si tratta del record per il gruppo di annunci nella gerarchia.</p>
+        <p>Previsto null poiché questo è il record per il gruppo di annunci nella gerarchia.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -2305,7 +2305,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l'account dell'annuncio è ancora attivo nel sistema di origine.</p>
+        <p>Indica se l'account dell'annuncio è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
         <p>vero</p>
@@ -2319,7 +2319,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’account annuncio è stato eliminato o meno nel sistema di origine.</p>
+        <p>Indica se l'account dell'annuncio è stato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -2333,7 +2333,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-02 06:36:14.000</p>
@@ -2341,13 +2341,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:36:14.000</p>
@@ -2364,19 +2364,19 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>Nome del gruppo di annunci.</p>
       </td>
       <td>
-        <p>Attribuzione ricavi - Basato su conto</p>
+        <p>Attribuzione ricavi - Basata su conto</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se l’inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>Indica se l'inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -2384,7 +2384,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2400,7 +2400,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "AdGroup".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "AdGroup".</p>
       </td>
       <td>
         <p>AdGroup</p>
@@ -2408,7 +2408,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2428,10 +2428,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il/i supporto/i su cui è in esecuzione il gruppo di annunci.</p>
+        <p>Il supporto su cui è in esecuzione il gruppo di annunci.</p>
       </td>
       <td>
-        <p>Ricerca, visualizzazione, YouTube_Search, YouTube_Watch</p>
+        <p>Ricerca, Visualizzazione, YouTube_Search, YouTube_Watch</p>
       </td>
     </tr>
     <tr>
@@ -2456,7 +2456,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
+        <p>TRACKING_URL_TEMPLATE_REQUIRED</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2483,10 +2483,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-5594512713562690000</p>
@@ -2501,7 +2501,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -2515,7 +2515,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
 
 ### BIZ_AD_PROVIDERS
 
-<p>Fornitori di annunci da qualsiasi account annuncio connesso, compresa una voce per se segnalata autonomamente, se applicabile.</p>
+<p>Fornitori di annunci da qualsiasi account annuncio collegato, inclusa una voce per i rapporti personali, se applicabile.</p>
 
 <table>
   <tbody>
@@ -2555,7 +2555,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di annunci.</p>
+        <p>Nome del provider dell’annuncio.</p>
       </td>
       <td>
         <p>Bing</p>
@@ -2566,10 +2566,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>4783788151269206864</p>
@@ -2584,7 +2584,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -2598,7 +2598,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
 
 ### BIZ_ATTRIBUTION_TOUCHPOINTS {#biz-attribution-touchpoints}
 
-<p>Punti di contatto per l’attribuzione dell’acquirente, tutti i punti di contatto associati a un’opportunità.</p>
+<p>Punti di contatto di attribuzione acquirente, tutti i punti di contatto associati a un’opportunità.</p>
 <table>
   <tbody>
     <tr>
@@ -2623,11 +2623,11 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per il punto di contatto dell’attribuzione dell’acquirente (BAT).</p>
+        <p>Un ID univoco per il punto di contatto di attribuzione acquirente (BAT).</p>
       </td>
       <td>
-        <p>BAT2_0060Z0000lFHtOQAW_</p>
-        <p>0030Z0003K5bpKQAR_2017-06-20:01-05-20-6193330.0b5c5678807c</p>
+        <p>BAT2_0060Z00000lFHtOQAW_</p>
+        <p>0030Z00003K5bpKQAR_2017-06-20:01-05-20-6193330.0b5c5678807c</p>
       </td>
     </tr>
     <tr>
@@ -2638,7 +2638,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-09-01 04:53:53.000</p>
@@ -2646,13 +2646,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>ID_OPPORTUNITÀ</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per l’opportunità a cui viene attribuito il BAT.</p>
+        <p>ID dell’opportunità a cui è attribuito il BAT.</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2666,14 +2666,14 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del contatto associato al BAT.</p>
+        <p>ID del contatto associato alla BAT.</p>
       </td>
       <td>
         <p>0030Z00003K5bpKQAR</p>
       </td>
     </tr>
     <tr>
-      <td>E-MAIL</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>Indirizzo e-mail associato alla BAT.</td>
       <td>person@adobe.com</td>
@@ -2686,7 +2686,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per l’account a cui viene attribuito il BAT.</p>
+        <p>ID dell’account a cui è attribuita la BAT.</p>
       </td>
       <td>
         <p>0013100001otbIAAAY</p>
@@ -2700,7 +2700,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per il punto di contatto utente che ha generato il BAT.</p>
+        <p>ID del punto di contatto utente che ha generato la BAT.</p>
       </td>
       <td>
         <p>person@adobe.com_00v1B00003ZbWzHQAV</p>
@@ -2708,7 +2708,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>DATA_PUNTO DI CONTATTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2723,7 +2723,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     <tr>
       <td>VISITOR_ID</td>
       <td>varchar</td>
-      <td>ID del visitatore associato al BAT.</td>
+      <td>ID del visitatore associato alla BAT.</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
@@ -2734,10 +2734,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Tipo di attività, visita web, modulo web, chat web, chiamata telefonica, campagna [CRM] o attività [CRM]. In CRM è indicato come "tipo di punto di contatto".</p>
+        <p>Tipo di attività, visita Web, modulo Web, chat Web, telefonata, campagna [CRM] o attività [CRM]. Nel sistema di gestione delle relazioni con i clienti è indicato come "Tipo di punto di contatto".</p>
       </td>
       <td>
-        <p>Modulo Web</p>
+        <p>Modulo web</p>
       </td>
     </tr>
     <tr>
@@ -2748,7 +2748,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni del canale personalizzato all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Canale di marketing - Percorso".</p>
+        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all’interno di [!DNL Marketo Measure] App. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -2762,7 +2762,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la prima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la prima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>ABC</p>
@@ -2776,7 +2776,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la seconda categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la seconda categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Sì</p>
@@ -2790,10 +2790,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la terza categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la terza categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
-        <p>SMB</p>
+        <p>PMI</p>
       </td>
     </tr>
     <tr>
@@ -2803,7 +2803,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la quarta categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la quarta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td>
         <p>Nuove attività</p>
       </td>
@@ -2815,7 +2815,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la quinta categoria in cui rientra il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la 5a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2825,7 +2825,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la 6a categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la sesta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2835,7 +2835,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la settima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la settima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2845,7 +2845,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per l’8a categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per l’ottava categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2855,7 +2855,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la 9a categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la nona categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2865,7 +2865,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la decima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la decima categoria in cui rientra il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2875,7 +2875,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per l’undicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per l’11a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno del [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2885,7 +2885,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la dodicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la dodicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2895,7 +2895,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la tredicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la 13a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2905,7 +2905,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la quattordicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la quattordicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2915,7 +2915,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la quindicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la quindicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2926,7 +2926,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, il browser rilevato che l'utente era attivo durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Chrome</p>
@@ -2940,7 +2940,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, la versione rilevata del browser su cui l'utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione del browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>58</p>
@@ -2948,13 +2948,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>NOME_PIATTAFORMA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la piattaforma rilevata dall’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la piattaforma rilevata su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Mac</p>
@@ -2968,7 +2968,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la versione rilevata della piattaforma su cui l’utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione rilevata della piattaforma su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>10_12</p>
@@ -2982,10 +2982,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. In CRM è indicato come "Pagina di destinazione".</p>
+        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di destinazione".</p>
       </td>
       <td>
-        <p>http://www.adobe.com/blog/uncover- verità dietro costo per lead</p>
+        <p>http://www.adobe.com/blog/uncover- true-behind-cost-per-lead</p>
       </td>
     </tr>
     <tr>
@@ -2996,7 +2996,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. In CRM è indicato come "Pagina di destinazione - Raw".</p>
+        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
         <p>http://www.adobe.com/blog/uncover-truth -behind-cost-per-lead?utm_content=27322869&amp;utm_ medium=social&amp;utm_source=linkedin</p>
@@ -3010,7 +3010,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. In CRM è indicato come "Pagina referente".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di riferimento".</p>
       </td>
       <td>
         <p>https://www.linkedin.com/</p>
@@ -3024,7 +3024,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. Una pagina referente non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "Pagina referente - Raw".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Una pagina di riferimento non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti, denominato "Pagina di provenienza - Raw".</p>
       </td>
       <td>
         <p>https://www.linkedin.com/</p>
@@ -3032,13 +3032,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>MODULO_PAGINA</p>
+        <p>FORM_PAGE</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii dei moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submit. In CRM è indicato come "URL del modulo".</p>
+        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo".</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -3052,7 +3052,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii dei moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submit. Una pagina modulo non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "URL modulo - Raw".</p>
+        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Una pagina modulo non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo - Non elaborato".</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -3066,7 +3066,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell’invio del modulo.</p>
+        <p>Data di invio del modulo.</p>
       </td>
       <td>
         <p>2017-06-20 01:06:41.000</p>
@@ -3080,7 +3080,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la città rilevata in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la città rilevata in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>San Francisco</p>
@@ -3094,7 +3094,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la regione rilevata in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, l’area geografica rilevata in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>California</p>
@@ -3108,7 +3108,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, il paese rilevato in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il paese rilevato in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Stati Uniti</p>
@@ -3116,16 +3116,16 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>MEDIO</p>
+        <p>MEDIA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire il mezzo che ha portato al punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può essere valori come "cpc" o "display".</p>
+        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "cpc" o "display".</p>
       </td>
       <td>
-        <p>sociale</p>
+        <p>social</p>
       </td>
     </tr>
     <tr>
@@ -3136,7 +3136,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire la sorgente che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, generalmente impostato come "Campaign CRM" se è stato sincronizzato dal CRM, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, possono essere valori come "Google AdWords" o "Facebook". In CRM è indicato come "Origine punto di contatto".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall’URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Sorgente punto di contatto".</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -3150,7 +3150,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore immesso dall’utente nel browser per la ricerca e finito sul sito web. A seconda delle parole chiave acquistate, potrebbe corrispondere o meno alle parole chiave acquistate dalla piattaforma di ricerca a pagamento.</p>
+        <p>Il valore che l’utente ha immesso nel browser per cercare e che è finito sul sito web. A seconda delle parole chiave acquistate, questo potrebbe corrispondere o meno alle parole chiave acquistate dalla piattaforma di ricerca a pagamento.</p>
       </td>
       <td>
         <p>google [!DNL Marketo Measure]</p>
@@ -3164,7 +3164,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Piattaforma di annunci [!DNL Marketo Measure] è stato in grado di risolvere da, tipicamente uno dei nostri partner di integrazione.</p>
+        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>Google</p>
@@ -3178,7 +3178,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>ID dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -3186,13 +3186,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>NOME_ACCOUNT</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>Nome dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -3206,7 +3206,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’inserzionista dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID dell'inserzionista dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -3214,13 +3214,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’inserzionista dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome dell'inserzionista dall'account annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing analytics</p>
@@ -3234,7 +3234,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>1695651</p>
@@ -3242,13 +3242,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>NOME_SITO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -3262,7 +3262,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>120839827</p>
@@ -3276,7 +3276,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>blocco stradale</p>
@@ -3290,7 +3290,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della campagna dall’account dell’annuncio da cui è stato risolto l’annuncio.</p>
+        <p>ID della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.317738075</p>
@@ -3298,16 +3298,16 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna dall’account dell’annuncio dal quale è stato risolto l’annuncio.</p>
+        <p>Nome della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
-        <p>Attribuzione di marketing</p>
+        <p>Marketing Attribution</p>
       </td>
     </tr>
     <tr>
@@ -3318,7 +3318,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del gruppo di annunci dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo vale solo per Google Adwords.</p>
+        <p>ID del gruppo di annunci dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Google Adwords.</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435</p>
@@ -3360,10 +3360,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’annuncio dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
+        <p>Nome dell’annuncio dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
       </td>
       <td>
-        <p>Webinar sul budget - barra laterale</p>
+        <p>Webinar Budget - barra laterale</p>
       </td>
     </tr>
     <tr>
@@ -3374,7 +3374,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del contenuto creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.182716179597</p>
@@ -3382,16 +3382,16 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>NOME_CREATIVO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del creativo dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome dell’elemento creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>Attribuzione di marketing B2B</p>
+        <p>Attribuzione marketing B2B</p>
       </td>
     </tr>
     <tr>
@@ -3402,10 +3402,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima riga del Creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>Scarica la guida CMO</p>
+        <p>Scarica la Guida CMO</p>
       </td>
     </tr>
     <tr>
@@ -3416,7 +3416,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La seconda riga del creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scopri come l’attribuzione misura il ROI collegando le attività di marketing ai ricavi</p>
@@ -3430,7 +3430,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La pagina di destinazione che fa clic dall’annuncio di ricerca, estratta dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La pagina di destinazione in cui viene fatto clic dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution</p>
@@ -3444,7 +3444,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il nome dell’URL descrittivo mostrato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Il nome URL descrittivo visualizzato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>http://info.adobe.com/CMOs-Guide</p>
@@ -3458,7 +3458,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della parola chiave acquistata dall’acquisto di ricerca a pagamento, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID della parola chiave acquistata dall’acquisto di Paid Search, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.4838421670</p>
@@ -3466,13 +3466,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>KYWORD_NAME</p>
+        <p>KEYWORD_NAME</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della parola chiave acquistata dall’acquisto di ricerca a pagamento, estratta dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca)</p>
+        <p>Nome della parola chiave acquistata dall’acquisto di Ricerca a pagamento, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca)</p>
       </td>
       <td>
         <p>"attribuzione marketing"</p>
@@ -3486,7 +3486,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il tipo di corrispondenza trovato tra la frase di ricerca e la parola chiave acquistata.</p>
+        <p>Tipo di corrispondenza trovata tra la frase di ricerca e la parola chiave acquistata.</p>
       </td>
       <td>
         <p>Esatto</p>
@@ -3500,7 +3500,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come il primo tocco del percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il primo contatto del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -3514,7 +3514,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come punto di contatto per la creazione di un lead, viene toccato dal percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il contatto di creazione del lead del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -3528,7 +3528,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come la creazione di opportunità tocca il percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il punto di contatto per la creazione di opportunità del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -3542,7 +3542,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come il tocco di chiusura del percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il contatto chiuso del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -3554,7 +3554,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       </td>
       <td>varchar</td>
       <td>Questo campo è stato dichiarato obsoleto. Utilizzare le tabelle Stage_Transitions per informazioni sull'area di visualizzazione.</td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -3564,7 +3564,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se questo punto di contatto ha compilato un modulo durante la sessione.</p>
+        <p>Indica se il punto di contatto ha o meno compilato un modulo durante la sessione.</p>
       </td>
       <td>
         <p>vero</p>
@@ -3578,7 +3578,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come la prima impressione del percorso di opportunità</p>
+        <p>Se questo punto di contatto viene considerato o meno come il primo contatto di impression del percorso di opportunità</p>
       </td>
       <td>
         <p>falso</p>
@@ -3586,13 +3586,13 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>FIRST_CLICK_PERCENTAGE</p>
+        <p>PRIMO_CLIC_PERCENTUALE</p>
       </td>
       <td>
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché si tratta di un primo contatto (consulta Is_First_Touch).</p>
+        <p>La percentuale calcolata allocata a questo punto di contatto perché è un primo contatto (vedi Is_First_Touch).</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3606,7 +3606,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché si tratta di un contatto per la creazione di lead (consulta Is_Lead_Creation_Touch).</p>
+        <p>La percentuale calcolata allocata a questo punto di contatto perché è un contatto per la creazione di lead (vedi Is_Lead_Creation_Touch).</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3620,7 +3620,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un tocco a forma di u (consulta Is_First_Touch e Is_Lead_Creation_Touch).</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di U (consultate Is_First_Touch e Is_Lead_Creation_Touch).</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3634,7 +3634,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un tocco a forma di w (vedere Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch).</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch).</p>
       </td>
       <td>
         <p>0.0153374234214425</p>
@@ -3648,7 +3648,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (vedere Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</p>
       </td>
       <td>
         <p>0.0143061513081193</p>
@@ -3656,10 +3656,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>CUSTOM_MODEL_PERCENTAGE</p>
+        <p>PERCENTUALE_MODELLO_PERSONALIZZATO</p>
       </td>
       <td>numero(22,19)</td>
-      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (vedere Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</td>
+      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</td>
       <td>0.0143061513081193</td>
     </tr>
     <tr>
@@ -3681,10 +3681,10 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -3692,47 +3692,47 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ROW_KEY</p>
+        <p>OPPORTUNITÀ_CHIAVE_RIGA</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>SITE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>CHIAVE_RIGA_SITO</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -3740,37 +3740,37 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
       <td>
         <p>PLACEMENT_ROW_KEY</p>
       </td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -3783,7 +3783,7 @@ Gruppi di annunci importati da qualsiasi account di annunci collegato.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3823,7 +3823,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>ID membro della campagna dal sistema di origine.</p>
+        <p>L’ID del membro della campagna dal sistema di origine.</p>
       </td>
       <td>
         <p>00v0Z00001VVzdLQAT</p>
@@ -3845,13 +3845,13 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di creazione del membro della campagna dal sistema di origine.</p>
+        <p>La data di creazione del membro della campagna, dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-31 20:49:54.000</p>
@@ -3865,7 +3865,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data e ora impostate dal cliente per ignorare la data della campagna e utilizzare questo valore per Data punto di contatto.</p>
+        <p>Data e ora impostate dal cliente per sostituire la data della campagna e utilizzare questo valore per la data del punto di contatto.</p>
       </td>
       <td>
         <p>2018-08-30 18:00:00.000</p>
@@ -3879,7 +3879,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per il lead a cui è associato il membro della campagna.</p>
+        <p>ID del lead a cui è associato il membro della campagna.</p>
       </td>
       <td>
         <p>00Q0Z000013dw4GUAQ</p>
@@ -3893,7 +3893,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>E-mail per il lead a cui è associato il membro della campagna.</p>
+        <p>E-mail del lead a cui è associato il membro della campagna.</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -3907,7 +3907,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per il contatto al quale è associato il membro della campagna.</p>
+        <p>ID del contatto a cui è associato il membro della campagna.</p>
       </td>
       <td>
         <p>00331000032hMxRAAU</p>
@@ -3921,7 +3921,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>E-mail per il contatto al quale è associato il membro della campagna.</p>
+        <p>Indirizzo e-mail del contatto a cui è associato il membro della campagna.</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -3935,7 +3935,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Stato del membro della campagna, in genere impostato su Inviato o Rispondato o su un altro valore personalizzato. Questo stato è associato a Campaign_Sync_Type per determinare per quali membri della campagna creare i punti di contatto.</p>
+        <p>Stato del membro della campagna, in genere impostato su Inviato o Risposto o su un altro valore personalizzato. Questo stato è associato a Campaign_Sync_Type per determinare per quali membri della campagna creare punti di contatto.</p>
       </td>
       <td>
         <p>Inviato</p>
@@ -3949,7 +3949,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se il membro della campagna è stato contrassegnato come "Risposta" dal selettore di stato.</p>
+        <p>Indica se il membro della campagna è stato contrassegnato come "Risposto" dal selettore di stato.</p>
       </td>
       <td>
         <p>vero</p>
@@ -3957,13 +3957,13 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
     </tr>
     <tr>
       <td>
-        <p>FIRST_RESPONDED_DATE</p>
+        <p>DATA_PRIMA_RISPOSTA</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il membro della campagna ha risposto per la prima volta.</p>
+        <p>Data della prima risposta del membro della campagna.</p>
       </td>
       <td>
         <p>2018-08-30 07:00:00.000</p>
@@ -3971,27 +3971,27 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna correlata di cui il membro della campagna fa parte.</p>
+        <p>Nome della campagna correlata di cui fa parte il membro della campagna.</p>
       </td>
       <td>
-        <p>Interviste rapido CMO</p>
+        <p>Interviste CMO rapide</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_ID</p>
+        <p>ID_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della campagna correlata di cui il membro della campagna fa parte.</p>
+        <p>ID della campagna correlata di cui fa parte il membro della campagna.</p>
       </td>
       <td>
         <p>7010Z000001TcKlQAK</p>
@@ -4005,7 +4005,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Tipo selezionato nella relativa campagna di cui fa parte il membro della campagna. Il tipo viene utilizzato per mappare il canale di marketing.</p>
+        <p>Tipo selezionato nella campagna correlata di cui fa parte il membro della campagna. Il Tipo viene utilizzato per mappare il Canale di marketing.</p>
       </td>
       <td>
         <p>Offline</p>
@@ -4019,7 +4019,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Determina per quali membri della campagna creare i punti di contatto. I valori possibili sono: Include_All, Include_Responded, Exclude_All.</p>
+        <p>Determina per quali membri della campagna creare punti di contatto. I valori possibili sono: Include_All, Include_Responded, Exclude_All.</p>
       </td>
       <td>
         <p>Includi_tutto</p>
@@ -4033,10 +4033,10 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Campo di audit, indica se è stato generato un punto di contatto dell’acquirente per il lead. Se non è stato creato alcun punto di contatto, viene fornito il motivo per cui non è stato qualificato.</p>
+        <p>Nel campo Audit viene indicato se per il lead è stato generato o meno un punto di contatto dell'acquirente. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
       </td>
       <td>
-        <p>Nessun punto di contatto: Data fuori modello</p>
+        <p>Nessun punto di contatto: data esterna al modello</p>
       </td>
     </tr>
     <tr>
@@ -4047,7 +4047,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Campo Audit, indica se è stato generato un punto di contatto dell'acquirente per il contatto. Se non è stato creato alcun punto di contatto, viene fornito il motivo per cui non è stato qualificato.</p>
+        <p>Nel campo Audit viene indicato se per il contatto è stato generato o meno un punto di contatto dell'acquirente. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
       </td>
       <td>
         <p>Punto di contatto creato</p>
@@ -4061,7 +4061,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>varchar</p>
       </td>
       <td>
-        <p>Campo di audit, indica se è stato generato un punto di contatto di attribuzione dell’acquirente per l’opportunità. Se non è stato creato alcun punto di contatto, viene fornito il motivo per cui non è stato qualificato.</p>
+        <p>Nel campo Audit viene indicato se per l’opportunità è stato generato o meno un punto di contatto di attribuzione buyer. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
       </td>
       <td>
         <p>Punto di contatto creato</p>
@@ -4075,7 +4075,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene considerato eliminato o meno nel sistema di origine .</p>
+        <p>Indica se il record viene considerato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -4085,7 +4085,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
       <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
-      <td>{"Campaign_Type__c":"Dinners","Foo":"Bar"}</td>
+      <td>{"Campaign_Type__c":"Cene","Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -4096,7 +4096,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4110,7 +4110,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
 
 ### BIZ_CHANNELS {#biz-channels}
 
-Canali di marketing, come creato nel [!DNL Marketo Measure] applicazione.
+Canali di marketing, come creati nel [!DNL Marketo Measure] applicazione.
 
 <table>
   <tbody>
@@ -4161,10 +4161,10 @@ Canali di marketing, come creato nel [!DNL Marketo Measure] applicazione.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>6008900572523230000</p>
@@ -4185,7 +4185,7 @@ Canali di marketing, come creato nel [!DNL Marketo Measure] applicazione.
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>La data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -4219,7 +4219,7 @@ Contatti importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID contatto dal sistema di origine.</p>
+        <p>ID del contatto dal sistema di origine.</p>
       </td>
       <td>
         <p>0030Z00003OzioeQAB</p>
@@ -4241,7 +4241,7 @@ Contatti importati dal sistema di origine.
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -4255,13 +4255,13 @@ Contatti importati dal sistema di origine.
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo e-mail del contatto dal sistema di origine.</p>
+        <p>Indirizzo e-mail del contatto, dal sistema di origine.</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -4275,7 +4275,7 @@ Contatti importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account relativo al contatto.</p>
+        <p>ID dell’account correlato al contatto.</p>
       </td>
       <td>
         <p>0013100001b44aGAAQ</p>
@@ -4303,7 +4303,7 @@ Contatti importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Fase corrente del contatto, riconosciuta come fase personalizzata che può essere creata nel [!DNL Marketo Measure] applicazione.</p>
+        <p>Fase corrente del contatto, riconosciuta come fase personalizzata che può essere creata in [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
         <p>Demo pianificata</p>
@@ -4317,7 +4317,7 @@ Contatti importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Tutte le fasi precedenti del contatto, riconosciute come fasi personalizzate che possono essere create nel [!DNL Marketo Measure] applicazione.</p>
+        <p>Tutte le fasi precedenti per il contatto, riconosciute come fasi personalizzate che possono essere create in [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
         <p>Apri - Contatto</p>
@@ -4345,7 +4345,7 @@ Contatti importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] ID cookie utilizzato per popolare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -4359,27 +4359,27 @@ Contatti importati dal sistema di origine.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene eliminato o meno nel sistema di origine.</p>
+        <p>Indica se il record viene eliminato o meno nel sistema di origine.</p>
       </td>
       <td>falso</td>
     </tr>
     <tr>
       <td>IS_DUPLICATE</td>
       <td>booleano</td>
-      <td>Utilizzato per deduplicare i record se è configurata sia un’integrazione CRM che Marketo. Se sono presenti duplicati, il contatto Marketo è contrassegnato come true.</td>
+      <td>Utilizzato per deduplicare i record se è impostata un’integrazione CRM e Marketo. Se sono presenti duplicati, il contatto Marketo viene contrassegnato come true.</td>
       <td>falso</td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>SISTEMA_DI_ORIGINE</td>
       <td>varchar</td>
       <td>Indica se il record proviene da un’integrazione CRM o Marketo.</td>
       <td>Crm</td>
     </tr>
     <tr>
-      <td>NEW_SYSTEM_ID</td>
+      <td>OTHER_SYSTEM_ID</td>
       <td>varchar</td>
-      <td>Mappa una persona da un'integrazione Marketo con un contatto da un'integrazione CRM. Se esiste sia un’integrazione CRM che Marketo, il valore è l’ID corrispondente.</td>
-      <td>1234 / 00Q0Z00001OohgTUAR</td>
+      <td>Mappa una persona da un’integrazione Marketo con un contatto da un’integrazione CRM. Se esiste sia un’integrazione CRM che Marketo, il valore è l’ID corrispondente.</td>
+      <td>1234/00Q0Z00001OohgTUAR</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
@@ -4392,10 +4392,10 @@ Contatti importati dal sistema di origine.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>3263982503087870000</p>
@@ -4410,7 +4410,7 @@ Contatti importati dal sistema di origine.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4436,13 +4436,13 @@ Tassi di conversione della valuta importati dal sistema di origine.
     </tr>
     <tr>
       <td>ID</td>
-      <td>number(38,0)</td>
-      <td>Un ID univoco per il record.</td>
+      <td>numero(38,0)</td>
+      <td>ID univoco del record.</td>
       <td>-5942345438803054604</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Valore ID per la valuta.</td>
       <td>7493833133899044458</td>
     </tr>
@@ -4453,31 +4453,31 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>USD</td>
     </tr>
     <tr>
-      <td>START_DATE</td>
+      <td>DATA_INIZIALE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio del tasso di conversione.</td>
       <td>2018-11-01 00:00:00.000</td>
     </tr>
     <tr>
-      <td>DATA_FINE</td>
+      <td>END_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di inizio successiva per il tasso di conversione. (La data di fine del tasso di conversione è end_date meno 1 giorno.)</td>
+      <td>Data di inizio successiva per il tasso di conversione. La data di fine del tasso di conversione è data_finale meno 1 giorno.</td>
       <td>2018-09-01 00:00:00.000</td>
     </tr>
     <tr>
       <td>CONVERSION_RATE</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Tasso utilizzato per convertire la valuta nella valuta aziendale.</td>
       <td>0.76728300</td>
     </tr>
     <tr>
       <td>IS_CURRENT</td>
       <td>booleano</td>
-      <td>La semantica di questo campo è stata danneggiata. Non usare.</td>
+      <td>La semantica di questo campo è stata danneggiata. Non utilizzare.</td>
       <td>vero</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel sistema di origine.</td>
       <td>2019-03-30 00:54:50.000</td>
@@ -4491,7 +4491,7 @@ Tassi di conversione della valuta importati dal sistema di origine.
     <tr>
       <td>IS_DELETED</td>
       <td>booleano</td>
-      <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
+      <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>falso</td>
     </tr>
     <tr>
@@ -4503,7 +4503,7 @@ Tassi di conversione della valuta importati dal sistema di origine.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4515,9 +4515,9 @@ Tassi di conversione della valuta importati dal sistema di origine.
   </tbody>
 </table>
 
-### BIZ_COSTS {#biz-costs}
+### BIZ_COST {#biz-costs}
 
-Dati di costo importati da account annunci connessi o da spese di marketing segnalate autonomamente.
+Dati sui costi importati da account annuncio collegati o da spese di marketing dichiarate autonomamente.
 
 <table>
   <tbody>
@@ -4530,91 +4530,91 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     <tr>
       <td>ID</td>
       <td>varchar</td>
-      <td>Un ID univoco per il record Costo.</td>
+      <td>ID univoco del record Costo.</td>
       <td>aw.6601259029.285114995.21703163075.[Visualizzazione AdWords]_2018-09-06</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record.</td>
+      <td>Data dell’ultima modifica del record.</td>
       <td>2018-09-06 12:22:45.000</td>
     </tr>
     <tr>
       <td>COST_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il costo è stato sostenuto (o attribuito).</td>
+      <td>Data in cui il costo è stato sostenuto (o attribuito a).</td>
       <td>2018-09-06 00:00:00.000</td>
     </tr>
     <tr>
       <td>SORGENTE</td>
       <td>varchar</td>
-      <td>Origine del costo segnalato.</td>
-      <td>[Visualizzazione di AdWords]</td>
+      <td>Origine del costo dichiarato.</td>
+      <td>[Visualizzazione AdWords]</td>
     </tr>
     <tr>
       <td>COST_IN_MICRO</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Costo in milioni. L’utente dovrà dividere il valore per 1000000.</td>
       <td>1410000</td>
     </tr>
     <tr>
       <td>CLIC</td>
-      <td>number(38,0)</td>
-      <td>Numero di clic segnalati per il gruppo del giorno.</td>
+      <td>numero(38,0)</td>
+      <td>Numero di clic segnalati per il gruppo per il giorno.</td>
       <td>4</td>
     </tr>
     <tr>
-      <td>IMPRESSIONI</td>
-      <td>number(38,0)</td>
-      <td>Numero di impression riportate per il gruppo del giorno.</td>
+      <td>IMPRESSION</td>
+      <td>numero(38,0)</td>
+      <td>Numero di impression segnalate per il gruppo per la giornata.</td>
       <td>4187</td>
     </tr>
     <tr>
       <td>ESTIMATED_TOTAL_POSSIBLE_IMPRESSIONS</td>
-      <td>number(38,0)</td>
-      <td>Numero totale di impression stimate da DCM per il gruppo del giorno.</td>
+      <td>numero(38,0)</td>
+      <td>Numero totale di impression stimato da DCM per il gruppo per il giorno.</td>
       <td>5024</td>
     </tr>
     <tr>
       <td>AD_PROVIDER</td>
       <td>varchar</td>
-      <td>Provider per il quale è stato estratto il costo.</td>
+      <td>Provider per cui è stato estratto il costo.</td>
       <td>Google</td>
     </tr>
     <tr>
       <td>CHANNEL_UNIQUE_ID</td>
       <td>varchar</td>
-      <td>ID per il canale di marketing, creato da [!DNL Marketo Measure].</td>
+      <td>ID del canale di marketing, creato da [!DNL Marketo Measure].</td>
       <td>Display.Google</td>
     </tr>
     <tr>
-      <td>CHANNEL_NAME</td>
+      <td>NOME_CANALE</td>
       <td>varchar</td>
-      <td>Nome del canale di marketing, creato dal cliente nel [!DNL Marketo Measure] app.</td>
+      <td>Nome del canale di marketing, creato dal cliente in [!DNL Marketo Measure] app.</td>
       <td>Display.Google</td>
     </tr>
     <tr>
       <td>CHANNEL_IS_AGGREGATABLE_COST</td>
       <td>booleano</td>
-      <td>Indica se la riga contiene il costo che può essere sommato dal canale. (ad esempio, per ottenere Costo canale, somma le righe in cui questa colonna è uguale a vero).</td>
+      <td>Indica se la riga contiene un costo che può essere sommato per canale. (ovvero, per ottenere il Costo canale, sommare le righe in cui questa colonna è uguale a true).</td>
       <td>falso</td>
     </tr>
     <tr>
       <td>ADVERTISER_UNIQUE_ID</td>
       <td>varchar</td>
-      <td>Id dell’inserzionista estratto dalla connessione Ad, in particolare per le connessioni Doubleclick.</td>
+      <td>ID dell’inserzionista estratto dalla connessione dell’annuncio, in particolare per le connessioni Doubleclick.</td>
       <td>300181641</td>
     </tr>
     <tr>
-      <td>ADVERTISER_NAME</td>
+      <td>NOME_INSERZIONISTA</td>
       <td>varchar</td>
-      <td>Nome dell’inserzionista estratto dalla connessione Ad, in particolare per le connessioni Doubleclick.</td>
+      <td>Nome dell’inserzionista estratto dalla connessione dell’annuncio, in particolare per le connessioni Doubleclick.</td>
       <td>[!DNL Marketo Measure] Marketing analytics</td>
     </tr>
     <tr>
       <td>ADVERTISER_IS_AGGREGATABLE_COST</td>
       <td>booleano</td>
-      <td>Indica se la riga contiene il costo che può essere sommato da Advertiser (Inserzionista). (ovvero per ottenere Costo inserzionista, somma le righe in cui questa colonna è uguale a true).</td>
+      <td>Indica se la riga contiene un costo che può essere riassunto dall'inserzionista. (ovvero, per ottenere il costo dell’inserzionista, somma le righe in cui questa colonna è uguale a true).</td>
       <td>falso</td>
     </tr>
     <tr>
@@ -4625,7 +4625,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account dell'annuncio estratto dalla connessione dell'annuncio.</p>
+        <p>ID dell’account annuncio estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -4633,13 +4633,13 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>NOME_ACCOUNT</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'account dell'annuncio estratto dalla connessione dell'annuncio.</p>
+        <p>Nome dell’account annuncio estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -4653,7 +4653,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Conto. (ovvero per ottenere Costo conto, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato per conto. (ovvero, per ottenere il costo del conto, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4667,7 +4667,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Id della campagna estratto dalla connessione dell’annuncio.</p>
+        <p>ID della campagna estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.285114995</p>
@@ -4675,13 +4675,13 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna estratta dalla connessione dell’annuncio.</p>
+        <p>Nome della campagna estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>Retargeting dei partner</p>
@@ -4695,7 +4695,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Campaign. (ovvero per ottenere il costo della campagna, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere riepilogato da Campaign. (ovvero, per ottenere il costo di Campaign, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>vero</p>
@@ -4709,7 +4709,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Id del gruppo di annunci estratto dalla connessione dell'annuncio.</p>
+        <p>ID del gruppo di annunci estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.21703163075</p>
@@ -4726,7 +4726,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Nome del gruppo di annunci estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
-        <p>Software di gestione dell'attribuzione | Frase</p>
+        <p>Software di gestione attribuzione | Frase</p>
       </td>
     </tr>
     <tr>
@@ -4737,7 +4737,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dal gruppo di annunci. (ad esempio, per ottenere Costo gruppo di annunci, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato dal gruppo di annunci. (ovvero, per ottenere Ad Group Cost, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4751,7 +4751,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell'annuncio estratto dalla connessione dell'annuncio.</p>
+        <p>ID dell’annuncio estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>dc.6114.9131003.24149929.467969200</p>
@@ -4765,7 +4765,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'annuncio estratto dalla connessione dell'annuncio.</p>
+        <p>Nome dell’annuncio estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>Nome annuncio: Ad3-320x50.gif; 320 x 50</p>
@@ -4779,7 +4779,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dall’annuncio. (ovvero per ottenere Ad Cost, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato dall’annuncio. (ovvero, per ottenere Ad Cost, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4793,7 +4793,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Id del creativo estratto dalla connessione dell'annuncio.</p>
+        <p>ID del contenuto creativo estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.51749608028.266050115160</p>
@@ -4801,13 +4801,13 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>NOME_CREATIVO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del creativo estratto dalla connessione dell’annuncio.</p>
+        <p>Nome del contenuto creativo estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>Gartner Magic Quadrant 2019</p>
@@ -4821,7 +4821,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Creative. (ovvero per ottenere Costo creativo, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere riassunto da Creative. (ovvero, per ottenere il costo creativo, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4835,7 +4835,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Id della parola chiave estratta dalla connessione dell'annuncio.</p>
+        <p>ID della parola chiave prelevata dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.669328935.39419128772.99608705795</p>
@@ -4843,7 +4843,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     </tr>
     <tr>
       <td>
-        <p>KYWORD_NAME</p>
+        <p>KEYWORD_NAME</p>
       </td>
       <td>
         <p>varchar</p>
@@ -4852,18 +4852,18 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>Nome della parola chiave estratta dalla connessione dell’annuncio.</p>
       </td>
       <td>
-        <p>Attribuzione marketing sfdc</p>
+        <p>attribuzione marketing sfdc</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>KEYWORD_IS_AGGREGATABLE_COST</p>
+        <p>PAROLA CHIAVE IS_AGGREGATABLE_COST</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Parola chiave. (ovvero per ottenere il costo delle parole chiave, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato per parola chiave. (ovvero, per ottenere il costo delle parole chiave, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4877,7 +4877,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del posizionamento estratto dalla connessione Ad.</p>
+        <p>ID del posizionamento estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>120839827</p>
@@ -4891,7 +4891,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del Posizionamento estratto dalla connessione Annuncio.</p>
+        <p>Nome del posizionamento estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>blocco stradale</p>
@@ -4905,7 +4905,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato per Posizionamento. (ovvero, per ottenere il costo di posizionamento, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere riepilogato in base al posizionamento. (ovvero, per ottenere il costo di posizionamento, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4919,7 +4919,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>varchar</p>
       </td>
       <td>
-        <p>Id del sito estratto dalla connessione dell'annuncio.</p>
+        <p>ID del sito estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>1695651</p>
@@ -4927,13 +4927,13 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>NOME_SITO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito estratto dalla connessione Annuncio.</p>
+        <p>Nome del sito estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -4947,7 +4947,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dal sito . (ovvero per ottenere il costo del sito, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere riepilogato in base al sito. (ovvero per ottenere il costo del sito, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4961,7 +4961,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene considerato eliminato o meno nel sistema di origine .</p>
+        <p>Indica se il record viene considerato eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -4976,14 +4976,14 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     <tr>
       <td>SOURCE_ID</td>
       <td>varchar</td>
-      <td>ID per l'origine da cui è stato creato il record.</td>
+      <td>ID dell’origine del record.</td>
       <td>aw.3284209</td>
     </tr>
     <tr>
       <td>ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>6008900572523230000</td>
     </tr>
@@ -4991,61 +4991,61 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
       <td>
         <p>ACCOUNT_ROW_KEY</p>
       </td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>SITE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>CHIAVE_RIGA_SITO</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Valore ID della valuta per il record.</td>
       <td>
         <p>-3253183181619994799</p>
@@ -5060,7 +5060,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5074,7 +5074,7 @@ Dati di costo importati da account annunci connessi o da spese di marketing segn
 
 ### BIZ_CREATIVES {#biz-creatives}
 
-Creativi importati da qualsiasi account pubblicitario collegato.
+Creative importate da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -5100,7 +5100,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per il creativo.</p>
+        <p>Un ID univoco per la creatività.</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -5113,7 +5113,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>L'ID creativo dal sistema di origine.</td>
+      <td>ID creativo dal sistema di origine.</td>
       <td>
         <p>10426699711</p>
       </td>
@@ -5126,7 +5126,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per l’account dell’annuncio da cui è stata importata la creatività.</p>
+        <p>ID dell’account annuncio da cui è stata importata la creatività.</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -5138,7 +5138,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stato importato il creativo.</p>
+        <p>Nome dell’account annuncio da cui è stata importata la creatività.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -5152,7 +5152,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell’inserzionista per il creativo, in particolare per Doubleclick.</p>
+        <p>ID dell’inserzionista per il settore creativo, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -5160,13 +5160,13 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'inserzionista per il creativo, in particolare per Doubleclick.</p>
+        <p>Nome dell'inserzionista per la creatività, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing analytics</p>
@@ -5180,7 +5180,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del gruppo di annunci per il creativo.</p>
+        <p>ID del gruppo di annunci per la creatività.</p>
       </td>
       <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
@@ -5192,7 +5192,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del gruppo di annunci per il creativo.</p>
+        <p>Nome del gruppo di annunci per la creatività.</p>
       </td>
       <td>Set di annunci per l’annuncio B</td>
     </tr>
@@ -5204,7 +5204,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della campagna per il creativo.</p>
+        <p>ID della campagna per la creatività.</p>
       </td>
       <td>
         <p>ba.3284209.132855866</p>
@@ -5218,7 +5218,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna per il creativo.</p>
+        <p>Nome della campagna per la creatività.</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5232,7 +5232,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il Creativo è ancora attivo nel sistema di origine.</p>
+        <p>Indica se Creative è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
         <p>vero</p>
@@ -5246,7 +5246,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il Creativo è stato eliminato o meno nel sistema di origine.</p>
+        <p>Indica se la creatività è stata eliminata o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -5260,7 +5260,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-02 06:36:25.000</p>
@@ -5268,13 +5268,13 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:36:25.000</p>
@@ -5288,7 +5288,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del creativo dal sistema di origine.</p>
+        <p>Nome della creatività, dal sistema di origine.</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5296,14 +5296,14 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il Creativo deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>Se la creatività deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -5311,12 +5311,12 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>Campo diagnostico per l'elaborazione interna.</td>
+      <td>Campo diagnostico, per elaborazione interna.</td>
       <td></td>
     </tr>
     <tr>
@@ -5327,7 +5327,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Creativo".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Creative".</p>
       </td>
       <td>
         <p>Creativo</p>
@@ -5335,13 +5335,13 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di annunci per il creativo.</p>
+        <p>Nome del provider di annunci per il contenuto creativo.</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -5355,8 +5355,8 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La versione corrente dell’URL, compresi tutti i tag.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>La versione corrente dell’URL, inclusi tutti i tag.</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td>
         <p>cdn.adobe.com/redir?lp=http%3a%2f%2fwww.pipelinemarketing.com%2f&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}&amp;utm_content={adid}&amp;utm_term={keyword}&amp;utm_campaign=PipelineMarketing.com&amp;utm_source=bing&amp;utm_medium=cpc</p>
@@ -5370,7 +5370,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>L’URL abbreviato e intuitivo che viene visualizzato sul Creativo.</p>
+        <p>L’URL abbreviato e intuitivo visualizzato sul contenuto creativo.</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5385,31 +5385,31 @@ Creativi importati da qualsiasi account pubblicitario collegato.
       </td>
       <td>
         <p>Valore precedente per URL_CURRENT.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL_RICHIESTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Di cosa sarà decorato l’URL [!DNL Marketo Measure] Parametri.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>Con cosa verrà decorato l’URL [!DNL Marketo Measure] parametri.</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_SHORTENED</p>
+        <p>URL_ABBREVIATO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>L’URL abbreviato e intuitivo che viene visualizzato sul Creativo. (Utilizzato solo per LinkedIn Ads.)</td>
+      <td>L’URL abbreviato e intuitivo visualizzato sul contenuto creativo. (Utilizzato solo per LinkedIn Ads).</td>
       <td></td>
     </tr>
     <tr>
@@ -5420,7 +5420,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Tipo di creativo, che potrebbe essere Testo o Visualizzazione</p>
+        <p>Tipo di elemento creativo, che può essere Testo o Visualizzazione</p>
       </td>
       <td>
         <p>Testo</p>
@@ -5434,7 +5434,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se il contenuto creativo utilizza o meno gli URL aggiornati.</p>
+        <p>Indica se la creatività utilizza o meno URL aggiornati.</p>
       </td>
       <td>
         <p>falso</p>
@@ -5442,13 +5442,13 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     </tr>
     <tr>
       <td>
-        <p>LINEA GUIDA</p>
+        <p>TITOLO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Il titolo principale del creativo</p>
+        <p>La linea superiore (titolo) della creatività</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5462,10 +5462,10 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La copia dalla prima riga del creativo</p>
+        <p>La copia dalla prima riga del contenuto</p>
       </td>
       <td>
-        <p>Connetti E Impara Dagli Addetti Al Marketing B2B Basati Sui Ricavi. Iscriviti alla Community.</p>
+        <p>Connettiti Ed Impara Dai Professionisti Di Marketing B2B Basati Sui Ricavi. Iscriviti alla community.</p>
       </td>
     </tr>
     <tr>
@@ -5476,10 +5476,10 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>La copia dalla seconda riga del creativo</p>
+        <p>La copia dalla seconda riga del contenuto creativo</p>
       </td>
       <td>
-        <p>Lei Ha Usato Analytics? Lascia un commento oggi stesso!</p>
+        <p>Hai Utilizzato Analytics? Lasciate una recensione oggi!</p>
       </td>
     </tr>
     <tr>
@@ -5489,7 +5489,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Campo di diagnostica per elaborazione interna.</td>
+      <td>Campo di diagnostica, per elaborazione interna.</td>
       <td></td>
     </tr>
     <tr>
@@ -5499,17 +5499,17 @@ Creativi importati da qualsiasi account pubblicitario collegato.
       <td>
         <p>varchar</p>
       </td>
-      <td>Campo di diagnostica per elaborazione interna.</td>
+      <td>Campo di diagnostica, per elaborazione interna.</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
+        <p>TRACKING_URL_TEMPLATE_REQUIRED</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>Campo di diagnostica per elaborazione interna.</td>
+      <td>Campo di diagnostica, per elaborazione interna.</td>
       <td></td>
     </tr>
     <tr>
@@ -5520,7 +5520,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Campo di diagnostica per elaborazione interna.</p>
+        <p>Campo di diagnostica, per elaborazione interna.</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -5534,10 +5534,10 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id condivisione. (Utilizzato solo per LinkedIn Ads.)</p>
+        <p>ID condivisione. (Utilizzato solo per LinkedIn Ads).</p>
       </td>
       <td>
-        <p>abbandono:li:azione:6376987561897848832</p>
+        <p>urn:li:condividere:6376987561897848832</p>
       </td>
     </tr>
     <tr>
@@ -5545,10 +5545,10 @@ Creativi importati da qualsiasi account pubblicitario collegato.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>6008900572523230000</td>
     </tr>
@@ -5561,7 +5561,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5575,7 +5575,7 @@ Creativi importati da qualsiasi account pubblicitario collegato.
 
 ### BIZ_CRM_EVENTS {#biz-crm-events}
 
-Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincronizzazione delle attività è disabilitata.
+Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincronizzazione attività è disabilitata.
 
 <table>
   <tbody>
@@ -5601,7 +5601,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>varchar</p>
       </td>
       <td>
-        <p>L'ID evento dal sistema di origine.</p>
+        <p>L’ID evento dal sistema di origine.</p>
       </td>
       <td>
         <p>00U3100000VLUnEEAX</p>
@@ -5609,7 +5609,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5629,7 +5629,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica dell'evento, dal sistema di origine.</p>
+        <p>Data dell'ultima modifica apportata all'evento dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-09-03 08:39:51.000</p>
@@ -5657,7 +5657,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>varchar</p>
       </td>
       <td>
-        <p>Email per il lead associato all’evento.</p>
+        <p>E-mail per il lead associato all’evento.</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5671,7 +5671,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del contatto associato all'evento.</p>
+        <p>ID del contatto associato all’evento.</p>
       </td>
       <td>
         <p>0030Z00003OyjbOQAR</p>
@@ -5685,7 +5685,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>varchar</p>
       </td>
       <td>
-        <p>Invia un'e-mail al contatto associato all'evento.</p>
+        <p>E-mail per il contatto associato all’evento.</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5699,7 +5699,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>varchar</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] ID cookie utilizzato per popolare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5707,13 +5707,13 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_TYPE</p>
+        <p>TIPO_ATTIVITÀ</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome tipo di attività dal sistema di origine.</p>
+        <p>Nome del tipo di attività, dal sistema di origine.</p>
       </td>
       <td>
         <p>E-mail</p>
@@ -5721,7 +5721,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     </tr>
     <tr>
       <td>
-        <p>EVENT_START_DATE</p>
+        <p>DATA_INIZIO_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5735,7 +5735,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     </tr>
     <tr>
       <td>
-        <p>EVENT_END_DATE</p>
+        <p>DATA_FINE_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5754,7 +5754,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
       <td>
         <p>booleano</p>
       </td>
-      <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
+      <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>
         <p>False</p>
       </td>
@@ -5774,7 +5774,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5788,7 +5788,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
 
 ### BIZ_CRM_TASKS {#biz-crm-tasks}
 
-Attività importate dal sistema di origine. Questa tabella verrà compilata se l’opzione Activity Sync o Call Tracking è abilitata.
+Attività importate dal sistema di origine. Questa tabella viene compilata se è abilitato il tracciamento delle chiamate o la sincronizzazione delle attività.
 
 <table>
   <tbody>
@@ -5822,13 +5822,13 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di creazione dell'attività dal sistema di origine.</p>
+        <p>Data di creazione dell'attività, dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-27 18:30:25.000</p>
@@ -5842,7 +5842,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica dell'attività, dal sistema di origine.</p>
+        <p>Data dell'ultima modifica apportata all'attività dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-27 18:31:53.000</p>
@@ -5870,7 +5870,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
         <p>varchar</p>
       </td>
       <td>
-        <p>Email per il lead associato all’attività.</p>
+        <p>E-mail per il lead associato all’attività.</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5884,7 +5884,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del contatto associato all'attività.</p>
+        <p>ID del contatto associato all’attività.</p>
       </td>
       <td>
         <p>00331000038uGfhAAE</p>
@@ -5898,7 +5898,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
         <p>varchar</p>
       </td>
       <td>
-        <p>Invia un'e-mail al contatto associato all'attività.</p>
+        <p>E-mail per il contatto associato all’attività.</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5912,7 +5912,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
         <p>varchar</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] ID cookie utilizzato per popolare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5920,13 +5920,13 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_TYPE</p>
+        <p>TIPO_ATTIVITÀ</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome tipo di attività dal sistema di origine.</p>
+        <p>Nome del tipo di attività, dal sistema di origine.</p>
       </td>
       <td>
         <p>Chiamata</p>
@@ -5934,7 +5934,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_DATE</p>
+        <p>DATA_ATTIVITÀ</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5953,7 +5953,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
       <td>
         <p>booleano</p>
       </td>
-      <td>Se il record viene considerato eliminato o meno nel sistema di origine.</td>
+      <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>
         <p>falso</p>
       </td>
@@ -5973,7 +5973,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5985,7 +5985,7 @@ Attività importate dal sistema di origine. Questa tabella verrà compilata se l
   </tbody>
 </table>
 
-### BIZ_CURRENCIES {#biz-currencies}
+### BIZ_VALUTE {#biz-currencies}
 
 Tabella di tutte le valute ISO.
 
@@ -6001,12 +6001,12 @@ Tabella di tutte le valute ISO.
       <td>
         <p>ID</p>
       </td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Un ID univoco per il record Valuta.</td>
       <td>139474809945095870</td>
     </tr>
     <tr>
-      <td>ISO_CODE</td>
+      <td>CODICE_ISO</td>
       <td>varchar</td>
       <td>Codice ISO per la valuta.</td>
       <td>USD</td>
@@ -6022,13 +6022,13 @@ Tabella di tutte le valute ISO.
     <tr>
       <td>IS_ENABLED</td>
       <td>booleano</td>
-      <td>Indica se la divisa è abilitata nel sistema di origine.</td>
+      <td>Indica se la valuta è abilitata nel sistema di origine.</td>
       <td>falso</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record in [!DNL Marketo Measure].</td>
+      <td>Data dell’ultima modifica apportata al record in [!DNL Marketo Measure].</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
@@ -6038,7 +6038,7 @@ Tabella di tutte le valute ISO.
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in [!DNL Marketo Measure]</td>
       <td>2018-08-27 18:30:25.000</td>
@@ -6051,21 +6051,21 @@ Tabella di tutte le valute ISO.
     </tr>
     <tr>
       <td>ISO_NUMERIC</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Codice numerico standard ISO.</td>
       <td>048</td>
     </tr>
     <tr>
       <td>ESPONENTE</td>
-      <td>number(38,0)</td>
-      <td>Numero di posizioni decimali tra l'unità di valuta definita più piccola e un'unità di valuta intera.</td>
+      <td>numero(38,0)</td>
+      <td>Il numero di cifre decimali tra l'unità di valuta definita più piccola e un'intera unità di valuta.</td>
       <td>2</td>
     </tr>
     <tr>
       <td>NOME</td>
       <td>varchar</td>
       <td>Nome della valuta.</td>
-      <td>Peso argentino</td>
+      <td>Pesos (Argentina)</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -6076,7 +6076,7 @@ Tabella di tutte le valute ISO.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6132,53 +6132,53 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui la chat è stata registrata.</p>
+        <p>Data di registrazione della chat.</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record.</td>
+      <td>Data dell’ultima modifica del record.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>IP_ADDRESS</td>
+      <td>INDIRIZZO_IP</td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>L'indirizzo IP registrato al momento del log dell'esperimento.</p>
+        <p>L’indirizzo IP registrato al momento della registrazione dell’esperimento.</p>
       </td>
       <td>192.0.2.1</td>
     </tr>
     <tr>
       <td>
-        <p>EXPERIMENT_ID</p>
+        <p>ID_ESPERIMENTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'esperimento estratto dalla piattaforma di prova AB.</p>
+        <p>ID dell’esperimento estratto dalla piattaforma di test AB.</p>
       </td>
       <td>123</td>
     </tr>
     <tr>
       <td>
-        <p>EXPERIMENT_NAME</p>
+        <p>NOME_ESPERIMENTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'esperimento estratto dalla piattaforma di prova AB.</p>
+        <p>Nome dell’esperimento estratto dalla piattaforma di test AB.</p>
       </td>
       <td>Esperimento A</td>
     </tr>
@@ -6190,21 +6190,21 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID variante dell'esperimento estratto dalla piattaforma di prova AB.</p>
+        <p>ID della variante dell’esperimento estratto dalla piattaforma di test AB.</p>
       </td>
       <td>456</td>
     </tr>
     <tr>
       <td>
-        <p>VARIATION_NAME</p>
+        <p>NOME_VARIANTE</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della variante dell'esperimento prelevato dalla piattaforma di prova AB.</p>
+        <p>Il nome della variante dell’esperimento estratto dalla piattaforma di test AB.</p>
       </td>
-      <td>Test blu</td>
+      <td>Prova blu</td>
     </tr>
     <tr>
       <td>
@@ -6214,7 +6214,7 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'id dell'utente a cui è stato servito l'esperimento è stato estratto dalla piattaforma di test AB.</p>
+        <p>ID dell’utente a cui è stato distribuito l’esperimento estratto dalla piattaforma di test AB.</p>
       </td>
       <td>584d64et</td>
     </tr>
@@ -6226,7 +6226,7 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record è stato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
+        <p>Indica se il record è stato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
       </td>
       <td>falso</td>
     </tr>
@@ -6239,7 +6239,7 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6253,7 +6253,7 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
 
 ### BIZ_CUSTOMER_EVENTS {#biz-customer-events}
 
-Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa tabella sarà vuota se [!DNL Marketo Measure] Gli eventi non sono abilitati.
+Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabella sarà vuota se [!DNL Marketo Measure] Eventi non attivati.
 
 <table>
   <tbody>
@@ -6289,37 +6289,37 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
         <p>varchar</p>
       </td>
       <td>
-        <p>L'ID cookie registrato al momento in cui l'evento è stato attivato dal javascript personalizzato.</p>
+        <p>L’ID cookie registrato al momento dell’attivazione dell’evento da JavaScript personalizzato.</p>
       </td>
       <td>36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui l’evento è stato attivato dal javascript personalizzato.</p>
+        <p>Data in cui l'evento è stato attivato dal codice JavaScript personalizzato.</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>L'ultima data in cui il record è stato modificato.</td>
+      <td>Ultima data di modifica del record.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>INDIRIZZO_IP</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>L'indirizzo IP registrato al momento in cui l'evento è stato attivato dal javascript personalizzato.</p>
+        <p>L'indirizzo IP registrato al momento dell'attivazione dell'evento da JavaScript personalizzato.</p>
       </td>
       <td>192.0.2.1</td>
     </tr>
@@ -6331,9 +6331,9 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome assegnato all'evento attivato dal javascript personalizzato.</p>
+        <p>Nome assegnato all'evento attivato dal codice JavaScript personalizzato.</p>
       </td>
-      <td>Vista video</td>
+      <td>Visualizzazione video</td>
     </tr>
     <tr>
       <td>
@@ -6343,7 +6343,7 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore dato all'evento attivato dal javascript personalizzato.</p>
+        <p>Il valore dato all'evento che è stato attivato dal codice JavaScript personalizzato.</p>
       </td>
       <td>75% visualizzato</td>
     </tr>
@@ -6355,7 +6355,7 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record è stato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
+        <p>Indica se il record è stato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
       </td>
       <td>falso</td>
     </tr>
@@ -6368,7 +6368,7 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6382,7 +6382,7 @@ Eventi Web registrati utilizzando eventi personalizzati in JavaScript. Questa ta
 
 ### BIZ_CUSTOM_LANDING_PAGES {#biz-custom-landing-pages}
 
-Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
+Pagine di destinazione scaricate da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -6406,7 +6406,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per il record.</p>
+        <p>ID univoco del record.</p>
       </td>
       <td></td>
     </tr>
@@ -6454,7 +6454,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -6546,7 +6546,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -6566,7 +6566,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
@@ -6576,7 +6576,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -6596,7 +6596,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -6653,7 +6653,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6667,7 +6667,7 @@ Pagine di destinazione scaricate da qualsiasi account annuncio connesso.
 
 ### BIZ_EMAIL_TO_VISITOR_IDS {#biz-email-to-visitor-ids}
 
-Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
+Tabella di mappatura per indirizzi e-mail e ID visitatore.
 
 <table>
   <tbody>
@@ -6688,14 +6688,14 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
     <tr>
       <td>ID</td>
       <td>varchar</td>
-      <td>Un ID univoco per il record.</td>
+      <td>ID univoco del record.</td>
       <td>
         <p>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13,000</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -6715,7 +6715,7 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo cookie dell’ID visitatore correlato</p>
+        <p>Il primo cookie del relativo ID visitatore</p>
       </td>
       <td>
         <p>v_36ec805b4db344d6e92c972c86aee34a</p>
@@ -6737,7 +6737,7 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -6757,16 +6757,16 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene considerato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
+        <p>Indica se il record viene considerato eliminato o meno, utilizzato per la diagnostica e il controllo.</p>
       </td>
       <td>
         <p>falso</p>
       </td>
     </tr>
     <tr>
-      <td>IS_IGNORE</td>
+      <td>IS_IGNORA</td>
       <td>booleano</td>
-      <td>Indica se l’ID e-mail o visitatore è considerato rumore o spam, utilizzato per l’elaborazione interna.</td>
+      <td>Indica se l’e-mail o l’ID visitatore sono considerati rumori o spam, utilizzati per l’elaborazione interna.</td>
       <td>falso</td>
     </tr>
     <tr>
@@ -6778,7 +6778,7 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6792,7 +6792,7 @@ Tabella di mappatura per gli indirizzi e-mail e gli ID visitatore.
 
 ### BIZ_FACTS {#biz-facts}
 
-Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti di contatto utente, Punto di contatto (BT), Punti di contatto di attribuzione (BAT) e Dati di costo. Utilizzato internamente per supportare [!DNL Marketo Measure] rapporti.
+Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di contatto degli utenti, punti di contatto (BT), punti di contatto di attribuzione (BAT) e dati sui costi. Utilizzato internamente per supportare [!DNL Marketo Measure] reportistica.
 
 <table>
   <tbody>
@@ -6804,32 +6804,32 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>COST_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire alla tabella Costi.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Costi.</td>
       <td>2672629811884560039</td>
     </tr>
     <tr>
-      <td>ATP_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per aggiungere alla tabella dei punti di contatto di attribuzione.</td>
+      <td>TASTO_ATP</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Punti di contatto di attribuzione.</td>
       <td>2672629811884560039</td>
     </tr>
     <tr>
       <td>TP_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire le tabelle Punti di contatto o Punti di contatto utente.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join delle tabelle Punti di contatto o Punti di contatto utente.</td>
       <td>5028390208679093800</td>
     </tr>
     <tr>
       <td>PAGE_VIEW_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire alla tabella Visualizzazioni di pagina.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Visualizzazioni pagina.</td>
       <td>-8044063242541720607</td>
     </tr>
     <tr>
       <td>SESSION_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per partecipare alla tabella Sessions.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Sessioni.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
@@ -6846,49 +6846,49 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>FORM_SUBMIT_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire alla tabella Invio modulo.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Invii modulo.</td>
       <td>-8659572802702769670</td>
     </tr>
     <tr>
       <td>IMPRESSION_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Utilizzato per unire alla tabella Impression.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire alla tabella Url.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Url.</td>
       <td>4079876040770132443</td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire alla tabella Url.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Url.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per unire alla tabella Url.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Url.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>AD_PROVIDER_KEY</td>
-      <td>number(38,0)</td>
-      <td>Utilizzato per partecipare alla tabella Fornitori di annunci.</td>
+      <td>numero(38,0)</td>
+      <td>Utilizzato per eseguire il join alla tabella Provider di annunci.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>
-        <p>CHANNEL_KEY</p>
+        <p>CHIAVE_CANALE</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per unire alla tabella Canali.</p>
+        <p>Utilizzato per l'unione alla tabella Canali.</p>
       </td>
       <td>
         <p>-1921844114032355934</p>
@@ -6896,13 +6896,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_KEY</p>
+        <p>CHIAVE_CAMPAGNA</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per partecipare alla tabella Campagne pubblicitarie .</p>
+        <p>Utilizzato per partecipare alla tabella Campagne pubblicitarie.</p>
       </td>
       <td>
         <p>252687814634577606</p>
@@ -6913,7 +6913,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>KEYWORD_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
         <p>Utilizzato per unire alla tabella Parole chiave.</p>
@@ -6927,10 +6927,10 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>AD_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per partecipare alla tabella Ads.</p>
+        <p>Utilizzato per eseguire il join alla tabella Ads.</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6941,10 +6941,10 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>AD_GROUP_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per partecipare alla tabella Gruppi di annunci.</p>
+        <p>Utilizzato per eseguire il join alla tabella Gruppi di annunci.</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6955,10 +6955,10 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>CREATIVE_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Faceva parte del tavolo dei Creativi.</p>
+        <p>Utilizzato per l’unione alla tabella Creatives.</p>
       </td>
       <td>
         <p>-2333871387956621113</p>
@@ -6966,13 +6966,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>SITE_KEY</p>
+        <p>CHIAVE_SITO</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per unire alla tabella Sites.</p>
+        <p>Utilizzato per eseguire il join alla tabella Sites.</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6983,10 +6983,10 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>ADVERTISER_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per partecipare alla tabella Inserzionisti.</p>
+        <p>Utilizzato per l’unione alla tabella Advertisers.</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6997,10 +6997,10 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>AD_ACCOUNT_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per partecipare alla tabella Account annuncio.</p>
+        <p>Utilizzato per eseguire il join alla tabella Account annuncio.</p>
       </td>
       <td>
         <p>1825012532740770032</p>
@@ -7011,10 +7011,10 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>PLACEMENT_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Utilizzato per unire alla tabella Posizionamenti.</p>
+        <p>Utilizzato per eseguire il join alla tabella Posizionamenti.</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -7023,97 +7023,97 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     <tr>
       <td>CATEGORY_01_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_02_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_03_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_04_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_05_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_06_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_07_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_08_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_09_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_10_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_11_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_12_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_13_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_14_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_15_KEY</td>
       <td>numero(38,0)</td>
-      <td>Utilizzato per unire alla tabella Segmenti.</td>
+      <td>Utilizzato per eseguire il join alla tabella Segmenti.</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>TIPO</td>
-      <td>number(38,0)</td>
-      <td>Indica il tipo di fatto della riga. 1 = punto di contatto dell’attribuzione dell’acquirente 2 = costo 3 = punto di contatto dell’acquirente 4 = punto di contatto dell’utente 5 = punto di contatto dell’utente 6 = sessione 7 = invio del modulo 8 = impression</td>
+      <td>numero(38,0)</td>
+      <td>Indica il tipo di fatto della riga. 1 = Punto Di Contatto Attribuzione Acquirente 2 = Costo 3 = Punto Di Contatto Acquirente 4 = Punto Di Contatto Utente 5 = Visualizzazione Pagina 6 = Sessione 7 = Invio Modulo 8 = Impression</td>
       <td>3</td>
     </tr>
     <tr>
@@ -7147,7 +7147,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>COST_IN_MICRO</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
         <p>Costo in milioni. L’utente dovrà dividere il valore per 1000000.</p>
@@ -7158,13 +7158,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>IMPRESSIONI</p>
+        <p>IMPRESSION</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Numero di impression riportate per il gruppo del giorno.</p>
+        <p>Numero di impression segnalate per il gruppo per la giornata.</p>
       </td>
       <td>
         <p>340</p>
@@ -7175,22 +7175,22 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>CLIC</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Numero di clic segnalati per il gruppo del giorno.</p>
+        <p>Numero di clic segnalati per il gruppo per il giorno.</p>
       </td>
       <td>4</td>
     </tr>
     <tr>
       <td>
-        <p>FIRST_CLICK_PERCENTAGE</p>
+        <p>PRIMO_CLIC_PERCENTUALE</p>
       </td>
       <td>
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché si tratta di un primo contatto.</p>
+        <p>La percentuale calcolata allocata a questo punto di contatto perché è un primo contatto.</p>
       </td>
       <td>0.0000000000000000000</td>
     </tr>
@@ -7202,7 +7202,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché si tratta di un tocco per la creazione di lead.</p>
+        <p>La percentuale calcolata allocata a questo punto di contatto perché è un contatto per la creazione di lead.</p>
       </td>
       <td>100.0000000000000000000</td>
     </tr>
@@ -7214,7 +7214,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un tocco a forma di u.</p>
+        <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un contatto a forma di U.</p>
       </td>
       <td>
         <p>100.0000000000000000000</p>
@@ -7228,7 +7228,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un tocco a forma di w.</p>
+        <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un contatto a forma di w.</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7242,7 +7242,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un modello di percorso completo.</p>
+        <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un modello a percorso completo.</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7250,13 +7250,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>CUSTOM_MODEL_PERCENTAGE</p>
+        <p>PERCENTUALE_MODELLO_PERSONALIZZATO</p>
       </td>
       <td>
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un modello personalizzato.</p>
+        <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un modello personalizzato.</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7264,13 +7264,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>IMPORTO</p>
+        <p>QUANTITÀ</p>
       </td>
       <td>
         <p>numero(38,8)</p>
       </td>
       <td>
-        <p>Importo dell'opportunità dal sistema di origine.</p>
+        <p>Quantità dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
         <p>42000.00000000</p>
@@ -7284,7 +7284,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l'opportunità è stata spostata in un passaggio classificato come vinto.</p>
+        <p>Indica se l’opportunità è stata spostata in una fase classificata come vinta.</p>
       </td>
       <td>
         <p>falso</p>
@@ -7298,7 +7298,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l'opportunità è stata spostata in un'area di visualizzazione classificata come chiusa.</p>
+        <p>Indica se l’opportunità è stata spostata in una fase classificata come chiusa.</p>
       </td>
       <td>
         <p>falso</p>
@@ -7306,13 +7306,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>ID_OPPORTUNITÀ</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>ID opportunità dal sistema di origine.</p>
+        <p>ID dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
         <p>0060Z00000nFEfEQAW</p>
@@ -7326,7 +7326,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di creazione dell'opportunità dal sistema di origine.</p>
+        <p>Data di creazione dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-31 15:45:47.000</p>
@@ -7340,7 +7340,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Chiudi la data dell'opportunità dal sistema di origine.</p>
+        <p>Data di chiusura dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-12-31 07:00:00.000</p>
@@ -7373,7 +7373,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
       </td>
     </tr>
     <tr>
-      <td>E-MAIL</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>Indirizzo e-mail del record.</td>
       <td>personb@adobe.com</td>
@@ -7414,7 +7414,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dall’annuncio. (ovvero per ottenere Ad Cost, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato dall’annuncio. (ovvero, per ottenere Ad Cost, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>falso</td>
     </tr>
@@ -7426,7 +7426,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Advertiser (Inserzionista). (ovvero per ottenere Costo inserzionista, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere riassunto dall'inserzionista. (ovvero, per ottenere il costo dell’inserzionista, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>vero</td>
     </tr>
@@ -7438,7 +7438,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Conto. (ovvero per ottenere Costo conto, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato per conto. (ovvero, per ottenere il costo del conto, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -7452,7 +7452,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dal gruppo di annunci. (ad esempio, per ottenere Costo gruppo di annunci, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato dal gruppo di annunci. (ovvero, per ottenere Ad Group Cost, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -7466,7 +7466,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Campaign. (ovvero per ottenere il costo della campagna, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere riepilogato da Campaign. (ovvero, per ottenere il costo di Campaign, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>vero</p>
@@ -7480,7 +7480,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dal canale. (ad esempio, per ottenere Costo canale, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato per canale. (ovvero, per ottenere il Costo canale, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>falso</td>
     </tr>
@@ -7492,7 +7492,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Creative. (ovvero per ottenere Costo creativo, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere riassunto da Creative. (ovvero, per ottenere il costo creativo, somma le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -7500,13 +7500,13 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>
-        <p>IS_AGGREGATABLE_COST_KEYWORD</p>
+        <p>PAROLA_CHIAVE_COSTO_AGGREGABILE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato da Parola chiave. (ovvero per ottenere il costo delle parole chiave, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere sommato per parola chiave. (ovvero, per ottenere il costo delle parole chiave, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -7520,7 +7520,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato per Posizionamento. (ovvero, per ottenere il costo di posizionamento, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere riepilogato in base al posizionamento. (ovvero, per ottenere il costo di posizionamento, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -7534,7 +7534,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene il costo che può essere sommato dal sito . (ovvero per ottenere il costo del sito, somma le righe in cui questa colonna è uguale a vero).</p>
+        <p>Indica se la riga contiene un costo che può essere riepilogato in base al sito. (ovvero per ottenere il costo del sito, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -7548,7 +7548,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record è stato eliminato o meno, utilizzato come traccia di audit.</p>
+        <p>Indica se il record è stato eliminato o meno, utilizzato come audit trail.</p>
       </td>
       <td>
         <p>falso</p>
@@ -7556,7 +7556,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Valore ID della valuta per il record.</td>
       <td>-3253183181619994799</td>
     </tr>
@@ -7569,7 +7569,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -7583,7 +7583,7 @@ Unisce insieme Impression, Visualizzazioni pagina, Visite, Invii modulo, Punti d
 
 ### BIZ_FORM_SUBMITS {#biz-forms-submits}
 
-Invio Di Moduli Acquisiti.
+Invii di moduli acquisiti.
 
 <table>
   <tbody>
@@ -7623,7 +7623,7 @@ Invio Di Moduli Acquisiti.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID cookie registrato al momento della registrazione del modulo di invio.</p>
+        <p>L’ID cookie registrato al momento dell’invio del modulo.</p>
       </td>
       <td>
         <p>9bc63c34482f4de8c2e3b9d8d9f0df56</p>
@@ -7637,7 +7637,7 @@ Invio Di Moduli Acquisiti.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo ID cookie dell’ID visitatore correlato. Se il record è contrassegnato come is_duplicate = true, questo campo sarà null.</p>
+        <p>Il primo ID cookie dell’ID visitatore correlato. Se il record è contrassegnato come is_duplicated = true, questo campo sarà null.</p>
       </td>
       <td>
         <p>v_9bc63c34482f4de8c2e3b9d8d9f0df56</p>
@@ -7651,7 +7651,7 @@ Invio Di Moduli Acquisiti.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID sessione registrata al momento della registrazione dell’invio del modulo. Se il record è contrassegnato come is_duplicate = true, questo campo sarà null.</p>
+        <p>L’ID sessione registrato al momento dell’invio del modulo. Se il record è contrassegnato come is_duplicated = true, questo campo sarà null.</p>
       </td>
       <td>
         <p>2018-08-06:01-35-24-1231230.9bc63c34482f</p>
@@ -7659,7 +7659,7 @@ Invio Di Moduli Acquisiti.
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -7679,7 +7679,7 @@ Invio Di Moduli Acquisiti.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-07 23:09:52.000</p>
@@ -7710,18 +7710,18 @@ Invio Di Moduli Acquisiti.
         <p>URL in cui è stato inviato il modulo, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDd PdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RbXlDVmxJNzIwNkh L</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>INDIRIZZO_IP</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo IP registrato al momento dell’invio del modulo.</p>
+        <p>L'indirizzo IP registrato al momento dell'invio del modulo.</p>
       </td>
       <td>
         <p>174.127.184.158</p>
@@ -7760,7 +7760,7 @@ Invio Di Moduli Acquisiti.
       <td>
         <p>varchar</p>
       </td>
-      <td>Indica l’ordine in cui si è verificata la visualizzazione della pagina nella sessione.</td>
+      <td>Indica l'ordine in cui si è verificata la visualizzazione pagina nella sessione.</td>
       <td>
         <p>4</p>
       </td>
@@ -7772,14 +7772,14 @@ Invio Di Moduli Acquisiti.
       <td>
         <p>varchar</p>
       </td>
-      <td>Utilizzato per il controllo e l'elaborazione interni.</td>
+      <td>Utilizzato per l’audit e l’elaborazione interna.</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IS_DUPLICATO</p>
+        <p>IS_DUPLICATED</p>
       </td>
       <td>
         <p>booleano</p>
@@ -7796,20 +7796,20 @@ Invio Di Moduli Acquisiti.
       <td>
         <p>booleano</p>
       </td>
-      <td>Utilizzato per elaborazione interna.</td>
+      <td>Utilizzato per l’elaborazione interna.</td>
       <td>
         <p>vero</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo e-mail fornito nel modulo, come acquisito dal javascript.</p>
+        <p>Indirizzo e-mail fornito nel modulo, acquisito da JavaScript.</p>
       </td>
       <td>
         <p>personc@adobe.com</p>
@@ -7817,7 +7817,7 @@ Invio Di Moduli Acquisiti.
     </tr>
     <tr>
       <td>
-        <p>FORM_TYPE</p>
+        <p>TIPO_MODULO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -7858,10 +7858,10 @@ Invio Di Moduli Acquisiti.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-6255315750913680000</p>
@@ -7869,8 +7869,8 @@ Invio Di Moduli Acquisiti.
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
-      <td>number(38,0)</td>
-      <td>Chiave esterna per la tabella URL.</td>
+      <td>numero(38,0)</td>
+      <td>Chiave esterna della tabella URL.</td>
       <td>6255315750913680000</td>
     </tr>
     <tr>
@@ -7882,7 +7882,7 @@ Invio Di Moduli Acquisiti.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -7894,9 +7894,9 @@ Invio Di Moduli Acquisiti.
   </tbody>
 </table>
 
-### BIZ_IMPRESSIONS {#biz-impressions}
+### BIZ_IMPRESSION {#biz-impressions}
 
-Impression attivate e registrate. Questa tabella richiede una connessione DoubleClick e Enable View Through è impostato su True.
+Impression sparate e registrate. Questa tabella richiede una connessione DoubleClick e l&#39;opzione Attiva visualizzazione mediante è impostata su True.
 
 <table>
   <tbody>
@@ -7922,10 +7922,10 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per l'impression.</p>
+        <p>Un ID univoco per l’impression.</p>
       </td>
       <td>
-        <p>6acd7b43290490fe5c53eed31281d09a|2020-05-18:22:20:59|000|0|2869369052</p>
+        <p>6acd7b43290490fe5c53eed31281d09a|2020-05-18:22:20:59|0000|0|2869369052</p>
       </td>
     </tr>
     <tr>
@@ -7936,7 +7936,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>ID cookie registrato al momento dell'impression.</p>
+        <p>ID del cookie registrato al momento dell’impression.</p>
       </td>
       <td>08c1063cb0a64349ad0d2d862f5cc700</td>
     </tr>
@@ -7960,19 +7960,19 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>L'ID della sessione registrata al momento della registrazione dell'impression.</p>
+        <p>L’ID sessione registrato al momento della registrazione dell’impression.</p>
       </td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui è stata distribuita l’impression.</p>
+        <p>Data in cui l’impression è stata trasmessa.</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
@@ -7984,7 +7984,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
@@ -8008,19 +8008,19 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>URL in cui è stata trasmessa l’impression, inclusi eventuali parametri di query.</p>
+        <p>URL in cui è stata distribuita l’impression, inclusi eventuali parametri di query.</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDd PdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RbXlDVmxJNzIwNkh L</td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>INDIRIZZO_IP</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>L'indirizzo IP registrato al momento dell'impression.</p>
+        <p>L’indirizzo IP registrato al momento dell’impression.</p>
       </td>
       <td>174.127.184.158</td>
     </tr>
@@ -8055,7 +8055,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
       <td>
         <p>varchar</p>
       </td>
-      <td>Indica l’ordine in cui si è verificata la visualizzazione della pagina nella sessione.</td>
+      <td>Indica l'ordine in cui si è verificata la visualizzazione pagina nella sessione.</td>
       <td>
         <p>4</p>
       </td>
@@ -8067,14 +8067,14 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
       <td>
         <p>varchar</p>
       </td>
-      <td>Utilizzato per il controllo e l'elaborazione interni.</td>
+      <td>Utilizzato per l’audit e l’elaborazione interna.</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IS_DUPLICATO</p>
+        <p>IS_DUPLICATED</p>
       </td>
       <td>
         <p>booleano</p>
@@ -8091,7 +8091,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
       <td>
         <p>booleano</p>
       </td>
-      <td>Utilizzato per elaborazione interna.</td>
+      <td>Utilizzato per l’elaborazione interna.</td>
       <td>
         <p>vero</p>
       </td>
@@ -8104,7 +8104,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. In CRM è indicato come "Pagina referente".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di riferimento".</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -8116,7 +8116,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. Una pagina referente non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "Pagina referente - Raw".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Una pagina di riferimento non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti, denominato "Pagina di provenienza - Raw".</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -8128,7 +8128,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>La città risolta dall'indirizzo IP.</p>
+        <p>La città risolta dall’indirizzo IP.</p>
       </td>
       <td>
         <p>Seattle</p>
@@ -8156,7 +8156,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Il paese risolto dall'indirizzo IP.</p>
+        <p>Il paese risolto dall’indirizzo IP.</p>
       </td>
       <td>
         <p>Stati Uniti</p>
@@ -8164,16 +8164,16 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
     </tr>
     <tr>
       <td>
-        <p>ISP_NAME</p>
+        <p>NOME_ISP</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di servizi Internet utilizzato dai clienti con monitoraggio Geo IP avanzato.</p>
+        <p>Il nome del provider di servizi Internet, utilizzato dai clienti con tracciamento Geo IP avanzato.</p>
       </td>
       <td>
-        <p>AT&amp;T verso U</p>
+        <p>A&amp;T U-verso</p>
       </td>
     </tr>
     <tr>
@@ -8184,7 +8184,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Piattaforma di annunci [!DNL Marketo Measure] è stato in grado di risolvere da, tipicamente uno dei nostri partner di integrazione.</p>
+        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>Google</td>
     </tr>
@@ -8196,19 +8196,19 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>ID dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>aw.6601259029</td>
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>NOME_ACCOUNT</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>Nome dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -8220,7 +8220,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’inserzionista dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID dell'inserzionista dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -8228,16 +8228,16 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’inserzionista dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome dell'inserzionista dall'account annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
-        <p>Analisi di marketing delle misure di mercato</p>
+        <p>Analisi di marketing per misurazione di mercato</p>
       </td>
     </tr>
     <tr>
@@ -8248,7 +8248,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>1695651</p>
@@ -8256,13 +8256,13 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>NOME_SITO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -8276,7 +8276,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>120839827</p>
@@ -8290,7 +8290,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>blocco stradale</p>
@@ -8304,21 +8304,21 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della campagna dall’account dell’annuncio da cui è stato risolto l’annuncio.</p>
+        <p>ID della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>aw.6601259029.317738075</td>
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna dall’account dell’annuncio dal quale è stato risolto l’annuncio.</p>
+        <p>Nome della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
-      <td>Attribuzione di marketing</td>
+      <td>Marketing Attribution</td>
     </tr>
     <tr>
       <td>
@@ -8328,10 +8328,10 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché nella gerarchia di Doubleclick non è presente alcun gruppo di annunci per le impression</p>
+        <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia a doppio clic per le impression</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -8342,10 +8342,10 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché nella gerarchia di Doubleclick non è presente alcun gruppo di annunci per le impression</p>
+        <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia a doppio clic per le impression</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -8370,7 +8370,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’annuncio dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
+        <p>Nome dell’annuncio dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
       </td>
       <td>
         <p>centurylink_banner_98121</p>
@@ -8384,23 +8384,23 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un creativo nella gerarchia di Doubleclick per le impressioni.</p>
+        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>NOME_CREATIVO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un creativo nella gerarchia di Doubleclick per le impressioni.</p>
+        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8410,9 +8410,9 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un creativo nella gerarchia di Doubleclick per le impressioni.</p>
+        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8422,9 +8422,9 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un creativo nella gerarchia di Doubleclick per le impressioni.</p>
+        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8434,9 +8434,9 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un creativo nella gerarchia di Doubleclick per le impressioni.</p>
+        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8446,9 +8446,9 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un creativo nella gerarchia di Doubleclick per le impressioni.</p>
+        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8458,21 +8458,21 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto valore nullo perché nella gerarchia di Doubleclick per le impressioni non è presente alcuna parola chiave.</p>
+        <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
-        <p>KYWORD_NAME</p>
+        <p>KEYWORD_NAME</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto valore nullo perché nella gerarchia di Doubleclick per le impressioni non è presente alcuna parola chiave.</p>
+        <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8482,9 +8482,9 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto valore nullo perché nella gerarchia di Doubleclick per le impressioni non è presente alcuna parola chiave.</p>
+        <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -8494,7 +8494,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, il browser rilevato che l'utente era attivo durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Chrome</p>
@@ -8508,7 +8508,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, la versione rilevata del browser su cui l'utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione del browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>58</p>
@@ -8516,13 +8516,13 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>NOME_PIATTAFORMA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la piattaforma rilevata dall’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la piattaforma rilevata su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Mac</p>
@@ -8536,7 +8536,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la versione rilevata della piattaforma su cui l’utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione rilevata della piattaforma su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>10_12</p>
@@ -8547,7 +8547,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
         <p>Chiave esterna per la vista BIZ_FACTS.</p>
@@ -8560,67 +8560,67 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
       <td>
         <p>CURRENT_PAGE_KEY</p>
       </td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>SITE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>CHIAVE_RIGA_SITO</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -8633,7 +8633,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8647,7 +8647,7 @@ Impression attivate e registrate. Questa tabella richiede una connessione Double
 
 ### BIZ_KEYWORDS {#biz-keywords}
 
-Parole chiave importate da qualsiasi account annuncio connesso.
+Parole chiave importate da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -8673,10 +8673,10 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per la parola chiave.</p>
+        <p>ID univoco della parola chiave.</p>
       </td>
       <td>
-        <p>ba.3284209.132630532.364689365.39464932147</p>
+        <p>ba.3284209.132630532.3646889365.39464932147</p>
       </td>
     </tr>
     <tr>
@@ -8686,7 +8686,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>ID parola chiave dal sistema di origine.</td>
+      <td>L’ID della parola chiave dal sistema di origine.</td>
       <td>
         <p>39464932147</p>
       </td>
@@ -8699,7 +8699,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata importata la parola chiave.</p>
+        <p>ID dell’account annuncio da cui è stata importata la parola chiave.</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -8711,7 +8711,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stata importata la parola chiave.</p>
+        <p>Nome dell’account annuncio da cui è stata importata la parola chiave.</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -8723,24 +8723,24 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto valore nullo perché nella gerarchia di Doubleclick per le impressioni non è presente alcuna parola chiave.</p>
+        <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto valore nullo perché nella gerarchia di Doubleclick per le impressioni non è presente alcuna parola chiave.</p>
+        <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -8751,7 +8751,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id del gruppo di annunci per la parola chiave.</p>
+        <p>ID del gruppo di annunci per la parola chiave.</p>
       </td>
       <td>
         <p>ba.3284209.132630532.3646889365</p>
@@ -8821,7 +8821,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la parola chiave è stata eliminata o meno nel sistema di origine.</p>
+        <p>Indica se la parola chiave è stata eliminata nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -8835,19 +8835,19 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>2018-08-02 06:37:29.000</td>
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
         <p>2018-08-02 06:37:29.000</p>
@@ -8861,7 +8861,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della parola chiave dal sistema di origine.</p>
+        <p>Nome della parola chiave, dal sistema di origine.</p>
       </td>
       <td>
         <p>[attribuzione ricavi b2b]</p>
@@ -8869,14 +8869,14 @@ Parole chiave importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la parola chiave deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato per l’elaborazione interna.)</p>
+        <p>Specifica se la parola chiave deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico, utilizzato per l'elaborazione interna).</p>
       </td>
       <td>
         <p>falso</p>
@@ -8884,7 +8884,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -8902,7 +8902,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Parola chiave".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Parola chiave".</p>
       </td>
       <td>
         <p>Parola chiave</p>
@@ -8910,13 +8910,13 @@ Parole chiave importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del provider di annunci per la parola chiave.</p>
+        <p>Nome del provider dell’annuncio per la parola chiave.</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -8931,7 +8931,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
       </td>
       <td>
         <p>L’URL della pagina di destinazione.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
@@ -8944,16 +8944,16 @@ Parole chiave importate da qualsiasi account annuncio connesso.
       </td>
       <td>
         <p>Valore precedente per URL_CURRENT.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>URL_REQUESTED</td>
+      <td>URL_RICHIESTO</td>
       <td>varchar</td>
       <td>
-        <p>L’URL della pagina di destinazione con [!DNL Marketo Measure] Parametri.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>URL della pagina di destinazione con [!DNL Marketo Measure] parametri.</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
@@ -8964,19 +8964,19 @@ Parole chiave importate da qualsiasi account annuncio connesso.
       <td>
         <p>booleano</p>
       </td>
-      <td>Campo diagnostico per l'elaborazione interna.</td>
+      <td>Campo diagnostico, per elaborazione interna.</td>
       <td>
         <p>falso</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>PAROLA</p>
+        <p>WORD</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>La fase di ricerca immessa dall'utente.</td>
+      <td>La fase di ricerca immessa dall’utente.</td>
       <td>
         <p>attribuzione ricavi b2b</p>
       </td>
@@ -9017,7 +9017,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
+        <p>TRACKING_URL_TEMPLATE_REQUIRED</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9042,10 +9042,10 @@ Parole chiave importate da qualsiasi account annuncio connesso.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>-2712935512233520000</td>
     </tr>
@@ -9058,7 +9058,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9072,7 +9072,7 @@ Parole chiave importate da qualsiasi account annuncio connesso.
 
 ### BIZ_LANDING_PAGES {#biz-landing-pages}
 
-Pagine di destinazione importate da qualsiasi account annuncio connesso.
+Pagine di destinazione importate da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -9096,7 +9096,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per la pagina di destinazione.</p>
+        <p>ID univoco della pagina di destinazione.</p>
       </td>
       <td></td>
     </tr>
@@ -9127,7 +9127,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>Nome dell’account annuncio da cui è stata importata la pagina di destinazione.</td>
+      <td>Nome dell’account dell’annuncio da cui è stata importata la pagina di destinazione.</td>
       <td></td>
     </tr>
     <tr>
@@ -9144,7 +9144,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9228,7 +9228,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -9248,7 +9248,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
@@ -9258,7 +9258,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9278,7 +9278,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9308,7 +9308,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL_RICHIESTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9325,7 +9325,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9337,7 +9337,7 @@ Pagine di destinazione importate da qualsiasi account annuncio connesso.
   </tbody>
 </table>
 
-### BIZ_LEADS {#biz-leads}
+### BIZ_LEAD {#biz-leads}
 
 Lead importati dal sistema di origine.
 
@@ -9365,7 +9365,7 @@ Lead importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID lead dal sistema di origine.</p>
+        <p>L'ID lead dal sistema di origine.</p>
       </td>
       <td>
         <p>00Q0Z00001MZcj8UAD</p>
@@ -9387,7 +9387,7 @@ Lead importati dal sistema di origine.
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -9399,19 +9399,19 @@ Lead importati dal sistema di origine.
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo e-mail del lead dal sistema di origine.</p>
+        <p>Indirizzo e-mail del lead, dal sistema di origine.</p>
       </td>
       <td>persona@adobe.com</td>
     </tr>
     <tr>
       <td>
-        <p>WEB_SITE</p>
+        <p>SITO_WEB</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9459,7 +9459,7 @@ Lead importati dal sistema di origine.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il lead è stato convertito o meno in un contatto.</p>
+        <p>Indica se il lead è stato convertito in un contatto.</p>
       </td>
       <td>
         <p>vero</p>
@@ -9487,7 +9487,7 @@ Lead importati dal sistema di origine.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il lead è stato convertito in un contatto.</p>
+        <p>Data in cui il lead è stato convertito in contatto.</p>
       </td>
       <td>
         <p>2018-08-27 07:00:00.000</p>
@@ -9501,7 +9501,7 @@ Lead importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del contatto correlato una volta convertito il lead.</p>
+        <p>ID del contatto correlato dopo la conversione del lead.</p>
       </td>
       <td>
         <p>0030Z00003Oyp25QAB</p>
@@ -9515,7 +9515,7 @@ Lead importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account mappato. Requisiti: Abilita ABM</p>
+        <p>ID dell’account mappato. Requisiti: abilitare ABM</p>
       </td>
       <td>
         <p>0010Z0000236F9GQAU</p>
@@ -9529,7 +9529,7 @@ Lead importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Fase corrente del lead, riconosciuta come fase personalizzata che può essere creata nel [!DNL Marketo Measure] applicazione.</p>
+        <p>Fase corrente del lead, riconosciuta come fase personalizzata che può essere creata in [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
         <p>Demo pianificata</p>
@@ -9543,7 +9543,7 @@ Lead importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Tutti gli stadi precedenti per il lead, riconosciuti come stadi personalizzati che possono essere creati nel [!DNL Marketo Measure] applicazione.</p>
+        <p>Tutte le fasi precedenti per il lead, riconosciute come fasi personalizzate che possono essere create in [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
         <p>MQL</p>
@@ -9574,7 +9574,7 @@ Lead importati dal sistema di origine.
         <p>(obsoleto)</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -9588,7 +9588,7 @@ Lead importati dal sistema di origine.
         <p>(obsoleto)</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -9599,7 +9599,7 @@ Lead importati dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>La [!DNL Marketo Measure] ID cookie utilizzato per popolare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -9613,7 +9613,7 @@ Lead importati dal sistema di origine.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene eliminato o meno nel sistema di origine.</p>
+        <p>Indica se il record viene eliminato o meno nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -9624,10 +9624,10 @@ Lead importati dal sistema di origine.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>3263982503087870000</td>
     </tr>
@@ -9640,17 +9640,17 @@ Lead importati dal sistema di origine.
     <tr>
       <td>IS_DUPLICATE</td>
       <td>booleano</td>
-      <td>Utilizzato per deduplicare i record se è configurata sia un’integrazione CRM che Marketo. In presenza di duplicati, il lead Marketo è contrassegnato come true.</td>
+      <td>Utilizzato per deduplicare i record se è impostata un’integrazione CRM e Marketo. In presenza di duplicati, il lead Marketo viene contrassegnato come true.</td>
       <td>vero</td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>SISTEMA_DI_ORIGINE</td>
       <td>varchar</td>
       <td>Indica se il record proviene da un’integrazione CRM o Marketo.</td>
       <td>Crm</td>
     </tr>
     <tr>
-      <td>NEW_SYSTEM_ID</td>
+      <td>OTHER_SYSTEM_ID</td>
       <td>varchar</td>
       <td>Mappa una persona da un’integrazione Marketo con un lead da un’integrazione CRM. Se esiste sia un’integrazione CRM che Marketo, il valore è l’ID corrispondente.</td>
       <td>1234</td>
@@ -9664,7 +9664,7 @@ Lead importati dal sistema di origine.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9678,7 +9678,7 @@ Lead importati dal sistema di origine.
 
 ### BIZ_LEAD_STAGE_TRANSITIONS {#biz-lead-stage-transitions}
 
-Transizioni di stage per lead o contatti.
+Transizioni nell&#39;area intermedia per lead o contatti.
 
 <table>
   <tbody>
@@ -9707,18 +9707,18 @@ Transizioni di stage per lead o contatti.
         <p>Un ID univoco per la transizione.</p>
       </td>
       <td>
-        <p>ST_0030Z0003FhkRXQAZ__FT-1_TP2_Person_0030Z0003FhkRXQAZ_2018-08-27:17-05-45-944 74800.0d5c18c29d7b</p>
+        <p>ST_0030Z00003FhkRXQAZ__FT-1_TP2_Person_0030Z00003FhkRXQAZ_2018-08-27:17-05-45-9474800.0d5c18c29d7b</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>L'indirizzo e-mail fornito per il relativo lead/contatto.</p>
+        <p>L’indirizzo e-mail fornito per il lead/contatto correlato.</p>
       </td>
       <td>
         <p>persone@adobe.com</p>
@@ -9760,7 +9760,7 @@ Transizioni di stage per lead o contatti.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per il punto di contatto dell’acquirente associato alla transizione.</p>
+        <p>ID del punto di contatto dell'acquirente associato alla transizione.</p>
       </td>
       <td>
         <p>TP2_Person_00Q3100001Fx6AlEAJ_2018-08-28:14-41-06-1674260.d00ceb09fbd3</p>
@@ -9774,7 +9774,7 @@ Transizioni di stage per lead o contatti.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è passato all’area di visualizzazione.</p>
+        <p>Data di transizione del record nell’area di visualizzazione.</p>
       </td>
       <td>
         <p>2018-08-27 16:05:34.000</p>
@@ -9788,7 +9788,7 @@ Transizioni di stage per lead o contatti.
         <p>varchar</p>
       </td>
       <td>
-        <p>Valore ID dell’area di visualizzazione per la transizione.</p>
+        <p>Valore ID della fase per la transizione.</p>
       </td>
       <td>
         <p>_bizible_FT</p>
@@ -9802,7 +9802,7 @@ Transizioni di stage per lead o contatti.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’area di visualizzazione per la transizione.</p>
+        <p>Nome della fase per la transizione.</p>
       </td>
       <td>
         <p>FT</p>
@@ -9813,10 +9813,10 @@ Transizioni di stage per lead o contatti.
         <p>CLASSIFICA</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>La classificazione numerica dello stadio, come ordinato nella [!DNL Marketo Measure] Impostazioni di Mappatura della fase.</p>
+        <p>Il rango numerico dello stadio, come ordinato nel [!DNL Marketo Measure] Impostazioni di mappatura dello stage.</p>
       </td>
       <td>
         <p>5</p>
@@ -9830,7 +9830,7 @@ Transizioni di stage per lead o contatti.
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>Utilizzato nell'elaborazione interna per l'indicizzazione e l'ordinamento delle fasi boomerang.</p>
+        <p>Utilizzato nell’elaborazione interna per l’indicizzazione e l’ordinamento di fasi di boomerang.</p>
       </td>
       <td>
         <p>1</p>
@@ -9843,7 +9843,7 @@ Transizioni di stage per lead o contatti.
       <td>
         <p>varchar(1)</p>
       </td>
-      <td>Utilizzato nell'elaborazione interna per l'indicizzazione e l'ordinamento delle fasi boomerang.</td>
+      <td>Utilizzato nell’elaborazione interna per l’indicizzazione e l’ordinamento di fasi di boomerang.</td>
       <td>
         <p>1</p>
       </td>
@@ -9856,7 +9856,7 @@ Transizioni di stage per lead o contatti.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se il punto di contatto è considerato in sospeso e non ancora chiuso. Viene visualizzato solo per i clienti con modello di attribuzione percorso completo.</p>
+        <p>Indica se il punto di contatto è considerato in sospeso e non ancora chiuso. Questo viene visualizzato solo per i clienti con modello di attribuzione percorso completo.</p>
       </td>
       <td>
         <p>falso</p>
@@ -9870,7 +9870,7 @@ Transizioni di stage per lead o contatti.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga è associata a una transizione di fase cardine. Ad esempio, se ci sono 3 fasi/ingressi (FT, LC, MQL) e 4 punti di contatto, il 1 punto di contatto senza una fase su di esso è considerato "non transitorio" in modo che il valore sia uguale a vero.</p>
+        <p>Indica se la riga è associata a una transizione di fase milestone. Ad esempio, se ci sono 3 stadi/ingressi (FT, LC, MQL) e 4 punti di contatto, il 1 punto di contatto senza una fase su di esso è considerato "non transitorio" in modo che il valore sia uguale a vero.</p>
       </td>
       <td>
         <p>falso</p>
@@ -9884,7 +9884,7 @@ Transizioni di stage per lead o contatti.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di transizione per la fase precedente, in base al rango dello stadio.</p>
+        <p>Data di transizione per la fase precedente, in base alla classificazione della fase.</p>
       </td>
       <td>
         <p>2017-11-28 21:26:44.000</p>
@@ -9898,7 +9898,7 @@ Transizioni di stage per lead o contatti.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di transizione per la fase successiva, in base al rango dello stadio.</p>
+        <p>Data di transizione per la fase successiva, in base alla classificazione della fase.</p>
       </td>
       <td>
         <p>2017-12-11 22:39:17.000</p>
@@ -9926,7 +9926,7 @@ Transizioni di stage per lead o contatti.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record di transizione viene considerato eliminato o meno.</p>
+        <p>Indica se il record di transizione viene considerato eliminato o meno.</p>
       </td>
       <td>
         <p>falso</p>
@@ -9941,7 +9941,7 @@ Transizioni di stage per lead o contatti.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9981,7 +9981,7 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'ID opportunità dal sistema di origine.</p>
+        <p>L’ID dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
         <p>0060Z00000o89I4QAI</p>
@@ -9995,19 +9995,19 @@ Opportunità importate dal sistema di origine.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data ultima modifica dell'opportunità dal sistema di origine.</p>
+        <p>Data dell’ultima modifica dell’opportunità, dal sistema di origine.</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>DATA_CREAZIONE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di creazione dell'opportunità dal sistema di origine.</p>
+        <p>La data di creazione dell’opportunità, dal sistema di origine.</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
@@ -10019,7 +10019,7 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account correlato.</p>
+        <p>ID dell’account correlato.</p>
       </td>
       <td>
         <p>001i000000qbyeoAAA</p>
@@ -10033,10 +10033,10 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome opportunità dal sistema di origine.</p>
+        <p>Il nome dell’opportunità, dal sistema di origine.</p>
       </td>
       <td>
-        <p>Rinnovo della misura Mareketo</p>
+        <p>Rinnovo Mareketo Measure</p>
       </td>
     </tr>
     <tr>
@@ -10047,7 +10047,7 @@ Opportunità importate dal sistema di origine.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l'opportunità è stata spostata in uno stadio considerato vinto.</p>
+        <p>Indica se l’opportunità è stata spostata in una fase considerata vinta.</p>
       </td>
       <td>
         <p>falso</p>
@@ -10061,7 +10061,7 @@ Opportunità importate dal sistema di origine.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l'opportunità è stata spostata in uno stadio considerato chiuso.</p>
+        <p>Indica se l’opportunità è stata spostata in una fase considerata chiusa.</p>
       </td>
       <td>
         <p>falso</p>
@@ -10075,7 +10075,7 @@ Opportunità importate dal sistema di origine.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di chiusura prevista o effettiva dell'opportunità dal sistema di origine.</p>
+        <p>Data di chiusura prevista o effettiva dell’opportunità, dal sistema di origine.</p>
       </td>
       <td>
         <p>2019-08-28 07:00:00.000</p>
@@ -10092,18 +10092,18 @@ Opportunità importate dal sistema di origine.
         <p>(obsoleto)</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IMPORTO</p>
+        <p>QUANTITÀ</p>
       </td>
       <td>
         <p>numero(38,8)</p>
       </td>
       <td>
-        <p>Importo dell'offerta previsto o chiuso dall'opportunità dal sistema di origine.</p>
+        <p>Importo dell’offerta previsto o chiuso dall’opportunità, dal sistema di origine.</p>
       </td>
       <td>
         <p>8988.00000000</p>
@@ -10117,11 +10117,11 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del lead correlato convertito in questa opportunità.</p>
-        <p>Tieni presente che questo campo non è impostato e restituisce null in Snowflake per tutti i clienti.</p>
+        <p>L’ID del lead correlato che è stato convertito in questa opportunità.</p>
+        <p>Questo campo non è impostato e restituisce null nel Snowflake per tutti i clienti.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -10132,11 +10132,11 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>L’e-mail del lead correlato che si era convertito in questa opportunità.</p>
-        <p>Tieni presente che questo campo non è impostato e restituisce null in Snowflake per tutti i clienti.</p>
+        <p>L’e-mail del lead correlato che è stato convertito in questa opportunità.</p>
+        <p>Questo campo non è impostato e restituisce null nel Snowflake per tutti i clienti.</p>
       </td>
       <td>
-        <p>null</p>
+        <p>nulle</p>
       </td>
     </tr>
     <tr>
@@ -10147,7 +10147,7 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Se si utilizza il ruolo di contatto principale, l'ID del contatto correlato viene elencato come ruolo di contatto principale.</p>
+        <p>Se si utilizza il ruolo di contatto principale, l’ID del contatto correlato viene elencato come ruolo di contatto principale.</p>
       </td>
       <td>
         <p>00331000038uGfhAAE</p>
@@ -10155,13 +10155,13 @@ Opportunità importate dal sistema di origine.
     </tr>
     <tr>
       <td>
-        <p>PRIMARY_CONTACT_EMAIL</p>
+        <p>EMAIL_CONTATTO_PRINCIPALE</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Se si utilizza il ruolo di contatto principale, l'e-mail del contatto correlato è elencata come ruolo di contatto principale.</p>
+        <p>Se viene utilizzato il ruolo di contatto principale, l’e-mail del contatto correlato elencato come ruolo di contatto principale.</p>
       </td>
       <td>
         <p>personb@adobe.com</p>
@@ -10189,7 +10189,7 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Fase corrente dell'opportunità, come definito nel [!DNL Marketo Measure] applicazione.</p>
+        <p>Fase corrente dell’opportunità, come definita nella [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
         <p>Demo DM</p>
@@ -10203,10 +10203,10 @@ Opportunità importate dal sistema di origine.
         <p>varchar</p>
       </td>
       <td>
-        <p>Una stringa di tutte le fasi che l'opportunità ha attraversato in precedenza, come definito in [!DNL Marketo Measure] applicazione.</p>
+        <p>Una stringa di tutte le fasi che l’opportunità ha attraversato in precedenza, come definito nel [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
-        <p>Individuazione qualificata, demo pianificato</p>
+        <p>Discovery qualificato, demo pianificata</p>
       </td>
     </tr>
     <tr>
@@ -10217,7 +10217,7 @@ Opportunità importate dal sistema di origine.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record viene eliminato o meno nel sistema di origine.</p>
+        <p>Indica se il record viene eliminato o meno nel sistema di origine.</p>
       </td>
       <td>falso</td>
     </tr>
@@ -10226,10 +10226,10 @@ Opportunità importate dal sistema di origine.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>4609512587744160000</p>
@@ -10243,7 +10243,7 @@ Opportunità importate dal sistema di origine.
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td>Valore ID della valuta per il record.</td>
       <td>4609512587744160000</td>
     </tr>
@@ -10262,7 +10262,7 @@ Opportunità importate dal sistema di origine.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -10276,7 +10276,7 @@ Opportunità importate dal sistema di origine.
 
 ### BIZ_OPP_STAGE_TRANSITIONS {#biz-opp-stage-transitions}
 
-Transizioni stage per Opportunità.
+Transizioni nell&#39;area intermedia per le opportunità.
 
 <table>
   <tbody>
@@ -10305,7 +10305,7 @@ Transizioni stage per Opportunità.
         <p>Un ID univoco per la transizione.</p>
       </td>
       <td>
-        <p>ST_0060Z0000nEgjlQAC_0030Z0003IjojKQAR_Demo Pianificato-1_BAT2_0060Z00000nEgjlQAC_0030Z 00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
       </td>
     </tr>
     <tr>
@@ -10316,7 +10316,7 @@ Transizioni stage per Opportunità.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account associato all'opportunità.</p>
+        <p>ID dell’account associato all’opportunità.</p>
       </td>
       <td>
         <p>0013100001b44nTAAQ</p>
@@ -10324,13 +10324,13 @@ Transizioni stage per Opportunità.
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>ID_OPPORTUNITÀ</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per l'opportunità associata alla transizione.</p>
+        <p>ID dell’opportunità associata alla transizione.</p>
       </td>
       <td>
         <p>0060Z00000nEgjlQAC</p>
@@ -10352,13 +10352,13 @@ Transizioni stage per Opportunità.
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>L'indirizzo e-mail fornito per il contatto correlato.</p>
+        <p>L’indirizzo e-mail fornito per il contatto correlato.</p>
       </td>
       <td>
         <p>persone@adobe.com</p>
@@ -10372,10 +10372,10 @@ Transizioni stage per Opportunità.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per il punto di contatto dell’attribuzione dell’acquirente associato alla transizione.</p>
+        <p>ID del punto di contatto di attribuzione acquirente associato alla transizione.</p>
       </td>
       <td>
-        <p>BAT2_0060Z0000nEgjlQAC_0030Z0003IjojKQAR_2018-06-01:19-51-38-1685390.beec 556e7757</p>
+        <p>BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
       </td>
     </tr>
     <tr>
@@ -10386,7 +10386,7 @@ Transizioni stage per Opportunità.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è passato all’area di visualizzazione.</p>
+        <p>Data di transizione del record nell’area di visualizzazione.</p>
       </td>
       <td>
         <p>2018-05-26 07:29:43.000</p>
@@ -10400,7 +10400,7 @@ Transizioni stage per Opportunità.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’area di visualizzazione per la transizione.</p>
+        <p>Nome della fase per la transizione.</p>
       </td>
       <td>
         <p>Demo pianificata</p>
@@ -10414,7 +10414,7 @@ Transizioni stage per Opportunità.
         <p>varchar</p>
       </td>
       <td>
-        <p>Valore ID dell’area di visualizzazione per la transizione.</p>
+        <p>Valore ID della fase per la transizione.</p>
       </td>
       <td>
         <p>_bizible_FT</p>
@@ -10425,10 +10425,10 @@ Transizioni stage per Opportunità.
         <p>CLASSIFICA</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>La classificazione numerica dello stadio, come ordinato nella [!DNL Marketo Measure] Impostazioni di Mappatura della fase.</p>
+        <p>Il rango numerico dello stadio, come ordinato nel [!DNL Marketo Measure] Impostazioni di mappatura dello stage.</p>
       </td>
       <td>
         <p>4</p>
@@ -10442,7 +10442,7 @@ Transizioni stage per Opportunità.
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>Utilizzato nell'elaborazione interna per l'indicizzazione e l'ordinamento delle fasi boomerang.</p>
+        <p>Utilizzato nell’elaborazione interna per l’indicizzazione e l’ordinamento di fasi di boomerang.</p>
       </td>
       <td>1</td>
     </tr>
@@ -10454,7 +10454,7 @@ Transizioni stage per Opportunità.
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>Utilizzato nell'elaborazione interna per l'indicizzazione e l'ordinamento delle fasi boomerang.</p>
+        <p>Utilizzato nell’elaborazione interna per l’indicizzazione e l’ordinamento di fasi di boomerang.</p>
       </td>
       <td>1</td>
     </tr>
@@ -10466,7 +10466,7 @@ Transizioni stage per Opportunità.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se il punto di contatto è considerato in sospeso e non ancora chiuso. Viene visualizzato solo per i clienti con modello di attribuzione percorso completo.</p>
+        <p>Indica se il punto di contatto è considerato in sospeso e non ancora chiuso. Questo viene visualizzato solo per i clienti con modello di attribuzione percorso completo.</p>
       </td>
       <td>
         <p>falso</p>
@@ -10480,7 +10480,7 @@ Transizioni stage per Opportunità.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga è associata a una transizione di fase cardine. Ad esempio, se ci sono 3 fasi/ingressi (FT, LC, MQL) e 4 punti di contatto, il 1 punto di contatto senza una fase su di esso è considerato "non transitorio" in modo che il valore sia uguale a vero.</p>
+        <p>Indica se la riga è associata a una transizione di fase milestone. Ad esempio, se ci sono 3 stadi/ingressi (FT, LC, MQL) e 4 punti di contatto, il 1 punto di contatto senza una fase su di esso è considerato "non transitorio" in modo che il valore sia uguale a vero.</p>
       </td>
       <td>
         <p>falso</p>
@@ -10494,7 +10494,7 @@ Transizioni stage per Opportunità.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di transizione per la fase precedente, in base al rango dello stadio.</p>
+        <p>Data di transizione per la fase precedente, in base alla classificazione della fase.</p>
       </td>
       <td>
         <p>2015-07-16 17:41:49.000</p>
@@ -10508,7 +10508,7 @@ Transizioni stage per Opportunità.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data di transizione per la fase successiva, in base al rango dello stadio.</p>
+        <p>Data di transizione per la fase successiva, in base alla classificazione della fase.</p>
       </td>
       <td>
         <p>2018-08-27 19:40:52.000</p>
@@ -10536,7 +10536,7 @@ Transizioni stage per Opportunità.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il record di transizione viene considerato eliminato o meno.</p>
+        <p>Indica se il record di transizione viene considerato eliminato o meno.</p>
       </td>
       <td>
         <p>falso</p>
@@ -10551,7 +10551,7 @@ Transizioni stage per Opportunità.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -10591,10 +10591,10 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per la visualizzazione pagina.</p>
+        <p>Un ID univoco per la Visualizzazione pagina.</p>
       </td>
       <td>
-        <p>2018-08-19:16-49-58-24340.277d79d0167849</p>
+        <p>2018-08-19:16-49-58-24340,277 d79d0167849</p>
       </td>
     </tr>
     <tr>
@@ -10605,7 +10605,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar</p>
       </td>
       <td>
-        <p>ID cookie registrato al momento della registrazione della visualizzazione pagina.</p>
+        <p>L’ID cookie registrato al momento della registrazione di Visualizzazione pagina.</p>
       </td>
       <td>
         <p>277d79d01678498fea067c9b631bf6df</p>
@@ -10633,15 +10633,15 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar</p>
       </td>
       <td>
-        <p>L’ID sessione è correlato alla visualizzazione pagina.</p>
+        <p>L’ID sessione è correlato alla Visualizzazione pagina.</p>
       </td>
       <td>
-        <p>2018-08-19:16-49-58-24340.277d79d0167849</p>
+        <p>2018-08-19:16-49-58-24340,277 d79d0167849</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -10661,7 +10661,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-19 16:55:37.000</p>
@@ -10675,7 +10675,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar</p>
       </td>
       <td>
-        <p>URL della visualizzazione pagina, senza parametri di query.</p>
+        <p>URL della visualizzazione Pagina, senza parametri di query.</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo</p>
@@ -10697,13 +10697,13 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>INDIRIZZO_IP</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo IP registrato al momento dell’invio del modulo.</p>
+        <p>L'indirizzo IP registrato al momento dell'invio del modulo.</p>
       </td>
       <td>
         <p>174.127.184.158</p>
@@ -10732,7 +10732,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>Dispositivo e browser registrati al momento dell’invio del modulo.</p>
       </td>
       <td>
-        <p>Mozilla/5,0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0</p>
+        <p>Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0</p>
       </td>
     </tr>
     <tr>
@@ -10743,7 +10743,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>Indica l’ordine in cui si è verificata la visualizzazione della pagina nella sessione.</p>
+        <p>Indica l'ordine in cui si è verificata la visualizzazione pagina nella sessione.</p>
       </td>
       <td>
         <p>1</p>
@@ -10756,14 +10756,14 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
       <td>
         <p>varchar</p>
       </td>
-      <td>Utilizzato per il controllo e l'elaborazione interni.</td>
+      <td>Utilizzato per l’audit e l’elaborazione interna.</td>
       <td>
         <p>103532</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IS_DUPLICATO</p>
+        <p>IS_DUPLICATED</p>
       </td>
       <td>
         <p>booleano</p>
@@ -10778,7 +10778,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
       <td>
         <p>booleano</p>
       </td>
-      <td>Utilizzato per elaborazione interna.</td>
+      <td>Utilizzato per l’elaborazione interna.</td>
       <td>vero</td>
     </tr>
     <tr>
@@ -10789,7 +10789,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar</p>
       </td>
       <td>
-        <p>URL da cui proviene la visualizzazione pagina, senza parametri di query.</p>
+        <p>URL da cui ha avuto origine la visualizzazione pagina, senza parametri di query.</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution</p>
@@ -10803,7 +10803,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>varchar</p>
       </td>
       <td>
-        <p>URL da cui proviene la visualizzazione pagina, compresi eventuali parametri di query.</p>
+        <p>URL da cui ha avuto origine la visualizzazione pagina, inclusi eventuali parametri di query.</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
@@ -10820,18 +10820,18 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>Titolo della pagina.</p>
       </td>
       <td>
-        <p>Guida CMO al download di B2B Marketing Attribution</p>
+        <p>Guida CMO al download dell’attribuzione marketing B2B</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Indirizzo e-mail fornito in un modulo, come acquisito dal javascript.</p>
+        <p>Indirizzo e-mail fornito in un modulo, acquisito da JavaScript.</p>
       </td>
       <td>personc@adobe.com</td>
     </tr>
@@ -10840,10 +10840,10 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-6255315750913680000</p>
@@ -10851,20 +10851,20 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
-      <td>number(38,0)</td>
-      <td>Chiave esterna per la tabella URL.</td>
+      <td>numero(38,0)</td>
+      <td>Chiave esterna della tabella URL.</td>
       <td>6255315750913680000</td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
-      <td>Chiave esterna per la tabella URL.</td>
+      <td>numero(38,0)</td>
+      <td>Chiave esterna della tabella URL.</td>
       <td>6255315750913680000</td>
     </tr>
     <tr>
       <td>HAS_USER_CONSENT</td>
       <td>booleano</td>
-      <td>Indica se l’utente ha acconsentito al tracciamento. False indica che la visualizzazione pagina è stata raccolta perché non è richiesto il consenso dell’utente. True indica che la visualizzazione pagina è stata raccolta e che l'utente ha dato il consenso per il tracciamento.</td>
+      <td>Indica se l'utente ha acconsentito al tracciamento. False indica che la visualizzazione pagina è stata raccolta perché il consenso dell’utente non è richiesto. True significa che la visualizzazione pagina è stata raccolta e che l'utente ha dato il consenso per la registrazione.</td>
       <td>vero</td>
     </tr>
     <tr>
@@ -10876,7 +10876,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -10890,7 +10890,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
 
 ### BIZ_PLACEMENTS {#biz-placements}
 
-Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi account di annunci connessi, un oggetto dell&#39;integrazione di Doubleclick.
+Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi account di annunci connesso, un oggetto dall’integrazione Doubleclick.
 
 <table>
   <tbody>
@@ -10927,7 +10927,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
       <td>
         <p>varchar</p>
       </td>
-      <td>ID posizionamento dal sistema di origine.</td>
+      <td>L’ID di posizionamento dal sistema di origine.</td>
       <td>10426699711</td>
     </tr>
     <tr>
@@ -10938,7 +10938,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per l’account dell’annuncio da cui è stato importato il posizionamento.</p>
+        <p>ID dell’account dell’annuncio da cui è stato importato il posizionamento.</p>
       </td>
       <td>f ter. 106851586409075</td>
     </tr>
@@ -10962,13 +10962,13 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell’inserzionista per il posizionamento, in particolare per Doubleclick.</p>
+        <p>ID dell’inserzionista per il posizionamento, in particolare per Doubleclick.</p>
       </td>
       <td>300184624</td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -10986,9 +10986,9 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra il posizionamento in una gerarchia di annunci.</p>
+        <p>Il valore atteso è nullo poiché non è presente alcun gruppo di annunci al di sopra del posizionamento in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -10998,9 +10998,9 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra il posizionamento in una gerarchia di annunci.</p>
+        <p>Il valore atteso è nullo poiché non è presente alcun gruppo di annunci al di sopra del posizionamento in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -11024,7 +11024,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
       <td>
         <p>Nome della campagna per il posizionamento.</p>
       </td>
-      <td>Marketing sulle pipeline</td>
+      <td>Marketing delle pipeline</td>
     </tr>
     <tr>
       <td>
@@ -11034,7 +11034,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il Posizionamento è ancora attivo nel sistema di origine.</p>
+        <p>Indica se il posizionamento è ancora attivo nel sistema di origine.</p>
       </td>
       <td>vero</td>
     </tr>
@@ -11046,7 +11046,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il Posizionamento è stato eliminato o meno nel sistema di origine.</p>
+        <p>Indica se il posizionamento è stato eliminato nel sistema di origine.</p>
       </td>
       <td>falso</td>
     </tr>
@@ -11058,19 +11058,19 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>2018-08-02 06:36:25.000</td>
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>2018-08-02 06:36:25.000</td>
     </tr>
@@ -11082,31 +11082,31 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del Posizionamento dal sistema di origine.</p>
+        <p>Nome del posizionamento, dal sistema di origine.</p>
       </td>
       <td>Mercato</td>
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se è necessario aggiornare o meno il posizionamento per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato dall'elaborazione interna.)</p>
+        <p>Specifica se il posizionamento deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>falso</td>
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>Campo diagnostico per l'elaborazione interna.</td>
+      <td>Campo diagnostico, per elaborazione interna.</td>
       <td></td>
     </tr>
     <tr>
@@ -11117,13 +11117,13 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Posizionamento".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Posizionamento".</p>
       </td>
       <td>Posizionamento</td>
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -11138,17 +11138,17 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>6008900572523230000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del Snowflake del record</td>
+      <td>Data di creazione del record del Snowflake</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -11160,7 +11160,7 @@ Tabella in cui vengono memorizzati tutti i posizionamenti scaricati da qualsiasi
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di eliminazione del Snowflake del record se è stato eliminato</td>
+      <td>Data di eliminazione del record da parte del Snowflake, se è stato eliminato</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11219,10 +11219,10 @@ Valori del segmento come definiti nella [!DNL Marketo Measure] applicazione.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>1028715376434030000</p>
@@ -11237,7 +11237,7 @@ Valori del segmento come definiti nella [!DNL Marketo Measure] applicazione.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -11251,7 +11251,7 @@ Valori del segmento come definiti nella [!DNL Marketo Measure] applicazione.
 
 ### BIZ_SEGMENT_NAMES {#biz-segment-names}
 
-Mappa il nome del segmento personalizzato sul valore della sua categoria. (Questo mappa i nomi delle colonne alle intestazioni di colonna Categoria1 - 15 presenti nelle tabelle dei punti di contatto).
+Mappa il nome del segmento personalizzato sul relativo valore di categoria. I nomi delle colonne vengono mappati sulle intestazioni di colonna Category1 - 15 presenti nelle tabelle dei punti di contatto.
 
 <table>
   <tbody>
@@ -11280,7 +11280,7 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
         <p>Indica la categoria a cui è mappato il nome del segmento.</p>
       </td>
       <td>
-        <p>CategoriaUno</p>
+        <p>CategoryOne</p>
       </td>
     </tr>
     <tr>
@@ -11291,7 +11291,7 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2022-02-28 18:12:35.000</p>
@@ -11299,7 +11299,7 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
     </tr>
     <tr>
       <td>
-        <p>SEGMENT_NAME</p>
+        <p>NOME_SEGMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -11320,7 +11320,7 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
     <tr>
       <td>IS_DELETED</td>
       <td>booleano</td>
-      <td>Indica se il record viene eliminato.</td>
+      <td>Indica se il record è stato eliminato.</td>
       <td>falso</td>
     </tr>
     <tr>
@@ -11332,7 +11332,7 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -11344,7 +11344,7 @@ Mappa il nome del segmento personalizzato sul valore della sua categoria. (Quest
   </tbody>
 </table>
 
-### BIZ_SESSIONS {#biz-sessions}
+### BIZ_SESSIONI {#biz-sessions}
 
 Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagina possono costituire una sessione e un singolo ID visitatore può essere associato a più sessioni.
 
@@ -11375,7 +11375,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Un ID univoco per la sessione.</p>
       </td>
       <td>
-        <p>2016-08-01:14-24-21-9079480.33163948f0a3</p>
+        <p>2016-08-01:14-21-9079480.33163948f0a3</p>
       </td>
     </tr>
     <tr>
@@ -11404,7 +11404,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -11424,7 +11424,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-09-01 03:49:10.000</p>
@@ -11444,10 +11444,10 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Canale assegnato alla sessione, come definito dalle definizioni dei canali impostate nella [!DNL Marketo Measure] applicazione.</p>
+        <p>Canale attribuito alla sessione, come definito dalle definizioni dei canali impostate nella [!DNL Marketo Measure] applicazione.</p>
       </td>
       <td>
-        <p>Ricerca.AdWords a pagamento</p>
+        <p>Ricerca a pagamento.AdWords</p>
       </td>
     </tr>
     <tr>
@@ -11472,7 +11472,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>URL della prima visualizzazione di pagina della sessione, senza parametri di query.</p>
+        <p>URL della prima visualizzazione pagina della sessione, senza parametri di query.</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics</p>
@@ -11486,7 +11486,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>URL della prima visualizzazione di pagina della sessione, inclusi eventuali parametri di query.</p>
+        <p>URL della prima visualizzazione pagina della sessione, inclusi eventuali parametri di query.</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
@@ -11500,7 +11500,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>URL da cui è nata la sessione, senza parametri di query.</p>
+        <p>URL da cui ha avuto origine la sessione, senza parametri di query.</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -11514,7 +11514,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>URL da cui è nata la sessione, inclusi eventuali parametri di query.</p>
+        <p>URL da cui ha avuto origine la sessione, inclusi eventuali parametri di query.</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -11528,7 +11528,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della pagina di riferimento.</p>
+        <p>Nome della pagina del referente.</p>
       </td>
       <td>
         <p>Google</p>
@@ -11542,7 +11542,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore immesso dall’utente nel browser per la ricerca e finito sul sito web.</p>
+        <p>Il valore che l’utente ha immesso nel browser per cercare e che è finito sul sito web.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] google salesforce</p>
@@ -11556,7 +11556,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire l'origine risultante nella sessione. Questo può essere analizzato dall'URL da utm_source o impostato su un Ad Provider se [!DNL Marketo Measure] è in grado di risolvere un annuncio.</p>
+        <p>Utilizzato per definire l’origine che ha generato la sessione. Questo può essere analizzato dall’URL da utm_source o impostato su un Ad Provider se [!DNL Marketo Measure] è in grado di risolvere un annuncio.</p>
       </td>
       <td>
         <p>Google AdWords</p>
@@ -11570,7 +11570,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>booleano</p>
       </td>
       <td>
-        <p>Se la sessione conteneva o meno una compilazione del modulo,</p>
+        <p>Indica se la sessione contiene o meno un riempimento del modulo</p>
       </td>
       <td>
         <p>vero</p>
@@ -11584,7 +11584,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>booleano</p>
       </td>
       <td>
-        <p>Se la sessione conteneva o meno una chat web.</p>
+        <p>Indica se la sessione contiene o meno una chat Web.</p>
       </td>
       <td>
         <p>falso</p>
@@ -11598,7 +11598,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>booleano</p>
       </td>
       <td>
-        <p>Se la sessione aveva o meno un indirizzo e-mail.</p>
+        <p>Indica se la sessione aveva o meno un indirizzo e-mail.</p>
       </td>
       <td>
         <p>falso</p>
@@ -11626,7 +11626,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Il browser e il sistema operativo dell'utente durante la sessione.</p>
+        <p>Il browser e il sistema operativo dell’utente durante la sessione.</p>
       </td>
       <td>
         <p>Chrome (65.0), Windows (6.1)</p>
@@ -11640,7 +11640,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Piattaforma Ad [!DNL Marketo Measure] Risolto da, tipicamente uno dei nostri partner di integrazione.</p>
+        <p>La piattaforma dell’annuncio [!DNL Marketo Measure] risolto da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>Google</p>
@@ -11654,7 +11654,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>ID dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -11662,13 +11662,13 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>NOME_ACCOUNT</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio dal quale l’annuncio è stato risolto.</p>
+        <p>Nome dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -11682,7 +11682,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Id dell’inserzionista da cui è stato risolto l’annuncio, in particolare dalla connessione Doubleclick.</p>
+        <p>ID dell’inserzionista da cui è stato risolto l’annuncio, in particolare dalla connessione Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -11690,7 +11690,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -11710,7 +11710,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del sito da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del sito da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>1695651</p>
@@ -11718,13 +11718,13 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>NOME_SITO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del sito da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -11738,7 +11738,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del pacchetto da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del posizionamento da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>120839827</p>
@@ -11752,7 +11752,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del posizionamento da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del posizionamento da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>blocco stradale</p>
@@ -11774,7 +11774,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
@@ -11783,7 +11783,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Nome della campagna da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
-        <p>Pianificazione del webinar sul budget</p>
+        <p>Pianificazione del webinar Budget</p>
       </td>
     </tr>
     <tr>
@@ -11836,7 +11836,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       <td>
         <p>Nome dell’annuncio risolto da. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
       </td>
-      <td>Promo invernale - Verde</td>
+      <td>Promozione invernale - Verde</td>
     </tr>
     <tr>
       <td>
@@ -11846,7 +11846,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Id del creativo da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID della creatività da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.83558988035</p>
@@ -11854,13 +11854,13 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>NOME_CREATIVO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del creativo da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome della creatività da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Integrare GA e Salesforce</p>
@@ -11874,7 +11874,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima riga del Creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Integrare Salesforce &amp; Analytics In</p>
@@ -11888,10 +11888,10 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>La seconda riga del creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>Ottimizza i ricavi. Impara Come.</p>
+        <p>Ottimizza per i ricavi. Scopri come.</p>
       </td>
     </tr>
     <tr>
@@ -11902,7 +11902,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>La pagina di destinazione che fa clic dall’annuncio di ricerca, estratta dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La pagina di destinazione in cui viene fatto clic dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics</p>
@@ -11916,7 +11916,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Il nome dell’URL descrittivo mostrato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Il nome URL descrittivo visualizzato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>adobe.com/Salesforce-for-GA</p>
@@ -11938,7 +11938,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>KYWORD_NAME</p>
+        <p>KEYWORD_NAME</p>
       </td>
       <td>
         <p>varchar</p>
@@ -11958,7 +11958,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Il tipo di corrispondenza trovato tra la frase di ricerca e la parola chiave acquistata.</p>
+        <p>Tipo di corrispondenza trovata tra la frase di ricerca e la parola chiave acquistata.</p>
       </td>
       <td>
         <p>Frase</p>
@@ -11972,10 +11972,10 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Viene analizzato dall’URL da utm_campaign.</p>
+        <p>Analizzato dall’URL da utm_campaign.</p>
       </td>
       <td>
-        <p>SU - Account ABC - Abilità media a pagamento</p>
+        <p>SU - Account ABC - Competenze media a pagamento</p>
       </td>
     </tr>
     <tr>
@@ -11986,7 +11986,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Viene analizzato dall’URL da utm_source.</p>
+        <p>Analizzato dall’URL da utm_source.</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -11994,13 +11994,13 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>MEDIO</p>
+        <p>MEDIA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Viene analizzato dall’URL da utm_medium.</p>
+        <p>Analizzato dall’URL da utm_medium.</p>
       </td>
       <td>
         <p>Social</p>
@@ -12014,7 +12014,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Viene analizzato dall’URL da utm_term.</p>
+        <p>Analizzato dall’URL da utm_term.</p>
       </td>
       <td>
         <p>lisu07261601</p>
@@ -12028,10 +12028,10 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Viene analizzato dall’URL da utm_content.</p>
+        <p>Analizzato dall’URL da utm_content.</p>
       </td>
       <td>
-        <p>Rapporto Benchmark AdWords 2016</p>
+        <p>Rapporto benchmark AdWords 2016</p>
       </td>
     </tr>
     <tr>
@@ -12042,7 +12042,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>La città risolta dall'indirizzo IP.</p>
+        <p>La città risolta dall’indirizzo IP.</p>
       </td>
       <td>Vancouver</td>
     </tr>
@@ -12066,27 +12066,27 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>varchar</p>
       </td>
       <td>
-        <p>Il paese risolto dall'indirizzo IP.</p>
+        <p>Il paese risolto dall’indirizzo IP.</p>
       </td>
       <td>Canada</td>
     </tr>
     <tr>
       <td>
-        <p>ISP_NAME</p>
+        <p>NOME_ISP</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Provider di servizi Internet dell'utente</p>
+        <p>Il fornitore di servizi Internet dell’utente</p>
       </td>
       <td>
-        <p>AT&amp;T verso U</p>
+        <p>A&amp;T U-verso</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>INDIRIZZO_IP</p>
       </td>
       <td>
         <p>varchar</p>
@@ -12117,10 +12117,10 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -12128,67 +12128,67 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>SITE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>CHIAVE_RIGA_SITO</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -12201,7 +12201,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12215,7 +12215,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
 
 ### BIZ_SITES {#biz-sites}
 
-Siti importati da qualsiasi account annuncio connesso.
+Siti importati da qualsiasi account annuncio collegato.
 
 <table>
   <tbody>
@@ -12252,7 +12252,7 @@ Siti importati da qualsiasi account annuncio connesso.
       <td>
         <p>varchar</p>
       </td>
-      <td>L'ID del sito dal sistema di origine.</td>
+      <td>ID del sito dal sistema di origine.</td>
       <td>39464932147</td>
     </tr>
     <tr>
@@ -12287,7 +12287,7 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'inserzionista per il sito, in particolare per Doubleclick.</p>
+        <p>L’ID dell’inserzionista per il sito, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -12295,13 +12295,13 @@ Siti importati da qualsiasi account annuncio connesso.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell'inserzionista del sito, in particolare per Doubleclick.</p>
+        <p>Il nome dell’inserzionista del sito, in particolare di Doubleclick.</p>
       </td>
       <td>
         <p>Marketing analytics</p>
@@ -12315,9 +12315,9 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra Site in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci sopra il sito in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -12327,9 +12327,9 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Previsto null perché non esiste un gruppo di annunci sopra Site in alcuna gerarchia di annunci.</p>
+        <p>Previsto null poiché non vi è alcun gruppo di annunci sopra il sito in alcuna gerarchia di annunci.</p>
       </td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -12377,7 +12377,7 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il Sito è stato eliminato o meno nel sistema di origine.</p>
+        <p>Indica se il sito è stato eliminato nel sistema di origine.</p>
       </td>
       <td>falso</td>
     </tr>
@@ -12389,19 +12389,19 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>2018-08-02 06:37:29.000</td>
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data in cui il record è stato importato per la prima volta dal sistema di origine.</p>
+        <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>2018-08-02 06:37:29.000</td>
     </tr>
@@ -12413,26 +12413,26 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito dal sistema di origine.</p>
+        <p>Nome del sito, dal sistema di origine.</p>
       </td>
-      <td>Entrate</td>
+      <td>Ricavi</td>
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il sito deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
-        <p>(Campo diagnostico, utilizzato per l’elaborazione interna.)</p>
+        <p>Indica se il sito deve essere aggiornato per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>(Campo diagnostico, utilizzato per l'elaborazione interna).</p>
       </td>
       <td>falso</td>
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -12448,13 +12448,13 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "Sito".</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "Sito".</p>
       </td>
       <td>Sito</td>
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -12469,10 +12469,10 @@ Siti importati da qualsiasi account annuncio connesso.
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -12487,7 +12487,7 @@ Siti importati da qualsiasi account annuncio connesso.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12501,7 +12501,7 @@ Siti importati da qualsiasi account annuncio connesso.
 
 ### BIZ_SITE_LINKS {#biz-site-links}
 
-Collegamenti a siti da qualsiasi account Ads connesso.
+Collegamenti ai siti da qualsiasi account Ads connesso.
 
 <table>
   <tbody>
@@ -12553,7 +12553,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell'account degli annunci connessi per il collegamento al sito</p>
+        <p>ID dell’account degli annunci collegati per il collegamento al sito</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -12581,7 +12581,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’inserzionista per il collegamento al sito, in particolare per Doubleclick.</p>
+        <p>L’ID dell’inserzionista del collegamento al sito, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -12589,13 +12589,13 @@ Collegamenti a siti da qualsiasi account Ads connesso.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Il nome dell'inserzionista per il link del sito, in particolare per Doubleclick.</p>
+        <p>Il nome dell’inserzionista del collegamento al sito, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>Marketing analytics</p>
@@ -12611,7 +12611,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
       <td>
         <p>ID del gruppo di annunci per il collegamento al sito</p>
       </td>
-      <td>aw.6601259029.208548635.1675016675</td>
+      <td>aw.6601259029.208548635.16750166675</td>
     </tr>
     <tr>
       <td>
@@ -12647,10 +12647,10 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna per il collegamento al sito</p>
+        <p>Nome della campagna per il collegamento del sito</p>
       </td>
       <td>
-        <p>Brand</p>
+        <p>Marchio</p>
       </td>
     </tr>
     <tr>
@@ -12661,7 +12661,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il collegamento al sito è ancora attivo o meno nell'account degli annunci</p>
+        <p>Indica se il collegamento al sito è ancora attivo nell'account annunci</p>
       </td>
       <td>
         <p>TRUE</p>
@@ -12675,7 +12675,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il collegamento al sito è stato eliminato o meno nell’account degli annunci</p>
+        <p>Se il collegamento del sito è stato eliminato o meno nell’account degli annunci</p>
       </td>
       <td>
         <p>FALSE</p>
@@ -12697,13 +12697,13 @@ Collegamenti a siti da qualsiasi account Ads connesso.
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>PRIMO_IMPORTATO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>La data in cui il collegamento al sito è stato scaricato per la prima volta da [!DNL Marketo Measure]</p>
+        <p>Data del primo download del collegamento al sito da parte di [!DNL Marketo Measure]</p>
       </td>
       <td>
         <p>2018-08-02 06:36:50.000</p>
@@ -12717,19 +12717,19 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del collegamento al sito</p>
+        <p>Nome del collegamento di sito</p>
       </td>
       <td>Collegamento A</td>
     </tr>
     <tr>
       <td>
-        <p>NEEDS_UPDATE</p>
+        <p>NEED_UPDATE</p>
       </td>
       <td>
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il collegamento al sito deve essere aggiornato o meno per ottenere l’assegnazione tag di Marekto Measure</p>
+        <p>Se il collegamento di sito deve essere aggiornato o meno per ottenere i tag Marekto Measure</p>
       </td>
       <td>
         <p>FALSE</p>
@@ -12737,7 +12737,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>CHIAVE_RAGGRUPPAMENTO</p>
       </td>
       <td>
         <p>varchar</p>
@@ -12755,7 +12755,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
         <p>varchar</p>
       </td>
       <td>
-        <p>L'oggetto o l'entità principale per questa tabella. In questo caso, "SiteLink"</p>
+        <p>Oggetto o entità principale per questa tabella. In questo caso, "SiteLink"</p>
       </td>
       <td>
         <p>CollegamentoSito</p>
@@ -12763,7 +12763,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
     </tr>
     <tr>
       <td>
-        <p>PROVIDER_TYPE</p>
+        <p>TIPO_PROVIDER</p>
       </td>
       <td>
         <p>varchar</p>
@@ -12784,7 +12784,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
       </td>
       <td>
         <p>L’URL della pagina di destinazione.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td>
         <p>http://adobe.com/b2b-marketing-attribution?_bt =</p>
@@ -12800,27 +12800,27 @@ Collegamenti a siti da qualsiasi account Ads connesso.
       </td>
       <td>
         <p>Valore precedente per URL_CURRENT.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL_RICHIESTO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Di cosa sarà decorato l’URL [!DNL Marketo Measure] Parametri.</p>
-        <p>(campo diagnostico, per elaborazione interna.)</p>
+        <p>Con cosa verrà decorato l’URL [!DNL Marketo Measure] parametri.</p>
+        <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del Snowflake del record</td>
+      <td>Data di creazione del record del Snowflake</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12832,7 +12832,7 @@ Collegamenti a siti da qualsiasi account Ads connesso.
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di eliminazione del Snowflake del record se è stato eliminato</td>
+      <td>Data di eliminazione del record da parte del Snowflake, se è stato eliminato</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12880,7 +12880,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-22 17:27:27.000</p>
@@ -12888,7 +12888,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
     </tr>
     <tr>
       <td>
-        <p>STAGE_NAME</p>
+        <p>NOME_FASE</p>
       </td>
       <td>
         <p>varchar</p>
@@ -12934,7 +12934,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se lo stage è selezionato per il tracciamento come stadio boomerang.</p>
+        <p>Indica se lo stage è selezionato per il tracciamento come stadio di boomerang.</p>
       </td>
       <td>
         <p>falso</p>
@@ -12947,7 +12947,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
       <td>
         <p>booleano</p>
       </td>
-      <td>Indica se l’opzione Stage è selezionata per il tracciamento delle transizioni.</td>
+      <td>Indica se lo stage è selezionato per tenere traccia delle transizioni.</td>
       <td>
         <p>falso</p>
       </td>
@@ -12960,7 +12960,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>varchar</p>
       </td>
       <td>
-        <p>Stato della fase, come definito nella [!DNL Marketo Measure] Mappatura della fase dell'applicazione.</p>
+        <p>Stato dello stage, come definito nel [!DNL Marketo Measure] Application Stage Mapping.</p>
       </td>
       <td>
         <p>Apri</p>
@@ -12997,10 +12997,10 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>CLASSIFICA</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>La classificazione numerica dello stage, utilizzata per ordinare le fasi in ordine transitorio.</p>
+        <p>La classificazione numerica dello stage, utilizzata per ordinare gli stadi in ordine transitorio.</p>
       </td>
       <td>
         <p>53</p>
@@ -13014,7 +13014,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>booleano</p>
       </td>
       <td>
-        <p>Se lo stage è stato eliminato o meno.</p>
+        <p>Indica se lo stage è stato eliminato o meno.</p>
       </td>
       <td>
         <p>falso</p>
@@ -13029,7 +13029,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -13041,9 +13041,9 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
   </tbody>
 </table>
 
-### BIZ_TOUCHPOINTS {#biz-touchpoints}
+### BIZ_PUNTI DI CONTATTO {#biz-touchpoints}
 
-Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un lead o a un contatto. Questa tabella sarà vuota se i punti di contatto lead o i punti di contatto contatti sono disattivati.
+Punti di contatto dell’acquirente, tutti i punti di contatto associati a un lead o a un contatto. Questa tabella sarà vuota se i punti di contatto lead o contatti sono disattivati.
 
 <table>
   <tbody>
@@ -13061,10 +13061,10 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Un ID univoco per il punto di contatto dell’acquirente (BT).</p>
+        <p>Un ID univoco per il punto di contatto dell'acquirente (BT).</p>
       </td>
       <td>
-        <p>TP2_Person_00Q0Z00013e2PYUAY_2018-08-27:20-04-40-565690.1ee8567c175a</p>
+        <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
       </td>
     </tr>
     <tr>
@@ -13075,7 +13075,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-08-29 22:29:30.000</p>
@@ -13083,12 +13083,12 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
-      <td>Indirizzo e-mail associato al BT.</td>
+      <td>Indirizzo e-mail associato a BT.</td>
       <td>
         <p>person@adobe.com</p>
       </td>
@@ -13113,7 +13113,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per l'account associato al BT.</p>
+        <p>ID dell'account associato al BT.</p>
       </td>
       <td>
         <p>0013100001lSLScAAO</p>
@@ -13127,7 +13127,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per il lead associato al BT.</p>
+        <p>ID del lead associato al BT.</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -13144,7 +13144,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>Record della persona padre relativo a un lead o a un contatto.</p>
       </td>
       <td>
-        <p>Person_00Q0Z00013e2PYUAY</p>
+        <p>Person_00Q0Z000013e2PYUAY</p>
       </td>
     </tr>
     <tr>
@@ -13155,7 +13155,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per il punto di contatto utente che ha generato il BT.</p>
+        <p>ID del punto di contatto utente che ha generato il BT.</p>
       </td>
       <td>
         <p>person@adobe.com_2018-08-29:18-14-53-8102030.10df92cbb414</p>
@@ -13164,12 +13164,12 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     <tr>
       <td>VISITOR_ID</td>
       <td>varchar</td>
-      <td>ID per il visitatore associato al BT.</td>
+      <td>ID del visitatore associato al BT.</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>DATA_PUNTO DI CONTATTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -13189,10 +13189,10 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Tipo di attività, visita web, modulo web, chat web, chiamata telefonica, campagna [CRM] o attività [CRM]. In CRM è indicato come "tipo di punto di contatto".</p>
+        <p>Tipo di attività, visita Web, modulo Web, chat Web, telefonata, campagna [CRM] o attività [CRM]. Nel sistema di gestione delle relazioni con i clienti è indicato come "Tipo di punto di contatto".</p>
       </td>
       <td>
-        <p>Modulo Web</p>
+        <p>Modulo web</p>
       </td>
     </tr>
     <tr>
@@ -13203,7 +13203,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni del canale personalizzato all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Canale di marketing - Percorso".</p>
+        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all’interno di [!DNL Marketo Measure] App. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
       </td>
       <td>Social.LinkedIn</td>
     </tr>
@@ -13215,7 +13215,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la prima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la prima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>ABC</td>
     </tr>
@@ -13227,7 +13227,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la seconda categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la seconda categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Sì</p>
@@ -13241,7 +13241,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la terza categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la terza categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Altro</p>
@@ -13255,7 +13255,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la quarta categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la quarta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Partner</p>
@@ -13269,7 +13269,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la quinta categoria in cui rientra il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la 5a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -13281,7 +13281,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la 6a categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la sesta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -13292,7 +13292,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la settima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la settima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13302,7 +13302,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per l’8a categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per l’ottava categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13312,7 +13312,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la 9a categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la nona categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13322,7 +13322,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la decima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la decima categoria in cui rientra il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13332,7 +13332,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per l’undicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per l’11a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno del [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13342,7 +13342,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la dodicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la dodicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13352,7 +13352,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>
         <p>varchar</p>
       </td>
-      <td>Il valore del segmento per la tredicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</td>
+      <td>Il valore del segmento per la 13a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -13363,7 +13363,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la quattordicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la quattordicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -13375,7 +13375,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore del segmento per la quindicesima categoria in cui si trova il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Segmenti".</p>
+        <p>Il valore del segmento per la quindicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -13387,7 +13387,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, il browser rilevato che l'utente era attivo durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>Chrome</td>
     </tr>
@@ -13399,7 +13399,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, la versione rilevata del browser su cui l'utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione del browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>68</p>
@@ -13407,13 +13407,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>NOME_PIATTAFORMA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la piattaforma rilevata dall’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la piattaforma rilevata su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Windows</p>
@@ -13427,7 +13427,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la versione rilevata della piattaforma su cui l’utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione rilevata della piattaforma su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>10_12</td>
     </tr>
@@ -13439,7 +13439,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. In CRM è indicato come "Pagina di destinazione".</p>
+        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di destinazione".</p>
       </td>
       <td>
         <p>https://info.adobe.com/definitive-guide-to-pipeline-marketing</p>
@@ -13453,7 +13453,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. In CRM è indicato come "Pagina di destinazione - Raw".</p>
+        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
         <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
@@ -13467,7 +13467,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. In CRM è indicato come "Pagina referente".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di riferimento".</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -13479,7 +13479,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. Una pagina referente non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "Pagina referente - Raw".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Una pagina di riferimento non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti, denominato "Pagina di provenienza - Raw".</p>
       </td>
       <td>
         <p>https://www.linkedin.com/feed</p>
@@ -13487,13 +13487,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>MODULO_PAGINA</p>
+        <p>FORM_PAGE</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii dei moduli successivi non verranno visualizzati nella tabella Punti di contatto, ma nella tabella Form_Submit. In CRM è indicato come "URL del modulo".</p>
+        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. I successivi invii di moduli non verranno visualizzati nella tabella Punti di contatto, ma nella tabella Form_Submits. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo".</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo</p>
@@ -13502,7 +13502,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     <tr>
       <td>FORM_PAGE_RAW</td>
       <td>varchar</td>
-      <td>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii dei moduli successivi non verranno visualizzati nella tabella Punti di contatto, ma nella tabella Form_Submit. Una pagina modulo non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "URL modulo - Raw".</td>
+      <td>Il primo modulo registrato in una sessione che ha generato un punto di contatto. I successivi invii di moduli non verranno visualizzati nella tabella Punti di contatto, ma nella tabella Form_Submits. Una pagina modulo non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo - Non elaborato".</td>
       <td>https://info.adobe.com/demo?hsCtaTracking=98adcc2f-afe2-40c4-9d79-40dcc41663ee%7C3cfaa909-39cb-4f5d-93eb-be05de6b0180</td>
     </tr>
     <tr>
@@ -13513,7 +13513,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell’invio del modulo.</p>
+        <p>Data di invio del modulo.</p>
       </td>
       <td>
         <p>2017-06-20 01:06:41.000</p>
@@ -13527,7 +13527,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la città rilevata in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la città rilevata in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>New York</p>
@@ -13541,7 +13541,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la regione rilevata in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, l’area geografica rilevata in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>New York</p>
@@ -13555,7 +13555,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, il paese rilevato in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il paese rilevato in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Stati Uniti</p>
@@ -13563,13 +13563,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>MEDIO</p>
+        <p>MEDIA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire il mezzo che ha portato al punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può essere valori come "cpc" o "display".</p>
+        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "cpc" o "display".</p>
       </td>
       <td>
         <p>Social</p>
@@ -13583,7 +13583,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire la sorgente che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, generalmente impostato come "Campaign CRM" se è stato sincronizzato dal CRM, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, possono essere valori come "Google AdWords" o "Facebook". In CRM è indicato come "Origine punto di contatto".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall’URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Sorgente punto di contatto".</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -13597,10 +13597,10 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore immesso dall’utente nel browser per la ricerca e finito sul sito web. A seconda delle parole chiave acquistate, potrebbe corrispondere o meno alle parole chiave acquistate dalla piattaforma di ricerca a pagamento.</p>
+        <p>Il valore che l’utente ha immesso nel browser per cercare e che è finito sul sito web. A seconda delle parole chiave acquistate, questo potrebbe corrispondere o meno alle parole chiave acquistate dalla piattaforma di ricerca a pagamento.</p>
       </td>
       <td>
-        <p>misurazione markeot attribuzione</p>
+        <p>attribuzione misura markeot</p>
       </td>
     </tr>
     <tr>
@@ -13611,7 +13611,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Piattaforma di annunci [!DNL Marketo Measure] è stato in grado di risolvere da, tipicamente uno dei nostri partner di integrazione.</p>
+        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -13625,7 +13625,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>ID dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>li.502664737</p>
@@ -13633,16 +13633,16 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>NOME_ACCOUNT</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>Nome dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
-        <p>MM SC 2016_14605342_3/7-3/3/16</p>
+        <p>MM SC 2016_14605342_3/7-3/31/16</p>
       </td>
     </tr>
     <tr>
@@ -13653,7 +13653,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’inserzionista dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID dell'inserzionista dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -13661,13 +13661,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’inserzionista dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome dell'inserzionista dall'account annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Marketo Marketing Analytics</p>
@@ -13681,7 +13681,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>1695651</p>
@@ -13689,13 +13689,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>NOME_SITO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -13709,7 +13709,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>120839827</p>
@@ -13723,7 +13723,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>blocco stradale</p>
@@ -13737,7 +13737,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della campagna dall’account dell’annuncio da cui è stato risolto l’annuncio.</p>
+        <p>ID della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
         <p>li.502664737.138949954</p>
@@ -13745,16 +13745,16 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna dall’account dell’annuncio dal quale è stato risolto l’annuncio.</p>
+        <p>Nome della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
-        <p>SU - Account COM - Competenze della domanda</p>
+        <p>Account SU - COM - Abilità della domanda</p>
       </td>
     </tr>
     <tr>
@@ -13765,7 +13765,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del gruppo di annunci dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo vale solo per Google Adwords.</p>
+        <p>ID del gruppo di annunci dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Google Adwords.</p>
       </td>
       <td>aw.6601259029.317738075.23105327435</td>
     </tr>
@@ -13801,9 +13801,9 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’annuncio dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
+        <p>Nome dell’annuncio dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
       </td>
-      <td>Webinar sul budget - barra laterale</td>
+      <td>Webinar Budget - barra laterale</td>
     </tr>
     <tr>
       <td>
@@ -13813,7 +13813,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del contenuto creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>li.502664737.138949954.66452504</p>
@@ -13821,13 +13821,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>NOME_CREATIVO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del creativo dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome dell’elemento creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -13841,10 +13841,10 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima riga del Creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>La generazione di piombo è fatta</p>
+        <p>Generazione lead completata</p>
       </td>
     </tr>
     <tr>
@@ -13855,7 +13855,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>La seconda riga del creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scarica la guida definitiva al marketing della pipeline: https://lnkd.in/e9xYj5M</p>
@@ -13869,7 +13869,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>La pagina di destinazione che fa clic dall’annuncio di ricerca, estratta dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La pagina di destinazione in cui viene fatto clic dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>https://image-store.slidesharecdn.com/d29165c0-1e0b-4ffc-a494-d2c77e7cd4a6-large.jpeg</p>
@@ -13883,7 +13883,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il nome dell’URL descrittivo mostrato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Il nome URL descrittivo visualizzato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>marektomeasure.com/guide</p>
@@ -13897,7 +13897,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della parola chiave acquistata dall’acquisto di ricerca a pagamento, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID della parola chiave acquistata dall’acquisto di Paid Search, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>__GAId__lisu03151846</p>
@@ -13905,13 +13905,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>KYWORD_NAME</p>
+        <p>KEYWORD_NAME</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della parola chiave acquistata dall’acquisto di ricerca a pagamento, estratta dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca)</p>
+        <p>Nome della parola chiave acquistata dall’acquisto di Ricerca a pagamento, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca)</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -13925,10 +13925,10 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>varchar</p>
       </td>
       <td>
-        <p>Il tipo di corrispondenza trovato tra la frase di ricerca e la parola chiave acquistata.</p>
+        <p>Tipo di corrispondenza trovata tra la frase di ricerca e la parola chiave acquistata.</p>
       </td>
       <td>
-        <p>Ampio</p>
+        <p>Ampia</p>
       </td>
     </tr>
     <tr>
@@ -13939,7 +13939,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come il primo tocco del percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il primo contatto del percorso di opportunità.</p>
       </td>
       <td>
         <p>vero</p>
@@ -13953,7 +13953,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come punto di contatto per la creazione di un lead, viene toccato dal percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il contatto di creazione del lead del percorso di opportunità.</p>
       </td>
       <td>
         <p>vero</p>
@@ -13967,7 +13967,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come la creazione di opportunità tocca il percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il punto di contatto per la creazione di opportunità del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -13981,7 +13981,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come il tocco di chiusura del percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il contatto chiuso del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -13991,7 +13991,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
       <td>STAGES_TOUCHED</td>
       <td>varchar</td>
       <td>Questo campo è stato dichiarato obsoleto. Utilizzare le tabelle Stage_Transitions per informazioni sull'area di visualizzazione.</td>
-      <td>null</td>
+      <td>nulle</td>
     </tr>
     <tr>
       <td>
@@ -14001,7 +14001,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se questo punto di contatto ha compilato un modulo durante la sessione.</p>
+        <p>Indica se il punto di contatto ha o meno compilato un modulo durante la sessione.</p>
       </td>
       <td>
         <p>vero</p>
@@ -14015,7 +14015,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come la prima impressione del percorso di opportunità</p>
+        <p>Se questo punto di contatto viene considerato o meno come il primo contatto di impression del percorso di opportunità</p>
       </td>
       <td>
         <p>falso</p>
@@ -14023,13 +14023,13 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     </tr>
     <tr>
       <td>
-        <p>FIRST_CLICK_PERCENTAGE</p>
+        <p>PRIMO_CLIC_PERCENTUALE</p>
       </td>
       <td>
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché si tratta di un primo contatto (consulta Is_First_Touch).</p>
+        <p>La percentuale calcolata allocata a questo punto di contatto perché è un primo contatto (vedi Is_First_Touch).</p>
       </td>
       <td>
         <p>100</p>
@@ -14043,7 +14043,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché si tratta di un contatto per la creazione di lead (consulta Is_Lead_Creation_Touch).</p>
+        <p>La percentuale calcolata allocata a questo punto di contatto perché è un contatto per la creazione di lead (vedi Is_Lead_Creation_Touch).</p>
       </td>
       <td>
         <p>100</p>
@@ -14057,7 +14057,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un tocco a forma di u (consulta Is_First_Touch e Is_Lead_Creation_Touch).</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di U (consultate Is_First_Touch e Is_Lead_Creation_Touch).</p>
       </td>
       <td>
         <p>100</p>
@@ -14071,7 +14071,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un tocco a forma di w (vedere Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch). Previsto 0 poiché si tratta di un BT.</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch). Previsto 0 poiché si tratta di un BT.</p>
       </td>
       <td>
         <p>0</p>
@@ -14085,16 +14085,16 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (vedere Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Previsto 0 poiché si tratta di un BT.</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Previsto 0 poiché si tratta di un BT.</p>
       </td>
       <td>
         <p>0</p>
       </td>
     </tr>
     <tr>
-      <td>CUSTOM_MODEL_PERCENTAGE</td>
+      <td>PERCENTUALE_MODELLO_PERSONALIZZATO</td>
       <td>numero(22,19)</td>
-      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (vedere Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Previsto 0 poiché si tratta di un BT.</p>
+      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Previsto 0 poiché si tratta di un BT.</p>
       </td>
       <td>0</td>
     </tr>
@@ -14117,10 +14117,10 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>-9004910726709710000</p>
@@ -14131,7 +14131,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>CONTACT_ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td></td>
       <td></td>
@@ -14141,80 +14141,80 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
         <p>LEAD_ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERISER_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>SITE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>CHIAVE_RIGA_SITO</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -14227,7 +14227,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -14241,7 +14241,7 @@ Punti di contatto per gli acquirenti, tutti i punti di contatto associati a un l
 
 ### BIZ_URLS {#biz-urls}
 
-Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizzazioni di pagina.
+Aggregazione di URL da pagine di destinazione, pagine di provenienza e viste pagina.
 
 <table>
   <tbody>
@@ -14267,7 +14267,7 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
         <p>varchar</p>
       </td>
       <td>
-        <p>L'URL completo.</p>
+        <p>URL completo,.</p>
       </td>
       <td>
         <p>https://www.adobe.com/blog/strategic-marketing-plangoals</p>
@@ -14281,7 +14281,7 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
         <p>varchar</p>
       </td>
       <td>
-        <p>La comunicazione sicura della pagina web attraverso la rete.</p>
+        <p>La comunicazione protetta della pagina web sulla rete.</p>
       </td>
       <td>
         <p>https</p>
@@ -14295,7 +14295,7 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
         <p>varchar</p>
       </td>
       <td>
-        <p>Dominio dell’URL, con tutti i sottodomini.</p>
+        <p>Dominio dell’URL, con eventuali sottodomini.</p>
       </td>
       <td>
         <p>www.adobe.com</p>
@@ -14309,7 +14309,7 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
         <p>varchar</p>
       </td>
       <td>
-        <p>La porta da un host Internet, opzionale in un URL.</p>
+        <p>La porta da un host Internet, facoltativa in un URL.</p>
       </td>
       <td>
         <p>584</p>
@@ -14323,10 +14323,10 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
         <p>varchar</p>
       </td>
       <td>
-        <p>La parte dell'URL che punta a una posizione specifica sull'host.</p>
+        <p>La parte dell’URL che punta a una posizione specifica sull’host.</p>
       </td>
       <td>
-        <p>/blog/strategico-marketing-plangos</p>
+        <p>/blog/strategic-marketing-plangoals</p>
       </td>
     </tr>
     <tr>
@@ -14334,10 +14334,10 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>number(38,0)</p>
+        <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Chiave esterna per la visualizzazione Biz_Facts.</p>
+        <p>Chiave esterna per la vista Biz_Facts.</p>
       </td>
       <td>
         <p>5686109553536636820</p>
@@ -14352,7 +14352,7 @@ Aggregazione di URL da pagine di destinazione, pagine di riferimento e visualizz
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -14406,7 +14406,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2018-09-05 23:30:53.000</p>
@@ -14414,7 +14414,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>E-MAIL</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -14434,7 +14434,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per la sessione che ha creato il punto di contatto utente.</p>
+        <p>ID della sessione che ha creato il punto di contatto utente.</p>
       </td>
       <td>
         <p>2018-01-05:16-47-02-8803320.ddf67c101f58</p>
@@ -14442,13 +14442,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_MEM_ID</p>
+        <p>CAMPAIGN_MEMBER_ID</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per il membro della campagna che ha creato il punto di contatto utente.</p>
+        <p>ID del membro della campagna che ha creato il punto di contatto utente.</p>
       </td>
       <td>
         <p>00v0Z00001VTgv1QAD</p>
@@ -14457,7 +14457,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     <tr>
       <td>CRM_ACTIVITY_ID</td>
       <td>varchar</td>
-      <td>ID per l’attività che ha creato il punto di contatto utente.</td>
+      <td>ID dell’attività che ha creato il punto di contatto utente.</td>
       <td>1678625515</td>
     </tr>
     <tr>
@@ -14468,7 +14468,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID per l’evento che ha creato il punto di contatto utente.</p>
+        <p>ID dell’evento che ha creato il punto di contatto utente.</p>
       </td>
       <td>
         <p>00U0Z00000pCZmyUAG</p>
@@ -14482,7 +14482,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>TI per l’attività che ha creato il punto di contatto utente.</p>
+        <p>ID per l’attività che ha creato il punto di contatto utente.</p>
       </td>
       <td>
         <p>00T0Z00004Qbd1jUAB</p>
@@ -14496,14 +14496,14 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Id per l’impression che ha creato il punto di contatto utente.</p>
+        <p>ID dell’impression che ha creato il punto di contatto utente.</p>
       </td>
       <td>00T0Z00004Qbd1jUAB</td>
     </tr>
     <tr>
       <td>IS_FIRST_KNOWN_TOUCH</td>
       <td>booleano</td>
-      <td>Se questo punto di contatto viene trattato o meno come il primo tocco del percorso di opportunità.</td>
+      <td>Se questo punto di contatto viene considerato o meno come il primo contatto del percorso di opportunità.</td>
       <td>falso</td>
     </tr>
     <tr>
@@ -14514,7 +14514,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>DATA_PUNTO DI CONTATTO</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -14534,10 +14534,10 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Tipo di attività, visita web, modulo web, chat web, chiamata telefonica, campagna [CRM] o attività [CRM]. In CRM è indicato come "tipo di punto di contatto".</p>
+        <p>Tipo di attività, visita Web, modulo Web, chat Web, telefonata, campagna [CRM] o attività [CRM]. Nel sistema di gestione delle relazioni con i clienti è indicato come "Tipo di punto di contatto".</p>
       </td>
       <td>
-        <p>Modulo Web</p>
+        <p>Modulo web</p>
       </td>
     </tr>
     <tr>
@@ -14548,7 +14548,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni del canale personalizzato all’interno della [!DNL Marketo Measure] App. In CRM è indicato come "Canale di marketing - Percorso".</p>
+        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all’interno di [!DNL Marketo Measure] App. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -14562,7 +14562,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, il browser rilevato che l'utente era attivo durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Firefox</p>
@@ -14576,7 +14576,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall'indirizzo javascript e IP, la versione rilevata del browser su cui l'utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione del browser rilevato su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>33</p>
@@ -14584,13 +14584,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>NOME_PIATTAFORMA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la piattaforma rilevata dall’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la piattaforma rilevata su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Mac</p>
@@ -14604,7 +14604,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la versione rilevata della piattaforma su cui l’utente si trovava durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la versione rilevata della piattaforma su cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>10_12</p>
@@ -14618,7 +14618,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. In CRM è indicato come "Pagina di destinazione".</p>
+        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di destinazione".</p>
       </td>
       <td>
         <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing</p>
@@ -14632,10 +14632,10 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. In CRM è indicato come "Pagina di destinazione - Raw".</p>
+        <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -14646,7 +14646,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. In CRM è indicato come "Pagina referente".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Nel sistema di gestione delle relazioni con i clienti è indicato come "Pagina di riferimento".</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -14660,7 +14660,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>In genere la pagina di destinazione esterna immediatamente prima che l’utente acceda al sito web. Una pagina referente non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "Pagina referente - Raw".</p>
+        <p>In genere, la pagina di destinazione esterna immediatamente prima che l’utente entri sul sito web. Una pagina di riferimento non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti, denominato "Pagina di provenienza - Raw".</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -14668,13 +14668,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>MODULO_PAGINA</p>
+        <p>FORM_PAGE</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii dei moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submit. In CRM è indicato come "URL del modulo".</p>
+        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo".</p>
       </td>
       <td>
         <p>http://info.adobe.com/adwords-for-lead-generation</p>
@@ -14688,10 +14688,10 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii dei moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submit. Una pagina modulo non elaborata può contenere parametri di query nell’URL. In CRM è indicato come "URL modulo - Raw".</p>
+        <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Una pagina modulo non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo - Non elaborato".</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm Guida a _campaign=Content%20-%20AdWords%20</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guida</p>
       </td>
     </tr>
     <tr>
@@ -14702,7 +14702,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Data dell’invio del modulo.</p>
+        <p>Data di invio del modulo.</p>
       </td>
       <td>
         <p>2015-06-03 17:49:10.000</p>
@@ -14716,7 +14716,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la città rilevata in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, la città rilevata in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Oakland</p>
@@ -14730,7 +14730,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, la regione rilevata in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, l’area geografica rilevata in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>California</p>
@@ -14744,7 +14744,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Dall’indirizzo javascript e IP, il paese rilevato in cui si trovava l’utente durante la sessione.</p>
+        <p>Dall’indirizzo JavaScript e IP, il paese rilevato in cui si trovava l’utente durante la sessione.</p>
       </td>
       <td>
         <p>Stati Uniti</p>
@@ -14752,13 +14752,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>MEDIO</p>
+        <p>MEDIA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire il mezzo che ha portato al punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può essere valori come "cpc" o "display".</p>
+        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "cpc" o "display".</p>
       </td>
       <td>
         <p>pagato</p>
@@ -14772,7 +14772,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Utilizzato per definire la sorgente che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, generalmente impostato come "Campaign CRM" se è stato sincronizzato dal CRM, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, possono essere valori come "Google AdWords" o "Facebook". In CRM è indicato come "Origine punto di contatto".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall’URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Sorgente punto di contatto".</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -14786,7 +14786,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il valore immesso dall’utente nel browser per la ricerca e finito sul sito web. A seconda delle parole chiave acquistate, potrebbe corrispondere o meno alle parole chiave acquistate dalla piattaforma di ricerca a pagamento.</p>
+        <p>Il valore che l’utente ha immesso nel browser per cercare e che è finito sul sito web. A seconda delle parole chiave acquistate, questo potrebbe corrispondere o meno alle parole chiave acquistate dalla piattaforma di ricerca a pagamento.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -14800,7 +14800,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Piattaforma di annunci [!DNL Marketo Measure] è stato in grado di risolvere da, tipicamente uno dei nostri partner di integrazione.</p>
+        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>Google</p>
@@ -14814,7 +14814,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>ID dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -14822,13 +14822,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>NOME_ACCOUNT</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’account dell’annuncio da cui è stata risolta l’inserzione.</p>
+        <p>Nome dell’account dell’annuncio da cui l’annuncio è stato risolto.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Account</p>
@@ -14842,7 +14842,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID dell’inserzionista dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID dell'inserzionista dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -14850,13 +14850,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>NOME_INSERZIONISTA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’inserzionista dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome dell'inserzionista dall'account annuncio da cui è stato risolto l'annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Marketing analytics</p>
@@ -14870,7 +14870,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>1695651</p>
@@ -14878,13 +14878,13 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>NOME_SITO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del sito dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del sito dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -14898,7 +14898,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>ID del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>120839827</p>
@@ -14912,7 +14912,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale solo per Doubleclick Campaign Manager.</p>
+        <p>Nome del posizionamento dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo si applica solo a Doubleclick Campaign Manager.</p>
       </td>
       <td>
         <p>blocco stradale</p>
@@ -14926,7 +14926,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della campagna dall’account dell’annuncio da cui è stato risolto l’annuncio.</p>
+        <p>ID della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.208548635</p>
@@ -14934,16 +14934,16 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>NOME_CAMPAGNA</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della campagna dall’account dell’annuncio dal quale è stato risolto l’annuncio.</p>
+        <p>Nome della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
-        <p>Brand</p>
+        <p>Marchio</p>
       </td>
     </tr>
     <tr>
@@ -14954,10 +14954,10 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del gruppo di annunci dall'account dell'annuncio da cui è stato risolto l'annuncio. Questo vale solo per Google Adwords.</p>
+        <p>ID del gruppo di annunci dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale solo per Google Adwords.</p>
       </td>
       <td>
-        <p>aw.6601259029.208548635.1675016675</p>
+        <p>aw.6601259029.208548635.16750166675</p>
       </td>
     </tr>
     <tr>
@@ -14994,9 +14994,9 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome dell’annuncio dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
+        <p>Nome dell’annuncio dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Doubleclick Campaign Manager e Facebook (visualizzazione).</p>
       </td>
-      <td>Webinar sul budget - barra laterale</td>
+      <td>Webinar Budget - barra laterale</td>
     </tr>
     <tr>
       <td>
@@ -15006,21 +15006,21 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID del creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del contenuto creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>aw.6601259029.208548635.1675016675.195329631298</p>
+        <p>aw.6601259029.208548635.16750166675.195329631298</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>NOME_CREATIVO</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome del creativo dall’account dell’annuncio dal quale è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome dell’elemento creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Sito ufficiale</p>
@@ -15034,10 +15034,10 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>La prima riga del Creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>Pianificazione e attribuzione dei ricavi</p>
+        <p>Pianificazione ricavi e attribuzione</p>
       </td>
     </tr>
     <tr>
@@ -15048,7 +15048,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>La seconda riga del creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scopri perché più di 250 aziende scelgono [!DNL Marketo Measure] per l’attribuzione marketing. Prendi una demo!</p>
@@ -15062,7 +15062,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>La pagina di destinazione che fa clic dall’annuncio di ricerca, estratta dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La pagina di destinazione in cui viene fatto clic dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>http://info.adobe.com/demo</p>
@@ -15076,7 +15076,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il nome dell’URL descrittivo mostrato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Il nome URL descrittivo visualizzato nell’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>adobe.com/demo</p>
@@ -15090,21 +15090,21 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>ID della parola chiave acquistata dall’acquisto di ricerca a pagamento, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID della parola chiave acquistata dall’acquisto di Paid Search, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
-        <p>aw.6601259029.208548635.1675016675.46267805426</p>
+        <p>aw.6601259029.208548635.16750166675.46267805426</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>KYWORD_NAME</p>
+        <p>KEYWORD_NAME</p>
       </td>
       <td>
         <p>varchar</p>
       </td>
       <td>
-        <p>Nome della parola chiave acquistata dall’acquisto di ricerca a pagamento, estratta dall’account dell’annuncio dal quale l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca)</p>
+        <p>Nome della parola chiave acquistata dall’acquisto di Ricerca a pagamento, estratto dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca)</p>
       </td>
       <td>
         <p>[marketo]</p>
@@ -15118,7 +15118,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>varchar</p>
       </td>
       <td>
-        <p>Il tipo di corrispondenza trovato tra la frase di ricerca e la parola chiave acquistata.</p>
+        <p>Tipo di corrispondenza trovata tra la frase di ricerca e la parola chiave acquistata.</p>
       </td>
       <td>
         <p>Esatto</p>
@@ -15132,7 +15132,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se questo punto di contatto ha compilato un modulo durante la sessione.</p>
+        <p>Indica se il punto di contatto ha o meno compilato un modulo durante la sessione.</p>
       </td>
       <td>
         <p>vero</p>
@@ -15146,7 +15146,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se questo punto di contatto viene trattato o meno come la prima impressione del percorso di opportunità.</p>
+        <p>Se questo punto di contatto viene considerato o meno come il primo contatto di impression del percorso di opportunità.</p>
       </td>
       <td>
         <p>falso</p>
@@ -15160,7 +15160,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se il punto di contatto viene eliminato o meno.</p>
+        <p>Indica se il punto di contatto viene eliminato o meno.</p>
       </td>
       <td>
         <p>falso</p>
@@ -15168,79 +15168,79 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>ROW_KEY</td>
-      <td>number(38,0)</td>
-      <td>Chiave esterna per la visualizzazione Biz_Facts.</td>
+      <td>numero(38,0)</td>
+      <td>Chiave esterna per la vista Biz_Facts.</td>
       <td>-5269090762570690000</td>
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERISER_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>SITE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>CHIAVE_RIGA_SITO</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>number(38,0)</td>
+      <td>numero(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -15253,7 +15253,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -15267,7 +15267,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe ECID e Munckin Id.
+Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe ECID e ID Munckin.
 
 <table>
   <tbody>
@@ -15304,7 +15304,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       <td>
         <p>varchar</p>
       </td>
-      <td>La [!DNL Marketo Measure] id cookie registrato.</td>
+      <td>Il [!DNL Marketo Measure] id cookie registrato.</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -15324,15 +15324,15 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       <td>
         <p>varchar</p>
       </td>
-      <td>La [!DNL Marketo Measure] ID sessione.</td>
+      <td>Il [!DNL Marketo Measure] ID sessione.</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
     <tr>
       <td>
-        <p>EVENT_DATE</p>
+        <p>DATA_EVENTO</p>
       </td>
       <td>timestamp_ntz</td>
-      <td>Data in cui è stata registrata la mappatura.</td>
+      <td>Data di registrazione della mappatura.</td>
       <td>
         <p>2020-06-17 19:03:36.000</p>
       </td>
@@ -15343,7 +15343,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       </td>
       <td>timestamp_ntz</td>
       <td>
-        <p>Data dell'ultima modifica del record.</p>
+        <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
         <p>2020-06-17 19:03:36.000</p>
@@ -15354,7 +15354,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       <td>
         <p>varchar</p>
       </td>
-      <td>URL della visualizzazione pagina, senza parametri di query.</td>
+      <td>URL della visualizzazione Pagina, senza parametri di query.</td>
       <td>
         <p>https://learn.atest.com/simplify-retention-starter-kit.html</p>
       </td>
@@ -15370,7 +15370,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       </td>
     </tr>
     <tr>
-      <td>IP_ADDRESS</td>
+      <td>INDIRIZZO_IP</td>
       <td>
         <p>varchar</p>
       </td>
@@ -15386,7 +15386,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       </td>
       <td>Indica il tipo di evento.</td>
       <td>
-        <p>HostMapping</p>
+        <p>MappaturaHost</p>
       </td>
     </tr>
     <tr>
@@ -15394,7 +15394,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
       <td>
         <p>varchar</p>
       </td>
-      <td>Dispositivo e browser registrati al momento della visualizzazione della pagina.</td>
+      <td>Periferica e browser registrati al momento della visualizzazione della pagina.</td>
       <td>
         <p>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, come Gecko) Chrome/79.0.3945.130 Safari/537.36</p>
       </td>
@@ -15402,17 +15402,17 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
     <tr>
       <td>CLIENT_SEQUENCE</td>
       <td>varchar</td>
-      <td>Indica l’ordine in cui si è verificata la visualizzazione della pagina nella sessione.</td>
+      <td>Indica l'ordine in cui si è verificata la visualizzazione pagina nella sessione.</td>
       <td>2</td>
     </tr>
     <tr>
       <td>CLIENT_RANDOM</td>
       <td>varchar</td>
-      <td>Utilizzato per il controllo e l'elaborazione interni.</td>
+      <td>Utilizzato per l’audit e l’elaborazione interna.</td>
       <td>566868</td>
     </tr>
     <tr>
-      <td>IS_DUPLICATO</td>
+      <td>IS_DUPLICATED</td>
       <td>booleano</td>
       <td>Indica se il record è considerato un duplicato.</td>
       <td>falso</td>
@@ -15420,13 +15420,13 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
     <tr>
       <td>IS_PROCESSED</td>
       <td>booleano</td>
-      <td>Utilizzato per elaborazione interna.</td>
+      <td>Utilizzato per l’elaborazione interna.</td>
       <td>vero</td>
     </tr>
     <tr>
       <td>MAPPING_TYPE</td>
       <td>varchar</td>
-      <td>Il tipo di ID mappato al [!DNL Marketo Measure] ID cookie.</td>
+      <td>Tipo di ID mappato al [!DNL Marketo Measure] ID cookie.</td>
       <td>Adobe_OrgId_Ecid</td>
     </tr>
     <tr>
@@ -15438,7 +15438,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
     <tr>
       <td>MAPPING_COOKIE_ID</td>
       <td>varchar</td>
-      <td>Adobe ECID per l'ID organizzazione specificato.</td>
+      <td>Adobe di ECID per l’ID organizzazione specificato.</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
@@ -15450,7 +15450,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -15464,7 +15464,7 @@ Mappatura di una tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe
 
 ## Query di esempio {#sample-queries}
 
-**Quanti punti di contatto dell’acquirente (BT) ci sono stati per ogni canale/canale del mese scorso?**
+**Quanti punti di contatto dell&#39;acquirente erano disponibili il mese scorso per ogni canale/sottocanale?**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
@@ -15486,7 +15486,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1,2
 ```
 
-**Quanti ricavi attribuiti per ogni canale sono stati chiusi nell’ultimo mese, per il modello di attribuzione del percorso completo?**
+**Quanto Reddito Attribuito per ogni canale è stato chiuso nell’ultimo mese, per il modello di attribuzione del percorso completo?**
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
@@ -15513,7 +15513,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**Qual è l&#39;intero percorso per una persona?  Mostra tutti i punti di contatto per un singolo indirizzo e-mail.**
+**Qual è l&#39;intero percorso per una persona?  (Mostra tutti i punti di contatto per un singolo indirizzo e-mail).**
 
 ```
 select ut.touchpoint_date
@@ -15554,11 +15554,11 @@ group by 1,2
 order by 1
 ```
 
-**Mostra tutti i punti di contatto di attribuzione dell’acquirente (BAT) e i relativi ricavi attribuiti per un’unica opportunità.**
+**Mostra tutti i punti di contatto di attribuzione dell&#39;acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
 
 >[!NOTE]
 >
->Questa query restituisce i ricavi attribuiti per il modello a forma w. Modificare il modello aggiornando il campo nel calcolo dei ricavi attribuiti.
+>Questa query restituisce ricavi attribuiti per il modello di forma w. Modifica il modello aggiornando il campo nel calcolo dei ricavi attribuiti.
 
 ```
 select bat.id

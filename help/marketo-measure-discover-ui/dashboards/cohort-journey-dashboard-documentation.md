@@ -1,68 +1,69 @@
 ---
 unique-page-id: 42762648
-description: Documentazione del dashboard del Percorso di coorte - [!DNL Marketo Measure] - Documentazione del prodotto
-title: Documentazione del dashboard del Percorso di coorte
+description: Documentazione del dashboard per Percorso coorte - [!DNL Marketo Measure] - Documentazione del prodotto
+title: Documentazione del dashboard per Percorso coorte
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
-source-git-commit: 28f1400e8e13c091e8ea2a3bef115a0db810c2e0
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
-# Documentazione del dashboard del Percorso di coorte {#cohort-journey-dashboard-documentation}
+# Documentazione del dashboard per Percorso coorte {#cohort-journey-dashboard-documentation}
 
-Le dashboard Impatto coorte e Funnel consentono agli addetti al marketing di visualizzare la progressione da una fase di coorte iniziale per un intervallo di tempo selezionato e di misurare il tasso di conversione.
+I dashboard Impatto coorte e Funnel consentono agli addetti al marketing di visualizzare la progressione da una fase di coorte iniziale per un intervallo di tempo selezionato e di misurare il tasso di conversione.
 
-La differenza principale è il modo in cui conteggiamo ogni entità dalla fase coorte.
+La differenza principale sta nel modo in cui contiamo ogni entità dalla fase della coorte.
 
-* Funnel coorte: Il risultato di ciascuna fase è direttamente derivato dalla fase precedente.
+* Funnel coorte: il risultato di ogni fase è derivato direttamente dalla fase precedente.
 
-   * Vengono conteggiati solo i record che attraversano ogni fase dell’imbuto dopo l’ora di inizio della coorte impostata.
+   * Vengono conteggiati solo i record che sono passati attraverso ogni fase nel funnel dopo l’ora di inizio della coorte impostata.
 
 ![](assets/cohort-journey-dashboard-documentation-1.png)
 
-* Impatto sulla coorte: Il risultato di ogni fase è derivato dalla fase coorte, non dalla fase precedente.
+* Impatto sulla coorte: il risultato di ogni fase è derivato dalla fase della coorte e non dalla fase precedente.
 
-   * Tutti i record in ogni fase vengono conteggiati purché siano accaduti dopo l’ora di inizio della coorte impostata. Questo dashboard avrà naturalmente più record del dashboard Funnel, dato che stiamo osservando come le entità sono state influenzate dal passaggio della coorte, non solo il movimento attraverso il funnel.
+   * Tutti i record in ogni fase vengono conteggiati a condizione che si verifichino dopo l’ora di inizio della coorte impostata. Questo dashboard avrà naturalmente più record rispetto al dashboard Funnel poiché stiamo osservando come le entità sono state influenzate dalla fase della coorte, non solo il movimento attraverso il funnel.
 
 ![](assets/cohort-journey-dashboard-documentation-2.png)
 
-Ogni dashboard ha due riquadri:
+Ogni dashboard ha due sezioni:
 
-* Entrate coorte: L&#39;importo totale delle opportunità da tutte le opportunità nella fase Offerte del Percorso Cohort.
-* Percorso per coorte: La progressione a ogni fase del percorso dalla fase iniziale della coorte per un intervallo di tempo selezionato.
+* Entrate coorte: l’importo totale delle opportunità da tutte le opportunità nella fase Offerte del riquadro Percorso coorte.
+* Percorso di coorte: progressione a ogni fase del percorso dalla fase iniziale della coorte per un intervallo di tempo selezionato.
 
 >[!NOTE]
 >
->In tutte le dashboard di Discover, è possibile segnalare un solo oggetto persona, Lead o Contatto. È impostato in [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
+>In tutti i dashboard di individuazione è possibile segnalare un solo oggetto persona, lead o contatto. Questo è impostato in [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
 
 Le dashboard supportano i seguenti filtri:
 
-* Fase coorte: seleziona la fase di coorte iniziale. I record in tutte le fasi successive vengono evoluti dai record nella fase coorte.
-* Intervallo date coorte: seleziona l’intervallo di tempo per lo stadio coorte selezionato. Insieme a Cohort Stage, definisce il set di dati iniziale.
-* Data limite: selezionare la data in cui deve verificarsi la progressione del record in tutte le fasi successive. Il valore predefinito è oggi. Questo vale per tutti gli stadi diversi da quello della coorte.
-* Canale: filtrare i record in base ai canali. Un record è associato a un canale se uno dei suoi punti di contatto è associato al canale.
-* Canale secondario: filtrare i record per sottocanali. Un record è associato a un canale secondario se uno dei suoi punti di contatto è associato al canale secondario.
-* Campagna: filtrare i record in base alle campagne. Un record è associato a una campagna se uno dei relativi punti di contatto è associato alla campagna.
-* Origine campagna: filtrare i record in base alle origini della campagna. Esempio di origini di campagne [!DNL Adwords], [!DNL BingAds], [!DNL Facebook], [!DNL LinkedIn], ecc. Un record è associato a un’origine della campagna se uno dei relativi punti di contatto è associato all’origine della campagna.
-* Filtri del segmento: filtrare i record in base ai segmenti personalizzati. Un record è associato a un segmento se uno dei suoi punti di contatto è associato al segmento.
+* Cohort Stage (Fase coorte): seleziona la fase iniziale della coorte. I record in tutte le fasi successive vengono sviluppati dai record nella fase coorte.
+* Intervallo date coorte: seleziona l’intervallo di tempo per la fase della coorte selezionata. Insieme a Cohort Stage, definisce il set di dati iniziale.
+* Data limite: selezionare la data entro la quale deve verificarsi la progressione del record in tutte le fasi successive. Il valore predefinito è oggi. Tieni presente che questo vale per tutte le fasi diverse dalla fase della coorte.
+* Canale: filtra i record in base ai canali. Un record è associato a un canale se uno qualsiasi dei suoi punti di contatto è associato al canale.
+* Sottocanale: filtra i record per sottocanali. Un record è associato a un sottocanale se uno qualsiasi dei suoi punti di contatto è associato al sottocanale.
+* Campagna: filtra i record per campagne. Un record è associato a una campagna se uno qualsiasi dei suoi punti di contatto è associato alla campagna.
+* Origine campagna: filtra i record per origini campagna. Le origini della campagna di esempio sono [!DNL Adwords], [!DNL BingAds], [!DNL Facebook], [!DNL LinkedIn], ecc. Un record è associato a un’origine della campagna se uno qualsiasi dei suoi punti di contatto è associato all’origine della campagna.
+* Filtri di segmenti: filtra i record per segmenti personalizzati. Un record è associato a un segmento se uno qualsiasi dei suoi punti di contatto è associato al segmento.
 
-In tutti i filtri viene utilizzata la logica &quot;AND&quot; (E).
-
->[!NOTE]
->
->I filtri dei segmenti si applicano solo allo stadio LC e dopo. Se Cohort Stage è sconosciuto o noto e uno dei filtri del segmento ha un valore, il dashboard non restituirà alcun risultato.
-
-Le fasi includono Sconosciuto, Noto, LC, le fasi funnel selezionate in Stadi lead/contatti aperti (Impostazioni > CRM > Mappatura stage), OC, le fasi funnel selezionate in Fasi opportunità aperte (Impostazioni > CRM > Mappatura stage) e Offerte (Opportunità di esecuzione chiuse).
+In tutti i filtri, viene utilizzata la logica &quot;AND&quot;.
 
 >[!NOTE]
 >
->Il conteggio dei record per uno stadio percorso, definito come qualsiasi altro stadio diverso da quello della coorte, include tutti i nuovi record relativi ai record della coorte creati dopo la data di inizio dell’intervallo di tempo selezionato e prima della data di interruzione. Questa è causalità dedotta.
+>I filtri di segmento si applicano solo allo stadio LC e dopo. Se lo stadio della coorte è Sconosciuto o Noto e uno dei filtri dei segmenti ha un valore, il dashboard non restituisce alcun risultato.
 
-È possibile approfondire da ogni barra per visualizzare i record di ogni fase.
+Gli stadi includono Unknown, Known, LC, gli stadi funnel selezionati in stadi lead/contatto aperti (Impostazioni > CRM > Mappatura stadio), OC, gli stadi funnel selezionati in stadi opportunità aperte (Impostazioni > CRM > Mappatura stadio) e le offerte (opportunità realizzate chiuse).
 
-* Per Sconosciuto, mostra i dettagli dei visitatori anonimi.
-* Per Dati noti, mostra i dettagli dei visitatori noti.
-* Per le fasi LC e lead/contatto aperti, mostra i dettagli lead/contatti.
-* Per OC, le fasi Opportunità aperte e Offerte, mostra i dettagli Opportunità.
+>[!NOTE]
+>
+>Il conteggio dei record per una fase del percorso, definita come qualsiasi fase diversa dalla fase della coorte, include tutti i nuovi record, correlati ai record della coorte, creati dopo la data di inizio dell’intervallo di tempo selezionato e prima della data limite. Questa è la causalità dedotta.
+
+È possibile eseguire un drill-down da ogni barra per visualizzare i record di ogni fase.
+
+* Per Sconosciuto, mostra i dettagli del visitatore anonimo.
+* Per Known (Noto) vengono visualizzati i dettagli dei visitatori noti.
+* Per le fasi LC e Open Lead/Contact (Apri lead/contatto), vengono visualizzati i relativi dettagli.
+* Per OC, fasi di apertura dell&#39;opportunità e offerte, vengono visualizzati i dettagli dell&#39;opportunità.

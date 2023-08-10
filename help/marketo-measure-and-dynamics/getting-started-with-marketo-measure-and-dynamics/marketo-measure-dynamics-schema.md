@@ -1,28 +1,29 @@
 ---
 unique-page-id: 18874523
-description: "[!DNL Marketo Measure] Schema di Dynamics - [!DNL Marketo Measure] - Documentazione del prodotto"
-title: "[!DNL Marketo Measure] Schema di Dynamics"
+description: "[!DNL Marketo Measure] Schema Dynamics - [!DNL Marketo Measure] - Documentazione del prodotto"
+title: "[!DNL Marketo Measure] Schema Dynamics"
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Microsoft Dynamics
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 17%
 
 ---
 
-# [!DNL Marketo Measure] Schema di Dynamics {#marketo-measure-dynamics-schema}
+# [!DNL Marketo Measure] Schema Dynamics {#marketo-measure-dynamics-schema}
 
 >[!NOTE]
 >
->È possibile visualizzare istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riflesso nel tuo CRM presto.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Di seguito trovi lo schema Dynamics richiesto per iniziare a utilizzare [!DNL Marketo Measure]. Vengono elencate tutte le entità e i campi, insieme all’accesso in lettura e/o scrittura richiesto.
 
 ## Punti di contatto dell&#39;acquirente {#buyer-touchpoints}
 
-Il punto di contatto dell’acquirente è un [!DNL Marketo Measure] entità personalizzata per incapsulare le interazioni di marketing per Contatti e Lead.
+Il punto di contatto dell&#39;acquirente è [!DNL Marketo Measure] entità personalizzata per incapsulare le interazioni di marketing per contatti e lead.
 
-## Relazioni punto di contatto dell&#39;acquirente {#buyer-touchpoint-relationships}
+## Relazioni punto di contatto acquirente {#buyer-touchpoint-relationships}
 
 Questo diagramma è una visualizzazione di alto livello delle relazioni tra le entità Dynamics Stock e il punto di contatto dell’acquirente.
 
@@ -33,8 +34,8 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>bizible2_Ad_Campaign_Id</p></td> 
@@ -157,13 +158,13 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Parola chiave_TipoCorrispondenza</p></td> 
+   <td><p>bizible2_Keyword_MatchType</p></td> 
    <td><p>Personalizzato</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Parola_chiave_Testo</p></td> 
+   <td><p>bizible2_Keyword_Text</p></td> 
    <td><p>Personalizzato</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -303,23 +304,23 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
  </tbody> 
 </table>
 
-## Punto di contatto dell’attribuzione dell’acquirente {#buyer-attribution-touchpoint}
+## Punto di contatto di attribuzione acquirente {#buyer-attribution-touchpoint}
 
-Il punto di contatto dell’attribuzione dell’acquirente è un [!DNL Marketo Measure] entità personalizzata per incapsulare l’influenza del marketing sulle opportunità.
+Il punto di contatto di attribuzione acquirente è un [!DNL Marketo Measure] entità personalizzata per incapsulare l’influenza del marketing sulle opportunità.
 
-## Relazioni punto di contatto con l’attribuzione dell’acquirente {#buyer-attribution-touchpoint-relationships}
+## Relazioni punto di contatto di attribuzione acquirente {#buyer-attribution-touchpoint-relationships}
 
-Questo diagramma è una visualizzazione di alto livello delle relazioni tra le entità Dynamics Stock e il punto di contatto di attribuzione dell’acquirente.
+Questo diagramma è una visualizzazione di alto livello delle relazioni tra le entità Dynamics Stock e il punto di contatto di attribuzione buyer.
 
-## Punti di contatto dell’attribuzione dell’acquirente {#buyer-attribution-touchpoints}
+## Punti di contatto di attribuzione acquirente {#buyer-attribution-touchpoints}
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>bizible2_AccountId</p></td> 
@@ -502,13 +503,13 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Parola chiave_TipoCorrispondenza</p></td> 
+   <td><p>bizible2_Keyword_MatchType</p></td> 
    <td><p>Personalizzato</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Parola_chiave_Testo</p></td> 
+   <td><p>bizible2_Keyword_Text</p></td> 
    <td><p>Personalizzato</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -652,7 +653,7 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_w_shape_Base</p></td> 
+   <td><p>bizible2_revenue_w_shap_Base</p></td> 
    <td><p>Personalizzato</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -721,8 +722,8 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>bizible2_Bizible_ABTestId</p></td> 
@@ -806,8 +807,8 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>bizible2_Bizible_EventId</p></td> 
@@ -873,8 +874,8 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>bizible2_Bizible_HistoryId</p></td> 
@@ -909,9 +910,9 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
  </tbody> 
 </table>
 
-## Entità di Dynamics Standard {#dynamics-standard-entities}
+## Entità Dynamics Standard {#dynamics-standard-entities}
 
-In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Measure] interagisce con, nonché con i campi personalizzati che aggiungiamo a queste entità.
+Questo elenco fornisce le entità di Dynamics Standard che [!DNL Marketo Measure] interagisce con, nonché con i campi personalizzati che aggiungiamo a queste entità.
 
 **Lead**
 
@@ -920,11 +921,11 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
-   <td><p>leado</p></td> 
+   <td><p>leadid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -936,7 +937,7 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>codice di stato</p></td> 
+   <td><p>statecode</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -948,25 +949,25 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>contattato</p></td> 
+   <td><p>contactid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>qualifyingOpportunityid</p></td> 
+   <td><p>qualifyingopportunityid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -978,7 +979,7 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>nome azienda</p></td> 
+   <td><p>nome società</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1005,11 +1006,11 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
-   <td><p>contattato</p></td> 
+   <td><p>contactid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1021,19 +1022,19 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>contabile</p></td> 
+   <td><p>accounttid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1054,11 +1055,11 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
-   <td><p>contabile</p></td> 
+   <td><p>accounttid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1070,13 +1071,13 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1097,35 +1098,35 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
-   <td><p>opportunità</p></td> 
+   <td><p>opportunityid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>contabile</p></td> 
+   <td><p>accounttid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>codice di stato</p></td> 
+   <td><p>statecode</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1143,19 +1144,19 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>salesstagcode</p></td> 
+   <td><p>salesstagecode</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>calcolatedclosedate</p></td> 
+   <td><p>stimatedclosedate</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>attualvalue</p></td> 
+   <td><p>actualvalue</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1167,7 +1168,7 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_bizible_opportunità_amount_Base</p></td> 
+   <td><p>bizible2_bizible_OPPORTUNITY_amount_Base</p></td> 
    <td><p>Personalizzato</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1175,24 +1176,24 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
  </tbody> 
 </table>
 
-**Campaign**
+**Campagna**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
-   <td><p>campaign</p></td> 
+   <td><p>campaign id</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>tipo</p></td> 
+   <td><p>typecode</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1204,13 +1205,13 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1248,15 +1249,15 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
  </tbody> 
 </table>
 
-**Risposta campagna**
+**Risposta alla campagna**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>activityid</p></td> 
@@ -1277,19 +1278,19 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>risposta</p></td> 
+   <td><p>responsescode</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1307,7 +1308,7 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>riguardo a oggetti</p></td> 
+   <td><p>regardingobjectid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1352,8 +1353,8 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>listid</p></td> 
@@ -1374,13 +1375,13 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1401,8 +1402,8 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>listid</p></td> 
@@ -1423,13 +1424,13 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1437,15 +1438,15 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
  </tbody> 
 </table>
 
-**Telefono**
+**Telefonata**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Leggi</p></th> 
-   <th><p>Scrivi</p></th> 
+   <th><p>Letto</p></th> 
+   <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
    <td><p>activityid</p></td> 
@@ -1466,13 +1467,13 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>creato il</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>modifiedon</p></td> 
+   <td><p>modifedon</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1484,7 +1485,7 @@ In questo elenco sono incluse le entità Dynamics Standard che [!DNL Marketo Mea
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>riguardo a oggetti</p></td> 
+   <td><p>regardingobjectid</p></td> 
    <td><p>Standard</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
