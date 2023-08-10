@@ -4,9 +4,9 @@ description: Date di sincronizzazione campagna - [!DNL Marketo Measure] - Docume
 title: Date di sincronizzazione della campagna
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Date di sincronizzazione della campagna {#campaign-sync-dates}
 
 Scopri le funzionalità della funzione Campaign Sync Dates e offre alcuni casi d’uso per questa funzione.
+
+>[!NOTE]
+>
+>Questo articolo riguarda un processo obsoleto. Invitiamo gli utenti a utilizzare [processo in-app nuovo e migliorato](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 **[!DNL Marketo Measure]Pacchetto richiesto: 6.9 o superiore**
 
