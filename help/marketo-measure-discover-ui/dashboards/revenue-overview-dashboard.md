@@ -1,13 +1,11 @@
 ---
 description: Dashboard panoramica ricavi - [!DNL Marketo Measure] - Prodotto
 title: Dashboard panoramica ricavi
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: fa7b28fd101e6d5013fe59649de379e36f23c6e0
+source-git-commit: dc4dd001d319f13ebd1c4ce418acf2faa27cfe81
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +24,7 @@ Risponde alle domande della bacheca:
    <th>Componente</th> 
    <th>Descrizione</th>
    <th>Campi drill-through</th>
-   <th>Tipo di dati</th>
+   <th>Tipo di data</th>
    <th>Filtri</th>
   </tr>
   <tr>

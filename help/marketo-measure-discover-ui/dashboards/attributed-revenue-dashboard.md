@@ -1,13 +1,11 @@
 ---
 description: Dashboard ricavi attribuiti - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ricavi attribuiti
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: f526b904fd3c04691ed784c259cb19fb24a5bd54
+source-git-commit: dc4dd001d319f13ebd1c4ce418acf2faa27cfe81
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +24,7 @@ Qual è l’importo totale dei ricavi attribuiti e il numero delle offerte chius
    <th>Componente</th> 
    <th>Descrizione</th>
    <th>Campi drill-through</th>
-   <th>Tipo di dati</th>
+   <th>Tipo di data</th>
    <th>Filtri</th>
   </tr>
   <tr>

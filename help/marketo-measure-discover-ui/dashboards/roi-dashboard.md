@@ -1,10 +1,8 @@
 ---
 description: Dashboard ROI - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ROI
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: f526b904fd3c04691ed784c259cb19fb24a5bd54
+source-git-commit: dc4dd001d319f13ebd1c4ce418acf2faa27cfe81
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 5%
@@ -26,8 +24,8 @@ Risponde alle domande della bacheca:
  <tr> 
    <th>Componente</th> 
    <th>Descrizione</th>
+   <th>Tipo di data</th>
    <th>Campi drill-through</th>
-   <th>Tipo di dati</th>
    <th>Filtri</th>
   </tr>
   <tr>
