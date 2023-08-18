@@ -4,10 +4,10 @@ title: Dashboard ricavi attribuiti
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: fa7b28fd101e6d5013fe59649de379e36f23c6e0
+source-git-commit: f526b904fd3c04691ed784c259cb19fb24a5bd54
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 5%
 
 ---
 
@@ -30,8 +30,8 @@ Qual è l’importo totale dei ricavi attribuiti e il numero delle offerte chius
    <th>Filtri</th>
   </tr>
   <tr>
-    <td>Sezione ricavi totali</td>
-    <td>Totale dei ricavi originati dal sistema CRM, inclusi i ricavi attribuiti.</td>
+    <td>Sezione ricavi attribuiti</td>
+    <td>Ricavi attribuibili totali da opportunità "Closed Won" con punti di contatto registrati.</td>
     <td rowspan="6"><li>ID opportunità</li>
 <li>Nome dell’opportunità</li>
 <li>Data di creazione dell’opportunità</li>
@@ -39,32 +39,32 @@ Qual è l’importo totale dei ricavi attribuiti e il numero delle offerte chius
 <li>È chiuso (S/N)</li>
 <li>Vinto (S/N)</li>
 <li>Fase corrente</li>
-<li>Ricavi</li></td>
+<li>Modello di attribuzione</li>
+<li>Reddito Attribuito</li>
+<li>Reddito Realizzato</li></td>
     <td rowspan="6">Data di chiusura</td>
-    <td rowspan="6">Data</td>
-  </tr>
-  <tr>
-    <td>Sezione Offerte totali</td>
-    <td>Numero totale di offerte contrassegnate come "Closed Won" nel CRM.</td>
-  </tr>
-  <tr>
-    <td>Sezione ricavi attribuiti</td>
-    <td>Ricavi attribuibili totali da opportunità "Closed Won" con punti di contatto registrati.</td>
+    <td rowspan="6"><li>Data</li>
+<li>Modello di attribuzione</li>
+<li>Canale</li>
+<li>Sottocanale</li>
+<li>Campagna</li>
+<li>Segmenti</li></td>
   </tr>
   <tr>
     <td>Sezione Offerte attribuibili</td>
     <td>Numero totale di offerte "Chiuso" da opportunità attribuibili.</td>
   </tr>
   <tr>
-    <td>Grafico Ricavi e Ricavi attribuiti</td>
-    <td>Questo grafico a barre affiancato delle serie temporali fornisce una vista completa della copertura dell’attribuzione tramite la giustapposizione del ricavo totale con il ricavo attribuito.
-    <br/>PICC</td>
+    <td>Ricavi attribuiti per canale nel tempo</td>
+    <td>Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per canale associato, per ogni trimestre/mese.
+    <br/><img src="assets/attributed-revenue-dashboard-1.png" width="600"></td>
   </tr>
   <tr>
-    <td>Grafico di copertura dell'attribuzione</td>
-    <td>Questo grafico a torta fornisce un chiaro confronto visivo tra Ricavi attribuiti e Ricavi non attribuiti. La torta copre il totale delle entrate.
-    <br/>
-    PICC</td>
+    <td>Tabella Ricavi Attribuiti</td>
+    <td>Ricavi attribuiti totali segmentati per canale, sottocanale e campagna, in formato sia tabulare che albero.
+    <br/><img src="assets/attributed-revenue-dashboard-2.png" width="600">
+    <br/><img src="assets/attributed-revenue-dashboard-3.png" width="600"></td>
+  </tr>
   </tr>
 </tbody>
 </table>
