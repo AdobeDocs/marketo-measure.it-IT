@@ -3,7 +3,7 @@ description: Accesso Data Warehouse - Account di Reader - Documentazione del pro
 title: Data Warehouse accesso - Account Reader
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
