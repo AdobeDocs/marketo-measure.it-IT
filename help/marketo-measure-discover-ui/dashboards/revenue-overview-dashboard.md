@@ -4,7 +4,7 @@ title: Dashboard panoramica ricavi
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: 5a5133fbbd4668d33ea9a0f68f38ddac7cabf38c
+source-git-commit: fa7b28fd101e6d5013fe59649de379e36f23c6e0
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
@@ -20,8 +20,8 @@ Risponde alle domande della bacheca:
 * Quale percentuale dei ricavi è attribuibile alle attività di marketing?
 * Quale percentuale delle nostre offerte &quot;Closed Won&quot; è stata influenzata dai nostri sforzi di marketing?
 
-<table>
-<tbody> 
+<table style="table-layout:auto"> 
+<tbody>
   <tr> 
    <th>Componente</th> 
    <th>Descrizione</th>
@@ -58,13 +58,13 @@ Risponde alle domande della bacheca:
   <tr>
     <td>Grafico Ricavi e Ricavi attribuiti</td>
     <td>Questo grafico a barre affiancato delle serie temporali fornisce una vista completa della copertura dell’attribuzione tramite la giustapposizione del ricavo totale con il ricavo attribuito.
-    <br/><img src="assets/revenue-overview-dashboard-1.png"></td>
+    <br/><img src="assets/revenue-overview-dashboard-1.png" width="600"></td>
   </tr>
   <tr>
     <td>Grafico di copertura dell'attribuzione</td>
     <td>Questo grafico a torta fornisce un chiaro confronto visivo tra Ricavi attribuiti e Ricavi non attribuiti. La torta copre il totale delle entrate.
     <br/>
-    <img src="assets/revenue-overview-dashboard-2.png"></td>
+    <img src="assets/revenue-overview-dashboard-2.png" width="600"></td>
   </tr>
 </tbody>
 </table>
