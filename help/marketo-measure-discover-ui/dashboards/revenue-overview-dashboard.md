@@ -4,7 +4,7 @@ title: Dashboard panoramica ricavi
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: a90a3c7a8ed7ec83bc50060da8b7ca1e69bd37bd
+source-git-commit: 5a5133fbbd4668d33ea9a0f68f38ddac7cabf38c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
@@ -46,30 +46,25 @@ Risponde alle domande della bacheca:
   <tr>
     <td>Sezione Offerte totali</td>
     <td>Numero totale di offerte contrassegnate come "Closed Won" nel CRM.</td>
-    <td> </td>
   </tr>
   <tr>
     <td>Sezione ricavi attribuiti</td>
     <td>Ricavi attribuibili totali da opportunità "Closed Won" con punti di contatto registrati.</td>
-    <td> </td>
   </tr>
   <tr>
     <td>Sezione Offerte attribuibili</td>
     <td>Numero totale di offerte "Chiuso" da opportunità attribuibili.</td>
-    <td> </td>
   </tr>
   <tr>
     <td>Grafico Ricavi e Ricavi attribuiti</td>
     <td>Questo grafico a barre affiancato delle serie temporali fornisce una vista completa della copertura dell’attribuzione tramite la giustapposizione del ricavo totale con il ricavo attribuito.
     <br/><img src="assets/revenue-overview-dashboard-1.png"></td>
-    <td> </td>
   </tr>
   <tr>
     <td>Grafico di copertura dell'attribuzione</td>
     <td>Questo grafico a torta fornisce un chiaro confronto visivo tra Ricavi attribuiti e Ricavi non attribuiti. La torta copre il totale delle entrate.
     <br/>
     <img src="assets/revenue-overview-dashboard-2.png"></td>
-    <td> </td>
   </tr>
 </tbody>
 </table>
