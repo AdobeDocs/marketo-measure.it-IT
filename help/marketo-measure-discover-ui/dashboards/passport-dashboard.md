@@ -2,9 +2,9 @@
 description: Dashboard Passport - [!DNL Marketo Measure] - Prodotto
 title: Dashboard Passport
 feature: Reporting
-source-git-commit: 436e30c2a4138d780232d6ba9e64456d6277ac9b
+source-git-commit: 73f7d14f94b236b5e078a4c8ff7a1e81d13779ee
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '290'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,15 @@ Risponde alle domande della bacheca:
 <li>Le date di inizio e di fine sono entrambe inclusive.</li>
 <br/><img src="assets/passport-dashboard-1.png" width="600"></td>
     <td rowspan="2">Data di transizione</td>
-    <td></td>
+    <td><li>ID opportunità</li>
+<li>Nome dell’opportunità</li>
+<li>Data di creazione</li>
+<li>Data di chiusura</li>
+<li>È chiuso (S/N)</li>
+<li>Vinto (S/N)</li>
+<li>Fase corrente</li>
+<li>Transizione in data</li>
+<li>Data di uscita transizione</li></td>
     <td rowspan="2"><li>Data</li>
 <li>Canale</li>
 <li>Sottocanale</li>
