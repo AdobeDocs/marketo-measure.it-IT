@@ -4,9 +4,9 @@ title: Scopri nozioni di base sulla dashboard
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: c77f880a2e88fa60ae685b61d9ae335308e78e10
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Scopri nozioni di base sulla dashboard {#discover-dashboard-basics}
 
 Questo articolo illustra le funzionalità fondamentali dell’interfaccia riprogettata, consentendoti di accedere e interpretare facilmente i dati. Approfondisci le dinamiche del riquadro dei filtri e scopri le complessità delle funzionalità di reporting avanzate, come le funzioni di drilling, i filtri incrociati e le descrizioni.
+
+>[!NOTE]
+>
+>Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
 ## Riquadro Filtro {#filter-pane}
 
@@ -23,26 +27,36 @@ Ogni dashboard dispone di una serie di filtri, accompagnati dai seguenti control
  <tbody> 
   <tr> 
    <th>Nome</th> 
-   <th>Icona</th>
    <th>Descrizione</th>
   </tr> 
   <tr> 
-   <td>Pulsante Hamburger</td> 
-   <td><img src="assets/discover-dashboard-basics-1.png"></td>
-   <td>Attiva/disattiva l'apertura o la chiusura del riquadro dei filtri.</td>
+   <td>Pulsante di attivazione/disattivazione filtro</td>
+   <td>Attiva/disattiva l'apertura o la chiusura del riquadro dei filtri.
+   <p><img src="assets/discover-dashboard-basics-1.png"></td>
   </tr>
   <tr> 
-   <td>Ripristina</td> 
-   <td><img src="assets/discover-dashboard-basics-2.png"></td>
-   <td>Ripristina le impostazioni predefinite dei filtri.</td>
+   <td>Pulsante Ripristina</td>
+   <td>Ripristina le impostazioni predefinite dei filtri.
+   <p><img src="assets/discover-dashboard-basics-2.png"></td>
   </tr>
    <tr> 
-   <td>Filtri per elementi visivi</td> 
-   <td><img src="assets/discover-dashboard-basics-3.png"></td>
-   <td>Passa il puntatore del mouse sull’angolo in alto a destra di un oggetto visivo e fai clic sul pulsante per visualizzarne i filtri attivi.</td>
+   <td>Pulsante Applica</td>
+   <td>Fai clic su per confermare e implementare le modifiche al filtro nel dashboard.
+   <p><img src="assets/discover-dashboard-basics-3.png"></td>
+  </tr>
+  <tr> 
+   <td>Pulsante Segmento</td>
+   <td>Nei dashboard con filtri di segmento, fai clic sul pulsante Segmento nella parte inferiore del riquadro del filtro per passare a Segmenti.
+   <p><img src="assets/discover-dashboard-basics-3a.png"></td>
   </tr>
  </tbody> 
 </table>
+
+## Filtri per elementi visivi {#filters-on-visual}
+
+Passa il puntatore del mouse sull’angolo in alto a destra di un oggetto visivo per visualizzare un elenco di sola lettura dei filtri applicati.
+
+![](assets/discover-dashboard-basics-3b.png)
 
 ## Funzionalità report {#report-capabilities}
 
@@ -70,21 +84,24 @@ Utilizza l’icona a forma di fork per aggiungere un ulteriore livello gerarchic
 
 ### Drill-through {#drill-through}
 
-* Per esplorare i dati dietro l&#39;elemento visivo, fare clic con il pulsante destro del mouse sull&#39;elemento visivo e selezionare l&#39;opzione &quot;drill-through&quot;.
+Per esplorare i dati dietro l&#39;elemento visivo, fare clic con il pulsante destro del mouse sull&#39;elemento visivo e selezionare l&#39;opzione &quot;drill-through&quot;.
 
-![](assets/discover-dashboard-basics-9.png)
+![](assets/discover-dashboard-basics-9.gif)
 
-* Per esportare i dati sottostanti, posizionare il puntatore del mouse sull&#39;angolo superiore destro della pagina drill-through, fare clic sul pulsante &quot;altre opzioni&quot; e selezionare &quot;esporta dati&quot;.
+### Esporta dati {#export-data}
 
-![](assets/discover-dashboard-basics-10.png)
+Per esportare i dati sottostanti da un oggetto visivo, posiziona il cursore del mouse sul relativo angolo in alto a destra. Fai clic sul pulsante &quot;altre opzioni&quot;, scegli &quot;esporta dati&quot;, seleziona il formato desiderato, quindi fai clic su &quot;esporta&quot;.
+![](assets/discover-dashboard-basics-10.gif)
 
-* Per ingrandire un oggetto visivo o una tessera specifica, posiziona il cursore del mouse sull&#39;angolo in alto a destra e seleziona il pulsante &quot;focus&quot;.
+### Modalità di messa a fuoco {#focus-mode}
 
-![](assets/discover-dashboard-basics-11.png)
+Per ingrandire un oggetto visivo o una tessera specifica, posiziona il cursore del mouse sull&#39;angolo in alto a destra e seleziona il pulsante &quot;focus&quot;.
+
+![](assets/discover-dashboard-basics-11.gif)
 
 ### Filtri incrociati {#cross-filtering}
 
-Per impostazione predefinita, selezionando un valore o un’etichetta di asse in una visualizzazione si filtrano altri elementi visivi nella pagina del rapporto, garantendo che vengano visualizzati solo i dati filtrati pertinenti.
+Quando si seleziona un valore o un’etichetta di asse in una visualizzazione, vengono applicati filtri incrociati ad altri elementi visivi nella pagina del rapporto, garantendo che vengano visualizzati solo i dati pertinenti filtrati.
 
 ![](assets/discover-dashboard-basics-12.gif)
 
