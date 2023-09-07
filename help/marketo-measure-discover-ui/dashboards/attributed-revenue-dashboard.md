@@ -4,70 +4,79 @@ title: Dashboard ricavi attribuiti
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 3%
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 
 # Dashboard ricavi attribuiti {#attributed-revenue-dashboard}
 
-Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi direttamente collegati alle attività di marketing. Scopri in modo approfondito come le tue strategie di marketing sono state utili per sigillare gli accordi.
+Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi direttamente collegati alle attività di marketing. Scopri in che modo le tue strategie di marketing sono state utili per sigillare gli accordi.
 
-Risponde alle domande della bacheca:
+>[!NOTE]
+>
+>Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
-Quali canali, sottocanali o campagne sono più classificati in termini di ricavi attribuiti?
-Qual è l’importo totale dei ricavi attribuiti e il numero delle offerte chiuse attribuite?
+**Risponde alle domande della bacheca:**
 
-<table style="table-layout:auto"> 
-<tbody>
-  <tr> 
-   <th>Componente</th> 
-   <th>Descrizione</th>
-   <th>Campi drill-through</th>
-   <th>Tipo di data</th>
-   <th>Filtri</th>
-  </tr>
-  <tr>
-    <td>Sezione ricavi attribuiti</td>
-    <td>Ricavi attribuibili totali da opportunità "Closed Won" con punti di contatto registrati.</td>
-    <td rowspan="6"><li>ID opportunità</li>
-<li>Nome dell’opportunità</li>
-<li>Data di creazione dell’opportunità</li>
-<li>Data di chiusura dell’opportunità</li>
-<li>È chiuso (S/N)</li>
-<li>Vinto (S/N)</li>
-<li>Fase corrente</li>
-<li>Modello di attribuzione</li>
-<li>Reddito Attribuito</li>
-<li>Reddito Realizzato</li></td>
-    <td rowspan="6">Data di chiusura</td>
-    <td rowspan="6"><li>Data</li>
-<li>Modello di attribuzione</li>
-<li>Canale</li>
-<li>Sottocanale</li>
-<li>Campagna</li>
-<li>Segmenti</li></td>
-  </tr>
-  <tr>
-    <td>Sezione Offerte attribuibili</td>
-    <td>Numero totale di offerte "Chiuso" da opportunità attribuibili.</td>
-  </tr>
-  <tr>
-    <td>Ricavi attribuiti per canale nel tempo</td>
-    <td>Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per canale associato, per ogni trimestre/mese.
-    <br/><img src="assets/attributed-revenue-dashboard-1.png" width="600"></td>
-  </tr>
-  <tr>
-    <td>Tabella Ricavi Attribuiti</td>
-    <td>Ricavi attribuiti totali segmentati per canale, sottocanale e campagna, in formato sia tabulare che albero.
-    <br/><img src="assets/attributed-revenue-dashboard-2.png" width="600">
-    <br/><img src="assets/attributed-revenue-dashboard-3.png" width="600"></td>
-  </tr>
-  </tr>
-</tbody>
-</table>
+* Quali canali, sottocanali o campagne sono più classificati in termini di ricavi attribuiti?
+* Qual è l’importo totale dei ricavi attribuiti e il numero delle offerte chiuse attribuite?
+
+## Componenti del dashboard {#dashboard-components}
+
+### Riquadri KPI {#kpi-tiles}
+
+* **Reddito Attribuito**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto chiuse entro il periodo di data filtrato
+* **Offerte attribuite**: numero di opportunità &quot;Closed Won&quot; con punti di contatto.
+
+### Grafico Ricavi attribuiti per canale nel tempo {#attributed-revenue-by-channel-over-time-chart}
+
+Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per canale, per ogni mese/trimestre/anno.
+
+* Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
+* Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
+
+**Risposte alle domande del grafico:**
+
+* Quali canali hanno generato il maggior ricavo attribuito ogni trimestre?
+* Qual è stata la suddivisione dei ricavi attribuiti per canale il mese scorso?
+
+![](assets/attributed-revenue-dashboard-1.png)
+
+### Tabella Ricavi Attribuiti {#attributed-revenue-table}
+
+Ricavi attribuiti totali segmentati per canale, sottocanale e campagna, in formato sia tabulare che albero. Fai clic sul pulsante nell’angolo in alto a destra per passare da una visualizzazione all’altra.
+
+**Risponde alle domande della bacheca:**
+
+* In che modo la distribuzione dei ricavi attribuiti varia tra i diversi sottocanali all’interno di un canale?
+* Quali campagne in un determinato sottocanale generano i ricavi più attribuiti?
+
+**Vista tabulare**
+
+* La vista a tabella offre informazioni chiare e organizzate sulla distribuzione dei ricavi attribuiti. Gli utenti possono distinguere rapidamente i pattern di prestazioni e individuare strategie di marketing di forte impatto, suddividendo i dati in canali, sottocanali e campagne.
+* Fai clic sull’icona &quot;+&quot; accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
+
+![](assets/attributed-revenue-dashboard-2.png)
+
+**Vista ad albero**
+
+* La struttura ad albero consente un’esplorazione dei dati più interattiva e granulare, consentendo agli addetti al marketing di identificare tendenze, anomalie o prestazioni di rilievo nelle loro attività di marketing.
+* Fai clic su un ramo per approfondire il livello gerarchico successivo.
+
+![](assets/attributed-revenue-dashboard-3.png)
+
+## Riquadro Filtro {#filter-pane}
+
+Questo cruscotto è dotato delle seguenti impostazioni e filtri:
+
+* Data (in base alla data di chiusura)
+* Modello di attribuzione
+* Canale, Sottocanale
+* Campagna
+* Segmenti
 
 >[!MORELIKETHIS]
 >
