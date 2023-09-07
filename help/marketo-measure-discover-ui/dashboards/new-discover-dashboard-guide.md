@@ -4,9 +4,9 @@ title: Nuova guida per Discover Dashboard
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: 511509caaa89d7e71a68f19b4c90b43f44713ae3
+source-git-commit: b75d9c7dae8886646d2df9613634c260d2d7b281
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -503,6 +503,4 @@ Le nuove funzioni si trovano nella sezione [Scopri nozioni di base sulla dashboa
 
 ## Feedback {#feedback}
 
-Poiché continuiamo a migliorare la tua esperienza, ti invitiamo ad esprimere il tuo feedback su questo aggiornamento. I tuoi pensieri influenzeranno direttamente i perfezionamenti futuri, garantendo che la nostra piattaforma sia sempre allineata alle tue esigenze.
-
-Fornisci istruzioni su come condividere i loro feedback (ad esempio, modulo di feedback in-app, e-mail, ecc.)
+Poiché continuiamo a migliorare la tua esperienza, ti invitiamo ad esprimere il tuo feedback su questo aggiornamento. I tuoi pensieri influenzeranno direttamente i perfezionamenti futuri, garantendo che la nostra piattaforma sia sempre allineata alle tue esigenze. Tieni d&#39;occhio il modulo di feedback in Marketo Measure.
