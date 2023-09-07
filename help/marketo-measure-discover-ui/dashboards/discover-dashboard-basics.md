@@ -4,9 +4,9 @@ title: Scopri nozioni di base sulla dashboard
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c77f880a2e88fa60ae685b61d9ae335308e78e10
+source-git-commit: db435a669ca9a24a0661191bef9e14a8f8c78eb6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,23 @@ Ogni dashboard dispone di una serie di filtri, accompagnati dai seguenti control
    <th>Descrizione</th>
   </tr> 
   <tr> 
-   <td>Pulsante di attivazione/disattivazione filtro</td>
+   <td><b>Pulsante di attivazione/disattivazione filtro</b></td>
    <td>Attiva/disattiva l'apertura o la chiusura del riquadro dei filtri.
    <p><img src="assets/discover-dashboard-basics-1.png"></td>
   </tr>
   <tr> 
-   <td>Pulsante Ripristina</td>
-   <td>Ripristina le impostazioni predefinite dei filtri.
+   <td><b>Barra di ricerca</b></td>
+   <td>Utilizza la funzione di ricerca nella parte superiore del riquadro dei filtri per cercare un filtro specifico. Ogni filtro ha anche una propria barra di ricerca.
    <p><img src="assets/discover-dashboard-basics-2.png"></td>
   </tr>
    <tr> 
-   <td>Pulsante Applica</td>
-   <td>Fai clic su per confermare e implementare le modifiche al filtro nel dashboard.
+   <td><b>Pulsante Cancella filtro</b></td>
+   <td>Per cancellare un filtro, fai clic sull’icona della gomma nell’angolo in alto a destra di ciascun filtro.
    <p><img src="assets/discover-dashboard-basics-3.png"></td>
   </tr>
   <tr> 
-   <td>Pulsante Segmento</td>
-   <td>Nei dashboard con filtri di segmento, fai clic sul pulsante Segmento nella parte inferiore del riquadro del filtro per passare a Segmenti.
+   <td><b>Pulsante Applica</b></td>
+   <td>Fai clic su per confermare e implementare le modifiche al filtro nel dashboard.
    <p><img src="assets/discover-dashboard-basics-3a.png"></td>
   </tr>
  </tbody> 
