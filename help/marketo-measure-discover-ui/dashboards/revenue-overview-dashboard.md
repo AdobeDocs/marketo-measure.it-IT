@@ -4,10 +4,10 @@ title: Dashboard panoramica ricavi
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: 09748b8ba76a89b2d955c8384ae926bb995c2171
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 2%
+source-wordcount: '313'
+ht-degree: 0%
 
 ---
 
@@ -15,59 +15,54 @@ ht-degree: 2%
 
 La dashboard Panoramica ricavi fornisce informazioni sui ricavi totali derivati dal CRM, gettando luce sul ruolo delle strategie di marketing. Offre una panoramica dell’influenza del marketing sui ricavi complessivi e contribuisce alla corretta chiusura delle offerte.
 
-Risponde alle domande della bacheca:
+>[!NOTE]
+>
+>Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
+
+**Risponde alle domande della bacheca:**
 
 * Quale percentuale dei ricavi è attribuibile alle attività di marketing?
 * Quale percentuale delle nostre offerte &quot;Closed Won&quot; è stata influenzata dai nostri sforzi di marketing?
 
-<table style="table-layout:auto"> 
-<tbody>
-  <tr> 
-   <th>Componente</th> 
-   <th>Descrizione</th>
-   <th>Campi drill-through</th>
-   <th>Tipo di data</th>
-   <th>Filtri</th>
-  </tr>
-  <tr>
-    <td>Sezione ricavi totali</td>
-    <td>Totale dei ricavi originati dal sistema CRM, inclusi i ricavi attribuiti.</td>
-    <td rowspan="6"><li>ID opportunità</li>
-<li>Nome dell’opportunità</li>
-<li>Data di creazione dell’opportunità</li>
-<li>Data di chiusura dell’opportunità</li>
-<li>È chiuso (S/N)</li>
-<li>Vinto (S/N)</li>
-<li>Fase corrente</li>
-<li>Ricavi</li></td>
-    <td rowspan="6">Data di chiusura</td>
-    <td rowspan="6">Data</td>
-  </tr>
-  <tr>
-    <td>Sezione Offerte totali</td>
-    <td>Numero totale di offerte contrassegnate come "Closed Won" nel CRM.</td>
-  </tr>
-  <tr>
-    <td>Sezione ricavi attribuiti</td>
-    <td>Ricavi attribuibili totali da opportunità "Closed Won" con punti di contatto registrati.</td>
-  </tr>
-  <tr>
-    <td>Sezione Offerte attribuibili</td>
-    <td>Numero totale di offerte "Chiuso" da opportunità attribuibili.</td>
-  </tr>
-  <tr>
-    <td>Grafico Ricavi e Ricavi attribuiti</td>
-    <td>Questo grafico a barre affiancato delle serie temporali fornisce una vista completa della copertura dell’attribuzione tramite la giustapposizione del ricavo totale con il ricavo attribuito.
-    <br/><img src="assets/revenue-overview-dashboard-1.png" width="600"></td>
-  </tr>
-  <tr>
-    <td>Grafico di copertura dell'attribuzione</td>
-    <td>Questo grafico a torta fornisce un chiaro confronto visivo tra Ricavi attribuiti e Ricavi non attribuiti. La torta copre il totale delle entrate.
-    <br/>
-    <img src="assets/revenue-overview-dashboard-2.png" width="600"></td>
-  </tr>
-</tbody>
-</table>
+## Componenti del dashboard {#dashboard-components}
+
+### Riquadri KPI {#kpi-tiles}
+
+* Ricavi totali: i ricavi totali derivanti dalle opportunità &quot;Chiuse&quot;, incluse le opportunità senza punti di contatto.
+* Totale offerte: numero di opportunità &quot;Closed Won&quot;, incluse le opportunità senza punti di contatto.
+* Entrate attribuite: il totale delle entrate derivanti dalle opportunità &quot;Closed Won&quot; con punti di contatto.
+* Offerte attribuite: il numero di opportunità &quot;Closed Won&quot; che hanno punti di contatto.
+
+### Grafico Ricavi e Ricavi attribuiti {#revenue-and-attributed-revenue-chart}
+
+Questo grafico a barre affiancato delle serie temporali contrasta il Ricavo totale con il Ricavo attribuito, visualizzando chiaramente il tuo impatto di marketing sui ricavi complessivi.
+
+* Sfrutta le funzionalità drill-down e up per categorizzare i dati per trimestre e anno.
+* Passa il puntatore del mouse su una sezione del grafico a barre per visualizzarne le informazioni dettagliate.
+
+**Risposte alle domande del grafico:**
+
+* Quale percentuale dei ricavi di agosto 2022 può essere attribuita alle nostre iniziative di marketing?
+* In che modo i ricavi attribuiti nel terzo trimestre dello scorso anno si sovrappongono al quarto trimestre?
+
+![](assets/revenue-overview-dashboard-1.png)
+
+### Grafico di copertura dell&#39;attribuzione {#attribution-coverage-chart}
+
+Questo grafico a torta visualizza in modo chiaro la copertura dell’attribuzione segmentando i ricavi totali in ricavi attribuiti e non attribuiti, evidenziando la percentuale precisa di ricavi influenzata dalle attività di marketing.
+
+**Risposte alle domande del grafico:**
+
+* Qual è stata la percentuale di copertura dei ricavi attribuita alle attività di marketing dell’anno scorso?
+
+![](assets/revenue-overview-dashboard-2.png)
+
+## Riquadro Filtro {#filter-pane}
+
+Questo cruscotto è dotato delle seguenti impostazioni e filtri:
+
+* Modello di attribuzione
+* Data (in base alla data di chiusura)
 
 >[!MORELIKETHIS]
 >
