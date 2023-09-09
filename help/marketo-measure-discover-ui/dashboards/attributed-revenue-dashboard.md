@@ -4,9 +4,9 @@ title: Dashboard ricavi attribuiti
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
+source-git-commit: dabb6ed45ec87a97b333e11d5fc71be425edaf66
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi diret
 
 ### Riquadri KPI {#kpi-tiles}
 
-* **Reddito Attribuito**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto chiuse entro il periodo di data filtrato
+* **Reddito Attribuito**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto.
 * **Offerte attribuite**: numero di opportunità &quot;Closed Won&quot; con punti di contatto.
 
 ### Grafico Ricavi attribuiti per canale nel tempo {#attributed-revenue-by-channel-over-time-chart}

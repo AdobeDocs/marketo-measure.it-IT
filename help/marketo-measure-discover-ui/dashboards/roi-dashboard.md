@@ -4,7 +4,7 @@ title: Dashboard ROI
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: b3d4ea085d851908d52fb62fe58d860ae5c09099
+source-git-commit: dabb6ed45ec87a97b333e11d5fc71be425edaf66
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
@@ -30,7 +30,7 @@ La dashboard ROI offre agli addetti al marketing una visualizzazione granulare d
 ### Riquadri KPI {#kpi-tiles}
 
 * **Costo**: costi totali da origini dati connesse e costi caricati manualmente.
-* **Reddito Attribuito**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto chiuse entro il periodo di data filtrato
+* **Reddito Attribuito**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto chiuse entro il periodo di data filtrato.
 * **Reddito Attribuito Realizzato**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto entro il periodo di data filtrato, indipendentemente da quando sono state chiuse.
 * **Totale nuovi lead**: numero totale di nuovi lead generati, inclusi quelli toccati e non toccati.
 * **Costo per nuovo lead**: il costo medio per nuovo lead, derivato dal costo totale diviso per il numero totale di nuovi lead.
