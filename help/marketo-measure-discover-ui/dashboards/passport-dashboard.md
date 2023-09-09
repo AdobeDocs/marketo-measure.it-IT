@@ -4,9 +4,9 @@ title: Dashboard Passport
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: b3d4ea085d851908d52fb62fe58d860ae5c09099
+source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 
 ![](assets/passport-dashboard-1.png)
 
-### Contatti nell&#39;area di visualizzazione per nome area di visualizzazione {#contacts-in-stage-by-stage-name}
+### Lead o contatti nell&#39;area di visualizzazione per nome area di visualizzazione {#leads-or-contacts-in-stage-by-stage-name}
 
 * Ogni fase mostra il numero di lead o contatti con punti di contatto che li hanno attraversati in un determinato arco temporale.
    * La visualizzazione di &quot;Lead&quot; o &quot;Contatto&quot; è determinata dalla preferenza impostata in: Impostazioni > Impostazioni attribuzione > Oggetto dashboard predefinito.

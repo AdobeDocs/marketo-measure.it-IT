@@ -4,7 +4,7 @@ title: Dashboard panoramica ricavi
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
+source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -28,10 +28,10 @@ La dashboard Panoramica ricavi fornisce informazioni sui ricavi totali derivati 
 
 ### Riquadri KPI {#kpi-tiles}
 
-* Ricavi totali: i ricavi totali derivanti dalle opportunità &quot;Chiuse&quot;, incluse le opportunità senza punti di contatto.
-* Totale offerte: numero di opportunità &quot;Closed Won&quot;, incluse le opportunità senza punti di contatto.
-* Entrate attribuite: il totale delle entrate derivanti dalle opportunità &quot;Closed Won&quot; con punti di contatto.
-* Offerte attribuite: il numero di opportunità &quot;Closed Won&quot; che hanno punti di contatto.
+* **Ricavi totali**: il totale dei ricavi derivanti dalle opportunità &quot;Closed Won&quot;, incluse le opportunità senza punti di contatto.
+* **Offerte totali**: numero di opportunità &quot;Closed Won&quot;, comprese le opportunità senza punti di contatto.
+* **Reddito Attribuito**: i ricavi totali dalle opportunità &quot;Closed Won&quot; con punti di contatto.
+* **Offerte attribuite**: numero di opportunità &quot;Closed Won&quot; con punti di contatto.
 
 ### Grafico Ricavi e Ricavi attribuiti {#revenue-and-attributed-revenue-chart}
 
