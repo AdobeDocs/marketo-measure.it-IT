@@ -1,10 +1,8 @@
 ---
 description: Dashboard ROI - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ROI
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: dabb6ed45ec87a97b333e11d5fc71be425edaf66
+source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
@@ -19,7 +17,7 @@ La dashboard ROI offre agli addetti al marketing una visualizzazione granulare d
 >
 >Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
-**Risponde alle domande della bacheca:**
+**Domande alle risposte della bacheca**
 
 * Quali erano i valori del ROI per ogni canale, sottocanale e campagna?
 * In che modo i costi e i ricavi sono stati distribuiti su ciascun canale, sottocanale e campagna?
@@ -49,7 +47,7 @@ Grafico a barre che illustra costi e ricavi, progettato per offrire una prospett
 * Sfrutta le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
 * Passa il puntatore del mouse su ciascuna barra per visualizzare il ROI semplice e realizzato.
 
-**Risposte alle domande del grafico:**
+**Domande sulle risposte del grafico**
 
 * Quali erano i valori del ROI per ogni canale, sottocanale e campagna?
 * Esistono canali o sottocanali meno recenti con costi insolitamente alti o bassi rispetto ai loro ricavi?
@@ -62,7 +60,7 @@ Grafico a linee delle serie temporali che mostra il confronto tra ROI realizzato
 
 * Passa il puntatore del mouse su una sezione del grafico per visualizzare il ROI semplice e realizzato.
 
-**Risposte alle domande del grafico:**
+**Domande sulle risposte del grafico**
 
 * Come si confronta il ROI realizzato con il ROI semplice in periodi di tempo specifici?
 * In che modo la tendenza del ROI realizzato si relaziona a qualsiasi evento di marketing significativo durante lo stesso periodo?
@@ -76,7 +74,7 @@ Grafico a barre in pila che mostra i costi totali, segmentati per canali associa
 * Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
-**Risposte alle domande del grafico:**
+**Domande sulle risposte del grafico**
 
 * Come si confronta il costo combinato di tutti i canali da un trimestre/mese all&#39;altro?
 * Come si sono evoluti nel tempo i costi di un canale specifico?
@@ -89,7 +87,7 @@ Grafico a barre che mostra le spese di marketing segmentate per canale/sottocana
 
 * Sfrutta le funzionalità drill-down e up per classificare i dati per canale/sottocanale/campagna.
 
-**Risposte alle domande del grafico:**
+**Domande sulle risposte del grafico**
 
 * Quali sottocanali o campagne all’interno di un canale principale hanno l’allocazione più elevata?
 * Quali percorsi di marketing (canale, sottocanale o campagna) sembrano sottofinanziati rispetto ad altri?
@@ -102,7 +100,7 @@ Tabella con ricavi attribuiti, costi e ROI segmentati per singolo canale per una
 
 * Fai clic sull’icona &quot;+&quot; accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
 
-**Colonne:**
+**Colonne**
 
 * Canale/Sottocanale/Campagna
 * Costo
@@ -118,7 +116,7 @@ Tabella che mostra costi, nuovi lead, opportunità e offerte chiusi segmentati p
 
 * Fai clic sull’icona &quot;+&quot; accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
 
-**Colonne:**
+**Colonne**
 
 * Canale/Sottocanale/Campagna
 * Costo
@@ -141,7 +139,7 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
       * Data punto di contatto: punti di contatto da ricavi attribuiti realizzati (ROI realizzato)
 * Modello di attribuzione
 * Canale, Sottocanale
-* Campagna
+* Campaign
 
 >[!MORELIKETHIS]
 >
