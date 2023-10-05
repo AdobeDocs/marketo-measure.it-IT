@@ -2,9 +2,10 @@
 description: Nuova guida per Discover Dashboard - [!DNL Marketo Measure] - Prodotto
 title: Nuova guida per Discover Dashboard
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
+source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -502,3 +503,9 @@ Le nuove funzioni si trovano nella sezione [Scopri nozioni di base sulla dashboa
 ## Feedback {#feedback}
 
 Poiché continuiamo a migliorare la tua esperienza, ti invitiamo ad esprimere il tuo feedback su questo aggiornamento. I tuoi pensieri influenzeranno direttamente i perfezionamenti futuri, garantendo che la nostra piattaforma sia sempre allineata alle tue esigenze. Tieni d&#39;occhio il modulo di feedback in Marketo Measure.
+
+>[!MORELIKETHIS]
+>
+>* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [Criterio di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+

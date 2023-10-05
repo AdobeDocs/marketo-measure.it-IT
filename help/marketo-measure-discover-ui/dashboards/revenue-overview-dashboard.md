@@ -2,9 +2,10 @@
 description: Dashboard panoramica ricavi - [!DNL Marketo Measure] - Prodotto
 title: Dashboard panoramica ricavi
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
+source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -59,9 +60,9 @@ Questo grafico a torta visualizza in modo chiaro la copertura dell’attribuzion
 
 Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
-* Modello di attribuzione
 * Data (in base alla data di chiusura)
 
 >[!MORELIKETHIS]
 >
->[Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [Criterio di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
