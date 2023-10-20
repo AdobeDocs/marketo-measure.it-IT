@@ -4,9 +4,9 @@ description: Integrazione linkedIn - [!DNL Marketo Measure] - Documentazione del
 title: Integrazione linkedIn
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2644'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Lead Gen Forms: grazie all&#39;integrazione con LinkedIn Lead Gen Forms, Marketo
 
 ## Disponibilità {#availability}
 
-Disponibile per tutti i clienti.
+Disponibile per tutti gli utenti.
 
 ## Requisiti {#requirements}
 
@@ -127,6 +127,12 @@ Creative D : Share 234
 
 ## Come Funziona: Lead Gen Forms {#how-it-works-lead-gen-forms}
 
+**[!DNL LinkedIn's]Requisiti univoci di assegnazione tag automatica**
+
+[!DNL Marketo Measure] può aiutare a tenere traccia di [!DNL LinkedIn] prestazioni della campagna assegnando tag automatici alle pagine di destinazione.
+
+[!DNL Marketo Measure] eseguirà la ricerca di creativi con un’unica condivisione LinkedIn e aggiungerà un `?_bl={creativeId}` alla fine di esso.
+
 **Il processo**
 
 Da a [!DNL LinkedIn's] API del modulo di annunci e API di risposta del modulo di annunci, siamo in grado di raccogliere i dati di invio del modulo per un account di annuncio e associare l’indirizzo e-mail a un lead dal sistema di gestione delle relazioni con i clienti o da Marketo.
@@ -162,95 +168,99 @@ Una volta [!DNL Marketo Measure] ha applicato correttamente i tag alla pagina di
  </colgroup> 
  <tbody> 
   <tr> 
-   <th>Campo punto di contatto</th> 
+   <th style="width:30%">Campo punto di contatto</th> 
    <th>Valore di esempio</th> 
   </tr> 
   <tr> 
-   <td><p>ID annuncio </p></td> 
-   <td><p>84186224 </p></td> 
+   <td>ID annuncio</td>
+   <td>84186224</td>
   </tr> 
   <tr> 
-   <td><p>Contenuto annuncio </p></td> 
-   <td><p>copy-1-image-2-man Il 95% degli esperti di marketing #B2B considera la strategia di creazione della domanda un successo. Ulteriori informazioni: [!DNL https]://lnkd.in/jgdi50vKrgv</p></td> 
+   <td>Contenuto annuncio</td>
+   <td>copy-1-image-2-man Il 95% degli esperti di marketing #B2B considera la strategia di creazione della domanda un successo. Ulteriori informazioni: [!DNL https]://lnkd.in/jgdi50vKrgv</td>
   </tr> 
   <tr> 
-   <td><p>ID gruppo di annunci </p></td> 
-   <td><p>(vuoto) </p></td> 
+   <td>ID gruppo di annunci</td>
+   <td>(vuoto)</td>
   </tr> 
   <tr> 
-   <td><p>Nome gruppo di annunci </p></td> 
-   <td><p>(vuoto) </p></td> 
+   <td>Nome gruppo di annunci</td>
+   <td>(vuoto)</td>
   </tr> 
   <tr> 
-   <td><p>ID campagna pubblicitaria </p></td> 
-   <td><p>138949954 </p></td> 
+   <td>ID campagna pubblicitaria</td>
+   <td>138949954</td>
   </tr> 
   <tr> 
-   <td><p>Nome campagna pubblicitaria </p></td> 
-   <td><p>Account SU - COM - Abilità della domanda </p></td> 
+   <td>Nome campagna pubblicitaria</td>
+   <td>Account SU - COM - Abilità della domanda</td>
   </tr> 
   <tr> 
-   <td><p>URL di destinazione dell’annuncio </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217 </p></td> 
+   <td>URL di destinazione dell’annuncio <b>*</b></td>
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
   </tr> 
   <tr> 
-   <td><p>URL modulo </p></td> 
-   <td><p>info.bizible.com/demo </p></td> 
+   <td>URL modulo</td> 
+   <td>info.bizible.com/demo</td> 
   </tr> 
   <tr> 
-   <td><p>URL modulo - Non elaborato </p></td> 
-   <td><p>info.bizible.com/demo </p></td> 
+   <td>URL modulo - Non elaborato</td> 
+   <td>info.bizible.com/demo</td> 
   </tr> 
   <tr> 
-   <td><p>ID parola chiave </p></td> 
-   <td><p>(vuoto) </p></td> 
+   <td>ID parola chiave</td> 
+   <td>(vuoto)</td> 
   </tr> 
   <tr> 
-   <td><p>Tipo di corrispondenza parole chiave </p></td> 
-   <td><p>(vuoto) </p></td> 
+   <td>Tipo di corrispondenza parole chiave</td> 
+   <td>(vuoto)</td> 
   </tr> 
   <tr> 
-   <td><p>Pagina di destinazione </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders </p></td> 
+   <td>Pagina di destinazione</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td> 
   </tr> 
   <tr> 
-   <td><p>Pagina di destinazione - Raw </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217 </p></td> 
+   <td>Pagina di destinazione - Raw</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
   </tr> 
   <tr> 
-   <td><p>Canale di marketing </p></td> 
-   <td><p>Social a pagamento </p></td> 
+   <td>Canale di marketing</td> 
+   <td>Social a pagamento</td> 
   </tr> 
   <tr> 
-   <td><p>Canale di marketing - Percorso </p></td> 
-   <td><p>Social a pagamento.LinkedIn </p></td> 
+   <td>Canale di marketing - Percorso</td> 
+   <td>Social a pagamento.LinkedIn</td> 
   </tr> 
   <tr> 
-   <td><p>Medium </p></td> 
-   <td><p>"cpc" o "Modulo generazione lead"</p></td> 
+   <td>Medium</td> 
+   <td>"cpc" o "Modulo generazione lead"</td> 
   </tr> 
   <tr> 
-   <td><p>Pagina referrer </p></td> 
-   <td><p>www.linkedin.com/ </p></td> 
+   <td>Pagina referrer</td> 
+   <td>www.linkedin.com/</td> 
   </tr> 
   <tr> 
-   <td><p>Pagina referrer - Raw </p></td> 
-   <td><p>www.linkedin.com/ </p></td> 
+   <td>Pagina referrer - Raw</td> 
+   <td>www.linkedin.com/</td> 
   </tr> 
   <tr> 
-   <td><p>Frase di ricerca </p></td> 
-   <td><p>(vuoto) </p></td> 
+   <td>Frase di ricerca</td> 
+   <td>(vuoto)</td> 
   </tr> 
   <tr> 
-   <td><p>Tipo di punto di contatto </p></td> 
-   <td><p>Modulo web </p></td> 
+   <td>Tipo di punto di contatto</td> 
+   <td>Modulo web</td>
   </tr> 
   <tr> 
-   <td><p>Sorgente punto di contatto </p></td> 
-   <td><p>LinkedIn </p></td> 
+   <td>Sorgente punto di contatto</td>
+   <td>LinkedIn</td>
   </tr> 
  </tbody> 
 </table>
+
+**&#42;** _Il campo &quot;URL di destinazione dell’annuncio&quot; è compilato solo per Contenuto sponsorizzato. Non è compilata per la generazione di lead Forms._
+
+<br>
 
 ## Costi {#costs}
 
