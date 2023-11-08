@@ -4,7 +4,7 @@ description: "[!DNL Marketo Measure] Elenco risorse - [!DNL Marketo Measure] - D
 title: "[!DNL Marketo Measure] Elenco risorse"
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 * [Configurazione canale offline](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 * [Cosa sono i parametri UTM?](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
 * [Best practice UTM](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
-* [Sincronizzazione delle campagne SFDC con i punti di contatto dell’acquirente](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
+* [Sincronizzazione delle campagne SFDC con i punti di contatto dell’acquirente](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
 * [Caricamento delle spese di marketing](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 * [Riconnetti account annuncio](/help/api-connections/utilizing-marketo-measures-api-connections/reauthorizing-connected-accounts.md)
 * [Aggiunta [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
