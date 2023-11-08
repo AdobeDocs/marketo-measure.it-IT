@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] Installazione e configurazione dei pacchett
 title: "[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione dei pacchetti"
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -48,16 +48,6 @@ Dopo aver completato l&#39;installazione, è possibile aggiornare [[!DNL Salesfo
 >
 >Leggi informazioni su [!DNL Marketo Measure] Set di autorizzazioni creati e [come verranno utilizzati](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
 
-## Installa [!DNL Marketo Measure] Pacchetto dashboard {#install-marketo-measure-dashboard-package}
-
-Il [!UICONTROL Dashboard] Il pacchetto di estensione contiene tre dashboard predefiniti. È consigliabile installare [!UICONTROL within] Produzione per tutti gli utenti.
-
-1. Installare il pacchetto da [[!DNL Salesforce] Appexchange](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}.
-
-1. Seleziona **[!UICONTROL Install for All Users]**.
-
-   ![](assets/marketo-measure-salesforce-package-installation-and-set-up-3.png)
-
 ## Creazione di un [!DNL Marketo Measure] Profilo e utente {#creating-a-marketo-measure-profile-and-user}
 
 [!DNL Marketo Measure] invia e riceve dati tramite una connessione [!DNL Salesforce] utente all&#39;interno di [!DNL Marketo Measure] app.
@@ -98,3 +88,7 @@ Passaggio 4: accedere al [!DNL Marketo Measure] Account e autorizzazione [!DNL S
 1. Seleziona **[!UICONTROL Connections]** all&#39;interno del **[!UICONTROL Integrations]** raggruppamento.
 
 1. Fare clic sull&#39;icona a destra della connessione corrente [!DNL Salesforce] e seleziona per **Autorizza di nuovo con la produzione**. Accedere nuovamente con le nuove credenziali utente (se richieste).
+
+>[!MORELIKETHIS]
+>
+>[Installazione di Adobe Admin Console](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}
