@@ -4,9 +4,9 @@ description: "[!DNL Microsoft Dynamics] Guida all’installazione di CRM - Marke
 title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
+source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Per la connessione e l’autenticazione, [!DNL Marketo Measure] supporta le segu
 
 ![](assets/3.png)
 
-## [!DNL Marketo Measure] Autorizzazioni utente {#marketo-measure-user-permissions}
+## Creazione di un [!DNL Marketo Measure] Utente {#creating-a-marketo-measure-user}
 
-Si consiglia di creare un [!DNL Marketo Measure] Utente in Dynamics per consentire a di esportare e importare dati tramite per evitare problemi con altri utenti nel CRM. Prendi nota del nome utente e della password, nonché dell’URL dell’endpoint, in quanto verranno utilizzati durante la creazione di [!DNL Marketo Measure] account.
+È consigliabile creare un utente Marketo Measure dedicato come &quot;utente applicazione&quot; all’interno di Dynamics per esportare e importare dati tramite al fine di evitare problemi con altri utenti nel CRM. Prendi nota del nome utente e della password, nonché dell’URL dell’endpoint, in quanto verranno utilizzati durante la creazione di [!DNL Marketo Measure] account.
 
 ## Ruoli di sicurezza {#security-roles}
 
