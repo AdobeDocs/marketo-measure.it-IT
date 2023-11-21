@@ -4,7 +4,7 @@ title: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement'
 hide: true
 hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: 3725ef14f90269ebdada1d81692f3b7283e6ec6e
+source-git-commit: 89b50552455dbd4c9b60d101eaf6e1b0ff22c0c4
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 18%
@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## Oggetto entità {#entity-object}
 
-<table>
+<table style="table-layout:auto">
   <tr>
     <th>Classe XDM</th>
     <th>Gruppo di campi XDM</th>
@@ -1051,7 +1051,7 @@ ht-degree: 18%
 
 ## Tipo di ExperienceEvent supportato {#experienceevent-type-supported}
 
-<table>
+<table style="table-layout:auto">
   <tr>
     <th>Tipo di evento</th>
     <th>Tipo di evento XDM</th>
