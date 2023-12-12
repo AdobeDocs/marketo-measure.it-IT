@@ -4,9 +4,9 @@ description: Migrazione dalla sandbox Salesforce alla produzione - [!DNL Marketo
 title: Migrazione dalla sandbox Salesforce alla produzione
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
+source-git-commit: ad658a513b01dc7a51299abcb7313ff1877e49f3
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Se hai scelto di testare [!DNL Marketo Measure] in un [!DNL Salesforce] Ambiente sandbox, segui queste istruzioni per migrare alla produzione quando sei pronto. Le istruzioni seguenti presuppongono che tu abbia già scaricato [!DNL Marketo Measure] nell’organizzazione Sandbox, ha eseguito i test necessari e è pronto per eseguire il push [!DNL Marketo Measure] alla produzione.
 
-## Passaggio 1: installare [!DNL Marketo Measure] Pacchetti nella tua produzione [!DNL Salesforce] Istanza {#install-marketo-measure-packages-into-your-production-salesforce-instance}
+## Passaggio 1: installare [!DNL Marketo Measure] Pacchetto nella tua produzione [!DNL Salesforce] Istanza
 
-* Installare i due [!DNL Marketo Measure] pacchetti in Produzione con &quot;[!UICONTROL All Users]&quot; impostazione
+* Installare [!DNL Marketo Measure] in produzione con il software &quot;[!UICONTROL All Users]&quot; impostazione
 
    * [Pacchetto base](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
 
@@ -41,7 +41,7 @@ Se hai scelto di testare [!DNL Marketo Measure] in un [!DNL Salesforce] Ambiente
 * Accedi a [!DNL Marketo Measure] applicazione all&#39;indirizzo experience.adobe.com/marketo-measure
 * Accedi a [!UICONTROL My Account] >[!UICONTROL Settings] > [!UICONTROL Connections]
 * Una volta eliminata correttamente la connessione Sandbox, questa scompare dalla pagina; in caso contrario la connessione rimane presente e lo stato è &quot;Eliminazione in corso&quot;
-* Clic &quot;[!UICONTROL Set up New CRM connection]&quot;
+* Fai clic su &quot;[!UICONTROL Set up New CRM connection]&quot;
 * Nella sezione &quot;[!UICONTROL Select CRM Connection]&quot; finestra di dialogo modale, fai clic su &quot;[!UICONTROL Connect]&quot; Azione accanto al [!DNL Salesforce] Platform, seleziona la &quot;[!UICONTROL Production]Opzione &quot;
 * Ti verranno richieste le credenziali, assicurati di inserire i dettagli di accesso alla produzione
 
