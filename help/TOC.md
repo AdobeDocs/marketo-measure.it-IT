@@ -3,11 +3,11 @@ cloud: Experience Cloud
 product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
-user-guide-description: "[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda."
-source-git-commit: 89b50552455dbd4c9b60d101eaf6e1b0ff22c0c4
+user-guide-description: '"[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda".'
+source-git-commit: de74e51c023dfae454e51f99f91a3b4df7423ac2
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 4%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -154,6 +154,7 @@ ht-degree: 4%
       + [Nuova guida per Discover Dashboard](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [Dashboard panoramica ricavi](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
       + [Dashboard ricavi attribuiti](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+        [Dashboard di coinvolgimento](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
       + [Dashboard ROI](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
       + [Dashboard Passport](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
       + [Dashboard traffico web](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
