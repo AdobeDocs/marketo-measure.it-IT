@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: '"[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda".'
-source-git-commit: de74e51c023dfae454e51f99f91a3b4df7423ac2
+source-git-commit: fad900c97f25e7d19692fb2b4403b439e479caa1
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
@@ -152,13 +152,16 @@ ht-degree: 1%
    + Dashboard {#dashboards}
       + [Scopri nozioni di base sulla dashboard](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
       + [Nuova guida per Discover Dashboard](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
-      + [Dashboard panoramica ricavi](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
-      + [Dashboard ricavi attribuiti](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
-        [Dashboard di coinvolgimento](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
-      + [Dashboard ROI](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
-      + [Dashboard Passport](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
-      + [Dashboard traffico web](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
       + [Criterio di visibilità dei dati del dashboard](marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md)
+      + [Dashboard ricavi attribuiti](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+      + [Dashboard di coinvolgimento](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
+      + [Dashboard della velocità del lead](marketo-measure-discover-ui/dashboards/lead-velocity-dashboard.md)
+      + [Dashboard velocità opportunità](marketo-measure-discover-ui/dashboards/opportunity-velocity-dashboard.md)
+      + [Dashboard Passport](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
+      + [Dashboard panoramica ricavi](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
+      + [Dashboard ROI](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
+      + [Dashboard traffico web](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
+
    + Dashboard legacy {#legacy-dashboards}
       + [Documentazione del dashboard per Percorso coorte](marketo-measure-discover-ui/legacy-dashboards/cohort-journey-dashboard-documentation.md)
       + [Documentazione di Passport Dashboard](marketo-measure-discover-ui/legacy-dashboards/passport-dashboard-documentation.md)
