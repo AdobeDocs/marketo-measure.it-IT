@@ -4,7 +4,7 @@ title: Panoramica delle autorizzazioni di integrazione
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 9196877384140d60a22012b43ea960017528f4d5
+source-git-commit: 1c3cd5ac9999550003765a9e1ed8d538224fe8a9
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 3%
@@ -33,24 +33,24 @@ Questa guida descrive le autorizzazioni necessarie per un’integrazione perfett
     <td>Dati di sistema B2B    
 </td>
     <td>Marketo Measure sta tracciando:
-    <br>
+    <p>
     <li>Account</li>
-<li>Campaign</li>
-<li>MembroCampagna</li>
-<li>Contatto</li>
-<li>CurrencyConversionRange</li>
-<li>CurrencyStatus</li>
-<li>Eventi</li>
-<li>Cronologia campi (lead, contatto e opportunità)</li>
-<li>Lead</li>
-<li>Opportunità</li>
-<li>OpportunityContactRole</li>
-<li>CronologiaOpportunità</li>
-<li>Attività</li>
-<br>
+    <li>Campaign</li>
+    <li>MembroCampagna</li>
+    <li>Contatto</li>
+    <li>CurrencyConversionRange</li>
+    <li>CurrencyStatus</li>
+    <li>Eventi</li>
+    <li>Cronologia campi (lead, contatto e opportunità)</li>
+    <li>Lead</li>
+    <li>Opportunità</li>
+    <li>OpportunityContactRole</li>
+    <li>CronologiaOpportunità</li>
+    <li>Attività</li>
+<p>
 I punti di contatto creati e altri dati vengono scritti in campi bizzarri personalizzati in Account, Campaign, CampaignMember, Case, Contact, Lead e Opportunity.</td>
     <td><b>Autorizzazioni utente connesso Salesforce (obbligatorio)</b>
-    <br>
+    <p>
     <b>Set Di Autorizzazioni Di Amministratore Marketo Measure Per Utente Dedicato:</b> Consenti all'amministratore SFDC di eseguire operazioni CRUD sul mercato per misurare gli oggetti.
     <br>
     <b>Visualizza e modifica set di autorizzazioni lead convertiti:</b> Questo consente a Marketo Measure di decorare i lead dopo che sono stati convertiti in contatti.
