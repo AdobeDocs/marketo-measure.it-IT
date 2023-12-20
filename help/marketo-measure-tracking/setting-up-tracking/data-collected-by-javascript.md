@@ -2,7 +2,7 @@
 description: Dati raccolti da JavaScript - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Dati raccolti da JavaScript
 feature: Tracking
-source-git-commit: 2be08b96fb9f6d027e80751db64f16a7f2893764
+source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 6%
@@ -49,25 +49,25 @@ Marketo Measure raccoglie i seguenti dati comuni per tutti i tipi di richieste:
     <td>Parametro query</td>
     <td>_biz_u</td>
     <td>stringa</td>
-    <td>ID cookie Bizible</td>
+    <td>ID cookie Bizible.</td>
   </tr>
   <tr>
     <td>Parametro query</td>
     <td>_biz_l</td>
     <td>stringa</td>
-    <td>URL della pagina corrente</td>
+    <td>URL della pagina corrente.</td>
   </tr>
   <tr>
     <td>Parametro query</td>
     <td>_biz_t</td>
     <td>long</td>
-    <td>Timestamp attività</td>
+    <td>Timestamp dell’attività.</td>
   </tr>
   <tr>
     <td>Parametro query</td>
     <td>_biz_i</td>
     <td>stringa</td>
-    <td>Titolo pagina corrente</td>
+    <td>Titolo della pagina corrente.</td>
   </tr>
 </tbody>
 </table>
@@ -104,7 +104,7 @@ Oltre ai dati comuni di cui sopra, bizible.js aggiunge anche dati aggiuntivi a s
     <td></td>
     <td>_biz_c</td>
     <td>stringa</td>
-    <td>Parametro facoltativo. Se questo parametro è presente, indica che il tenant configura bizible.js per attendere il consenso degli utenti prima del tracciamento e che bizible.js ha ricevuto il consenso degli utenti per essere tracciato.</td>
+    <td>Parametro facoltativo. Se questo parametro è presente, indica che il tenant configura bizible.js per attendere il consenso dell’utente prima del tracciamento e che bizible.js ha ricevuto il consenso dell’utente per essere tracciato.</td>
   </tr>
   <tr>
     <td>Invii modulo</td>
@@ -118,7 +118,7 @@ Oltre ai dati comuni di cui sopra, bizible.js aggiunge anche dati aggiuntivi a s
     <td>/u</td>
     <td>mapType</td>
     <td>enum</td>
-    <td>Che tipo di mappatura ID utente è stato rilevato bizible.js (ID Marketo munchkin e ECID Adobe)</td>
+    <td>Che tipo di mappatura ID utente è stato rilevato bizible.js (ID Marketo Munchkin e ECID Adobe)</td>
   </tr>
   <tr>
     <td></td>
