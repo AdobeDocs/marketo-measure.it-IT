@@ -1,19 +1,17 @@
 ---
 description: '[!DNL Marketo Measure] Guida all’implementazione di Ultimate: [!DNL Marketo Measure] - Documentazione del prodotto'
 title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
-hide: true
-hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: a1838bec06d1a626bb282f8e7d26814840f860a7
+source-git-commit: 041079d08d8e1993ecc31368c443a9a6fe3a8336
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure] Guida all’implementazione di Ultimate {#marketo-measure-ultimate-implementation-guide}
 
-INTRODUZIONE FRASE
+Questo articolo funge da guida all’implementazione per Marketo Measure Ultimate e fornisce passaggi chiari e informazioni approfondite per garantire un’integrazione e un utilizzo corretti.
 
 ## Differenze principali nell’utilizzo di Ultimate rispetto ai livelli standard {#main-differences-when-using-ultimate-over-standard-tiers}
 
@@ -84,7 +82,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
    >* Se mappi un tipo di schema a un altro identico, l’operazione verrà eseguita automaticamente.
    >* Potete anche importare la mappatura da un altro flusso nel sistema.
    >* È possibile mappare un campo di origine a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
-   >* Puoi creare campi calcolati (ad esempio, funzioni di mappatura della preparazione dati).
+   >* È possibile creare campi calcolati ([Funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
 
    >[!CAUTION]
    >
@@ -107,8 +105,6 @@ Origini > Pagina Flussi dati per controllare lo stato dei flussi dati
 * Per visualizzare gli errori del flusso di dati, seleziona un flusso di dati, scegli un’esecuzione del flusso di dati e fai clic su &quot;Anteprima diagnostica errori&quot;.
 
 ## Ispezione dei dati {#data-inspection}
-
-ExL: Requisiti di integrità dei dati di Marketo Measure Ultimate Questo documento include i campi obbligatori per ogni XDM e le query di ispezione. Sarà pubblicato in ExL. - È GIÀ TAGGATO IN ALTO - POST DI NUOVO???
 
 Opzione 1: per eseguire le query direttamente dall’interfaccia utente, accedi alla scheda Query in Gestione dati.
 
