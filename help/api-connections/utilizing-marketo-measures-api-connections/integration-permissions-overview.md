@@ -4,7 +4,7 @@ title: Panoramica delle autorizzazioni di integrazione
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
+source-git-commit: 9196877384140d60a22012b43ea960017528f4d5
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 3%
@@ -18,13 +18,13 @@ Questa guida descrive le autorizzazioni necessarie per un’integrazione perfett
 <table>
 <thead>
   <tr>
-    <th>Integrazione</th>
-    <th>Tipo di dati
+    <th style="width:10%">Integrazione</th>
+    <th style="width:20%">Tipo di dati
     <li>Dati interazione web</li>
     <li>Dati di sistema B2B</li>
     <li>Dati della piattaforma dell’annuncio</li></th>
-    <th>Cosa tracciamo</th>
-    <th>Requisiti delle autorizzazioni</th>
+    <th style="width:30%">Cosa tracciamo</th>
+    <th style="width:40%">Requisiti delle autorizzazioni</th>
   </tr>
 </thead>
 <tbody>
