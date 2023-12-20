@@ -4,7 +4,7 @@ title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
 hide: true
 hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: d8c1962aaf1830970c4cbde4385d05ca4ad3139e
+source-git-commit: a1838bec06d1a626bb282f8e7d26814840f860a7
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
@@ -32,13 +32,13 @@ AEP verrà fornito agli utenti Ultimate. Se dispongono già di AEP, non verrà e
 
 * La versione di AEP fornita includerà tutti i connettori di origine, la modellazione dati dello schema, i set di dati, il servizio di query ad hoc e una destinazione solo per Marketo Measure.
 
-Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md).
+Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md){target="_blank"}.
 
 ## Schemi e set di dati {#schemas-and-datasets}
 
 >[!NOTE]
 >
->Estrai [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema) per una panoramica di schemi, classi e gruppi di campi.
+>Estrai [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
 
 **Schema XDM = Classe + Gruppo di campi schema&#42;**
 
@@ -49,13 +49,13 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html): tutti i dati acquisiti correttamente in AEP vengono mantenuti all’interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
+[Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all’interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
 ## Creazione di uno schema {#creating-a-schema}
 
 È consigliabile utilizzare un’utility di generazione automatica per creare 10 schemi B2B standard.
 
-* Passaggi per scaricare e configurare l&#39;utility [si trova qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility).
+* Passaggi per scaricare e configurare l&#39;utility [si trova qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
 Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origini.
 
@@ -69,7 +69,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 
 ## Flussi di dati {#dataflows}
 
-[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html)
+[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **Passaggi per creare un flusso di dati:**
 
@@ -93,7 +93,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 
    >[!NOTE]
    >
-   >[Requisiti di integrità dei dati di Marketo Measure Ultimate](help/marketo-measure-ultimate/data-integrity-requirement.md)
+   >[Requisiti di integrità dei dati di Marketo Measure Ultimate](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}
 
 1. Imposta una cadenza di caricamento dati.
 1. Revisione e completamento.
@@ -114,7 +114,7 @@ Opzione 1: per eseguire le query direttamente dall’interfaccia utente, accedi 
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html) (più veloce e affidabile)
+Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} (più veloce e affidabile).
 
 ## Attiva set di dati per Marketo Measure {#activate-dataset-for-marketo-measure}
 
