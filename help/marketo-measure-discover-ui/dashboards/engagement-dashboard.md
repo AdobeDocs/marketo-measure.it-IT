@@ -2,7 +2,7 @@
 description: Dashboard di coinvolgimento - [!DNL Marketo Measure] - Prodotto
 title: Dashboard di coinvolgimento
 feature: Reporting
-source-git-commit: 96a10a202e72f43c45041a4cb37a244d1722db17
+source-git-commit: b037a4a1be5c7d089cc94590caf91be05af4dd22
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Risposte alle domande della dashboard:
 * Persone toccate: il numero totale di persone che hanno punti di contatto.
 * Punti di contatto per persona: numero medio di punti di contatto per persona che è stata toccata.
 
-## Punti di contatto e persone toccate nel tempo {#touchpoints-and-people-touched-over-time}
+### Punti di contatto e persone toccate nel tempo {#touchpoints-and-people-touched-over-time}
 
 Il grafico a barre delle serie temporali mostra il numero di punti di contatto, persone toccate e punti di contatto per persona per ogni mese, trimestre e anno.
 
@@ -46,7 +46,7 @@ Risposte alle domande del grafico:
 
 ![](assets/engagement-dashboard-1.png)
 
-## Punti di contatto/Persone toccate dal canale {#touchpoints-people-touched-by-channel}
+### Punti di contatto/Persone toccate dal canale {#touchpoints-people-touched-by-channel}
 
 Grafico a barre che mostra i punti di contatto o le persone toccate segmentati per canale/sottocanale/campagna.
 
