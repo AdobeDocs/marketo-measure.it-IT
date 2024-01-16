@@ -3,7 +3,7 @@ description: Note sulla versione corrente - [!DNL Marketo Measure] - Documentazi
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
+source-git-commit: d1fffd4848452f0e1b2abfaf89c2a10fba123036
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Il nuovo set di dashboard predefiniti dovrebbe essere introdotto gradualmente, p
 
 >[!NOTE]
 >
->Anche se le dashboard correnti diventeranno obsolete entro metà gennaio 2024, fino ad allora puoi utilizzare entrambe le versioni, garantendo una transizione senza intoppi.
+>Anche se le dashboard correnti diventeranno obsolete entro marzo 2024, fino a quel momento puoi utilizzare entrambe le versioni, garantendo una transizione senza intoppi.
 
 **Rimozione dati indirizzo IP**
 
@@ -96,7 +96,7 @@ Il nuovo set di dashboard predefiniti dovrebbe essere introdotto gradualmente, a
 
 >[!NOTE]
 >
->Anche se le dashboard correnti diventeranno obsolete entro metà gennaio 2024, fino ad allora puoi utilizzare entrambe le versioni, garantendo una transizione senza intoppi.
+>Anche se le dashboard correnti diventeranno obsolete entro marzo 2024, fino a quel momento puoi utilizzare entrambe le versioni, garantendo una transizione senza intoppi.
 
 ### Obsoleti {#deprecations}
 
