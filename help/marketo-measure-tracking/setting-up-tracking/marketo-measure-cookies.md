@@ -4,16 +4,20 @@ description: "[!DNL Marketo Measure] Cookie - [!DNL Marketo Measure] - Documenta
 title: "[!DNL Marketo Measure] Cookie"
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-source-git-commit: 69304dddf3569cd92c95a50e9a2e346acdad0f43
+source-git-commit: 327daa56fe1b346d067f2e0fb39006b91e6849ee
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 6%
+source-wordcount: '397'
+ht-degree: 4%
 
 ---
 
 # Cookie di Marketo Measure {#marketo-measure-cookies}
 
 Scopri i vari [!DNL Marketo Measure] Cookie caricati sul sito quando si applica il [!DNL Marketo Measure] JavaScript per le pagine di destinazione. Queste informazioni possono essere utili al team di sviluppo web durante l’implementazione.
+
+>[!IMPORTANT]
+>
+>A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annunciata rimozione dei cookie di terze parti nel terzo trimestre 2024 da parte di Google Chrome segna effettivamente la fine di questa forma di tracciamento. Di conseguenza, Adobe renderà obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, Monitoraggio tra domini diversi e Attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimarranno disponibili per i clienti Adobe.
 
 <table>
 <thead>
