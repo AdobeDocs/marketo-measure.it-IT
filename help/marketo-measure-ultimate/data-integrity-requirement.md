@@ -3,10 +3,10 @@ description: '[!DNL Marketo Measure] Requisiti di integrità dei dati più avanz
 title: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 034c4639e6054118052524c457995f4caf7a4bf2
+source-git-commit: e1c401ae41b5aeedf0c3c8b75a82f680a0dcbefb
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 18%
+source-wordcount: '1493'
+ht-degree: 17%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 18%
     <th>Percorso XDM</th>
     <th>Tipo XDM</th>
     <th>Campo origine dati</th>
-    <th>Obbligatorio?</th>
+    <th>Obbligatorio</th>
     <th>Note</th>
   </tr>
   <tbody>
@@ -407,7 +407,7 @@ ht-degree: 18%
       <td>b2b.personStatus</td>
       <td>stringa</td>
       <td>Stato</td>
-      <td>Sì solo per il tipo di persona lead</td>
+      <td><font color="red">Sì solo per il tipo di persona lead</font></td>
       <td>Richiesto solo se b2b.personType è "Lead"</td>
     </tr>
     <tr>
@@ -431,7 +431,7 @@ ht-degree: 18%
       <td>b2b.isConverted</td>
       <td>booleano</td>
       <td>IsConverted</td>
-      <td>Sì solo per il tipo di persona lead</td>
+      <td><font color="red">Sì solo per il tipo di persona lead</font></td>
       <td>Richiesto solo se b2b.personType è "Lead"</td>
     </tr>
     <tr>
@@ -621,7 +621,7 @@ ht-degree: 18%
     <tr>
       <td></td>
       <td>expectedCloseDate</td>
-      <td>date</td>
+      <td>data</td>
       <td>CloseDate</td>
       <td>Sì</td>
       <td></td>
@@ -855,7 +855,7 @@ ht-degree: 18%
     <tr>
       <td></td>
       <td>endDate</td>
-      <td>date</td>
+      <td>data</td>
       <td>NextStartDate</td>
       <td>Sì</td>
       <td></td>
@@ -863,7 +863,7 @@ ht-degree: 18%
     <tr>
       <td></td>
       <td>startDate</td>
-      <td>date</td>
+      <td>data</td>
       <td>DataInizio</td>
       <td>Sì</td>
       <td></td>
@@ -896,7 +896,7 @@ ht-degree: 18%
     <th>Percorso XDM</th>
     <th>Tipo XDM</th>
     <th>Campo origine dati</th>
-    <th>Obbligatorio?</th>
+    <th>Obbligatorio</th>
     <th>Note</th>
   </tr>
   <tbody>
