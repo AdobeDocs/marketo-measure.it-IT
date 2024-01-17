@@ -2,9 +2,9 @@
 description: '[!DNL Marketo Measure] Guida all’implementazione di Ultimate: [!DNL Marketo Measure] - Documentazione del prodotto'
 title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
 feature: Integration, Tracking, Attribution
-source-git-commit: 041079d08d8e1993ecc31368c443a9a6fe3a8336
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,11 @@ Non importiamo automaticamente gli stadi dai dati utente, pertanto tutti gli sta
 ![](assets/marketo-measure-ultimate-implementation-guide-5.png)
 
 Se le fasi non sono mappate, il sistema non funzionerà perché non ci sarà nessun posto dove spostare i dati.
+
+Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+
+* b2b.personStatus
+* b2b.isConverted
 
 **Regole membro della campagna:**
 

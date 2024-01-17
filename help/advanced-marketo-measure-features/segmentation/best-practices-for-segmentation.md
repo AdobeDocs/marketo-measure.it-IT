@@ -3,9 +3,9 @@ description: Best practice per la segmentazione - [!DNL Marketo Measure] - Docum
 title: Best practice per la segmentazione
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ Per definire la segmentazione per la prima volta o rivedere solo la segmentazion
 * Allinea il nome del segmento alla nomenclatura dell’organizzazione, ovvero categoria = nome filtro, segmento = valore filtro
 * Non utilizzare i campi formula nelle regole
 * Quando possibile, crea la segmentazione sia sul lead/contatto che sull’opportunità in modo da poterla utilizzare nell’intero funnel
+   * Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+      * b2b.personStatus
+      * b2b.isConverted
    * Non tutte le categorie di segmenti saranno allineate in tutto il funnel
       * Ad esempio, una categoria di segmenti di &quot;Tipo di opportunità&quot; non è correlata ai lead, tuttavia un segmento correlato a &quot;Area&quot; è probabilmente una categoria che può essere definita in tutto il funnel
 * Pensa al modo in cui attualmente desideri suddividere i dati, sia che si tratti di un elemento di gestione delle relazioni con i clienti o di uno strumento di business intelligence. Considera la possibilità di creare questo elemento come un segmento in [!DNL Marketo Measure] in modo da poter avere lo stesso reporting in Discover

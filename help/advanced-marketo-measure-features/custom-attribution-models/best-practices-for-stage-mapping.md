@@ -3,9 +3,9 @@ description: Best practice per la mappatura degli stadi - [!DNL Marketo Measure]
 title: Best practice per la mappatura degli staging
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: 3bad77a72c0dea6caf0daadbb594f10f791af715
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ La sezione Mappatura fase del [!DNL Marketo Measure] conto delinea le fasi che [
 
 Nella sezione Mappatura area di visualizzazione della [!DNL Marketo Measure] dell’istanza, visualizzerai le fasi attiva e inattiva dal tuo sistema CRM. Ordina tutte le fasi al meglio delle tue capacità in base a come è oggi il funnel.
 
-Una funzione aggiuntiva gestita in questa sezione sono gli Stadi funnel, che consentono di aggiungere stadi al funnel senza applicare l’attribuzione. Gli stadi funnel verranno tracciati come punti di contatto e popolati nel campo Posizioni punto di contatto nel CRM. Questi stadi funnel saranno anche rappresentati in varie bacheche di percorso in [!DNL Marketo Measure] Scopri.
+Un’ulteriore funzione gestita in questa sezione è Stadi funnel, che consente di aggiungere stadi al funnel senza applicare l’attribuzione. Gli stadi funnel verranno tracciati come punti di contatto e popolati nel campo Posizioni punto di contatto nel CRM. Questi stadi funnel saranno anche rappresentati in varie bacheche di percorso in [!DNL Marketo Measure] Scopri.
 
 ## Best practice {#best-practices}
 
@@ -31,6 +31,9 @@ Sia che stiate valutando la mappatura dello staging per la prima volta o semplic
    * Un campo booleano è la best practice consigliata
 * La sezione Fase lead o fase contatto è divisa in Perso, Aperto e Convertito; verificare che le fasi siano nella sezione relativa alla fase appropriata
    * Se una fase si trova nella sezione di fase errata, è possibile che si verifichino errori [!DNL Marketo Measure] dati
+   * Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+      * b2b.personStatus
+      * b2b.isConverted
 * La sezione relativa alla fase Opportunità è divisa in Persa, Aperta e Vinta; verificare che le fasi si trovino nella sezione corrispondente
    * Se una fase si trova nella sezione di fase errata, è possibile che si verifichino errori [!DNL Marketo Measure] dati sui ricavi o sulla pipeline
 * Evita di usare nomi di fase duplicati (il nostro sistema li rileverà e ne rimuoverà automaticamente uno).
