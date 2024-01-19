@@ -4,9 +4,9 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 3165d821000a1369ed6fdff3f786ae6632ea39f4
+source-git-commit: c1fc48028014160635c454138eb4ad8efb02c74a
 workflow-type: tm+mt
-source-wordcount: '20697'
+source-wordcount: '20757'
 ht-degree: 3%
 
 ---
@@ -147,8 +147,23 @@ Account importati dal sistema di origine.
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
       <td>01/01/2020:01:00,000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> SETTORE</td>
+      <td>varchar</td>
+      <td>Attività principale dell’account.</td>
+      <td>Retail, telecomunicazioni</td>
+    </tr>
+    <tr>
+      <td><b>∗</b> PAESE</td>
+      <td>varchar</td>
+      <td>Parte del paese dell’indirizzo dell’account.</td>
+      <td>USA, Canada</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>Disponibile solo in Marketo Measure Ultimate</i>
+<p>
 
 ### BIZ_ACCOUNT_TO_EMAIL {#biz-account-to-emails}
 
@@ -169,74 +184,34 @@ Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli acc
       <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13,000</td>
     </tr>
     <tr>
-      <td>
-        <p>ACCOUNT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>ID dell’account del sistema di origine.</p>
-      </td>
-      <td>
-        <p>0013100001phrBAAAY</p>
-      </td>
+      <td>ACCOUNT_ID</td>
+      <td>varchar</td>
+      <td>ID dell’account del sistema di origine.</td>
+      <td>0013100001phrBAAAY</td>
     </tr>
     <tr>
-      <td>
-        <p>EMAIL</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>Indirizzo e-mail mappato sull’account, tramite le relazioni di contatto o la mappatura lead-account.</p>
-      </td>
-      <td>
-        <p>person@adobe.com</p>
-      </td>
+      <td>EMAIL</td>
+      <td>varchar</td>
+      <td>Indirizzo e-mail mappato sull’account, tramite le relazioni di contatto o la mappatura lead-account.</td>
+      <td>person@adobe.com</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>Data dell’ultima modifica dell’account, dal sistema di origine.</p>
-      </td>
-      <td>
-        <p>23/08/2018:53:39,000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>Data dell’ultima modifica dell’account, dal sistema di origine.</td>
+      <td>23/08/2018:53:39,000</td>
     </tr>
     <tr>
-      <td>
-        <p>DATA_CREAZIONE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>La data di creazione dell’account, dal sistema di origine.</p>
-      </td>
-      <td>
-        <p>22/08/2018:01:32,000</p>
-      </td>
+      <td>DATA_CREAZIONE</td>
+      <td>timestamp_ntz</td>
+      <td>La data di creazione dell’account, dal sistema di origine.</td>
+      <td>22/08/2018:01:32,000</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>booleano</p>
-      </td>
-      <td>
-        <p>Indica se il record viene considerato eliminato o meno.</p>
-      </td>
-      <td>
-        <p>falso</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>booleano</td>
+      <td>Indica se il record viene considerato eliminato o meno.</td>
+      <td>falso</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -272,58 +247,29 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
     <th><strong>Dati di esempio</strong></th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>L'ID attività dal sistema di origine.</p>
-      </td>
-      <td>
-        <p>1678625515</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>L'ID attività dal sistema di origine.</td>
+      <td>1678625515</td>
     </tr>
     <tr>
-      <td>
-        <p>LEAD_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>LEAD_ID</td>
+      <td>varchar</td>
       <td>ID del lead associato all’attività.</td>
-      <td>
-        <p>15530482</p>
-      </td>
+      <td>15530482</td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
+      <td>ID del contatto associato all’attività.
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>ID del contatto associato all’attività.</p>
-      </td>
-      <td>
-        <p>13792552</p>
-      </td>
+      <td>13792552</td>
     </tr>
     <tr>
-      <td>
-        <p>ACTIVITY_TYPE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>ID per il tipo di attività, dal sistema di origine.</p>
-      </td>
-      <td>
-        <p>104</p>
-      </td>
+      <td>ACTIVITY_TYPE_ID</td>
+      <td>varchar</td>
+      <td>ID per il tipo di attività, dal sistema di origine.</td>
+      <td>104</td>
     </tr>
     <tr>
       <td>NOME_TIPO_ATTIVITÀ</td>
@@ -372,7 +318,7 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>01/01/2020:01:00,000</td>
     </tr>
     <tr>
-      <td>IS_DELETD</td>
+      <td>IS_DELETED</td>
       <td>booleano</td>
       <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>falso</td>
@@ -4388,18 +4334,10 @@ Contatti importati dal sistema di origine.
       <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>numero(38,0)</p>
-      </td>
-      <td>
-        <p>Chiave esterna per la vista Biz_Facts.</p>
-      </td>
-      <td>
-        <p>3263982503087870000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>numero(38,0)</td>
+      <td>Chiave esterna per la vista Biz_Facts.</td>
+      <td>3263982503087870000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -4419,8 +4357,17 @@ Contatti importati dal sistema di origine.
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
       <td>01/01/2020:01:00,000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> JOB_TITLE</td>
+      <td>varchar</td>
+      <td>Qualifica del contatto.</td>
+      <td>Amministratore delegato, Vicepresidente</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>Disponibile solo in Marketo Measure Ultimate</i>
+<p>
 
 ### BIZ_CONVERSION_RATES {#biz-conversion-rates}
 
@@ -10271,8 +10218,17 @@ Opportunità importate dal sistema di origine.
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
       <td>01/01/2020:01:00,000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> TIPO_OPPORTUNITÀ</td>
+      <td>varchar</td>
+      <td>Tipo di opportunità, ad esempio Nuova azienda, Rinnovo e così via.</td>
+      <td>Rinnovo, potenziale cliente</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>Disponibile solo in Marketo Measure Ultimate</i>
+<p>
 
 ### BIZ_OPP_STAGE_TRANSITIONS {#biz-opp-stage-transitions}
 
