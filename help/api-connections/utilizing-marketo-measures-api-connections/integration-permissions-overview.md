@@ -4,10 +4,10 @@ title: Panoramica delle autorizzazioni di integrazione
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 3d4ee7c71ed241c8e3885b4db57168f753dcdf65
+source-git-commit: 95bdfe7c95111b6c6430e2de2b5eef050183fb0b
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 2%
+source-wordcount: '1286'
+ht-degree: 1%
 
 ---
 
@@ -166,38 +166,74 @@ Marketo Measure tiene traccia di account, campagne, gruppi di annunci, annunci, 
   </tr>
   <tr>
     <td>Doppio clic</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dati della piattaforma dell’annuncio</td>
+    <td>Marketo Measure tiene traccia di account, inserzionisti, campagne, pagine di destinazione (personalizzate), annunci, creatività, posizionamenti e siti.</td>
+    <td><li>È necessario specificare l'indirizzo e-mail dell'account Google principale dell'utente</li>
+<li>Autorizzazioni di Campaign Manager necessarie per accedere all’account Campaign Manager 360</li>
+<ul>
+<li>Visualizzare e gestire i report degli inserzionisti DoubleClick</li>
+<li>Visualizzare e gestire campagne pubblicitarie per i manager delle campagne DoubleClick Campaign</li>
+<p>
+    <b>Ambiti</b>
+    <br>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>: vedi l’indirizzo e-mail del tuo account Google principale
+    <p>
+     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>: visualizzare e gestire i report DoubleClick for Advertisers
+    <p>
+     <a href="https://www.googleapis.com/auth/dfatrafficking">https://www.googleapis.com/auth/dfatrafficking</a>: visualizza e gestisci le campagne pubblicitarie display di DoubleClick Campaign Manager (DCM)</td>
   </tr>
   <tr>
     <td>AdWords</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dati della piattaforma dell’annuncio</td>
+    <td>Dell si integra con AdWords per:
+<p>
+<li>Importare dati degli annunci dei clienti</li>
+<li>Importa dati costo annunci cliente</li>
+<li>Aggiornare gli annunci del client aggiungendo parametri URL/aggiornando modelli di tracciamento URL</li>
+<p>
+Marketo Measure tiene traccia di campagne, gruppi di annunci, creatività, collegamenti al sito e parole chiave.</td>
+    <td><li>È necessario specificare l'indirizzo e-mail dell'account Google principale dell'utente</li>
+<p>
+    <b>Ambiti</b>
+    <br>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>: vedi l’indirizzo e-mail del tuo account Google principale</td>
   </tr>
   <tr>
     <td>Bing</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dati della piattaforma dell’annuncio</td>
+    <td>Marketo Measure tiene traccia di account, campagne, gruppi di annunci, creatività e parole chiave.</td>
+    <td><li>L’utente deve concedere l’"accesso offline" tramite il proprio account Microsoft (che consente a Marketo Measure di accedere alle informazioni utente dell’utente finale anche quando non ha effettuato l’accesso). Consulta <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Pagina di Microsoft</a> su come farlo.</li>
+<p>
+    <b>Ambiti</b>
+    <br>
+    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>: gestisci l’accesso ai dati che gli hai concesso l’accesso all’autorizzazione.</td>
   </tr>
   <tr>
     <td>Marketo Engage</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dati di sistema B2B</td>
+    <td>L’integrazione di Marketo consente a Marketo Measure di raccogliere attività, persone, programmi e iscrizioni al programma Marketo. Inoltre, Marketo Measure tiene traccia dei cookie di Marketo (ID Munchkin) allo scopo di collegare le attività web di Marketo ai punti di contatto principali di Marketo Measure, <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">come descritto qui</a>:
+    <p>
+    <i>In seguito all’integrazione di Marketo Measure con Marketo, anche l’ID cookie di Marketo Measure viene mappato e sincronizzato con l’ID di Marketo Munchkin. Questo consente di colmare il divario per attribuire il primo contatto anonimo a una sessione web, anziché attribuire i tocchi FT e LC a un’attività Marketo.</i>
+    </td>
+    <td>Il cliente deve creare un utente API di Marketo Engage dedicato e fornire le credenziali a Marketo Measure. Non è richiesta alcuna configurazione di autorizzazioni aggiuntiva. <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md#configuring-the-integration">Ulteriori informazioni</a>.</td>
   </tr>
   <tr>
     <td>Adobe Analytics</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dati di sistema B2B</td>
+    <td>L’integrazione degli attributi del cliente B2B consente agli utenti di Marketo Measure e Adobe Analytics di arricchire i profili utente di Adobe Analytics con metadati preziosi derivati dal motore di attribuzione Marketo Measure e tramite la sua funzionalità di sincronizzazione con i sistemi CRM (Microsoft Dynamics e Salesforce). <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Ulteriori informazioni</a>.</td>
+    <td>Il cliente deve fornire a Marketo Measure un ID alias e le credenziali del server FTP in una posizione in cui i dati verranno caricati nella propria istanza di Analytics.
+    <p>
+    Prendi nota delle seguenti informazioni, in quanto saranno necessarie per alcuni dei passaggi successivi del processo:
+    <p>
+    <li>L’ID alias, che può essere qualsiasi valore vuoi che sia. Consigliamo "marketomeasure_id"</li>
+    <li>Nome host e credenziali del server FTP (nome utente e password)</li>
+    <p>
+    <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md#configuring-the-integration">Ulteriori informazioni</a></td>
   </tr>
   <tr>
     <td>Javascript Bizible</td>
     <td></td>
-    <td></td>
+    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">Quali dati bizible.js raccoglie</a>.</td>
     <td></td>
   </tr>
 </tbody>
