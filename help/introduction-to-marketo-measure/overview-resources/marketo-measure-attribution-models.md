@@ -4,9 +4,9 @@ description: Modelli di attribuzione Marketo Measure - Marketo Measure - Documen
 title: Modelli di attribuzione Marketo Measure
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: aa12df4d0c77cdc677f78bcab19497806927ec2b
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Le sezioni successive descrivono ogni modello di attribuzione e il modo in cui v
 
 Il modello First Touch si concentra solo sulla prima interazione che un lead ha con la tua organizzazione. Questo modello attribuisce il 100% del credito di attribuzione alla prima volta che il lead viene a conoscenza della tua azienda, il Primo contatto (FT).
 
-Dire Kate visita www.adobe.com per la prima volta tramite un annuncio Adwords e visualizza un whitepaper. Il canale Adwords riceverebbe il 100% del credito di attribuzione da tale opportunità.
+Dire visite di Kate `www.adobe.com` per la prima volta tramite un annuncio Adwords e visualizza un white paper. Il canale Adwords riceverebbe il 100% del credito di attribuzione da tale opportunità.
 
 ![](assets/2.png)
 
@@ -50,19 +50,19 @@ Dire Kate visita www.adobe.com per la prima volta tramite un annuncio Adwords e 
 
 Il modello di creazione di lead attribuisce il 100% del credito di attribuzione al punto di contatto LC, quando un potenziale cliente fornisce le informazioni di contatto e diventa un lead.
 
-Continuando dall&#39;esempio precedente, dopo la prima visita di Kate a www.adobe.com tramite Adwords, Austin visita il sito web tramite un post su Linkedin. Austin compila un modulo e diventa un lead. In questo modello, Linkedin riceverebbe il 100% del credito di attribuzione.
+Continuando dall&#39;esempio precedente, dopo la prima visita di Kate a `www.adobe.com` tramite Adwords, Austin visita il sito web tramite un post su LinkedIn. Austin compila un modulo e diventa un lead. In questo modello, Linkedin riceverebbe il 100% del credito di attribuzione.
 
 ![](assets/3.png)
 
 ## Modelli multi-touch {#multi-touch-models}
 
-I modelli multi-touch vengono utilizzati per cicli di vendita più lunghi e complessi. Questi modelli sono particolarmente utili se diverse persone di un account/azienda sono coinvolte nel percorso dell’acquirente.
+I modelli multi-touch vengono utilizzati per cicli di vendita più lunghi e complessi. Questi modelli sono particolarmente utili se diverse persone di un account/azienda sono coinvolte nel percorso dell&#39;acquirente.
 
 **Modello a forma di U**
 
 Il modello a forma di U si concentra sui punti di contatto FT e LC. In questo modello, il punto di contatto FT e LC ricevono ciascuno il 50% del credito di ricavo.
 
-La prima visita di Kate a www.adobe.com tramite un annuncio pubblicitario di Adwords riceverebbe il 50% del credito di attribuzione. Il restante 50% sarebbe stato attribuito al post di Linkedin che spinse Austin a compilare un modulo e diventare un lead.
+La prima visita di Kate a `www.adobe.com` tramite un annuncio Adwords riceverebbe il 50% del credito di attribuzione. Il restante 50% sarebbe stato attribuito al post di Linkedin che spinse Austin a compilare un modulo e diventare un lead.
 
 ![](assets/4.png)
 
@@ -86,4 +86,4 @@ Dopo la creazione dell&#39;opportunità, Kate, Austin e Hillary decidono di pres
 
 **Modello di attribuzione personalizzato**
 
-Marketo Measure offre anche un modello di attribuzione personalizzata che consente agli utenti di scegliere quali punti di contatto o fasi personalizzate includere nel modello. Inoltre, gli utenti possono controllare la percentuale di credito di attribuzione attribuito a questi punti di contatto e stadi.
+Marketo Measure offre anche un modello di attribuzione personalizzata che consente agli utenti di scegliere quali punti di contatto o fasi personalizzate includere nel modello. Inoltre, gli utenti possono controllare la percentuale di credito di attribuzione attribuito a questi punti di contatto e stadi. Se un’opportunità non ha contatti intermedi dedicati, la percentuale sarà distribuita uniformemente tra le altre posizioni.
