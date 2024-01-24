@@ -3,7 +3,7 @@ description: Note sulla versione corrente - [!DNL Marketo Measure] - Documentazi
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: cc22d6af742de7cc1acd40bc3e8d6f4f9bf93fe1
+source-git-commit: 2e474dfbda67b53dbf643defa383fc1b4c5f0b42
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Il nuovo set di dashboard predefiniti dovrebbe essere introdotto gradualmente, a
 
 <p>
 
-* **Deprecazioni campo Salesforce**
+#### Deprecazioni campo Salesforce {#salesforce-field-deprecations}
 
 Elimineremo gradualmente i nostri processi di esportazione agli oggetti Lead/Contact per semplificare la nostra integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Anche i campi denormalizzati elencati di seguito diventeranno obsoleti, in quanto i clienti possono ottenere gli stessi dati dai loro oggetti punto di contatto. _**La tempistica della rimozione è giugno 2024.**_
 
