@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure] - Documentazi
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: d1fffd4848452f0e1b2abfaf89c2a10fba123036
+source-git-commit: cc22d6af742de7cc1acd40bc3e8d6f4f9bf93fe1
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Il nuovo set di dashboard predefiniti dovrebbe essere introdotto gradualmente, a
 
 Elimineremo gradualmente i nostri processi di esportazione agli oggetti Lead/Contact per semplificare la nostra integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Anche i campi denormalizzati elencati di seguito diventeranno obsoleti, in quanto i clienti possono ottenere gli stessi dati dai loro oggetti punto di contatto. _**La tempistica della rimozione è giugno 2024.**_
 
-<table style="width:300px">
+<table style="width:350px">
 <tbody>
   <tr>
     <td>bizible2__Ad_Campaign_Name_FT__c</td>
@@ -140,6 +140,40 @@ Elimineremo gradualmente i nostri processi di esportazione agli oggetti Lead/Con
   </tr>
 </tbody>
 </table>
+
+I campi che contengono le stesse informazioni sugli oggetti punto di contatto e punto di contatto di attribuzione sono:
+
+* bizible2__Ad_Campaign_Name__c
+* bizible2__Landing_Page__c
+* bizible2__Marketing_Channel__c
+* bizible2__Touchpoint_Date__c
+* bizible2__Touchpoint_Source__c
+
+**Azioni richieste**
+
+* Crea nuovi tipi di rapporto per lead e contatti con o senza punti di contatto.
+
+![](assets/release-notes-2023-1.png)
+
+* Crea rapporti che acquisiscono le funzionalità di qualsiasi rapporto esistente che utilizza i campi rimossi. Come parte di questo processo, è necessario modificare i campi nel rapporto come specificato di seguito:
+
+   * Rimuovi campi Lead/Contatto FT/LC:
+
+![](assets/release-notes-2023-2.png)
+
+* Aggiungi campi punto di contatto:
+
+![](assets/release-notes-2023-3.png)
+
+* Il filtro Posizione punto di contatto e tutti i filtri che utilizzano i campi FT/LC, incluso il campo Data, devono essere aggiornati come segue:
+
+![](assets/release-notes-2023-4.png)
+
+![](assets/release-notes-2023-5.png)
+
+* Eliminare i report preesistenti che utilizzavano i campi rimossi dall&#39;oggetto Lead/Contact per non fare più riferimento a tali campi.
+
+<p>
 
 * **Relativo al pacchetto Dynamics**
 
