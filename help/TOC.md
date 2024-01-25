@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: '"[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda".'
-source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
+source-git-commit: 969cb2b4fb85aeb5c3a3aa21ead3eb5f4ff15ad9
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 1%
       + [Metodologia di mappatura attribuzione](configuration-and-setup/getting-started-with-marketo-measure/attribution-mapping-methodology.md)
       + [Installazione di Adobe Admin Console](configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md)
       + [Differenza tra i punti di contatto dell’acquirente e i punti di contatto di attribuzione dell’acquirente](configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
+      + [Notifiche di errore](configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md)
       + [Spiegazione delle posizioni dei punti di contatto e della generazione tra BT e [!DNL BATs]](configuration-and-setup/getting-started-with-marketo-measure/explanation-of-touchpoint-positions-and-generation-across-bts-and-bats.md)
       + [[!DNL Marketo Measure] Integrazione senza pacchetti CRM](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
    + [!DNL Marketo Measure] e Salesforce {#marketo-measure-and-salesforce}
