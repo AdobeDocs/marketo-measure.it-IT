@@ -4,7 +4,7 @@ title: Notifiche di errore
 hide: true
 hidefromtoc: true
 feature: Fundamentals
-source-git-commit: 656c84090c93adb55a661869061e9e0771ede03d
+source-git-commit: 79f430fc8c0d5331bc4c12dee4937bb18dd801ce
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -42,10 +42,10 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
           </ul>
           <p>Puoi anche regolare i crediti CRM che Marketo Measure utilizza seguendo i passaggi seguenti:</p>
           <ul>
-            <li>Passa a Impostazioni → CRM → Generale</li>
+            <li>Accedi a <b>Impostazioni</b> &gt; <b>CRM</b> &gt; <b>Generale</b></li>
             <li>Aggiornare il limite API CRM giornaliero<br/>
               <ul>
-                <li><b>Nota</b>: il valore predefinito è 100.000</li>
+                <li><b>Nota: il valore predefinito è 100.000</b></li>
               </ul>
             </li>
           </ul>
