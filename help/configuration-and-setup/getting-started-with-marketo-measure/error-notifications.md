@@ -2,9 +2,9 @@
 description: Notifiche di errore - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Notifiche di errore
 feature: Fundamentals
-source-git-commit: 969cb2b4fb85aeb5c3a3aa21ead3eb5f4ff15ad9
+source-git-commit: 05ec40d3fa1fe1076eeaa755a9244b614ac5fda6
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
             </li>
           </ul>
           <p>
-            SCHERMATA
+           <img src="assets/error-notifications-1.png">
           </p>
       </td>
     </tr>
