@@ -4,9 +4,9 @@ description: Domande frequenti (più divise) - [!DNL Marketo Measure] - Document
 title: Domande frequenti (più divise)
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,7 @@ Per il lettore interessato, ecco perché funziona in questo modo. I nostri punti
 **Se il cliente ha utilizzato un flusso di lavoro per compilare un campo convertito, in che modo deve utilizzare il campo in futuro?**
 
 Poiché ora l’offerta gestirà le conversioni per il cliente, si consiglia di rimuovere i flussi di lavoro e i campi personalizzati e di importare il valore della quantità non elaborata.
+
+>[!MORELIKETHIS]
+>
+>[Notifiche di errore](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

@@ -4,9 +4,9 @@ description: "[!DNL Microsoft Dynamics] Guida all’installazione di CRM - Marke
 title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -175,3 +175,7 @@ Per ottenere [!DNL Marketo Measure] per tenere traccia delle attività web, sono
    >[!NOTE]
    >
    >Se disattivi l’esportazione di dati da Marketo Measure a Dynamics, non verranno rimossi i dati esistenti. Per assistenza sulla rimozione dei dati esistenti, contatta il supporto Dynamics.
+
+   >[!MORELIKETHIS]
+   >
+   >[Notifiche di errore](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

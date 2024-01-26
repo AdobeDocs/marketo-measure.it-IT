@@ -4,9 +4,9 @@ description: Collegare Marketo Measure a Salesforce - [!DNL Marketo Measure] - D
 title: Connettere Marketo Measure a Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 feature: Salesforce
-source-git-commit: 5b1511395aff958f20f74c8a52c2701c4a64329d
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -68,3 +68,7 @@ Puoi accedere a questo limite in Marketo Measure tramite: **Il mio account** > *
 >[!NOTE]
 >
 >Per aumentare i crediti API di Salesforce disponibili per la soluzione connessa, contatta l’amministratore Salesforce e comunica [questo documento Salesforce](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm){target="_blank"}.
+
+>[!MORELIKETHIS]
+>
+>[Notifiche di errore](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}
