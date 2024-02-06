@@ -4,9 +4,9 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: c1fc48028014160635c454138eb4ad8efb02c74a
+source-git-commit: cec688a6e3495679bf8d16f3974a0bb32302601d
 workflow-type: tm+mt
-source-wordcount: '20757'
+source-wordcount: '20781'
 ht-degree: 3%
 
 ---
@@ -6740,6 +6740,10 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
 ### BIZ_FACTS {#biz-facts}
 
 Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di contatto degli utenti, punti di contatto (BT), punti di contatto di attribuzione (BAT) e dati sui costi. Utilizzato internamente per supportare [!DNL Marketo Measure] reportistica.
+
+>[!IMPORTANT]
+>
+>Marketo Measure renderà obsoleta questa tabella a metà del 2024. Se desideri crearlo, esegui [questa query SQL](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
 
 <table>
   <tbody>
