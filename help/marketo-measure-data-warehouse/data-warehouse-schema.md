@@ -4,9 +4,9 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: cec688a6e3495679bf8d16f3974a0bb32302601d
+source-git-commit: 737fe3e5e780e654b2e53f58c957cf67ec97548c
 workflow-type: tm+mt
-source-wordcount: '20781'
+source-wordcount: '20777'
 ht-degree: 3%
 
 ---
@@ -8120,9 +8120,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>varchar</p>
       </td>
-      <td>
-        <p>Il nome del provider di servizi Internet, utilizzato dai clienti con tracciamento Geo IP avanzato.</p>
-      </td>
+      <td>Previsto null poiché il campo è obsoleto.</td>
       <td>
         <p>A&amp;T U-verso</p>
       </td>
@@ -12037,9 +12035,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       <td>
         <p>varchar</p>
       </td>
-      <td>
-        <p>Il fornitore di servizi Internet dell’utente</p>
-      </td>
+      <td>Previsto null poiché il campo è obsoleto.</td>
       <td>
         <p>A&amp;T U-verso</p>
       </td>
