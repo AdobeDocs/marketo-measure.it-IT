@@ -4,9 +4,9 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 737fe3e5e780e654b2e53f58c957cf67ec97548c
+source-git-commit: 999758c34b0264b8dac06fd0675e26b312fa58d6
 workflow-type: tm+mt
-source-wordcount: '20777'
+source-wordcount: '20775'
 ht-degree: 3%
 
 ---
@@ -729,18 +729,10 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -1043,18 +1035,10 @@ Account annuncio importati da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -1487,18 +1471,10 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -2092,18 +2068,10 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -2466,18 +2434,10 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -2548,18 +2508,10 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -3748,18 +3700,10 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -4061,18 +4005,10 @@ Canali di marketing, come creati nel [!DNL Marketo Measure] applicazione.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -4144,18 +4080,10 @@ Contatti importati dal sistema di origine.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -5026,18 +4954,10 @@ Creative importate da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -5527,18 +5447,10 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -5740,18 +5652,10 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -6042,15 +5946,9 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
       <th>Dati di esempio</th>
     </tr>
     <tr>
@@ -6205,15 +6103,9 @@ Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabell
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
       <th>Dati di esempio</th>
     </tr>
     <tr>
@@ -6334,15 +6226,9 @@ Pagine di destinazione scaricate da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
       <th>Dati di esempio</th>
     </tr>
     <tr>
@@ -6619,18 +6505,10 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>ID</td>
@@ -7540,17 +7418,11 @@ Invii di moduli acquisiti.
   <tbody>
     <tr>
       <th>
-        <p>Colonna</p>
+        Colonna
       </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -7852,18 +7724,10 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -8121,9 +7985,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
         <p>varchar</p>
       </td>
       <td>Previsto null poiché il campo è obsoleto.</td>
-      <td>
-        <p>A&amp;T U-verso</p>
-      </td>
+      <td>NULL</td>
     </tr>
     <tr>
       <td>
@@ -8601,18 +8463,10 @@ Parole chiave importate da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -9026,15 +8880,9 @@ Pagine di destinazione importate da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
       <th>Dati di esempio</th>
     </tr>
     <tr>
@@ -9293,18 +9141,10 @@ Lead importati dal sistema di origine.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -9632,18 +9472,10 @@ Transizioni nell&#39;area intermedia per lead o contatti.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -9909,18 +9741,10 @@ Opportunità importate dal sistema di origine.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -10239,18 +10063,10 @@ Transizioni nell&#39;area intermedia per le opportunità.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -10528,18 +10344,10 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -10853,15 +10661,9 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
       <th>Dati di esempio</th>
     </tr>
     <tr>
@@ -11131,18 +10933,10 @@ Valori del segmento come definiti nella [!DNL Marketo Measure] applicazione.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -11214,18 +11008,10 @@ Mappa il nome del segmento personalizzato sul relativo valore di categoria. I no
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -11309,18 +11095,10 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -12037,7 +11815,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>Previsto null poiché il campo è obsoleto.</td>
       <td>
-        <p>A&amp;T U-verso</p>
+        <p>NULL</p>
       </td>
     </tr>
     <tr>
@@ -12176,18 +11954,10 @@ Siti importati da qualsiasi account annuncio collegato.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -12462,18 +12232,10 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -12801,18 +12563,10 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -14277,18 +14031,10 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
@@ -15178,18 +14924,10 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>Colonna</p>
-      </th>
-      <th>
-        <p>Tipo di dati</p>
-      </th>
-      <th>
-        <p>Descrizione</p>
-      </th>
-      <th>
-        <p>Dati di esempio</p>
-      </th>
+      <th>Colonna</th>
+      <th>Tipo di dati</th>
+      <th>Descrizione</th>
+      <th>Dati di esempio</th>
     </tr>
     <tr>
       <td>
