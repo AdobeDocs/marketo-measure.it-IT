@@ -1,11 +1,11 @@
 ---
 description: '[!DNL Salesforce] Consolidamento dei pacchetti - [!DNL Marketo Measure] - Documentazione del prodotto'
 title: '[!DNL Salesforce] Consolidamento dei pacchetti'
-exl-id: f1bd5dcb-d021-4140-b6b9-cdb40e566c4b
+exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: d6bba3ea7cf97ef730681da1e21cf76e9edab779
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Il nuovo pacchetto consolidato V2 incorpora tutte le funzionalità dei pacchetti
 Sono stati aggiunti due nuovi campi per migliorare le funzionalità di reporting:
 
 * nome_modulo: ora disponibile negli oggetti BT/BAT, questo campo consente agli utenti di creare report basati sui nomi dei moduli.
-* user_touchpoint_id: questo campo consente agli utenti di creare rapporti con conteggi univoci dei punti di contatto degli utenti.
+* user_touchpoint_id: questo campo consente agli utenti di creare rapporti con conteggi univoci dei punti di contatto degli utenti (`bizible2__User_Touchpoint_V2__c` in Salesforce).
 
 ## Supporto e transizione {#support-and-transition}
 
