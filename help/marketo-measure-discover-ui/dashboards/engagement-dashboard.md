@@ -2,9 +2,9 @@
 description: Dashboard di coinvolgimento - [!DNL Marketo Measure] - Prodotto
 title: Dashboard di coinvolgimento
 feature: Reporting
-source-git-commit: b037a4a1be5c7d089cc94590caf91be05af4dd22
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,11 @@ Risposte alle domande del grafico:
 * Come si confronta il numero di punti di contatto con le persone toccate all’interno di un canale/sottocanale/campagna specifico?
 
 ![](assets/engagement-dashboard-2.png)
+
+## Riquadro Filtro {#filter-pane}
+
+Questo cruscotto è dotato delle seguenti impostazioni e filtri:
+
+* Data (basata sulla data del punto di contatto)
+* Canale, Sottocanale
+* Campaign

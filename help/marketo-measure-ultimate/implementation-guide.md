@@ -2,9 +2,9 @@
 description: '[!DNL Marketo Measure] Guida all’implementazione di Ultimate: [!DNL Marketo Measure] - Documentazione del prodotto'
 title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
 feature: Integration, Tracking, Attribution
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,10 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 ![](assets/marketo-measure-ultimate-implementation-guide-3.png)
 
 ## Flussi di dati {#dataflows}
+
+>[!IMPORTANT]
+>
+>Quando si aggiunge un nuovo set di dati, si consiglia di creare un nuovo flusso invece di utilizzarne uno esistente.
 
 [Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 

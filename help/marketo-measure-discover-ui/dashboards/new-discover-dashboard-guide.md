@@ -3,7 +3,7 @@ description: Nuova guida per Discover Dashboard - [!DNL Marketo Measure] - Prodo
 title: Nuova guida per Discover Dashboard
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -39,14 +39,12 @@ Siamo entusiasti di presentare la nuova progettazione della dashboard Discover. 
           <li>
             <strong>Ricavi pipeline:</strong>Obsoleto (vedi sotto)</li>
           <li>
-            <strong>Dimensione media offerta: </strong>Obsoleto (vedi sotto)</li>
-        </ul>
+            <strong>Dimensione media offerta: </strong>Obsoleto (vedi sotto)</li></ul>
       </td>
     </tr>
     <tr>
       <td>Crescita</td>
-      <td>
-        <ul>
+      <td><ul>
           <li>
             <strong>Ricavi e ricavi nel tempo</strong>: Reddito Attribuito, Panoramica Ricavi, Dashboard ROI</li>
           <li>
@@ -83,7 +81,7 @@ Siamo entusiasti di presentare la nuova progettazione della dashboard Discover. 
       </td>
     </tr>
     <tr>
-      <td>RITORNO SULL'INVESTIMENTO</td>
+      <td>ROI</td>
       <td>
         <ul>
           <li>
