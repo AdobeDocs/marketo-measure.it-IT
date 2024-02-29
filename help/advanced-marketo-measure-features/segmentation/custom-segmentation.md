@@ -4,9 +4,9 @@ description: Segmentazione personalizzata - [!DNL Marketo Measure] - Documentazi
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Passaggio 1: determinare quali informazioni si desidera visualizzare.
 
 Prima di utilizzare questa funzione, individua le informazioni sui punti di contatto in base alle quali desideri filtrare. Ricorda di utilizzare i valori esatti nel CRM per i tipi di record. La configurazione filtrerà i punti di contatto dalla parte superiore a quella inferiore del funnel di marketing.
 
-Passaggio 2: accedi e individua la funzione Segmenti.
+Passaggio 2: accedi e individua [!UICONTROL Segments] funzionalità.
 
 * Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e accedi
 * Sotto [!UICONTROL My Account] , seleziona [!UICONTROL Settings]
@@ -43,7 +43,7 @@ Passaggio 3: comprendere i componenti.
 
 Passaggio 4: Aggiungere Regole Di Filtro.
 
-* Immettere innanzitutto il nome della categoria. Il tipo di azienda è un esempio. Al termine, fai clic sul segno di spunta. Inserisci un nome per la categoria prima di poter aggiungere segmenti
+* Immettere innanzitutto il nome della categoria. [!UICONTROL Business Type] è un esempio. Al termine, fai clic sul segno di spunta. Inserisci un nome per la categoria prima di poter aggiungere segmenti
 * Fai clic sul segno più per aggiungere un segmento
 * Immetti un nome per il segmento. Ad esempio, puoi avere un segmento per Nuova azienda, Partner, Rinnovo o Upselling
 
@@ -57,11 +57,11 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 >
 >I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background senza modificare un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
-* L’opzione Valore non è un elenco a discesa e il suo valore deve essere immesso manualmente. Verifica i valori nell’organizzazione Salesforce
+* Il [!UICONTROL Value] L&#39;opzione non è un elenco a discesa e il relativo valore deve essere immesso manualmente. Verifica i valori nell’organizzazione Salesforce
 * Ripeti questo processo per le regole del segmento Opportunità
 * La categoria &quot;Altro&quot; è un segmento predefinito che acquisirà eventuali punti di contatto non definiti. Puoi modificare il nome del segmento predefinito
 * Fai clic sull’icona del cestino per eliminare un’intera categoria o una singola regola all’interno di una categoria. In alternativa, fai clic sull’icona della matita per modificare la categoria o la regola
-* Sono disponibili un pulsante Salva e un pulsante Elabora. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
+* Noterai che hai un &quot;[!UICONTROL Save]&quot; e un pulsante &quot;Salva ed elabora&quot;. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
 
    * La mappatura è accurata
    * Hai aggiunto tutti i segmenti di cui desideri tenere traccia all’interno di una categoria

@@ -4,10 +4,10 @@ description: "[!DNL Marketo Measure] Domande frequenti sull’attribuzione View 
 title: "[!DNL Marketo Measure] Domande frequenti sull’attribuzione Visualizza tramite"
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 9%
+source-wordcount: '389'
+ht-degree: 1%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 9%
 
 ## Cos’è la visualizzazione tramite attribuzione? {#what-is-view-through-attribution}
 
-Il [!DNL Marketo Measure] La funzione di attribuzione View Through include la possibilità di includere le impression pubblicitarie nel modello di attribuzione.
+Il [!DNL Marketo Measure] [!UICONTROL View Through Attribution] Questa funzione include la possibilità di includere le ad impression nel modello di attribuzione.
 
-## Perché è importante la visualizzazione tramite attribuzione? {#why-is-view-through-attribution-important}
+## Perché è [!UICONTROL View Through Attribution] Importante? {#why-is-view-through-attribution-important}
 
 Storicamente, il re-targeting o la pubblicità sulle impression era difficile per gli esperti di marketing tenere conto nell’analisi di attribuzione. I potenziali clienti, di volta in volta, possono essere esposti agli annunci di retargeting, ma è improbabile che facciano clic su uno di questi annunci e compilino un modulo all’interno della stessa sessione. La nostra soluzione View Through Attribution consente ora di verificare se qualcuno è stato esposto o meno a un annuncio di impression. Questo punto di contatto verrà aggiunto al record individuale e continuerà fino a quando il potenziale cliente non diventerà un cliente. Con queste informazioni, l’addetto al marketing potrà ora ottenere informazioni migliori sulle prestazioni della pubblicità di re-targeting.
 
@@ -27,7 +27,7 @@ Per ottenere [!DNL Marketo Measure] per iniziare a misurare le impression dell�
 
 ## Quali piattaforme di annunci sono supportate? {#which-ad-platforms-are-supported}
 
-Al momento supportiamo Doubleclick Campaign Manager.
+Al momento supportiamo [!DNL Doubleclick] Gestione campagne.
 
 ## Come viene calcolata l’attribuzione? {#how-is-the-attribution-calculated}
 
@@ -67,7 +67,7 @@ Abbiamo eseguito un’attenta analisi dei dati sulle impression e della loro inf
    <td>100%</td> 
    <td>0%</td> 
    <td>35%</td> 
-   <td>26.6%</td> 
+   <td>26,6%</td> 
    <td>20%</td> 
    <td>Personalizzato</td> 
   </tr> 
@@ -76,7 +76,7 @@ Abbiamo eseguito un’attenta analisi dei dati sulle impression e della loro inf
    <td>0%</td> 
    <td>100%</td> 
    <td>35%</td> 
-   <td>26.6%</td> 
+   <td>26,6%</td> 
    <td>20%</td> 
    <td>Personalizzato</td> 
   </tr> 
@@ -85,7 +85,7 @@ Abbiamo eseguito un’attenta analisi dei dati sulle impression e della loro inf
    <td>0%</td> 
    <td>0%</td> 
    <td>0%</td> 
-   <td>26.6%</td> 
+   <td>26,6%</td> 
    <td>20%</td> 
    <td>Personalizzato</td> 
   </tr> 
@@ -110,7 +110,7 @@ Abbiamo eseguito un’attenta analisi dei dati sulle impression e della loro inf
  </tbody> 
 </table>
 
-## Come si presenterà in Salesforce? {#what-will-this-look-like-in-salesforce}
+## Come apparirà questo in [!DNL Salesforce?] {#what-will-this-look-like-in-salesforce}
 
 [!DNL Marketo Measure] creerà un singolo punto di contatto di impression su qualsiasi lead esposto all’annuncio display. Siamo in grado di mappare l&#39;utente anche dopo che è venuto per la prima volta al tuo sito web (FT) e compilare un modulo (LC). Il punto di contatto conterrà informazioni sugli annunci come Nome/ID campagna pubblicitaria, ID annuncio, Contenuto annuncio, Nome/ID sito, Nome/ID posizionamento, Canale di marketing, Geo, Pagina referente e altro ancora.
 

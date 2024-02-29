@@ -3,9 +3,9 @@ description: Best practice per le impostazioni dei punti di contatto - [!DNL Mar
 title: Best practice per le impostazioni dei punti di contatto
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-La sezione Impostazioni punto di contatto del [!DNL Marketo Measure] consente di impostare regole che elimineranno o rimuoveranno i punti di contatto dal [!DNL Marketo Measure] dati e relativi sistemi. Queste regole possono aiutarti a isolare alcuni set di dati che non devono essere rappresentati nei dati del punto di contatto dell’acquirente o che non desideri ricevere il credito di attribuzione senza disturbare il tracciamento e la raccolta dei dati.
+Il [!UICONTROL Touchpoint Settings] sezione del tuo [!DNL Marketo Measure] consente di impostare regole che elimineranno o rimuoveranno i punti di contatto dal [!DNL Marketo Measure] dati e relativi sistemi. Queste regole possono aiutarti a isolare alcuni set di dati che non devono essere rappresentati nei dati del punto di contatto dell’acquirente o che non desideri ricevere il credito di attribuzione senza disturbare il tracciamento e la raccolta dei dati.
 
 **Rimozione punto di contatto** significa [!DNL Marketo Measure] rimuoverà (ovvero rimuoverà) dal CRM tutti i punti di contatto che soddisfano i criteri della regola. I dati possono essere segnalati all&#39;interno del [!DNL Marketo Measure] Dashboard ROI (individuazione), ma non viene visualizzato nel CRM. Solitamente utilizzato per alleviare lo stress sui limiti di archiviazione dei dati all’interno del CRM
 
 **Soppressione punto di contatto** è simile a Rimozione punto di contatto, ma i dati NON POSSONO essere riportati all’interno della dashboard ROI. Eventuali punti di contatto soppressi non saranno accessibili nel CRM o nell’individuazione. L’eliminazione assicurerà la corrispondenza tra i dati CRM e i dati di Discover. Comunemente utilizzato per perfezionare e specificare ulteriormente quali dati del punto di contatto desideri ricevere il credito di attribuzione.
 
-Nel tuo [!DNL Marketo Measure] , la sezione Impostazioni punto di contatto verrà suddivisa in quattro sezioni chiave. Ogni sezione sopprime o rimuove un diverso set di dati. Utilizza il tasto seguente per assicurarti che le tue regole eliminino o rimuovano i punti di contatto desiderati.
+Nel tuo [!DNL Marketo Measure] app, il [!UICONTROL Touchpoint Settings] sarà suddivisa in quattro sezioni chiave. Ogni sezione sopprime o rimuove un diverso set di dati. Utilizza il tasto seguente per assicurarti che le tue regole eliminino o rimuovano i punti di contatto desiderati.
 
 * Rimuovi punti di contatto dell&#39;acquirente da CRM
    * Utilizzare questa sezione quando si desidera creare una regola che rimuoverà **Dati punto di contatto acquirente** (i punti di contatto associati all’individuo, non l’opportunità) dal tuo **CRM**
@@ -43,14 +43,14 @@ Se stabilisci le regole di impostazione del punto di contatto per la prima volta
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 
-La revisione delle impostazioni dei punti di contatto è importante in quanto può modificare drasticamente i dati quando non sono definiti in modo appropriato. Come best practice, ti consigliamo di rivedere le impostazioni del punto di contatto almeno due volte all’anno. Si tratta di una semplice revisione visiva delle regole impostate nella sezione Impostazioni punto di contatto del [!DNL Marketo Measure] app. Questa revisione ti consentirà di essere certo che le impostazioni del punto di contatto siano aggiornate e che sia possibile apportare le modifiche necessarie.
+Revisione [!UICONTROL Touchpoint Settings] è importante in quanto può modificare drasticamente i dati quando non sono definiti in modo appropriato. Come best practice, ti consigliamo di rivedere le impostazioni del punto di contatto almeno due volte all’anno. Si tratta di una semplice revisione visiva delle regole impostate nella sezione Impostazioni punto di contatto del [!DNL Marketo Measure] app. Questa revisione ti consentirà di essere certo che le impostazioni del punto di contatto siano aggiornate e che sia possibile apportare le modifiche necessarie.
 
-I motivi per rivedere le impostazioni del punto di contatto includono...
+Motivi per rivedere [!UICONTROL Touchpoint] Le impostazioni includono...
 
 * Fatturato del team marketing
 * Aggiornamenti principali alla struttura del sito web
 * Identificazione dei dati del punto di contatto che non sono più utili
-   * Ogni volta che incontri dati di un punto di contatto che ritieni non debbano ricevere il credito di attribuzione, le regole di soppressione dei punti di contatto sono la funzionalità per garantire la massima pulizia e accuratezza possibile dei dati.
+   * Ogni volta che ti imbatti in dati punto di contatto che non dovresti ricevere il merito di attribuzione, [!DNL touchpoint suppression] Le regole sono la funzionalità per garantire dati il più possibile puliti e precisi.
 * Modifiche ai campi utilizzati per definire le regole di soppressione o rimozione
 
 >[!MORELIKETHIS]
@@ -58,3 +58,4 @@ I motivi per rivedere le impostazioni del punto di contatto includono...
 >* [Panoramica sulla rimozione e l’eliminazione dei punti di contatto](/help/advanced-marketo-measure-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md)
 >* [Perché i punti di contatto non devono mai essere eliminati](/help/advanced-marketo-measure-features/touchpoint-settings/why-you-should-never-delete-touchpoints.md)
 >* [Punti di contatto dell&#39;acquirente (BT) e punti di contatto di attribuzione dell&#39;acquirente (BAT)](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
+

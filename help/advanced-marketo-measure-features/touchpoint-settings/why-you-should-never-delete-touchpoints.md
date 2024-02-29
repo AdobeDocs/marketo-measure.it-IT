@@ -4,9 +4,9 @@ description: Perché non eliminare mai i punti di contatto - [!DNL Marketo Measu
 title: Perché non eliminare mai i punti di contatto
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -21,4 +21,4 @@ Quando un punto di contatto viene eliminato, crea un buco nei dati di attribuzio
 
 ![](assets/1.png)
 
-Se i punti di contatto sono stati eliminati dall&#39;SFDC, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per richiedere la reimportazione dei dati.
+Se i punti di contatto sono stati eliminati dall&#39;SFDC, contatta [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per richiedere la reimportazione dei dati.

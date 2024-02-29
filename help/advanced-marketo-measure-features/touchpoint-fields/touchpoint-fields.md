@@ -4,9 +4,9 @@ description: Campi punto di contatto - [!DNL Marketo Measure] - Documentazione d
 title: Campi punto di contatto
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Per creare un campo calcolato, tieni presente che un utente può eseguire tre az
 
 Estratti
 
-L’operatore estrae il valore da un campo da un’altra posizione, ad esempio un campo Campagna, un campo Lead o in un caso d’uso più avanzato. [estrarre parametri personalizzati dalla pagina di destinazione](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2).
+Il [!UICONTROL extracts] L’operatore estrae il valore da un campo da un’altra posizione, ad esempio un campo Campaign, un campo Lead o in un caso d’uso più avanzato. [estrarre parametri personalizzati dalla pagina di destinazione](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2).
 
 **Esempio di #1**
 
@@ -123,7 +123,7 @@ Man mano che le pagine di destinazione si complicano e si hanno più parametri d
 
 **Mapping a**
 
-L’operatore mappa su crea una tabella di valori che devono essere convertiti o inseriti in un altro valore. Di solito, si presenta sotto forma di un valore chiave in cui un codice rappresenta un nome descrittivo che deve essere mappato a tale nome.
+Il [!UICONTROL maps to] operatore crea una tabella di valori che devono essere convertiti o inseriti in un altro valore. Di solito, si presenta sotto forma di un valore chiave in cui un codice rappresenta un nome descrittivo che deve essere mappato a tale nome.
 
 **Esempio di #1**
 
@@ -145,18 +145,18 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
    * **(** segna l’inizio dell’estrazione
 
       * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi aperta
-
    * **)** segna la fine dell’estrazione
 
       * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi chiusa
-
    * **\d** ci dice che stiamo estraendo una &quot;cifra&quot;
    * **{2}** è il numero di caratteri che si estrae
+
+
 
 * Clic [!UICONTROL Save]. È necessario salvare il nuovo campo prima che sia disponibile per l&#39;utilizzo per la regola successiva.
 * Quindi, è necessario mappare tutti i valori possibili per le prime cifre ai relativi nomi descrittivi
 * Creare un campo calcolato e etichettarlo come &quot;Region_Name&quot;
-* Definisci la regola iniziando con la ricerca del campo estratto. In questo caso, Touchpoint.Region
+* Definisci la regola iniziando con la ricerca del campo estratto. In questo caso, [!DNL Touchpoint.Region]
 * Utilizza l’operatore &quot;[!UICONTROL maps to]&quot; poiché si desidera creare una mappatura per ogni numero al relativo valore
 * Verrà visualizzata una tabella in cui elencare ogni mappatura. Alla fine sarà più o meno così:
 * In base alla mappatura e all’URL indicati sopra, il &quot;Region_Value&quot; di un punto di contatto con questa pagina di destinazione sarà &quot;EMEA&quot;
@@ -171,7 +171,7 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 
 **Concatena**
 
-L’operatore concatena combina valori provenienti da più campi in un unico campo. Questo è utile per creare un valore personalizzato che richiama i dati tra vari campi al fine di
+Il [!UICONTROL concatenates] operatore combina valori provenienti da più campi in un singolo campo. Questo è utile per creare un valore personalizzato che richiama i dati tra vari campi al fine di
 
 **Esempio di #1**
 
@@ -221,7 +221,7 @@ Come nell’#4 Estrai esempio, per estrarre ciascuno dei parametri dovrai creare
 
 **Come posso verificare che l’espressione di estrazione sia valida e richiamare il valore corretto?**
 
-È disponibile uno strumento online ([https://regex101.com/](https://regex101.com/){target="_blank"}) che è possibile eseguire e verificare l’espressione. L’espressione apparirà in verde se è valida o in rosso se non è valida. Inoltre, la casella di spiegazione in alto a destra è utile e ti dice cosa stai estraendo.
+È disponibile uno strumento online ([[!DNL https]://regex101.com/](https://regex101.com/){target="_blank"}) che è possibile eseguire e verificare l’espressione. L’espressione apparirà in verde se è valida o in rosso se non è valida. Inoltre, il [!UICONTROL explanation] in alto a destra è utile e ti dice cosa stai estraendo.
 
 ![](assets/twelve.png)
 

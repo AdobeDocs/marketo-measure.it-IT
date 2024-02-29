@@ -4,9 +4,9 @@ description: Domande frequenti (più divise) - [!DNL Marketo Measure] - Document
 title: Domande frequenti (più divise)
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 **Come faccio a sapere quale bit di funzione abilitare?**
 
-Tieni presente che per questa funzione sono disponibili due diversi bit di feature. Entrambi si trovano nella scheda Generale della sezione CRM in Impostazioni: Valute multiple e Valute avanzate. È necessario abilitare più divise se il cliente utilizza più di una valuta, mentre il bit di funzione aggiuntivo Divise avanzate può essere abilitato se il cliente utilizza [!DNL Salesforce]la funzione &quot;Advanced Currency Management&quot; in cui l’utente può impostare un intervallo temporale per i tassi di conversione.
+Tieni presente che per questa funzione sono disponibili due diversi bit di feature. Entrambi si trovano nel [!UICONTROL General] Scheda della sezione CRM in Impostazioni: Valute multiple e Valute avanzate. È necessario abilitare più divise se il cliente utilizza più di una valuta, mentre il bit di funzione aggiuntivo Divise avanzate può essere abilitato se il cliente utilizza [!DNL Salesforce]la funzione &quot;Advanced Currency Management&quot; in cui l’utente può impostare un intervallo temporale per i tassi di conversione.
 
 Sfortunatamente, non sappiamo quando un cliente passa da Semplice a Avanzato se è già stato attivato Avanzato. Per questo motivo, il cliente deve mantenere manualmente l’impostazione Valute avanzate allineata con la propria impostazione di gestione delle relazioni con i clienti. Questo dovrebbe essere evidente al cliente se le conversioni non sono corrette, il che significa che non sapevamo quale livello di conversione applicare.
 

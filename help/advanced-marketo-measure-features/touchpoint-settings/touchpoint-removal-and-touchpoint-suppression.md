@@ -4,9 +4,9 @@ description: Rimozione e soppressione dei punti di contatto - [!DNL Marketo Meas
 title: Rimozione e soppressione dei punti di contatto
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Scegliere da un elenco di operatori che verranno correlati al set di valori succ
 
 >[!TIP]
 >
->Per tenere conto di un valore vuoto o NULL in un campo, è sufficiente lasciare vuota la casella Valore. Questo prenderà in considerazione scenari come la valutazione rispetto a un punto di contatto senza URL modulo.
+>Per contabilizzare un valore vuoto o NULL in un campo, è sufficiente lasciare [!UICONTROL Value] casella vuota. Questo prenderà in considerazione scenari come la valutazione rispetto a un punto di contatto senza URL modulo.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ In alternativa, aggiungere nuove istruzioni all&#39;esterno del gruppo per utili
 
 ![](assets/2.png)
 
-`3)` Se le regole diventano complesse ed è necessario ricreare i gruppi e apportare piccole modifiche a ogni istruzione, utilizzare l&#39;opzione Clona per semplificare le operazioni.
+`3)` Se le regole diventano complesse ed è necessario ricreare i gruppi e apportare piccole modifiche a ogni istruzione, utilizzare [!UICONTROL Clone] per semplificare le operazioni.
 
 ![](assets/3.png)
 
@@ -65,7 +65,7 @@ Se fai un errore, non preoccuparti. È inoltre possibile eliminare singole righe
 
 ![](assets/5.png)
 
-Per terminare, salva ed elabora le regole. Se stai apportando molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i punti di contatto finché non fai clic su **Salva ed elabora** pulsante.
+Per terminare, [!UICONTROL Save and Process] le tue regole. Se stai apportando molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i punti di contatto finché non fai clic su **Salva ed elabora** pulsante.
 
 | **Operatore** | **Caso d’uso** |
 |---|---|

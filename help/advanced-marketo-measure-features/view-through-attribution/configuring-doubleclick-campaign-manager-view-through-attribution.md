@@ -4,9 +4,9 @@ description: Configurazione Della Visualizzazione Di Doubleclick Campaign Manage
 title: Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Se utilizzi il [!DNL Marketo Measure] e l’integrazione DoubleClick Campaign Manager, è necessario un’ [Connessione API](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) così possiamo scaricare i dettagli delle campagne e dei creativi per risolvere gli annunci.
+>Se utilizzi il [!DNL Marketo Measure] e [!DNL DoubleClick Campaign Manager] dell&#39;integrazione, è necessario un [Connessione API](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) così possiamo scaricare i dettagli delle campagne e dei creativi per risolvere gli annunci.
 
-Per ottenere informazioni più granulari dalla visualizzazione attraverso il tracciamento con Doubleclick Campaign Manager, è necessario configurare il pixel di tracciamento.
+Per ottenere informazioni più granulari dalla visualizzazione fino al tracciamento con [!DNL Doubleclick Campaign Manager], è necessario configurare il pixel di tracciamento.
 
 Per favore [fai clic qui](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md) per ulteriori informazioni su [!DNL Marketo Measure] Funzionalità di visualizzazione tramite attribuzione.
 
@@ -29,7 +29,7 @@ Se in DCM utilizzi una gerarchia Padre e Figlio, sarà necessario applicare il t
 
 ## Come aggiungere il tag immagine {#how-to-add-the-image-tag}
 
-Aggiungi il tag in Doubleclick sotto l’impostazione dell’inserzionista e vuoi creare un tag evento di impression.
+Il tag verrà aggiunto a [!DNL Doubleclick] sotto l’impostazione Inserzionista e desideri creare un Tag evento di impression.
 
 1. Aggiungi il seguente codice come pixel immagine 1x1.
 
@@ -37,7 +37,7 @@ Aggiungi il tag in Doubleclick sotto l’impostazione dell’inserzionista e vuo
 
 1. Una volta aggiunto, verifica che i delimitatori siano mappati come segue. Questa dovrebbe essere automatica una volta applicato il tag:
 
-   v = %eadv! Espandi ID inserzionista\
+   v = %eadv! [!DNL Expand] ID inserzionista\
    a = %eaid! Espandi ID annuncio\
    c = %ecid! Espandi ID creatività\
    s = %esid! Espandi ID sito\

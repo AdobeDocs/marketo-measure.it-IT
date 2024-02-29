@@ -4,16 +4,16 @@ description: Impostazioni - [!DNL Marketo Measure] - Documentazione del prodotto
 title: Impostazioni
 exl-id: 704dc52d-fa21-4475-878b-073e2e65c566
 feature: Multi-Currency
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
 
 # Impostazioni {#settings}
 
-Ci sono due distinti bit di funzione legati a questa funzione, che si trovano nella scheda Impostazioni generali del sistema di gestione delle relazioni con i clienti: Valute multiple e Valute avanzate.
+Ci sono due bit di funzione separati associati a questa funzione, che si trovano nel CRM [!UICONTROL General Settings] scheda: Valute multiple e Valute avanzate.
 
 **Valute multiple**: abilitato se il cliente utilizza più di una singola valuta.
 
