@@ -3,7 +3,7 @@ description: Dashboard traffico web - [!DNL Marketo Measure] - Prodotto
 title: Dashboard traffico web
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Tabella in cui sono visualizzate le Visite totali e Visitatori univoci per Refer
 
 Grafico a barre che mostra Visite o Visitatori univoci segmentati per Canale/Sottocanale/Campagna.
 
-* Sfrutta le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
+* utilizza le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
 * Passa il puntatore del mouse su ciascuna barra per visualizzare Visite o Visitatori univoci.
 
 Risposte alle domande del grafico:

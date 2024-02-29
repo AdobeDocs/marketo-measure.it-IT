@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762749
-description: "[!DNL Marketo Engage] Integrazione delle attività - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Engage] Integrazione delle attività - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Engage] Integrazione delle attività"
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ Condividi contenuto (400) Dialogo coinvolto (158) Documento interagito con (159)
 
 Per qualsiasi regola appartenente a un Tipo di attività con un ID programma, il Canale del programma Marketo è determinato dal Programma. Utilizziamo il canale del programma per mappare i tuoi canali offline personalizzati, quindi dovrai accertarti che i tuoi canali siano configurati correttamente [come indicato qui](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
 
-E per una qualsiasi delle regole da un Tipo di attività senza un ID programma, il primo passaggio era creare un Nome campagna. Usa questo nome campagna per configurare i tuoi canali online personalizzati [disposto qui](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
+E per una qualsiasi delle regole da un Tipo di attività senza un ID programma, il primo passaggio era creare un Nome campagna. Utilizza questo nome campagna per configurare i tuoi canali online personalizzati [disposto qui](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
 Se i canali per le attività Marketo non sono configurati correttamente, è probabile che i nuovi punti di contatto rientrino nel canale &quot;Altro&quot;.
 
@@ -166,7 +166,7 @@ Attraverso l&#39;importazione dei dati dei programmi Marketo, i costi vengono sc
 
 ## Mappatura cookie {#cookie-mapping}
 
-In seguito alla [!DNL Marketo Measure] integrazione con Marketo, il [!DNL Marketo Measure] Anche l’ID cookie viene ora mappato e sincronizzato con il [!DNL Marketo Munchkin Id]. Questo consente di colmare il divario per attribuire il primo contatto anonimo a una sessione web, anziché attribuire i tocchi FT e LC a un’attività Marketo. Immagina questo scenario:
+In seguito alla [!DNL Marketo Measure] integrazione con Marketo, il [!DNL Marketo Measure] Anche l’ID cookie viene ora mappato e sincronizzato con [!DNL Marketo Munchkin Id]. Questo consente di colmare il divario per attribuire il primo contatto anonimo a una sessione web, anziché attribuire i tocchi FT e LC a un’attività Marketo. Immagina questo scenario:
 
 Mark fa clic su un annuncio Facebook e arriva su wayneenterprises.com dove viene ricettato con [!DNL Marketo Measure] Id 123 e [!DNL Marketo Munchkin Id] 456. Il modulo non viene compilato.
 

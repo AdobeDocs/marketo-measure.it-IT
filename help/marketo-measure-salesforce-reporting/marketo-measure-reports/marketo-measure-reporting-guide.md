@@ -1,11 +1,11 @@
 ---
-description: "[!DNL Marketo Measure] Guida al reporting - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Guida al reporting - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Guida al reporting"
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '6395'
+source-wordcount: '6431'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Prima di creare un [!DNL Marketo Measure] report, è fondamentale confermare la tua [!DNL Marketo Measure] Le impostazioni dell’account sono state riviste e configurate per garantire che i dati all’interno dei rapporti siano accurati e riflettano le specificità della tua azienda. Inoltre, i progetti di reporting funzionano meglio quando seguono un processo strutturato. Justin Norris, a [!DNL Marketo Measure] utenti esperti, sostenitori e partner di [Perkuto](https://perkuto.com/) riassunto esperto [approccio al reporting in [!DNL Marketo Measure]](https://perkuto.com/blog/turning-attribution-data-into-actionable-insights/):
 
@@ -44,7 +44,7 @@ Al livello più alto, esistono due categorie di reporting basate sui due diversi
 
 >[!NOTE]
 >
->Le BAT sono create da BT. In sostanza, il tracciamento inizia a livello individuale tramite i BT. Una volta creata un&#39;opportunità su un account, tutti i BT dei contatti dello stesso account sono referenziati e idonei a creare BAT che si riferiscono all&#39;opportunità, pertanto è consigliabile utilizzare l&#39;uno o l&#39;altro a seconda delle domande a cui si sta cercando di rispondere: domande relative alle metriche &quot;Persone&quot; (report BT) o domande relative alle metriche &quot;Opportunità&quot; (report BAT)
+>Le BAT sono create da BT. In sostanza, il tracciamento inizia a livello individuale tramite i BT. Una volta creata un&#39;opportunità su un account, tutti i BT dei contatti dello stesso account sono referenziati e idonei a creare BAT che si riferiscono all&#39;opportunità, quindi si desidera utilizzare l&#39;uno o l&#39;altro a seconda delle domande a cui si sta cercando di rispondere: domande relative alle metriche &quot;Persone&quot; (report BT) o domande relative alle metriche &quot;Opportunità&quot; (report BAT)
 
 Articolo di supporto: [Differenza tra i punti di contatto dell’acquirente e i punti di contatto di attribuzione dell’acquirente](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md#configuration-and-setup)
 
@@ -126,9 +126,9 @@ Riepilogare i dati dei punti di contatto acquirenti del lead per il campo &quot;
 
 >[!TIP]
 >
->Per qualsiasi tipo di rapporto &quot;Lead con punti di contatto acquirenti&quot;, inizia personalizzando il rapporto predefinito con titolo &quot;[!DNL Marketo Measure] 101 | Lead per canale&quot;. Questo rapporto è disponibile come standard ed è un ottimo ambiente sandbox predefinito, come descritto nella tabella precedente, e può essere rapidamente personalizzato per esigenze di reporting più specifiche.
+>Per qualsiasi tipo di rapporto &quot;Lead con punti di contatto acquirenti&quot;, inizia personalizzando il rapporto predefinito con titolo &quot;[!DNL Marketo Measure] 101 | Lead per canale. Questo rapporto è disponibile come standard ed è un ottimo ambiente sandbox predefinito, come descritto nella tabella precedente, e può essere rapidamente personalizzato per esigenze di reporting più specifiche.
 
-**1,2 | Nuovi lead per campagna (o informazioni più dettagliate)**
+**1,2 | Nuovi lead per campagna (o informazioni più granulari)**
 
 Per informazioni più granulari sui dati riepilogati nel rapporto &quot;Nuovi lead per canale di marketing&quot; (1.1), aggiungi un ulteriore riepilogo a livello di campagna. Questo consente non solo di comprendere cosa &quot;Canali di marketing&quot; stanno guidando nuovi lead nella creazione, ma più specificamente, quali campagne all’interno di tali canali stanno ottenendo i migliori risultati:
 
@@ -347,7 +347,7 @@ Questo approccio per misurare l’impatto del marketing sull’influenza degli M
  </tbody>
 </table>
 
-**2,2 | Lead qualificati per il marketing per canale (tocco singolo, solo CRM)**
+**2,2 | Marketing Qualified Leads by Channel (contatto singolo, solo CRM)**
 
 Questo approccio per misurare l’impatto del marketing sull’influenza delle MQL si concentra maggiormente sull’identificazione di quali _punto di contatto singolo_ è stato l’ultimo contatto prima che il lead raggiungesse MQL.
 
@@ -384,7 +384,7 @@ Questo approccio per misurare l’impatto del marketing sull’influenza delle M
   </tr>
   <tr>
    <td>Modelli ottimali</td> 
-   <td><i>Poiché questo rapporto viene filtrato su un singolo punto di contatto, i modelli di attribuzione a livello di lead non sono così rilevanti. Come nel "Rapporto sul coinvolgimento dei lead" (1.4), anche in questo caso viene utilizzato il numero di record dei punti di contatto, per capire quali canali sono più forti (ogni lead avrebbe un solo punto di contatto MQL).</i></td> 
+   <td><i>Poiché questo rapporto viene filtrato su un singolo punto di contatto, i modelli di attribuzione a livello di lead non sono così rilevanti. Come nel "Rapporto sul coinvolgimento del lead" (1.4), anche in questo caso viene utilizzato il numero di record dei punti di contatto per capire quali canali sono più forti (ogni lead avrebbe un solo punto di contatto MQL).</i></td> 
   </tr>
  </tbody>
 </table>
@@ -397,7 +397,7 @@ Questo approccio per misurare l’impatto del marketing sull’influenza delle M
 
 C&#39;è una terza personalizzazione [!DNL Marketo Measure] oggetto in Salesforce che può essere molto utile quando si generano rapporti su metriche relative alle persone: **il [!DNL Marketo Measure] Persona (BP)**. BP risolve il vecchio problema di come rappresentare le informazioni di lead e contatti nello stesso rapporto. Unisce tutti i BT relativi a una &quot;persona&quot; (un [!DNL Marketo Measure] L’ID della persona è il suo indirizzo e-mail). Indipendentemente dal fatto che esistano come lead o contatto, la BP funge da oggetto ponte per aiutare i rapporti a estendersi a lead e contatto ed è molto utile per produrre rapporti più sofisticati sulle persone.
 
-Il [!DNL Marketo Measure] La persona fa riferimento a uno solo degli oggetti punto di contatto, il punto di contatto dell’acquirente (BT). Ciò significa che non può essere utilizzato per un’opportunità o per metriche relative ai ricavi. A &#39;[!DNL Marketo Measure] Il tipo di rapporto Punti di contatto per persona e acquirente è ottimo per la comprensione _coinvolgimento totale_ in quanto mette in evidenza tutti i BT, indipendentemente dal fatto che si riferisca più specificamente a un lead o a un contatto. Ad esempio, se utilizzi una campagna Salesforce per tenere traccia di un evento, all’interno della campagna CRM potrebbero essere presenti membri della campagna come lead o contatti. [!DNL Marketo Measure] creerà punti di contatto per i membri della campagna indipendentemente, ma senza [!DNL Marketo Measure] Persona, la generazione di rapporti standard di Salesforce richiederebbe due rapporti separati per capire quanti _totale_ Punti di contatto dell’Evento: uno &quot;Leads with Buyer Touchpoints&quot; (Lead con punti di contatto dell’acquirente) e uno &quot;Contatti con punti di contatto dell’acquirente&quot;. Qualche altro [!DNL Marketo Measure] Di seguito sono elencati i casi di utilizzo dei rapporti basati su persona:
+Il [!DNL Marketo Measure] La persona fa riferimento a uno solo degli oggetti punto di contatto, il punto di contatto dell’acquirente (BT). Questo significa che non può essere utilizzato per un’opportunità o per metriche relative ai ricavi. A &#39;[!DNL Marketo Measure] Il tipo di rapporto Punti di contatto per persona e acquirente è ottimo per la comprensione _coinvolgimento totale_ in quanto mette in evidenza tutti i BT, indipendentemente dal fatto che si riferisca più specificamente a un lead o a un contatto. Ad esempio, se utilizzi una campagna Salesforce per tenere traccia di un evento, all’interno della campagna CRM potrebbero essere presenti membri della campagna come lead o contatti. [!DNL Marketo Measure] creerà punti di contatto per i membri della campagna indipendentemente, ma senza [!DNL Marketo Measure] Persona, la generazione di rapporti standard di Salesforce richiederebbe due rapporti separati per capire quanti _totale_ Punti di contatto dell’Evento: uno &quot;Leads with Buyer Touchpoints&quot; (Lead con punti di contatto dell’acquirente) e uno &quot;Contatti con punti di contatto dell’acquirente&quot;. Qualche altro [!DNL Marketo Measure] Di seguito sono elencati i casi di utilizzo dei rapporti basati su persona:
 
 **3,1 [!DNL Marketo Measure] Persone che hanno scaricato &#39;ebook&#39; o &#39;white paper&#39; (download totali)**
 
@@ -441,7 +441,7 @@ Questo rapporto equivale a un rapporto basato su &quot;Contenuto&quot; a livello
 
 >[!TIP]
 >
->Per qualsiasi lead con [!DNL Marketo Measure] Tipo di rapporto delle persone, inizia personalizzando il rapporto predefinito con titolo &quot;**[!DNL Marketo Measure]101 | Lead/Contatti per canale**&quot;. Questo rapporto è disponibile come standard ed è un ottimo [!DNL Marketo Measure] Sandbox basata su persone. È predefinito e può essere personalizzato rapidamente per esigenze di reporting più specifiche.
+>Per qualsiasi lead con [!DNL Marketo Measure] Tipo di rapporto delle persone, inizia personalizzando il rapporto predefinito con titolo &quot;**[!DNL Marketo Measure]101 | Lead/contatti per canale**&quot;. Questo rapporto è disponibile come standard ed è un ottimo [!DNL Marketo Measure] Sandbox basata su persone. È predefinito e può essere personalizzato rapidamente per esigenze di reporting più specifiche.
 
 >[!TIP]
 >
@@ -464,7 +464,7 @@ _Questo rapporto è applicabile solo se i moduli di registrazione sono ospitati 
   <tr>
    <td>Filtri</td> 
    <td>'URL modulo' CONTIENE (ad esempio)<br>
-   <li>/evento</li>
+   <li>/event</li>
    <i>Il valore del filtro riportato sopra è solo esemplificativo. Il valore effettivo sarà basato sulla struttura URL di ogni organizzazione.</i></td> 
   </tr>
   <tr>
@@ -511,7 +511,7 @@ In sostanza, i dati del punto di contatto rifletteranno ciò che è stato tracci
 
 **PUNTO DI CONTATTO ATTRIBUZIONE ACQUIRENTE (BAT)**
 
-I punti di contatto di attribuzione dell’acquirente (BAT) rappresentano i punti di contatto rilevanti di tutti i contatti connessi all’opportunità (tramite i ruoli di contatto dell’opportunità o tramite un ID account condiviso, a seconda delle impostazioni). A differenza delle BT (che sono principalmente collegate alle persone), le BAT possono essere associate ai ricavi. In questo modo, è possibile utilizzare le BAT per rispondere a domande relative alle opportunità, principalmente aperte _Opportunità/Ricavi pipeline_ e won chiuso _Opportunità/Offerte/Ricavi_. Una BAT viene creata tramite i record BT di un contatto non appena viene creata un&#39;opportunità con lo stesso account del contatto (il BT non viene convertito in una BAT. I dati BT sono semplicemente referenziati per creare un record aggiuntivo (la BAT che poi si riferisce all&#39;opportunità).
+I punti di contatto di attribuzione dell’acquirente (BAT) rappresentano i punti di contatto rilevanti di tutti i contatti connessi all’opportunità (tramite i ruoli di contatto dell’opportunità o tramite un ID account condiviso, a seconda delle impostazioni). A differenza delle BT (che sono principalmente collegate alle persone), le BAT possono essere associate ai ricavi. In quanto tale, è possibile utilizzare le BAT per rispondere a domande relative alle opportunità, principalmente aperte _Opportunità/Ricavi pipeline_ e won chiuso _Opportunità/Offerte/Ricavi_. Una BAT viene creata tramite i record BT di un contatto non appena viene creata un&#39;opportunità con lo stesso account del contatto (il BT non viene convertito in una BAT. I dati BT sono semplicemente referenziati per creare un record aggiuntivo (la BAT che poi si riferisce all&#39;opportunità).
 
 Il punto di contatto per l’attribuzione dell’acquirente ci consente di misurare l’impatto del marketing più a fondo nel funnel. _La profondità del funnel in cui desideri misurare può essere rappresentata dai vari modelli di attribuzione multi-touch_.
 
@@ -583,7 +583,7 @@ Riepilogare i dati dei punti di contatto di attribuzione acquirenti delle opport
    <td>
    <li>Fase dell’opportunità* <i>(facoltativo a seconda delle opportunità specifiche che si desidera limitare al rapporto. È possibile creare rapporti solo sulle BAT ancora associate solo alle opportunità "aperte" (ad esempio)</i></li>
    <li>Tipo di opportunità (è comune filtrare in base a determinate opportunità, ad esempio "Nuova azienda" anziché <i>tutto</i> opportunità)</li><br>
-   *Un filtro del segmento per il "Tipo di opportunità" deve essere utilizzato in [!DNL Marketo Measure] Scoprire</td> 
+   *Un filtro di segmento per il "Tipo di opportunità" deve essere utilizzato in [!DNL Marketo Measure] Scoprire</td> 
   </tr>
   <tr>
    <td>Campo data / Tipo data</td> 
@@ -635,7 +635,7 @@ Riepilogare i dati dei punti di contatto di attribuzione acquirenti delle opport
    <li>Canale di marketing = ricerca a pagamento</li>
    <li>Fase dell’opportunità* <i>(facoltativo a seconda delle opportunità specifiche che si desidera limitare al rapporto. Questo esempio si basa sui Ricavi della pipeline definiti in [!DNL Marketo Measure] Opportunità "aperte" (che rappresentano potenziali ricavi/pipeline aperta)</i></li>
    <li>Tipo di opportunità (è comune filtrare in base a determinate opportunità, ad esempio "Nuova azienda" anziché <i>tutto</i> opportunità)</li><br>
-   *Un filtro del segmento per il "Tipo di opportunità" deve essere utilizzato in [!DNL Marketo Measure] Scoprire</td> 
+   *Un filtro di segmento per il "Tipo di opportunità" deve essere utilizzato in [!DNL Marketo Measure] Scoprire</td> 
   </tr>
   <tr>
    <td>Campo data / Tipo data</td> 
@@ -725,7 +725,7 @@ Quando si segnala il ROI in [!DNL Marketo Measure] Scopri, si consiglia di utili
 
 I filtri evidenziati di seguito sono fondamentali per un rapporto incentrato sul ROI in [!DNL Marketo Measure] (molto probabilmente imposterai questi filtri nelle schede &quot;Panoramica&quot;, &quot;CMO&quot; o &quot;ROI&quot;):
 
-**5,1 | ROI nel consiglio &quot;Panoramica&quot;**
+**5,1 | ROI nella scheda &quot;Panoramica&quot;**
 
 ![](assets/bizible-reporting-guide-4.png)
 
@@ -734,7 +734,7 @@ L’intervallo &quot;Date&quot; (Data) non solo imposta la coorte dei punti di c
 
 ![](assets/bizible-reporting-guide-5.png)
 
-La schermata precedente mostra i dati sulla spesa di marketing negli ultimi 3 mesi completi. In questo esempio, sono stati spesi $ 12.970 per tutti i canali. Questo numero è composto dai dati della spesa di marketing [!DNL Marketo Measure] proviene dalle integrazioni con uno qualsiasi degli account degli annunci collegati (Google AdWords, Bing Ads, Facebook Ads, LinkedIn, DoubleClick) ed eventuali spese di marketing aggiuntive che sono state caricate all’interno del tuo account o estratte automaticamente dai record di una campagna nel CRM. L’esempio mostra anche quanto &quot;Entrate&quot; vinto chiuso può essere attribuito anche ai punti di contatto che si sono verificati durante lo stesso intervallo di date (caselle verdi). Questo è il modo in cui viene calcolato il ROI: ricavi attribuiti ai punti di contatto provenienti dall’investimento nello stesso intervallo di date:
+La schermata precedente mostra i dati sulla spesa di marketing negli ultimi 3 mesi completi. In questo esempio, sono stati spesi $ 12.970 per tutti i canali. Questo numero è composto dai dati della spesa di marketing [!DNL Marketo Measure] proviene dalle integrazioni con uno qualsiasi degli account degli annunci collegati (Google AdWords, Bing Ads, Facebook Ads, LinkedIn, DoubleClick) ed eventuali spese di marketing aggiuntive che sono state caricate all’interno dell’account o estratte automaticamente dai record di una campagna nel CRM. L’esempio mostra anche quanto &quot;Entrate&quot; vinto chiuso può essere attribuito anche ai punti di contatto che si sono verificati durante lo stesso intervallo di date (caselle verdi). Questo è il modo in cui viene calcolato il ROI: ricavi attribuiti ai punti di contatto provenienti dall’investimento nello stesso intervallo di date:
 
 ![](assets/bizible-reporting-guide-6.png)
 

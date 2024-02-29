@@ -2,7 +2,7 @@
 description: Dashboard di coinvolgimento - [!DNL Marketo Measure] - Prodotto
 title: Dashboard di coinvolgimento
 feature: Reporting
-source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Risposte alle domande della dashboard:
 
 Il grafico a barre delle serie temporali mostra il numero di punti di contatto, persone toccate e punti di contatto per persona per ogni mese, trimestre e anno.
 
-* Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
+* utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore del mouse su una barra o su una riga per visualizzare informazioni dettagliate.
 
 Risposte alle domande del grafico:
@@ -50,7 +50,7 @@ Risposte alle domande del grafico:
 
 Grafico a barre che mostra i punti di contatto o le persone toccate segmentati per canale/sottocanale/campagna.
 
-* Sfrutta le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
+* utilizza le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
 * Passa il puntatore del mouse su ciascuna barra per visualizzare i punti di contatto o le persone toccate.
 
 Risposte alle domande del grafico:

@@ -1,42 +1,43 @@
 ---
-source-git-commit: ea1e867b7169bac473d8e9754cbb97a0fdcb57fd
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 23%
+source-wordcount: '272'
+ht-degree: 98%
 
 ---
-# Contributo
+# Come contribuire
 
 Grazie per aver scelto di contribuire!
 
-Di seguito sono riportate alcune linee guida da seguire per contribuire a questo progetto.
+Ecco una serie di linee guida da seguire per contribuire a questo progetto.
 
-## Codice di condotta
+## Codice di comportamento
 
-Il progetto aderisce al [Codice di condotta](code-of-conduct.md) di Adobe. Con la tua partecipazione, accetti di rispettare questo codice. Segnalare comportamenti inaccettabili a
+Il progetto aderisce al [Codice di condotta](code-of-conduct.md) di Adobe. La partecipazione
+presuppone il rispetto di questo codice. Segnala comportamenti non accettabili a
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Avete Una Domanda?
+## Hai domande?
 
-Inizia segnalando un problema. Gli attuali committer di questo progetto si adoperano per raggiungere un consenso sulla direzione del progetto e per elaborare soluzioni all’interno dei thread di discussione (se opportuno).
+Segnala un problema. Gli attuali committer di questo progetto si adoperano per raggiungere il consenso sulla direzione del progetto e per elaborare soluzioni all’interno dei thread di discussione (se opportuno).
 
-## Contratto di licenza da collaboratore
+## Contratto di licenza per i collaboratori
 
-Tutti i contributi di terze parti a questo progetto devono essere accompagnati da un contratto di licenza per i contributori firmato. In tal modo è concesso ad Adobe il permesso di ridistribuire i contributi come parte del progetto. [Firma il Contratto di licenza da collaboratore](https://opensource.adobe.com/cla.html). È sufficiente inviare un CLA di Adobe una sola volta, quindi se ne hai già inviato uno in precedenza, puoi iniziare!
+Tutti i contributi di terzi a questo progetto devono essere accompagnati da un contratto di licenza per collaboratori debitamente firmato. Questo autorizza Adobe a ridistribuire i tuoi contributi nell’ambito del progetto. [Firma il Contratto di licenza per i collaboratori](https://opensource.adobe.com/cla.html). Il Contratto di licenza per i collaboratori Adobe deve essere inviato una sola volta. Se lo hai già inviato, puoi iniziare subito!
 
 ## Revisioni del codice
 
-Tutte le richieste devono essere presentate sotto forma di richieste pull e devono essere riviste da chi conferma i progetti. Per ulteriori informazioni sull’invio di richieste pull, leggi la [documentazione sulle richieste pull di GitHub](https://help.github.com/articles/about-pull-requests/).
+Tutti gli invii devono essere effettuati sotto forma di richieste pull e devono essere esaminati dai committer del progetto. Per ulteriori informazioni sull’invio di richieste pull, consulta la [documentazione di GitHub sulle richieste pull](https://help.github.com/articles/about-pull-requests/).
 
 <!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
+Lastly, follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
 submitting a pull request!
 -->
 
-## Da Collaboratore A Comitato
+## Da collaboratore a committer
 
-Amiamo i contributi della nostra comunità! Se desideri andare oltre il contributore e diventare un committer con accesso in scrittura completo e una voce in capitolo nel progetto, devi essere invitato al progetto. Gli attuali committer si avvalgono di un processo di nomina interna che deve raggiungere un consenso pigro (il silenzio è l&#39;approvazione) prima che gli inviti siano rilasciati. Se pensi di essere qualificato e vuoi essere coinvolto più a fondo, puoi rivolgerti agli attuali committer per discutere di questo aspetto.
+Siamo lieti di ricevere contributi dalla nostra community. Se desideri spingerti oltre il ruolo di collaboratore e diventare un committer con pieno accesso in scrittura e voce in capitolo nel progetto, devi essere invitato nel progetto. I committer esistenti utilizzano un processo di nomina interno soggetto a un meccanismo di silenzio-assenso prima dell’invio degli inviti. Se pensi di essere idoneo e sei interessato a un maggiore coinvolgimento, rivolgiti agli attuali committer.
 
 ## Problemi di sicurezza
 
-I problemi di sicurezza non devono essere segnalati su questo tracker di problemi. Invece, [segnala un problema ai nostri esperti di sicurezza](https://helpx.adobe.com/security/alertus.html)
+Per segnalare un problema di sicurezza, non usare questo tracker, ma [sottoponilo ai nostri esperti di sicurezza](https://helpx.adobe.com/it/security/alertus.html).

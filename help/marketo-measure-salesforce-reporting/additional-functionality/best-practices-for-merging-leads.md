@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874734
-description: Best practice per l’unione di lead - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Best practice per l’unione di lead - [!DNL Marketo Measure]
 title: Best practice per l’unione di lead
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ Se sono presenti più record con [!DNL Marketo Measure] , accertati che il recor
 
 Da qui, dovresti essere libero di unire i lead e [!DNL Marketo Measure] I dati verranno trasferiti al nuovo record.
 
-In caso di domande, non esitare a contattare l&#39;Adobe Account Team (il tuo Account Manager) o [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+In caso di domande, contatta il team dell’account Adobe (il tuo Account Manager) oppure [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 ![](assets/1.jpg)

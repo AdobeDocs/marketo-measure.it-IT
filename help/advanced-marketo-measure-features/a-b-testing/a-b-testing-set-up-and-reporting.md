@@ -1,23 +1,23 @@
 ---
 unique-page-id: 18874773
-description: Configurazione e reporting dei test A/B - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Configurazione e reporting dei test A/B - [!DNL Marketo Measure]
 title: Configurazione e reporting dei test A/B
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # Configurazione e reporting dei test A/B {#a-b-testing-set-up-and-reporting}
 
-Il [!DNL Marketo Measure] L’integrazione di test A/B consente di tenere traccia dell’impatto sui ricavi delle [Ottimizzato](https://optimizely.com/){target="_blank"} e gli esperimenti sul sito VWO. Questo articolo fornisce istruzioni su come aggiungere [!DNL Marketo Measure] Sezioni di prova A/B al lead, [!UICONTROL Contact], Case e [!UICONTROL Opportunity] layout di pagina. Vengono inoltre trattate le procedure di reporting generali e i consigli per l’esecuzione di [!DNL Marketo Measure] Tipi di rapporti A/B.
+Il [!DNL Marketo Measure] L’integrazione di test A/B consente di tenere traccia dell’impatto sui ricavi delle [Ottimizzato](https://www.optimizely.com/){target="_blank"} e gli esperimenti sul sito VWO. Questo articolo fornisce istruzioni su come aggiungere [!DNL Marketo Measure] Sezioni di prova A/B al lead, [!UICONTROL Contact], Case e [!UICONTROL Opportunity] layout di pagina. Sono inoltre trattate le procedure di reporting generali e le raccomandazioni per l’esecuzione di [!DNL Marketo Measure] Tipi di rapporti A/B.
 
 ## Configurazione {#set-up}
 
-Aggiungi il [!DNL Marketo Measure] Sezioni del test A/B su lead, contatto, caso e opportunità. [!DNL Marketo Measure] L’integrazione di test A/B consente di tenere traccia dell’impatto sui ricavi delle [Ottimizzato](https://optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} esperimenti sul sito.
+Aggiungi il [!DNL Marketo Measure] Sezioni del test A/B su lead, contatto, caso e opportunità. [!DNL Marketo Measure] L’integrazione di test A/B consente di tenere traccia dell’impatto sui ricavi delle [Ottimizzato](https://www.optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} esperimenti sul sito.
 
 1. Verifica dell’utilizzo del pacchetto [!DNL Marketo Measure] v3.9 o successiva. Per eseguire questa operazione, vai a [!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages].
 1. Modifica il layout della pagina lead e aggiungi **[!DNL Marketo Measure]Test A/B** Elenco correlato alla pagina.
@@ -45,16 +45,16 @@ I clienti hanno accesso a un paio di [!DNL Marketo Measure] Tipi di rapporti A/B
 
 ![](assets/4.png)
 
-I tipi di rapporto A/B vengono utilizzati per indicare su quale lead, contatto o opportunità è stato esposto a un test A/B. Inoltre, questi rapporti possono mostrare l’importo dei ricavi legati a un’opportunità che è stata esposta a un test A/B.
+I tipi di rapporto A/B vengono utilizzati per indicare su quale lead, contatto o opportunità è stato esposto a un test A/B. Questi rapporti mostrano anche l’importo dei ricavi legati a un’opportunità che è stata esposta a un test A/B.
 
-È importante notare che Optimizely/VWO è una piattaforma di variazione dei contenuti e non un canale di marketing. Pertanto, questi [!DNL Marketo Measure] I tipi di report A/B vengono utilizzati in modo diverso rispetto ai report Punti di contatto buyer. I tipi di rapporti sui punti di contatto dell’acquirente vengono utilizzati per capire quale canale di marketing (ad esempio, pubblicità a pagamento, web direct, social) ha portato un lead o un contatto a una pagina specifica. Tuttavia, [!DNL Marketo Measure] I tipi di rapporto A/B non possono essere utilizzati per generare rapporti sul modo in cui una variante ha influenzato un lead o un’opportunità. Inoltre, poiché una variante di test A/B non è un canale, i dettagli sulla variante non verranno visualizzati sul punto di contatto dell’acquirente.
+È importante notare che Optimizely/VWO è una piattaforma di variazione dei contenuti e non un canale di marketing. Pertanto, questi [!DNL Marketo Measure] I tipi di report A/B vengono utilizzati in modo diverso rispetto ai report Punti di contatto buyer. I tipi di rapporti sui punti di contatto dell’acquirente vengono utilizzati per capire quale canale di marketing (pubblicità a pagamento, web direct, social) ha portato un lead o un contatto a una pagina specifica. Tuttavia, [!DNL Marketo Measure] I tipi di rapporto A/B non possono essere utilizzati per generare rapporti sul modo in cui una variante ha influenzato un lead o un’opportunità. Poiché una variante di test A/B non è un canale, i dettagli sulla variante non vengono visualizzati nel punto di contatto dell’acquirente.
 
-Di seguito sono riportati alcuni campi comuni che consigliamo di utilizzare durante la generazione di rapporti su test A/B per migliorare la chiarezza e le informazioni:
+Di seguito sono riportati alcuni campi consigliati da utilizzare durante la generazione di rapporti su un test A/B per migliorare chiarezza e approfondimenti:
 
 * Lead convertito
 * Esperimento
 * ID esperimento
-* Variazione
+* Variante
 * ID variante
 * Data rapporto
 

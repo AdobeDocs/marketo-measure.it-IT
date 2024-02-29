@@ -1,23 +1,23 @@
 ---
 unique-page-id: 18874596
-description: Configurazione canale personalizzato online - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Configurazione canale personalizzato online - [!DNL Marketo Measure]
 title: Impostazione canale personalizzato online
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
 
 # Impostazione canale personalizzato online {#online-custom-channel-setup}
 
-Per ottenere una reportistica accurata, è necessario impostare i canali di marketing in modo che riflettano la strategia UTM della tua organizzazione. Questa guida illustra il modo migliore per configurare le regole di canale personalizzate.
+Per ottenere una reportistica accurata, i canali di marketing devono essere impostati in modo da riflettere la strategia UTM della tua organizzazione. Questa guida illustra il modo migliore per configurare le regole di canale personalizzate.
 
 ## Prima di iniziare {#before-you-begin}
 
-Prima di iniziare a creare le regole del canale per [!DNL Marketo Measure], soffermati a pensare all’organizzazione delle campagne di marketing e al loro adattamento al [!DNL Marketo Measure] infrastruttura. Devi determinare quali canali, sottocanali, campagne e siti web di riferimento desideri monitorare.
+Prima di iniziare a creare le regole del canale per [!DNL Marketo Measure], soffermati a pensare all’organizzazione delle campagne di marketing e al loro adattamento al [!DNL Marketo Measure] infrastruttura. Determina quali canali, sottocanali, campagne e siti web di riferimento desideri monitorare.
 
 Aspetti da considerare:
 
@@ -25,7 +25,7 @@ Aspetti da considerare:
 * La tua organizzazione può creare fino a 200 sottocanali.
 * Ogni raccolta, o bucket, di dati necessita di una propria regola (riga nel foglio di calcolo) per specificare la modalità di organizzazione dei dati. Sii il più specifico possibile.
 * [!DNL Marketo Measure] la logica assegna priorità ai dati in ordine decrescente, a partire dalla riga superiore del foglio di calcolo fino alla fine. Legge ogni bucket, o cella, riga per riga alla ricerca del primo adattamento. I dati vengono quindi ordinati in base ai valori in questi bucket. Ulteriori informazioni su questo.
-* Non ordinare il foglio in ordine alfabetico in quanto ciò interferisce con le regole logiche.
+* Non ordinare il foglio in ordine alfabetico in quanto questo interferisce con le regole logiche.
 * Una volta caricato il file, non puoi modificare nessuna delle regole per sette giorni. [!DNL Marketo Measure] utilizza questo tempo per elaborare e aggiornare i punti di contatto.
 
 ## [!DNL Marketo Measure] Logica e priorità {#marketo-measure-logic-and-priorities}
@@ -34,7 +34,7 @@ Il primo passaggio consiste nel scaricare il foglio di calcolo del canale person
 
 ![](assets/1.png)
 
-Il foglio di calcolo ha 7 colonne:
+Il foglio di calcolo è composto da sette colonne:
 
 ![](assets/2.png)
 
@@ -48,15 +48,15 @@ Il foglio di calcolo ha 7 colonne:
 
 L’ottava colonna indica quali regole non è possibile eliminare dal foglio di calcolo con &quot;Non rimuovere&quot;. Nella parte superiore del foglio di calcolo sono presenti regole di canale predefinite che [!DNL Marketo Measure] consiglia di non modificare o rimuovere anche se non si utilizzano questi canali. [!DNL Marketo Measure] dispone di integrazioni approfondite con queste piattaforme, in modo che siano incluse per impostazione predefinita.
 
-Le righe rappresentano le regole e l’ordine in cui [!DNL Marketo Measure] assegna la priorità ai dati. La prima riga ha priorità rispetto alla seconda riga, la seconda riga ha priorità rispetto alla terza e così via. Quando determini in quale canale di marketing e sottocanale inserire i punti di contatto, [!DNL Marketo Measure] legge dall’alto verso il basso, da sinistra a destra, fino a quando non trova una riga che soddisfi i criteri del punto di contatto. (IE se un punto di contatto ha un utm_source=Facebook, verrà inserito nel bucket del canale Social.Facebook a causa della regola 15 nella schermata).
+Le righe rappresentano le regole e l’ordine in cui [!DNL Marketo Measure] assegna la priorità ai dati. La prima riga ha priorità rispetto alla seconda riga, la seconda riga ha priorità rispetto alla terza e così via. Quando determini in quale canale di marketing e sottocanale inserire i punti di contatto, [!DNL Marketo Measure] legge dall’alto verso il basso, da sinistra a destra, fino a quando non trova una riga che soddisfi i criteri del punto di contatto. (Se un punto di contatto ha `utm_source=Facebook`, il punto di contatto è inserito nel canale Social.Facebook a causa della regola 15 nella schermata).
 
 ![](assets/3.png)
 
-[!DNL Marketo Measure] viene fornito con 12 canali predefiniti. Questi canali sono correlati alle piattaforme con cui [!DNL Marketo Measure] è completamente integrato. Indipendentemente dal fatto che li utilizzi o meno, non rimuoverli. Se ad esempio utilizzi una di queste piattaforme, Bing Ads, ma preferisci utilizzare una convenzione di denominazione diversa per il canale o il sottocanale, potrai aggiornare il nome. Un esempio è mostrato nell&#39;immagine seguente.
+[!DNL Marketo Measure] viene fornito con 12 canali predefiniti. Questi canali sono correlati alle piattaforme con cui [!DNL Marketo Measure] è completamente integrato. Che li utilizzi o meno, non rimuoverli. Se ad esempio utilizzi una di queste piattaforme, Bing Ads, ma preferisci utilizzare una convenzione di denominazione diversa per il canale o il sottocanale, potrai aggiornare il nome. Un esempio è mostrato nell&#39;immagine seguente.
 
 ![](assets/4.png)
 
-Anche la struttura delle norme è importante. Le regole possono sembrare informazioni ripetute e dati mancanti, ma questa struttura è intenzionale. Per un ordinamento accurato dei dati, è necessario mappare separatamente ogni singola origine sul canale appropriato, anche le origini che condividono sottocanali e canali. Più sono dettagliate e dettagliate le regole, più i risultati saranno approfonditi. In sostanza, è consigliabile scrivere una regola dettagliata per ogni singola attività di marketing che desideri monitorare.
+Anche la struttura delle norme è importante. Le regole possono sembrare informazioni ripetute e dati mancanti, ma questa struttura è intenzionale. Per un ordinamento accurato dei dati, è necessario mappare separatamente ogni singola origine sul canale appropriato, anche le origini che condividono sottocanali e canali. Più sono dettagliate e dettagliate le regole, più sono approfonditi i risultati. In pratica, è consigliabile scrivere una regola dettagliata per ogni attività di marketing che desideri monitorare.
 
 Considera la seguente situazione: hai altri annunci che non desideri monitorare per qualche motivo, o ricevi visite al tuo sito web da un canale familiare, ma non da una fonte familiare. Questa situazione potrebbe causare la perdita di dati se [!DNL Marketo Measure] impossibile trovare la regola appropriata da utilizzare per ordinare i dati. Per evitare che ciò si verifichi, [!DNL Marketo Measure] consiglia di interrompere la regola su più righe.
 
@@ -64,21 +64,21 @@ Ogni parametro o componente della regola viene mappato separatamente al canale. 
 
 ![](assets/5.png)
 
-La regola successiva richiede solo il parametro medium, quindi tutti i dati con quel parametro verranno inseriti in questo canale. Infine per [!DNL Facebook], tutti i dati provenienti dall’URL di Facebook verranno inseriti nell’ultimo bucket di Facebook.
+La regola successiva richiede solo il parametro medium, quindi tutti i dati con quel parametro vengono inseriti in questo canale. Infine per [!DNL Facebook], tutti i dati provenienti dall’URL di Facebook vengono inseriti nell’ultimo bucket di Facebook.
 
 Il canale predefinito &quot;Altro&quot; esiste per acquisire dati che non soddisfano i criteri di alcuna regola. Alcuni bucket nell&#39;altro canale contengono asterischi (&#42;). Questi asterischi rappresentano caratteri jolly che fungono da modello.
 
 ![](assets/6.png)
 
-Dovuto a [!DNL Marketo Measure] che funziona dall’alto verso il basso, tieni presente che la regola dei caratteri jolly, indicata con un asterisco (&#42;), deve essere posizionato alla fine del foglio delle regole. Tutti i dati che non vengono rilevati o ordinati dalle altre regole verranno aggiunti automaticamente a questo bucket di caratteri jolly.
+Dovuto a [!DNL Marketo Measure] logica dall&#39;alto verso il basso, la regola con caratteri jolly, indicata con un asterisco (&#42;), deve essere posizionato alla fine del foglio delle regole. Tutti i dati che non vengono rilevati o ordinati dalle altre regole vengono aggiunti a questo bucket di caratteri jolly.
 
 Di seguito sono riportati altri esempi di logica dei caratteri jolly:
 
 * &#42;email&#42; = contiene &quot;e-mail&quot;
 * &#42;email = termina con &quot;email&quot;
-* e-mail&#42; = [!UICONTROL starts with email]
+* email&#42; = [!UICONTROL starts with email]
 
-Inoltre, tieni presente che se crei un sottocanale per uno dei tuoi canali, dovrai creare un sottocanale per tutte le regole in quel canale. In altre parole, se si crea un canale secondario, non è possibile lasciare vuote le altre colonne.
+Inoltre, tieni presente che se crei un sottocanale per uno dei tuoi canali, devi creare un sottocanale per tutte le regole sotto tale canale. In altre parole, se si crea un canale secondario, non è possibile lasciare vuote le altre colonne.
 
 ## Configurazione delle regole dei canali personalizzate {#setting-up-your-custom-channels-rules}
 
@@ -91,7 +91,7 @@ Dopo aver deciso come organizzare e assegnare la priorità ai dati, puoi aggiung
 * Le regole di ricerca organica vengono sempre posizionate dopo il [!UICONTROL Paid Search rules]
 * Non puoi creare regole basate su sottodomini diversi.
 * Se in una cella del foglio di calcolo sono presenti più valori, separarli con un punto e virgola `;` solo. Senza virgole o spazi.
-* Non è necessario aggiungere dot com (.com) alla fine dell’URL di riferimento.
+* Non è necessario aggiungere dot-com (.com) alla fine dell’URL di riferimento.
 * Quando aggiungi un URL di riferimento, non metterlo tra parentesi come nelle altre regole relative all’API.
 
 ## Caricamento Delle Regole Dei Canali Personalizzati {#uploading-your-custom-channels-rules}

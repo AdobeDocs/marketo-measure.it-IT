@@ -1,10 +1,10 @@
 ---
-description: Panoramica delle autorizzazioni di integrazione - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Panoramica delle autorizzazioni di integrazione - [!DNL Marketo Measure]
 title: Panoramica delle autorizzazioni di integrazione
 feature: APIs, Integration
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1286'
 ht-degree: 1%
 
 ---
@@ -221,7 +221,7 @@ Marketo Measure tiene traccia di campagne, gruppi di annunci, creatività, colle
     <td>L’integrazione degli attributi del cliente B2B consente agli utenti di Marketo Measure e Adobe Analytics di arricchire i profili utente di Adobe Analytics con metadati preziosi derivati dal motore di attribuzione Marketo Measure e tramite la sua funzionalità di sincronizzazione con i sistemi CRM (Microsoft Dynamics e Salesforce). <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Ulteriori informazioni</a>.</td>
     <td>Il cliente deve fornire a Marketo Measure un ID alias e le credenziali del server FTP in una posizione in cui i dati verranno caricati nella propria istanza di Analytics.
     <p>
-    Prendi nota delle seguenti informazioni, in quanto saranno necessarie per alcuni dei passaggi successivi del processo:
+    Prendi nota delle seguenti informazioni, in quanto saranno necessarie per alcune delle fasi successive del processo:
     <p>
     <li>L’ID alias, che può essere qualsiasi valore vuoi che sia. Consigliamo "marketomeasure_id"</li>
     <li>Nome host e credenziali del server FTP (nome utente e password)</li>

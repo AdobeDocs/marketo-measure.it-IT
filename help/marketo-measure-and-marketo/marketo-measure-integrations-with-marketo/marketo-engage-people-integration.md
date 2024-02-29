@@ -1,13 +1,13 @@
 ---
 unique-page-id: 37356395
-description: "[!DNL Marketo Engage] Integrazione delle persone - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Engage] Integrazione delle persone - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Engage] Integrazione delle persone"
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '867'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ L&#39;integrazione Marketo People consente [!DNL Marketo Measure] per iniziare a
 * Istanza Marketo di produzione
 * Produzione [!DNL Salesforce] o [!DNL Microsoft Dynamics] istanza
 * Qualsiasi pagamento effettuato [!DNL Marketo Measure] abbonamento
-* SOLR abilitato (contattare il [Supporto Marketo](https://nation.marketo.com/t5/Support/ct-p/Support) per abilitare questa funzione)
+* SOLR abilitato (raggiungere [Supporto Marketo](https://nation.marketo.com/t5/Support/ct-p/Support) per abilitare questa funzione)
 
 ## Come funziona {#how-it-works}
 
@@ -40,7 +40,7 @@ I clienti hanno la possibilità di segnalare l’intero set di persone Marketo e
 
 ## [!DNL Marketo Measure Discover] {#marketo-measure-discover}
 
-Quando si generano rapporti sui lead (persone) in [!DNL Marketo Measure Discover], visualizzerai il totale dei lead Marketo e CRM. Per creare rapporti solo sulle persone Marketo o solo sui lead CRM, devi creare una categoria di segmenti per la tua origine, quindi creare regole di segmenti per Marketo e CRM utilizzando il campo &quot;Sistema di origine&quot; per definire la regola. Una volta creati i segmenti, vedrai la categoria Origine disponibile per filtrare in base al [!DNL Marketo Measure Discover] dashboard.
+Quando si generano rapporti sui lead (persone) in [!DNL Marketo Measure Discover], visualizzerai il totale dei lead Marketo e CRM. Per creare rapporti solo sulle persone Marketo o solo sui lead CRM, dovrai creare una categoria di segmenti per la tua origine, quindi creare regole di segmenti per Marketo e CRM utilizzando il campo &quot;Sistema di origine&quot; per definire la regola. Una volta creati i segmenti, vedrai la categoria Origine disponibile per filtrare in base al [!DNL Marketo Measure Discover] dashboard.
 
 ![](assets/bizible-discover-1.png)
 
@@ -101,7 +101,7 @@ Quando si generano rapporti sui lead (persone) in [!DNL Marketo Measure Discover
  </tbody> 
 </table>
 
-*Esiste un problema di comportamento noto in cui i campi dell’entità Marketo Company non influiscono sul valore updateAt della persona, quindi se vengono aggiornati campi rilevanti come Sito web o Azienda, [!DNL Marketo Measure] non è a conoscenza del fatto che tali valori vengono modificati perché il valore di data/ora updateAt non è aggiornato. Questo influisce sulla funzione ABM, in cui non avremmo dati aggiornati per risolvere l’account per il lead. Al momento non esiste una soluzione alternativa, ma si prevede di affrontarla in futuro.
+*È noto un problema comportamentale in cui i campi dell’entità Marketo Company non influiscono sul valore updateAt della persona, quindi se vengono aggiornati campi rilevanti come Sito web o Azienda, [!DNL Marketo Measure] non è a conoscenza del fatto che tali valori vengono modificati perché il valore di data/ora updateAt non è aggiornato. Questo influisce sulla funzione ABM, in cui non avremmo dati aggiornati per risolvere l’account per il lead. Al momento non esiste una soluzione alternativa, ma si prevede di affrontarla in futuro.
 
 ## Domande frequenti {#faq}
 
@@ -121,7 +121,7 @@ In questo momento, no. Avremo questa opzione in futuro, ma dobbiamo sviluppare a
 
 Al momento, la prima persona che importeremo è dal 1/1/2018 in modo che abbiamo un minimo di 2 anni di dati, che è lo stesso comportamento che applichiamo dai download CRM. Implementeremo un comportamento migliorato per scaricare una finestra continua di 2 anni una volta stabilita la connessione Marketo.
 
-Inoltre, non filtra per nessun tipo di persona, quindi tutte le persone nella finestra di due anni verranno importate e saranno idonee per i punti di contatto.
+Inoltre, non filtra per nessun tipo di persone, quindi tutte le persone nella finestra di due anni verranno importate e saranno idonee per i punti di contatto.
 
 **Cos&#39;è la funzione SOLR e perché è necessario che sia abilitata per l&#39;utilizzo di questa funzione?**
 

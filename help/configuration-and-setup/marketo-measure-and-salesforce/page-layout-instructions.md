@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874799
-description: Istruzioni di layout pagina - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Istruzioni di layout pagina - [!DNL Marketo Measure]
 title: Istruzioni di layout pagina
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 1%
+source-wordcount: '756'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Per vedere facilmente [!DNL Marketo Measure] è consigliabile aggiornare i layout di pagina per i [!UICONTROL Account], [!UICONTROL Contact], [!UICONTROL Lead], [!UICONTROL Opportunity], e [!UICONTROL Campaign] Oggetti. Le istruzioni vengono suddivise per ogni layout di pagina oggetto riportato di seguito.
 
@@ -23,7 +23,7 @@ Per iniziare, accedi al [!DNL Salesforce] Impostazioni di configurazione e indiv
 
 ## Oggetto Campaign {#campaign-object}
 
-È consigliabile aggiungere [!DNL Marketo Measure] campi nella tua Campagna SFDC solo per la sandbox. I campi possono essere utilizzati per testare la generazione di punti di contatto. In produzione si consiglia di aggiungere solo [!DNL Marketo Measure] Pulsante Bulk Update Touchpoint Date (Data punto di contatto per aggiornamento in blocco). Si sconsiglia di aggiungere [!DNL Marketo Measure] campi in produzione, in quanto è possibile creare regole di sincronizzazione di Campaign.
+Si consiglia di aggiungere [!DNL Marketo Measure] campi nella tua Campagna SFDC solo per la sandbox. I campi possono essere utilizzati per testare la generazione di punti di contatto. In produzione, si consiglia di aggiungere solo il [!DNL Marketo Measure] Pulsante Bulk Update Touchpoint Date (Data punto di contatto per aggiornamento in blocco). Si sconsiglia di aggiungere [!DNL Marketo Measure] campi in produzione, in quanto è possibile creare la regola di sincronizzazione di Campaign.
 
 1. All’interno dell’opzione Build, seleziona **[!UICONTROL Campaigns]**.
 
@@ -31,7 +31,7 @@ Per iniziare, accedi al [!DNL Salesforce] Impostazioni di configurazione e indiv
 
    ![](assets/1-1.jpg)
 
-1. Clic **[!UICONTROL Edit]** accanto al layout di pagina da aggiornare.
+1. Clic **[!UICONTROL Edit]** accanto al layout di pagina che si desidera aggiornare.
 
    ![](assets/2-1.jpg)
 
@@ -49,7 +49,7 @@ Per iniziare, accedi al [!DNL Salesforce] Impostazioni di configurazione e indiv
 
    >[!NOTE]
    >
-   >Se utilizzi più tipi di record Campaign, i valori dell’elenco a discesa per **[!UICONTROL Enable Buyer Touchpoints]** sarà necessario aggiornare il campo. Fai riferimento a [questo articolo](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md) per istruzioni.
+   >Se utilizzi più tipi di record Campaign, devi aggiornare i valori dell’elenco a discesa per **[!UICONTROL Enable Buyer Touchpoints]** campo. Fai riferimento a [questo articolo](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md) per istruzioni.
 
 ## Lead {#leads}
 
@@ -57,11 +57,11 @@ Per iniziare, accedi al [!DNL Salesforce] Impostazioni di configurazione e indiv
 
 1. Clic **[!UICONTROL Page Layouts]**.
 
-1. Clic **[!UICONTROL Edit]** accanto al layout di pagina da aggiornare. Tieni presente che più layout di pagina possono contenere le sezioni Punti di contatto dell’acquirente.
+1. Clic **[!UICONTROL Edit]** accanto al layout di pagina che si desidera aggiornare. Tieni presente che più layout di pagina possono contenere le sezioni Punti di contatto dell’acquirente.
 
 1. Fare clic sull&#39;opzione della pagina VisualForce a sinistra nel menu di ricerca rapida.
 
-1. Crea una nuova sezione e denominala &quot;Punti di contatto dell’acquirente&quot;.
+1. Crea una sezione e denominala &quot;Punti di contatto dell’acquirente&quot;.
 
    >[!NOTE]
    >
@@ -71,15 +71,15 @@ Per iniziare, accedi al [!DNL Salesforce] Impostazioni di configurazione e indiv
 
    ![](assets/5-1.png)
 
-1. Fai clic sulla chiave all’interno del [!DNL VisualForce] e impostare l&#39;altezza su 100 e attivare le barre di scorrimento.
+1. Fare clic sulla chiave all&#39;interno del [!DNL VisualForce] e impostare l&#39;altezza su 100 e attivare le barre di scorrimento.
 
-1. Nel menu, seleziona la [!UICONTROL Canvas Apps] e crea una nuova sezione denominata &quot;Marketo Measure Insights&quot; sotto i punti di contatto [!DNL VisualForce] sezione appena creata.
+1. Nel menu, seleziona la [!UICONTROL Canvas Apps] e creare una sezione denominata &quot;Marketo Measure Insights&quot; sotto i punti di contatto [!DNL VisualForce] sezione creata.
 
    >[!NOTE]
    >
    >Seleziona il formato &quot;una colonna&quot; per ciascuna di queste sezioni.
 
-1. Trascina [!DNL Marketo Measure Insights] Canvas App nella sezione appena creata. Clic **Salva**. A volte è necessario salvare il layout di pagina prima di rilasciarlo nell’app Canvas, perché Salesforce non lo riconosce immediatamente. Quindi, dopo aver creato la nuova sezione, salva il layout di pagina e quindi modificalo nuovamente per trascinare l’app nell’area di lavoro all’interno di tale sezione. Questo vale per ogni oggetto.
+1. Trascina [!DNL Marketo Measure Insights] Canvas App nella sezione appena creata. Clic **Salva**. A volte è necessario salvare il layout di pagina prima di rilasciarlo nell’app Canvas, perché Salesforce non lo riconosce immediatamente. Quindi, dopo aver creato la sezione, salva il layout di pagina e rimodificalo per trascinare l’app nell’area di lavoro all’interno della sezione. Questo vale per ogni oggetto.
 
    >[!NOTE]
    >
@@ -190,4 +190,4 @@ Se utilizzi il [!DNL Marketo Measure] funzione ABM, [fare clic qui per ulteriori
 
 1. Clic **[!UICONTROL Save]**.
 
-Se utilizzi il [!DNL Marketo Measure] funzione ABM,  [fare clic qui per ulteriori istruzioni sul layout della pagina](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
+Se utilizzi il [!DNL Marketo Measure] funzione ABM, rivedi il [istruzioni aggiuntive per il layout della pagina](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).

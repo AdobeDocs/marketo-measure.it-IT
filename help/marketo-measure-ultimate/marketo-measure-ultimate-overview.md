@@ -1,11 +1,11 @@
 ---
-description: '[!DNL Marketo Measure] Panoramica Ultimate - [!DNL Marketo Measure] - Documentazione del prodotto'
+description: '[!DNL Marketo Measure] Panoramica Ultimate - [!DNL Marketo Measure]'
 title: '''[!DNL Marketo Measure] Panoramica di Ultimate'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---

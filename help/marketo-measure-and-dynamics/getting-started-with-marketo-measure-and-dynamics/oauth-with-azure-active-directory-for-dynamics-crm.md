@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37357059
-description: OAuth con [!DNL Azure Active Directory] per Dynamics CRM - [!DNL Marketo Measure] - Documentazione del prodotto
+description: OAuth con [!DNL Azure Active Directory] per Dynamics CRM - [!DNL Marketo Measure]
 title: OAuth con [!DNL Azure Active Directory] per Dynamics CRM
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Questa configurazione è per il nuovo [!DNL Marketo Measure] clienti che utilizz
 1. Seguire le istruzioni e creare una nuova applicazione. Non importa se si tratta di un’applicazione web o di un client pubblico (mobile e desktop), ma se desideri esempi specifici per applicazioni web o applicazioni client pubbliche, consulta la [quickstart](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-overview).\
    a. Nome è il nome dell&#39;applicazione e descrive l&#39;applicazione agli utenti finali.\
    b. In Tipi di conto supportati, selezionare Account in qualsiasi directory organizzativa e account Microsoft personali.\
-   c. Fornisci l’URI di reindirizzamento. Per le applicazioni web, questo è l’URL di base dell’app a cui gli utenti possono accedere. Ad esempio, `http://localhost:12345`. Per il client pubblico (mobile e desktop), Azure AD lo utilizza per restituire le risposte token. Immettere un valore specifico per l&#39;applicazione. Ad esempio, `http://MyFirstAADApp`.
+   c. Fornisci l’URI di reindirizzamento. Per le applicazioni web, questo è l’URL di base dell’app a cui gli utenti possono accedere. Ad esempio: `http://localhost:12345`. Per il client pubblico (mobile e desktop), Azure AD lo utilizza per restituire le risposte token. Immettere un valore specifico per l&#39;applicazione. Ad esempio: `http://MyFirstAADApp`.
 
 1. Dopo aver completato la registrazione, Azure AD assegnerà all&#39;applicazione un identificatore client univoco (ID applicazione). Questo valore è necessario nella sezione successiva, quindi copialo dalla pagina dell’applicazione.
 
@@ -118,7 +118,7 @@ b. Segreto client è il segreto dell’applicazione creato nel portale di Azure 
 
 c. L’URI dell’ID applicazione è l’URL dell’API web di destinazione (risorsa protetta). Per trovare l’URL dell’ID app, nel portale di Azure, fai clic su [!DNL Azure Active Directory], fare clic su Registrazioni applicazioni, aprire la pagina Impostazioni dell&#39;applicazione, quindi fare clic su Proprietà. Può anche essere una risorsa esterna come `https://graph.microsoft.com`. Questo è normalmente l’URL dell’istanza Dynamics.
 
-1. Dopo aver fatto clic su **[!UICONTROL Submit]**, ti verrà chiesto di accedere con [!DNL Azure Active Directory]. Quando l’autenticazione ha esito positivo, l’account Dynamics verrà connesso come provider di dati in [!DNL Marketo Measure].
+1. Dopo aver fatto clic su **[!UICONTROL Submit]**, verrà richiesto di effettuare l&#39;accesso con [!DNL Azure Active Directory]. Quando l’autenticazione ha esito positivo, l’account Dynamics verrà connesso come provider di dati in [!DNL Marketo Measure].
 
 ## Nuova autenticazione dell’account Dynamics {#re-authenticating-your-dynamics-account}
 
@@ -130,4 +130,4 @@ c. L’URI dell’ID applicazione è l’URL dell’API web di destinazione (ris
 
    ![](assets/re-authenticating-3.png)
 
-1. Dopo aver fatto clic su **[!UICONTROL Submit]**, ti verrà chiesto di accedere con [!DNL Azure Active Directory]. Quando l’autenticazione ha esito positivo, l’account Dynamics verrà nuovamente autorizzato entro [!DNL Marketo Measure].
+1. Dopo aver fatto clic su **[!UICONTROL Submit]**, verrà richiesto di effettuare l&#39;accesso con [!DNL Azure Active Directory]. Quando l’autenticazione ha esito positivo, l’account Dynamics verrà nuovamente autorizzato entro [!DNL Marketo Measure].

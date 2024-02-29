@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874688
-description: Costi campagna CRM - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Costi campagna CRM - [!DNL Marketo Measure]
 title: Costi campagna CRM
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Qualsiasi modifica al costo o alla distribuzione deve essere fatta nel CRM in mo
 
 **Ho la data di inizio, la data di fine e il costo compilato, ma perché i miei costi non vengono ancora visualizzati in [!DNL Marketo Measure]?**
 
-Verifica di avere il valore Abilita punto di contatto acquirente impostato su &quot;Includi tutti i membri della campagna&quot; o almeno &quot;Includi i membri della campagna con risposta&quot;, oppure di aver creato una regola di sincronizzazione della campagna personalizzata che include questa campagna. Se hai confermato questa impostazione e non vedi ancora la campagna, contatta il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} in modo che possiamo verificare che le tue campagne vengano importate correttamente.
+Verifica di avere il valore Abilita punto di contatto acquirente impostato su &quot;Includi tutti i membri della campagna&quot; o almeno su &quot;Includi i membri della campagna con risposta&quot;, oppure di aver creato una regola di sincronizzazione della campagna personalizzata che include questa campagna. Se hai confermato questa impostazione e non vedi ancora la campagna, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} in modo che possiamo verificare che le tue campagne vengano importate correttamente.
 
 **Devo modificare la distribuzione della mia campagna in modo da poterla pesare più pesantemente in alcuni mesi. Come lo faccio?**
 

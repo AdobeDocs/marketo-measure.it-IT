@@ -1,11 +1,11 @@
 ---
-description: Best practice per le connessioni API - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Best practice per le connessioni API - [!DNL Marketo Measure]
 title: Best practice per le connessioni API
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---

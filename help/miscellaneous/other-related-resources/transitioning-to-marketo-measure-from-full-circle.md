@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874535
-description: Transizione a [!DNL Marketo Measure] da Cerchio intero - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Transizione a [!DNL Marketo Measure] da Cerchio intero - [!DNL Marketo Measure]
 title: Transizione a [!DNL Marketo Measure] da Cerchio intero
 exl-id: fd471771-33e2-413a-b155-02ba6e32e10c
 feature: Attribution, Fundamentals
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Se hai dimestichezza con la gestione delle campagne CRM e preferisci mantenere i
 
 Con la maggior parte delle configurazioni Full Circle, puoi vedere ogni singola interazione che una persona ha con le tue attività di marketing o di vendita. Visualizzazioni di pagina, visite di pagina ripetute, appartenenza a campagne duplicate e triplicate - Cerchio completo fa emergere tutte queste campagne. Se visualizzi una pagina 300 volte, Full Circle crea 300 campagne duplicate e ti assegna l’iscrizione a ciascuna di esse. [!DNL Marketo Measure] non lo fa, e questa è stata una decisione consapevole di progettazione da parte nostra.
 
-[!DNL Marketo Measure] mira a fornirti una storia di attribuzione che metta in evidenza interazioni significative e distribuisca il peso tra i punti di contatto più incisivi in modo appropriato. Ad esempio, il [!DNL Marketo Measure] il framework non fa emergere le visualizzazioni di pagina (senza riempimenti modulo) come punti di contatto di routine. È improbabile che una visualizzazione di pagina autonoma abbia un impatto su come promuovere il percorso di acquisto, ma verrà creato un punto di contatto se si tratta dell’interazione più recente prima di una fase cardine del sistema CRM designata (ad esempio Creazione di lead o opportunità). Non vogliamo mostrarti tutto. Vogliamo mostrarvi le cose che contano, dal punto di vista dell&#39;attribuzione.
+[!DNL Marketo Measure] mira a fornirti una storia di attribuzione che metta in evidenza interazioni significative e distribuisca il peso tra i punti di contatto più incisivi in modo appropriato. Ad esempio, il [!DNL Marketo Measure] il framework non fa emergere le visualizzazioni di pagina (senza riempimenti modulo) come punti di contatto di routine. È improbabile che una visualizzazione di pagina autonoma abbia un impatto su come portare avanti un percorso di acquisto, ma verrà creato un punto di contatto se si tratta dell’interazione più recente prima di una fase cardine del sistema CRM designata (ad esempio Creazione di lead o opportunità). Non vogliamo mostrarti tutto. Vogliamo mostrarvi le cose che contano, dal punto di vista dell&#39;attribuzione.
 
 Utilizzare [!DNL Marketo Measure] rep per impostare le aspettative appropriate in merito ai dati che non saranno più disponibili per il team.
 

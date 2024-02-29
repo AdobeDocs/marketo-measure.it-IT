@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874743
-description: Connessione [!DNL Marketo Measure] per annullare la remissione di Script Manager - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Connessione [!DNL Marketo Measure] per annullare la remissione di Script Manager - [!DNL Marketo Measure]
 title: Connessione [!DNL Marketo Measure] per annullare la remissione di Script Manager
 exl-id: c3212bc3-1d8f-4da5-bb2d-11ffd2fb4e98
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '111'
+ht-degree: 0%
 
 ---
 

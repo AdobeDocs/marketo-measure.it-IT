@@ -1,11 +1,11 @@
 ---
-description: "[!DNL Marketo Measure] Integrazioni con Adobe Analytics - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Integrazioni con Adobe Analytics - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Integrazioni con [!DNL Adobe Analytics]"
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ L’integrazione degli attributi del cliente B2B consente agli utenti di [!DNL M
 
 ## Configurazione dell’integrazione {#configuring-the-integration}
 
-1. Per iniziare, crea una nuova origine dati per gli attributi del cliente nella console di Experienci Cloud. Istruzioni dettagliate [si trova qui](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/t-crs-usecase.html).
+1. Crea una nuova origine dati per gli attributi del cliente nella console di Experienci Cloud. Istruzioni dettagliate [si trova qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html).
 
-   Prendi nota delle seguenti informazioni, in quanto saranno necessarie per alcuni dei passaggi successivi del processo:
+   Prendi nota delle seguenti informazioni, necessarie nei passaggi successivi:
 
    * L’ID alias, che può essere qualsiasi valore vuoi che sia. Consigliamo &quot;marketomeasure_id&quot;
 
@@ -30,15 +30,15 @@ L’integrazione degli attributi del cliente B2B consente agli utenti di [!DNL M
 
 1. Una volta creata l’origine dati degli attributi del cliente, continua il processo di configurazione passando al **[!UICONTROL Integrations]** > **[!UICONTROL Connections]** schermata in [!DNL Marketo Measure] menu di amministrazione.
 
-1. Fai clic sul pulsante **[!UICONTROL Set Up New Customer Attributes Connection]** e seguire le istruzioni per configurare l’integrazione Attributi del cliente. L’interfaccia utente ti chiederà di fornire le informazioni sull’ID alias e sulla connessione FTP acquisite durante la creazione dell’origine degli attributi del cliente nella tua console dei servizi core, nonché di selezionare il set di attributi dell’account da sincronizzare con il tuo [!DNL Adobe Analytics] account.
+1. Fai clic su **[!UICONTROL Set Up New Customer Attributes Connection]** e seguire le istruzioni per configurare l’integrazione Attributi del cliente. L’interfaccia utente richiede di specificare l’ID alias e le informazioni di connessione FTP acquisiti durante la creazione dell’origine attributi del cliente nella console dei servizi core e di selezionare il set di attributi dell’account da sincronizzare con il [!DNL Adobe Analytics] account.
 
-   Dovrai inoltre inserire l’ID organizzazione Adobe IMS. Questo ID viene visualizzato nell’angolo inferiore destro dell’Admin Console di Adobe Experience Cloud. Per maggiori informazioni su come trovare questo ID, rivolgiti al team dell’account Adobe (il tuo Account Manager).
+   dovrai inoltre inserire l’ID organizzazione Adobe IMS. Questo ID viene visualizzato nell’angolo inferiore destro dell’Admin Console di Adobe Experience Cloud. Per maggiori informazioni su come trovare questo ID, rivolgiti al team dell’account Adobe (il tuo Account Manager).
 
-1. Una volta completata la creazione della connessione nel [!DNL Marketo Measure] account, dovrai tornare alla console Experience Cloud per [convalidare lo schema](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/validate-schema.html). Non devi preoccuparti del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato quella parte per te. Tutto ciò che devi fare è passare alla schermata &quot;View/Edit&quot; (Visualizza/Modifica) dello schema per l’origine degli attributi del cliente creata nel passaggio 1 e dire all’Adobe quali sono i tipi di dati per ciascuno degli attributi che [!DNL Marketo Measure] ha caricato per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
+1. Una volta completata la creazione della connessione nel [!DNL Marketo Measure] account, devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). Non devi preoccuparti del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato quella parte per te. Tutto ciò che devi fare è passare alla schermata &quot;View/Edit&quot; (Visualizza/Modifica) dello schema per l’origine degli attributi del cliente creata nel passaggio 1 e dire all’Adobe quali sono i tipi di dati per ciascuno degli attributi che [!DNL Marketo Measure] ha caricato per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
 
    Se hai scelto di sincronizzare gli attributi dall’oggetto account CRM, ti consigliamo vivamente di sceglierne di nuovi, come [!DNL Marketo Measure] compilerà solo i nomi a livello di API per questi attributi, che in genere non sono descrittivi dei rapporti.
 
-1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni di Experience Cloud in cui desideri utilizzare gli attributi.  Puoi configurare le iscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [si trova qui](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/subscription.html).
+1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni di Experience Cloud in cui desideri utilizzare gli attributi. Puoi configurare le iscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [si trova qui](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/subscription.html).
 
 ## Descrizioni attributi {#attribute-descriptions}
 
@@ -64,7 +64,7 @@ Oltre a quelli elencati di seguito, puoi anche caricare qualsiasi attributo asso
   <tr> 
    <td>Ricavi attribuiti - ‹MODEL›</td> 
    <td>I ricavi attribuiti a questo cliente in virtù della sua associazione con opportunità acquisite nel tuo sistema CRM, come calcolato dalla [!DNL Marketo Measure] motore di attribuzione.<br/>
-   Sarà presente uno di questi attributi per ogni modello di attribuzione che [!DNL Marketo Measure] gli abbonamenti consentono (ad esempio, "Entrate attribuite - Percorso completo").</td>
+   Esiste uno di questi attributi per ogni modello di attribuzione che [!DNL Marketo Measure] gli abbonamenti consentono (ad esempio, "Entrate attribuite - Percorso completo").</td>
   </tr>
   <tr> 
    <td>Fase funnel più profonda</td> 
@@ -79,7 +79,7 @@ Oltre a quelli elencati di seguito, puoi anche caricare qualsiasi attributo asso
 
 **Nota sui limiti degli attributi**
 
-Tieni presente che gli attributi visualizzati tramite questa integrazione verranno comunque conteggiati rispetto ai limiti degli attributi contrattuali in [!DNL Adobe Analytics] e [!DNL Adobe Target]. Solo gli attributi visualizzati tramite una sottoscrizione di attributi (passaggio 5 in [Configurazione dell’integrazione](#configuring-the-integration)) verrà conteggiato rispetto al limite per l&#39;applicazione sottoscritta.
+Gli attributi emersi tramite questa integrazione verranno comunque conteggiati rispetto ai limiti degli attributi contrattuali in [!DNL Adobe Analytics] e [!DNL Adobe Target]. Solo gli attributi visualizzati tramite una sottoscrizione di attributi (passaggio 5 in [Configurazione dell’integrazione](#configuring-the-integration)) verrà conteggiato rispetto al limite per l&#39;applicazione sottoscritta.
 
 ## Domande frequenti {#faqs}
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762310
-description: Sincronizzazione dei dati storici - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Sincronizzazione dei dati storici - [!DNL Marketo Measure]
 title: Sincronizzazione dei dati cronologici
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **I dati sono già organizzati in campagne?**
 
-a. I dati devono essere organizzati in Campagne da sincronizzare con [!DNL Marketo Measure] per generare i punti di contatto. Se non è attualmente organizzato in Campagne, puoi valutare se vale la pena dedicare tempo e risorse per segmentare i dati nelle campagne appropriate.
+a. I dati devono essere organizzati in Campagne da sincronizzare con [!DNL Marketo Measure] per generare i punti di contatto. Se al momento non è organizzato in Campagne, dovrai valutare se vale la pena dedicare tempo e risorse per segmentare i dati nelle campagne appropriate.
 
 b. La data in cui il membro è stato aggiunto alla campagna o contrassegnato come risposta verrà utilizzata per la data del punto di contatto, quindi anche questo deve essere accurato. [!DNL Marketo Measure] offre soluzioni alternative sia in SFDC che in MSD per aggiornare le date, ma potrebbe richiedere tempo a seconda del volume.
 
@@ -47,7 +47,7 @@ Questo è un argomento di cui si consiglia vivamente di discutere con il proprio
 
 ## Sincronizzazione delle campagne storiche in [!DNL Salesforce] {#syncing-historic-campaigns-in-salesforce}
 
-**Online:**
+**In linea:**
 
 Per sincronizzare i dati storici online, i dati devono essere organizzati in campagne Salesforce a cui eseguire la sincronizzazione [!DNL Marketo Measure] tramite [!DNL Salesforce] Regole di sincronizzazione delle campagne in [!DNL Marketo Measure] app. È importante assicurarsi che i punti di contatto non vengano generati da nessuna di queste campagne dopo la data di pubblicazione del codice JavaScript. Questo per evitare di duplicare il punto di contatto. Una volta che JavaScript è attivo, le attività online vengono tracciate automaticamente, quindi non vogliamo tracciarle anche tramite una campagna SFDC. Per evitare questo problema, assicurati di aggiungere un senso del tempo alla regola. Ad esempio, &quot;La data di creazione del membro della campagna è inferiore a [Data di pubblicazione JavaScript]&quot;.
 
@@ -85,7 +85,7 @@ Questo di solito comporta il lavoro nel CRM per tenere conto delle date storiche
 
 Segui le istruzioni riportate di seguito per organizzare i dati storici in [!DNL Dynamics] in un formato che può essere sincronizzato con [!DNL Marketo Measure].
 
-**Online:**
+**In linea:**
 
 I dati digitali storici devono essere organizzati in [!DNL Dynamics] campagne per essere compilate. Idealmente, questa struttura è già al suo posto.
 

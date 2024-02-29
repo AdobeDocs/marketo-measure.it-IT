@@ -2,7 +2,7 @@
 description: Dashboard velocità lead - [!DNL Marketo Measure] - Prodotto
 title: Dashboard della velocità del lead
 feature: Reporting
-source-git-commit: 35d2dfb0e2b3e0d04c942312fe9c83863064e3f4
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Come si confronta il tempo trascorso nella fase &quot;Primo contatto&quot; con l
 
 Il grafico a linee delle serie temporali mostra il tempo medio, in giorni, trascorso da lead/contatti in ogni fase di vendita nell’arco temporale specificato.
 
-* Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
+* utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore sopra una riga per visualizzare informazioni dettagliate.
 
 Risposte alle domande del grafico:

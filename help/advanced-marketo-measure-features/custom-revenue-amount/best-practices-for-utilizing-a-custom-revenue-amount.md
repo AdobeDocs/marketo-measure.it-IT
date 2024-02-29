@@ -1,11 +1,11 @@
 ---
-description: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato - [!DNL Marketo Measure]
 title: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---

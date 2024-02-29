@@ -4,28 +4,28 @@ description: Glossario dei campi Marketo Measure - Marketo Measure - Documentazi
 title: Glossario dei campi Marketo Measure
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 feature: Fundamentals
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '3211'
+source-wordcount: '3213'
 ht-degree: 0%
 
 ---
 
 # Glossario dei campi Marketo Measure {#glossary-of-marketo-measure-fields}
 
-Questo articolo fornisce un glossario di tutti i campi Marketo Measure aggiunti alla Salesforce dal pacchetto base di Marketo Measure. Troverai anche informazioni sull’oggetto sul quale è possibile trovare il campo e su come ogni campo viene compilato con informazioni.
+Questo articolo fornisce un glossario di tutti i campi Marketo Measure aggiunti alla Salesforce dal pacchetto base di Marketo Measure. Troverai anche informazioni sull’oggetto sul quale è possibile trovare il campo e su come ogni campo viene compilato con le informazioni.
 
-Per una mappa dell&#39;oggetto a cui si riferisce ogni campo Marketo Measure, [fai clic qui](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
+Per una mappa di cui Object è correlato ciascun campo Marketo Measure: [fai clic qui](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) · D · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · L · X · Y · Z
 
 ## A {#a}
 
-**Account** | Trovato sul punto di contatto di attribuzione acquirente
+**Account** | Trovato nel punto di contatto di attribuzione dell&#39;acquirente
 
 Questo campo viene compilato con il nome account associato alla BAT.
 
-**ID campagna pubblicitaria** | Trovato sul punto di contatto Acquirente, Punto di contatto Attribuzione acquirente
+**ID campagna pubblicitaria** | Trovato sul punto di contatto Acquirente, Punto di contatto attribuzione Acquirente
 
 È possibile compilare questo campo in tre modi:
 
@@ -53,11 +53,11 @@ Se nessuno dei precedenti, questo campo sarà vuoto.
 
 Se nessuno dei precedenti, questo campo sarà vuoto.
 
-**Nome della campagna pubblicitaria (FT)** | Punto di contatto acquirente
+**Nome della campagna pubblicitaria (FT)** | Punto di contatto dell&#39;acquirente
 
 Questo campo viene popolato nello stesso modo del Nome della campagna pubblicitaria. Tuttavia, questo campo mostra in modo specifico il nome della campagna pubblicitaria che ha generato il punto di contatto Primo contatto.
 
-**Nome campagna pubblicitaria (LC)** | Punto di contatto acquirente
+**Nome campagna pubblicitaria (LC)** | Punto di contatto dell&#39;acquirente
 
 Questo campo viene popolato nello stesso modo del Nome della campagna pubblicitaria. Tuttavia, questo campo mostra in modo specifico il nome della campagna pubblicitaria che ha generato il punto di contatto Creazione lead.
 
@@ -149,7 +149,7 @@ Se utilizzi un modello di attribuzione personalizzato, questo campo mostra, in f
 
 Se non utilizzi un modello personalizzato, questo campo sarà vuoto.
 
-**Conteggio - Modello personalizzato** | Punto di contatto acquirente
+**Conteggio - Modello personalizzato** | Punto di contatto dell&#39;acquirente
 
 Se utilizzi un modello di attribuzione personalizzato, questo campo mostra, in formato decimale, la percentuale di credito di attribuzione data a un punto di contatto in base ai valori impostati nel modello personalizzato. Poiché questo campo si riferisce all’oggetto punto di contatto acquirente, non riflette il credito di ricavo, ma solo il credito di attribuzione.
 
@@ -159,7 +159,7 @@ Se non utilizzi un modello personalizzato, questo campo sarà vuoto.
 
 Questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base a un modello di primo contatto.
 
-**Conteggio - Primo contatto** | Punto di contatto acquirente
+**Conteggio - Primo contatto** | Punto di contatto dell&#39;acquirente
 
 Questo campo mostra, in forma decimale, la percentuale di credito di attribuzione data a un punto di contatto in base a un modello di primo contatto. Se il punto di contatto è il Primo contatto, questo campo sarà sempre 1,0 (che indica un credito di attribuzione del 100%). Se il punto di contatto non è il Primo contatto, questo campo sarà sempre 0 (che indica un credito di attribuzione dello 0 %).
 
@@ -173,7 +173,7 @@ Questo campo mostra, in formato decimale, la percentuale di ricavi assegnata a u
 
 Questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base a un modello di creazione di lead.
 
-**Conteggio - Tocco creazione lead** | Punto di contatto acquirente
+**Conteggio - Tocco creazione lead** | Punto di contatto dell&#39;acquirente
 
 Questo campo mostra, in formato decimale, la percentuale di credito di attribuzione data a un punto di contatto in base a un modello di creazione di lead. Se il punto di contatto è il contatto di Creazione lead, questo campo sarà sempre 1.0 (che indica un credito di attribuzione del 100%). Se il punto di contatto non è il contatto di creazione del lead, questo campo sarà sempre 0 (che indica un credito di attribuzione dello 0%).
 
@@ -183,7 +183,7 @@ Poiché questo campo si riferisce all’oggetto punto di contatto acquirente, no
 
 Questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base a un modello a forma di U.
 
-**Conteggio - A forma di U** | Punto di contatto acquirente
+**Conteggio - A forma di U** | Punto di contatto dell&#39;acquirente
 
 Questo campo mostra, in forma decimale, la percentuale di credito di attribuzione data a un punto di contatto in base a un modello a forma di U. Nel modello a forma di U, il credito è diviso tra il primo contatto, il contatto di creazione del lead e qualsiasi invio di moduli intermediari che si è verificato tra il primo contatto e il contatto di creazione del lead.
 
@@ -407,11 +407,11 @@ T
 
 `3)` Se il punto di contatto proviene da un’attività, in questo campo verrà visualizzata la data e l’ora del campo selezionato come data del punto di contatto nelle regole dell’attività.
 
-**Data punto di contatto (FT)** | Punto di contatto acquirente
+**Data punto di contatto (FT)** | Punto di contatto dell&#39;acquirente
 
 Questo è lo stesso campo della Data del punto di contatto, tuttavia questo campo visualizza specificamente la data e l’ora in cui si è verificato il primo punto di contatto.
 
-**Data punto di contatto (LC)** | Punto di contatto acquirente
+**Data punto di contatto (LC)** | Punto di contatto dell&#39;acquirente
 
 Questo è lo stesso campo della Data punto di contatto, tuttavia questo campo visualizza in modo specifico la data e l’ora in cui si è verificato il punto di contatto per la creazione di lead.
 
@@ -443,11 +443,11 @@ Chiuso: l’interazione di marketing più vicina a quando l’Opp viene chiusa (
 
 Se nessuno dei precedenti, questo campo verrà compilato come &#39;Web Direct&#39; o &#39;Web&#39;.
 
-**Sorgente punto di contatto (FT)** | Punto di contatto acquirente
+**Sorgente punto di contatto (FT)** | Punto di contatto dell&#39;acquirente
 
 Questo è lo stesso campo di Sorgente punto di contatto, tuttavia questo campo visualizza in modo specifico l’origine del punto di contatto Primo contatto.
 
-**Sorgente punto di contatto (LC)** | Punto di contatto acquirente
+**Sorgente punto di contatto (LC)** | Punto di contatto dell&#39;acquirente
 
 Questo è lo stesso campo di Sorgente punto di contatto, ma questo campo visualizza in modo specifico l’origine del punto di contatto Creazione lead.
 

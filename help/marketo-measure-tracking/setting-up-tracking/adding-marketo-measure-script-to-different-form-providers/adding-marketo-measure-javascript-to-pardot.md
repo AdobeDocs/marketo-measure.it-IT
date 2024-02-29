@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874757
-description: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot] - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot] - [!DNL Marketo Measure]
 title: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---

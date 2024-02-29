@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874580
-description: Collegare Marketo Measure a Salesforce - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Collegare Marketo Measure a Salesforce - [!DNL Marketo Measure]
 title: Connettere Marketo Measure a Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 feature: Salesforce
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Questo articolo fornisce una panoramica su come collegare [!DNL Salesforce] acco
 
    ![](assets/connect-marketo-measure-to-salesforce-2.png)
 
-1. Verrà visualizzata una finestra popup in cui viene richiesto di selezionare la connessione CRM. Fai clic su **[!UICONTROL Connect]** accanto al pulsante [!DNL Salesforce] Logo.
+1. Viene visualizzata una finestra popup in cui viene richiesto di selezionare la connessione CRM. Clic **[!UICONTROL Connect]** accanto al [!DNL Salesforce] Logo.
 
    ![](assets/connect-marketo-measure-to-salesforce-3.png)
 
@@ -41,7 +41,7 @@ Questo articolo fornisce una panoramica su come collegare [!DNL Salesforce] acco
 >
 >* A [!DNL Marketo Measure] L&#39;istanza può essere connessa a un&#39;istanza Sandbox SFDC per testare l&#39;integrazione prima di passare alla connessione all&#39;istanza di produzione SFDC.
 >* Se esegui prima il test con una sandbox SFDC, ti consigliamo vivamente di eseguire il test con una che sia una replica esatta dell’istanza di produzione SFDC in termini di campi sugli oggetti Lead, Contatto, Account, Opportunità, Campagna e Caso. Se in produzione sono presenti trigger APEX attivi che attivano gli aggiornamenti per gli oggetti Lead, Contact, Account, Opportunity, Campaign e Case, è necessario provare a renderli attivi nella sandbox.
->* Al termine del test, potrai aggiornare [!DNL Marketo Measure] account per indicare la tua produzione [!DNL Salesforce] (anziché Sandbox [!DNL Salesforce]). A causa del modo in cui è stata costruita l’integrazione, una volta [!DNL Marketo Measure] l&#39;account è connesso alla produzione [!DNL Salesforce], non è possibile tornare indietro e connettersi a una sandbox [!DNL Salesforce] org.
+>* Al termine del test, aggiorna il tuo [!DNL Marketo Measure] account per indicare la tua produzione [!DNL Salesforce] (anziché Sandbox [!DNL Salesforce]). A causa del modo in cui è stata costruita l’integrazione, una volta [!DNL Marketo Measure] l&#39;account è connesso alla produzione [!DNL Salesforce], non è possibile tornare indietro e connettersi a una sandbox [!DNL Salesforce] org.
 
 ## Utilizzo crediti API {#api-credits-usage}
 
@@ -55,7 +55,7 @@ Puoi accedere a questo limite in Marketo Measure tramite: **Il mio account** > *
 
 1. Accedi a **Il mio account** > **Impostazioni**.
 
-1. In CRM, fai clic su **Generale**. Vedrai il **Limite API CRM giornaliero** opzione.
+1. In CRM, fai clic su **Generale**. Vedete la **Limite API CRM giornaliero** opzione.
 
 1. Fai clic sull’icona Blocca per modificarla.
 

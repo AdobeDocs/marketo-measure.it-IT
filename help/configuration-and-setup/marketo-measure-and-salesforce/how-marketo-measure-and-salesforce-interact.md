@@ -4,9 +4,9 @@ description: Come [!DNL Marketo Measure] e [!DNL Salesforce] Interact - Marketo 
 title: Come [!DNL Marketo Measure] e [!DNL Salesforce] Interagisci
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 3be29892b58852cf080828e9eeff969ac08cc62b
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1263'
 ht-degree: 19%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Diamo uno sguardo ad alto livello alla relazione tra [!DNL Marketo Measure] e Salesforce.
 
 ## Salesforce e [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-Una volta [!DNL Marketo Measure] l’account viene creato e [!DNL Salesforce] è connesso, [!DNL Marketo Measure] inizierà a inviare dati di marketing all’istanza di gestione delle relazioni con i clienti finché il [!DNL Marketo Measure] il pacchetto gestito viene installato e il [!DNL Marketo Measure] L’utente Salesforce dispone delle autorizzazioni di modifica.
+Una volta [!DNL Marketo Measure] l’account viene creato e [!DNL Salesforce] è connesso, [!DNL Marketo Measure] inizia a inviare dati di marketing all’istanza di gestione delle relazioni con i clienti, purché [!DNL Marketo Measure] il pacchetto gestito viene installato e il [!DNL Marketo Measure] L’utente Salesforce dispone delle autorizzazioni di modifica.
 
 Se non hai installato [!DNL Marketo Measure] Pacchetto Salesforce [!DNL Marketo Measure] non scriverà alcun dato nell’istanza Salesforce.
 
@@ -31,11 +31,11 @@ Per impostazione predefinita, [!DNL Marketo Measure] esporta 200 record per cred
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-Quando modifichi questa impostazione, tieni presente che le dimensioni batch più piccole consumeranno più crediti API dal CRM. È consigliabile ridurre la dimensione del batch solo se si verifica un timeout della CPU o un carico della CPU elevato nel CRM.
+Quando modifichi questa impostazione, tieni presente che le dimensioni batch più piccole consumano più crediti API dal CRM. È consigliabile ridurre la dimensione del batch solo se si verifica un timeout della CPU o un carico della CPU elevato nel CRM.
 
 ## Accesso e oggetti di Salesforce Standard {#salesforce-standard-objects-and-access}
 
-Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagisce con, nonché con i campi personalizzati che aggiungiamo a questi oggetti una volta stabilita la connessione e [!DNL Marketo Measure] è installato. Pronti all’uso, [!DNL Marketo Measure] NON scriverà in alcuno standard [!DNL Salesforce] Campi oggetto.
+Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagisce con e con i campi personalizzati che aggiungiamo a questi oggetti una volta stabilita la connessione e [!DNL Marketo Measure] è installato. Pronti all’uso, [!DNL Marketo Measure] NON scriverà in alcuno standard [!DNL Salesforce] Campi oggetto.
 
 **Lead**
 
@@ -806,7 +806,7 @@ Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagis
 
 ## [!DNL Marketo Measure] Oggetti personalizzati in [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
 
-Oltre a creare campi personalizzati sugli oggetti standard di SFDC, una volta [!DNL Marketo Measure] viene installato, verranno creati due oggetti personalizzati. Di seguito è riportato un elenco di questi oggetti personalizzati insieme a una tabella che indica i campi che [!DNL Marketo Measure] scriverà a.
+Oltre a creare campi personalizzati sugli oggetti standard di SFDC, una volta [!DNL Marketo Measure] viene installato, vengono creati due oggetti personalizzati. Di seguito è riportato un elenco di questi oggetti personalizzati insieme a una tabella che indica i campi che [!DNL Marketo Measure] scriverà a.
 
 **Punto di contatto dell&#39;acquirente**
 

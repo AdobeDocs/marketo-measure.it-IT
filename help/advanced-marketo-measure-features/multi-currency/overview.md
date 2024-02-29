@@ -1,12 +1,12 @@
 ---
 unique-page-id: 27656735
-description: Panoramica - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Panoramica - [!DNL Marketo Measure]
 title: Panoramica
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
 feature: Multi-Currency
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---

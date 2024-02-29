@@ -4,9 +4,9 @@ description: Punti di contatto PostLC e coinvolgimento dei lead - Marketo Measur
 title: Punti di contatto PostLC e coinvolgimento lead
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ I punti di contatto PostLC sono dinamici. Poiché un lead o un contatto continua
 
 ## Come modificare le impostazioni dei punti di contatto PostLC {#how-to-change-postlc-touchpoint-settings}
 
-Per regolare le impostazioni del punto di contatto PostLC per i lead o i contatti, attenersi alle istruzioni riportate di seguito.
+Per regolare le impostazioni dei punti di contatto PostLC per i lead o i contatti, attenersi alle istruzioni riportate di seguito.
 
 **Lead**
 

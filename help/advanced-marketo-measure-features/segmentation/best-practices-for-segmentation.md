@@ -1,11 +1,11 @@
 ---
-description: Best practice per la segmentazione - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Best practice per la segmentazione - [!DNL Marketo Measure]
 title: Best practice per la segmentazione
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---

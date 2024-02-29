@@ -1,10 +1,10 @@
 ---
 unique-page-id: 18874648
-description: Differenza tra una conversione Google Analytics e un punto di contatto acquirente - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Differenza tra una conversione Google Analytics e un punto di contatto acquirente - [!DNL Marketo Measure]
 title: Differenza tra una conversione Google Analytics e un punto di contatto acquirente
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%

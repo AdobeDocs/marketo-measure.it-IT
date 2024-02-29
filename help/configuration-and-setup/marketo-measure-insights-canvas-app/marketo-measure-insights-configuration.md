@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874769
-description: "[!DNL Marketo Measure] Configurazione approfondimenti - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Configurazione approfondimenti - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Configurazione approfondimenti"
 exl-id: f6fe296b-d22a-43f2-b124-5d4b2f74d67a
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Il [!DNL Marketo Measure] L’app Canvas per approfondimenti deve essere aggiunt
 
 1. Seleziona la [!DNL Marketo Measure Insights] dall’elenco che compila.
 
-1. Sotto [!UICONTROL OAuth] criteri, modificare l’impostazione Utenti consentiti in &quot;Gli utenti approvati dall’amministratore sono pre-autorizzati&quot;. Apparirà un pop-up, fai clic su **[!UICONTROL OK]** e poi **[!UICONTROL Save]**.
+1. Sotto [!UICONTROL OAuth] criteri, modificare l’impostazione Utenti consentiti in &quot;Gli utenti approvati dall’amministratore sono pre-autorizzati&quot;. Viene visualizzata una finestra a comparsa, fare clic su **[!UICONTROL OK]** e poi **[!UICONTROL Save]**.
 
    ![](assets/1-1.png)
 
-1. Una volta salvata la pagina, potrai fare clic sul pulsante **[!UICONTROL Manage Profiles]** pulsante.
+1. Una volta salvata la pagina, puoi fare clic sul pulsante **[!UICONTROL Manage Profiles]** pulsante.
 
    ![](assets/2-1.png)
 

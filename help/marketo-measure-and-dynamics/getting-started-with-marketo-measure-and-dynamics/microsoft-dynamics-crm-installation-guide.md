@@ -4,9 +4,9 @@ description: "[!DNL Microsoft Dynamics] Guida all’installazione di CRM - Marke
 title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 ## Versioni supportate {#supported-versions}
 
@@ -51,7 +51,7 @@ Per la connessione e l’autenticazione, [!DNL Marketo Measure] supporta le segu
 
 ## Ruoli di sicurezza {#security-roles}
 
-Se l’organizzazione utilizza i ruoli di sicurezza di Dynamics, assicurati che l’utente connesso o l’utente dedicato [!DNL Marketo Measure] L’utente dispone di autorizzazioni di lettura/scrittura sufficienti per le entità richieste.
+Se la tua organizzazione utilizza i Ruoli di Dynamics Security, assicurati che l’utente connesso o l’utente dedicato [!DNL Marketo Measure] L’utente dispone di autorizzazioni di lettura/scrittura sufficienti per le entità richieste.
 
 I ruoli di sicurezza si trovano qui: **[!UICONTROL Settings]** > **[!UICONTROL Security]** > **[!UICONTROL Security Roles]**.
 
@@ -94,7 +94,7 @@ Per le entità standard di Dynamics, consulta [!DNL Marketo Measure] Documento s
 
 **Ricavi**
 
-[!DNL Marketo Measure] punta al campo Reddito effettivo standard per impostazione predefinita. Se non lo utilizzi, spiega come invii i rapporti sui ricavi al tuo Solutions Engineer o Success Manager, in quanto sarà necessario un flusso di lavoro personalizzato.
+[!DNL Marketo Measure] punta al campo Reddito effettivo standard per impostazione predefinita. Se non lo utilizzi, spiega come generare rapporti sui ricavi al Solutions Engineer o al Success Manager, in quanto sarà necessario un flusso di lavoro personalizzato.
 
 **Data di chiusura**
 
@@ -128,7 +128,7 @@ Dopo aver effettuato l’accesso a [!DNL Marketo Measure] e sono stati impostati
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni su OAuth, visita [questo articolo](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md). In caso di domande sul processo, contattare il [!DNL Marketo Measure] Rappresentante dell’account.
+   >Per ulteriori informazioni su OAuth, visita [questo articolo](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md). In caso di domande sul processo, contatta il [!DNL Marketo Measure] Rappresentante dell’account.
 
 1. In questo esempio sono state scelte le credenziali. Immetti le credenziali e fai clic su **[!UICONTROL Next]**.
 
@@ -162,7 +162,7 @@ Per ottenere [!DNL Marketo Measure] per tenere traccia delle attività web, sono
 
    >[!NOTE]
    >
-   >Per aggiungere più domini radice, contatta il tuo [!DNL Marketo Measure] Rappresentante dell’account.
+   >Per aggiungere più domini principali, contatta il tuo [!DNL Marketo Measure] Rappresentante dell’account.
 
 1. Il [[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md) quindi deve essere posizionato sull’intero sito e sulle pagine di destinazione. È consigliabile codificare lo script all’interno della parte superiore delle pagine di destinazione o aggiungerlo tramite un sistema Tag Management, ad esempio [Gestione tag Google](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md).
 

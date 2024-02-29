@@ -3,9 +3,9 @@ description: Accesso Data Warehouse - Account di Reader - Documentazione del pro
 title: Data Warehouse accesso - Account Reader
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 
    ![](assets/data-warehouse-access-reader-account-2.png)
 
-1. In questa pagina è disponibile il collegamento al data warehouse di Snowflake e al nome utente.
+1. In questa pagina è disponibile il collegamento al data warehouse di Snowflake e il nome utente.
 
    ![](assets/data-warehouse-access-reader-account-3.png)
 
@@ -59,7 +59,7 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 
 ## Connessione al Snowflake tramite strumenti di terze parti {#connecting-to-snowflake-via-third-party-tools}
 
-È necessario immettere alcune informazioni per collegare il data warehouse di Snowflake a uno strumento di terze parti.
+è necessario immettere alcune informazioni per collegare il data warehouse di Snowflake a uno strumento di terze parti.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 * **Nome utente** (sempre obbligatorio)
    * Il nome utente è elencato nella pagina delle informazioni della Data Warehouse in [!DNL Marketo Measure].
 * **Password** (sempre obbligatorio)
-   * Questa è la password impostata al primo accesso all&#39;account di Snowflake.  Per reimpostare la password, vedere i passaggi descritti in precedenza.
+   * Questa è la password impostata al primo accesso all&#39;account di Snowflake.  Per reimpostare la password, seguire la procedura descritta in precedenza.
 * **Nome database** (non sempre richiesto)
    * Il database è ciò che memorizza i dati nel Snowflake. Si tratta della risorsa di archiviazione. Il nome del database è elencato nella pagina Data Warehouse informazioni di [!DNL Marketo Measure].
 * **Nome data warehouse** (non sempre richiesto)

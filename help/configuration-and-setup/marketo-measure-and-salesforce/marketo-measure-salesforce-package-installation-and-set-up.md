@@ -1,18 +1,18 @@
 ---
-description: "[!DNL Marketo Measure] Installazione e configurazione dei pacchetti Salesforce - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Installazione e configurazione dei pacchetti Salesforce - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione dei pacchetti"
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure] Installazione e configurazione del pacchetto Salesforce {#marketo-measure-salesforce-package-installation-and-set-up}
 
-Prima di installare [!DNL Marketo Measure] [!DNL Salesforce] pacchetto base, è necessario determinare se verrà installato per la prima volta in un [!DNL Salesforce] prima di passare all’istanza di produzione Salesforce.
+Prima di installare [!DNL Marketo Measure] [!DNL Salesforce] base, è necessario determinare se si sta installando per la prima volta in un [!DNL Salesforce] prima di passare all’istanza di produzione Salesforce.
 
 >[!NOTE]
 >
@@ -24,11 +24,11 @@ Il [!DNL Marketo Measure] Il pacchetto base contiene:
 * Personalizzato [!DNL Marketo Measure] Campi
 * 25 [!DNL Stock] Rapporti
 
-[!DNL Marketo Measure] è in grado di leggere standard [!DNL Salesforce] Oggetti, campi e record, [!DNL Marketo Measure] non aggiornerà mai o invierà loro dati. Tutti i dati raccolti da [!DNL Marketo Measure] Javascript verrà visualizzato nella [!DNL Marketo Measure] Oggetti e campi personalizzati.
+[!DNL Marketo Measure] è in grado di leggere standard [!DNL Salesforce] Oggetti, campi e record, [!DNL Marketo Measure] non aggiornerà mai o invierà loro dati. Tutti i dati raccolti da [!DNL Marketo Measure] JavaScript sarà incluso in [!DNL Marketo Measure] Oggetti e campi personalizzati.
 
 Per installare il [!DNL Marketo Measure Salesforce] pacchetto di base.
 
-1. Utilizzando un browser in incognito, vai al [Salesforce Appexchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} e accedi.
+1. Utilizzando un browser in incognito, vai al [AppExchange Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} e accedi.
 
 1. Installare in [!DNL Marketo Measure] in sandbox o produzione.
 
@@ -46,13 +46,13 @@ Dopo aver completato l&#39;installazione, è possibile aggiornare [[!DNL Salesfo
 
 >[!NOTE]
 >
->Leggi informazioni su [!DNL Marketo Measure] Set di autorizzazioni creati e [come verranno utilizzati](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
+>Leggi informazioni su [!DNL Marketo Measure] Set di autorizzazioni creati e [come vengono utilizzati](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
 
 ## Creazione di un [!DNL Marketo Measure] Profilo e utente {#creating-a-marketo-measure-profile-and-user}
 
 [!DNL Marketo Measure] invia e riceve dati tramite una connessione [!DNL Salesforce] utente all&#39;interno di [!DNL Marketo Measure] app.
 
-Per inviare i dati del punto di contatto al tuo [!DNL Salesforce] , l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ad esempio punto di contatto buyer e punto di contatto attribuzione buyer) e standard [!DNL Salesforce] oggetti quali lead e contatti.
+Per inviare i dati del punto di contatto al [!DNL Salesforce] , l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ad esempio, punto di contatto Acquirente e punto di contatto Attribuzione acquirente) e standard [!DNL Salesforce] oggetti quali lead e contatti.
 
 Creare un [!DNL Marketo Measure] profilo per garantire che non si verifichino errori di convalida durante il push dei dati in Salesforce.
 
@@ -75,7 +75,7 @@ Passaggio 2: creare un [!DNL Marketo Measure] in modo da poter tenere traccia de
 
 1. Abilita &quot;Utente marketing&quot; come autorizzazione a livello di utente.
 
-* Il [!UICONTROL Marketing User] La casella di controllo consente all’utente di creare campagne e utilizzare l’Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere sull’oggetto campaign.
+* Il [!UICONTROL Marketing User] La casella di controllo consente all’utente di creare campagne e utilizzare l’Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell’oggetto della campagna.
 
 Passaggio 3: escludere questo profilo da tutti i trigger, i flussi di lavoro e i processi
 

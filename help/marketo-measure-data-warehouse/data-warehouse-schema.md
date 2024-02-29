@@ -4,9 +4,9 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: f77c4471887c18b177dedab5b4c41f3a64010539
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '21115'
+source-wordcount: '21110'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti su
 
 ## Diagrammi di relazione entità {#entity-relationship-diagrams}
 
-Il _Data Warehouse modello dati_ ERD mostra il modo in cui i dati nel data warehouse devono fluire ed essere collegati tra loro. Questo diagramma non include tutte le tabelle disponibili nel data warehouse perché alcune di esse rappresentano tabelle di mappatura, viste di altre tabelle già presenti o tabelle obsolete che non si consiglia di utilizzare più. Di seguito sono riportate le descrizioni dettagliate delle tabelle e delle colonne presenti nel data warehouse. Molte di queste tabelle contengono campi denormalizzati, tuttavia questo diagramma è il modello dati consigliato, che sfrutta i dati provenienti da tabelle dimensionali.
+Il _Data Warehouse modello dati_ ERD mostra il modo in cui i dati nel data warehouse devono fluire ed essere collegati tra loro. Questo diagramma non include tutte le tabelle disponibili nel data warehouse perché alcune di esse rappresentano tabelle di mappatura, viste di altre tabelle già presenti o tabelle obsolete che non si consiglia di utilizzare più. Vedi le descrizioni dettagliate delle tabelle e delle colonne presenti nel data warehouse di seguito. Molte di queste tabelle contengono campi denormalizzati, tuttavia questo diagramma è il modello dati consigliato, che sfrutta i dati provenienti da tabelle dimensionali.
 
 Il valore aggiuntivo _Aggiunge il modello dati dimensionale_ ERD presenta una visualizzazione del modo migliore per collegare le tabelle per le dimensioni specifiche degli annunci alle tabelle del modello dati principale. Anche se le dimensioni degli annunci vengono denormalizzate in altre tabelle, questo rappresenta il modello consigliato per unire queste dimensioni.
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874662
-description: Definizioni ed enciclopedia - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Definizioni ed enciclopedia - [!DNL Marketo Measure]
 title: Definizioni ed enciclopedia
 exl-id: 10db8461-5c17-466f-87e7-6fdad442abee
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6137'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874588
-description: Sincronizzazione campagna personalizzata - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Sincronizzazione campagna personalizzata - [!DNL Marketo Measure]
 title: Sincronizzazione campagna personalizzata
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Puoi controllare facilmente i record Punti di contatto Buyer e Punti di contatto
 
    ![](assets/8-1.png)
 
-1. Dopo aver fatto clic su [!UICONTROL Test], visualizzerai il nome della campagna e il numero di membri della campagna idonei per i punti di contatto. Di seguito verrà visualizzata una tabella che mostra tutte le regole che corrispondono al tuo ID campagna. Verranno visualizzate solo le corrispondenze.
+1. Dopo aver fatto clic su [!UICONTROL Test], verranno visualizzati il nome della campagna e il numero di membri della campagna idonei per i punti di contatto. Di seguito verrà visualizzata una tabella che mostra tutte le regole che corrispondono al tuo ID campagna. Verranno visualizzate solo le corrispondenze.
 
    ![](assets/9.png)
 

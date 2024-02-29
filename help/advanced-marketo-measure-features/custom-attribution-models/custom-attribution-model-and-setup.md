@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874779
-description: Modello di attribuzione e configurazione personalizzati - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Modello di attribuzione e configurazione personalizzati - [!DNL Marketo Measure]
 title: Modello di attribuzione e configurazione personalizzati
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Il [!DNL Marketo Measure] Il modello di attribuzione personalizzato consente agl
 
    Accedi a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Vai a [!UICONTROL My Account] > [!UICONTROL Settings] > e nella sezione CRM, seleziona **[!UICONTROL Stage Mapping]**.
 
-   Una volta arrivati a questo punto, dovrai selezionare i lead/contatti e le fasi dell’opportunità da includere selezionando la **[!UICONTROL Include in Model]** casella.
+   Quindi, seleziona le fasi lead/contatti e opportunità da includere **[!UICONTROL Include in Model]** casella.
 
    >[!NOTE]
    >
@@ -37,13 +37,13 @@ Il [!DNL Marketo Measure] Il modello di attribuzione personalizzato consente agl
 
    >[!NOTE]
    >
-   >_Tutti_ Qui verranno visualizzate le fasi Lead/Contatti e Opportunità, anche se la fase è inattiva o non è più utilizzata in [!DNL Salesforce]. Se vuoi rimuovere questi stadi, devi eliminarli a fondo in [!DNL Salesforce].
+   >_Tutti_ Qui verranno visualizzate le fasi Lead/Contatti e Opportunità, anche se la fase è inattiva o non è più utilizzata in [!DNL Salesforce]. Se desideri rimuovere questi stadi, devi eliminarli definitivamente in [!DNL Salesforce].
 
    Dopo aver selezionato le fasi, fai clic sul pulsante **[!UICONTROL Save & Process]** nella parte inferiore della pagina. Le fasi verranno ora visualizzate nel **[!UICONTROL Attribution Settings]** e potrai assegnare le percentuali di attribuzione a ogni fase. Le fasi personalizzate vengono visualizzate anche nella suite di prestazioni marketing come fase lead o opportunità all’interno della cascata della domanda.
 
    Se nel modello sono presenti altri stadi che si desidera includere ma non sono presenti nel [!UICONTROL Lead/Contact Status] o [!UICONTROL Opportunity Stage] Elenco, puoi definire una tua fase personalizzata in base ai campi presenti nel CRM.
 
-   Nell’esempio seguente, viene definita una fase &quot;MQL&quot; personalizzata utilizzando un campo data. La regola afferma semplicemente che se il campo Data MQL non è vuoto, deve essere considerato un MQL e deve essere incluso nel modello personalizzato. È inoltre importante ordinare le fasi personalizzate una volta create in modo che seguano l&#39;avanzamento del ciclo di vendita.
+   Nell’esempio seguente, viene definita una fase &quot;MQL&quot; personalizzata utilizzando un campo data. La regola afferma semplicemente che se il campo Data MQL non è vuoto, deve essere considerato un MQL e deve essere incluso nel modello personalizzato. È inoltre importante ordinare le fasi personalizzate una volta create in modo che seguano l’avanzamento del ciclo di vendita.
 
    ![](assets/2-1.png)
 
@@ -51,7 +51,7 @@ Il [!DNL Marketo Measure] Il modello di attribuzione personalizzato consente agl
    >
    >Non dimenticare di abilitare il tracciamento della cronologia per i campi personalizzati.
 
-Se nel modello personalizzato viene utilizzato un campo personalizzato, il tracciamento della cronologia dei campi DEVE essere abilitato nel CRM. Per istruzioni su come abilitare il tracciamento della cronologia dei campi, [fai clic qui](/help/advanced-marketo-measure-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md).
+Se nel modello personalizzato viene utilizzato un campo personalizzato, il tracciamento della cronologia dei campi DEVE essere abilitato nel CRM. Per istruzioni su come abilitare il tracciamento della cronologia dei campi, fare riferimento a [Impostazione modello personalizzato: abilita tracciamento cronologia campi](/help/advanced-marketo-measure-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md).
 
 1. Determina le percentuali di attribuzione per il modello personalizzato.
 
@@ -59,7 +59,7 @@ Se nel modello personalizzato viene utilizzato un campo personalizzato, il tracc
 
    Nell&#39;estrema destra colonna etichettata &quot;**[!UICONTROL Custom]**,&quot; puoi impostare la ponderazione percentuale per ogni fase nel modello di attribuzione personalizzato. È sufficiente immettere i valori per ogni fase nella colonna Personalizzato. Then **[!UICONTROL Save and Reprocess]** una volta completato.
 
-   A sinistra della colonna &quot;Personalizzato&quot; è visualizzato il simbolo **[!DNL Marketo Measure]Modello di apprendimento automatico**. Il modello di apprendimento automatico calcola la ponderazione dell’attribuzione in base all’importanza relativa per la vincita di un’offerta, in base a ciò che è successo in ogni fase personalizzata. Per ulteriori informazioni sul modello di apprendimento automatico, [fai clic qui](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
+   A sinistra del _Personalizzato_ colonna è il valore **[!DNL Marketo Measure]Modello di apprendimento automatico**. Il modello di apprendimento automatico calcola la ponderazione dell’attribuzione in base all’importanza relativa per la vincita di un’offerta, in base a ciò che è successo in ogni fase personalizzata. Per ulteriori informazioni sul modello di apprendimento automatico, consulta [Domande frequenti sul modello di apprendimento automatico](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
 
    ![](assets/3.png)
 

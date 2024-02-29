@@ -3,7 +3,7 @@ description: Dashboard ROI - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ROI
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -45,7 +45,7 @@ La dashboard ROI offre agli addetti al marketing una visualizzazione granulare d
 
 Grafico a barre che illustra costi e ricavi, progettato per offrire una prospettiva comparativa sulla loro grandezza rispetto a vari canali, sottocanali e campagne.
 
-* Sfrutta le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
+* utilizza le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
 * Passa il puntatore del mouse su ciascuna barra per visualizzare il ROI semplice e realizzato.
 
 **Domande sulle risposte del grafico**
@@ -72,7 +72,7 @@ Grafico a linee delle serie temporali che mostra il confronto tra ROI realizzato
 
 Grafico a barre in pila che mostra i costi totali, segmentati per canali associati per ogni mese/trimestre/anno.
 
-* Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
+* utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
 **Domande sulle risposte del grafico**
@@ -86,7 +86,7 @@ Grafico a barre in pila che mostra i costi totali, segmentati per canali associa
 
 Grafico a barre che mostra le spese di marketing segmentate per canale/sottocanale/campagna.
 
-* Sfrutta le funzionalità drill-down e up per classificare i dati per canale/sottocanale/campagna.
+* utilizza le funzionalità drill-down e up per classificare i dati per canale/sottocanale/campagna.
 
 **Domande sulle risposte del grafico**
 

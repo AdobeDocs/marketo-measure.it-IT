@@ -1,10 +1,10 @@
 ---
 unique-page-id: 18874612
-description: Rapporti e dashboard Stock in Dynamics - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Rapporti e dashboard Stock in Dynamics - [!DNL Marketo Measure]
 title: Rapporti e dashboard Stock in Dynamics
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 3%
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Il [!DNL Marketo Measure] La soluzione gestita è fornita con una serie di dashboard e report stock, progettati per soddisfare le esigenze di base durante la visualizzazione [!DNL Marketo Measure] dati in Dynamics. Di seguito è riportato l’elenco completo e alcuni casi d’uso comuni.
+Il [!DNL Marketo Measure] La soluzione gestita è dotata di una serie di dashboard e rapporti stock, progettati per soddisfare le esigenze di base durante la visualizzazione [!DNL Marketo Measure] dati in Dynamics. Di seguito è riportato l’elenco completo e alcuni casi d’uso comuni.
 
 ## Dashboard (9 in totale) {#dashboards-total}
 
@@ -30,7 +30,7 @@ Il [!DNL Marketo Measure] La soluzione gestita è fornita con una serie di dashb
  <tbody> 
   <tr> 
    <td><p><strong>Nome dashboard</strong></p></td> 
-   <td><strong>Caso d’uso</strong></td> 
+   <td><strong>Caso di utilizzo</strong></td> 
    <td><strong>Gruppo di fatturazione</strong></td> 
   </tr> 
   <tr> 
@@ -92,7 +92,7 @@ Il [!DNL Marketo Measure] La soluzione gestita è fornita con una serie di dashb
  <tbody> 
   <tr> 
    <td><strong>Nome rapporto</strong></td> 
-   <td><strong>Caso d’uso</strong></td> 
+   <td><strong>Caso di utilizzo</strong></td> 
    <td><strong>Gruppo di fatturazione</strong></td> 
   </tr> 
   <tr> 

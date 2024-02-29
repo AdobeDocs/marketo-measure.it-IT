@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874749
-description: Aggiunta [!DNL Marketo Measure] Script per [!DNL Uberflip] FORMS - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Aggiunta [!DNL Marketo Measure] Script per [!DNL Uberflip] FORMS - [!DNL Marketo Measure]
 title: Aggiunta [!DNL Marketo Measure] Script per [!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Se si sta utilizzando [!DNL Uberflip] per gestire i contenuti, è importante ado
 
    `window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };`
 
-   Questo preambolo verrà aggiunto a entrambi [!DNL Hubs.onLoad] e [!DNL Hubs.onPageChange] Gli hook dell’evento JavaScript per AJAX di seguito. (Nota: anche in questi hook evento possono essere presenti altri codici. Assicurati di includere anche il preambolo.)
+   questo preambolo verrà aggiunto a entrambi [!DNL Hubs.onLoad] e [!DNL Hubs.onPageChange] Gli hook dell’evento JavaScript per AJAX di seguito. (Nota: anche in questi hook evento possono essere presenti altri codici. Assicurati di includere anche il preambolo.)
 
    `Hubs.onLoad = function () {`
 

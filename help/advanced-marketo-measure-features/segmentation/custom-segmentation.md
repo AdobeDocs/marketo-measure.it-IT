@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874604
-description: Segmentazione personalizzata - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Segmentazione personalizzata - [!DNL Marketo Measure]
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 * Ripeti questo processo per le regole del segmento Opportunità
 * La categoria &quot;Altro&quot; è un segmento predefinito che acquisirà eventuali punti di contatto non definiti. Puoi modificare il nome del segmento predefinito
 * Fai clic sull’icona del cestino per eliminare un’intera categoria o una singola regola all’interno di una categoria. In alternativa, fai clic sull’icona della matita per modificare la categoria o la regola
-* Noterai che hai un &quot;[!UICONTROL Save]&quot; e un pulsante &quot;Salva ed elabora&quot;. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
+* Nota che hai un &quot;[!UICONTROL Save]&quot; e un pulsante &quot;Salva ed elabora&quot;. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
 
    * La mappatura è accurata
    * Hai aggiunto tutti i segmenti di cui desideri tenere traccia all’interno di una categoria

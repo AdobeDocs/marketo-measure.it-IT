@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874598
-description: Impostazione canale personalizzato offline - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Impostazione canale personalizzato offline - [!DNL Marketo Measure]
 title: Impostazione canale personalizzato offline
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Dopo aver modificato e aggiornato il foglio di calcolo con le regole personalizz
 
 >[!TIP]
 >
->Vuoi determinare _quando_ a [!DNL Salesforce] Il tipo di campagna viene incluso in [!DNL Marketo Measure] mappatura dei canali? È sufficiente andare a **[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**. Puoi quindi vedere quali valori sono presenti nell’elenco a discesa e quali sono inattivi. Quelli inattivi non verranno visualizzati come tipo selezionabile nel nostro &quot;[!UICONTROL Offline Channels]&quot;. Tieni presente che questo processo può richiedere da qualche minuto fino a 48 ore.
+>Vuoi determinare _quando_ a [!DNL Salesforce] Il tipo di campagna viene incluso in [!DNL Marketo Measure] mappatura dei canali? È sufficiente andare a **[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**. Puoi quindi vedere quali valori sono presenti nell’elenco a discesa e quali sono inattivi. Quelli inattivi non verranno visualizzati come tipo selezionabile nel nostro &quot;[!UICONTROL Offline Channels]&quot;. Questo processo può richiedere da pochi minuti a 48 ore.
 
 Clic **[!UICONTROL Save]** quando hai finito e [!DNL Marketo Measure] carica le modifiche ed elabora nuovamente i dati.
 

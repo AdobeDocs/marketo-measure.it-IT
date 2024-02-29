@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874554
-description: Generazione e mappatura dei punti di contatto - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Generazione e mappatura dei punti di contatto - [!DNL Marketo Measure]
 title: Generazione e mappatura dei punti di contatto
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Il processo di generazione dei punti di contatto risponde alla domanda: &quot;Co
 
 >[!IMPORTANT]
 >
->[!DNL Marketo Measure] genera un solo punto di contatto per sessione. Se sono stati compilati più moduli, verrà acquisito solo il primo modulo compilato.
+>[!DNL Marketo Measure] genera un solo punto di contatto per sessione. Se sono stati compilati più moduli, viene acquisito solo il primo modulo.
 
 | **Tipo di interazione** | **Esempio** | **Metodo di generazione dei punti di contatto** |
 |---|---|---|
@@ -41,7 +41,7 @@ Il processo di mappatura dei punti di contatto risponde alla domanda: &quot;Una 
 | **Tipo di interazione** | **Metodo di generazione** | **Metodo di mappatura** |
 |---|---|---|
 | Online, sui tuoi siti | [!DNL Marketo Measure] JavaScript | Attraverso il [!DNL Online Channels] pagina in [!DNL Marketo Measure], facendo riferimento ai valori UTM, alla pagina di destinazione e alle informazioni della pagina di riferimento |
-| Offline; online, non sui siti | Sincronizzazione appartenenza campagna CRM | Attraverso il [!UICONTROL Offline Channels] pagina in [!DNL Marketo Measure], facendo riferimento al tipo di campagna |
+| Offline; Online, non sui tuoi siti | Sincronizzazione appartenenza campagna CRM | Attraverso il [!UICONTROL Offline Channels] pagina in [!DNL Marketo Measure], facendo riferimento al tipo di campagna |
 | Attività di vendita | Sincronizzazione attività CRM | Attraverso il [!UICONTROL Online Channels] pagina in [!DNL Marketo Measure], facendo riferimento al Nome della campagna assegnato sulla [!UICONTROL Activities] pagina |
 
 >[!MORELIKETHIS]

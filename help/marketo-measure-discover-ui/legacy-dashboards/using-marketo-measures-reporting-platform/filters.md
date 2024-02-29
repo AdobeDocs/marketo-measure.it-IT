@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874656
-description: Filtri - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Filtri - [!DNL Marketo Measure]
 title: Filtri
 exl-id: 249266c8-9ff5-4895-979c-4f377423d031
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ _Utilizzato in: Panoramica, Spese di marketing, ROI annunci, Marketing basato su
 
 Scegli un singolo modello di attribuzione da applicare alla bacheca: Primo contatto, Tocco creazione lead, A forma di U, A forma di W, Percorso completo o Modello personalizzato. Il percorso completo e il modello personalizzato non sono disponibili su tutti i livelli.
 
-**Campaign**
+**Campagna**
 
 _Utilizzato in: Panoramica, Crescita, ROI annunci, Traffico web, CMO, Supporti a pagamento, Marketing dei contenuti, Passport_
 
@@ -73,7 +73,7 @@ _Utilizzato in: Panoramica, Crescita, Spese di marketing, ROI annunci, Marketing
 
 Scegliere il tipo di data da utilizzare, associato al filtro Data. Il tipo di data predefinito varia in base alla bacheca. Data punto di contatto si riferisce alla data in cui è avvenuta l’attività di marketing, Data di creazione è la data in cui il lead, il contatto o l’opportunità è stato creato nel CRM e Data di chiusura è la data in cui l’opportunità è stata chiusa.
 
-**Dimensione**
+**Dimension**
 
 _Utilizzato in: File multimediali a pagamento_
 

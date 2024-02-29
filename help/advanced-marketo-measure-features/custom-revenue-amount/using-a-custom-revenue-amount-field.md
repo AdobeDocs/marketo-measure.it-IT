@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874793
-description: Utilizzo di un campo personalizzato per l’importo dei ricavi - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Utilizzo di un campo personalizzato per l’importo dei ricavi - [!DNL Marketo Measure]
 title: Utilizzo di un campo personalizzato per l'importo dei ricavi
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -96,14 +96,14 @@ I seguenti passaggi sono per gli utenti di Salesforce Classic. Se hai effettuato
 1. Aggiungi un’azione del flusso di lavoro. Imposta questo elenco a discesa su &quot;[!UICONTROL New Field Update].&quot;
    ![](assets/using-a-custom-revenue-amount-field-14.png)
 
-1. Qui compilerai le informazioni sul campo. Nel campo &quot;Nome&quot;, si consiglia di utilizzare questa denominazione: &quot;[!DNL Marketo Measure] Importo Opp.&quot; Il &quot;Nome univoco&quot; verrà compilato automaticamente in base al campo &quot;Nome&quot;. Nell’elenco a discesa &quot;Campo da aggiornare&quot;, seleziona &quot;[!DNL Marketo Measure] Importo dell’opportunità.&quot; Dopo aver selezionato il campo, seleziona la casella &quot;Re-Evaulate Workflow Rules after Field Change&quot; (Valuta nuovamente regole flusso di lavoro dopo la modifica del campo). In &quot;Specifica nuovo valore campo&quot;, selezionare &quot;Utilizza una formula per impostare il nuovo valore&quot;. Nella casella vuota, rilascia il nome API del campo Importo personalizzato. Clic **[!UICONTROL Save]**.
+1. Qui compilerai le informazioni del campo. Nel campo &quot;Nome&quot;, si consiglia di utilizzare questa denominazione: &quot;[!DNL Marketo Measure] Importo Opp.&quot; Il &quot;Nome univoco&quot; verrà compilato automaticamente in base al campo &quot;Nome&quot;. Nell’elenco a discesa &quot;Campo da aggiornare&quot;, seleziona &quot;[!DNL Marketo Measure] Importo dell’opportunità.&quot; Dopo aver selezionato il campo, seleziona la casella &quot;Re-Evaulate Workflow Rules after Field Change&quot; (Valuta nuovamente regole flusso di lavoro dopo la modifica del campo). In &quot;Specifica nuovo valore campo&quot;, selezionare &quot;Utilizza una formula per impostare il nuovo valore&quot;. Nella casella vuota, rilascia il nome API del campo Importo personalizzato. Clic **[!UICONTROL Save]**.
 
    ![](assets/using-a-custom-revenue-amount-field-15.png)
 
-1. Verrai riportato a una pagina di rollup per il flusso di lavoro, assicurati di &quot;Attivare&quot; e sarai a posto. Per attivare, fai clic su **[!UICONTROL Edit]** accanto al nuovo flusso di lavoro e quindi fai clic su **[!UICONTROL Activate]**.
+1. verrai riportato a una pagina rollup per il flusso di lavoro, assicurati di &quot;Attivare&quot; e non dimenticare di continuare. Per attivare, fai clic su **[!UICONTROL Edit]** accanto al nuovo flusso di lavoro e quindi fai clic su **[!UICONTROL Activate]**.
 
    Dopo aver completato questi passaggi, le opportunità dovranno essere aggiornate per attivare il flusso di lavoro in modo che abbia il nuovo valore da [!UICONTROL custom opportunity] campo.
 
-   A tale scopo, esegui le opportunità tramite Data Loader in SFDC. Scopri come utilizzare Data Loader in [questo articolo](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
+   A tale scopo, esegui le opportunità tramite Data Loader in SFDC. Trovare dettagli sull’utilizzo di Data Loader in [questo articolo](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
 
-In caso di domande, contatta il team degli Adobi (il tuo Account Manager) o [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+In caso di domande, rivolgiti al team dell’account Adobe (il tuo Account Manager) o [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

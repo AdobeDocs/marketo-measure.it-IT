@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874690
-description: Autorizzazione di nuovo account connessi - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Autorizzazione di nuovo account connessi - [!DNL Marketo Measure]
 title: Autorizzazione di nuovo account collegati
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---

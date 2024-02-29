@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874767
-description: Impostazione delle fasi del boomerang - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Impostazione delle fasi del boomerang - [!DNL Marketo Measure]
 title: Impostazione delle fasi del boomerang
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->La funzione Boomerang è abilitata solo per i clienti di livello 3. Per richiedere un livello di account più alto, contatta l’Adobe Account Team (il tuo account manager).
+>La funzione Boomerang è abilitata solo per i clienti di livello 3. Per richiedere un livello di account superiore, contatta l’Adobe Account Team (il tuo account manager).
 
-Per abilitare [!UICONTROL Boomerang] Per il tuo account, devi essere un Amministratore account. In alternativa, può essere abilitata contattando il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. Una volta abilitata la funzione, segui queste istruzioni per configurarla.
+Per abilitare [!UICONTROL Boomerang] Per il tuo account, devi essere un Amministratore account. In alternativa, può essere abilitata contattando il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. Dopo aver attivato la funzione, segui queste istruzioni per configurarla.
 
 ## Configurazione fase boomerang {#boomerang-stage-setup}
 
-1. Vai a [!UICONTROL Stage Mapping]. Sotto la colonna intitolata &quot;[!UICONTROL Boomerang],&quot; seleziona le caselle accanto alle fasi che desideri tracciare.
+1. Vai a [!UICONTROL Stage Mapping]. Nella colonna intitolata &quot;[!UICONTROL Boomerang],&quot; seleziona le caselle accanto alle fasi che desideri tracciare.
 
    ![](assets/1-2.png)
 
@@ -33,7 +33,7 @@ Per abilitare [!UICONTROL Boomerang] Per il tuo account, devi essere un Amminist
 
    >[!NOTE]
    >
-   >Attendi 24-48 ore per la rielaborazione dei dati in base a queste modifiche.
+   >Consenti 24-48 ore per la rielaborazione dei dati in base a queste modifiche.
 
 ## Configurazione di Boomerang Stage con attribuzione di modello personalizzato {#boomerang-stage-setup-with-custom-model-attribution}
 
@@ -59,4 +59,4 @@ Per abilitare [!UICONTROL Boomerang] Per il tuo account, devi essere un Amminist
 
    >[!NOTE]
    >
-   >Attendi 24-48 ore per la rielaborazione dei dati in base a queste modifiche.
+   >Consenti 24-48 ore per la rielaborazione dei dati in base a queste modifiche.

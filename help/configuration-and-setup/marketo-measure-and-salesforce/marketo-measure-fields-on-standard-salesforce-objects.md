@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874574
-description: "[!DNL Marketo Measure] Campi su Standard [!DNL Salesforce] Oggetti - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Campi su Standard [!DNL Salesforce] Oggetti - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Campi su Standard [!DNL Salesforce] Oggetti"
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Scopri i vari [!DNL Marketo Measure] campi aggiunti a [!DNL Salesforce] oggetti standard.
 
 ## Account {#account}
 
-Punteggio di coinvolgimento predittivo: questo campo viene utilizzato con la nostra funzione ABM per fornire un punteggio relativo al livello di coinvolgimento dell’account e prende in considerazione molti fattori quali l’attualità delle visualizzazioni di pagina, il numero di contatti associati all’account, la presenza di un’operazione chiusa e così via.
+Punteggio di coinvolgimento predittivo: questo campo viene utilizzato con la funzione ABM per fornire un punteggio relativo al livello di coinvolgimento dell’account e tiene conto di molti fattori quali l’attualità delle visualizzazioni di pagina, il numero di contatti associati all’account, la presenza di un’operazione chiusa e così via.
 
 ## Caso {#case}
 
@@ -47,7 +47,7 @@ Data del punto di contatto (FT): è la data della prima interazione di contatto.
 
 Data punto di contatto (LC): è la data dell’interazione di contatto per la creazione di lead.
 
-## Campagna {#campaign}
+## Campaign {#campaign}
 
 Sono stati aggiunti solo 4 campi, 1 pulsante e 1 regola di convalida.
 
@@ -67,11 +67,11 @@ Aggiorna [!DNL Marketo Measure] Attribuzione (regola di convalida): questa regol
 
 Con il pacchetto sono stati aggiunti 5 campi e 1 trigger Apex.
 
-Stato del punto di contatto (lead): campo diagnostico relativo a una funzione non abilitata. Questo consente di capire se è stato creato un punto di contatto rispetto al record Lead correlato o, in caso contrario, perché.
+Stato del punto di contatto (lead): campo diagnostico relativo a una funzione non attivata. Questo consente di capire se è stato creato un punto di contatto rispetto al record Lead correlato o, in caso contrario, perché.
 
-Stato del punto di contatto (contatto): campo diagnostico relativo a una funzione non attivata. Questo consente di capire se è stato creato un punto di contatto rispetto al record Contatto correlato o, in caso contrario, perché.
+Stato del punto di contatto (contatto): campo diagnostico relativo a una funzione non attivata come predefinita. Questo consente di capire se è stato creato un punto di contatto rispetto al record Contatto correlato o, in caso contrario, perché.
 
-Stato punto di contatto (opportunità): campo diagnostico relativo a una funzione non abilitata. Questo consente di capire se è stato creato un punto di contatto rispetto al record Opportunità correlato o, in caso contrario, perché.
+Stato del punto di contatto (opportunità): campo diagnostico relativo a una funzione non attivata come predefinita. Questo consente di capire se è stato creato un punto di contatto rispetto al record Opportunità correlato o, in caso contrario, perché.
 
 Data stato punto di contatto: data in cui i campi diagnostici sono stati compilati.
 
@@ -81,7 +81,7 @@ OnCampaignMemberDelete: pronto all’uso, [!DNL Salesforce] non compare quando i
 
 ## Contatto {#contact}
 
-Aggiungiamo campi all’oggetto Contact relativo alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che preferiscono che l’attribuzione venga segnalata direttamente ai campi invece di creare record di punti di contatto. La maggior parte dei nostri clienti utilizza il percorso di registrazione dei punti di contatto, ma utilizza anche questi campi all’interno della piattaforma di automazione.
+Aggiungiamo campi all’oggetto Contact relativo alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che preferiscono che l’attribuzione venga segnalata direttamente ai campi invece di creare record di punti di contatto. La maggior parte dei nostri clienti utilizza il percorso record Touchpoint, ma utilizza anche questi campi all’interno della piattaforma di automazione.
 
 Sorgente del punto di contatto (FT): è la sorgente della prima interazione di contatto.
 
@@ -107,7 +107,7 @@ BizibleID: viene utilizzato in relazione all’attribuzione delle attività e al
 
 ## Lead {#lead}
 
-Aggiungiamo campi all’oggetto Lead relativi alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che preferiscono che l’attribuzione venga segnalata direttamente ai campi invece di creare record di punti di contatto. La maggior parte dei nostri clienti utilizza il percorso di registrazione dei punti di contatto, ma utilizza anche questi campi all’interno della piattaforma di automazione.
+Aggiungiamo campi all’oggetto Lead relativi alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che preferiscono che l’attribuzione venga segnalata direttamente ai campi invece di creare record di punti di contatto. La maggior parte dei nostri clienti utilizza il percorso record Touchpoint, ma utilizza anche questi campi all’interno della piattaforma di automazione.
 
 Sorgente del punto di contatto (FT): è la sorgente della prima interazione di contatto.
 
@@ -137,7 +137,7 @@ Viene utilizzato per la mappatura Lead to Account per la funzione ABM. Compiliam
 
 ## Opportunità {#opportunity}
 
-[!DNL Marketo Measure] Importo opportunità: questo campo viene utilizzato nello scenario in cui viene utilizzato un campo importo personalizzato per l’opportunità. Il valore del campo personalizzato viene mappato su [!DNL Marketo Measure] Importo opportunità utilizzando un flusso di lavoro e quindi leggere questo campo per i campi di attribuzione Ricavi nell&#39;oggetto punto di contatto di attribuzione buyer.
+[!DNL Marketo Measure] Importo opportunità: questo campo viene utilizzato nello scenario in cui viene utilizzato un campo importo personalizzato nell’opportunità. Il valore del campo personalizzato viene mappato su [!DNL Marketo Measure] Importo opportunità utilizzando un flusso di lavoro e quindi leggere questo campo per i campi di attribuzione Ricavi nell&#39;oggetto punto di contatto di attribuzione buyer.
 
 ## Attività {#activity}
 

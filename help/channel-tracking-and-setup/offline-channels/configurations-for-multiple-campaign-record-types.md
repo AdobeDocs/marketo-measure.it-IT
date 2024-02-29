@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874686
-description: Configurazioni per più tipi di record campagna - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Configurazioni per più tipi di record campagna - [!DNL Marketo Measure]
 title: Configurazioni per più tipi di record campagna
 exl-id: 10499556-a591-4630-9149-ae676e6494af
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 **Valori dell&#39;elenco di selezione mancanti nel campo &quot;Abilita punti di contatto buyer&quot;**
 
-Se l’organizzazione SFDC utilizza più tipi di record campagna, è necessario aggiungere i valori dell’elenco di selezione per &quot;Abilita punti di contatto buyer&quot; per ogni tipo di record. Per aggiungere le opzioni, segui la procedura indicata di seguito.
+Se l’organizzazione SFDC utilizza più tipi di record campagna, è necessario aggiungere i valori dell’elenco di selezione per &quot;Abilita punti di contatto buyer&quot; per ogni tipo di record. Per aggiungere le opzioni, segui la procedura riportata di seguito.
 
 1. Vai a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Record Types]**.
 

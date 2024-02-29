@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874718
-description: Creazione di una vista a elenco campagne per [!DNL Salesforce Campaigns] - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Creazione di una vista a elenco campagne per [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]
 title: Creazione di una vista a elenco campagne per [!DNL Salesforce] Campagne
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-source-git-commit: 38c721d10ac33ae85da1d425b6af53b9e3dfd0a1
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 27656741
-description: Impostazioni - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Impostazioni - [!DNL Marketo Measure]
 title: Impostazioni
 exl-id: 704dc52d-fa21-4475-878b-073e2e65c566
 feature: Multi-Currency
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '124'
 ht-degree: 1%
 
 ---

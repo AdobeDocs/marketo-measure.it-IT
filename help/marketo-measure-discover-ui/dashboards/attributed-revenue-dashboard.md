@@ -3,7 +3,7 @@ description: Dashboard ricavi attribuiti - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ricavi attribuiti
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi diret
 
 Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per canale, per ogni mese/trimestre/anno.
 
-* Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
+* utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
 **Risposte alle domande del grafico:**

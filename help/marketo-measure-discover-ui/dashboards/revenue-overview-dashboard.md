@@ -3,9 +3,9 @@ description: Dashboard panoramica ricavi - [!DNL Marketo Measure] - Prodotto
 title: Dashboard panoramica ricavi
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ La dashboard Panoramica ricavi fornisce informazioni sui ricavi totali derivati 
 
 Questo grafico a barre affiancato delle serie temporali contrasta il Ricavo totale con il Ricavo attribuito, visualizzando chiaramente il tuo impatto di marketing sui ricavi complessivi.
 
-* Sfrutta le funzionalità drill-down e up per categorizzare i dati per trimestre e anno.
+* utilizza le funzionalità drill-down e up per classificare i dati per trimestre e anno.
 * Passa il puntatore del mouse su una sezione del grafico a barre per visualizzarne le informazioni dettagliate.
 
 **Risposte alle domande del grafico:**

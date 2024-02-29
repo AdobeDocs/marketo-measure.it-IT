@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874634
-description: Record duplicati nel mio report - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Record duplicati nel mio report - [!DNL Marketo Measure]
 title: Record duplicati nel mio report
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Mentre vi immergete nel [!DNL Marketo Measure] Rapporti in [!DNL Salesforce], è possibile che nei rapporti si trovino record &quot;duplicati&quot;. È probabile che provi questa sensazione quando rivedi [!DNL Marketo Measure] rapporti predefiniti.
 
-Quando si esegue il reporting con l&#39;oggetto Punti di contatto buyer o con l&#39;oggetto Punto di contatto di attribuzione buyer, è importante comprendere che non si sta più eseguendo il reporting sul numero di lead, contatti o opportunità, ma piuttosto sul numero di punti di contatto buyer o di punti di contatto di attribuzione buyer associati a tali oggetti standard (lead, contatti, opportunità).
+Quando si esegue il reporting con l&#39;oggetto Punti di contatto buyer o con l&#39;oggetto Punto di contatto di attribuzione buyer, è importante comprendere che non si sta più eseguendo il reporting sul numero di lead, contatti o opportunità, ma che verrà invece eseguito il reporting sul numero di punti di contatto buyer o di punti di contatto di attribuzione buyer associati a tali oggetti standard (lead, contatti, opportunità).
 
 Prendiamo il seguente rapporto come esempio:
 

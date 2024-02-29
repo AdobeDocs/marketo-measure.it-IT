@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874658
-description: Casi d’uso comuni - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Casi d’uso comuni - [!DNL Marketo Measure]
 title: Casi d’uso più comuni
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Cerchi di identificare l&#39;impatto complessivo del marketing sui ricavi? [!DNL
 
 ## Contatti creati {#contacts-created}
 
-Per visualizzare il numero totale di contatti creati, raggruppati per una dimensione, passa al dashboard Panoramica o CMO di Discover, apri i filtri sopra le tessere, regola il filtro Metrica in Contatti e quindi sposta il tipo di data in Data di creazione. Completato!
+Per visualizzare il numero totale di contatti creati, raggruppati per una dimensione, passa al dashboard Panoramica o CMO di Discover, apri i filtri sopra le tessere, regola il filtro Metrica in Contatti e quindi sposta il tipo di data in Data di creazione. Fine.
 
 Per ottenere un conteggio totale dei contatti o per visualizzare i contatti totali nel tempo, passa al dashboard Crescita, regola il tipo di data in Data creazione e seleziona l’intervallo di tempo desiderato. I contatti e i contatti nel tempo sono riquadri incentrati sul contatto all&#39;interno di questa dashboard.
 

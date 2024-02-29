@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874781
-description: Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution - [!DNL Marketo Measure]
 title: Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Per ottenere informazioni più granulari dalla visualizzazione fino al tracciamento con [!DNL Doubleclick Campaign Manager], è necessario configurare il pixel di tracciamento.
 
-Per favore [fai clic qui](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md) per ulteriori informazioni su [!DNL Marketo Measure] Funzionalità di visualizzazione tramite attribuzione.
+Per ulteriori informazioni su [!DNL Marketo Measure] Visualizza tramite funzionalità di attribuzione, fare riferimento a [Domande frequenti su Marketo Measure View Through Attribution](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md).
 
 [!DNL Marketo Measure] è considerato un tag piggyback perché si tratta di una chiamata di terze parti tramite il tag annuncio DCM. I tag di Piggyback non funzionano con i tag immagine, ma solo con i tag iframe o JavaScript. Secondo il supporto di DCM, ciò non è cambiato di recente ed è sempre stato così. I tag standard sono stati dichiarati obsoleti il 2 ottobre 2017 ma non influiscono sulla capacità di [!DNL Marketo Measure] per tenere traccia delle impression.
 
-Se in DCM utilizzi una gerarchia Padre e Figlio, sarà necessario applicare il tag a tutti i livelli per il tracciamento delle impression.
+Nel caso in cui utilizzi una gerarchia Padre e Figlio in DCM, sarà necessario applicare il tag a tutti i livelli per il tracciamento delle impression.
 
 ## Come aggiungere il tag immagine {#how-to-add-the-image-tag}
 
-Il tag verrà aggiunto a [!DNL Doubleclick] sotto l’impostazione Inserzionista e desideri creare un Tag evento di impression.
+Aggiungi il tag in Doubleclick sotto l’impostazione dell’inserzionista e crea un tag Impression Event.
 
 1. Aggiungi il seguente codice come pixel immagine 1x1.
 

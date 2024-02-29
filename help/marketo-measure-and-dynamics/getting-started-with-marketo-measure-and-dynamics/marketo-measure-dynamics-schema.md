@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874523
-description: "[!DNL Marketo Measure] Schema Dynamics - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Schema Dynamics - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Schema Dynamics"
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 17%
+source-wordcount: '1076'
+ht-degree: 22%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Di seguito trovi lo schema Dynamics richiesto per iniziare a utilizzare [!DNL Marketo Measure]. Vengono elencate tutte le entità e i campi, insieme all’accesso in lettura e/o scrittura richiesto.
+Di seguito è riportato lo schema Dynamics richiesto per iniziare a utilizzare [!DNL Marketo Measure]. Vengono elencate tutte le entità e i campi, insieme all’accesso in lettura e/o scrittura richiesto.
 
 ## Punti di contatto dell&#39;acquirente {#buyer-touchpoints}
 
@@ -1091,7 +1091,7 @@ Questo elenco fornisce le entità di Dynamics Standard che [!DNL Marketo Measure
  </tbody> 
 </table>
 
-**Opportunità**
+**opportunità**
 
 <table> 
  <tbody> 

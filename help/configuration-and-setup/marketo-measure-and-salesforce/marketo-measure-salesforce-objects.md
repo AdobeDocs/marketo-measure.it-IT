@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874582
-description: "[!DNL Marketo Measure] Oggetti Salesforce - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Oggetti Salesforce - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Oggetti Salesforce"
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Quando [!DNL Marketo Measure] è installato in [!DNL Salesforce] (SFDC), diversi [!DNL Marketo Measure] Vengono aggiunti oggetti. Questo articolo fornisce una spiegazione di diversi di questi [!DNL Marketo Measure] Oggetti. Alcuni oggetti che [!DNL Marketo Measure] aggiunge a [!DNL Salesforce] sono:
 
@@ -73,7 +73,7 @@ Il [!DNL Marketo Measure] Oggetto Events consente di tenere traccia di eventi sp
 
 ## [!DNL Marketo Measure] Campi {#marketo-measure-fields}
 
-Dati acquisiti da [!DNL Marketo Measure] Javascript verrà inviato al [!DNL Marketo Measure] Campi all’interno del nostro [!DNL Marketo Measure] Oggetti. Alcuni campi sono presenti solo su determinati oggetti. Per un glossario di tutte le [!DNL Marketo Measure] campi, per favore [fai clic qui](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md). Per una visualizzazione di cui [!DNL Marketo Measure] Oggetto ciascuno [!DNL Marketo Measure] Il campo si riferisce a, per favore [fai clic qui](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
+Dati acquisiti da [!DNL Marketo Measure] JavaScript viene inviato nel personalizzato [!DNL Marketo Measure] Campi all’interno del [!DNL Marketo Measure] Oggetti. Alcuni campi sono presenti solo su determinati oggetti. È possibile esaminare [glossario di [[!DNL Marketo Measure] campi]](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md) e un [visualizzazione dei relativi [!DNL Marketo Measure] Oggetti](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
 ## [!DNL Marketo Measure] Rapporti e dashboard {#marketo-measure-reports-and-dashboards}
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874660
-description: Domande frequenti - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Domande frequenti - [!DNL Marketo Measure]
 title: Domande frequenti
 exl-id: f1896bf8-2216-427e-ac3e-98d87efede76
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Non esistono valori per ogni singola gerarchia di dati perché la gerarchia non 
 
 **Che cos’è &quot;corrisponde a un attributo utente&quot; negli operatori di filtro?**
 
-Gli attributi utente vengono applicati a utenti quali ID business, nome o cognome. Poiché tuttavia si tratta di utenti (clienti) e non di clienti, gli attributi utente non possono essere utilizzati in [!DNL Marketo Measure Discover] esperienza. Non esitare a ignorare questa opzione. Stiamo lavorando a una migliore esperienza di filtro personalizzata che rimuoverà i filtri non applicabili ai nostri clienti.
+Gli attributi utente vengono applicati a utenti quali ID business, nome o cognome. Poiché tuttavia si tratta di utenti (clienti) e non di clienti, gli attributi utente non possono essere utilizzati in [!DNL Marketo Measure Discover] esperienza. Stiamo lavorando a una migliore esperienza di filtro personalizzata che rimuoverà i filtri non applicabili ai nostri clienti.
 
 **Come mai alcuni intervalli di date predefiniti attraversano il primo del mese successivo?**
 
-Anche se l’intervallo di date non è sempre intuitivo, l’interfaccia utente filtro predefinita include un utile testo &quot;prima&quot; che corrisponde alla data di fine; questo dovrebbe ricordare all’utente che la data di fine utilizzata dovrebbe essere 1 giorno al di fuori dell’intervallo desiderato.
+Anche se l’intervallo di date non è sempre intuitivo, l’interfaccia utente filtro predefinita include un utile testo &quot;prima&quot; che corrisponde alla data di fine; tieni presente che la data di fine utilizzata dovrebbe essere 1 giorno al di fuori dell’intervallo desiderato.
 
 **Quale modello di attribuzione viene utilizzato per lead e contatti?**
 
@@ -49,7 +49,7 @@ I punti di contatto dell’acquirente mappati su lead e contatti misurano fino a
 
 **Perché le sezioni Visite, Visite univoche e Forms sono vuote nella bacheca Crescita?**
 
-Se nella vista questi riquadri sono vuoti o uguali a 0, significa che non è stato eseguito il provisioning dei riquadri per il tuo account. Per eventuali domande relative a questo argomento, contatta il tuo Success Manager.
+Se nella vista questi riquadri sono vuoti o uguali a 0, significa che non è stato eseguito il provisioning dei riquadri per il tuo account. In caso di domande, contatta il tuo Success Manager.
 
 **Per i lead nel tempo e i contatti nel tempo, a cosa fa riferimento il conteggio?**
 

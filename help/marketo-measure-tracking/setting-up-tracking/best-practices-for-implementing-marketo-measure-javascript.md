@@ -1,11 +1,11 @@
 ---
-description: Best practice per l’implementazione [!DNL Marketo Measure] JavaScript - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Best practice per l’implementazione [!DNL Marketo Measure] JavaScript - [!DNL Marketo Measure]
 title: Best practice per l’implementazione [!DNL Marketo Measure] JavaScript
 exl-id: 0359ad27-81e8-4902-a23a-49a5646a44d0
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Le incoerenze nell&#39;attuazione del [!DNL Marketo Measure] JavaScript causerà
 Quando si tratta di implementare e gestire [!DNL Marketo Measure] JavaScript, considera le seguenti best practice.
 
 * Conferma che tutti i tuoi domini siano elencati nel tuo [!DNL Marketo Measure] account
-   * In caso di dubbi sui tuoi domini, contatta il supporto tecnico
+   * In caso di dubbi relativi ai tuoi domini, contatta il supporto tecnico
 * Distribuisci JavaScript su TUTTE le pagine.
    * L’inserimento di JavaScript solo su determinate pagine causerà interruzioni nei dati della sessione che causeranno errori [!DNL Marketo Measure] dati
 * Per un modulo sul sito da cui non desideri creare punti di contatto, assicurati di aggiungere la [!DNL Marketo Measure] Escludi script

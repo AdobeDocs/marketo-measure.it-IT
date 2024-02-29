@@ -1,11 +1,11 @@
 ---
-description: Attribuzione delle best practice per le attività - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Attribuzione delle best practice per le attività - [!DNL Marketo Measure]
 title: Attribuzione delle best practice per le attività
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il [!DNL Marketo Measure] La funzione Attribuzione attività consente ai clienti di creare punti di contatto dai record Attività nel CRM. Questo metodo di creazione dei punti di contatto è flessibile, in quanto consente di creare regole basate sui campi Attività o Evento da informare [!DNL Marketo Measure] quali attività devono registrare i punti di contatto da e successivamente ricevere il credito di attribuzione.
+Il [!DNL Marketo Measure] La funzione Attribuzione attività consente ai clienti di creare punti di contatto dai record Attività nel CRM. Questo metodo di creazione dei punti di contatto è flessibile. Ti consente di creare regole basate sui campi &quot;Attività&quot; o &quot;Evento&quot; per informare [!DNL Marketo Measure] da quali attività deve produrre punti di contatto e quindi ricevere il credito di attribuzione.
 
 Il caso d’uso più comune per questa funzione è quello di creare regole che incorporano le interazioni di vendita nei dati dei punti di contatto dell’acquirente. Attribuzione attività consente di allineare i dati di vendita e marketing in un unico percorso.
 
-Per molti [!DNL Salesforce] istanze, l’oggetto Attività può ospitare diversi tipi di record, pertanto è importante che le regole di attività siano specifiche e personalizzate in base ai record che stai tentando di tradurre in punti di contatto. Le seguenti best practice ti aiuteranno a creare punti di contatto significativi e preziosi tramite l’attribuzione Attività.
+Per molti [!DNL Salesforce] istanze, l’oggetto Attività può ospitare vari tipi di record, pertanto è importante che le regole di attività siano specifiche e personalizzate in base ai record che stai tentando di tradurre in punti di contatto. Le seguenti best practice consentono di creare punti di contatto significativi e preziosi tramite l’attribuzione Attività.
 
 ## Best practice {#best-practice}
 
@@ -34,15 +34,15 @@ Se definisci le regole di attività per la prima volta o esamini solo le regole 
 
 * Non utilizzare i campi formula per definire le regole
 * Creare regole specifiche e precise
-   * Desideri che la soglia per la creazione di un punto di contatto Attività sia la stessa (o simile) di una compilazione di moduli o di un’iscrizione alla campagna, ovvero (Risposte a un’e-mail in uscita o a conversazioni telefoniche completate)
+   * La soglia per la creazione di un punto di contatto Attività deve essere la stessa (o simile) di una compilazione di moduli o di un’iscrizione alla campagna: Risposte a un’e-mail in uscita o Conversazioni telefoniche completate
 * Convalida sempre nuove regole in [!DNL Salesforce] prima del salvataggio e dell’elaborazione
-   * La replica delle regole di attività in un tipo di rapporto &quot;Attività ed eventi&quot; consente di comprendere chiaramente quanti punti di contatto verranno creati da tale regola
+   * La replica delle regole di attività in un tipo di rapporto &quot;Attività ed eventi&quot; consente di comprendere chiaramente quanti punti di contatto provengono dalla regola
 * Lavora con il tuo team Sales Opp
    * L’intervento del team più vicino ai tuoi record di attività o allo strumento di abilitazione delle vendite ti garantirà l’utilizzo dei campi corretti per definire le tue regole
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 
-Rivedere le regole di attribuzione dell’attività almeno due volte all’anno assicurerà che i punti di contatto dell’attività siano precisi e aggiornati. Desideri accertarti che queste regole non creino punti di contatto indesiderati che stanno diluendo i dati di Attribution dell’acquirente. Una rassegna della definizione delle regole ti aiuterà e il tuo team avrà fiducia nell’Attribuzione delle attività e nel suo ruolo nel tuo [!DNL Marketo Measure] dati.
+Rivedere le regole di attribuzione dell’attività almeno due volte all’anno assicura che i punti di contatto dell’attività siano precisi e aggiornati. Desideri accertarti che queste regole non creino punti di contatto indesiderati che stanno diluendo i dati di Attribution dell’acquirente. Una rassegna della definizione delle regole ti aiuterà e il tuo team avrà fiducia nell’Attribuzione delle attività e nel suo ruolo nel tuo [!DNL Marketo Measure] dati.
 
 Altri motivi per cui potrebbe attivare una revisione delle regole di attività sono...
 
@@ -54,4 +54,3 @@ Altri motivi per cui potrebbe attivare una revisione delle regole di attività s
 >
 >* [Attribuzione attività](/help/advanced-marketo-measure-features/activities-attribution/salesforce-activities-attribution.md)
 >* [Domande frequenti sull’attribuzione delle attività di vendita](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
-

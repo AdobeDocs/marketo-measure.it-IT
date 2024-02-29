@@ -1,11 +1,11 @@
 ---
-description: Panoramica dell’interfaccia di Adobe Experience Cloud - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Panoramica dell’interfaccia di Adobe Experience Cloud - [!DNL Marketo Measure]
 title: Panoramica dell’interfaccia di Adobe Experience Cloud
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Se sei _non_ ha già effettuato l’accesso a un prodotto Adobe Experience Cloud
 
 ## Nuove funzioni {#new-features}
 
-Oltre al look and feel aggiornato, noterete le seguenti funzioni:
+Oltre al look and feel aggiornato, osserva le seguenti funzioni:
 
 **Gestione del dominio**
 
@@ -44,7 +44,7 @@ Cerca articoli di supporto, invia biglietti, fornisci feedback, il tutto dall’
 
 **Commutatore applicazione**
 
-Coloro che hanno accesso a più prodotti di Adobe saranno in grado di passare facilmente da un prodotto all’altro.
+Coloro che hanno accesso a più prodotti di Adobe sono in grado di passare facilmente da un prodotto all’altro.
 
 ![](assets/unified-shell-overview-7.png)
 
@@ -58,7 +58,7 @@ Visualizza e interagisce direttamente con le notifiche specifiche per il prodott
 
 **Impostazioni Adobe**
 
-Fai clic sull’icona del profilo per modificare la lingua o altre preferenze a livello di Adobe. Puoi anche effettuare le seguenti operazioni: [!DNL Marketo Measure]modifiche specifiche facendo clic su **Le mie impostazioni**.
+Per modificare la lingua o altre preferenze a livello di Adobe, fai clic sull’icona del tuo profilo. Puoi anche effettuare le seguenti operazioni: [!DNL Marketo Measure]modifiche specifiche facendo clic su **Le mie impostazioni**.
 
 ![](assets/unified-shell-overview-10.png)
 
@@ -66,7 +66,7 @@ Fai clic sull’icona del profilo per modificare la lingua o altre preferenze a 
 
 **Cosa succede ai miei segnalibri?**
 
-I segnalibri verranno reindirizzati. Ad esempio, se dovessi passare a https://apps.marketo-measure.com/Discover/391, verrai reindirizzato a https://experience.adobe.com/marketo-measure/Discover/391 dopo aver completato l’autenticazione.
+I segnalibri vengono reindirizzati. Ad esempio, se dovessi passare a https://apps.marketo-measure.com/Discover/391, verrai reindirizzato a https://experience.adobe.com/marketo-measure/Discover/391 dopo aver completato l’autenticazione.
 
 **Non riesco ad accedere a [!DNL Marketo Measure] tramite l&#39;interfaccia Experience Cloud. Quale potrebbe essere il problema?**
 
@@ -74,4 +74,4 @@ Se è possibile accedere a Adobe Experience Cloud, ma si visualizza una pagina c
 
 ![](assets/unified-shell-overview-11.png)
 
-Se ricevi questo errore, [contatta l’assistenza](https://nation.marketo.com/t5/support/ct-p/Support) per assistenza.
+Se ricevi l’errore precedente, [contatta l’assistenza](https://nation.marketo.com/t5/support/ct-p/Support) per assistenza.

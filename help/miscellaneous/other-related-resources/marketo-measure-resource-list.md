@@ -1,13 +1,13 @@
 ---
 unique-page-id: 37356962
-description: "[!DNL Marketo Measure] Elenco risorse - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Elenco risorse - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Elenco risorse"
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 1%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 * [Aggiunta [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
    * [Escludi Forms](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
 
-**Reporting**
+**Generazione rapporti**
 
 * [Creazione di tipi di rapporto personalizzati con [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) (se devi creare rapporti sui campi personalizzati per lead/contatti/opportunità)
 * [Glossario di [!DNL Marketo Measure] campi](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)

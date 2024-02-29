@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874710
-description: Rimozione e soppressione dei punti di contatto - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Rimozione e soppressione dei punti di contatto - [!DNL Marketo Measure]
 title: Rimozione e soppressione dei punti di contatto
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Una volta salvate le regole, [!DNL Marketo Measure] pulirà e ridistribuirà il 
 
 Inizia aggiungendo una regola e selezionando il Campo che definirà i criteri.
 
-Scegliere da un elenco di operatori che verranno correlati al set di valori successivo, che verrà aggiunto nella colonna successiva.
+Scegli da un elenco di operatori che saranno correlati al successivo set di valori, che aggiungerai nella colonna successiva.
 
 ![](assets/1-1.png)
 

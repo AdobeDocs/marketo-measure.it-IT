@@ -1,12 +1,12 @@
 ---
 unique-page-id: 27656737
-description: Segnala spesa di marketing - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Segnala spesa di marketing - [!DNL Marketo Measure]
 title: Segnala spesa di marketing
 exl-id: 46b0f81c-acd1-47a5-bf75-6a943edb9009
 feature: Reporting, Spend Management
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 La tabella Spese di marketing contiene ora una nuova colonna per visualizzare la valuta per ogni riga Canale, Sottocanale e Campagna. Questa nuova colonna verrà visualizzata per tutti i clienti, anche se non hanno più divise abilitate.
 
-La tabella conterrà ora una combinazione di valute diverse. Consulta la dashboard Spesa marketing se devi ottenere una somma di tutti i canali, i sottocanali o le campagne in una singola valuta.
+La tabella conterrà ora una combinazione di valute diverse. Se devi ottenere una somma di tutti i canali, i sottocanali o le campagne in un’unica valuta, consulta la dashboard Spesa marketing.
 
 ## Costi di caricamento {#upload-costs}
 

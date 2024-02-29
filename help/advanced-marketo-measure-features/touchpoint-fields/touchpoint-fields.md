@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37355835
-description: Campi punto di contatto - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Campi punto di contatto - [!DNL Marketo Measure]
 title: Campi punto di contatto
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 * Creare un campo calcolato e etichettarlo come &quot;Region_Name&quot;
 * Definisci la regola iniziando con la ricerca del campo estratto. In questo caso, [!DNL Touchpoint.Region]
 * Utilizza l’operatore &quot;[!UICONTROL maps to]&quot; poiché si desidera creare una mappatura per ogni numero al relativo valore
-* Verrà visualizzata una tabella in cui elencare ogni mappatura. Alla fine sarà più o meno così:
+* Viene visualizzata una tabella in cui elencare ogni mappatura. Alla fine sarà più o meno così:
 * In base alla mappatura e all’URL indicati sopra, il &quot;Region_Value&quot; di un punto di contatto con questa pagina di destinazione sarà &quot;EMEA&quot;
 * Ripeti l’estrazione e la mappatura per i rimanenti 4 set di cifre
 
@@ -213,7 +213,7 @@ Non dimenticare di salvare le regole dopo averle create. Se il nuovo campo non v
 
 **Quale espressione viene utilizzata per estrarre più parametri da una singola pagina di destinazione?**
 
-Come nell’#4 Estrai esempio, per estrarre ciascuno dei parametri dovrai creare più campi. Pertanto, se si dispone di cinque valori diversi, verranno creati cinque campi punto di contatto per estrarre ciascuno di essi.
+Come nell’#4 Estrai esempio, è necessario creare più campi per estrarre ciascuno dei parametri. Pertanto, se si dispone di cinque valori diversi, verranno creati cinque campi punto di contatto per estrarre ciascuno di essi.
 
 **Perché non vedo i miei nuovi campi in [!DNL Marketo Measure] schema?**
 

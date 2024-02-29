@@ -1,10 +1,10 @@
 ---
 unique-page-id: 35586080
-description: Integrazione linkedIn - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Integrazione linkedIn - [!DNL Marketo Measure]
 title: Integrazione linkedIn
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
 source-wordcount: '2644'
 ht-degree: 0%
@@ -159,7 +159,7 @@ Prima di [!DNL Marketo Measure] E LinkedIn Lead Gen Forms Integration esisteva, 
 
 ## Dettagli punto di contatto {#touchpoint-details}
 
-Una volta [!DNL Marketo Measure] ha applicato correttamente i tag alla pagina di destinazione nella pagina creativa di LinkedIn, potrai visualizzare i dati degli annunci risolti nel punto di contatto. Di seguito è riportata la mappatura dei valori di dati che si prevede di visualizzare:
+Dopo [!DNL Marketo Measure] ha taggato correttamente la pagina di destinazione nella creatività di LinkedIn, puoi visualizzare i dati degli annunci risolti nel punto di contatto. Di seguito è riportata la mappatura dei valori di dati che si prevede di visualizzare:
 
 <table> 
  <colgroup> 
@@ -322,13 +322,13 @@ Entrambi. Il [!DNL Marketo Measure] L’integrazione di consente di assegnare un
 
 ![](assets/five.png)
 
-**Ho connesso il mio [!DNL LinkedIn ads] account. Perché non lo è [!DNL Marketo Measure] assegnare tag ai collegamenti?**
+**Ho connesso il mio [!DNL LinkedIn ads] account. Perché non è [!DNL Marketo Measure] assegnare tag ai collegamenti?**
 
 La connessione [!DNL LinkedIn] l’utente deve disporre dell’accesso corretto per le modifiche, il che significa che deve essere un Account Manager, Campaign Manager o Creative Manager.
 
 **Come posso sapere se la mia creatività verrà copiata? Posso vedere se i miei creativi usano la stessa condivisione?**
 
-L&#39;ID di condivisione non è specificato in un [!DNL LinkedIn] quindi non esiste un modo chiaro e ovvio per verificare la presenza di mappature &quot;da creatività a condivisione&quot;. Se sospetti che un contenuto creativo possa essere una copia, puoi controllare manualmente aprendo l’annuncio dall’interno di [!DNL LinkedIn] Gestione campagne: l’annuncio verrà aperto in una nuova scheda e nell’URL troverai l’ID di condivisione.
+L’ID condivisione non è fornito in un [!DNL LinkedIn] quindi non esiste un modo chiaro e ovvio per verificare la presenza di mappature &quot;da creatività a condivisione&quot;. Se sospetti che un contenuto creativo possa essere una copia, puoi controllare manualmente aprendo l’annuncio dall’interno di [!DNL LinkedIn] Gestione campagne: apre l’annuncio in una nuova scheda e puoi trovare l’ID condivisione nell’URL.
 
 ![](assets/six.png)
 

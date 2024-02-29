@@ -1,21 +1,19 @@
 ---
 unique-page-id: 18874708
-description: Attribuzione attività Salesforce - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Attribuzione attività Salesforce - [!DNL Marketo Measure]
 title: Attribuzione attività Salesforce
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Attribuzione attività Salesforce {#salesforce-activities-attribution}
 
-Il [!DNL Marketo Measure] L’integrazione delle attività Salesforce consente di inserire record specifici di attività ed eventi nel modello di attribuzione. Inizia a tenere traccia di elementi come e-mail di vendita o telefonate di vendita che non ricevevano il dovuto credito. Per configurare la regola delle attività, devi passare a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Da lì, vai al **[!UICONTROL Settings]** e fai clic sul pulsante **[!UICONTROL Activities]** scheda.
-
-Stai per rendere molto felice il tuo team vendite! Segui questo breve tutorial.
+Il [!DNL Marketo Measure] L’integrazione delle attività di Salesforce porta record specifici di attività ed eventi nel modello di attribuzione. Inizia a tenere traccia di elementi come e-mail di vendita o telefonate di vendita che non ricevevano il dovuto credito. Per configurare la regola delle attività, vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Da lì, vai al **[!UICONTROL Settings]** e fai clic sul pulsante **[!UICONTROL Activities]** scheda.
 
 ![](assets/1.png)
 
@@ -27,20 +25,20 @@ Acquisisci familiarità con questa gerarchia:
 
 * Canale
    * Sottocanale
-      * Campagna
-      * Campagna
+      * Campaign
+      * Campaign
    * Sottocanale
-      * Campagna
+      * Campaign
 
 >[!TIP]
 >
->Se ad esempio desideri impostare una campagna univoca per ogni rappresentante di vendita, utilizza i nostri parametri di sostituzione dinamici per compilare [!DNL Marketo Measure] Nome della campagna. Nello stesso esempio, puoi immettere: `"Outbound Sales - {AssignedTo}"` e lo trasformeremo in qualcosa di simile `"Outbound Sales - Jill"` o `"Outbound Sales - Jack."` Non hai idea di quanto tempo ti abbiamo appena risparmiato!
+>Se ad esempio desideri impostare una campagna univoca per ogni rappresentante di vendita, utilizza i parametri di sostituzione dinamici per compilare il [!DNL Marketo Measure] Nome della campagna. Nello stesso esempio è possibile immettere `"Outbound Sales - {AssignedTo}"` e la cambia in qualcosa di simile a `"Outbound Sales - Jill"` o `"Outbound Sales - Jack."`
 
 ![](assets/2.png)
 
 Una volta [!DNL Marketo Measure] Se si imposta il nome della campagna, è il momento di impostare le regole di attività.
 
-Le regole fungono da filtro per indicarci quali record sono idonei per l’attribuzione. Immagina di creare un rapporto nel CRM utilizzando una logica simile per generare tale rapporto. Puoi utilizzare una combinazione di istruzioni e/o e vari operatori come corrisponde a, contiene, inizia con, termina con, è uguale a, ecc. Definire le istruzioni &quot;e&quot; all’interno di una regola o di un livello &quot;o&quot; in box al di fuori della casella.
+Le regole fungono da filtro per indicarci quali record sono idonei per l’attribuzione. Immagina di creare un rapporto nel CRM utilizzando una logica simile per generare tale rapporto. Puoi utilizzare in modo flessibile una combinazione di istruzioni e/o e vari operatori come `matches any`, `contains`, `starts with`, `ends with`, `is equal to`. Definisci `and` istruzioni all&#39;interno di una regola o di un livello &quot;in box&quot; `or` istruzioni esterne alla scatola.
 
 ![](assets/3.png)
 
@@ -48,9 +46,9 @@ Le regole fungono da filtro per indicarci quali record sono idonei per l’attri
 >
 >I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background senza modificare un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 >
->Assicurati di utilizzare i valori corretti per i campi ID come CrmEvent.CreatedById. [!DNL Salesforce IDs] hanno una lunghezza di 18 caratteri (ad esempio, 0054H000007WmrfQAC).
+>Assicurati di utilizzare i valori corretti per i campi ID come CrmEvent.CreatedById. [!DNL Salesforce IDs] hanno una lunghezza di 18 caratteri ( 0054H000007WmrfQAC).
 
-Infine, scegliamo uno dei campi di data o data/ora da utilizzare come data del punto di contatto dell&#39;acquirente. È possibile selezionare i campi standard e personalizzati.
+Infine, scegli uno dei campi di data o data/ora da utilizzare come data del punto di contatto dell&#39;acquirente. È possibile selezionare i campi standard e personalizzati.
 
 >[!TIP]
 >
@@ -62,19 +60,19 @@ Non dimenticare di impostare regole diverse per Attività o Eventi. È necessari
 
 ![](assets/5.png)
 
-È probabile che si desideri inserire questi nuovi punti di contatto nel relativo [Canale di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target="_blank"}. Per farlo, definisci il canale con la nuova mappatura Campaign che hai appena creato. Forse creerai una nuova riga per il canale BDR in cui la campagna inizia con In uscita.
+È probabile che tu voglia inserire questi nuovi punti di contatto nel loro appropriato [Canale di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target="_blank"}. Per farlo, definisci il canale con la nuova mappatura Campaign appena creata.
 
 >[!TIP]
 >
->Quando aggiungi una definizione di canale, utilizza i valori dei caratteri jolly, un modo più semplice per indicare gli operatori come:
+>Quando aggiungi una definizione di canale, utilizza valori con caratteri jolly, un modo più semplice per indicare gli operatori come:
 >
 >inizia con ( In uscita&#42; )
 >
->contiene ( &#42;In uscita&#42; )
+contiene ( &#42;In uscita&#42; )
 >
->termina con ( &#42;In uscita )
+termina con ( &#42;In uscita )
 >
->Nessun carattere jolly in pratica significa &quot;è uguale a&quot;, quindi assicurati di utilizzarli in base alle esigenze.
+Nessun carattere jolly in pratica significa &quot;è uguale a&quot;, quindi assicurati di utilizzarli in base alle esigenze.
 
 | **Operatore** | **Caso d’uso** |
 |---|---|
@@ -85,10 +83,10 @@ Non dimenticare di impostare regole diverse per Attività o Eventi. È necessari
 
 ![](assets/6.png)
 
-Infine, ma non per importanza, puoi immettere i costi per i nuovi canali. Nostro [Caricamento delle spese di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target="_blank"} consente di immettere la spesa a livello di canale, sottocanale o campagna. Con il tuo nuovo [!DNL Marketo Measure] Per le campagne, puoi aggiungere i costi correlati per mese, quindi visualizzare il ROI di ogni campagna.
+Infine, ma non per importanza, puoi immettere i costi per i nuovi canali. Il [Caricamento delle spese di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target="_blank"} consente di immettere la spesa a livello di canale, sottocanale o campagna. Con il tuo nuovo [!DNL Marketo Measure] Per le campagne, puoi aggiungere i costi correlati per mese, quindi visualizzare il ROI di ogni campagna.
 
 ![](assets/7.png)
 
 >[!MORELIKETHIS]
 >
->[Domande frequenti su Activity Attribution](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
+[Domande frequenti su Activity Attribution](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)

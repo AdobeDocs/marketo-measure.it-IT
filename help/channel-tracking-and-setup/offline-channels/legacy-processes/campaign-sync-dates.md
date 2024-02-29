@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874684
-description: Date di sincronizzazione campagna - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Date di sincronizzazione campagna - [!DNL Marketo Measure]
 title: Date di sincronizzazione della campagna
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 38c721d10ac33ae85da1d425b6af53b9e3dfd0a1
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Analogamente, se si desidera aggiungere una data di inizio punto di contatto in 
 
 **Punti di contatto di riempimento**
 
-In alcuni casi, un team di marketing potrebbe non riuscire ad aggiungere parametri utm a una particolare attività di marketing. Le date di sincronizzazione delle campagne consentono di (se utilizzi le campagne SFDC per le attività online) eseguire il backfill di alcuni dati mancanti. Supponiamo che tu stia eseguendo una campagna e-mail avviata il 1° maggio, ma il tuo team non ha aggiunto parametri utm alla campagna e-mail fino al 15 maggio. Se tieni traccia delle conversioni e-mail tramite una campagna SFDC, potrai impostare per tale campagna una Data di fine punto di contatto del 15 maggio e abilitare i punti di contatto per i membri &quot;con risposta&quot; della campagna. Questa azione ti dirà [!DNL Marketo Measure] creare punti di contatto per tutte queste risposte fino al 15 maggio.
+In alcuni casi, un team di marketing potrebbe non riuscire ad aggiungere parametri utm a una particolare attività di marketing. Le date di sincronizzazione delle campagne consentono di (se utilizzi le campagne SFDC per le attività online) eseguire il backfill di alcuni dati mancanti. Supponiamo che tu stia eseguendo una campagna e-mail avviata il 1° maggio, ma il tuo team non ha aggiunto parametri utm alla campagna e-mail fino al 15 maggio. Se tieni traccia delle conversioni e-mail tramite una campagna SFDC, potrai impostare una data di fine punto di contatto del 15 maggio per tale campagna e abilitare i punti di contatto per i membri &quot;con risposta&quot; della campagna. Questa azione ti dirà [!DNL Marketo Measure] creare punti di contatto per tutte queste risposte fino al 15 maggio.
 
 **Punti di contatto di iscrizione retroattiva alla campagna**
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874594
-description: Piattaforme di annunci integrate - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Piattaforme di annunci integrate - [!DNL Marketo Measure]
 title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Ulteriori informazioni sulla [[!DNL AdWords] funzionalità di assegnazione tag a
 
 ## Come abilitare [!DNL Marketo Measure] Assegnazione automatica tag per AdWords {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
-Prima dell’abilitazione [!DNL Marketo Measure] assegnazione automatica tag, **accertati di avere un modello di tracciamento abilitato a livello di account, campagna o gruppo di annunci all’interno dell’account Adwords. Questo è richiesto per qualsiasi account Adwords che avrà [!DNL Marketo Measure] assegnazione automatica tag abilitata.** L’abilitazione di un modello di tracciamento impedisce qualsiasi perdita di dati nella cronologia delle prestazioni degli annunci. Tieni presente che l’abilitazione dei modelli di tracciamento a livello di parola chiave, collegamento Sitelink o annuncio determinerà il completamento del processo di revisione e approvazione dell’annuncio e potrebbe potenzialmente riavviare la cronologia delle prestazioni degli annunci. Se non è abilitato alcun modello di tracciamento, [!DNL Marketo Measure] aggiungerà [!DNL Marketo Measure] parametri di tracciamento direttamente nell’&quot;URL finale&quot; dell’annuncio che può anche causare la perdita di dati della cronologia dell’annuncio.
+Prima dell’abilitazione [!DNL Marketo Measure] assegnazione automatica tag, **accertati di avere un modello di tracciamento abilitato a livello di account, campagna o gruppo di annunci all’interno dell’account Adwords. Questo è richiesto per qualsiasi account Adwords che avrà [!DNL Marketo Measure] assegnazione automatica tag abilitata.** L’abilitazione di un modello di tracciamento impedisce qualsiasi perdita di dati nella cronologia delle prestazioni degli annunci. Tieni presente che l’abilitazione dei modelli di tracciamento a livello di parola chiave, Sitelink o Annuncio determinerà il completamento del processo di revisione e approvazione dell’annuncio e potrebbe potenzialmente riavviare la cronologia delle prestazioni degli annunci. Se non è abilitato alcun modello di tracciamento, [!DNL Marketo Measure] aggiungerà [!DNL Marketo Measure] parametri di tracciamento direttamente nell’&quot;URL finale&quot; dell’annuncio che può anche causare la perdita di dati della cronologia dell’annuncio.
 
 Dopo aver impostato un modello di tracciamento, segui le istruzioni riportate di seguito per abilitare [!DNL Marketo Measure] Assegnazione automatica tag. Nota: [!DNL Marketo Measure] Inoltre, assegnerà automaticamente un tag agli annunci in pausa nel tuo account.
 
@@ -147,7 +147,7 @@ Prima di abilitare l’assegnazione tag automatica con [!DNL Facebook Ads], è i
 
 Tieni presente che puoi collegare [!DNL Facebook] account in qualsiasi momento a [!DNL Marketo Measure] e nessun dato andrà perso; solo quando è abilitata l’assegnazione tag automatica, la cronologia delle prestazioni viene cancellata.
 
-[Consulta questo articolo](https://www.facebook.com/business/help/393890194130036){target="_blank"} da Facebook per ulteriori informazioni sull&#39;esportazione [!DNL Facebook] Rapporti sugli annunci.
+Consulta [questo articolo](https://www.facebook.com/business/help/393890194130036){target="_blank"} da Facebook per ulteriori informazioni sull&#39;esportazione [!DNL Facebook] Rapporti sugli annunci.
 
 ## Contenuti sponsorizzati da linkedIn {#linkedin-sponsored-content}
 

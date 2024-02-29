@@ -1,13 +1,13 @@
 ---
 unique-page-id: 37356030
-description: Parametro di tracciamento e-mail - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Parametro di tracciamento e-mail - [!DNL Marketo Measure]
 title: Parametro di tracciamento e-mail
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 1%
+source-wordcount: '405'
+ht-degree: 2%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 Il [!DNL Marketo Measure] Il parametro di tracciamento e-mail consente agli addetti al marketing di trattare i clic sulle e-mail come invii di moduli, in modo che vengano generati punti di contatto per tali azioni. Senza utilizzare un parametro di tracciamento e-mail, i click-through da un’e-mail vengono trattati solo come &quot;visite web&quot; fino a quando l’utente non si impegna effettivamente con il sito tramite l’invio di un modulo o una chat web.
 
-## Casi d’uso  {#use-cases}
+## Casi di utilizzo  {#use-cases}
 
-**Registrazione webinar**: il team Marketing invia un invito e-mail con un solo pulsante per la registrazione a un webinar. Poiché l’e-mail contiene già le informazioni della persona, il singolo clic le registrerà automaticamente. La pagina di destinazione contiene il parametro di tracciamento e-mail, in modo che, una volta fatto clic, arrivi alla pagina di conferma, [!DNL Marketo Measure] può acquisire l’indirizzo e-mail e trattare il click-through come una compilazione di modulo, che genererà un punto di contatto.
+**Registrazione webinar**: il team Marketing invia un invito e-mail con un solo pulsante per la registrazione a un webinar. Poiché l’e-mail contiene già le informazioni della persona, il singolo clic le registra automaticamente. La pagina di destinazione contiene il parametro di tracciamento e-mail, in modo che, una volta fatto clic, arrivi alla pagina di conferma, [!DNL Marketo Measure] può acquisire l’indirizzo e-mail e trattare il click-through come una compilazione di modulo, che genera un punto di contatto.
 
-**Download del contenuto**: il team Content Marketing vuole promuovere un eBook recente che ha pubblicato con un collegamento di download diretto da un’e-mail. Una volta creato il modello e-mail, la pagina di conferma del download conterrà il parametro di tracciamento e-mail in modo che, quando effettuano il click-through, [!DNL Marketo Measure] può acquisire l’indirizzo e-mail. Senza dover compilare un modulo sul sito, [!DNL Marketo Measure] può generare un punto di contatto per il download del contenuto che si è verificato tramite l’e-mail perché è arrivato alla pagina di conferma con il parametro di tracciamento e-mail.
+**Download del contenuto**: il team Content Marketing vuole promuovere un eBook recente che ha pubblicato con un collegamento di download diretto da un’e-mail. Quando viene creato il modello e-mail, la pagina di conferma del download contiene il parametro di tracciamento e-mail in modo che, quando si passa da, [!DNL Marketo Measure] può acquisire l’indirizzo e-mail. Senza dover compilare un modulo sul sito, [!DNL Marketo Measure] può generare un punto di contatto per il download del contenuto. Questo perché l’e-mail li ha inseriti nella pagina di conferma con il parametro di tracciamento e-mail.
 
 ## Come funziona {#how-it-works}
 
 Quando un visitatore arriva sul tuo sito, [!DNL Marketo Measure] prevede di trovare una pagina di destinazione con un indirizzo e-mail o [!DNL Salesforce] ID per associare la visita a un &quot;invio modulo&quot; e generare un punto di contatto per tale attività.
 
-In qualità di cliente, creerai un modello e-mail come faresti normalmente. Una volta che è il momento di aggiungere nella pagina di destinazione l’azione di cui desideri tenere traccia, devi determinare il token, il tag di variabile o la macro accettata dalla piattaforma Marketing Automation per visualizzare dinamicamente il valore per ogni singolo utente.
+In qualità di cliente, puoi creare un modello e-mail come faresti normalmente. Una volta che è il momento di aggiungere nella pagina di destinazione l’azione da tracciare, è necessario determinare il token, il tag di variabile o la macro accettata dalla piattaforma Marketing Automation per visualizzare dinamicamente il valore per ogni singolo utente.
 
 Marketo Measure accetta i seguenti valori: Indirizzo e-mail, ID lead Salesforce o ID contatto Salesforce.
 
@@ -49,19 +49,19 @@ Marketo Measure accetta i seguenti valori: Indirizzo e-mail, ID lead Salesforce 
    <td><p>Marketo</p></td> 
    <td><p>{{lead.Email Address}} </p></td> 
    <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId={{lead.EmailAddress}}</p></td> 
-   <td><p>https://docs.marketo.com/display/public/DOCS/Tokens+Overview#TokensOverview-PersonTokens</p></td> 
+   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html</p></td> 
   </tr> 
   <tr> 
    <td><p>Pardot</p></td> 
-   <td><p>%%e-mail%% </p><p>oppure</p><p>%%user_crm_id%%</p></td> 
+   <td><p>%%email%% </p><p>oppure</p><p>%%user_crm_id%%</p></td> 
    <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%</p></td> 
-   <td><p>https://help.salesforce.com/articleView?id=pardot_variable_tags_reference.htm&amp;type=5</p></td> 
+   <td><p>https://help.salesforce.com/s/articleView?language=en_US&amp;id=pardot_variable_tags_reference.htm&amp;type=5</p></td> 
   </tr> 
   <tr> 
    <td><p>Hubspot</p></td> 
    <td><p>(inserito tramite Editor)</p></td> 
    <td><p>n/d</p></td> 
-   <td><p>https://knowledge.hubspot.com/cos-general/how-to-use-personalization-with-your-content</p></td> 
+   <td><p>https://knowledge.hubspot.com/website-pages/personalize-your-content</p></td> 
   </tr> 
   <tr> 
    <td><p>Agire il</p></td> 

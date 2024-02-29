@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762628
-description: Documentazione di Passport Dashboard - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Documentazione di Passport Dashboard - [!DNL Marketo Measure]
 title: Documentazione di Passport Dashboard
 exl-id: 43cb01a8-d02e-4086-af57-d7ec9275f87a
 feature: Reporting
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---

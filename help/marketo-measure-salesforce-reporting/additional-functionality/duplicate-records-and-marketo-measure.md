@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874572
-description: Duplicare record e [!DNL Marketo Measure] - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Duplicare record e [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Duplicare record e [!DNL Marketo Measure]
 exl-id: e340100c-120a-4771-946d-336a1458da4e
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-[!DNL Marketo Measure] sfrutta l’indirizzo e-mail come identificatore univoco quando si abbinano i dati a un lead o contatto correlato nel CRM. Quando [!DNL Marketo Measure] trova più lead o contatti con lo stesso indirizzo e-mail, gli stessi dati verranno visualizzati su tutti i record. L’impatto di questo avviene quando esegui rapporti sui lead o sui contatti con [!DNL Marketo Measure] e può erroneamente gonfiare la quantità di persone univoche che hanno punti di contatto dell’acquirente.
+[!DNL Marketo Measure] utilizza l’indirizzo e-mail come identificatore univoco quando abbini i dati a un lead o contatto correlato nel sistema di gestione delle relazioni con i clienti. Quando [!DNL Marketo Measure] trova più lead o contatti con lo stesso indirizzo e-mail, gli stessi dati verranno visualizzati su tutti i record. L’impatto di questo avviene quando esegui rapporti sui lead o sui contatti con [!DNL Marketo Measure] e può erroneamente gonfiare la quantità di persone univoche che hanno punti di contatto dell’acquirente.
 
 Come si presenta in [!DNL Marketo Measure] Generare rapporti?
 

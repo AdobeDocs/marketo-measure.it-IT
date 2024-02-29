@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874584
-description: "[!DNL Marketo Measure] Tassonomia di oggetti e campi - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Tassonomia di oggetti e campi - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Tassonomia di oggetti e campi"
 exl-id: 67f1cac8-e2b4-45cc-b1c9-58bf4e1a760d
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Definizioni del [!DNL Marketo Measure] campi che risiedono in ciascun oggetto [s
 
 **Qual è la logica nelle frecce?**
 
-Ogni freccia descrive la relazione tra un oggetto e l&#39;altro. Ad esempio, si noterà che il [!DNL Marketo Measure] Persona compila i campi sullo standard [!DNL Salesforce] Oggetto Lead. Se vi punta, significa che sta popolando l&#39;estremità ricevente della freccia.
+Ogni freccia descrive la relazione tra un oggetto e l&#39;altro. Ad esempio, è possibile vedere che [!DNL Marketo Measure] Persona compila i campi sullo standard [!DNL Salesforce] Oggetto Lead. Se vi punta, significa che sta popolando l&#39;estremità ricevente della freccia.
 
 **Cos&#39;è [!DNL Marketo Measure] Persona?**
 

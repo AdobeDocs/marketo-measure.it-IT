@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874680
-description: "[!DNL Facebook] API - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Facebook] API - [!DNL Marketo Measure]"
 title: "[!DNL Facebook] API"
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Per quanto riguarda la configurazione, è necessario completare sette passaggi e
 
 Dopo aver abilitato l’integrazione, [!DNL Marketo Measure] inizierà a scaricare il costo dell’annuncio nel [!DNL Marketo Measure Marketing ROI] Dashboard.
 
-Per il corretto funzionamento dell’integrazione, è necessario abilitare l’assegnazione tag automatica sulle [!DNL Facebook] account. Questo consentirà al nostro sistema di aggiungere un parametro _bf in tutti i collegamenti degli annunci. Questo processo aggiunge il nuovo parametro a tutti gli altri parametri di tracciamento già aggiunti al tuo [!DNL Facebook] annunci.
+Affinché l’integrazione funzioni correttamente, devi abilitare l’assegnazione tag automatica sulle [!DNL Facebook] account. Questo consentirà al nostro sistema di aggiungere un parametro _bf in tutti i collegamenti degli annunci. Questo processo aggiunge il nuovo parametro a tutti gli altri parametri di tracciamento già aggiunti al tuo [!DNL Facebook] annunci.
 
 ![](assets/3.gif)
 
@@ -120,7 +120,7 @@ Per il corretto funzionamento dell’integrazione, è necessario abilitare l’a
   </tr> 
   <tr> 
    <td><p>Account_Unique_ID (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook] Account #]</p></td> 
+   <td><p>[[!DNL Facebook] N. account]</p></td> 
   </tr> 
   <tr> 
    <td><p>Nome_account (Data Warehouse)</p></td> 

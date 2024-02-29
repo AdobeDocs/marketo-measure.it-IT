@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874700
-description: Abilitazione dell’autorizzazione per la modifica di lead convertiti - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Abilitazione dell’autorizzazione per la modifica di lead convertiti - [!DNL Marketo Measure]
 title: Abilitazione dell’autorizzazione per la modifica di lead convertiti
 exl-id: 00f59d98-272e-47e8-bc20-9d805b1826be
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---

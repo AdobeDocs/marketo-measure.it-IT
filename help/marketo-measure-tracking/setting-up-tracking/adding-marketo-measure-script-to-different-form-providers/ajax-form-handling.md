@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874745
-description: Gestione dei moduli AJAX - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Gestione dei moduli AJAX - [!DNL Marketo Measure]
 title: Gestione dei moduli AJAX
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Per segnalare manualmente le conversioni dei clienti in [!DNL Marketo Measure], 
 
 ## Scenario 1 - Modulo HTML con invio AJAX {#scenario-html-form-with-an-ajax-submit}
 
-Quando si utilizzano moduli contenenti AJAX (o un altro meccanismo) per inviare le date di conversione dal cliente ai nostri server, [!DNL Marketo Measure] potrebbe non essere a conoscenza della conversione del cliente attraverso uno dei percorsi standard monitorati da Dell. In questo scenario, possiamo sfruttare una semplice API (fornita di seguito).
+Quando si utilizzano moduli contenenti AJAX (o un altro meccanismo) per inviare le date di conversione dal cliente ai nostri server, [!DNL Marketo Measure] potrebbe non essere a conoscenza della conversione del cliente attraverso uno dei percorsi standard monitorati da Dell. In questo scenario, possiamo utilizzare una semplice API (fornita di seguito).
 
 Se si gestiscono invii di moduli personalizzati, è possibile chiamare esplicitamente [!DNL Marketo Measure] da JavaScript. [!DNL Marketo Measure] raccoglierà tutte le informazioni pertinenti dal modulo e le invierà in modo asincrono ai nostri server.
 

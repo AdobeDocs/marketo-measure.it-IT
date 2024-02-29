@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874618
-description: Generazione di rapporti sulle opportunità con o senza punti di contatto di attribuzione buyer - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Generazione di rapporti sulle opportunità con o senza punti di contatto di attribuzione buyer - [!DNL Marketo Measure]
 title: Generazione di rapporti sulle opportunità con o senza punti di contatto di attribuzione buyer
 exl-id: 3c658177-31e1-46b8-bc6b-e7a372ab187f
 feature: Touchpoints, Attribution, Reporting
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Crea un nuovo tipo di rapporto per includere tutte le opportunità con o senza punti di contatto di attribuzione buyer.
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874789
-description: "[!DNL Marketo Measure] Set di autorizzazioni - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Set di autorizzazioni - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Set di autorizzazioni"
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Per accedere e assegnare i set di autorizzazioni in Salesforce:
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Amministratore</strong></span></td> 
-   <td><span>Consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti. La licenza in base alla quale [!DNL Marketo Measure] invia i dati a SFDC se questo set di autorizzazioni è abilitato. Inoltre, si consiglia che questa licenza possa modificare i lead convertiti negli scenari in cui il lead viene convertito prima di [!DNL Marketo Measure] applicazione dei dati al record. Questo garantirà la precisione nella generazione dei rapporti tra Salesforce e [!DNL Marketo Measure]. <a href="http://releasenotes.docs.salesforce.com/en-us/spring17/release-notes/rn_sales_leads_view_converted.htm">Fai clic qui per ulteriori informazioni</a>.</span></td> 
+   <td><span>Consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti. La licenza in base alla quale [!DNL Marketo Measure] invia i dati a SFDC se questo set di autorizzazioni è abilitato. Inoltre, si consiglia che questa licenza abbia la possibilità di modificare i lead convertiti negli scenari in cui il lead viene convertito prima [!DNL Marketo Measure] applicazione dei dati al record. Questo garantisce la precisione nella generazione dei rapporti tra Salesforce e [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">Fai clic qui per ulteriori informazioni</a>.</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Utente marketing</strong></span></td> 
@@ -52,4 +52,4 @@ I team addetti allo sviluppo delle vendite in entrata e gli account executive po
 
 >[!NOTE]
 >
->Inoltre, l’utente tramite il quale siamo connessi deve avere l’&quot;Utente di marketing&quot; [!DNL Salesforce] Profilo abilitato a livello di utente per l’accesso all’oggetto Campaign. Per verificare questa situazione, fai clic su in **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **Utenti assegnati**.
+>Inoltre, l’utente tramite il quale siamo connessi deve avere l’Utente di marketing [!DNL Salesforce] Profilo abilitato a livello di utente per l’accesso all’oggetto Campaign. Per verificare questa situazione, fai clic su in **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **Utenti assegnati**.

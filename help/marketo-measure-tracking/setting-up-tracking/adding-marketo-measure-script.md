@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874795
-description: Aggiunta [!DNL Marketo Measure] Script - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Aggiunta [!DNL Marketo Measure] Script - [!DNL Marketo Measure]
 title: Aggiunta [!DNL Marketo Measure] Script
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Quando si inizia con [!DNL Marketo Measure], è possibile aggiungere [!DNL Marke
 
 ## Hard-Coding {#hard-coding}
 
-Come best practice, consigliamo vivamente la codifica fissa [!DNL Marketo Measure] JavaScript per le proprietà web. Per codificare lo script, devi inserire lo script prima della chiusura `</head>` su ogni pagina del sito.
+Come best practice, consigliamo vivamente la codifica fissa [!DNL Marketo Measure] JavaScript per le proprietà web. Per codificare lo script, è necessario inserirlo prima della chiusura `</head>` su ogni pagina del sito.
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
@@ -54,13 +54,13 @@ Ulteriori informazioni possono essere [trovato qui](/help/marketo-measure-tracki
 
 [!DNL Marketo Measure] JavaScript è basato su dominio ed è quindi in grado di gestire automaticamente qualsiasi sottodominio, purché il JavaScript si trovi sulle pagine e il dominio principale sia lo stesso utilizzato per creare l’account Marketo Measure.
 
-Tuttavia, se utilizzi domini separati o internazionali, assicurati di consentire ai [!DNL Marketo Measure] Consulente sa. I domini devono essere aggiunti manualmente al tuo account nella [!DNL Marketo Measure] terminare in modo che [!DNL Marketo Measure] sa collegare i dati dei domini aggiuntivi al tuo account. Pertanto, si prega di inviare eventuali domini separati/internazionali al tuo [!DNL Marketo Measure] Consulente.
+Tuttavia, se utilizzi domini separati o internazionali, assicurati di consentire ai [!DNL Marketo Measure] Consulente sa. I domini devono essere aggiunti manualmente al tuo account nella [!DNL Marketo Measure] terminare in modo che [!DNL Marketo Measure] sa collegare i dati dei domini aggiuntivi al tuo account. Pertanto, invia domini separati/internazionali al tuo [!DNL Marketo Measure] Consulente.
 
 Se utilizzi pagine di terze parti, parla del tuo caso d’uso con il [!DNL Marketo Measure] Consulente. In generale, è importante sapere se è possibile aggiungere una versione personalizzata di [!DNL Marketo Measure] JavaScript per tenere traccia di tali pagine, se appropriato. Se questo non è possibile, il tracciamento tramite i punti di contatto della campagna CRM verrà esplorato con il tuo [!DNL Marketo Measure] Consulente.
 
 Sono presenti moduli CHE NON devono essere tracciati da [!DNL Marketo Measure] dal momento che non hanno necessariamente senso per l’attribuzione (ad esempio, moduli per annullare l’abbonamento, accessi dei clienti, ecc.)? In tal caso, aggiungi il codice di esclusione [in questo articolo](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} a ogni modulo
 
-Hai delle pagine non sicure? In tal caso, è necessario proteggerli in quanto la navigazione tra una pagina sicura/non protetta interromperà la sessione di tracciamento.
+Hai delle pagine non sicure? In tal caso, è necessario proteggerli in quanto la navigazione tra una pagina protetta/non protetta interromperà la sessione di tracciamento.
 
 Assicurati di avere una conversazione con il tuo team web in modo che sappiano [!DNL Marketo Measure] JavaScript deve trovarsi sempre nelle proprietà web appropriate. Se vengono introdotte nuove pagine/moduli/siti, assicurati che la distribuzione [!DNL Marketo Measure] JavaScript fa parte del protocollo.
 

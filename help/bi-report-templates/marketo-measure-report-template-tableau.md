@@ -1,11 +1,11 @@
 ---
-description: "[!DNL Marketo Measure] Modello di rapporto - Tableau - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Measure] Modello di rapporto - Tableau - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Modello di rapporto - Tableau"
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 Apri [!DNL Adobe Marketo Measure] File della cartella di lavoro Tableau del modello di reporting.
 
-Sarà necessario aggiornare i dati di connessione esistenti alle informazioni di connessione di Snowflake specifiche. Fai clic su [!UICONTROL Edit Connection] e seguire i passaggi descritti nel [[!UICONTROL Data Connection]](#data-connection) sezione di questa documentazione.
+È necessario aggiornare i dati di connessione esistenti alle informazioni di connessione di Snowflake specifiche. Fai clic su [!UICONTROL Edit Connection] e seguire i passaggi descritti nel [[!UICONTROL Data Connection]](#data-connection) sezione di questa documentazione.
 
 ![](assets/marketo-measure-report-template-tableau-1.png)
 
 ## Connessione dati {#data-connection}
 
-Dovrai impostare una connessione dati all’istanza del Snowflake. A questo scopo è necessario specificare il nome del server, il nome utente e la password. I dettagli su dove trovare queste informazioni e reimpostare la password, se necessario, sono documentati [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
+Devi impostare una connessione dati all’istanza del Snowflake. A questo scopo, è necessario specificare il nome del server insieme al nome utente e alla password. I dettagli su dove trovare queste informazioni e reimpostare la password, se necessario, sono documentati [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ![](assets/marketo-measure-report-template-tableau-2.png)
 
@@ -47,7 +47,7 @@ Perché [!DNL Tableau] applica i filtri dell&#39;origine dati alla query comples
     and sn._deleted_date is null
 ```
 
-Tuttavia, ciò non è corretto in quanto se una sessione è stata eliminata, ma il punto di contatto corrispondente non viene eliminato, i dati del punto di contatto vengono rimossi dal set di dati. Vogliamo che i dati del punto di contatto siano presenti nel set di dati, poiché il punto di contatto non è stato eliminato. L’aggiunta di istruzioni SQL personalizzate garantisce che i criteri di filtro vengano applicati a livello di tabella, determinando la seguente query.
+Tuttavia, ciò non è corretto in quanto se una sessione è stata eliminata, ma il punto di contatto corrispondente non viene eliminato, i dati del punto di contatto vengono rimossi dal set di dati. Vogliamo che i dati del punto di contatto siano presenti nel set di dati, poiché il punto di contatto non è stato eliminato. L’aggiunta di istruzioni SQL personalizzate garantisce che i criteri di filtro vengano applicati a livello di tabella, generando la seguente query.
 
 **Filtri applicati tramite SQL personalizzato**
 
@@ -70,7 +70,7 @@ Sono state applicate alcune trasformazioni ai dati in [!DNL Tableau] dal suo sta
 
 ### Colonne rimosse {#removed-columns}
 
-Per semplificare il modello dati e rimuovere i dati ridondanti e non necessari, abbiamo ridotto il numero di colonne importate in Tableau dalla tabella del Snowflake originale. Le colonne rimosse includono chiavi esterne non necessarie, dati dimensionali denormalizzati sfruttati meglio tramite relazioni con altre tabelle nel modello, colonne di controllo e campi utilizzati per le [!DNL Marketo Measure] elaborazione. È possibile aggiungere o rimuovere colonne in base alle esigenze aziendali modificando l&#39;elenco delle colonne importate nella sezione Select dell&#39;istruzione SQL personalizzata.
+Per semplificare il modello dati e rimuovere i dati ridondanti e non necessari, abbiamo ridotto il numero di colonne importate in Tableau dalla tabella del Snowflake originale. Le colonne rimosse includono chiavi esterne non necessarie, dati dimensionali denormalizzati utilizzati in modo migliore tramite relazioni con altre tabelle nel modello, colonne di controllo e campi utilizzati per [!DNL Marketo Measure] elaborazione. È possibile aggiungere o rimuovere colonne in base alle esigenze aziendali modificando l&#39;elenco delle colonne importate nella sezione Select dell&#39;istruzione SQL personalizzata.
 
 >[!NOTE]
 >
@@ -120,11 +120,11 @@ I punti di contatto lead e i punti di contatto di attribuzione vengono combinati
 
 Le transizioni della fase dell&#39;opportunità e della fase del lead vengono combinate in un&#39;unica tabella in questo modello, con un collegamento [!UICONTROL Lead and Attribution] Tabella dei punti di contatto. È stata aggiunta la colonna &quot;Tipo di transizione&quot; per indicare se una riga è una transizione di fase di opportunità o lead.
 
-Condivisione di dati relativi a costi e punti di contatto nelle dimensioni Canale e Campagna. Tuttavia, Tableau è limitato nella sua capacità di modellare le dimensioni condivise tra le tabelle dei fatti. Poiché siamo limitati a una sola tabella di dimensioni condivisa, i dati di Canale e Campagna sono stati combinati in un’unica tabella. Vengono combinate utilizzando un cross join delle due dimensioni in una tabella in Tableau: Canale e Campaign. L’ID univoco viene creato concatenando gli ID del canale e della campagna. Lo stesso valore ID viene aggiunto alle tabelle Punto di contatto e Costo per creare una relazione con questa tabella dimensione combinata.
+Condivisione di dati relativi a costi e punti di contatto nelle dimensioni Canale e Campagna. Tuttavia, Tableau ha una capacità limitata di modellare le dimensioni condivise tra le tabelle dei fatti. Poiché siamo limitati a una sola tabella di dimensioni condivisa, i dati di Canale e Campagna sono stati combinati in un’unica tabella. Vengono combinate utilizzando un cross join delle due dimensioni in una tabella in Tableau: Canale e Campaign. L’ID univoco viene creato concatenando gli ID del canale e della campagna. Lo stesso valore ID viene aggiunto alle tabelle Punto di contatto e Costo per creare una relazione con questa tabella dimensione combinata.
 
 ![](assets/marketo-measure-report-template-tableau-12.png)
 
-In questo modello, le dimensioni Campaign e Canale sono collegate al punto di contatto, pertanto tutti i rapporti su tali dimensioni avvengono tramite questo collegamento e indicano che il reporting dimensionale sui dati dell’evento può essere incompleto. Questo perché molti eventi non dispongono di collegamenti a queste dimensioni fino a quando non vengono elaborati in punti di contatto.
+In questo modello, le dimensioni Campaign e Canale sono collegate al punto di contatto, pertanto tutti i rapporti su tali dimensioni si basano su questo collegamento e indicano che il reporting dimensionale sui dati dell’evento può essere incompleto. Questo perché molti eventi non dispongono di collegamenti a queste dimensioni fino a quando non vengono elaborati in punti di contatto.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ I tassi nella tabella Tasso di conversione rappresentano il valore necessario pe
 
 ![](assets/marketo-measure-report-template-tableau-13.png)
 
-Se non è possibile identificare un tasso di conversione, le misure di conversione della valuta in questo modello sostituiscono il valore 1,0 per il tasso. Sono state create misure separate per visualizzare il valore della valuta per la misura e avvisare se un calcolo include più di un valore di valuta (ovvero se non è stato possibile convertire un valore nella valuta selezionata). Queste misure, Divisa costi e Divisa ricavi, vengono incluse come descrizioni comandi in qualsiasi elemento visivo che visualizza i dati relativi a Costo o Ricavo.
+Se non è possibile identificare un tasso di conversione, le misure di conversione della valuta in questo modello sostituiscono il valore 1,0 per il tasso. Sono state create misure separate per visualizzare il valore di valuta della misura e avvisare se un calcolo include più di un valore di valuta, ovvero se non è stato possibile convertire un valore nella valuta selezionata. Queste misure, Divisa costi e Divisa ricavi, vengono incluse come descrizioni comandi in qualsiasi elemento visivo che visualizza i dati relativi a Costo o Ricavo.
 
 ![](assets/marketo-measure-report-template-tableau-14.png)
 
@@ -153,7 +153,7 @@ Le definizioni sono state aggiunte al [!DNL Tableau model] per parametri, colonn
 
 ![](assets/marketo-measure-report-template-tableau-15.png)
 
-Per visualizzare le definizioni per le colonne provenienti direttamente da [!DNL Snowflake], consultare il [documentazione di data warehouse](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}.
+Per visualizzare le definizioni per le colonne provenienti direttamente da [!DNL Snowflake], vedere [documentazione di data warehouse](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}.
 
 ## Discrepanze tra modelli e individuazione {#discrepancies-between-templates-and-discover}
 
@@ -169,7 +169,7 @@ I punti di contatto lead e i punti di contatto di attribuzione ereditano i dati 
 
 La generazione di rapporti sui costi nei modelli è disponibile solo a livello di campagna e di canale, tuttavia, Scopri le offerte con livelli di granularità inferiori per alcuni provider di annunci (ad esempio creativi, parole chiave, gruppi di annunci, ecc.). Per ulteriori dettagli sulla modalità di modellazione dei dati sui costi nei modelli, fare riferimento alla [!UICONTROL Data Model] sezione di questa documentazione. Se il filtro dimensione in [!UICONTROL Discover] è impostato su canale o campagna, i costi a livello di canale, sottocanale e campagna devono essere allineati tra Discover e i modelli di rapporto.
 
-### RITORNO SULL&#39;INVESTIMENTO {#roi}
+### ROI {#roi}
 
 Poiché il ROI è calcolato in base ai ricavi e ai costi attribuiti, le stesse discrepanze che potrebbero sorgere in uno di questi calcoli possono sorgere nel ROI e per gli stessi motivi, come indicato in tali sezioni.
 
@@ -179,7 +179,7 @@ Queste metriche, come mostrato nei modelli di reporting, non si riflettono in Di
 
 ### Traffico web {#web-traffic}
 
-Il modello dati del modello di reporting normalizza i dati dimensionali di canale, sottocanale e campagna tramite la relazione tra sessione e punto di contatto. Questa funzione è diversa dal modello di dati Discover, che denormalizza queste dimensioni in Session. A causa di questa distinzione, i conteggi complessivi per visite e visitatori devono corrispondere tra Discover e il modello di reporting; tuttavia, una volta visualizzati o filtrati per dimensione, non è previsto che tali numeri si allineino. Questo perché i dati dimensionali nel modello sono disponibili solo per gli eventi web che hanno generato un punto di contatto (ad esempio eventi non anonimi). Per maggiori dettagli, fare riferimento a [Modello dati](#data-model) sezione di questa documentazione.
+Il modello dati del modello di reporting normalizza i dati dimensionali di canale, sottocanale e campagna tramite la relazione tra sessione e punto di contatto. Questa funzione è diversa dal modello di dati Discover, che denormalizza queste dimensioni in Session. A causa di questa distinzione, i conteggi complessivi per visite e visitatori devono corrispondere tra Discover e il modello di reporting; tuttavia, una volta visualizzati o filtrati per dimensione, non è previsto che tali numeri si allineino. Questo perché i dati dimensionali nel modello sono disponibili solo per gli eventi web che hanno generato un punto di contatto (ovvero eventi non anonimi). Per ulteriori informazioni, consulta [Modello dati](#data-model) sezione di questa documentazione.
 
 Potrebbero esserci piccole discrepanze nel conteggio totale dei moduli del sito tra [!DNL Discover] e il modello. Questo perché il modello dati nel modello di reporting ottiene i dati dimensionali per il modulo del sito tramite una relazione con Session e quindi Touchpoint; esistono alcune istanze in cui i dati del modulo del sito non hanno una sessione correlata.
 

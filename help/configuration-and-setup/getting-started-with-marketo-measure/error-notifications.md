@@ -1,10 +1,10 @@
 ---
-description: Notifiche di errore - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Notifiche di errore - [!DNL Marketo Measure]
 title: Notifiche di errore
 feature: Fundamentals
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
     </tr>
     <tr>
       <td>UNSUPPORTED_CRM_PACKAGE_VERSION</td>
-      <td>Errore durante l'importazione CRM: UNSUPPORTED_CRM_PACKAGE_VERSION : Aggiornare il pacchetto CRM</td>
+      <td>Errore durante l'importazione CRM: UNSUPPORTED_CRM_PACKAGE_VERSION : Aggiorna il pacchetto CRM</td>
       <td>Il pacchetto corrente rilevato non è più supportato.</td>
       <td>Aggiorna il pacchetto alla versione più recente:
         <ul>

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874539
-description: Creazione di personalizzati [!DNL Marketo Measure] Tipi di rapporto - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Creazione di personalizzati [!DNL Marketo Measure] Tipi di rapporto - [!DNL Marketo Measure]
 title: Creazione di personalizzati [!DNL Marketo Measure] Tipi di rapporti
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Scopri come creare personalizzati [!DNL Marketo Measure] [!DNL Salesforce] tipi di report. È consigliabile creare tre diversi tipi di rapporto: Lead con punti di contatto buyer (personalizzati), [!DNL Marketo Measure] Persona con punti di contatto buyer (personalizzati), opportunità con punto di contatto attribuzione buyer (personalizzati).
 
@@ -73,7 +73,7 @@ Scopri come creare personalizzati [!DNL Marketo Measure] [!DNL Salesforce] tipi 
 
 1. Definisci il tipo di rapporto personalizzato.
 
-   * [!UICONTROL Report Type Focus] > [!UICONTROL Primary Object]: Opportunità
+   * [!UICONTROL Report Type Focus] > [!UICONTROL Primary Object]: opportunità
    * [!UICONTROL Identification] > [!UICONTROL Report Type Label]: opportunità con punto di contatto di attribuzione acquirente (personalizzato)
    * [!UICONTROL Store in Category]: altri rapporti
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]: implementato

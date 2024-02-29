@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874741
-description: IFrame Forms e [!DNL Marketo Measure] - [!DNL Marketo Measure] - Documentazione del prodotto
+description: IFrame Forms e [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: IFrame Forms e [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ Si consiglia di posizionare JavaScript all’interno dell’intestazione di IFra
 
 ![](assets/1-1.png)
 
-Per qualsiasi domanda sull’aggiunta dei nostri JavaScript ai moduli IFrame, rivolgiti al team dell’account Adobe (il tuo Account Manager) oppure [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+Per qualsiasi domanda sull’aggiunta di JavaScript ai moduli IFrame, rivolgiti al team dell’account Adobe (il tuo Account Manager) oppure [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

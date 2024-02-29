@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874682
-description: Canali marketing e sottocanali - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Canali marketing e sottocanali - [!DNL Marketo Measure]
 title: Canali marketing e sottocanali
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -21,15 +21,15 @@ Per definire cosa sono un canale e un sottocanale [!DNL Marketo Measure], il mod
 
 I canali di marketing vengono utilizzati per aiutare a categorizzare (o &quot;bucket&quot;) le attività di marketing per facilitarne la generazione di rapporti, sia nel [!DNL Marketo Measure] ROI Dash e nel tuo CRM. [!DNL Marketo Measure] viene fornito con 12 canali predefiniti (che puoi personalizzare o rinominare in base alle convenzioni della tua organizzazione), nonché la possibilità di creare ulteriormente canali personalizzati per un filtro ancora più granulare.
 
-Ogni volta che ricevi un visitatore di una delle tue pagine di contenuto sul sito (che si tratti di una pagina web, di un download di white paper, di un URL pagina, ecc.), tale lead viene &quot;inserito&quot; in un canale/sottocanale in base a diversi parametri UTM trovati nell’URL:
+Ogni volta che ricevi un visitatore di una delle pagine di contenuto sul tuo sito (che si tratti di una pagina web, di un download di white paper, di un URL della pagina, ecc.), tale lead viene &quot;inserito&quot; in un canale/sottocanale in base a diversi parametri UTM trovati nell’URL:
 
 * Medium
 * Origine
-* Campagna
+* Campaign
 * Pagina di destinazione
 * Sito Web di riferimento
 
-Per personalizzare in quale &quot;bucket&quot; rientreranno i lead in base ai loro parametri UTM, puoi utilizzare le Regole canale. Per ulteriori informazioni sulla configurazione e la manutenzione delle regole del canale, [fai clic qui](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
+Per personalizzare in quale &quot;bucket&quot; rientreranno i lead in base ai loro parametri UTM, puoi utilizzare le regole del canale. Per ulteriori informazioni sulla configurazione e la manutenzione delle regole del canale, [fai clic qui](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
 Scopri come configurare il [Canali online](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md) e [Canali offline](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)e la differenza tra di essi.
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874578
-description: Campagne e membri della campagna - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Campagne e membri della campagna - [!DNL Marketo Measure]
 title: Campagne e membri della campagna
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-source-git-commit: 38c721d10ac33ae85da1d425b6af53b9e3dfd0a1
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ La data di inizio può essere utilizzata nel caso in cui una campagna esistente 
 
 ## Caso d’uso per data di fine punto di contatto {#use-case-for-touchpoint-end-date}
 
-Se prima di utilizzare [!DNL Marketo Measure], utilizzavi una piattaforma di automazione marketing che teneva traccia delle interazioni digitali dei lead (invio di moduli IE) e quindi li caricava in una [!DNL Saleforce] Campaign, puoi sfruttare il campo Data di fine punto di contatto. Impostare la data di fine del punto di contatto come data di inizio con [!DNL Marketo Measure] e abilitare i punti di contatto dell’acquirente, l’interazione digitale di ciascuno di questi lead verrà creata come punto di contatto. Il motivo per cui imposterai la data di fine del punto di contatto come data di inizio con [!DNL Marketo Measure] è perché, andando avanti, monitoreremo queste interazioni digitali attraverso il nostro javascript.
+Se prima di utilizzare [!DNL Marketo Measure], utilizzavi una piattaforma di automazione marketing che teneva traccia delle interazioni digitali dei lead (invio di moduli IE) e quindi li caricava in una [!DNL Saleforce] Campaign, puoi utilizzare il campo Data di fine punto di contatto. Impostare la data di fine del punto di contatto come data di inizio con [!DNL Marketo Measure] e abilitare i punti di contatto dell’acquirente, l’interazione digitale di ciascuno di questi lead verrà creata come punto di contatto. Il motivo per cui imposterai la data di fine del punto di contatto come data di inizio con [!DNL Marketo Measure] è perché, andando avanti, monitoreremo queste interazioni digitali attraverso il nostro javascript.
 
 ![](assets/3.png)
 

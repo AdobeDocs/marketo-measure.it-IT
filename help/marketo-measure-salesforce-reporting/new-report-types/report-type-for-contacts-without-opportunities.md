@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874616
-description: Tipo di rapporto per contatti senza opportunità - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Tipo di rapporto per contatti senza opportunità - [!DNL Marketo Measure]
 title: Tipo di rapporto per contatti senza opportunità
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella nostra documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Per creare rapporti sui contatti con i punti di contatto dell&#39;acquirente non associati a un&#39;opportunità, è necessario creare un tipo di rapporto personalizzato.
 

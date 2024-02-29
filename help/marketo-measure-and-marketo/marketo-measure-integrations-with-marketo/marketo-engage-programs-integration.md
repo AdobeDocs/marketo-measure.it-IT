@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762729
-description: "[!DNL Marketo Engage] Integrazione dei programmi - [!DNL Marketo Measure] - Documentazione del prodotto"
+description: "[!DNL Marketo Engage] Integrazione dei programmi - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Engage] Integrazione dei programmi"
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Tutti i livelli.
 
    ![](assets/two.png)
 
-1. Facoltativamente, puoi impostare un nome per la regola, se questo contribuisce a tenerne traccia. Per definire la regola, seleziona innanzitutto il campo dall’elenco dei campi Programma e Iscrizione al programma. Continua a creare la regola selezionando l’operatore e il valore previsto da verificare.
+1. Facoltativamente, puoi impostare un nome per la regola, se questo contribuisce a tenerne traccia. per definire la regola, seleziona innanzitutto il campo dall’elenco dei campi Programma e Iscrizione al programma. Continua a creare la regola selezionando l’operatore e il valore previsto da verificare.
 
    ![](assets/three.png)
 
@@ -51,7 +51,7 @@ Tutti i livelli.
 
    >[!NOTE]
    >
-   >Se la regola desidera acquisire la Data attività o la data in cui un membro del programma ha raggiunto uno stato particolare, è necessario utilizzare [!DNL Marketo Engage] Integrazione delle attività e impostazione di una regola per il tipo di attività &quot;Modifica stato in progressione&quot;.
+   >Se la regola desidera acquisire la Data attività o la data in cui un membro del programma ha raggiunto uno stato particolare, sarà necessario utilizzare [!DNL Marketo Engage] Integrazione delle attività e impostazione di una regola per il tipo di attività &quot;Modifica stato in progressione&quot;.
 
    ![](assets/six.png)
 
@@ -139,7 +139,7 @@ Attraverso l&#39;importazione dei dati dei programmi Marketo, i costi vengono sc
 
 ## Mappatura cookie {#cookie-mapping}
 
-In seguito alla [!DNL Marketo Measure] integrazione con Marketo, il [!DNL Marketo Measure] Anche l’ID cookie viene ora mappato e sincronizzato con il [!DNL Marketo Munchkin Id]. Questo consente di colmare il divario per attribuire il primo contatto anonimo a una sessione web, anziché attribuire i tocchi FT e LC a un’attività Marketo. Immagina questo scenario:
+In seguito alla [!DNL Marketo Measure] integrazione con Marketo, il [!DNL Marketo Measure] Anche l’ID cookie viene ora mappato e sincronizzato con [!DNL Marketo Munchkin Id]. Questo consente di colmare il divario per attribuire il primo contatto anonimo a una sessione web, anziché attribuire i tocchi FT e LC a un’attività Marketo. Immagina questo scenario:
 
 Contrassegna i clic su una [!DNL Facebook] ad e arriva su wayneenterprises.com dove viene cotto con [!DNL Marketo Measure] Id 123 e [!DNL Marketo Munchkin Id] 456. Il modulo non viene compilato.
 
@@ -161,7 +161,7 @@ Con questo miglioramento della mappatura dei cookie, il FT tornerebbe indietro e
 
 **Come si imposta la data del punto di contatto come data di progressione o data in cui la modifica dello stato è avvenuta al membro del programma?**
 
-Se la regola desidera acquisire la Data attività o la data in cui un membro del programma ha raggiunto uno stato particolare, è necessario utilizzare [!DNL Marketo Engage] Integrazione delle attività e impostazione di una regola per il tipo di attività &quot;Modifica stato in progressione&quot;. In caso contrario, [!DNL Marketo Engage] L’integrazione dei programmi rende disponibile solo la data di iscrizione, che è la prima data in cui la persona Marketo è stata inserita nel programma, anche se sono presenti più stati.
+Se la regola desidera acquisire la Data attività o la data in cui un membro del programma ha raggiunto uno stato particolare, sarà necessario utilizzare [!DNL Marketo Engage] Integrazione delle attività e impostazione di una regola per il tipo di attività &quot;Modifica stato in progressione&quot;. In caso contrario, [!DNL Marketo Engage] L’integrazione dei programmi rende disponibile solo la data di iscrizione, che è la prima data in cui la persona Marketo è stata inserita nel programma, anche se sono presenti più stati.
 
 **Posso ottenere un elenco di selezione delle opzioni di data per la Data del punto di contatto?**
 
@@ -169,7 +169,7 @@ Per attivare il completamento automatico, inizia inserendo una parentesi graffa 
 
 **Se creo regole del programma Marketo e dispongo anche di regole della campagna CRM, queste verranno conteggiate due volte?**
 
-Dipende dalla definizione della regola, ma forse sì. Valuterai il set di regole in modo da non avere regole che coprono un programma e una campagna, perché non verrà deduplicato né rilevato per appartenenze simili. Una soluzione possibile è copiare le regole di Campaign su Programmi se desideri che Marketo sia l’unica fonte di verità, quindi rimuovere le regole di Campaign. Un’altra opzione consiste nell’aggiungere un criterio &quot;CreatedOn&quot; o &quot;CreatedDate&quot; nelle regole in modo che le regole precedenti a una certa data utilizzino le regole di Campaign e quelle successive a una certa data utilizzino le regole di Programma. Ci sono molte soluzioni alternative, ma ci vorrà un po&#39; di pianificazione e coordinamento.
+Dipende dalla definizione della regola, ma forse sì. dovrai valutare il set di regole in modo da non avere regole che coprono un programma e una campagna, perché non verrà deduplicato né rilevato per appartenenze simili. Una soluzione possibile è copiare le regole di Campaign su Programmi se desideri che Marketo sia l’unica fonte di verità, quindi rimuovere le regole di Campaign. Un’altra opzione consiste nell’aggiungere un criterio &quot;CreatedOn&quot; o &quot;CreatedDate&quot; nelle regole in modo che le regole precedenti a una certa data utilizzino le regole di Campaign e quelle successive a una certa data utilizzino le regole di Programma. Ci sono molte soluzioni alternative, ma ci vorrà un po&#39; di pianificazione e coordinamento.
 
 **Sono disponibili campi personalizzati per l’iscrizione al programma Marketo da definire?**
 

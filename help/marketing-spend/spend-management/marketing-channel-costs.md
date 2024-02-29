@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874602
-description: Costi canale di marketing - [!DNL Marketo Measure] - Documentazione del prodotto
+description: Costi canale di marketing - [!DNL Marketo Measure]
 title: Costi canale di marketing
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Il file CSV scaricato richiamerà i risultati dalla schermata corrente, il che s
 
 Indipendentemente da quale visualizzazione si trovi nel browser, se si tratta di una visualizzazione filtrata o predefinita con tutte le date e i canali, puoi caricare qualsiasi CSV.
 
-L’errore più comune che si verifica è il formato delle colonne di data, che si verifica se il formato della data viene modificato e potrebbe verificarsi intenzionalmente se ci si sposta tra Excel e/o Google Sheets. La data deve essere MM-AA, quindi 12 settembre e non 12 settembre, o 12 maggio e non 05-12.
+L’errore più comune che si verifica è il formato delle colonne di data, che si verifica se il formato della data viene modificato e potrebbe verificarsi intenzionalmente se ci si sposta tra Excel e/o Google Sheets. Tieni presente che la data deve essere MM-AA, quindi settembre-12 e non settembre-12, o maggio-12 e non 05-12.
 
 ## Prima di iniziare {#before-you-begin}
 
@@ -129,4 +129,4 @@ Grazie alla possibilità di modificare l’intervallo di date, filtrare il canal
 
 **Perché non posso caricare un file?**
 
-Abbiamo set di autorizzazioni diversi all’interno di [!DNL Marketo Measure] App. Per caricare un file, devi essere un &quot;AccountAdmin&quot;. Per ovviare a questo problema, richiedi l’accesso al tuo AccountAdmin oppure chiedi al tuo AccountAdmin di caricare il file per tuo conto. Un elenco di utenti e dei loro ruoli è disponibile in **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL View/Add Account Users]**.
+Abbiamo set di autorizzazioni diversi all’interno di [!DNL Marketo Measure] App. Per caricare un file, devi essere un &quot;AccountAdmin&quot;. Per ovviare a questo problema, richiedi l’accesso all’amministratore del tuo account o fai in modo che l’amministratore del tuo account carichi il file per tuo conto. Un elenco di utenti e dei loro ruoli è disponibile in **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL View/Add Account Users]**.

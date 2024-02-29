@@ -3,9 +3,9 @@ description: Nuova guida per Discover Dashboard - [!DNL Marketo Measure] - Prodo
 title: Nuova guida per Discover Dashboard
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -500,7 +500,7 @@ Le nuove funzioni si trovano nella sezione [Scopri nozioni di base sulla dashboa
 
 ## Feedback {#feedback}
 
-Poiché continuiamo a migliorare la tua esperienza, ti invitiamo ad esprimere il tuo feedback su questo aggiornamento. I tuoi pensieri influenzeranno direttamente i perfezionamenti futuri, garantendo che la nostra piattaforma sia sempre allineata alle tue esigenze. Tieni d&#39;occhio il modulo di feedback in Marketo Measure.
+Poiché continuiamo a migliorare la tua esperienza, ti invitiamo ad esprimere il tuo feedback su questo aggiornamento. I tuoi pensieri influenzeranno direttamente i perfezionamenti futuri, garantendo che la nostra piattaforma sia sempre allineata alle tue esigenze. Tieni d’occhio un modulo di feedback in Marketo Measure.
 
 >[!MORELIKETHIS]
 >
