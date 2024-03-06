@@ -3,9 +3,9 @@ description: '[!DNL Marketo Measure] Panoramica Ultimate - [!DNL Marketo Measure
 title: '''[!DNL Marketo Measure] Panoramica di Ultimate'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ ht-degree: 0%
 
 **Importare dati B2B tramite AEP**
 
-Gli addetti al marketing devono inserire i propri dati B2B (ad esempio account, opportunità, contatto, lead, campagna, membro della campagna, attività) tramite AEP. Le connessioni dirette CRM e di Marketo Engage non sono più disponibili per Ultimate. Gli addetti al marketing continueranno a portare i dati di Ad Platform tramite connessioni dirette e il tracciamento delle attività web tramite [!DNL Marketo Measure] javascript.
+Gli addetti al marketing devono inserire i propri dati B2B (ad esempio account, opportunità, contatto, lead, campagna, membro della campagna, attività) tramite AEP. Le connessioni dirette CRM e di Marketo Engage non sono più disponibili per Ultimate. Gli addetti al marketing continuano a portare dati di Ad Platform tramite connessioni dirette e il tracciamento delle attività web tramite [!DNL Marketo Measure] javascript.
 
 ![](assets/marketo-measure-ultimate-overview-3.png)
 
 **Impostazione valuta predefinita**
 
-[!DNL Marketo Measure Ultimate] imposta la valuta predefinita su USD finché l’utente non la modifica. Se si imposta una nuova valuta predefinita, i dati verranno aggiornati senza essere rielaborati. Se la valuta selezionata è presente come codice ISO di destinazione, non è necessario inviare i tassi di conversione.
+[!DNL Marketo Measure Ultimate] imposta la valuta predefinita su USD finché non viene modificata dall&#39;utente. L’impostazione di una nuova valuta predefinita aggiorna i dati senza rielaborarli. Se la valuta selezionata è presente come codice ISO di destinazione, non è necessario inviare i tassi di conversione.
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
@@ -55,11 +55,11 @@ Gli addetti al marketing devono inserire i propri dati B2B (ad esempio account, 
 
 >[!NOTE]
 >
->A [!DNL Marketo Measure Ultimate] l&#39;istanza di produzione deve essere mappata su una sandbox di produzione AEP, una [!DNL Marketo Measure Ultimate] l&#39;istanza per sviluppatori deve essere mappata a una sandbox per sviluppatori di AEP.
+>A [!DNL Marketo Measure Ultimate] l&#39;istanza di produzione deve essere mappata su una sandbox di produzione AEP, una [!DNL Marketo Measure Ultimate] l&#39;istanza sviluppatore deve essere mappata a una sandbox sviluppatore AEP.
 
-Una volta salvata la selezione della mappatura sandbox, non è più possibile modificarla nell’applicazione in questo momento. Per modificarlo, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+Una volta salvata la selezione di mappatura sandbox, non è possibile modificarla nell’applicazione. Per modificarlo, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
-I dati per una determinata entità (ad esempio, Account) da una determinata origine dati possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arresteranno il flusso di dati in fase di esecuzione.
+I dati di una determinata entità (ad esempio, Conto) da una determinata origine dati possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arrestano il flusso di dati in fase di esecuzione.
 
 ![](assets/marketo-measure-ultimate-overview-5.png)
 
@@ -106,8 +106,8 @@ I punti di contatto di attribuzione non vengono scritti in CRM perché Ultimate 
 
 ## Limitazioni {#limitations}
 
-* Al momento sono disponibili campi limitati per le regole di trasformazione dei dati.
-* Nessun percorso di migrazione per gli utenti esistenti di livello 1/2/3. Richiede una nuova implementazione, ma aiuteremo a migrare i dati delle attività web tracciate dall’istanza esistente.
+* Sono disponibili campi limitati per le regole di trasformazione dei dati.
+* Nessun percorso di migrazione per gli utenti esistenti di livello 1/2/3. Richiede una nuova implementazione, ma aiutiamo a migrare i dati delle attività web tracciate dall’istanza esistente.
 
 >[!MORELIKETHIS]
 >

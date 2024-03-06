@@ -3,9 +3,9 @@ description: Dashboard ricavi attribuiti - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ricavi attribuiti
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi diret
 
 >[!NOTE]
 >
->Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
+>Questa dashboard è in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e dopo aver garantito funzionalità ottimali.
 
 **Risponde alle domande della bacheca:**
 
@@ -34,7 +34,7 @@ Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi diret
 
 Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per canale, per ogni mese/trimestre/anno.
 
-* utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
+* Utilizza le funzionalità drill-down e up per classificare i dati per mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
 **Risposte alle domande del grafico:**
@@ -63,7 +63,7 @@ Ricavi attribuiti totali segmentati per canale, sottocanale e campagna, in forma
 **Vista ad albero**
 
 * La struttura ad albero consente un’esplorazione dei dati più interattiva e granulare, consentendo agli addetti al marketing di identificare tendenze, anomalie o prestazioni di rilievo nelle loro attività di marketing.
-* Fai clic su un ramo per approfondire il livello gerarchico successivo.
+* Fate clic su un ramo per approfondire il livello gerarchico successivo.
 
 ![](assets/attributed-revenue-dashboard-3.png)
 

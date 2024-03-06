@@ -4,9 +4,9 @@ description: Istruzioni di layout pagina - [!DNL Marketo Measure]
 title: Istruzioni di layout pagina
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
 feature: Salesforce
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---

@@ -4,9 +4,9 @@ description: Aggiunta [!DNL Marketo Measure] a [!DNL Hubspot] - [!DNL Marketo Me
 title: Aggiunta [!DNL Marketo Measure] a [!DNL Hubspot]
 exl-id: 633e7ef7-7959-461e-881f-dcc543595b66
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Scopri come aggiungere [!DNL Marketo Measure] JavaScript per tenere traccia del [!DNL Hubspot] pagine di destinazione e invio di moduli.
 
-Hubspot è un po’ diverso da altri sistemi di automazione marketing in quanto può ospitare le pagine di destinazione / moduli E il tuo sito web. È importante notare che le seguenti istruzioni sono per avere [!DNL Marketo Measure] tracciare l’attività su [!DNL Hubspot]-pagine ospitate. Se alimenti il tuo sito web con un CMS diverso da [!DNL Hubspot] (ad esempio, Wordpress), sarà necessario aggiungere il [!DNL Marketo Measure] JavaScript anche per quel CMS.
+Hubspot è un po’ diverso da altri sistemi di automazione marketing in quanto può ospitare le pagine di destinazione / moduli E il tuo sito web. È importante notare che le seguenti istruzioni sono per avere [!DNL Marketo Measure] tracciare l’attività su [!DNL Hubspot]-pagine ospitate. Se alimenti il tuo sito web con un CMS diverso da [!DNL Hubspot] (ad esempio, Wordpress), è necessario aggiungere il [!DNL Marketo Measure] JavaScript anche per quel CMS.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Dopo aver effettuato l’accesso a [!DNL Hubspot] account, segui questi passaggi
 
 1. Clic **[!UICONTROL Content Settings]**.
 
-1. Entro [!UICONTROL Content Settings], fai clic su Site Header HTML (vedi immagine qui sotto).
+1. Entro [!UICONTROL Content Settings], fai clic su HTML intestazione sito (vedi immagine seguente).
 
 1. Aggiungi il seguente script all’interno del `<header>`:
 

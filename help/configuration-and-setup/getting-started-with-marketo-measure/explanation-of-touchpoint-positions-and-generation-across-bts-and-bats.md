@@ -3,9 +3,9 @@ description: Spiegazione delle posizioni dei punti di contatto e della generazio
 title: Spiegazione delle posizioni dei punti di contatto e della generazione tra BT e [!DNL BATs]
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 **Generazione di posizioni dei punti di contatto e flusso attraverso il Percorso degli acquirenti**
 
-Comprendere le posizioni dei punti di contatto dell’acquirente e come vengono attivate è fondamentale per creare rapporti con successo con [!DNL Marketo Measure] dati. Vorrai avere una chiara comprensione di ciò che hanno fatto i tuoi potenziali clienti mentre si spostavano nel percorso dell’acquirente e, a sua volta, di ciò che apparirà nei dati del punto di contatto. Per ulteriori informazioni su questo argomento, si consiglia di rivedere [[!UICONTROL Touchpoint Generation & Mapping]](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md) articolo.
+Comprendere le posizioni dei punti di contatto dell’acquirente e come vengono attivate è fondamentale per creare rapporti con successo con [!DNL Marketo Measure] dati. Desideri avere una chiara comprensione di ciò che hanno fatto i potenziali clienti quando si sono spostati nel percorso dell’acquirente e, a sua volta, di ciò che apparirà nei dati del punto di contatto. Per ulteriori informazioni su questo argomento, si consiglia di rivedere [[!UICONTROL Touchpoint Generation & Mapping]](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md) articolo.
 
-[!DNL Marketo Measure] dispone di una varietà di posizioni di punto di contatto attivate da vari passaggi nel percorso dell’acquirente. Quando si segnala [!DNL Marketo Measure] Esistono due set di dati relativi ai punti di contatto: i punti di contatto dell’acquirente (BT) e i punti di contatto di attribuzione dell’acquirente (BAT). Potresti notare che questi set di dati hanno posizioni leggermente diverse in quanto si riferiscono a oggetti diversi. Per ulteriori informazioni su questo argomento, si consiglia di rivedere [Differenza tra i punti di contatto dell&#39;acquirente (BT) e i punti di contatto di attribuzione dell&#39;acquirente (BAT)](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md) articolo.
+[!DNL Marketo Measure] dispone di diverse posizioni di punti di contatto attivate da vari passaggi nel percorso dell’acquirente. Quando si segnala [!DNL Marketo Measure] Esistono due set di dati relativi ai punti di contatto: i punti di contatto dell’acquirente (BT) e i punti di contatto di attribuzione dell’acquirente (BAT). Potresti notare che questi set di dati hanno posizioni leggermente diverse in quanto si riferiscono a oggetti diversi. Per ulteriori informazioni su questo argomento, si consiglia di rivedere [Differenza tra i punti di contatto dell&#39;acquirente (BT) e i punti di contatto di attribuzione dell&#39;acquirente (BAT)](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md) articolo.
 
 **Punti di contatto dell&#39;acquirente (BT)**: questi sono i punti di contatto associati a una singola persona e al suo percorso e saranno specifici per tale persona. I seguenti rapporti predefiniti sono costituiti dai dati dei punti di contatto dell’acquirente.
 
@@ -25,7 +25,7 @@ Comprendere le posizioni dei punti di contatto dell’acquirente e come vengono 
 * [!DNL Marketo Measure] 101: ID lead/contatto
 * [!DNL Marketo Measure] 101: Lead/Contatto Per Canale
 
-Di seguito vengono descritte le posizioni dei punti di contatto dell&#39;acquirente che descrivono dove si trova un individuo nel suo percorso e quali azioni ha intrapreso per guadagnare tale posizione.
+Di seguito vengono illustrate le posizioni dei punti di contatto dell&#39;acquirente che descrivono dove si trova un individuo nel suo percorso e quali azioni ha intrapreso per guadagnare tale posizione.
 
 <table> 
  <tbody>
@@ -42,7 +42,7 @@ Di seguito vengono descritte le posizioni dei punti di contatto dell&#39;acquire
   <tr>
    <td>Creazione di lead (LC)</td> 
    <td>Compilazione modulo <strong>OPPURE</strong> Inclusione di campagne/programmi</td> 
-   <td>Il primo modulo compilato da un individuo ha (in genere l’invio di un modulo, ma potrebbe anche essere un’inclusione di Campagna/Programma)</td> 
+   <td>Il primo modulo riempie una singola pagina (in genere l’invio di un modulo, ma potrebbe anche essere un’inclusione di campagna/programma)</td> 
   </tr>
   <tr>
    <td>Pubblica LC</td> 
@@ -52,7 +52,7 @@ Di seguito vengono descritte le posizioni dei punti di contatto dell&#39;acquire
  </tbody>
 </table>
 
-**Punti di contatto per l&#39;attribuzione dell&#39;acquirente (BATS)**: questi sono i punti di contatto associati a un’opportunità e al relativo percorso. Questi punti di contatto saranno collegati ai ricavi in quanto sono collegati all’opportunità e ai relativi contatti. I seguenti rapporti predefiniti sono costituiti dai dati dei punti di contatto di attribuzione buyer.
+**Punti di contatto per l&#39;attribuzione dell&#39;acquirente (BATS)**: questi sono i punti di contatto associati a un’opportunità e al relativo percorso. Questi punti di contatto sono collegati ai ricavi in quanto sono collegati all’opportunità e ai relativi contatti. I seguenti rapporti predefiniti sono costituiti dai dati dei punti di contatto di attribuzione buyer.
 
 * [!DNL Marketo Measure] 101: Opportunità per ID
 * [!DNL Marketo Measure] 101: Opportunità per canale ID
@@ -72,7 +72,7 @@ Di seguito vengono descritte le posizioni dei punti di contatto dell&#39;acquire
   <tr>
    <td>Creazione di lead (LC)</td> 
    <td>Compilazione modulo <strong>OPPURE</strong> Inclusione di campagne/programmi</td> 
-   <td>Il primo modulo compilato da un contatto (in genere l’invio di un modulo, ma potrebbe anche includere una campagna o un programma)</td> 
+   <td>Il primo modulo compilava un contatto (in genere era un invio di modulo, ma poteva anche essere un’inclusione di campagna/programma)</td> 
   </tr>
   <tr>
    <td>Creazione di opportunità</td> 
@@ -92,7 +92,7 @@ Di seguito vengono descritte le posizioni dei punti di contatto dell&#39;acquire
  </tbody>
 </table>
 
-[!DNL Marketo Measure] dispone di questi due set di dati dei punti di contatto per acquisire una chiara comprensione del percorso di una singola persona e delle opportunità. Questi due set di dati punto di contatto forniscono una chiara mappa di ciò che è successo dall’alto del funnel al fondo del funnel.
+[!DNL Marketo Measure] dispone di questi due set di dati dei punti di contatto per acquisire una chiara comprensione del percorso di una persona e delle opportunità. Questi due set di dati punto di contatto forniscono una chiara mappa di ciò che è successo dall’alto del funnel al fondo del funnel.
 
 L’esempio seguente mostra il flusso di dati dai punti di contatto dell’acquirente (BT) ai punti di contatto di attribuzione dell’acquirente (BAT). In questo esempio, la persona A e la persona B fanno entrambe parte della stessa opportunità con data di creazione 3/7/2020 e data di chiusura 5/6/2020.
 

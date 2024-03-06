@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] Panoramica di 101 rapporti - [!DNL Marketo 
 title: "[!DNL Marketo Measure] Panoramica di 101 rapporti"
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -55,4 +55,4 @@ Le due varianti di rapporto seguenti utilizzano lo stesso tipo di rapporto, ma s
 
 La cartella &quot;Rapporti sui punti di contatto dell&#39;acquirente&quot; è stata progettata per aiutarti a iniziare a utilizzare [!DNL Marketo Measure] per i rapporti utilizzabili, è necessario personalizzare tali rapporti in modo che siano personalizzati in base alle tue esigenze di reporting. dovrai aggiungere i filtri necessari per garantire che i record all’interno del rapporto (e i relativi punti di contatto) siano allineati con l’obiettivo di reporting.
 
-Una volta acquisite familiarità con la funzione &quot;_[!DNL Marketo Measure]101..._&quot;, potrebbe essere utile ricrearli dai tipi di rapporto personalizzati per esigenze di reporting più personalizzate. Creazione di [[!DNL Marketo Measure] Tipi di rapporti personalizzati](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) ti consentirà di estrarre campi personalizzati che potrebbero essere comunemente utilizzati in altri rapporti di gestione delle relazioni con i clienti. Questo ti aiuterà a portarti [!DNL Marketo Measure] reportistica di livello superiore!
+Quando hai familiarità con &quot;_[!DNL Marketo Measure]101..._&quot;, potrebbe essere utile ricrearli dai tipi di rapporto personalizzati per esigenze di reporting più personalizzate. Creazione di [[!DNL Marketo Measure] Tipi di rapporti personalizzati](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) ti consentirà di estrarre campi personalizzati che potrebbero essere comunemente utilizzati in altri rapporti di gestione delle relazioni con i clienti. Questo ti aiuterà a portarti [!DNL Marketo Measure] reportistica di livello superiore!

@@ -4,9 +4,9 @@ description: Concessione [!DNL Salesforce] Accesso a [!DNL Marketo Measure] Supp
 title: Concessione [!DNL Salesforce] Accesso al supporto Marketo Measure
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,15 @@ La concessione dell’accesso varia leggermente a seconda che si utilizzi o meno
 
 ## Concessione dell’accesso a Salesforce Classic {#granting-login-access-in-salesforce-classic}
 
-A seconda dell’organizzazione, il [!UICONTROL Setup] il pulsante sarà accanto al nome nell&#39;angolo in alto a destra della pagina oppure verrà elencato come opzione a discesa quando si fa clic sul nome.
+A seconda dell’organizzazione, il [!UICONTROL Setup] accanto al nome nell&#39;angolo in alto a destra della pagina oppure sotto forma di elenco a discesa quando si fa clic sul nome.
 
 1. Per accedere al **Concedere l’accesso** pagina in [!DNL Salesforce Classic] Interfaccia utente:
 
-   * Fai clic su **[!UICONTROL Setup]** > **[!UICONTROL My Personal Information]** > **[!UICONTROL Grant Login Access]**.
+   * Clic **[!UICONTROL Setup]** > **[!UICONTROL My Personal Information]** > **[!UICONTROL Grant Login Access]**.
 
      OPPURE
 
-   * Fai clic su `<your name>` > **[!UICONTROL My Settings]** > **[!UICONTROL Personal]** > **[!UICONTROL Grant Account Login Access]**.
+   * Clic `<your name>` > **[!UICONTROL My Settings]** > **[!UICONTROL Personal]** > **[!UICONTROL Grant Account Login Access]**.
 
 1. Imposta la data di scadenza dell’accesso per [!UICONTROL Marketo Measure Support]. Per la risoluzione dei problemi tecnici, si consiglia di concedere [!DNL Marketo Measure] supportare l’accesso per almeno una settimana.
 1. Clic **[!UICONTROL Save]**.

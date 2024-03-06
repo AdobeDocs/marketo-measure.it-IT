@@ -4,9 +4,9 @@ description: "[!DNL Marketo Engage] Integrazione dei programmi - [!DNL Marketo M
 title: "[!DNL Marketo Engage] Integrazione dei programmi"
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -177,4 +177,4 @@ Per il momento non è possibile supportare i campi personalizzati per l’iscriz
 
 **Come posso sapere se utilizzare programmi o attività?**
 
-Il [!DNL Marketo Engage] L’integrazione dei programmi è un modo semplice per generare punti di contatto in base al fatto che una persona sia o meno membro di un programma. Se ti interessa definire una regola in base al momento in cui una persona cambia in un particolare stato del programma, il [!DNL Marketo Engage] Attività L’integrazione sarà la configurazione desiderata, in particolare il tipo di attività &quot;Modifica stato in progressione&quot;.
+Il [!DNL Marketo Engage] L’integrazione dei programmi è un modo semplice per generare punti di contatto in base al fatto che una persona sia o meno membro di un programma. Se ti interessa definire una regola in base al momento in cui una Persona cambia in un particolare stato del Programma, il [!DNL Marketo Engage] Attività L’integrazione sarà la configurazione desiderata, in particolare il tipo di attività &quot;Modifica stato in progressione&quot;.

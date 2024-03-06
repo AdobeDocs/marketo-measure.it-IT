@@ -3,9 +3,9 @@ description: Accesso Data Warehouse - Condivisione diretta - Documentazione del 
 title: Accesso Data Warehouse - Condivisione diretta
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Requisiti {#requirements}
 
-Per ottenere [!DNL Marketo Measure] per impostare una condivisione diretta al data warehouse, è necessario soddisfare i seguenti requisiti.
+Per [!DNL Marketo Measure] per impostare una condivisione diretta al data warehouse, è necessario soddisfare i seguenti requisiti.
 
 * Hai una tua istanza di Snowflake.
 * L&#39;istanza di Snowflake si trova nell&#39;area Snowflake di Azure East US 2.
@@ -22,7 +22,7 @@ Per ottenere [!DNL Marketo Measure] per impostare una condivisione diretta al da
 
 ## Limitazioni {#limitations}
 
-[!DNL Marketo Measure] potrà impostare solo condivisioni dirette di Snowflake con account situati in Azure East US 2 a causa delle limitazioni correnti di Condivisione diretta di Snowflake. Se i dati devono essere resi disponibili in altre aree del Snowflake, è consigliabile creare una copia dei dati in un account di Snowflake che si trova in Azure East US 2 e sfruttare [Replica database di Snowflake](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} per copiare i dati nell’area/account del Snowflake desiderato.
+[!DNL Marketo Measure] potrà impostare solo condivisioni dirette di Snowflake con account situati in Azure East US 2 a causa delle limitazioni correnti di Condivisione diretta di Snowflake. Se i dati devono essere resi disponibili in altre aree del Snowflake, è consigliabile creare una copia dei dati in un account di Snowflake che si trova in Azure East US 2 e utilizzare [Replica database di Snowflake](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} per copiare i dati nell’area/account del Snowflake desiderato.
 
 ## Immetti ID account Snowflake {#enter-snowflake-account-id}
 
@@ -32,7 +32,7 @@ Apri **Impostazioni** nell’app Marketo Measure e passa alla sezione **Data War
 
 ## Accesso alla condivisione {#accessing-the-share}
 
-Una volta creata la condivisione per l’ID account fornito, devi completare [passaggi di configurazione](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} nell’istanza del Snowflake per accedere ai dati.
+Dopo aver creato la condivisione per l&#39;ID account fornito, devi completare [passaggi di configurazione](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} nell’istanza di Snowflake per accedere ai dati.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Una volta creata la condivisione per l’ID account fornito, devi completare [pa
 USE ROLE ACCOUNTADMIN
 ```
 
-* Visualizza le condivisioni disponibili (verrà visualizzato il nome della condivisione concessa)
+* Visualizza le condivisioni disponibili (mostra il nome della condivisione concessa)
 
 ```
 SHOW SHARES

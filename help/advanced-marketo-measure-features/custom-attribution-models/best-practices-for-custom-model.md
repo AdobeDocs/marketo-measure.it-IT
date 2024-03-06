@@ -3,9 +3,9 @@ description: Best practice per il modello personalizzato - [!DNL Marketo Measure
 title: Best practice per il modello personalizzato
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Esistono due aspetti chiave del modello di attribuzione personalizzato:
 
 ## Best practice {#best-practice}
 
-Sia che si stia configurando il modello personalizzato per la prima volta, sia che si stia esaminando ciò che è stato stabilito in precedenza, è importante tenere presente le seguenti best practice.
+Sia che si configuri il modello personalizzato per la prima volta, sia che si riveda ciò che è stato stabilito in precedenza, è importante tenere a mente le seguenti best practice.
 
 * Inizia semplice
    * Identifica le fasi chiave da aggiungere al modello personalizzato che sono fondamentali per [!DNL Marketo Measure] reportistica. In genere si tratta di stadi rispetto ai quali si effettuano misurazioni frequenti o sui quali si intende ottenere informazioni approfondite
@@ -49,9 +49,9 @@ Sia che si stia configurando il modello personalizzato per la prima volta, sia c
 * Non utilizzare campi formula per definire una fase personalizzata
    * Un campo booleano è una best practice consigliata
 * Non incorporare gli stadi personalizzati nel modello personalizzato che coincidono con un [!DNL Marketo Measure] Posizione punto di contatto milestone (FT, LC, OC, Closed Won/Lost)
-   * In caso contrario, queste posizioni si verificheranno sempre simultaneamente e possono causare un credito di attribuzione gonfiato a parti del funnel.
+   * In tal caso, queste posizioni si verificano sempre simultaneamente e possono causare un aumento del credito di attribuzione a parti del funnel.
 * Lavora con il tuo team Sales Opp
-   * Inserire il team che lavora più da vicino con gli stadi e il loro significato ti garantirà di utilizzare gli stadi corretti e di definirli correttamente
+   * L’intervento del team che lavora più da vicino con gli stadi e il loro significato garantiscono l’utilizzo degli stadi corretti e la loro corretta definizione
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 

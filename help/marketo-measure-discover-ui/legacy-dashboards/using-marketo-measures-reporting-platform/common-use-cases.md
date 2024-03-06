@@ -4,9 +4,9 @@ description: Casi d’uso comuni - [!DNL Marketo Measure]
 title: Casi d’uso più comuni
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Quando si esaminano i ricavi della pipeline, si consiglia di modificare le date 
 
 ## ROI ricerca a pagamento {#paid-search-roi}
 
-Se desideri ottenere informazioni approfondite su Campaign e persino sul ROI a livello di parola chiave delle attività di Ricerca a pagamento, passa alla dashboard ROI annunci sotto le visualizzazioni basate sul ruolo in Discover. Questa dashboard fornirà anche informazioni su Ricavi, Spese, Ricavi pipeline, Lead, Contatti, Opportunità e Offerte da annunci a pagamento.
+Se desideri ottenere informazioni approfondite su Campaign e persino sul ROI a livello di parola chiave delle tue attività di ricerca a pagamento, passa alla dashboard ROI annunci sotto le visualizzazioni basate sul ruolo in Discover. Questa dashboard fornirà anche informazioni su Ricavi, Spese, Ricavi pipeline, Lead, Contatti, Opportunità e Offerte da annunci a pagamento.
 
 Inoltre, la dashboard File multimediali a pagamento sotto le visualizzazioni basate sul ruolo presenterà impression, clic, visualizzazioni di pagina e visite da tutti i canali di file multimediali a pagamento.
 

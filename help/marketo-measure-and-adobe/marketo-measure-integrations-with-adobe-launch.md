@@ -3,9 +3,9 @@ description: '[!DNL Marketo Measure] Integrazioni con Adobe Launch - [!DNL Marke
 title: '[!DNL Marketo Measure] Integrazioni con Adobe Launch'
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Quando è installato e configurato in Adobe Launch, il [!DNL Marketo Measure] L&
 
    >[!NOTE]
    >
-   >Questo campo non è l&#39;ID account nella tabella Business_Prod.Business. Tutte le attività web dall’URL specificato (ad esempio, `adobe.com`) sarà mappato al [!DNL Marketo Measure] tenant.
+   >Questo campo non è l&#39;ID account nella tabella Business_Prod.Business. Tutte le attività web dall’URL specificato (ad esempio, `adobe.com`) sono mappate al [!DNL Marketo Measure] tenant.
 
 1. Clic **[!UICONTROL Save]**.
 

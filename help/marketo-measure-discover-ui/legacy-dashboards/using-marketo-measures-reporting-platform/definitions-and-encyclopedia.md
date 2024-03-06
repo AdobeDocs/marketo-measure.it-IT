@@ -4,9 +4,9 @@ description: Definizioni ed enciclopedia - [!DNL Marketo Measure]
 title: Definizioni ed enciclopedia
 exl-id: 10db8461-5c17-466f-87e7-6fdad442abee
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '6137'
+source-wordcount: '6136'
 ht-degree: 0%
 
 ---
@@ -901,7 +901,7 @@ Fare clic sui numeri aggregati per espandere i dettagli dei dati di base.
 
 **D: Perché esiste un filtro &quot;ID account&quot; e &quot;Nome account&quot;?**
 
-R: Anche se gli ID account sono univoci, i nomi account non devono necessariamente essere univoci. Ad esempio, è possibile creare più account diversi per ogni business unit all&#39;interno di un&#39;azienda. L’utilizzo del nome account può essere più intuitivo; tuttavia, per essere certi di filtrare un account specifico, puoi utilizzare l’ID account.
+R: Anche se gli ID account sono univoci, i nomi account non devono necessariamente essere univoci. Ad esempio, è possibile creare più account diversi per ogni business unit all&#39;interno di un&#39;azienda. L’utilizzo del nome account può essere più intuitivo; tuttavia, per essere certi di filtrare un account specifico, potrebbe essere utile utilizzare l’ID account.
 
 **D: Se filtro per ID account, tutte le tabelle verranno filtrate?**
 
@@ -917,7 +917,7 @@ R: Sì, se fai clic su una delle intestazioni di colonna, la tabella verrà ordi
 
 **D: Posso esportare i dati?**
 
-R: Sì, quando passi il cursore sul titolo della sezione (ad esempio, &quot;Account&quot;), fai clic sui tre punti verticali nell’angolo in alto a destra. Questo ti consente di scaricare i dati per quella sezione nei seguenti formati: TXT, CSV, XLS, JSON, HTML e Markdown.
+R: Sì, quando passi il cursore sul titolo della sezione (ad esempio, &#39;Account&#39;), fai clic sui tre punti verticali nell’angolo in alto a destra. Questo ti consente di scaricare i dati per quella sezione nei seguenti formati: TXT, CSV, XLS, JSON, HTML e Markdown.
 
 **D: Posso visualizzare oltre 500 righe di dati?**
 
@@ -1107,7 +1107,7 @@ R: Utilizzando il filtro &quot;Marketing Touch Type&quot; (Tipo di contatto di m
 
 **D: Posso esportare i dati?**
 
-R: Sì, quando passi il cursore del mouse sulla tabella &quot;Percorso di eventi&quot;, fai clic sui tre punti verticali nell’angolo in alto a destra. Questo consente di scaricare i dati nei seguenti formati: TXT, CSV, XLS, JSON, HTML e Markdown.
+R: Sì, quando passi il cursore del mouse sulla tabella &quot;Percorso di eventi&quot;, fai clic sui tre punti in alto a destra. Questo consente di scaricare i dati nei seguenti formati: TXT, CSV, XLS, JSON, HTML e Markdown.
 
 **D: Posso cambiare l’ordinamento della tabella?**
 

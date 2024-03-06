@@ -2,9 +2,9 @@
 description: '[!DNL Marketo Measure] Guida all’implementazione di Ultimate: [!DNL Marketo Measure]'
 title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
 feature: Integration, Tracking, Attribution
-source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Importare dati B2B tramite AEP: gli addetti al marketing devono inserire i propr
 Le connessioni dirette CRM e di Marketo Engage non sono più disponibili per Ultimate.
 
 * Ultimate non invia nuovamente i dati al CRM. I clienti possono utilizzare i dati provenienti dal data warehouse.
-* Gli addetti al marketing continueranno a portare i dati di Ad Platform tramite connessioni dirette e il tracciamento delle attività web tramite JavaScript di Marketo Measure.
+* Gli addetti al marketing continuano a importare dati di Ad Platform tramite connessioni dirette e a monitorare le attività web tramite JavaScript di Marketo Measure.
 
-AEP verrà fornito agli utenti Ultimate. Se dispongono già di AEP, non verrà eseguito il provisioning di una nuova istanza.
+AEP viene fornito agli utenti Ultimate. Se dispongono già di AEP, non verrà eseguito il riprovisioning di una nuova istanza.
 
-* La versione di AEP fornita includerà tutti i connettori di origine, la modellazione dati dello schema, i set di dati, il servizio di query ad hoc e una destinazione solo per Marketo Measure.
+* Il provisioning della versione di AEP include tutti i connettori di origine, la modellazione dati dello schema, i set di dati, il servizio di query ad hoc e una destinazione solo per Marketo Measure.
 
 Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md){target="_blank"}.
 
@@ -51,7 +51,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 ## Creazione di uno schema {#creating-a-schema}
 
-È consigliabile utilizzare un’utility di generazione automatica per creare 10 schemi B2B standard.
+È consigliabile utilizzare un’utility di generazione automatica per creare dieci schemi B2B standard.
 
 * Passaggi per scaricare e configurare l&#39;utility [si trova qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
@@ -61,7 +61,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 
 ![](assets/marketo-measure-ultimate-implementation-guide-2.png)
 
-* Seleziona un account e tutti i modelli B2B per creare 10 schemi B2B standard.
+* Seleziona un account e tutti i modelli B2B per creare dieci schemi B2B standard.
 
 ![](assets/marketo-measure-ultimate-implementation-guide-3.png)
 
@@ -69,7 +69,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 
 >[!IMPORTANT]
 >
->Quando si aggiunge un nuovo set di dati, si consiglia di creare un nuovo flusso invece di utilizzarne uno esistente.
+>Quando aggiungi un nuovo set di dati, ti consigliamo di creare un flusso invece di utilizzarne uno esistente.
 
 [Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
@@ -78,12 +78,12 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 1. Selezionare un&#39;origine.
 1. Seleziona un account esistente o creane uno esistente.
 1. Selezionare un tipo di dati dall&#39;elenco dei tipi disponibili per l&#39;importazione dall&#39;origine.
-1. Seleziona un set di dati esistente o creane uno nuovo.
+1. Seleziona un set di dati esistente o creane uno.
 1. Mappa i campi dall’origine allo schema.
 
    >[!NOTE]
    >
-   >* Se mappi un tipo di schema a un altro identico, l’operazione verrà eseguita automaticamente.
+   >* Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
    >* Potete anche importare la mappatura da un altro flusso nel sistema.
    >* È possibile mappare un campo di origine a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
    >* È possibile creare campi calcolati ([Funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
@@ -91,7 +91,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
    >[!CAUTION]
    >
    >* Puoi modificare un flusso di dati, ma i dati non vengono recuperati quando viene modificata una mappatura.
-   >* Se un campo obbligatorio è NULL, l’intero flusso verrà rifiutato.
+   >* Se un campo obbligatorio è NULL, l&#39;intero flusso viene rifiutato.
 
    >[!NOTE]
    >
@@ -131,8 +131,8 @@ Prima di iniziare, passa alla sezione &quot;Experience Platform > Mappatura sand
 
 >[!NOTE]
 >
->* I dati per una determinata entità (ad esempio, Conto) da una determinata origine possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arresteranno il flusso di dati in fase di esecuzione.
->* Elimina l’intera destinazione in AEP per eliminare i dati in Measure. La disattivazione interrompe solo le nuove esportazioni di dati e mantiene i dati precedenti.
+>* I dati di una determinata entità (ad esempio, Conto) da una determinata origine possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arrestano il flusso di dati in fase di esecuzione.
+>* Elimina l’intera destinazione in AEP per eliminare i dati in Measure. La disabilitazione interrompe le nuove esportazioni di dati e mantiene i dati precedenti.
 >* La configurazione Misura avrà per lo più lo stesso aspetto, ma alcune parti, come Mappatura area di visualizzazione, avranno un aspetto diverso.
 >* La generazione di un’esecuzione del flusso richiede alcune ore per un nuovo flusso di dati, che vengono quindi eseguiti a intervalli orari regolari.
 
@@ -150,18 +150,18 @@ Non importiamo automaticamente gli stadi dai dati utente, pertanto tutti gli sta
 
 Se le fasi non sono mappate, il sistema non funzionerà perché non ci sarà nessun posto dove spostare i dati.
 
-Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+Se si è un cliente di Marketo Measure Ultimate e si è impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
 
 * b2b.personStatus
 * b2b.isConverted
 
 **Regole membro della campagna:**
 
-È necessario scegliere un set di dati e impostare regole per ciascuno di essi.
+Scegli un set di dati e imposta le regole per ciascuno di essi.
 
 **Regole degli eventi esperienza:**
 
-È necessario scegliere un set di dati e selezionare i tipi di attività.
+Scegli un set di dati e seleziona i tipi di attività.
 
 * Attività personalizzate non ancora supportate.
 * Se il cliente ha attività che non rientrano nelle opzioni disponibili, consigliamo di classificarle come &quot;Momenti di interesse&quot; e di utilizzare campi personalizzati per distinguerli.
@@ -169,7 +169,7 @@ Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dash
 **Canali offline:**
 
 * Non facciamo regole di mappatura dei canali specifiche per i set di dati, quindi sarebbe globale.
-* Alla fine dobbiamo far corrispondere sia il tipo di campagna CRM che il canale, ma per ora, possiamo mappare il nome del canale a entrambi i campi come soluzione alternativa.
+* Alla fine dobbiamo trovare una corrispondenza tra Tipo di campagna CRM e Canale, ma per ora, possiamo mappare il nome del canale su entrambi i campi come soluzione alternativa.
 * **Regole del canale: i dati in backfill non contengono dati di transizione dell’area di visualizzazione.**
 
 Le impostazioni dei punti di contatto e dei segmenti rimangono invariate.

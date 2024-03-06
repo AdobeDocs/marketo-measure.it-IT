@@ -4,9 +4,9 @@ description: Rimozione e soppressione dei punti di contatto - [!DNL Marketo Meas
 title: Rimozione e soppressione dei punti di contatto
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,8 @@ Se fai un errore, non preoccuparti. È inoltre possibile eliminare singole righe
 
 ![](assets/5.png)
 
-Per terminare, [!UICONTROL Save and Process] le tue regole. Se stai apportando molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i punti di contatto finché non fai clic su **Salva ed elabora** pulsante.
+Per terminare, [!UICONTROL Save and Process] le tue regole. Se effettui molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà a rimuovere i punti di contatto finché non fai clic su
+[!UICONTROL **Salva ed elabora**].
 
 | **Operatore** | **Caso d’uso** |
 |---|---|

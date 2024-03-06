@@ -4,9 +4,9 @@ description: Segmentazione personalizzata - [!DNL Marketo Measure]
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 
 Se le regole non sono impostate sia per lead/contatti che per opportunità, verrà visualizzata solo una parte dei dati. Per approfondire, se non configuri le regole Opportunità, visualizzerai solo i dati di lead/contatti senza le opportunità associate. Lo stesso vale se non si impostano regole per lead/contatti: verranno visualizzate solo le opportunità senza i lead/contatti associati.
 
-Al termine, fai clic su [!UICONTROL Save] innanzitutto, verificare tutto e quindi fare clic su [!UICONTROL Save and Process]. Ricorda che non potrai modificare le impostazioni per sette giorni quando esegui il salvataggio ed elabora, come [!DNL Marketo Measure] sta riformattando i dati in questo periodo di tempo.
+Al termine, fai clic su [!UICONTROL Save] innanzitutto, verificare tutto e quindi fare clic su [!UICONTROL Save and Process]. Ricorda che non puoi modificare le impostazioni per sette giorni dopo il salvataggio ed l’elaborazione perché [!DNL Marketo Measure] sta riformattando i dati in questo periodo di tempo.
 
-Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+Se si è un cliente di Marketo Measure Ultimate e si è impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
 
 * b2b.personStatus
 * b2b.isConverted

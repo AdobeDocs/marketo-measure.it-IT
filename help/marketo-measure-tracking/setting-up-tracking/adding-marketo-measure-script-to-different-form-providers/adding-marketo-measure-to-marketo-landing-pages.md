@@ -4,16 +4,16 @@ description: Aggiunta [!DNL Marketo Measure] a [!DNL Marketo] Pagine di destinaz
 title: Aggiunta [!DNL Marketo Measure] alle pagine di destinazione di Marketo
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
 # Aggiunta [!DNL Marketo Measure] alle pagine di destinazione di Marketo {#adding-marketo-measure-to-marketo-landing-pages}
 
-Scopri come aggiungere il tracciamento a [!DNL Marketo Engage] Pagine di destinazione in quanto richiedono una gestione aggiuntiva. [!DNL Marketo Measure] JavaScript deve essere presente sia nella pagina di destinazione che nella [!DNL Marketo Engage] la forma stessa. A questo scopo, è necessario caricare [!DNL Marketo Measure] JavaScript in [!DNL Marketo Engage] come spiegato nelle seguenti direzioni.
+Scopri come aggiungere il tracciamento a [!DNL Marketo Engage] Pagine di destinazione in quanto richiedono una gestione aggiuntiva. [!DNL Marketo Measure] JavaScript deve essere presente sia nella pagina di destinazione che nella [!DNL Marketo Engage] la forma stessa. A questo scopo, devi caricare [!DNL Marketo Measure] JavaScript in [!DNL Marketo Engage] come spiegato nelle seguenti direzioni.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Esempio nella schermata seguente
 
 ## Note aggiuntive {#additional-notes}
 
-* Potresti avere già altri snippet di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Non c&#39;è alcun problema con questo, basta assicurarsi di separarli con un punto e virgola `;` e un singolo spazio. Ecco un esempio di come apparirebbe:
+* Potresti avere già altri snippet di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Questo problema non si verifica, assicurati di separarli con un punto e virgola `;` e un singolo spazio. Ecco un esempio di come apparirebbe:
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>; <script async="true" type="someothercode" src="someotherfile.js" ></script>`
 

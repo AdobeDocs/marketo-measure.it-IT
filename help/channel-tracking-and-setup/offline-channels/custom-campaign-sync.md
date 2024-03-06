@@ -4,9 +4,9 @@ description: Sincronizzazione campagna personalizzata - [!DNL Marketo Measure]
 title: Sincronizzazione campagna personalizzata
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,6 @@ Puoi controllare facilmente i record Punti di contatto Buyer e Punti di contatto
 
    ![](assets/9.png)
 
-1. Puoi anche fare clic sul conteggio dei membri per visualizzare un elenco dei lead e dei contatti e dei relativi ID che fanno parte dell’idoneità della regola Campaign. Questo è solo un set di esempio e visualizzerà fino a 50 in modo da poter avere un’idea di quali record sono idonei.
+1. È inoltre possibile fare clic sul conteggio dei membri per visualizzare un elenco dei lead e dei contatti e dei relativi ID che fanno parte dell’idoneità della regola Campaign. Questo è solo un set di esempio e visualizzerà fino a 50 in modo da poter avere un’idea di quali record sono idonei.
 
    ![](assets/10.png)

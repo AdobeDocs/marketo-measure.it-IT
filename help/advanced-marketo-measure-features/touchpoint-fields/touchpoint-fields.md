@@ -4,9 +4,9 @@ description: Campi punto di contatto - [!DNL Marketo Measure]
 title: Campi punto di contatto
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Storicamente, quando i clienti si collegavano con [!DNL Marketo Measure] e nel c
 
 ## Abilitazione della funzione {#enabling-the-feature}
 
-Dalla sezione [!DNL Marketo Measure] Dal menu Impostazioni, passare alla pagina Campi punto di contatto. Da qui, puoi abilitare la funzione selezionando **Sì** in **Abilita campi calcolati**. Una volta attivato, potrai creare i campi punto di contatto.
+Dalla sezione [!DNL Marketo Measure] Dal menu Impostazioni, passare alla pagina Campi punto di contatto. Da qui, puoi abilitare la funzione selezionando **Sì** in **Abilita campi calcolati**. Dopo aver attivato la funzione, puoi creare i campi punto di contatto.
 
 ![](assets/one.png)
 
@@ -221,7 +221,7 @@ Come nell’#4 Estrai esempio, è necessario creare più campi per estrarre cias
 
 **Come posso verificare che l’espressione di estrazione sia valida e richiamare il valore corretto?**
 
-È disponibile uno strumento online ([[!DNL https]://regex101.com/](https://regex101.com/){target="_blank"}) che è possibile eseguire e verificare l’espressione. L’espressione apparirà in verde se è valida o in rosso se non è valida. Inoltre, il [!UICONTROL explanation] in alto a destra è utile e ti dice cosa stai estraendo.
+È disponibile uno strumento online ([[!DNL https]://regex101.com/](https://regex101.com/){target="_blank"}) che è possibile eseguire e verificare l’espressione. L’espressione appare verde se è valida o rossa se non è valida. Inoltre, il [!UICONTROL explanation] in alto a destra è utile e ti dice cosa stai estraendo.
 
 ![](assets/twelve.png)
 

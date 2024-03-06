@@ -3,22 +3,22 @@ description: Configurazione di Adobe Admin Console - Marketo Measure - Documenta
 title: Installazione di Adobe Admin Console
 feature: Installation
 exl-id: f9edacae-79e0-408c-ac37-bbe67c185f2d
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
 # Installazione di Adobe Admin Console {#adobe-admin-console-setup}
 
-Il primo passaggio per utilizzare [!DNL Marketo Measure] : per creare e accedere al Adobe Admin Console con provisioning. Se non hai già ricevuto l’e-mail con le istruzioni di accesso, contatta il tuo [!DNL Marketo Measure] Rappresentante dell’account.
+Il primo passaggio per utilizzare [!DNL Marketo Measure] : per creare e accedere al Adobe Admin Console con provisioning. Se non hai ricevuto l’e-mail con le istruzioni di accesso, contatta il tuo [!DNL Marketo Measure] Rappresentante dell’account.
 
 ## Configurare il Adobe Admin Console e il provider di identità {#set-up-your-adobe-admin-console-and-identity-provider}
 
 Come prodotto all’interno della suite Adobe, [!DNL Marketo Measure] utilizza tutte le funzionalità di Adobe Admin Console per Identity Management. Altre risorse possono essere [trovato qui](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
 
-È consigliabile esaminare tutte le risorse, le best practice e le opzioni disponibili per [Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+È consigliabile esaminare le risorse, le best practice e le opzioni disponibili per [Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 
 Per informazioni e indicazioni sulla configurazione dell’Identity Management in Adobe Admin Console, contatta il tuo [!DNL Marketo Measure] Rappresentante dell’account.
 
@@ -55,6 +55,6 @@ Quando si aggiunge un utente al rispettivo gruppo, vengono visualizzati i relati
 
 **Accesso a[!DNL Marketo Measure]**
 
-Dopo che un utente è stato aggiunto a un profilo di prodotto, può accedere al suo [!DNL Marketo Measure] istanze scegliendo il **Accedere con Adobe ID** opzione a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
+Dopo che un utente è stato aggiunto a un profilo di prodotto, può accedere al suo [!DNL Marketo Measure] istanze scegliendo il **Accedi con Adobe ID** opzione a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 ![](assets/adobe-admin-console-setup-3.png)

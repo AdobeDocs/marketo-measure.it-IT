@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] Guida al reporting - [!DNL Marketo Measure]
 title: "[!DNL Marketo Measure] Guida al reporting"
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '6431'
+source-wordcount: '6437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Prima di creare un [!DNL Marketo Measure] report, è fondamentale confermare la 
 
 **Stabilisci obiettivi**: &quot;La prima domanda da porsi è &#39;perché misuriamo?&#39; Lori Wizdo di [Forrester Research](https://go.forrester.com/) l&#39;ho riassunto bene in una [Webinar Marketo](https://www.marketo.com/webinars/beyond-revenue-performance-real-kpis-of-b2b-marketing/). Secondo lei, &quot;misuriamo a dimostrare o convalidare una decisione o il valore del marketing o a migliorare (miglioramento del processo).&quot; Potremmo aggiungere che le informazioni provenienti da una buona misurazione forniscono anche input e indicazioni nel processo di pianificazione del marketing.
 
-Prima di iniziare, è essenziale essere chiari nei vostri obiettivi, nelle domande a cui state cercando di rispondere, o nei problemi che state cercando di risolvere. Che storia vuoi raccontare? Quali decisioni saranno prese di conseguenza? Troppo spesso questi fondamentali sono mal pensati, portando a frustrazione per tutti coloro che sono coinvolti.&quot;
+Prima di iniziare, è essenziale essere chiarissimi sugli obiettivi, sulle domande a cui state cercando di rispondere, o sui problemi che state cercando di risolvere. Che storia vuoi raccontare? Quali decisioni saranno prese di conseguenza? Troppo spesso questi fondamentali sono mal pensati, portando a frustrazione per tutti coloro che sono coinvolti.&quot;
 
 **Progettazione report**: &quot;Poi, devi progettare il rapporto e determinare le dimensioni, le metriche e il set di dati specifici che conterrà. Un’esperienza comune è quella di fornire a un utente aziendale esattamente ciò che chiede, solo per fargli sentire ancora che le sue esigenze non sono soddisfatte. Questo perché le informazioni che un utente aziendale sta cercando non sono sempre contenute nel rapporto richiesto. Un buon analista (o una persona MOPS con un cappello da analista) farà domande chiarificatrici, stabilirà definizioni comuni (&quot;quindi, cosa intendi veramente per lead?&quot;), e persino schizzerà una vista del rapporto finale per assicurarsi che ci sia un allineamento. Solo a quel punto potrai creare il rapporto, sapendo di avere un solido set di requisiti.&quot;
 
@@ -44,7 +44,7 @@ Al livello più alto, esistono due categorie di reporting basate sui due diversi
 
 >[!NOTE]
 >
->Le BAT sono create da BT. In sostanza, il tracciamento inizia a livello individuale tramite i BT. Una volta creata un&#39;opportunità su un account, tutti i BT dei contatti dello stesso account sono referenziati e idonei a creare BAT che si riferiscono all&#39;opportunità, quindi si desidera utilizzare l&#39;uno o l&#39;altro a seconda delle domande a cui si sta cercando di rispondere: domande relative alle metriche &quot;Persone&quot; (report BT) o domande relative alle metriche &quot;Opportunità&quot; (report BAT)
+>Le BAT sono create da BT. In sostanza, il tracciamento inizia a livello individuale tramite i BT. Una volta creata un&#39;opportunità su un account, tutti i BT provenienti dai contatti dello stesso account sono referenziati e idonei a creare BAT che si riferiscono all&#39;opportunità, quindi si desidera utilizzare l&#39;uno o l&#39;altro a seconda delle domande a cui si sta cercando di rispondere: domande relative alle metriche &quot;Persone&quot; (report BT) o domande relative alle metriche &quot;Opportunità&quot; (report BAT)
 
 Articolo di supporto: [Differenza tra i punti di contatto dell’acquirente e i punti di contatto di attribuzione dell’acquirente](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md#configuration-and-setup)
 
@@ -329,7 +329,7 @@ Questo approccio per misurare l’impatto del marketing sull’influenza degli M
   </tr>
   <tr>
    <td>Campo data / Tipo data</td> 
-   <td>Data MQL (o equivalente) / Data di creazione ([!DNL Marketo Measure] Discover)<br> <i>La data di creazione del lead può essere utilizzata anche nei rapporti CRM se "Data MQL" non è un'opzione nel CRM. È importante tenere presente il campo data in cui si sta utilizzando che definisce il set di dati coorte.</i></td> 
+   <td>Data MQL (o equivalente) / Data di creazione ([!DNL Marketo Measure] Discover)<br> <i>La data di creazione del lead può essere utilizzata anche nei rapporti CRM se "Data MQL" non è un'opzione nel CRM. È importante tenere presente il campo data utilizzato in che definisce il set di dati coorte.</i></td> 
   </tr>
   <tr>
    <td>Intervallo date</td> 
@@ -445,7 +445,7 @@ Questo rapporto equivale a un rapporto basato su &quot;Contenuto&quot; a livello
 
 >[!TIP]
 >
->Puoi utilizzare questo rapporto per ottenere informazioni sul coinvolgimento totale di qualsiasi dimensione di marketing dall’oggetto punto di contatto acquirente, non solo sui download di contenuto come illustrato nell’esempio. Il rapporto può invece essere raggruppato o filtrato in base a dimensioni quali &quot;Canale di marketing&quot; o &quot;Nome campagna annuncio&quot; per comprendere al meglio il coinvolgimento totale sia dei lead che dei contatti nel database. È sufficiente modificare i filtri o i raggruppamenti all’interno del rapporto in zero in altre dimensioni rappresentate da altri campi dell’oggetto punto di contatto.
+>Puoi utilizzare questo rapporto per ottenere informazioni sul coinvolgimento totale di qualsiasi dimensione di marketing dall’oggetto punto di contatto acquirente, non solo sui download di contenuto come illustrato nell’esempio. Il rapporto può invece essere raggruppato o filtrato in base a dimensioni quali &quot;Canale di marketing&quot; o &quot;Nome campagna annuncio&quot; per comprendere al meglio il coinvolgimento totale sia dei lead che dei contatti nel database. Cambia i filtri o i raggruppamenti all’interno del rapporto a zero in altre dimensioni rappresentate da altri campi dell’oggetto punto di contatto.
 
 **3,2 [!DNL Marketo Measure] Persone che si sono registrate per un evento (solo CRM)**
 
@@ -715,7 +715,7 @@ Il [!DNL Marketo Measure] Le dashboard di individuazione sono composte dai dati 
 
 >[!TIP]
 >
->Una delle cose più importanti da ricordare quando si esegue la generazione di rapporti in Discover è il tipo di dati utilizzato per filtrare. Tipo di data determinerà quale set di dati [!DNL Marketo Measure] sta utilizzando nelle varie tessere.
+>Una delle cose più importanti da ricordare quando si crea un rapporto in Discover è il tipo di dati che si sta utilizzando per filtrare. Tipo di data determinerà quale set di dati [!DNL Marketo Measure] sta utilizzando nelle varie tessere.
 
 * **Data punto di contatto**: visualizza i dati correlati con una &quot;Data punto di contatto&quot; nell’arco temporale specificato
 * **Data di creazione**: visualizza i dati correlati con una &quot;Data di creazione&quot; nell’intervallo di tempo specificato

@@ -4,9 +4,9 @@ description: Parametro di tracciamento e-mail - [!DNL Marketo Measure]
 title: Parametro di tracciamento e-mail
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '403'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Il [!DNL Marketo Measure] Il parametro di tracciamento e-mail consente agli adde
 
 Quando un visitatore arriva sul tuo sito, [!DNL Marketo Measure] prevede di trovare una pagina di destinazione con un indirizzo e-mail o [!DNL Salesforce] ID per associare la visita a un &quot;invio modulo&quot; e generare un punto di contatto per tale attività.
 
-In qualità di cliente, puoi creare un modello e-mail come faresti normalmente. Una volta che è il momento di aggiungere nella pagina di destinazione l’azione da tracciare, è necessario determinare il token, il tag di variabile o la macro accettata dalla piattaforma Marketing Automation per visualizzare dinamicamente il valore per ogni singolo utente.
+In qualità di cliente, puoi creare un modello e-mail come faresti normalmente. Una volta che è il momento di aggiungere nella pagina di destinazione l’azione di cui desideri tenere traccia, devi determinare il token, il tag di variabile o la macro accettata dalla piattaforma di automazione marketing per visualizzare dinamicamente il valore per ogni singolo utente.
 
 Marketo Measure accetta i seguenti valori: Indirizzo e-mail, ID lead Salesforce o ID contatto Salesforce.
 

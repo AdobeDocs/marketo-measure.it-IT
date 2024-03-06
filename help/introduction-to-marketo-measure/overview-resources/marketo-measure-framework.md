@@ -4,16 +4,16 @@ description: Framework Marketo Measure - Marketo Measure - Documentazione del pr
 title: Framework Marketo Measure
 exl-id: fa6de27c-cdd2-4fd9-ac35-7286fe2752d8
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Framework Marketo Measure {#marketo-measure-framework}
 
-Ulteriori informazioni sui quattro componenti principali che compongono il framework Marketo Measure. Marketo Measure si avvale di queste applicazioni per monitorare, organizzare e conservare i dati, nonché per fornire funzionalità di reporting. Le quattro componenti che costituiscono il framework di Marketo Measure sono:
+Ulteriori informazioni sui quattro componenti principali che compongono il framework Marketo Measure. Marketo Measure si avvale di queste applicazioni per monitorare, organizzare e conservare i dati, nonché per fornire funzionalità di reporting. Le quattro componenti che compongono il framework di Marketo Measure sono:
 
 * JavaScript di Marketo Measure
 * Integrazioni CRM
@@ -30,7 +30,7 @@ JavaScript di Marketo Measure tiene traccia di tutte le interazioni di marketing
 >
 >Per istruzioni su come aggiungere Marketo Measure JS, [fai clic qui](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md).
 
-JS di Marketo Measure acquisisce i dati dalle visite web (incluse le visite web anonime), dal traffico generale/navigazione delle pagine, dai download di contenuti e dall’invio di moduli. Questi dati vengono inviati al CRM e ogni interazione di marketing viene visualizzata come punto di contatto.
+JS di Marketo Measure acquisisce i dati dalle visite web (comprese le visite web anonime), dal traffico generale/navigazione delle pagine, dai download di contenuti e dall’invio di moduli. Questi dati vengono inviati al CRM e ogni interazione di marketing viene visualizzata come punto di contatto.
 
 ## Integrazioni CRM {#crm-integrations}
 
@@ -38,7 +38,7 @@ Marketo Measure si integra con i sistemi di gestione delle relazioni con i clien
 
 ![](assets/1-2.png)
 
-Facendo emergere i dati di Marketo Measure nel CRM, potrai vedere le informazioni granulari relative a ciascun punto di contatto e generare rapporti per comprendere le prestazioni dei tuoi canali.
+Facendo emergere i dati di Marketo Measure nel CRM, puoi visualizzare le informazioni granulari relative a ciascun punto di contatto e generare rapporti per comprendere le prestazioni dei tuoi canali.
 
 ## Applicazioni di terze parti {#third-party-applications}
 
@@ -54,7 +54,7 @@ L’applicazione Marketo Measure viene utilizzata per visualizzare e creare rapp
 
 **Configurazione account**
 
-Qui puoi aggiornare le informazioni generali della tua azienda e accedere a Marketo Measure JavaScript.
+Qui puoi aggiornare le informazioni generali della tua azienda e accedere al codice JavaScript di Marketo Measure.
 
 **Impostazioni**
 
@@ -62,4 +62,4 @@ Questa voce di menu ti consente di configurare le impostazioni di attribuzione e
 
 **Dashboard del ROI di marketing**
 
-Il menu della dashboard Marketing ROI è la voce in cui puoi visualizzare i dati in termini di prestazioni del canale, attività e costi.
+La voce di menu della dashboard Marketing ROI è quella in cui puoi visualizzare i dati in termini di prestazioni del canale, attività e costi.

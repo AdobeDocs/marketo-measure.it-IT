@@ -3,9 +3,9 @@ description: Procedure consigliate per l’utilizzo di un importo di ricavi pers
 title: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Aspetti da considerare:
 * Seleziona il campo dei ricavi accurato e utilizzato per tutte le opportunità
    * ARR o valore totale del contratto consigliato
 * Non utilizzare un campo formula
-* Se utilizzi un importo di ricavi personalizzato per le conversioni di valuta, il [!UICONTROL Marketo Measure Multiple Currencies] Il metodo preferito è la funzionalità.
+* Se si utilizza un importo del ricavo personalizzato per le conversioni di valuta, il [!UICONTROL Marketo Measure Multiple Currencies] Il metodo preferito è la funzionalità.
    * Il [!DNL Marketo Measure] La funzionalità Più valute fa riferimento ai tassi di conversione stabiliti in [!DNL Salesforce] per garantire al meglio l&#39;allineamento tra le conversioni di valuta. Questo ti consente di continuare a utilizzare il campo standard &quot;Importo&quot; (predefinito SFDC) o qualsiasi altro campo Importo personalizzato relativo al [!DNL Salesforce] tassi di conversione.
 * Se si aggiorna il campo Importo desiderato [!DNL Marketo Measure] Per fare riferimento a, utilizza Data Loader per aggiornare le opportunità passate in modo da garantire che i dati sui ricavi siano coerenti e che il campo corretto venga popolato tramite il flusso di lavoro
 

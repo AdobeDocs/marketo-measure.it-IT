@@ -4,16 +4,16 @@ description: Aggiunta [!DNL Marketo Measure] Script - [!DNL Marketo Measure]
 title: Aggiunta [!DNL Marketo Measure] Script
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
 
 # Aggiunta [!DNL Marketo Measure] Script {#adding-marketo-measure-script}
 
-[!DNL Marketo Measure] JavaScript di cui tenere traccia [!DNL Marketo Measure] devono essere aggiunte il prima possibile a tutte le proprietà web. Una volta implementato JavaScript, [!DNL Marketo Measure] inizierà a raccogliere i tuoi dati digitali. Questo articolo illustra i metodi per la distribuzione di [!DNL Marketo Measure] JavaScript e considerazioni aggiuntive da considerare.
+[!DNL Marketo Measure] JavaScript di cui tenere traccia [!DNL Marketo Measure] devono essere aggiunte il prima possibile a tutte le proprietà web. Una volta implementato JavaScript, [!DNL Marketo Measure] inizia a raccogliere i dati digitali. Questo articolo illustra i metodi per la distribuzione di [!DNL Marketo Measure] JavaScript e considerazioni aggiuntive.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Come best practice, consigliamo vivamente la codifica fissa [!DNL Marketo Measur
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
-Codifica di JavaScript in `<head>` delle pagine assicura che [!DNL Marketo Measure] lo script verrà caricato per primo e le informazioni di riferimento non verranno perse. Il [!DNL Marketo Measure] JavaScript viene caricato in modo asincrono. In caso di codifica fissa, il codice JavaScript deve essere aggiunto manualmente a Marketing Automation.
+Codifica di JavaScript in `<head>` delle pagine assicura che [!DNL Marketo Measure] lo script viene caricato per primo e le informazioni di riferimento non vengono perse. Il [!DNL Marketo Measure] JavaScript viene caricato in modo asincrono. In caso di codifica fissa, il codice JavaScript deve essere aggiunto manualmente a Marketing Automation.
 
 >[!TIP]
 >
@@ -40,13 +40,13 @@ Codifica di JavaScript in `<head>` delle pagine assicura che [!DNL Marketo Measu
 
 Se si aggiunge [!DNL Marketo Measure] JavaScript tramite codifica fissa non è possibile, un’altra opzione consiste nell’aggiungere [!DNL Marketo Measure] script che utilizza un sistema Tag Management come [!DNL Google Tag Manager] GTM o Tealium.
 
-L’utilizzo dei sistemi di gestione dei tag per la distribuzione [!DNL Marketo Measure] JS può comportare una potenziale perdita di dati del 5-10% a causa della latenza del tempo di caricamento dello script. In sostanza, se lo strumento di gestione dei tag non viene caricato abbastanza rapidamente, [!DNL Marketo Measure] Inoltre, JS non può essere caricato abbastanza rapidamente e potrebbe perdere le informazioni sul primo referente.
+Utilizzo dei sistemi di gestione dei tag per la distribuzione [!DNL Marketo Measure] JS può comportare una potenziale perdita di dati del 5-10% a causa della latenza del tempo di caricamento dello script. In sostanza, se lo strumento di gestione dei tag non viene caricato abbastanza rapidamente, [!DNL Marketo Measure] Inoltre, JS non può essere caricato abbastanza rapidamente e potrebbe perdere le informazioni sul primo referente.
 
 Una pratica comune consiste nell’implementare [!DNL Marketo Measure] JS tramite uno strumento di gestione dei tag fino a quando i tempi e le risorse sono migliori per passare all’hardcoding.
 
-Da aggiungere [!DNL Marketo Measure] tramite una soluzione di gestione tag, dovrai creare un nuovo tag e aggiungere il nostro JavaScript al suo interno. Applica questo tag a tutte le pagine del sito web che desideri monitorare.
+Da aggiungere [!DNL Marketo Measure] tramite una soluzione di gestione tag, devi creare un tag e aggiungere il nostro JavaScript al suo interno. Applica questo tag a tutte le pagine del sito web che desideri monitorare.
 
-[!DNL Marketo Measure] consiglia di attivare il tag in qualsiasi visualizzazione di pagina. Inoltre, è meglio dare [!DNL Marketo Measure] la priorità più alta nell&#39;ordine di attivazione e assicurati che non vi siano script sincroni davanti al [!DNL Marketo Measure] per garantire la massima qualità dei dati.
+[!DNL Marketo Measure] consiglia di attivare il tag in qualsiasi visualizzazione di pagina. Inoltre, è meglio dare [!DNL Marketo Measure] la priorità più alta nell&#39;ordine di attivazione e accertarsi che non vi siano script sincroni davanti al [!DNL Marketo Measure] per garantire la massima qualità dei dati.
 
 Ulteriori informazioni possono essere [trovato qui](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target="_blank"}.
 
@@ -58,13 +58,13 @@ Tuttavia, se utilizzi domini separati o internazionali, assicurati di consentire
 
 Se utilizzi pagine di terze parti, parla del tuo caso d’uso con il [!DNL Marketo Measure] Consulente. In generale, è importante sapere se è possibile aggiungere una versione personalizzata di [!DNL Marketo Measure] JavaScript per tenere traccia di tali pagine, se appropriato. Se questo non è possibile, il tracciamento tramite i punti di contatto della campagna CRM verrà esplorato con il tuo [!DNL Marketo Measure] Consulente.
 
-Sono presenti moduli CHE NON devono essere tracciati da [!DNL Marketo Measure] dal momento che non hanno necessariamente senso per l’attribuzione (ad esempio, moduli per annullare l’abbonamento, accessi dei clienti, ecc.)? In tal caso, aggiungi il codice di esclusione [in questo articolo](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} a ogni modulo
+Sono presenti moduli CHE NON devono essere tracciati da [!DNL Marketo Measure] dal momento che non hanno necessariamente senso per l’attribuzione (ad esempio, moduli per annullare l’abbonamento, accessi dei clienti e così via)? In tal caso, aggiungi il codice di esclusione [in questo articolo](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} a ogni modulo
 
-Hai delle pagine non sicure? In tal caso, è necessario proteggerli in quanto la navigazione tra una pagina protetta/non protetta interromperà la sessione di tracciamento.
+Hai delle pagine non sicure? È necessario proteggerli in quanto la navigazione tra una pagina sicura e non protetta interrompe la sessione di tracciamento.
 
 Assicurati di avere una conversazione con il tuo team web in modo che sappiano [!DNL Marketo Measure] JavaScript deve trovarsi sempre nelle proprietà web appropriate. Se vengono introdotte nuove pagine/moduli/siti, assicurati che la distribuzione [!DNL Marketo Measure] JavaScript fa parte del protocollo.
 
-Se un [!DNL Web Application Firewall (WAF)] L’avviso viene attivato durante la configurazione di JavaScript, gli utenti possono disabilitare la regola WAF o inserire nell’elenco Consentiti i cookie, come nell’esempio seguente:
+Se un [!DNL Web Application Firewall (WAF)] L’avviso viene attivato durante la configurazione di JavaScript, gli utenti possono disabilitare la regola WAF o inserire nell&#39;elenco Consentiti i cookie, come nell’esempio seguente:
 
 ![](assets/adding-marketo-measure-script-1.png)
 
@@ -72,7 +72,7 @@ Se un [!DNL Web Application Firewall (WAF)] L’avviso viene attivato durante la
 
 **Invio di più moduli**
 
-* Problema: se come parte di un singolo invio di moduli collegati si dispone di più moduli, è possibile che il primo modulo generi un punto di contatto anche se il modulo completo non viene inviato.
+* Problema: se hai più moduli collegati come parte di un singolo invio di moduli, è possibile che il primo modulo generi un punto di contatto anche se il modulo completo non viene inviato.
 * Soluzione: è necessario forzare una delle maschere a cui segnalare l&#39;utente [!DNL Marketo Measure] in base ai dati memorizzati nella cache e illustra le pratiche di abbandono. Generalmente, [codice utente report](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} può risolvere per questo.
 
 **Accesso all’account (non creazione)**
@@ -86,7 +86,7 @@ Se un [!DNL Web Application Firewall (WAF)] L’avviso viene attivato durante la
 
 **Download della risorsa**
 
-* Problema: se le risorse vengono gestite, [!DNL Marketo Measure] tiene traccia dei download durante la compilazione del modulo. Se le risorse non sono gestite, ci sono limitazioni a ciò su cui possiamo generare rapporti senza personalizzazione.
+* Problema: se le risorse vengono gestite, [!DNL Marketo Measure] tiene traccia dei download come riempimenti di moduli. Se le risorse non sono gestite, ci sono limitazioni a ciò su cui possiamo generare rapporti senza personalizzazione.
 * Soluzione: cancella la risorsa se desideri che venga tracciata da [!DNL Marketo Measure] JavaScript. Se questa non è un’opzione e desideri comunque un punto di contatto, puoi invece sincronizzare una campagna CRM.
 
 **iFrame**
@@ -116,7 +116,7 @@ Se un [!DNL Web Application Firewall (WAF)] L’avviso viene attivato durante la
 
 **Secondo dominio**
 
-* Problema: [!DNL Marketo Measure] JavaScript è specifico per il dominio, pertanto è necessario effettuare ulteriori passaggi per qualsiasi dominio separato o internazionale. Tieni presente che [!DNL Marketo Measure] JS può gestire sottodomini sullo stesso dominio principale.
+* Problema: [!DNL Marketo Measure] JavaScript è specifico per il dominio, pertanto è necessario effettuare passaggi aggiuntivi per qualsiasi dominio separato o internazionale. [!DNL Marketo Measure] JS può gestire sottodomini sullo stesso dominio principale.
 * Soluzione: se possiedi più domini radice, di cui desideri tenere traccia [!DNL Marketo Measure] assicurati di aggiungere JS ai domini E lascia che il tuo [!DNL Marketo Measure] Il consulente sa quali domini devono essere associati manualmente al tuo [!DNL Marketo Measure] account.
 
 ## Test [!DNL Marketo Measure] JavaScript {#testing-marketo-measure-javascript}
@@ -137,4 +137,4 @@ Per verificare manualmente un modulo, eseguire la procedura seguente:
 
    a. È possibile utilizzare un [!DNL Marketo Measure] rapporti sulle scorte, ad esempio Lead con punti di contatto dell&#39;acquirente, oppure il layout della pagina Lead/Contatto, se si è scelto di aggiornare i layout di pagina con [!DNL Marketo Measure] dettagli.
 
-   b. Tieni presente che l’elaborazione dei dati potrebbe richiedere del tempo.
+   b. L’elaborazione dei dati potrebbe richiedere del tempo.

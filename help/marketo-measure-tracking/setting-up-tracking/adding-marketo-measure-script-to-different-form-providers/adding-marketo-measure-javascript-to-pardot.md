@@ -4,9 +4,9 @@ description: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot] - [!DN
 title: Aggiunta [!DNL Marketo Measure] JavaScript per [!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dopo aver effettuato l’accesso a [!DNL Pardot] account, segui i passaggi segue
 
 1. Accedi a **[!UICONTROL Marketing]**.
 
-1. Fai clic su **[!UICONTROL Landing Pages]**.
+1. Clic **[!UICONTROL Landing Pages]**.
 
 1. Seleziona **[!UICONTROL Layout Template]**.
 
@@ -39,7 +39,7 @@ Dopo aver effettuato l’accesso a [!DNL Pardot] account, segui i passaggi segue
 
 1. Assicurati che le [!DNL Marketo Measure] JavaScript si trova anche nella pagina generale del sito.
 
-   All&#39;interno del [!DNL Pardot] Modello di layout, il codice sarà simile al seguente:
+   All&#39;interno del [!DNL Pardot] Modello di layout, il codice si presenta così:
 
 ```text
 <script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>
@@ -53,10 +53,10 @@ Se il [!DNL Pardot] IFrame ha il seguente tag HTML:
 
 `<base href="http://go.pardot.com">`
 
-_E_ IFrame si trova effettivamente su una pagina protetta (HTTPS) invece di una pagina non protetta (HTTP), quando si tenta di caricare lo script sul [!DNL Pardot] IFrame, il browser tenterà di caricare una versione HTTP del nostro script su una pagina HTTPS che avrà esito negativo e ci impedirà di tracciare. La soluzione consiste nell&#39;aggiornare lo script [!DNL Pardot] IFrame per caricare la versione protetta del nostro script:
+_E_ IFrame è una pagina protetta (HTTPS) anziché non protetta (HTTP) quando si carica lo script in [!DNL Pardot] IFrame, il browser tenta di caricare una versione HTTP dello script su una pagina HTTPS che avrà esito negativo, interrompendo il tracciamento. La soluzione consiste nell&#39;aggiornare lo script [!DNL Pardot] IFrame per caricare la versione protetta dello script:
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
-In quest’area potrebbero essere già presenti altri snippet di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Assicurarsi di separarli con un punto e virgola `;` e un singolo spazio, come mostrato in questo esempio:
+In quest’area potrebbero già essere presenti altri snippet di codice di tracciamento, ad esempio [!DNL Google Analytics] codice. Assicurarsi di separarli con un punto e virgola `;` e un singolo spazio, come mostrato in questo esempio:
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>; <script async="true" type="othercode_example" src="otherfile_example.js" ></script>`

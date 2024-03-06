@@ -4,7 +4,7 @@ description: "[!DNL Marketo Measure] Domande frequenti sull’attribuzione View 
 title: "[!DNL Marketo Measure] Domande frequenti sull’attribuzione Visualizza tramite"
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Storicamente, il re-targeting o la pubblicità sulle impression era difficile pe
 
 ## Cosa c&#39;entra con questa creazione? {#what-is-involved-in-setting-this-up}
 
-Per ottenere [!DNL Marketo Measure] per iniziare a misurare le impression dell’annuncio, è necessario inserire un tag impression in Doubleclick Campaign Manager. Una volta implementato il tag, le impression vengono memorizzate nei nostri registri e ci occupiamo del resto. Per misurare la visualizzazione tramite l’attribuzione, rivolgiti al tuo Success Manager.
+Per ottenere [!DNL Marketo Measure] per iniziare a misurare le impression dell’annuncio, è necessario inserire un tag impression in Doubleclick Campaign Manager. Una volta implementato il tag, le impression vengono memorizzate nei nostri registri e ci occupiamo del resto. Contatta il tuo Success Manager se sei interessato a misurare la visualizzazione tramite l’attribuzione.
 
 ## Quali piattaforme di annunci sono supportate? {#which-ad-platforms-are-supported}
 

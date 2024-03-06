@@ -4,9 +4,9 @@ description: Rapporti e dashboard Stock in Dynamics - [!DNL Marketo Measure]
 title: Rapporti e dashboard Stock in Dynamics
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 >
 >Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Il [!DNL Marketo Measure] La soluzione gestita è dotata di una serie di dashboard e rapporti stock, progettati per soddisfare le esigenze di base durante la visualizzazione [!DNL Marketo Measure] dati in Dynamics. Di seguito è riportato l’elenco completo e alcuni casi d’uso comuni.
+Il [!DNL Marketo Measure] La soluzione gestita è dotata di diversi report e dashboard azionari, progettati per soddisfare le esigenze di base durante la visualizzazione [!DNL Marketo Measure] dati in Dynamics. Di seguito è riportato l’elenco completo e alcuni casi d’uso comuni.
 
-## Dashboard (9 in totale) {#dashboards-total}
+## Dashboard (nove in totale) {#dashboards-total}
 
 <table> 
  <colgroup> 

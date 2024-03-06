@@ -2,9 +2,9 @@
 description: Dashboard di coinvolgimento - [!DNL Marketo Measure] - Prodotto
 title: Dashboard di coinvolgimento
 feature: Reporting
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Risposte alle domande della dashboard:
 
 * Quante persone erano fidanzate? Qual è il numero medio di contatti per persona coinvolta?
 * Come si confronta il numero di punti di contatto con le persone toccate all’interno di un canale/sottocanale/campagna specifico?
-* Quanti punti di contatto c&#39;erano in un dato canale o sottocanali? Come è cambiata nel tempo?
+* Quanti punti di contatto c&#39;erano in un dato canale o sottocanale? Come è cambiata nel tempo?
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Risposte alle domande della dashboard:
 ### Riquadri KPI {#kpi-tiles}
 
 * Punti di contatto: numero totale di punti di contatto non elaborati generati.
-   * I punti di contatto per l’acquirente e l’attribuzione dell’acquirente sono risultati di attribuzione creati selezionando punti di contatto specifici da attribuire. Non tutti i punti di contatto verranno selezionati come BT e BAT.
+   * I punti di contatto per l’acquirente e l’attribuzione dell’acquirente sono risultati di attribuzione creati selezionando punti di contatto specifici da attribuire. Non tutti i punti di contatto sono selezionati come BT e BAT.
 * Persone toccate: il numero totale di persone che hanno punti di contatto.
 * Punti di contatto per persona: numero medio di punti di contatto per persona che è stata toccata.
 

@@ -4,9 +4,9 @@ description: Metodologia di mappatura attribuzione - [!DNL Marketo Measure]
 title: Metodologia di mappatura attribuzione
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Contro: tuttavia, se non è attivo alcun processo per il ruolo di contatto, il m
 
 ## Mappatura ruolo contatto principale opportunità {#opportunity-primary-contact-role-mapping}
 
-Oltre a esaminare semplicemente i ruoli di contatto nell’opportunità, [!DNL Marketo Measure] può concentrarsi ancora di più per esaminare solo i contatti principali su un’opportunità. Tenendo presente questa configurazione, [!DNL Marketo Measure] acquisirà solo il punto di contatto di marketing associato ai contatti primari in un’opportunità e inserirà tali informazioni nella storia di attribuzione di tale opportunità specifica. Vedi l’immagine seguente.
+Oltre a esaminare semplicemente i ruoli di contatto nell’opportunità, [!DNL Marketo Measure] può concentrarsi ancora di più per esaminare solo i contatti principali su un’opportunità. Tenendo presente questa configurazione, [!DNL Marketo Measure] acquisisce solo il punto di contatto di marketing associato ai contatti primari su un’opportunità e invia tali informazioni nella storia di attribuzione di tale opportunità specifica. Vedi l’immagine seguente.
 
 ![](assets/3.png)
 

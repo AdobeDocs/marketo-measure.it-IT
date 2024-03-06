@@ -4,9 +4,9 @@ description: Best practice per i test - [!DNL Marketo Measure]
 title: Best practice per i test
 exl-id: ff95a1a9-d324-47f5-b47d-39014dff77e4
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. Inviare il modulo sul sito Web utilizzando un indirizzo e-mail univoco.
 
-1. Registra l’URL della pagina in cui stai inviando il modulo e l’indirizzo e-mail utilizzato.
+1. Registra l’URL della pagina su cui stai inviando il modulo e l’indirizzo e-mail utilizzato.
 
 1. Individua il record creato nel CRM (lead o contatto) per l’invio del modulo e verifica che sia stato creato correttamente un punto di contatto.
 

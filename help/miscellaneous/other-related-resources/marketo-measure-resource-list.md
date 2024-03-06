@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] Elenco risorse - [!DNL Marketo Measure]"
 title: "[!DNL Marketo Measure] Elenco risorse"
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 
 **Generazione rapporti**
 
-* [Creazione di tipi di rapporto personalizzati con [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) (se devi creare rapporti sui campi personalizzati per lead/contatti/opportunità)
+* [Creazione di tipi di rapporto personalizzati con [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) (se è necessario creare rapporti sui campi lead/contatto/opportunità personalizzati)
 * [Glossario di [!DNL Marketo Measure] campi](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 **Risoluzione dei problemi**
@@ -47,12 +47,12 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 
 ## Video {#videos}
 
-Ecco un paio di video per aiutarti a imparare a usare la velocità:
+Ecco un paio di video che ti aiutano a imparare a usare la velocità:
 
-* [[!DNL Marketo Measure] Formazione introduttiva](https://embed.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4) (22 minuti)
-* [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://universityonline.marketo.com/courses/bizible-and-salesforce/) (30-45 minuti)
+* [[!DNL Marketo Measure] Formazione introduttiva](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) (22 minuti)
+* [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)
 
-**[[!DNL Marketo Measure] 101](https://universityonline.marketo.com/courses/bizible-101/) (~30 minuti)**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (~30 minuti)**
 
 Questa serie di corsi è progettata come introduzione generale ai concetti di base che è necessario conoscere per padroneggiare [!DNL Marketo Measure]. Fornisce un’introduzione al concetto di attribuzione, cosa [!DNL Marketo Measure] fa come strumento e il quadro generale sul quale [!DNL Marketo Measure] funziona.
 
@@ -64,9 +64,9 @@ Argomenti trattati:
 * Punti di contatto
 * Modelli di attribuzione
 
-**[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://universityonline.marketo.com/courses/bizible-and-salesforce/) (30-45 minuti)**
+**[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)**
 
-Questa serie di corsi è progettata come introduzione al [!DNL Marketo Measure] rapporti sulle scorte installati in Salesforce. Questi rapporti fungono da base per la maggior parte dei rapporti che utilizzerai [!DNL Marketo Measure] dati.
+Questa serie di corsi è progettata come introduzione al [!DNL Marketo Measure] rapporti sulle scorte installati in Salesforce. Questi rapporti fungono da base per la maggior parte dei rapporti che utilizzi [!DNL Marketo Measure] dati.
 
 Argomenti trattati:
 
@@ -77,7 +77,7 @@ Argomenti trattati:
 * Rapporto Opportunità per ID
 * Rapporto Opportunità per canale
 
-**[Gestione dei canali](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/)**
+**[Gestione dei canali](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
 
 Questo corso descrive vari modi in cui puoi personalizzare [!DNL Marketo Measure], in termini di tracciamento online e offline. Questo corso è più avanzato e potrebbe non essere pertinente per tutti gli utenti.
 
@@ -89,4 +89,4 @@ Argomenti trattati:
 * Campi membro campagna e campagna
 * Gestione dei canali offline
 
-Ecco tutti [video per principianti su E-Learning](https://universityonline.marketo.com/#/library/bySubject/new-to-bizible/trails?_k=d1454j).
+Ecco tutti [video per principianti su E-Learning](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html).

@@ -4,7 +4,7 @@ description: Piattaforme di annunci integrate - [!DNL Marketo Measure]
 title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%

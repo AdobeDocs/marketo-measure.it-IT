@@ -3,9 +3,9 @@ description: Gestione dominio - [!DNL Marketo Measure]
 title: Gestione del dominio
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Dopo aver aggiunto un dominio nell’Admin Console, [!DNL Marketo Measure] sincr
 
 ![](assets/domain-management-2.png)
 
-Il giorno **[!UICONTROL Integration]** > **[!UICONTROL Domains]** , l’utente visualizza tutti i domini registrati nell’Admin Console, insieme al relativo stato. Ogni dominio può essere abilitato o disabilitato. Se un dominio è abilitato, [!DNL Marketo Measure] il tracciamento raccoglie tutto il traffico visualizzato su quel dominio. Se un dominio è disabilitato, [!DNL Marketo Measure] ignora il traffico visto proveniente da tale dominio e non crea punti di contatto o altri dati. [!DNL Marketo Measure] conferma la disattivazione di un dominio e avvisa delle ramificazioni:
+Il giorno **[!UICONTROL Integration]** > **[!UICONTROL Domains]** , l’utente visualizza tutti i domini registrati nell’Admin Console, insieme al relativo stato. Ogni dominio può essere abilitato o disabilitato. Se un dominio è abilitato, [!DNL Marketo Measure] il tracciamento raccoglie tutto il traffico visualizzato su quel dominio. Se un dominio è disabilitato, [!DNL Marketo Measure] ignora il traffico proveniente da tale dominio e non crea punti di contatto o altri dati. [!DNL Marketo Measure] conferma la disattivazione di un dominio e avvisa in caso di ramificazioni:
 
 ![](assets/domain-management-3.png)
 

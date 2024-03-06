@@ -3,9 +3,9 @@ description: Best practice per i canali offline - [!DNL Marketo Measure]
 title: Best practice per i canali offline
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Il valore &quot;Canale di marketing&quot; per questi punti di contatto si basa s
 
 ## Best practice | Mappatura canale offline {#best-practice-offline-channel-mapping}
 
-Se stai eseguendo la mappatura dei canali offline per la prima volta o semplicemente esaminandoli per verificarne l’accuratezza, tieni presente le seguenti best practice.
+Per la mappatura dei canali offline per la prima volta o per una semplice revisione al fine di verificarne l’accuratezza, considera le seguenti best practice.
 
 * Creare un framework intenzionale per i canali offline
    * Prenditi un po’ di tempo per pensare all’organizzazione delle campagne di marketing e a come si adattano al [!DNL Marketo Measure] infrastruttura. Determinare quali canali e sottocanali devono essere rappresentati nei canali offline e quali tipi di campagna CRM differenziano tali canali l’uno dall’altro

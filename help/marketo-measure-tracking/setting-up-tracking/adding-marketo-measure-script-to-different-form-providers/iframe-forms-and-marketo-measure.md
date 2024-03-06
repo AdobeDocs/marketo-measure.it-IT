@@ -4,22 +4,22 @@ description: IFrame Forms e [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: IFrame Forms e [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
 
 # IFrame Forms e [!DNL Marketo Measure] {#iframe-forms-and-marketo-measure}
 
-Con [!DNL Marketo Measure] una delle funzionalità di base di è monitorare le attività di marketing digitale attraverso sessioni sul sito e l’invio di moduli. In genere, quando il codice JavaScript viene inserito sul sito, vengono automaticamente allegati a tutti i moduli del sito. Tuttavia, questa funzionalità è limitata se il modulo è contenuto in un IFrame.
+Con [!DNL Marketo Measure] una delle funzionalità principali consiste nel monitorare le attività di marketing digitale attraverso sessioni sul sito e l’invio di moduli. In genere, quando Marketo JavaScript viene inserito sul sito, vengono automaticamente allegati a tutti i moduli del sito. Tuttavia, questa funzionalità è limitata se il modulo è contenuto in un IFrame.
 
-Puoi considerare un IFrame come una pagina all’interno di una pagina, quindi proprio come richiediamo che il nostro script venga aggiunto a tutte le pagine del sito, avremmo bisogno dello script posizionato all’interno di IFrame per garantire il tracciamento.
+Considera un IFrame come una pagina all’interno di una pagina, quindi proprio come richiediamo che lo script venga aggiunto a tutte le pagine del sito, avremmo bisogno dello script posizionato all’interno di IFrame per garantire il tracciamento.
 
 Vediamo in molti casi che IFrame è gestito tramite un provider di automazione marketing, quindi sarà necessario configurarlo all’interno di tale piattaforma o tramite il provider di moduli.
 
-Si consiglia di posizionare JavaScript all’interno dell’intestazione di IFrame e da qui verranno automaticamente collegati ai moduli all’interno di tale cornice.
+Si consiglia di posizionare JavaScript all’interno dell’intestazione di IFrame e da lì ci allegheremo automaticamente ai moduli all’interno di tale cornice.
 
 ![](assets/1-1.png)
 

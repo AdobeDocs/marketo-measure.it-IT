@@ -3,16 +3,16 @@ unique-page-id: 18874761
 description: Single Sign-On - [!DNL Marketo Measure]
 title: Single Sign-On
 exl-id: a328e9cb-8352-4693-8a44-533e08f1a29c
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1257'
 ht-degree: 0%
 
 ---
 
 # Single Sign-On {#single-sign-on}
 
-SAML (Security Assertion Markup Language) per SSO (Single Sign-On) consente agli utenti di eseguire l&#39;autenticazione tramite il provider di identità di un&#39;azienda quando effettuano l&#39;accesso a [!DNL Marketo Measure] app. SSO consente a un utente di eseguire l&#39;autenticazione una sola volta, senza dover eseguire l&#39;autenticazione di app separate. SAML è una necessità per i clienti aziendali perché non tutti gli utenti avranno un [!DNL Salesforce] o [!DNL Google] all&#39;interno della loro organizzazione. Per scalare, [!DNL Marketo Measure] ha sviluppato una soluzione SAML in grado di supportare i provider di identità aziendali.
+SAML (Security Assertion Markup Language) per SSO (Single Sign-On) consente agli utenti di eseguire l&#39;autenticazione tramite il provider di identità di un&#39;azienda quando accedono al [!DNL Marketo Measure] app. SSO consente a un utente di eseguire l&#39;autenticazione una sola volta, senza dover eseguire l&#39;autenticazione di app separate. SAML è una necessità per i clienti aziendali perché non tutti gli utenti hanno un [!DNL Salesforce] o [!DNL Google] all&#39;interno della loro organizzazione. Per ridimensionare, [!DNL Marketo Measure] ha sviluppato una soluzione SAML in grado di supportare i provider di identità aziendali.
 
 >[!CAUTION]
 >
@@ -35,7 +35,7 @@ Per iniziare, passa a Impostazioni > Sicurezza > Pagina Autenticazione in [!DNL 
 
 ## Processo {#process}
 
-[!DNL Marketo Measure] Single Sign-On richiede la configurazione delle impostazioni di autenticazione in una serie di passaggi importanti da seguire, in modo da non rischiare di rimanere bloccati [!DNL Marketo Measure] account.
+[!DNL Marketo Measure] Single Sign-On richiede la configurazione delle impostazioni di autenticazione in una serie di passaggi, in modo da non rischiare di rimanere bloccati [!DNL Marketo Measure] account.
 
 Configurare [!DNL Marketo Measure] Applicazione nel provider di identità. Per le procedure dettagliate, consulta la documentazione esterna elencata di seguito.
 
@@ -119,9 +119,9 @@ Provalo!
 
 ## Utenti CRM (configurazione avanzata) {#crm-users-advanced-setup}
 
-Per impostazione predefinita, tutti gli account possono accedere a [!DNL Marketo Measure] dell&#39;applicazione utilizzando le credenziali CRM. A volte, i proprietari dell’account devono limitare l’accesso a determinati ruoli e non aprirlo a tutti gli utenti con una licenza di gestione delle relazioni con i clienti attiva. La configurazione avanzata ti consentirà di mappare i ruoli e i gruppi di gestione delle relazioni con i clienti a [!DNL Marketo Measure] autorizzazioni utente.
+Per impostazione predefinita, tutti gli account possono accedere a [!DNL Marketo Measure] dell&#39;applicazione utilizzando le credenziali CRM. A volte, i proprietari dell’account devono limitare l’accesso a determinati ruoli e non aprirlo a tutti gli utenti con una licenza di gestione delle relazioni con i clienti attiva. La configurazione avanzata ti consente di mappare i ruoli e i gruppi di gestione delle relazioni con i clienti a [!DNL Marketo Measure] autorizzazioni utente.
 
-Se non è stato mappato alcun ruolo o gruppo, l&#39;impostazione predefinita prevede che tutte le licenze attive nel CRM avranno accesso utente Standard.
+Se non è stato mappato alcun ruolo o gruppo, l&#39;impostazione predefinita prevede che tutte le licenze attive nel CRM dispongano dell&#39;accesso utente Standard.
 
 * [!DNL Marketo Measure] Utente standard: fornisci il valore del ruolo o del gruppo per gli utenti che devono avere accesso in sola lettura al [!DNL Marketo Measure] applicazione.
 * [!DNL Marketo Measure] Utente amministratore account: fornisci il valore del ruolo o del gruppo per gli utenti che devono avere accesso amministrativo al [!DNL Marketo Measure] applicazione. Ciò significa che il ruolo ha accesso a modificare le configurazioni e le impostazioni relative al tuo account.
@@ -144,7 +144,7 @@ Per [!DNL Dynamics] Ruoli, utilizzare il nome di ogni Ruolo di protezione. Tutti
 
 **Utenti Google**
 
-Una volta configurato l&#39;SSO personalizzato, [!UICONTROL Users] La pagina verrà aggiornata per mostrare solo gli utenti esterni che sono stati aggiunti con gli accessi a Google. Poiché tutti gli utenti con accesso sono definiti tramite la configurazione SSO, qui sono elencati altri utenti esterni.
+Una volta configurato l&#39;SSO personalizzato, [!UICONTROL Users] La pagina viene aggiornata per mostrare solo gli utenti esterni che sono stati aggiunti con gli accessi di Google. Poiché tutti gli utenti con accesso sono definiti tramite la configurazione SSO, qui sono elencati altri utenti esterni.
 
 ![](assets/9.png)
 
@@ -152,7 +152,7 @@ Solo valido [!DNL Google] Gli account possono essere aggiunti e devono avere un 
 
 ## Collegamenti esterni {#external-links}
 
-* [Okta](http://developer.okta.com/standards/SAML/setting_up_a_saml_application_in_okta)
-* [Ping identità](http://docs.pingidentity.com/bundle/p1_enterpriseConfigSsoSaml_cas/page/enableAppWithoutURL.html)
-* [OneLogin](http://onelogin.service-now.com/support?id=kb_article&amp;sys_id=b2c91143db109700d5505eea4b9619d5)
-* [Active Directory](http://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-custom-apps)
+* [Okta](https://developer.okta.com/standards/SAML/setting_up_a_saml_application_in_okta)
+* [Ping identità](https://docs.pingidentity.com:443/bundle/p1_enterpriseConfigSsoSaml_cas/page/enableAppWithoutURL.html)
+* [OneLogin](https://onelogin.service-now.com/support?id=kb_article&amp;sys_id=b2c91143db109700d5505eea4b9619d5)
+* [Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-custom-apps)

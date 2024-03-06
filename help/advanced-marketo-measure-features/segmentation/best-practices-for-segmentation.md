@@ -3,9 +3,9 @@ description: Best practice per la segmentazione - [!DNL Marketo Measure]
 title: Best practice per la segmentazione
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Quando viene inviato a [!UICONTROL Discover], I segmenti verranno visualizzati c
 
 ## Best practice {#best-practice}
 
-Per definire la segmentazione per la prima volta o rivedere solo la segmentazione stabilita in precedenza, tieni presenti le seguenti best practice.
+Se definisci la segmentazione per la prima volta o esamini solo la segmentazione stabilita in precedenza, tieni presente le seguenti best practice.
 
 * Semplificalo!
 * Allinea il nome del segmento alla nomenclatura dell’organizzazione, ovvero categoria = nome filtro, segmento = valore filtro

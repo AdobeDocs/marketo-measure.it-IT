@@ -4,9 +4,9 @@ description: Marketing Attribution - Marketo Measure - Documentazione del prodot
 title: Marketing Attribution
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 feature: Attribution
-source-git-commit: 204340c77a173c3e8fd87b65ed47a1a0dbc35880
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Marketo Measure offre agli esperti di marketing informazioni approfondite sulle 
 
 ## Marketing Attribution {#marketing-attribution-1}
 
-**Attribuzione di marketing** è il processo di assegnazione del credito ricavi a un punto di contatto di marketing. Questo viene fatto tenendo traccia dell’intero percorso di clienti di un potenziale cliente, a partire dalla prima interazione con la tua azienda fino alla chiusura dell’operazione. I ricavi generati dall’operazione vengono attribuiti ai punti di contatto di marketing che hanno determinato la vendita. L’importo del credito di ricavo assegnato a un punto di contatto dipende da quanto tale punto di contatto ha influenzato la decisione di acquisto del cliente.
+**Attribuzione di marketing** è il processo di assegnazione del credito ricavi a un punto di contatto di marketing. Questo viene fatto tenendo traccia dell’intero percorso di clienti di un potenziale cliente, a partire dalla prima interazione con la tua azienda fino alla chiusura dell’operazione. I ricavi generati dall’operazione vengono attribuiti ai punti di contatto di marketing che hanno determinato la vendita. L’importo del credito di ricavo assegnato a un punto di contatto dipende da quanto tale punto di contatto ha influenzato le decisioni di acquisto del cliente.
 
 **Punti di contatto** consulta le interazioni che un potenziale cliente/lead ha con le tue attività di marketing online o offline. Sono quattro **punti di contatto principali** considerati nell’attribuzione marketing. Riflettono le diverse fasi del percorso del cliente. Questi punti di contatto principali, denominati anche **punti di contatto milestone**, sono: First Touch (FT), Lead Creation (LC), Opportunity Creation (OC), Closed Won deal (CW).
 

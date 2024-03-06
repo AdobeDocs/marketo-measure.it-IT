@@ -4,7 +4,7 @@ description: Modello di attribuzione e configurazione personalizzati - [!DNL Mar
 title: Modello di attribuzione e configurazione personalizzati
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Se nel modello personalizzato viene utilizzato un campo personalizzato, il tracc
 
    Vai a **[!UICONTROL Attribution Settings]** in [!DNL Marketo Measure] App; le fasi personalizzate verranno visualizzate qui nella tabella di attribuzione. Nella tabella di attribuzione vengono visualizzati tutti i [!DNL Marketo Measure] modelli di attribuzione e la ponderazione dell’attribuzione di ciascun modello. Le percentuali di attribuzione dei primi cinque modelli sono fisse e non possono essere modificate.
 
-   Nell&#39;estrema destra colonna etichettata &quot;**[!UICONTROL Custom]**,&quot; puoi impostare la ponderazione percentuale per ogni fase nel modello di attribuzione personalizzato. È sufficiente immettere i valori per ogni fase nella colonna Personalizzato. Then **[!UICONTROL Save and Reprocess]** una volta completato.
+   Nell&#39;estrema destra colonna etichettata &quot;**[!UICONTROL Custom]**,&quot; puoi impostare la ponderazione percentuale per ogni fase nel modello di attribuzione personalizzato. Immetti i valori per ogni stadio nella colonna Personalizzato e fai clic su **[!UICONTROL Save and Reprocess]** al termine.
 
    A sinistra del _Personalizzato_ colonna è il valore **[!DNL Marketo Measure]Modello di apprendimento automatico**. Il modello di apprendimento automatico calcola la ponderazione dell’attribuzione in base all’importanza relativa per la vincita di un’offerta, in base a ciò che è successo in ogni fase personalizzata. Per ulteriori informazioni sul modello di apprendimento automatico, consulta [Domande frequenti sul modello di apprendimento automatico](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
 

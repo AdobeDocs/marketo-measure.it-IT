@@ -2,9 +2,9 @@
 description: Notifiche di errore - [!DNL Marketo Measure]
 title: Notifiche di errore
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
       <td>API_DISABLED</td>
       <td>Errore durante l'importazione CRM : API_DISABLED : le chiamate API sono state disabilitate per questo utente</td>
       <td>L’autorizzazione API è stata disabilitata per l’utente Marketo Measure.</td>
-      <td>Consulta la seguente documentazione di Salesforce su <a href="https://help.salesforce.com/s/articleView?id=sf.branded_apps_commun_api_permset.htm&amp;type=5">come abilitare l’accesso API</a>.</td>
+      <td>Consulta la seguente documentazione di Salesforce su <a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">come abilitare l’accesso API</a>.</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -73,7 +73,7 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
       <p>
       Si è verificato un errore durante l’importazione dell’annuncio: INVALID_CURRENCY_ISO_CODE : La valuta XXX nell’account per 1234 non è supportata da Marketo Measure.</td>
       <td>Rilevata valuta non supportata.</td>
-      <td>Nel sistema di origine indicato nella notifica (Ad, Crm, Marketo) assicurati che la valuta associata al record abbia una valuta supportata e valida. Le valute supportate sono derivate dagli standard di valuta ISO.</td>
+      <td>Nel sistema di origine indicato nella notifica (Ad, Crm, Marketo) la valuta associata al record è supportata e valida. Le valute supportate sono derivate dagli standard di valuta ISO.</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
@@ -127,7 +127,7 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
           Errore durante l'importazione di CRM: NULL_EMPTY_CURRENCY_ISO_CODE: il codice ISO della valuta è NULL o vuoto quando MultiCurrency è abilitato per RecordId 1234
       </td>
       <td>La valuta deve essere un codice valuta ISO supportato.</td>
-      <td>Nel sistema di origine indicato nella notifica (Ad, Crm, Marketo) assicurati che la valuta associata al record abbia una valuta supportata e valida. Le valute supportate sono derivate dagli standard di valuta ISO.</td>
+      <td>Nel sistema di origine indicato nella notifica (Ad, Crm, Marketo) la valuta associata al record è supportata e valida. Le valute supportate sono derivate dagli standard di valuta ISO.</td>
     </tr>
     <tr>
       <td>OPERATION_TOO_LARGE</td>
