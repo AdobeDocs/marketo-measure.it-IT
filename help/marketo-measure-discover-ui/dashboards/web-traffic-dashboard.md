@@ -3,9 +3,9 @@ description: Dashboard traffico web - [!DNL Marketo Measure] - Prodotto
 title: Dashboard traffico web
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -120,3 +120,4 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 * Canale, Sottocanale
 * Campaign
 * URL
+* Titolo pagina

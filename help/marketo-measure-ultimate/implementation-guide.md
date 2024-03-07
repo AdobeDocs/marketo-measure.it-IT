@@ -2,9 +2,9 @@
 description: '[!DNL Marketo Measure] Guida all’implementazione di Ultimate: [!DNL Marketo Measure]'
 title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
 feature: Integration, Tracking, Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -131,12 +131,13 @@ Prima di iniziare, passa alla sezione &quot;Experience Platform > Mappatura sand
 
 >[!NOTE]
 >
+>* Si consiglia di includere un solo set di dati per flusso di dati.
 >* I dati di una determinata entità (ad esempio, Conto) da una determinata origine possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arrestano il flusso di dati in fase di esecuzione.
 >* Elimina l’intera destinazione in AEP per eliminare i dati in Measure. La disabilitazione interrompe le nuove esportazioni di dati e mantiene i dati precedenti.
 >* La configurazione Misura avrà per lo più lo stesso aspetto, ma alcune parti, come Mappatura area di visualizzazione, avranno un aspetto diverso.
 >* La generazione di un’esecuzione del flusso richiede alcune ore per un nuovo flusso di dati, che vengono quindi eseguiti a intervalli orari regolari.
 
-In Measure, la valuta predefinita deve essere impostata nella sezione &quot;Valuta&quot;
+In Measure, la valuta predefinita deve essere impostata nella sezione &quot;Valuta&quot;.
 
 * Se utilizzi più valute, lo schema del tasso di conversione della valuta deve essere popolato in AEP per consentirne la lettura e l’utilizzo per le conversioni.
 
