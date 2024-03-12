@@ -3,9 +3,9 @@ description: Dashboard Passport - [!DNL Marketo Measure] - Prodotto
 title: Dashboard Passport
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 88dfdac366d29bed29ed39979cb76cad7aee4025
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,6 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 * Data (basata sulla data di transizione)
-* Modello di attribuzione
 * Canale, Sottocanale
 * Campaign
 * Segmenti
@@ -60,4 +59,3 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 >
 >* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
 >* [Criterio di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
-
