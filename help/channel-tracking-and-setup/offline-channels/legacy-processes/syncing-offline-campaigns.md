@@ -4,7 +4,7 @@ description: Sincronizzazione delle campagne offline - [!DNL Marketo Measure]
 title: Sincronizzazione delle campagne offline
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: b84909fbb34a1d8f739ebeea3400ef8816e17d32
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -74,6 +74,6 @@ Una volta selezionata una di queste selezioni, [!DNL Marketo Measure] assegnerà
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] University: mappatura dei canali offline](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c630eca34d9f0367662b77f)
+>[[!DNL Marketo Measure] Tutorials: mappatura dei canali offline](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->[[!DNL Marketo Measure] Università: Campi oggetto della campagna](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c63007334d9f0367662b758)
+>[[!DNL Marketo Measure] Tutorials: campi oggetto della campagna](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}

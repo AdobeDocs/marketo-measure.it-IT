@@ -4,7 +4,7 @@ description: Casi d’uso comuni - [!DNL Marketo Measure]
 title: Casi d’uso più comuni
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 feature: Reporting
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: b84909fbb34a1d8f739ebeea3400ef8816e17d32
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -81,4 +81,4 @@ Modifica il filtro Dimension per cambiare il raggruppamento in: Sottocanale, Cam
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] University: introduzione a [!DNL Marketo Measure Discover]](https://universityonline.marketo.com/courses/bizible-discover/#/page/5c645586a7863a73ad3b23e6){target="_blank"}
+>[[!DNL Marketo Measure] Tutorials: introduzione a [!DNL Marketo Measure Discover]](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-discover/introduction-to-marketo-measure-discover){target="_blank"}

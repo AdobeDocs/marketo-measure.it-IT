@@ -4,7 +4,7 @@ description: Record duplicati nel mio report - [!DNL Marketo Measure]
 title: Record duplicati nel mio report
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: b84909fbb34a1d8f739ebeea3400ef8816e17d32
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
@@ -35,4 +35,4 @@ Se desideri comprendere il &quot;conteggio dei contatti&quot;, puoi quindi utili
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Università: rapporti SFDC Stock](https://universityonline.marketo.com/courses/bizible-fundamentals-bizible-102/#/page/5c5cb68dfb384d0c9fb96cc4)
+>[[!DNL Marketo Measure] Tutorials: rapporti SFDC Stock](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

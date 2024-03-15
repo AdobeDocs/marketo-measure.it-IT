@@ -4,9 +4,9 @@ description: Date di sincronizzazione campagna - [!DNL Marketo Measure]
 title: Date di sincronizzazione della campagna
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: b84909fbb34a1d8f739ebeea3400ef8816e17d32
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,3 @@ In alcuni casi, un team di marketing potrebbe non riuscire ad aggiungere paramet
 Se sei un nuovo [!DNL Marketo Measure] cliente, potresti essere interessato a portare alcuni dei dati di marketing tracciati tramite le campagne SFDC. Tuttavia, se abiliti i punti di contatto per le campagne SFDC online, potresti riscontrare il problema del doppio conteggio dell’attribuzione da [!DNL Marketo Measure] crea automaticamente punti di contatto per le attività di marketing online. Per evitare il doppio conteggio dei dati, puoi utilizzare le Date di fine del punto di contatto di Campaign per impostare un limite per le date di punto di contatto create da [!DNL Marketo Measure] sulla campagna SFDC. Ad esempio, se desideri aggiungere conversioni retroattive per una campagna social network di cui hai eseguito il tracciamento in SFDC, ma sai di aver aggiunto il [!DNL Marketo Measure] JavaScript (che sta creando punti di contatto online) il 1° luglio, quindi puoi modificare la campagna SFDC per social network in modo che contenga una data di fine punto di contatto uguale al 1° luglio e abilitare i punti di contatto dell’acquirente per tale campagna.
 
 Ci possono essere molti altri casi d’uso per le Date di fine del punto di contatto. Se hai bisogno di aiuto per capire una situazione specifica, non esitare a contattare [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
-
->[!MORELIKETHIS]
->
->[[!DNL Marketo Measure] Università: Campi membri della campagna](https://learn.bizible.com/2-bizible-customization/137720https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c63007334d9f0367662b758)
