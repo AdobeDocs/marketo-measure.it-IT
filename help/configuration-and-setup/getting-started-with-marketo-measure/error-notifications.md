@@ -2,9 +2,10 @@
 description: Notifiche di errore - [!DNL Marketo Measure]
 title: Notifiche di errore
 feature: Fundamentals
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
+source-git-commit: 2b13a518d1be768a5c312ea4abdf2039aa22cf08
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -53,6 +54,104 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
       </td>
     </tr>
     <tr>
+      <td>CANNOT_EXECUTE_FLOW_TRIGGER</td>
+      <td>Errore durante l’esportazione Crm: CANNOT_EXECUTE_FLOW_TRIGGER : tipo di entità "Contatto" Fornisci questi dettagli all’amministratore Salesforce.
+Limite superato È stato superato il limite massimo consentito per questa funzione per l'utente o l'organizzazione. ID errore: 123456</td>
+      <td>Impossibile salvare il record perché non soddisfa una regola di flusso del trigger impostata nell’organizzazione Salesforce.</td>
+      <td>Rivedi tutti i dettagli del messaggio di notifica e controlla i trigger di flusso nell’organizzazione Salesforce.
+Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">si trova qui</a>.
+      </td>
+    </tr>
+    <tr>
+      <td>IMPOSSIBILE_INSERIRE_AGGIORNA_ATTIVA_ENTITÀ</td>
+      <td>Errore durante l'esportazione CRM: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY : Tipo di entità 'Lead': Codice errore CRM: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, Messaggio di errore CRM: System.LimitException: limite di tempo CPU Apex superato, RecordId: 0123456
+      <p>
+      Errore durante l'esportazione CRM: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY : Tipo di entità 'Account': Codice errore CRM: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, Messaggio di errore CRM: tipo di entità non aggiornabile: Account, ID record: 0123456</td>
+      <td>Gli attivatori impediscono l'aggiornamento o l'inserimento di un oggetto.
+      <p>
+      OPPURE
+      <p>
+      Autorizzazioni mancanti per l'oggetto.</td>
+      <td>Esamina il codice del trigger che causa l’errore di inserimento/aggiornamento. Per ulteriori informazioni sui trigger, consulta la seguente documentazione di Salesforce:
+        <ul>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&amp;type=5">Trigger Apex</a>
+          </li>
+          <li><a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">Trigger del flusso</a>
+          </li>
+        </ul>
+        <p>
+        Fornisci tutte le autorizzazioni necessarie al <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Utente Marketo Measure</a>.
+      </td>
+    </tr>
+    <tr>
+      <td>DUPLICATES_DETECTED</td>
+      <td>Errore durante l'esportazione CRM: DUPLICATES_DETECTED : Tipo di entità 'Contatto': Codice errore CRM: DUPLICATES_DETECTED, Messaggio di errore CRM: Stai creando un record duplicato. È consigliabile utilizzare invece un record esistente., RecordId: 0123456</td>
+      <td>Il record da importare nell’organizzazione Salesforce esiste già.</td>
+      <td>
+        <ul>
+          <li><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">Disattiva l’impostazione "Duplica regola"</a> per consentire duplicati.
+          </li>
+          <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>DUPLICATE_VALUE</td>
+      <td>Errore durante l'esportazione CRM: DUPLICATE_VALUE : tipo di entità 'Lead': Codice errore CRM: DUPLICATE_VALUE, Messaggio errore CRM: valore duplicato trovato: Email_Unique__c duplica il valore nel record con ID: 123, ID record: 456</td>
+      <td>Il campo importato nell’organizzazione Salesforce non consente valori duplicati.</td>
+      <td>
+        <ul>
+          <li>Deseleziona la <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">"Casella di controllo univoca"</a> in Salesforce.
+          </li>
+          <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>ENTITY_IS_LOCKED</td>
+      <td>Errore durante l'esportazione CRM: ENTITY_IS_LOCKED : tipo di entità 'Account': Codice errore CRM: ENTITY_IS_LOCKED, Messaggio di errore CRM: questo record è bloccato. Se devi modificarlo, contatta l’amministratore., ID record: 0123456</td>
+      <td>Quando un record è in un processo di approvazione e un utente che non è l'approvatore corrente o l'amministratore di sistema tenta di modificare il record.</td>
+      <td>
+        <ul>
+          <li>Risolvi il processo di approvazione in sospeso per quel record nell’organizzazione Salesforce.</li>
+          <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
+      <td>Errore durante l'esportazione CRM: FIELD_FILTER_VALIDATION_EXCEPTION : tipo di entità 'Lead': Codice errore CRM: FIELD_FILTER_VALIDATION_EXCEPTION, Campo/i: User__C, Messaggio errore CRM: il valore non esiste o non corrisponde ai criteri del filtro. Selezionare un utente con il ruolo "Account Executive, Inside Sales"; ID record: 0123456</td>
+      <td>Il record modificato non soddisfa più i filtri di ricerca definiti sull'oggetto.</td>
+      <td>Verifica la presenza di filtri sull’oggetto che Marketo Measure sta tentando di modificare. Consulta <a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">questo articolo di Salesforce</a> per informazioni su come verificare la presenza di filtri in un oggetto.</td>
+    </tr>
+    <tr>
+      <td>FIELD_INTEGRITY_EXCEPTION</td>
+      <td>Errore durante l'esportazione CRM: FIELD_INTEGRITY_EXCEPTION : Tipo di entità 'Lead': Codice errore CRM: FIELD_INTEGRITY_EXCEPTION, Campo/i: Country, Messaggio di errore CRM: Si è verificato un problema con questo paese, anche se potrebbe sembrare corretto. Selezionare un paese dall'elenco dei paesi validi.: Country, RecordId: 0123456</td>
+      <td>Il tipo previsto del record non corrisponde.</td>
+      <td>Il caso più comune è che non si seguono gli standard di denominazione Stato/Paese impostati nell’organizzazione Salesforce perché i campi Stato/Paese sono stati standardizzati per accettare solo determinati valori della lista di selezione. Per risolvere questo problema, è possibile:
+        <ul>
+          <li>Aggiorna il record in modo che segua i valori accettati dall’organizzazione per quel campo. Contatta l’amministratore SFDC per ottenere l’elenco dei valori accettati.</li>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">Disattiva le liste di selezione Stato/Paese</a>.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>INACTIVE_OWNER_OR_USER</td>
+      <td>Errore durante l'esportazione CRM: INACTIVE_OWNER_OR_USER : tipo di entità 'Contatto': Codice errore CRM: INACTIVE_OWNER_OR_USER, Messaggio di errore CRM: operazione eseguita con l'utente inattivo [1234] come proprietario del contatto, ID record: 0123456</td>
+      <td>In Marketo Measure manca l’autorizzazione "Aggiorna record con proprietari inattivi".</td>
+      <td>Concedi a Marketo Measure il "<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">Aggiorna record con proprietari inattivi</a>".</td>
+    </tr>
+    <tr>
+      <td>INSUFFICIENTE_ACCESS_OR_READONLY</td>
+      <td>Si è verificato un errore durante l'esportazione CRM: INSUFFICIENT_ACCESS_OR_READONLY : tipo di entità 'Account': CRM ErrorCode: INSUFFICIENT_ACCESS_OR_READONLY, CRM ErrorMessage: diritti di accesso insufficienti sull'ID oggetto: [123], RecordId: 456</td>
+      <td>In Marketo Measure mancano le autorizzazioni per un oggetto o un campo oppure l’oggetto è di sola lettura.</td>
+      <td>Fai riferimento a quanto segue <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Experience League</a> per informazioni sulle autorizzazioni richieste da Marketo Measure.</td>
+    </tr>
+    <tr>
       <td>INVALID_ADOBE_ANALYTICS_CONFIGURATION</td>
       <td>Si è verificato un errore durante l’esportazione di Adobe Analytics: INVALID_ADOBE_ANALYTICS_CONFIGURATION : Errore: caricamento non consentito. Conferma lo schema dell’origine dati prima del caricamento. Id Origine Dati:1234</td>
       <td>L’integrazione di Adobe Analytics non è configurata correttamente.</td>
@@ -74,6 +173,12 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
       Si è verificato un errore durante l’importazione dell’annuncio: INVALID_CURRENCY_ISO_CODE : La valuta XXX nell’account per 1234 non è supportata da Marketo Measure.</td>
       <td>Rilevata valuta non supportata.</td>
       <td>Nel sistema di origine indicato nella notifica (Ad, Crm, Marketo) la valuta associata al record è supportata e valida. Le valute supportate sono derivate dagli standard di valuta ISO.</td>
+    </tr>
+    <tr>
+      <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
+      <td>Errore durante l'esportazione CRM: MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS : Tipo di entità 'Campaign': CRM ErrorCode: INVALID_FIELD_FOR_INSERT_UPDATE, Campo/i: bizible2__UniqueId__c, CRM ErrorMessage: Impossibile creare/aggiornare i campi: bizible2__UniqueId__c. Controlla le impostazioni di protezione di questo campo e verifica che sia in lettura/scrittura per il tuo profilo o set di autorizzazioni.</td>
+      <td>In Marketo Measure mancano le autorizzazioni per i campi bizzarri.</td>
+      <td>Sono necessarie autorizzazioni di lettura e scrittura per tutti i campi con prefisso "bizible2__". Un elenco completo di questi campi è disponibile <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">in questo articolo</a>.</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
@@ -121,6 +226,18 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
       <td>In Marketo Measure mancano le autorizzazioni di scrittura per un oggetto richiesto.</td>
     </tr>
     <tr>
+      <td>AUTORIZZAZIONI_OGGETTO_RECORD_MANCANTI</td>
+      <td>Errore durante l'esportazione CRM: MISSING_RECORD_OBJECT_PERMISSIONS : Tipo di entità 'bizible2__Bizible_Touchpoint__c': Codice errore CRM: INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY, Campo/i: Account, Messaggio di errore CRM: diritti di accesso insufficienti sull'ID riferimento incrociato: 0123456</td>
+      <td>Autorizzazioni mancanti per Marketo Measure.</td>
+      <td>Questo errore è dovuto a diversi motivi specifici per l’organizzazione Salesforce. Di seguito sono riportati alcuni passaggi comuni per la risoluzione dei problemi che possono risolvere il problema:
+        <ul>
+          <li>Rivedi tutte le autorizzazioni necessarie per ciascuna <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">oggetto e campo</a>.</li>
+          <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</li>
+          <li>Concedi Marketo Measure "<a href="https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/users_profiles_view_all_mod_all.htm">Modifica tutto</a>" autorizzazioni.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td>NULL_EMPTY_CURRENCY_ISO_CODE</td>
       <td>
         <p>
@@ -136,6 +253,36 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
       <td>Concedere a Marketo Measure le autorizzazioni 'Visualizza tutti i dati' per l'oggetto designato.
       <p>
       Ulteriori informazioni sull’autorizzazione "Visualizza tutti i dati" <a href="https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/users_profiles_view_all_mod_all.htm">si trova qui</a>.</td>
+    </tr>
+    <tr>
+      <td>RECORD_NONCOMPLIANT_WITH_VALIDATION_RULES</td>
+      <td>Errore durante l'esportazione CRM: RECORD_NONCOMPLIANT_WITH_VALIDATION_RULES : tipo di entità 'Lead': CRM ErrorCode: FIELD_CUSTOM_VALIDATION_EXCEPTION, campi: Lead_Status_Reason__c, CRM ErrorMessage: È necessario selezionare il motivo dello stato del lead, ID record: 0123456</td>
+      <td>Il record in fase di aggiornamento non soddisfa una regola di convalida impostata nell’organizzazione Salesforce.</td>
+      <td>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
+      <p>
+      Aggiorna il tuo <a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">regole di convalida</a>.</td>
+    </tr>
+    <tr>
+      <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>
+      <td>Errore durante l'esportazione CRM: RESTRICT_PICKLIST_VALUES_ENABLED : Tipo di entità 'Campaign': CRM ErrorCode: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Campo/i: Areas_of_Interest__c, CRM ErrorMessage: valore non valido per il campo dell'elenco a discesa con restrizioni: Sconosciuto</td>
+      <td>Quando "Limita elenco di selezione ai valori definiti nel set di valori" è abilitato nella configurazione del campo elenco di selezione o il valore inserito nel campo non è disponibile nel tipo di record dell’oggetto.</td>
+      <td>Disattiva l’impostazione Limita elenco a discesa nell’organizzazione Salesforce.
+          <p>
+          Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
+      </td>
+    </tr>
+    <tr>
+      <td>CAMPO_OBBLIGATORIO_MANCANTE</td>
+      <td>Errore durante l'esportazione CRM: MISSING_REQUIRED_FIELD : Tipo di entità 'Lead': Codice errore CRM: REQUIRED_FIELD_MISSING, Campo/i: Product_Type__c, Messaggio di errore CRM: Mancano campi obbligatori: [Product_Type__c], RecordId: 0123456</td>
+      <td>Quando una regola di convalida specifica campi obbligatori sugli oggetti.</td>
+      <td>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
+      </td>
+    </tr>
+    <tr>
+      <td>ECCEZIONE_SCONOSCIUTA</td>
+      <td>Errore durante l'esportazione CRM: UNKNOWN_EXCEPTION : Tipo di entità 'Contatto': Codice errore CRM: UNKNOWN_EXCEPTION, Messaggio errore CRM: gli utenti del portale non possono possedere account partner, ID record: 0123456</td>
+      <td>Eccezione non gestita in Salesforce.</td>
+      <td>Se il problema persiste, crea un caso con Salesforce e copia i valori numerici nel messaggio di errore.</td>
     </tr>
     <tr>
       <td>UNSUPPORTED_CRM_PACKAGE_VERSION</td>
