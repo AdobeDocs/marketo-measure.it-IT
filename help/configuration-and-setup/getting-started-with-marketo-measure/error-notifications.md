@@ -3,9 +3,9 @@ description: Notifiche di errore - [!DNL Marketo Measure]
 title: Notifiche di errore
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 2b13a518d1be768a5c312ea4abdf2039aa22cf08
+source-git-commit: 20f886a0c6f448956ad2fda2d21a25f8d9a5a6af
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Notifiche di errore {#error-notifications}
 
 Di seguito è riportato un elenco di errori che potresti ricevere tramite notifica in-app o e-mail. Se ricevi uno di questi, segui i rispettivi passaggi per la risoluzione dei problemi. Se questi passaggi non risolvono il problema, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support).
+
+Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fai clic su **Visualizza tutto** nella parte inferiore della scheda Notifiche.
+
+![](assets/error-notifications-1.png)
 
 <table>
   <tbody>
@@ -49,7 +53,7 @@ Di seguito è riportato un elenco di errori che potresti ricevere tramite notifi
             </li>
           </ul>
           <p>
-           <img src="assets/error-notifications-1.png">
+           <img src="assets/error-notifications-2.png">
           </p>
       </td>
     </tr>
@@ -87,27 +91,17 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>DUPLICATES_DETECTED</td>
       <td>Errore durante l'esportazione CRM: DUPLICATES_DETECTED : Tipo di entità 'Contatto': Codice errore CRM: DUPLICATES_DETECTED, Messaggio di errore CRM: Stai creando un record duplicato. È consigliabile utilizzare invece un record esistente., RecordId: 0123456</td>
       <td>Il record da importare nell’organizzazione Salesforce esiste già.</td>
-      <td>
-        <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">Disattiva l’impostazione "Duplica regola"</a> per consentire duplicati.
-          </li>
-          <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
-          </li>
-        </ul>
-      </td>
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">Disattiva l’impostazione "Duplica regola"</a> per consentire duplicati.
+          <p>
+          Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</td>
     </tr>
     <tr>
       <td>DUPLICATE_VALUE</td>
       <td>Errore durante l'esportazione CRM: DUPLICATE_VALUE : tipo di entità 'Lead': Codice errore CRM: DUPLICATE_VALUE, Messaggio errore CRM: valore duplicato trovato: Email_Unique__c duplica il valore nel record con ID: 123, ID record: 456</td>
       <td>Il campo importato nell’organizzazione Salesforce non consente valori duplicati.</td>
-      <td>
-        <ul>
-          <li>Deseleziona la <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">"Casella di controllo univoca"</a> in Salesforce.
-          </li>
-          <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
-          </li>
-        </ul>
-      </td>
+      <td>Deseleziona la <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">"Casella di controllo univoca"</a> in Salesforce.
+          <p>
+          Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</td>
     </tr>
     <tr>
       <td>ENTITY_IS_LOCKED</td>
