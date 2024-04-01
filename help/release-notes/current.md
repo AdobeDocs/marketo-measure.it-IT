@@ -3,227 +3,41 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
+source-git-commit: 00a362a2e143749e1a132672b847eb06dcab6b9c
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# Note sulla versione: 2023 {#release-notes-2023}
+# Note sulla versione: 2024 {#release-notes-2024}
 
-Di seguito sono elencate tutte le funzioni nuove e aggiornate per le versioni del 2023.
-
-## Versione Q4 {#q4-release}
-
-<p>
-
-**Dashboard traffico web**
-
-Il nuovo [Dashboard traffico web](/help/marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md){target="_blank"} è ora accessibile a tutti i clienti. Questa dashboard offre una panoramica completa delle interazioni dei visitatori del sito web. Puoi analizzare metriche quali conteggi di visitatori univoci per URL, visite complessive, visualizzazioni di pagina e invii di moduli da URL di moduli o pagine di destinazione specifici. Puoi anche tenere traccia delle tendenze del traffico mensile e identificare i media a pagamento con prestazioni elevate, che ti aiuteranno a perfezionare le strategie per una generazione ottimale dei ricavi.
-
-Il nuovo set di dashboard predefiniti dovrebbe essere introdotto gradualmente, per concludersi prima della fine dell’anno.
-
->[!NOTE]
->
->Anche se le dashboard correnti diventeranno obsolete entro marzo 2024, fino a quel momento puoi utilizzare entrambe le versioni, garantendo una transizione senza intoppi.
-
-**Rimozione dati indirizzo IP**
-
-I dati degli indirizzi IP vengono rimossi dallo storage a lungo termine per garantire la conformità alla privacy dei dati. Attualmente, le tabelle e viste di Snowflake seguenti contengono indirizzi IP e prevediamo di rimuovere questi dati e aggiungere nuove informazioni di geolocalizzazione:
-
-<table style="width:400px">
-<thead>
-  <tr>
-    <th style="width:50%">Tabelle</th>
-    <th>Visualizzazioni</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>CUSTOMER_AB_TESTS</td>
-    <td>BIZ_CUSTOMER_AB_TESTS</td>
-  </tr>
-  <tr>
-    <td>CUSTOMER_EVENTS</td>
-    <td>BIZ_CUSTOMER_EVENTS</td>
-  </tr>
-  <tr>
-    <td>FORM_SUBMITS</td>
-    <td>BIZ_FORM_SUBMITS</td>
-  </tr>
-  <tr>
-    <td>IMPRESSION</td>
-    <td>BIZ_IMPRESSION</td>
-  </tr>
-  <tr>
-    <td>PAGE_VIEWS</td>
-    <td>BIZ_PAGE_VIEWS</td>
-  </tr>
-  <tr>
-    <td>SESSIONI</td>
-    <td>BIZ_SESSIONI</td>
-  </tr>
-  <tr>
-    <td>MAPPATURE_HOST_WEB</td>
-    <td>BIZ_WEB_HOST_MAPPINGS</td>
-  </tr>
-</tbody>
-</table>
-
-* Da ora in poi, scaricheremo Codice paese, Nome città e Codice regione invece di Nome paese, Nome città e Nome regione.
-* Durante l’elaborazione di tutte le attività web storiche, possono verificarsi incongruenze nelle informazioni sulla posizione tra i record. Queste incoerenze possono includere la presenza di indirizzi IP senza dettagli di geolocalizzazione, informazioni di geolocalizzazione aggiornate senza indirizzi IP o una combinazione di nomi e codici di paesi o aree geografiche.
-* _**Si prevede che questo periodo di dati misti si verifichi dall’01/04/2023 al 02/29/2023.**_
-
-**Dati titolo pagina nella tabella URL**
-
-Tabella URL in [data warehouse](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"} ora include un campo titolo pagina, oltre alle tabelle di dati web.
-
-Tieni presente che il titolo della pagina nella tabella URL potrebbe non corrispondere sempre al titolo della pagina in altre tabelle web. La tabella URL avrà il titolo della pagina più recente. Se il titolo dell’URL è stato modificato dopo lo svolgimento dell’attività web, non corrisponderà a quanto riportato nella tabella URL.
-
-**Scopri la riprogettazione del dashboard**
-
-Tutti gli utenti di Marketo Measure sperimenteranno le nostre dashboard in-app riprogettate che combinano usabilità avanzata con valore aggiunto. Stiamo inoltre introducendo nuove metriche, come il &quot;ROI realizzato&quot;, che tiene conto del tipico ritardo tra gli investimenti di marketing e gli acquisti nei go-to-market B2B.
-
-Il nuovo set di dashboard predefiniti dovrebbe essere introdotto gradualmente, a partire dalla prima settimana di ottobre fino alla fine dell’anno. Queste nuove dashboard verranno visualizzate automaticamente nelle istanze, insieme alle informazioni interne al prodotto e ai collegamenti alla documentazione.
-
-* [Nuova guida per Discover Dashboard](/help/marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md){target="_blank"}
-* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
-* [Dashboard panoramica ricavi](/help/marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md){target="_blank"}
-* [Dashboard ricavi attribuiti](/help/marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md){target="_blank"}
-* [Dashboard ROI](/help/marketo-measure-discover-ui/dashboards/roi-dashboard.md){target="_blank"}
-* [Dashboard Passport](/help/marketo-measure-discover-ui/dashboards/passport-dashboard.md){target="_blank"}
-
->[!NOTE]
->
->Anche se le dashboard correnti diventeranno obsolete entro marzo 2024, fino a quel momento puoi utilizzare entrambe le versioni, garantendo una transizione senza intoppi.
-
-### Obsoleti {#deprecations}
-
-<p>
-
-#### Deprecazioni campo Salesforce
-
-Elimineremo gradualmente i nostri processi di esportazione agli oggetti Lead/Contact per semplificare la nostra integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Anche i campi denormalizzati elencati di seguito diventeranno obsoleti, in quanto i clienti possono ottenere gli stessi dati dai loro oggetti punto di contatto. _**La tempistica della rimozione è giugno 2024.**_
-
-<table style="width:350px">
-<tbody>
-  <tr>
-    <td>bizible2__Ad_Campaign_Name_FT__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Ad_Campaign_Name_LC__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Landing_Page_FT__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Landing_Page_LC__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Touchpoint_Date_FT__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Touchpoint_Date_LC__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Touchpoint_Source_FT__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Touchpoint_Source_LC__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Marketing_Channel_FT__c</td>
-  </tr>
-  <tr>
-    <td>bizible2__Marketing_Channel_LC__c</td>
-  </tr>
-</tbody>
-</table>
-
-I campi che contengono le stesse informazioni sugli oggetti punto di contatto e punto di contatto di attribuzione sono:
-
-* bizible2__Ad_Campaign_Name__c
-* bizible2__Landing_Page__c
-* bizible2__Marketing_Channel__c
-* bizible2__Touchpoint_Date__c
-* bizible2__Touchpoint_Source__c
-
-**Azioni richieste**
-
-* Crea nuovi tipi di rapporto per lead e contatti con o senza punti di contatto.
-
-![](assets/release-notes-2023-1.png)
-
-* Crea rapporti che acquisiscono le funzionalità di qualsiasi rapporto esistente che utilizza i campi rimossi. Come parte di questo processo, è necessario modificare i campi nel rapporto come specificato di seguito:
-
-* Rimuovi campi Lead/Contatto FT/LC:
-
-![](assets/release-notes-2023-2.png)
-
-* Aggiungi campi punto di contatto:
-
-![](assets/release-notes-2023-3.png)
-
-* Il filtro Posizione punto di contatto e tutti i filtri che utilizzano i campi FT/LC, incluso il campo Data, devono essere aggiornati come segue:
-
-![](assets/release-notes-2023-4.png)
-
-![](assets/release-notes-2023-5.png)
-
-* Eliminare i report preesistenti che utilizzavano i campi rimossi dall&#39;oggetto Lead/Contact per non fare più riferimento a tali campi.
-
-<p>
-
-#### Relativo al pacchetto Dynamics
-
-* Per rimanere connesso a Dynamics, installa la versione più recente del pacchetto, v6.12. Versioni precedenti `(<v6.12)` non sarà più supportato. Questo aggiornamento ottimizza la creazione di record storici per ridurre l’utilizzo dello storage.
-
-* Il metodo obsoleto di OAuth con RefreshToken diventerà obsoleto. Fai riferimento a [questa guida](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md){target="_blank"} per aggiornare le credenziali in modo da rispettare le best practice di Microsoft relative all&#39;utilizzo di ClientSecret.
-
-#### Campo &quot;custom_properties&quot;
-
-Nel data warehouse, il campo &quot;custom_properties&quot; funge da archivio per punti dati aggiuntivi non coperti dallo schema fisso. Memorizzato in formato JSON, l’utilizzo di questo campo è limitato e la sua integrazione con le query SQL può essere complicata, influendo sulle prestazioni. Dati questi fattori, abbiamo deciso di rendere obsoleto questo campo. Questa modifica interesserà principalmente il livello di elaborazione dei dati nell’archiviazione delle tabelle di Azure e i dati esportati nel data warehouse.
-
-### Cosa sta succedendo? {#q4-whats-coming}
-
-<p>
-
-**Reporting personalizzato in-app**
-
-I clienti di Marketo Measure, per la prima volta, potranno creare e salvare i propri rapporti direttamente nell’app. Questo farà seguito al rilascio delle dashboard predefinite all’inizio del 2024.
-
-<br>
+Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.
 
 ## Versione secondo trimestre {#q2-release}
 
 <p>
 
-* **Consolidamento dei pacchetti Salesforce**
+**Funzionalità Marketo Measure obsolete in risposta al ritiro graduale dei cookie di terze parti**
 
-Stiamo unendo tutti i pacchetti Salesforce in un unico pacchetto completo per migliorare l’esperienza utente e semplificarne l’utilizzo. I pacchetti V1, V2_EXT e Reporting verranno ritirati il prossimo trimestre. Il nuovo pacchetto combina tutte le funzioni precedenti, consentendo un tracciamento più efficiente e informazioni più approfondite sui clienti.
+In risposta a crescenti preoccupazioni sulla privacy, i cookie di terze parti vengono gradualmente eliminati, con la scadenza Q3 2024 di Google Chrome che segnala la loro fine. Marketo Measure renderà obsolete alcune funzioni dipendenti dai cookie di terze parti, in particolare il tracciamento tra domini diversi e l’attribuzione view-through, che si basano sul cookie di impression Google/DoubleClick. Questa modifica non influirà su altre funzionalità di Marketo Measure o sull’utilizzo di cookie di prime parti. Seguendo la timeline di Google, queste funzionalità dovrebbero diventare obsolete entro il 1° giugno, anche se i dati raccolti prima di questa data saranno ancora accessibili ai clienti.
 
-I clienti che hanno già installato il pacchetto V2 devono aggiornarlo alla nuova versione consolidata.
+* [Adattamento a cookie di terze parti obsoleti in Marketo Measure](https://nation.marketo.com/t5/employee-blogs/adapting-to-third-party-cookie-deprecation-in-marketo-measure/ba-p/345110){target="_blank"}
+* [Cookie di Marketo Measure](/help/marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md){target="_blank"}
 
-Sono stati aggiunti due nuovi campi per migliorare le funzionalità di reporting:
+**Rollout graduale della gestione avanzata degli errori**
 
-* nome_modulo: ora disponibile negli oggetti BT/BAT, questo campo consente agli utenti di creare report basati sui nomi dei moduli.
-* user_touchpoint_id: questo campo consente agli utenti di creare rapporti con conteggi univoci dei punti di contatto degli utenti.
+Stiamo introducendo un rollout graduale della gestione avanzata degli errori per i processi di esportazione, a partire dalle notifiche immediate in-app per gli errori di autorizzazione e dalla transizione del 25 aprile a un nuovo approccio in cui i processi di esportazione verranno messi in pausa al momento dell’errore. Questa modifica mira a migliorare l’integrità e la visibilità dei dati, garantendo processi di gestione dei dati più fluidi e affidabili per i nostri utenti. Per garantire una transizione senza problemi e un&#39;interruzione minima delle operazioni, le modifiche vengono implementate in due fasi:
 
-[Questo articolo](/help/configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md){target="_blank"} Include guide sulla ricreazione di report e dashboard dai pacchetti di reporting legacy.
+* Disponibilità immediata di notifiche Pulse: riceverai notifiche Pulse in-app per gli errori di autorizzazione durante i processi di esportazione. Ciò non interromperà le esportazioni, ma ti aiuterà a conoscere gli errori senza influenzare i processi correnti.
+* Implementazione del processo in pausa il 25 aprile: a partire dal 25 aprile, se il sistema rileva un errore di autorizzazione durante un processo di esportazione, il processo verrà sospeso per garantire che non vengano saltati dati. Riceverai una notifica di eventuali problemi e, una volta corrette le autorizzazioni, il processo di esportazione riprenderà senza problemi da dove è stato interrotto.
 
-* **Aggiornamenti della versione API di Salesforce**
+_Perché è importante_
 
-Tutte le versioni API Salesforce delle classi Apex, inclusa la classe UserActivityContext, vengono aggiornate alle versioni supportate. (da 31,0 a 57,0)
+Integrità dei dati migliorata e integrazione a prova di futuro: il processo viene interrotto al primo segnale di guasto per evitare la perdita di dati e garantire l’accuratezza. Ciò consente una rapida risoluzione dei problemi, migliorando la qualità dell’esportazione dei dati e l’affidabilità del sistema.
 
-* **Installazione nuovo pacchetto**
+Visibilità immediata: l’introduzione delle notifiche Pulse consente di rispondere rapidamente agli errori di autorizzazione, evitando potenziali impatti sulle operazioni.
 
-Il nuovo collegamento di installazione del pacchetto consolidato [si trova qui](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1P000000VY6Z){target="_blank"}
+_Supporto della transizione_
 
-### Cosa sta succedendo? {#q2-whats-coming}
-
-<p>
-
-**Modifiche nell’archiviazione degli indirizzi IP**
-
-Non memorizzeremo più gli indirizzi IP nel nostro sistema in base a considerazioni sulla privacy. Continueremo a identificare e archiviare la geolocalizzazione dell’indirizzo IP, ma il formato cambierà (ad esempio, &quot;Stati Uniti&quot; in &quot;Stati Uniti&quot;).
+Per aiutarti ad adattarti a questa modifica, [abbiamo creato la documentazione](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"} con descrizioni chiare degli errori e passaggi completi per la risoluzione dei problemi.
