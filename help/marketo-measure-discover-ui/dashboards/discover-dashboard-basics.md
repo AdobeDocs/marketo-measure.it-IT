@@ -3,9 +3,9 @@ description: Scopri nozioni di base sulla dashboard - [!DNL Marketo Measure] - P
 title: Scopri nozioni di base sulla dashboard
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Scopri nozioni di base sulla dashboard {#discover-dashboard-basics}
 
 Questo articolo illustra le funzionalità fondamentali dell’interfaccia riprogettata, consentendoti di accedere e interpretare facilmente i dati. Approfondisci le dinamiche del riquadro dei filtri e scopri le complessità delle funzionalità di reporting avanzate, come le funzioni di drilling, i filtri incrociati e le descrizioni.
-
->[!NOTE]
->
->Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
 ## Riquadro Filtro {#filter-pane}
 

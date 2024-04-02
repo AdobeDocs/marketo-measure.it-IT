@@ -3,9 +3,9 @@ description: Dashboard panoramica ricavi - [!DNL Marketo Measure] - Prodotto
 title: Dashboard panoramica ricavi
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Dashboard panoramica ricavi {#revenue-overview-dashboard}
 
 La dashboard Panoramica ricavi fornisce informazioni sui ricavi totali derivati dal CRM, gettando luce sul ruolo delle strategie di marketing. Offre una panoramica dell’influenza del marketing sui ricavi complessivi e contribuisce alla corretta chiusura delle offerte.
-
->[!NOTE]
->
->Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
 **Risponde alle domande della bacheca:**
 

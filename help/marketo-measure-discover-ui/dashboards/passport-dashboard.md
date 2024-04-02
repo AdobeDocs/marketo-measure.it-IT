@@ -3,9 +3,9 @@ description: Dashboard Passport - [!DNL Marketo Measure] - Prodotto
 title: Dashboard Passport
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: 88dfdac366d29bed29ed39979cb76cad7aee4025
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Dashboard Passport {#passport-dashboard}
 
 Il dashboard Passport offre agli addetti al marketing una visualizzazione dinamica di lead, contatti e opportunità durante la transizione attraverso varie fasi entro un periodo specificato. Filtrando per una data specifica, gli utenti possono ottenere anche un’istantanea dei record per quel giorno.
-
->[!NOTE]
->
->Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
 **Risponde alle domande della bacheca:**
 

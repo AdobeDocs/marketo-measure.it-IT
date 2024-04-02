@@ -3,9 +3,9 @@ description: Dashboard ROI - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ROI
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Dashboard ROI {#roi-dashboard}
 
 La dashboard ROI offre agli addetti al marketing una visualizzazione granulare del ritorno sull’investimento per canali, sottocanali e campagne. Suddivide meticolosamente i modelli di costi e ricavi, evidenziando al contempo metriche quali costo per lead, offerta e opportunità, garantendo una comprensione completa dell’attribuzione marketing.
-
->[!NOTE]
->
->Questa dashboard è attualmente in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e la garanzia di funzionalità ottimali.
 
 **Domande alle risposte della bacheca**
 
