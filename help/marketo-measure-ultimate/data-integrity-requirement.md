@@ -3,7 +3,7 @@ description: '[!DNL Marketo Measure] Requisiti di integrità dei dati più avanz
 title: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: db71cbfaf7deb5b724ac4babc38e835c04fadac7
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 17%
@@ -12,7 +12,7 @@ ht-degree: 17%
 
 # [!DNL Marketo Measure] Requisiti di integrità dei dati più avanzati {#marketo-measure-ultimate-data-integrity-requirement}
 
-[!DNL Marketo Measure] convalida i set di dati AEP in arrivo per garantire che i dati siano sufficienti e coerenti per l’attribuzione. Il mancato rispetto dei requisiti di integrità dei dati fa sì che il set di dati venga rifiutato da [!DNL Marketo Measure] di rete. Questo documento descrive i requisiti di integrità dei dati, fornisce esempi di query per l’ispezione dei dati e consiglia una soluzione per i campi obbligatori con valore nullo.
+[!DNL Marketo Measure] convalida i set di dati AEP in arrivo per garantire che i dati siano sufficienti e coerenti per l’attribuzione. Il mancato rispetto dei requisiti di integrità dei dati fa sì che il set di dati venga rifiutato da [!DNL Marketo Measure] di rete. Questo articolo descrive i requisiti di integrità dei dati, fornisce esempi di query per l’ispezione dei dati e consiglia una soluzione per i campi obbligatori con valore nullo.
 
 ## Oggetto entità {#entity-object}
 
