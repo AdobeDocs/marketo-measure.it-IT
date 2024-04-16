@@ -2,9 +2,10 @@
 description: Dashboard velocità lead - [!DNL Marketo Measure] - Prodotto
 title: Dashboard della velocità del lead
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
+source-git-commit: de7239abaedaf1a59b3760f12736a225d71027a1
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -20,14 +21,16 @@ Risposte alle domande poste da questa dashboard:
 
 ## Componenti del dashboard {#dashboard-components}
 
+La visualizzazione di &quot;Lead&quot; o &quot;Contatto&quot; è determinata dalla preferenza impostata in: Impostazioni > Impostazioni attribuzione > Oggetto dashboard predefinito.
+
 ### Velocità lead/contatto per fase {#lead-contact-velocity-by-stage}
 
 Il grafico a barre mostra la durata media in giorni della spesa di lead/contatti in ogni fase di vendita in un determinato arco temporale.
 
 Risposte alle domande del grafico:
 
-Quale fase di vendita ha in genere la durata più lunga per lead/contatti?
-Come si confronta il tempo trascorso nella fase &quot;Primo contatto&quot; con la fase &quot;MQL&quot;?
+* Quale fase di vendita ha in genere la durata più lunga per lead/contatti?
+* Come si confronta il tempo trascorso nella fase &quot;Primo contatto&quot; con la fase &quot;MQL&quot;?
 
 ![](assets/lead-velocity-dashboard-1.png)
 
@@ -35,7 +38,7 @@ Come si confronta il tempo trascorso nella fase &quot;Primo contatto&quot; con l
 
 Il grafico a linee delle serie temporali mostra il tempo medio, in giorni, trascorso da lead/contatti in ogni fase di vendita nell’arco temporale specificato.
 
-* utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
+* Utilizza le funzionalità drill-down e up per classificare i dati per mese, trimestre o anno.
 * Passa il cursore sopra una riga per visualizzare informazioni dettagliate.
 
 Risposte alle domande del grafico:
