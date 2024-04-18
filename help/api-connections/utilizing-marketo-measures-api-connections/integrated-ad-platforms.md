@@ -4,9 +4,9 @@ description: Piattaforme di annunci integrate - [!DNL Marketo Measure]
 title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,13 @@ Questo strumento è un’estensione di Chrome che consente di generare rapidamen
 ## Bing Ads {#bing-ads}
 
 Bing Ads è una piattaforma integrata che consente di abilitare l’assegnazione tag automatica per gli URL o di utilizzare uno strumento di terze parti, ad esempio [!DNL Marketo Measure], per assegnare tag agli annunci. [!DNL Bing Ads] si basa anche sui parametri UTM.
+
+La nostra integrazione supporta i seguenti tipi di annunci:
+
+* Annuncio testo
+* Annuncio mobile
+* Annuncio di testo espanso
+
 
 La funzione di assegnazione automatica tag di Bing Ads aggiunge i seguenti parametri UTM:
 

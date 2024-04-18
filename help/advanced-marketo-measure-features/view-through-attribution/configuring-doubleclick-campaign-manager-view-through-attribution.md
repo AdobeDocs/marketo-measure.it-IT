@@ -4,9 +4,9 @@ description: Configurazione Della Visualizzazione Di Doubleclick Campaign Manage
 title: Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution {#configuring-doubleclick-campaign-manager-view-through-attribution}
 
 ## Misurazione della vista tramite l&#39;attribuzione {#measuring-view-through-attribution}
+
+>[!IMPORTANT]
+>
+>A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annunciata rimozione dei cookie di terze parti nel terzo trimestre 2024 da parte di Google Chrome segna effettivamente la fine di questa forma di tracciamento. Di conseguenza, Adobe ha dichiarato obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, le funzioni di tracciamento tra domini diversi e di attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti Adobe.
 
 >[!NOTE]
 >

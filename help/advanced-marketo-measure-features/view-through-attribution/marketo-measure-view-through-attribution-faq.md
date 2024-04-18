@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] Domande frequenti sull’attribuzione View 
 title: "[!DNL Marketo Measure] Domande frequenti sull’attribuzione Visualizza tramite"
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 1%
 ## Cos’è la visualizzazione tramite attribuzione? {#what-is-view-through-attribution}
 
 Il [!DNL Marketo Measure] [!UICONTROL View Through Attribution] Questa funzione include la possibilità di includere le ad impression nel modello di attribuzione.
+
+>[!IMPORTANT]
+>
+>A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annunciata rimozione dei cookie di terze parti nel terzo trimestre 2024 da parte di Google Chrome segna effettivamente la fine di questa forma di tracciamento. Di conseguenza, Adobe ha dichiarato obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, le funzioni di tracciamento tra domini diversi e di attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti Adobe.
 
 ## Perché è [!UICONTROL View Through Attribution] Importante? {#why-is-view-through-attribution-important}
 
