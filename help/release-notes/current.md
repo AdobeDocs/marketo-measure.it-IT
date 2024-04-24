@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 6aaf6fd26f19e9382cc559e54558e1c5d84cfd6d
+source-git-commit: cbb2afd48c0e462768be0a7cfe56007ae285c492
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ In risposta a crescenti preoccupazioni sulla privacy, i cookie di terze parti ve
 
 **Rollout graduale della gestione avanzata degli errori**
 
-Stiamo introducendo un rollout graduale della gestione avanzata degli errori per i processi di esportazione, a partire dalle notifiche immediate in-app per gli errori di autorizzazione e dalla transizione del 25 aprile a un nuovo approccio in cui i processi di esportazione verranno messi in pausa al momento dell’errore. Questa modifica mira a migliorare l’integrità e la visibilità dei dati, garantendo processi di gestione dei dati più fluidi e affidabili per i nostri utenti. Per garantire una transizione senza problemi e un&#39;interruzione minima delle operazioni, le modifiche vengono implementate in due fasi:
+Stiamo introducendo un rollout graduale della gestione avanzata degli errori per i processi di esportazione, a partire da notifiche immediate in-app per gli errori di autorizzazione e dalla transizione a un nuovo approccio in cui i processi di esportazione verranno messi in pausa al punto dell’errore. Questa modifica mira a migliorare l’integrità e la visibilità dei dati, garantendo processi di gestione dei dati più fluidi e affidabili per i nostri utenti. Per garantire una transizione senza problemi e un&#39;interruzione minima delle operazioni, le modifiche vengono implementate in due fasi:
 
 * Disponibilità immediata di notifiche Pulse: riceverai notifiche Pulse in-app per gli errori di autorizzazione durante i processi di esportazione. Ciò non interromperà le esportazioni, ma ti aiuterà a conoscere gli errori senza influenzare i processi correnti.
-* Implementazione del processo in pausa il 25 aprile: a partire dal 25 aprile, se il sistema rileva un errore di autorizzazione durante un processo di esportazione, il processo verrà sospeso per garantire che non vengano saltati dati. Riceverai una notifica di eventuali problemi e, una volta corrette le autorizzazioni, il processo di esportazione riprenderà senza problemi da dove è stato interrotto.
+* Implementazione di Job Pausing il 25 aprile: **POSTICIPATO** - Dopo aver preso in considerazione il feedback degli utenti di Marketo Measure, abbiamo deciso di posticipare l’implementazione della sospensione dei processi di esportazione al punto di errore, originariamente prevista per il 25 aprile. Riconosciamo che arrestare i posti di lavoro potrebbe non essere l&#39;approccio più efficace. Ci impegniamo a trovare una soluzione migliore che mantenga l&#39;integrità dei dati e riduca al minimo le interruzioni. Non riusciremo a modificare il nostro sistema attuale finché non saremo in grado di garantire una soluzione più in linea con le esigenze dei nostri utenti.
 
 _Perché è importante_
 
