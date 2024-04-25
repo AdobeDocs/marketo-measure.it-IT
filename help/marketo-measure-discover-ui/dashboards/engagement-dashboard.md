@@ -2,9 +2,10 @@
 description: Dashboard di coinvolgimento - [!DNL Marketo Measure] - Prodotto
 title: Dashboard di coinvolgimento
 feature: Reporting
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
+source-git-commit: db71635a77d6e2555c442fb45371fd5a93e3c502
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -12,6 +13,14 @@ ht-degree: 0%
 # Dashboard di coinvolgimento {#engagement-dashboard}
 
 La dashboard di coinvolgimento tiene traccia meticolosamente delle metriche di coinvolgimento degli utenti. Mostra i punti di contatto, il numero di persone impegnate e la media dei punti di contatto per persona. Utilizza il grafico a barre delle serie temporali per una visualizzazione mensile, trimestrale o annuale e il grafico a barre per approfondimenti dettagliati su canale, sottocanale e campagna. Questo strumento è essenziale per comprendere i pattern di coinvolgimento e perfezionare le strategie di coinvolgimento.
+
+Monitoriamo ogni interazione con il cliente come punti di contatto utente (UT), i punti di dati raccolti &quot;grezzi&quot;, che fungono da base per le metriche di coinvolgimento sul nostro dashboard. Non tutte le UT evolvono in punti di contatto dell’acquirente (BT) o in punti di contatto di attribuzione dell’acquirente (BAT), in quanto si tratta di risultati selezionati per attribuire interazioni specifiche dei clienti ad attività correlate ai ricavi. È importante notare che le regole di soppressione non influiscono sulle UT o sul dashboard di coinvolgimento.
+
+* **Punti di contatto utente**: punti di contatto creati da tutti gli impegni.
+* **Punti di contatto dell&#39;acquirente**: punti di contatto selezionati per l’attribuzione di lead e contatti. Le BT non sono collegate alle opportunità e non hanno ricavi associati.
+* **Punti di contatto di attribuzione acquirente**: punti di contatto selezionati per l’attribuzione dell’opportunità. Le BAT hanno implicazioni in termini di ricavi in quanto sono collegate alle opportunità.
+
+L’utilizzo di BT o BAT solo per misurare il coinvolgimento sottovaluterebbe la reale portata delle interazioni dei clienti, poiché il coinvolgimento è più ampio della semplice attribuzione.
 
 Risposte alle domande della dashboard:
 
