@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: '"[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda".'
-source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
+source-git-commit: 5759615376954806d6f0682378ce4bbc786bc43a
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,7 @@ ht-degree: 0%
       + [Scopri nozioni di base sulla dashboard](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
       + [Nuova guida per Discover Dashboard](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [Criterio di visibilità dei dati del dashboard](marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md)
+      + [Dashboard opportunità attribuita](marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md)
       + [Dashboard ricavi attribuiti](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
       + [Dashboard di coinvolgimento](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
       + [Dashboard della velocità del lead](marketo-measure-discover-ui/dashboards/lead-velocity-dashboard.md)
