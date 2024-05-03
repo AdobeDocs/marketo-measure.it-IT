@@ -3,7 +3,7 @@ description: Dashboard ricavi attribuiti - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ricavi attribuiti
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: 01ed0bfa424a1fb5eb68983b1a54c4c5eddc163a
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi diret
 >
 >Questa dashboard è in versione beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e dopo aver garantito funzionalità ottimali.
 
-**Risponde alle domande della bacheca:**
+**Domande alle risposte della bacheca**:
 
 * Quali canali, sottocanali o campagne sono più classificati in termini di ricavi attribuiti?
 * Qual è l’importo totale dei ricavi attribuiti e il numero delle offerte chiuse attribuite?
@@ -37,7 +37,7 @@ Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per ca
 * Utilizza le funzionalità drill-down e up per classificare i dati per mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
-**Risposte alle domande del grafico:**
+**Domande sulle risposte del grafico**:
 
 * Quali canali hanno generato il maggior ricavo attribuito ogni trimestre?
 * Qual è stata la suddivisione dei ricavi attribuiti per canale il mese scorso?
@@ -48,7 +48,7 @@ Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per ca
 
 Ricavi attribuiti totali segmentati per canale, sottocanale e campagna, in formato sia tabulare che albero. Fai clic sul pulsante nell’angolo in alto a destra per passare da una visualizzazione all’altra.
 
-**Risponde alle domande della bacheca:**
+**Domande alle risposte della bacheca**:
 
 * In che modo la distribuzione dei ricavi attribuiti varia tra i diversi sottocanali all’interno di un canale?
 * Quali campagne in un determinato sottocanale generano i ricavi più attribuiti?
