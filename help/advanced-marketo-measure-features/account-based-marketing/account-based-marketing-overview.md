@@ -4,9 +4,9 @@ description: Scopri Account-Based Marketing (ABM) e come Adobe Marketo Measure a
 title: Panoramica del marketing basato sull’account
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: e2165fea3e76baeedf9b22247d005578d6c6da5d
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,22 @@ Affinché il nostro modello di marketing basato sull’account inizi a essere po
 
 ## Mappatura lead-account {#lead-to-account-mapping}
 
-La mappatura lead-account è una parte fondamentale di un approccio ABM efficace. Con la mappatura lead-account, i potenziali clienti o i lead sono raggruppati nello stesso account aziendale in cui interagiscono con il tuo marchio. Questo ti consente di eseguire il targeting e vendere a singoli utenti della stessa azienda in modo coerente. Non sono disponibili [!DNL Salesforce] per iniziare a sfruttare questa funzione. Il [!DNL Marketo Measure] Lead to Account Mapping cinque diversi metodi di corrispondenza:
+La mappatura lead-account è una parte fondamentale di un approccio ABM efficace. Con la mappatura lead-account, i potenziali clienti o i lead sono raggruppati nello stesso account aziendale in cui interagiscono con il tuo marchio. Questo ti consente di eseguire il targeting e vendere a singoli utenti della stessa azienda in modo coerente. Non sono disponibili [!DNL Salesforce] per iniziare a sfruttare questa funzione. Il [!DNL Marketo Measure] Eseguire il mapping dei conti con diversi metodi di corrispondenza:
 
 * Sito Web lead per sito Web account
 * Lead del dominio e-mail al dominio del sito web dell’account
 * Nome società cliente potenziale al nome account
 * Dominio del sito Web da società lead a account
-* Corrispondenza del dominio sull&#39;indirizzo e-mail del lead con l&#39;account tramite l&#39;indirizzo e-mail del contatto
+* Lead del sito Web al dominio e-mail dei contatti dell&#39;account
+* Dominio e-mail lead nel dominio e-mail dei contatti dell’account
+* Lead del sito Web al dominio e-mail dei lead dell&#39;account
+* Dominio e-mail lead nel dominio e-mail dei lead dell’account
+
+I lead/contatti degli account vengono convalidati dai domini e-mail/sito Web e confrontati con il dominio o sottodominio dell’e-mail/sito Web del lead. Viene utilizzato l’account con più corrispondenze.
 
 >[!NOTE]
 >
->Ogni lead tenta di ottenere un abbinamento a un account nell’ordine preferenziale dei metodi di cui sopra. Una volta trovata una corrispondenza, l’AccountId viene immediatamente impostato sul Lead e non viene trovato utilizzando un altro metodo. Se il lead ha già un AccountId valido, viene ignorato.
+>Ogni lead tenta di ottenere un abbinamento a un account nell’ordine preferenziale dei metodi di cui sopra. Una volta trovata una corrispondenza, l’AccountId viene immediatamente impostato sul Lead e non viene trovato utilizzando un altro metodo.
 
 ## Punteggio di coinvolgimento predittivo {#predictive-engagement-score}
 
