@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 88edec8ec5d015fb4152b9e822cb1bfa68ed85c2
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Marketi Engage Cookie Sync è ora disponibile per Marketo Measure Ultimate. Per 
 1. Nella pagina Schemi AEP, modifica lo schema Persona B2B e aggiungi il gruppo di campi &quot;Dettagli persona Marketo Engage&quot;.
 1. Quando acquisisci i dati su MMU, mappa il campo ID cookie dal gruppo di campi al campo Cookie dal Marketo Engage.
 
-**Stadi Boomerang abilitati per i clienti di livello 2 e 3**
+**Stadi Boomerang abilitati per i clienti di livello 2**
 
-La funzione Boomerang Stage sarà disponibile per tutti i clienti di livello 2 e 3 a partire dal 7 giugno 2024. Per informazioni più dettagliate su questa funzione, consulta la documentazione di seguito.
+Precedentemente disponibile solo per i clienti di livello 3, la funzione Boomerang Stage è disponibile anche per tutti i clienti di livello 2 a partire dal 7 giugno 2024. Per informazioni più dettagliate su questa funzione, consulta la documentazione di seguito.
 
 * [Fasi e punti di contatto del boomerang](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
 * [Impostazione delle fasi del boomerang](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
