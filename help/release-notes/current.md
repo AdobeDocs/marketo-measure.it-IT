@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 69b937f53f8ba3e449f7b13fb92d169dadc14c17
+source-git-commit: 88edec8ec5d015fb4152b9e822cb1bfa68ed85c2
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.
 
 **Promemoria: deprecazioni del campo Salesforce - 14 giugno**
 
-Come annunciato lo scorso anno, elimineremo gradualmente i nostri processi di esportazione verso oggetti Lead/Contact per semplificare la nostra integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Per ottenere gli stessi dati dagli oggetti punto di contatto, segui la procedura riportata di seguito. [documentato qui](/help/release-notes/previous-releases/2023.md#deprecations). Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
+Come annunciato lo scorso anno, elimineremo gradualmente i nostri processi di esportazione verso oggetti Lead/Contact per semplificare la nostra integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Per ottenere gli stessi dati dagli oggetti punto di contatto, segui la procedura riportata di seguito. [documentato qui](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
 
 Questa modifica apporterà due vantaggi chiave:
 
@@ -29,7 +29,7 @@ Questa modifica apporterà due vantaggi chiave:
 
 **Dashboard opportunità attribuita**
 
-Siamo entusiasti di presentare il nuovo [Dashboard opportunità attribuita](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md), progettato per offrirti una visione completa di come le tue attività di marketing contribuiscono a opportunità di pipeline sia nascenti che mature. Questa dashboard consente di approfondire i dettagli di ogni opportunità aperta e chiusa attribuibile alle strategie, con la flessibilità di filtrare per fase di opportunità. Fornisce informazioni sui canali, i sottocanali o le campagne con la classificazione più alta in termini di quantità di opportunità attribuita e visualizza l’importo totale dell’opportunità attribuita insieme al conteggio delle opportunità aperte e chiuse attribuite.
+Siamo entusiasti di presentare il nuovo [Dashboard opportunità attribuita](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}, progettato per offrirti una visione completa di come le tue attività di marketing contribuiscono a opportunità di pipeline sia nascenti che mature. Questa dashboard consente di approfondire i dettagli di ogni opportunità aperta e chiusa attribuibile alle strategie, con la flessibilità di filtrare per fase di opportunità. Fornisce informazioni sui canali, i sottocanali o le campagne con la classificazione più alta in termini di quantità di opportunità attribuita e visualizza l’importo totale dell’opportunità attribuita insieme al conteggio delle opportunità aperte e chiuse attribuite.
 
 **Sincronizzazione cookie di Marketo Engage per Marketo Measure Ultimate**
 
@@ -37,6 +37,14 @@ Marketi Engage Cookie Sync è ora disponibile per Marketo Measure Ultimate. Per 
 
 1. Nella pagina Schemi AEP, modifica lo schema Persona B2B e aggiungi il gruppo di campi &quot;Dettagli persona Marketo Engage&quot;.
 1. Quando acquisisci i dati su MMU, mappa il campo ID cookie dal gruppo di campi al campo Cookie dal Marketo Engage.
+
+**Stadi Boomerang abilitati per i clienti di livello 2 e 3**
+
+La funzione Boomerang Stage sarà disponibile per tutti i clienti di livello 2 e 3 a partire dal 7 giugno 2024. Per informazioni più dettagliate su questa funzione, consulta la documentazione di seguito.
+
+* [Fasi e punti di contatto del boomerang](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
+* [Impostazione delle fasi del boomerang](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
+* [Scenari Boomerang Stage](/help/advanced-marketo-measure-features/boomerang/boomerang-stage-scenarios.md){target="_blank"}
 
 <p>
 
