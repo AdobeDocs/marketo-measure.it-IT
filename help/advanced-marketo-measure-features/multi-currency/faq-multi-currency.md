@@ -4,9 +4,9 @@ description: Domande frequenti (più divise) - [!DNL Marketo Measure]
 title: Domande frequenti (più divise)
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Tieni presente che per questa funzione sono disponibili due diversi bit di feature. Entrambi si trovano nel [!UICONTROL General] Scheda della sezione CRM in Impostazioni: Valute multiple e Valute avanzate. È necessario abilitare più divise se il cliente utilizza più di una valuta, mentre il bit di funzione aggiuntivo Divise avanzate può essere abilitato se il cliente utilizza [!DNL Salesforce]la funzione &quot;Advanced Currency Management&quot; in cui l’utente può impostare un intervallo temporale per i tassi di conversione.
 
-Sfortunatamente, non sappiamo quando un cliente passa da Semplice a Avanzato se è già stato attivato Avanzato. Per questo motivo, il cliente deve mantenere manualmente l’impostazione Valute avanzate allineata con la propria impostazione di gestione delle relazioni con i clienti. Questo dovrebbe essere evidente al cliente se le conversioni non sono corrette, il che significa che non sapevamo quale livello di conversione applicare.
+Marketo Measure richiama automaticamente l’impostazione della valuta dal CRM del cliente. La configurazione manuale in Marketo Measure per corrispondere al sistema CRM non è più necessaria. L’impostazione della valuta si trova nella pagina &quot;Generale&quot; in &quot;CRM&quot;.
 
 **Perché il mio account degli annunci mi sta dando un messaggio di avviso?**
 

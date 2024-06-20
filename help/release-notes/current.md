@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 97a82ae0649ae5b1349d025a7a7cf433bc64bc7e
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.
 
 **Promemoria: deprecazioni del campo Salesforce - 14 giugno**
 
-Come annunciato lo scorso anno, elimineremo gradualmente i nostri processi di esportazione verso oggetti Lead/Contact per semplificare la nostra integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Per ottenere gli stessi dati dagli oggetti punto di contatto, segui la procedura riportata di seguito. [documentato qui](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
+Come annunciato lo scorso anno, [eliminazione graduale dei processi di esportazione negli oggetti lead/contatto](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} per semplificare l&#39;integrazione ed eliminare la necessità di esportare gli oggetti standard Salesforce. Per ottenere gli stessi dati dagli oggetti punto di contatto, segui la procedura riportata di seguito. [documentato qui](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
 
 Questa modifica apporterà due vantaggi chiave:
 

@@ -4,7 +4,7 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
 source-wordcount: '21110'
 ht-degree: 3%
@@ -33,24 +33,14 @@ Il valore aggiuntivo _Aggiunge il modello dati dimensionale_ ERD presenta una vi
 _Fare clic su un&#39;immagine per la versione a schermo intero_
 
 <table style="table-layout:auto"> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
  <tbody> 
   <tr> 
-   <td><strong>Data Warehouse modello dati</strong></td> 
-   <td><strong>Aggiunge il modello dati dimensionale</strong></td> 
+   <th>Data Warehouse modello dati</th> 
+   <th>Aggiunge il modello dati dimensionale</th> 
   </tr> 
   <tr> 
-   <td> 
-    <div> 
-     <p><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></p> 
-    </div></td>
-   <td> 
-    <div> 
-     <p><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></p>
-    </div></td> 
+   <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td> 
   </tr> 
  </tbody> 
 </table>
@@ -2026,7 +2016,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’opportunità a cui è attribuito il BAT.</p>
+        <p>ID dell’opportunità a cui è attribuito l’BAT.</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2036,7 +2026,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>CONTACT_ID</td>
       <td>varchar</td>
       <td>
-        <p>ID del contatto associato alla BAT.</p>
+        <p>ID del contatto associato all’BAT.</p>
       </td>
       <td>
         <p>0030Z00003K5bpKQAR</p>
@@ -2045,7 +2035,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>EMAIL</td>
       <td>varchar</td>
-      <td>Indirizzo e-mail associato alla BAT.</td>
+      <td>Indirizzo e-mail associato all’BAT.</td>
       <td>person@adobe.com</td>
     </tr>
     <tr>
@@ -2054,7 +2044,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’account a cui è attribuita la BAT.</p>
+        <p>ID dell’account a cui viene attribuito l’BAT.</p>
       </td>
       <td>
         <p>0013100001otbIAAY</p>
@@ -2066,7 +2056,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del punto di contatto utente che ha generato la BAT.</p>
+        <p>ID del punto di contatto utente che ha generato l’BAT.</p>
       </td>
       <td>
         <p>person@adobe.com_00v1B00003ZbWzHQAV</p>
@@ -2087,7 +2077,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>VISITOR_ID</td>
       <td>varchar</td>
-      <td>ID del visitatore associato alla BAT.</td>
+      <td>ID del visitatore associato all’BAT.</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
@@ -4912,7 +4902,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
       </td>
       <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>
-        <p>False</p>
+        <p>Falso</p>
       </td>
     </tr>
     <tr>
@@ -8908,7 +8898,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>Un ID univoco per la transizione.</p>
       </td>
       <td>
-        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Pianificata-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
       </td>
     </tr>
     <tr>
@@ -11294,7 +11284,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>Un ID univoco per il punto di contatto dell'acquirente (BT).</p>
+        <p>Un ID univoco per il punto di contatto acquirente (BT).</p>
       </td>
       <td>
         <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
@@ -11315,7 +11305,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>EMAIL</p>
       </td>
       <td>varchar</td>
-      <td>Indirizzo e-mail associato a BT.</td>
+      <td>Indirizzo e-mail associato all’BT.</td>
       <td>
         <p>person@adobe.com</p>
       </td>
@@ -11324,7 +11314,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       <td>CONTACT_ID</td>
       <td>varchar</td>
       <td>
-        <p>ID del contatto associato al BT.</p>
+        <p>ID del contatto associato all’BT.</p>
       </td>
       <td>0030Z00003K5bpKQAR</td>
     </tr>
@@ -11334,7 +11324,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell'account associato al BT.</p>
+        <p>ID dell’account associato all’BT.</p>
       </td>
       <td>
         <p>0013100001lSLScAAO</p>
@@ -11346,7 +11336,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del lead associato al BT.</p>
+        <p>ID del lead associato all’BT.</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -11370,7 +11360,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del punto di contatto utente che ha generato il BT.</p>
+        <p>ID del punto di contatto utente che ha generato l’BT.</p>
       </td>
       <td>
         <p>person@adobe.com_2018-08-29:18-14-53-8102030.10df92cbb414</p>
@@ -11379,7 +11369,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     <tr>
       <td>VISITOR_ID</td>
       <td>varchar</td>
-      <td>ID del visitatore associato al BT.</td>
+      <td>ID del visitatore associato all’BT.</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
@@ -12170,7 +12160,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch). Previsto 0 poiché si tratta di un BT.</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch). È previsto 0 poiché si tratta di un BT.</p>
       </td>
       <td>
         <p>0</p>
@@ -12184,7 +12174,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Previsto 0 poiché si tratta di un BT.</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). È previsto 0 poiché si tratta di un BT.</p>
       </td>
       <td>
         <p>0</p>
@@ -12193,7 +12183,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     <tr>
       <td>PERCENTUALE_MODELLO_PERSONALIZZATO</td>
       <td>numero(22,19)</td>
-      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Previsto 0 poiché si tratta di un BT.</p>
+      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). È previsto 0 poiché si tratta di un BT.</p>
       </td>
       <td>0</td>
     </tr>
@@ -13367,7 +13357,7 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
 
 ## Query di esempio {#sample-queries}
 
-**Quanti punti di contatto dell&#39;acquirente erano disponibili il mese scorso per ogni canale/sottocanale?**
+**Quanti punti di contatto dell&#39;acquirente (BT) erano presenti il mese scorso per ogni canale/sottocanale?**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
@@ -13457,7 +13447,7 @@ group by 1,2
 order by 1
 ```
 
-**Mostra tutti i punti di contatto di attribuzione dell&#39;acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
+**Mostra tutti i punti di contatto di attribuzione dell’acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
 
 >[!NOTE]
 >
