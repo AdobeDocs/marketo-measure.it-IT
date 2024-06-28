@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] Campi su Standard [!DNL Salesforce] Oggetti
 title: "[!DNL Marketo Measure] Campi su Standard [!DNL Salesforce] Oggetti"
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -22,30 +22,6 @@ Scopri i vari [!DNL Marketo Measure] campi aggiunti a [!DNL Salesforce] oggetti 
 ## Account {#account}
 
 Punteggio di coinvolgimento predittivo: questo campo viene utilizzato con la funzione ABM per fornire un punteggio relativo al livello di coinvolgimento dell’account e tiene conto di molti fattori quali l’attualità delle visualizzazioni di pagina, il numero di contatti associati all’account, la presenza di un’operazione chiusa e così via.
-
-## Caso {#case}
-
-Aggiungiamo campi all’oggetto Case relativo alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che utilizzano l’oggetto Case al posto del lead o del contatto e ha anche lo scopo di visualizzare i dati nel caso in cui un cliente non volesse che creassimo record di punti di contatto.
-
-Sorgente del punto di contatto (FT): è la sorgente della prima interazione di contatto.
-
-Sorgente del punto di contatto (LC): è la sorgente dell’interazione di contatto per la creazione di lead.
-
-Canale di marketing (FT): questo è il canale di marketing dell’interazione di primo contatto.
-
-Canale di marketing (LC): questo è il canale di marketing dell’interazione touch per la creazione di lead.
-
-Ad Campaign Name (FT): si tratta della campagna UTM, della campagna pubblicitaria dalle reti pubblicitarie o [!DNL Salesforce] Campagna dell’interazione di primo contatto.
-
-Ad Campaign Name (LC): si tratta della campagna UTM, della campagna pubblicitaria dalle reti pubblicitarie o [!DNL Salesforce] Campagna del [!UICONTROL lead creation] interazione touch.
-
-Pagina di destinazione (FT): è la pagina di destinazione della prima interazione di contatto.
-
-Pagina di destinazione (LC): è la pagina di destinazione del [!UICONTROL lead creation] interazione touch.
-
-Data del punto di contatto (FT): è la data della prima interazione di contatto.
-
-Data punto di contatto (LC): è la data dell’interazione di contatto per la creazione di lead.
 
 ## Campaign {#campaign}
 
@@ -75,61 +51,13 @@ Stato del punto di contatto (opportunità): campo diagnostico relativo a una fun
 
 Data stato punto di contatto: data in cui i campi diagnostici sono stati compilati.
 
-Data del punto di contatto dell&#39;acquirente: relativa al [!UICONTROL Bulk Update Touchpoint date] dall’oggetto Campaign. Quando viene utilizzata, la data del punto di contatto definita viene applicata al membro della campagna.
+Data Buyer Touchpoint: è correlata alla [!UICONTROL Bulk Update Touchpoint date] dall’oggetto Campaign. Quando viene utilizzata, la data del punto di contatto definita viene applicata al membro della campagna.
 
 OnCampaignMemberDelete: pronto all’uso, [!DNL Salesforce] non compare quando i membri della campagna vengono eliminati, il che può causare problemi con rapporti di attribuzione accurati. Quando un membro della campagna viene eliminato, viene attivato per informare [!DNL Marketo Measure] per rimuovere i punti di contatto relativi al membro della campagna inesistente.
 
-## Contatto {#contact}
-
-Aggiungiamo campi all’oggetto Contact relativo alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che preferiscono che l’attribuzione venga segnalata direttamente ai campi invece di creare record di punti di contatto. La maggior parte dei nostri clienti utilizza il percorso record Touchpoint, ma utilizza anche questi campi all’interno della piattaforma di automazione.
-
-Sorgente del punto di contatto (FT): è la sorgente della prima interazione di contatto.
-
-Sorgente del punto di contatto (LC): è la sorgente dell’interazione di contatto per la creazione di lead.
-
-Canale di marketing (FT): questo è il canale di marketing dell’interazione di primo contatto.
-
-Canale di marketing (LC): questo è il canale di marketing dell’interazione touch per la creazione di lead.
-
-Ad Campaign Name (FT): si tratta della campagna UTM, della campagna pubblicitaria dalle reti pubblicitarie o [!DNL Salesforce] Campagna dell’interazione di primo contatto.
-
-Ad Campaign Name (LC): si tratta della campagna UTM, della campagna pubblicitaria dalle reti pubblicitarie o [!DNL Salesforce] Campagna del [!UICONTROL lead creation] interazione touch.
-
-Pagina di destinazione (FT): è la pagina di destinazione della prima interazione di contatto.
-
-Pagina di destinazione (LC): è la pagina di destinazione del [!UICONTROL lead creation] interazione touch.
-
-Data del punto di contatto (FT): è la data della prima interazione di contatto.
-
-Data punto di contatto (LC): è la data dell’interazione di contatto per la creazione di lead.
-
-BizibleID: viene utilizzato in relazione all’attribuzione delle attività e all’integrazione delle metriche di tracciamento delle chiamate per l’associazione dei contatti al punto di contatto.
-
 ## Lead {#lead}
 
-Aggiungiamo campi all’oggetto Lead relativi alle attività cardine di contatto Primo contatto e Creazione lead. Questo è per i clienti che preferiscono che l’attribuzione venga segnalata direttamente ai campi invece di creare record di punti di contatto. La maggior parte dei nostri clienti utilizza il percorso record Touchpoint, ma utilizza anche questi campi all’interno della piattaforma di automazione.
-
-Sorgente del punto di contatto (FT): è la sorgente della prima interazione di contatto.
-
-Sorgente del punto di contatto (LC): è la sorgente dell’interazione di contatto per la creazione di lead.
-
-Canale di marketing (FT): questo è il canale di marketing dell’interazione di primo contatto.
-
-Canale di marketing (LC): questo è il canale di marketing dell’interazione touch per la creazione di lead.
-
-Ad Campaign Name (FT): si tratta della campagna UTM, della campagna pubblicitaria dalle reti pubblicitarie o [!DNL Salesforce] Campagna dell’interazione di primo contatto.
-
-Ad Campaign Name (LC): si tratta della campagna UTM, della campagna pubblicitaria dalle reti pubblicitarie o [!DNL Salesforce] Campagna di interazione touch per la creazione di lead.
-
-Pagina di destinazione (FT): è la pagina di destinazione della prima interazione di contatto.
-
-Pagina di destinazione (LC): è la pagina di destinazione dell’interazione touch per la creazione di lead.
-
-Data del punto di contatto (FT): è la data della prima interazione di contatto.
-
-Data punto di contatto (LC): è la data dell’interazione di contatto per la creazione di lead.
-
-BizibleID: viene utilizzato in relazione all’attribuzione delle attività e all’integrazione delle metriche di tracciamento delle chiamate per l’associazione di lead al punto di contatto.
+Il campo Account Bizible viene utilizzato per la mappatura lead-account per la funzione ABM. Compiliamo questo campo per creare la relazione di ricerca tra i due oggetti.
 
 ## Account {#account-1}
 
@@ -137,10 +65,10 @@ Viene utilizzato per la mappatura Lead to Account per la funzione ABM. Compiliam
 
 ## Opportunità {#opportunity}
 
-[!DNL Marketo Measure] Importo opportunità: questo campo viene utilizzato nello scenario in cui viene utilizzato un campo importo personalizzato nell’opportunità. Il valore del campo personalizzato viene mappato su [!DNL Marketo Measure] Importo opportunità utilizzando un flusso di lavoro e quindi leggere questo campo per i campi di attribuzione Ricavi nell&#39;oggetto punto di contatto di attribuzione buyer.
+[!DNL Marketo Measure] Importo opportunità: questo campo viene utilizzato nello scenario in cui viene utilizzato un campo importo personalizzato nell’opportunità. Il valore del campo personalizzato viene mappato su [!DNL Marketo Measure] Importo dell’opportunità utilizzando un flusso di lavoro e quindi leggi questo campo per i campi di attribuzione Ricavi sull’oggetto Buyer Attribution Touchpoint.
 
 ## Attività {#activity}
 
 BizibleID: consente di correlare un punto di contatto alle attività per l’attribuzione delle attività e l’integrazione delle metriche di tracciamento delle chiamate.
 
-Data punto di contatto acquirente: si tratta di un campo che può essere popolato tramite un flusso di lavoro da utilizzare come data per l’attribuzione delle attività e che verrà compilato affinché l’integrazione delle metriche di tracciamento delle chiamate possa sapere quando si è verificata l’interazione.
+Data Buyer Touchpoint: questo è un campo che può essere popolato tramite un flusso di lavoro da utilizzare come data per l’attribuzione delle attività e che verrà compilato affinché l’integrazione calltrackingmetrics possa sapere quando si è verificata l’interazione.

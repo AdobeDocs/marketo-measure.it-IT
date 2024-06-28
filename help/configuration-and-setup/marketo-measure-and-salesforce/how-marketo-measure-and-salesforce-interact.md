@@ -4,9 +4,9 @@ description: Come [!DNL Marketo Measure] e [!DNL Salesforce] Interact - Marketo 
 title: Come [!DNL Marketo Measure] e [!DNL Salesforce] Interagisci
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
+source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1152'
 ht-degree: 19%
 
 ---
@@ -124,67 +124,7 @@ Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagis
    <td>Personalizzato</td> 
    <td>x</td> 
    <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -233,67 +173,7 @@ Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagis
    <td>Standard</td> 
    <td>x</td> 
    <td> </td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -335,67 +215,7 @@ Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagis
    <td>IsDeleted</td> 
    <td>Standard</td> 
    <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_FT__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_LC__c</td> 
-   <td>Personalizzato</td> 
-   <td>x</td> 
-   <td>x </td> 
+   <td> </td>
   </tr> 
  </tbody> 
 </table>
@@ -685,6 +505,12 @@ Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagis
    <td><br></td> 
   </tr>
   <tr> 
+   <td>Nome</td> 
+   <td>Standard</td> 
+   <td>x</td> 
+   <td>x</td> 
+  </tr>
+  <tr> 
    <td>bizible2__UniqueId__c</td> 
    <td>Personalizzato</td> 
    <td>x</td> 
@@ -814,9 +640,9 @@ Elenca i [!DNL Salesforce] Oggetti standard che [!DNL Marketo Measure] interagis
 
 Oltre a creare campi personalizzati sugli oggetti standard di SFDC, una volta [!DNL Marketo Measure] viene installato, vengono creati due oggetti personalizzati. Di seguito è riportato un elenco di questi oggetti personalizzati insieme a una tabella che indica i campi che [!DNL Marketo Measure] scriverà a.
 
-**Punto di contatto dell&#39;acquirente**
+**Buyer Touchpoint**
 
-Il punto di contatto dell&#39;acquirente è [!DNL Marketo Measure] Oggetto personalizzato per incapsulare le interazioni di marketing relative a contatti, lead e casi.
+Il Buyer Touchpoint è un [!DNL Marketo Measure] Oggetto personalizzato per incapsulare le interazioni di marketing relative a contatti, lead e casi.
 
 <table> 
  <tbody> 
@@ -1031,7 +857,7 @@ Il punto di contatto dell&#39;acquirente è [!DNL Marketo Measure] Oggetto perso
    <td>x</td> 
   </tr> 
   <tr> 
-   <td>bizible2__Touchpoint_Source__c</td> 
+   <td>bizible2__Punto di contatto_Source__c</td> 
    <td>Personalizzato</td> 
    <td>x</td> 
    <td>x</td> 
@@ -1120,11 +946,11 @@ Il [!DNL Marketo Measure] La persona è un [!DNL Marketo Measure] Oggetto person
  </tbody> 
 </table>
 
-## Punto di contatto di attribuzione acquirente {#buyer-attribution-touchpoint}
+## Buyer Attribution Touchpoint {#buyer-attribution-touchpoint}
 
-Il punto di contatto di attribuzione acquirente è un [!DNL Marketo Measure] Oggetto personalizzato per racchiudere l’influenza del marketing sulle opportunità.
+Il Buyer Attribution Touchpoint è un [!DNL Marketo Measure] Oggetto personalizzato per racchiudere l’influenza del marketing sulle opportunità.
 
-**Punto di contatto di attribuzione acquirente**
+**Buyer Attribution Touchpoint**
 
 <table> 
  <tbody> 
@@ -1351,7 +1177,7 @@ Il punto di contatto di attribuzione acquirente è un [!DNL Marketo Measure] Ogg
    <td>x</td> 
   </tr> 
   <tr> 
-   <td>bizible2__Touchpoint_Source__c</td> 
+   <td>bizible2__Punto di contatto_Source__c</td> 
    <td>Personalizzato</td> 
    <td>x</td> 
    <td>x</td> 

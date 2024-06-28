@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] Installazione e configurazione dei pacchett
 title: "[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione dei pacchetti"
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Dopo aver completato l&#39;installazione, è possibile aggiornare [[!DNL Salesfo
 
 [!DNL Marketo Measure] invia e riceve dati tramite una connessione [!DNL Salesforce] utente all&#39;interno di [!DNL Marketo Measure] app.
 
-Per inviare i dati del punto di contatto al [!DNL Salesforce] , l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ad esempio, punto di contatto Acquirente e punto di contatto Attribuzione acquirente) e standard [!DNL Salesforce] oggetti quali lead e contatti.
+Per inviare i dati del punto di contatto al [!DNL Salesforce] , l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ad esempio, Buyer Touchpoint e Buyer Attribution Touchpoint) e standard [!DNL Salesforce] oggetti quali lead e contatti.
 
 Creare un [!DNL Marketo Measure] profilo per garantire che non si verifichino errori di convalida durante il push dei dati in Salesforce.
 
@@ -91,4 +91,6 @@ Passaggio 4: accedere al [!DNL Marketo Measure] Account e autorizzazione [!DNL S
 
 >[!MORELIKETHIS]
 >
->[Installazione di Adobe Admin Console](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}
+>* [Panoramica delle autorizzazioni di integrazione](/help/api-connections/utilizing-marketo-measures-api-connections/integration-permissions-overview.md){target="_blank"}
+>
+>* [Installazione di Adobe Admin Console](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}
