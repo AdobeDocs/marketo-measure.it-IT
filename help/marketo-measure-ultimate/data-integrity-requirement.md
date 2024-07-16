@@ -3,9 +3,9 @@ description: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement - [!DNL
 title: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
+source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1611'
 ht-degree: 15%
 
 ---
@@ -886,6 +886,8 @@ ht-degree: 15%
     </tr>
   </tbody>
 </table>
+
+## Requisiti per i dati di conversione valuta {#currency-conversion-data-requirements}
 
 **Valuta predefinita**: in Marketo Measure, tutti i ricavi e i costi vengono convertiti in una valuta predefinita al momento della generazione del rapporto. Deve esistere un record con la stessa copertura data per la valuta target stessa (ad esempio, da USD a USD) con un tasso di conversione di 1.
 
