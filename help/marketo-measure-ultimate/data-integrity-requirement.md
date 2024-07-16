@@ -1,18 +1,18 @@
 ---
-description: '[!DNL Marketo Measure] Requisiti di integrità dei dati più avanzati - [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: db71cbfaf7deb5b724ac4babc38e835c04fadac7
+source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 17%
+source-wordcount: '1607'
+ht-degree: 15%
 
 ---
 
-# [!DNL Marketo Measure] Requisiti di integrità dei dati più avanzati {#marketo-measure-ultimate-data-integrity-requirement}
+# Requisiti di integrità dei dati di [!DNL Marketo Measure] Ultimate {#marketo-measure-ultimate-data-integrity-requirement}
 
-[!DNL Marketo Measure] convalida i set di dati AEP in arrivo per garantire che i dati siano sufficienti e coerenti per l’attribuzione. Il mancato rispetto dei requisiti di integrità dei dati fa sì che il set di dati venga rifiutato da [!DNL Marketo Measure] di rete. Questo articolo descrive i requisiti di integrità dei dati, fornisce esempi di query per l’ispezione dei dati e consiglia una soluzione per i campi obbligatori con valore nullo.
+[!DNL Marketo Measure] convalida i set di dati AEP in arrivo per garantire che i dati siano sufficienti e coerenti per l&#39;attribuzione. Il mancato rispetto del requisito di integrità dei dati determina il rifiuto del set di dati da parte del sistema [!DNL Marketo Measure]. Questo articolo descrive i requisiti di integrità dei dati, fornisce esempi di query per l’ispezione dei dati e consiglia una soluzione per i campi obbligatori con valore nullo.
 
 ## Oggetto entità {#entity-object}
 
@@ -22,13 +22,13 @@ ht-degree: 17%
     <th>Gruppo di campi XDM</th>
     <th>Percorso XDM</th>
     <th>Tipo XDM</th>
-    <th>Campo origine dati</th>
+    <th>Campo Source dati</th>
     <th>Obbligatorio</th>
     <th>Note</th>
   </tr>
   <tbody>
     <tr>
-      <td colspan="7"><strong>Account</strong> (Account per Salesforce, Azienda e/o Account denominato per Marketo)</td>
+      <td colspan="7"><strong>Account</strong> (account per Salesforce, società e/o account denominato per Marketo)</td>
     </tr>
     <tr>
       <td rowspan="6">Account aziendale XDM</td>
@@ -201,7 +201,7 @@ ht-degree: 17%
       <td>Per costo campagna</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>Membro della campagna</strong> (Membro della campagna per Salesforce, Iscrizioni al programma per Marketo)</td>
+      <td colspan="7"><strong>Membro della campagna</strong> (membro della campagna per Salesforce, iscrizioni al programma per Marketo)</td>
     </tr>
     <tr>
       <td rowspan="14">Membri della campagna aziendale XDM</td>
@@ -356,7 +356,7 @@ ht-degree: 17%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>Persona</strong> (Contatto o lead per Salesforce, Persone per Marketo)</td>
+      <td colspan="7"><strong>Persona</strong> (contatto o lead per Salesforce, persone per Marketo)</td>
     </tr>
     <tr>
       <td>Profilo individuale XDM</td>
@@ -491,7 +491,7 @@ ht-degree: 17%
       <td>Esempio: Marketo</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>opportunità</strong> (opportunità per Salesforce, opportunità per Marketo)</td>
+      <td colspan="7"><strong>Opportunità</strong> (opportunità per Salesforce, opportunità per Marketo)</td>
     </tr>
     <tr>
       <td rowspan="13">Opportunità di business XDM</td>
@@ -887,6 +887,16 @@ ht-degree: 17%
   </tbody>
 </table>
 
+**Valuta predefinita**: in Marketo Measure, tutti i ricavi e i costi vengono convertiti in una valuta predefinita al momento della generazione del rapporto. Deve esistere un record con la stessa copertura data per la valuta target stessa (ad esempio, da USD a USD) con un tasso di conversione di 1.
+
+**Tassi di conversione**: ogni coppia (valuta di origine, valuta di destinazione) può avere più tassi di conversione per diversi periodi di date. Le tariffe devono coprire l&#39;intero intervallo di tempo compreso tra 0001-01-01 e 9999-12-31, in base all&#39;oggetto Salesforce DatedConversionRate.
+
+**Intervallo date**:
+* Nessun intervallo di date sovrapposto all’interno di un set di tassi (valuta di origine, valuta di destinazione) (ad esempio, dal 2023-01-01 al 2023-02-01 e dal 2023-01-01 al 2024-01-01).
+* Nessun intervallo tra intervalli di date. La data di inizio è inclusiva e la data di fine è esclusiva.
+
+<p>
+
 ## ExperienceEvent {#experienceevent}
 
 <table style="table-layout:auto">
@@ -895,7 +905,7 @@ ht-degree: 17%
     <th>Gruppo di campi XDM</th>
     <th>Percorso XDM</th>
     <th>Tipo XDM</th>
-    <th>Campo origine dati</th>
+    <th>Campo Source dati</th>
     <th>Obbligatorio</th>
     <th>Note</th>
   </tr>
