@@ -20,9 +20,9 @@ Ulteriori informazioni sui quattro componenti principali che compongono il frame
 * Applicazioni/sistemi di terze parti
 * Applicazione Marketo Measure
 
-## JavaScript di Marketo Measure {#marketo-measure-javascript}
+## Marketo Measure JavaScript {#marketo-measure-javascript}
 
-JavaScript di Marketo Measure tiene traccia di tutte le interazioni di marketing online, denominate anche punti di contatto, che potenziali clienti/lead hanno con la tua organizzazione. Si tratta di uno script personalizzato che viene aggiunto prima della chiusura `</head>` su ogni pagina del sito web.
+Marketo Measure JavaScript tiene traccia di tutte le interazioni di marketing online, denominate anche punti di contatto, che i potenziali clienti/lead hanno con la tua organizzazione. Si tratta di uno script personalizzato che viene aggiunto prima del tag di chiusura `</head>` in ogni pagina del sito Web.
 
 `<script type="text/javascript" src="//[cdn.bizible.com/scripts/bizible.js](http://cdn.bizible.com/scripts/bizible.js)" async=""></script>`
 
@@ -60,6 +60,6 @@ Qui puoi aggiornare le informazioni generali della tua azienda e accedere al cod
 
 Questa voce di menu ti consente di configurare le impostazioni di attribuzione e mappatura dei canali, gestire le integrazioni con i sistemi di gestione delle relazioni con i clienti e le applicazioni di terze parti, visualizzare/aggiungere utenti dell’account Marketo Measure e aggiornare le informazioni di fatturazione.
 
-**Dashboard del ROI di marketing**
+**Dashboard ROI marketing**
 
 La voce di menu della dashboard Marketing ROI è quella in cui puoi visualizzare i dati in termini di prestazioni del canale, attività e costi.

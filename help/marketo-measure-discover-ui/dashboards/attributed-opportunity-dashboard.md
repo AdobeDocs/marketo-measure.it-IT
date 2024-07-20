@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Il dashboard delle opportunità attribuite offre una panoramica completa del modo in cui le attività di marketing contribuiscono alle opportunità di pipeline sia nascenti che mature. Approfondisci i dettagli di ogni opportunità aperta e chiusa attribuibile alle tue strategie, con la flessibilità di filtrare per fase di opportunità, sottolineando l’intera portata dell’influenza del marketing oltre gli accordi conclusi.
 
-**Domande sulle risposte della dashboard**:
+**Risposte alle domande del dashboard**:
 
 * Quali canali, sottocanali o campagne sono più in alto in termini di quantità di opportunità attribuita?
 * Qual è l&#39;importo totale delle opportunità attribuite e il conteggio delle opportunità aperte e chiuse attribuite?
@@ -23,7 +23,7 @@ Il dashboard delle opportunità attribuite offre una panoramica completa del mod
 
 ### Riquadri KPI {#kpi-tiles}
 
-* **Importo opportunità attribuita**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità chiuse e aperte con punti di contatto creati entro il periodo di data filtrato.
+* **Importo opportunità attribuita**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, dalle opportunità chiuse e aperte con punti di contatto creati entro il periodo di data filtrato.
 * **Opportunità attribuite**: numero di opportunità chiuse e aperte con punti di contatto.
 
 ### Grafico Importo opportunità attribuita per canale nel tempo {#attributed-opportunity-amount-by-channel-over-time-chart}
@@ -33,7 +33,7 @@ Grafico a barre in pila che mostra l’importo totale dell’opportunità attrib
 * Sfrutta le funzionalità drill-down e up per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
-**Domande sulle risposte del grafico**:
+**Risposte alle domande del grafico**:
 
 * Quali canali hanno generato l’importo di opportunità più attribuito ogni trimestre?
 * Qual è stato il raggruppamento dell’importo delle opportunità attribuite per canale il mese scorso?
@@ -44,7 +44,7 @@ Grafico a barre in pila che mostra l’importo totale dell’opportunità attrib
 
 Quantità totale di opportunità attribuite segmentate per canale, sottocanale e campagna, presentate in entrambi i formati Tabulare e Albero. Fai clic sul pulsante nell’angolo in alto a destra per passare da una visualizzazione all’altra.
 
-**Domande alle risposte della bacheca**:
+**Risposte alle domande della bacheca**:
 
 * In che modo la distribuzione dell’importo dell’opportunità attribuita varia tra i diversi sottocanali all’interno di un canale?
 * Quali campagne in un determinato sottocanale stanno guidando la quantità di opportunità più attribuita?
@@ -53,7 +53,7 @@ Quantità totale di opportunità attribuite segmentate per canale, sottocanale e
 
 La vista a tabella offre informazioni chiare e organizzate sulla distribuzione dell’importo di opportunità attribuito. Gli utenti possono distinguere rapidamente i pattern di prestazioni e individuare strategie di marketing di forte impatto, suddividendo i dati in canali, sottocanali e campagne.
 
-Fai clic su **+** accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
+Fai clic sull&#39;icona **+** accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
 
 ![](assets/attributed-opportunity-dashboard-2.png)
 

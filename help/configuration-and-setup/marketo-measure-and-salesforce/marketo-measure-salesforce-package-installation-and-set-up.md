@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] Installazione e configurazione dei pacchetti Salesforce - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione dei pacchetti"
+description: "[!DNL Marketo Measure] installazione e configurazione del pacchetto Salesforce - [!DNL Marketo Measure]"
+title: "[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione del pacchetto"
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
 source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
@@ -10,31 +10,31 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Installazione e configurazione del pacchetto Salesforce {#marketo-measure-salesforce-package-installation-and-set-up}
+# Installazione e configurazione del pacchetto Salesforce [!DNL Marketo Measure] {#marketo-measure-salesforce-package-installation-and-set-up}
 
-Prima di installare [!DNL Marketo Measure] [!DNL Salesforce] base, è necessario determinare se si sta installando per la prima volta in un [!DNL Salesforce] prima di passare all’istanza di produzione Salesforce.
+Prima di installare il pacchetto di base [!DNL Marketo Measure] [!DNL Salesforce], è necessario determinare se si sta installando in una sandbox [!DNL Salesforce] prima di passare all&#39;istanza di produzione Salesforce.
 
 >[!NOTE]
 >
->Una volta [!DNL Marketo Measure] account connesso a un [!DNL Salesforce] nell&#39;istanza di produzione, non è possibile spostarsi all&#39;indietro e connettersi a una sandbox. Inoltre, un [!DNL Marketo Measure] l&#39;account può essere connesso a un solo [!DNL Salesforce] istanza di produzione.
+>Una volta che l&#39;account [!DNL Marketo Measure] è connesso a un&#39;istanza di produzione [!DNL Salesforce], non è possibile spostarsi all&#39;indietro e connettersi a una sandbox. Inoltre, un account [!DNL Marketo Measure] può essere connesso a una sola istanza di produzione [!DNL Salesforce].
 
-Il [!DNL Marketo Measure] Il pacchetto base contiene:
+Il pacchetto di base [!DNL Marketo Measure] contiene:
 
-* 7 Personalizzato [!DNL Marketo Measure] Oggetti
-* Personalizzato [!DNL Marketo Measure] Campi
-* 25 [!DNL Stock] Rapporti
+* 7 Oggetti [!DNL Marketo Measure] personalizzati
+* [!DNL Marketo Measure] campi personalizzati
+* 25 [!DNL Stock] report
 
-[!DNL Marketo Measure] è in grado di leggere standard [!DNL Salesforce] Oggetti, campi e record, [!DNL Marketo Measure] non aggiornerà mai o invierà loro dati. Tutti i dati raccolti da [!DNL Marketo Measure] JavaScript sarà incluso in [!DNL Marketo Measure] Oggetti e campi personalizzati.
+[!DNL Marketo Measure] è in grado di leggere oggetti, campi e record [!DNL Salesforce] standard. Tuttavia, [!DNL Marketo Measure] non aggiornerà né invierà mai dati a tali oggetti. Tutti i dati raccolti dal JavaScript [!DNL Marketo Measure] verranno visualizzati negli oggetti e nei campi personalizzati [!DNL Marketo Measure].
 
-Per installare il [!DNL Marketo Measure Salesforce] pacchetto di base.
+Per installare il pacchetto di base [!DNL Marketo Measure Salesforce], attenersi alla procedura riportata di seguito.
 
-1. Utilizzando un browser in incognito, vai al [AppExchange Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} e accedi.
+1. Utilizzando un browser in incognito, vai all&#39;[AppExchange Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} e accedi.
 
-1. Installare in [!DNL Marketo Measure] in sandbox o produzione.
+1. Eseguire l&#39;installazione nel pacchetto [!DNL Marketo Measure] in sandbox o produzione.
 
-1. Accedi a [!DNL Salesforce] come Amministratore.
+1. Accedere a [!DNL Salesforce] come amministratore.
 
-1. Seleziona **[!UICONTROL Install]per tutti gli utenti**.
+1. Selezionare **[!UICONTROL Install]per tutti gli utenti**.
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-1.png)
 
@@ -42,52 +42,52 @@ Per installare il [!DNL Marketo Measure Salesforce] pacchetto di base.
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-2.png)
 
-Dopo aver completato l&#39;installazione, è possibile aggiornare [[!DNL Salesforce] layout di pagina](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"} con [!DNL Marketo Measure] campi, se necessario.
+Dopo aver completato l&#39;installazione, puoi aggiornare i [[!DNL Salesforce] layout di pagina](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"} con i campi [!DNL Marketo Measure], se necessario.
 
 >[!NOTE]
 >
->Leggi informazioni su [!DNL Marketo Measure] Set di autorizzazioni creati e [come vengono utilizzati](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
+>Scopri i set di autorizzazioni [!DNL Marketo Measure] creati e [come vengono utilizzati](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
 
-## Creazione di un [!DNL Marketo Measure] Profilo e utente {#creating-a-marketo-measure-profile-and-user}
+## Creazione di un profilo e di un utente [!DNL Marketo Measure] {#creating-a-marketo-measure-profile-and-user}
 
-[!DNL Marketo Measure] invia e riceve dati tramite una connessione [!DNL Salesforce] utente all&#39;interno di [!DNL Marketo Measure] app.
+[!DNL Marketo Measure] invia e riceve dati tramite un utente [!DNL Salesforce] connesso all&#39;interno dell&#39;app [!DNL Marketo Measure].
 
-Per inviare i dati del punto di contatto al [!DNL Salesforce] , l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ad esempio, Buyer Touchpoint e Buyer Attribution Touchpoint) e standard [!DNL Salesforce] oggetti quali lead e contatti.
+Per inviare i dati dei punti di contatto all&#39;istanza [!DNL Salesforce], l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ad esempio, Buyer Touchpoint e Buyer Attribution Touchpoint) e a [!DNL Salesforce] oggetti standard come lead e contatti.
 
-Creare un [!DNL Marketo Measure] profilo per garantire che non si verifichino errori di convalida durante il push dei dati in Salesforce.
+Crea un profilo [!DNL Marketo Measure] per assicurarti di non riscontrare errori di convalida durante il push dei dati in Salesforce.
 
-Passaggio 1: creare un [!DNL Marketo Measure] profilo
+Passaggio 1: creare un profilo [!DNL Marketo Measure] specifico
 
 1. Assegna le seguenti autorizzazioni:
 
-* &quot;[!DNL Marketo Measure] Set di autorizzazioni amministratore&quot;
+* &quot;[!DNL Marketo Measure] set di autorizzazioni amministratore&quot;
    * Il set di autorizzazioni gestite consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
 * &quot;Visualizza e modifica set di autorizzazioni lead convertiti&quot;
-   * Ciò consente [!DNL Marketo Measure] per decorare i lead dopo la conversione in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
+   * Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
 
 >[!NOTE]
 >
 >Questo profilo può essere un clone di un profilo amministratore di sistema.
 
-Passaggio 2: creare un [!DNL Marketo Measure] in modo da poter tenere traccia dell&#39;impatto di [!DNL Marketo Measure] sul tuo [!DNL Salesforce] istanza
+Passaggio 2: crea un utente [!DNL Marketo Measure] dedicato in modo da poter tenere traccia dell&#39;impatto di [!DNL Marketo Measure] sull&#39;istanza [!DNL Salesforce]
 
-1. Assegna il nuovo [!DNL Marketo Measure] Profilo per tale utente.
+1. Assegnare il nuovo profilo [!DNL Marketo Measure] a tale utente.
 
 1. Abilita &quot;Utente marketing&quot; come autorizzazione a livello di utente.
 
-* Il [!UICONTROL Marketing User] La casella di controllo consente all’utente di creare campagne e utilizzare l’Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell’oggetto della campagna.
+* La casella di controllo [!UICONTROL Marketing User] consente all&#39;utente di creare campagne e utilizzare l&#39;Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell&#39;oggetto della campagna.
 
 Passaggio 3: escludere questo profilo da tutti i trigger, i flussi di lavoro e i processi
 
-Passaggio 4: accedere al [!DNL Marketo Measure] Account e autorizzazione [!DNL Salesforce] connessione con il nuovo utente
+Passaggio 4: accedere all&#39;account [!DNL Marketo Measure] e autorizzare nuovamente la connessione [!DNL Salesforce] con il nuovo utente
 
-1. Vai a apps.bizible.com e accedi con il nuovo utente di produzione [!DNL Salesforce] credenziali.
+1. Visitare il sito Web all&#39;indirizzo apps.bizible.com e accedere con le credenziali [!DNL Salesforce] di produzione del nuovo utente.
 
-1. Seleziona **[!UICONTROL Settings]** all&#39;interno del **[!UICONTROL My Account]** a discesa.
+1. Selezionare **[!UICONTROL Settings]** nel menu a discesa **[!UICONTROL My Account]**.
 
-1. Seleziona **[!UICONTROL Connections]** all&#39;interno del **[!UICONTROL Integrations]** raggruppamento.
+1. Selezionare **[!UICONTROL Connections]** nel raggruppamento **[!UICONTROL Integrations]**.
 
-1. Fare clic sull&#39;icona a destra della connessione corrente [!DNL Salesforce] e seleziona per **Autorizza di nuovo con la produzione**. Accedere nuovamente con le nuove credenziali utente (se richieste).
+1. Fare clic sull&#39;icona della chiave a destra della connessione [!DNL Salesforce] attualmente connessa e selezionare **Riautorizza con produzione**. Accedere nuovamente con le nuove credenziali utente (se richieste).
 
 >[!MORELIKETHIS]
 >

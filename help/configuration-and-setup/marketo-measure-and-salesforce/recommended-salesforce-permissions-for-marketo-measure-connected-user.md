@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874696
-description: Consigliato [!DNL Salesforce] Autorizzazioni per [!DNL Marketo Measure] Utente connesso - [!DNL Marketo Measure]
-title: Consigliato [!DNL Salesforce] Autorizzazioni per [!DNL Marketo Measure] Utente connesso
+description: ' [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso - [!DNL Marketo Measure]'
+title: ' [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso'
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,38 +11,38 @@ ht-degree: 0%
 
 ---
 
-# Consigliato [!DNL Salesforce] Autorizzazioni per [!DNL Marketo Measure] Utente connesso {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
+# Autorizzazioni [!DNL Salesforce] consigliate per [!DNL Marketo Measure] utente connesso {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
 
-[!DNL Marketo Measure] invia e riceve dati tramite una connessione [!DNL Salesforce] utente all&#39;interno di [!DNL Marketo Measure] app.
+[!DNL Marketo Measure] invia e riceve dati tramite un utente [!DNL Salesforce] connesso all&#39;interno dell&#39;app [!DNL Marketo Measure].
 
-Per inviare i dati del punto di contatto al [!DNL Salesforce] , l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ovvero punto di contatto dell&#39;acquirente e punto di contatto di attribuzione dell&#39;acquirente) e standard [!DNL Salesforce] oggetti quali lead e contatti. Consulta [[!DNL Marketo Measure] in Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md).
+Per inviare i dati dei punti di contatto all&#39;istanza [!DNL Salesforce], l&#39;utente connesso deve avere accesso a [!DNL Marketo Measure] oggetti personalizzati (ovvero, Buyer Touchpoint e Buyer Attribution Touchpoint) e a [!DNL Salesforce] oggetti standard come lead e contatti. Vedi [[!DNL Marketo Measure] in Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md).
 
-[!DNL Salesforce] Le licenze utente amministratore possono fungere da utente connesso in quanto spesso dispongono dei privilegi di dati necessari per impostazione predefinita. Tuttavia, il tuo team potrebbe preferire l’utilizzo di un utente di integrazione o di un [!DNL Salesforce] licenza utente per tenere traccia dell’impatto di [!DNL Marketo Measure] nella tua istanza.
+[!DNL Salesforce] Le licenze utente amministratore possono fungere da utente connesso in quanto spesso dispongono dei privilegi di dati necessari per impostazione predefinita. Tuttavia, il tuo team potrebbe preferire l&#39;utilizzo di un utente di integrazione o di una licenza utente [!DNL Salesforce] dedicata per monitorare l&#39;impatto di [!DNL Marketo Measure] sulla tua istanza.
 
-Per garantire che [!DNL Marketo Measure] i dati scorrono con precisione:
+Per garantire che i dati di [!DNL Marketo Measure] scorrano con precisione, si consiglia di utilizzare le seguenti autorizzazioni:
 
-* [!DNL Marketo Measure] Autorizzazioni Amministratore Impostate Per Utente Dedicato
+* [!DNL Marketo Measure] Autorizzazioni Amministratore Impostate Per L&#39;Utente Dedicato
 
 Il set di autorizzazioni gestite consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
 
 * Visualizza e modifica set di autorizzazioni lead convertiti
 
-Ciò consente [!DNL Marketo Measure] per decorare i lead dopo la conversione in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati. Per ulteriori informazioni, consulta [[!DNL Salesforce Trailblazer] community](https://help.salesforce.com/s/articleView?language=en_US&amp;id=leads_view_edit_converted.htm&amp;type=5).
+Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati. Puoi trovare ulteriori informazioni in [[!DNL Salesforce Trailblazer] community](https://help.salesforce.com/s/articleView?language=en_US&amp;id=leads_view_edit_converted.htm&amp;type=5).
 
-* [!DNL Salesforce] Casella di controllo Utente marketing
+* Casella di controllo [!DNL Salesforce] utente marketing
 
-Il [!UICONTROL Marketing User] La casella di controllo consente all’utente di creare campagne e utilizzare l’Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell’oggetto della campagna.
+La casella di controllo [!UICONTROL Marketing User] consente all&#39;utente di creare campagne e utilizzare l&#39;Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell&#39;oggetto della campagna.
 
-**Risoluzione dei problemi aggiuntiva**
+**Risoluzione dei problemi aggiuntivi**
 
-Se [!DNL Marketo Measure] riscontra ancora problemi durante la lettura o la scrittura di dati. Potrebbe essere utile esaminare i seguenti aspetti:
+Se [!DNL Marketo Measure] riscontra ancora problemi durante la lettura o la scrittura dei dati, potrebbe essere utile analizzare i seguenti aspetti:
 
-* Accesso a [!DNL Salesforce] Code
+* Accesso a [!DNL Salesforce] code
 
-Se l’utente dedicato non ha accesso ai lead nelle code, non può modificarli con [!DNL Marketo Measure] dati. A tale scopo, è possibile avere un ruolo nella gerarchia che consenta l&#39;accesso alle code o ai singoli utenti.
+Se l&#39;utente dedicato non ha accesso ai lead nelle code, non può modificare i lead con i dati [!DNL Marketo Measure]. A tale scopo, è possibile avere un ruolo nella gerarchia che consenta l&#39;accesso alle code o ai singoli utenti.
 
 * Sicurezza e accessibilità a livello di campo
 
-La sicurezza a livello di campo e l’accessibilità del campo sono correlate, ma presentano alcune differenze chiave. La sicurezza a livello di campo definisce la visibilità del campo per un determinato profilo, mentre l’accessibilità dei campi determina se un campo è modificabile in base alla sicurezza a livello di campo e alla configurazione del layout di pagina. Utilizzo di [!DNL Marketo Measure] set di autorizzazioni del pacchetto vengono ricevute le impostazioni di protezione degli oggetti campo necessarie. A volte, per avere la corretta accessibilità dei campi, l’utente connesso deve disporre di [!DNL Marketo Measure] nei layout di pagina. [!DNL Marketo Measure] i campi nel layout consentono [!DNL Marketo Measure] dati in cui eseguire il mapping [!DNL Salesforce]. Questo dipende dal tuo particolare [!DNL Salesforce] ambiente.
+La sicurezza a livello di campo e l’accessibilità del campo sono correlate, ma presentano alcune differenze chiave. La sicurezza a livello di campo definisce la visibilità del campo per un determinato profilo, mentre l’accessibilità dei campi determina se un campo è modificabile in base alla sicurezza a livello di campo e alla configurazione del layout di pagina. Utilizzando i set di autorizzazioni del pacchetto [!DNL Marketo Measure], si ricevono le impostazioni di sicurezza necessarie per gli oggetti campo. A volte, per avere la corretta accessibilità dei campi, l&#39;utente connesso deve avere i campi [!DNL Marketo Measure] nei layout di pagina. I campi [!DNL Marketo Measure] nel layout consentono il mapping dei dati [!DNL Marketo Measure] in [!DNL Salesforce]. Dipende dall&#39;ambiente [!DNL Salesforce] specifico.
 
-Di ogni organizzazione [!DNL Salesforce] ha esigenze individuali, ma ti forniamo i nostri requisiti per bilanciare [!DNL Marketo Measure] le esigenze di accesso con i protocolli di sicurezza. Non esitare a contattare [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+Ogni [!DNL Salesforce] organizzazione ha esigenze individuali, ma ti forniamo i nostri requisiti per bilanciare le esigenze di accesso a [!DNL Marketo Measure] con i tuoi protocolli di sicurezza. Non esitare a contattare [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

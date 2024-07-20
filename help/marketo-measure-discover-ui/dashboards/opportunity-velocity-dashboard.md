@@ -2,7 +2,8 @@
 description: Dashboard velocità opportunità - [!DNL Marketo Measure] - Prodotto
 title: Dashboard velocità opportunità
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Risposte alle domande poste da questa dashboard:
 
 ### Sezione KPI {#kpi-tile}
 
-* **Velocità dell’offerta chiusa**: numero medio di giorni per la chiusura delle opportunità &quot;Closed Won&quot; dalla prima fase.
+* **Velocità dell&#39;offerta chiusa**: il numero medio di giorni per le opportunità &quot;Chiuse&quot; dalla prima fase alla chiusura.
 
 ### Velocità opportunità per fase {#opportunity-velocity-by-stage}
 

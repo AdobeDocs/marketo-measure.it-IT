@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La dashboard Panoramica ricavi fornisce informazioni sui ricavi totali derivati dal CRM, gettando luce sul ruolo delle strategie di marketing. Offre una panoramica dell’influenza del marketing sui ricavi complessivi e contribuisce alla corretta chiusura delle offerte.
 
-**Risponde alle domande della bacheca:**
+**Risposte alle domande della bacheca:**
 
 * Quale percentuale dei ricavi è attribuibile alle attività di marketing?
 * Quale percentuale delle nostre offerte &quot;Closed Won&quot; è stata influenzata dai nostri sforzi di marketing?
@@ -23,10 +23,10 @@ La dashboard Panoramica ricavi fornisce informazioni sui ricavi totali derivati 
 
 ### Riquadri KPI {#kpi-tiles}
 
-* **Ricavi totali**: il totale dei ricavi derivanti dalle opportunità &quot;Closed Won&quot;, incluse le opportunità senza punti di contatto.
-* **Offerte totali**: numero di opportunità &quot;Closed Won&quot;, comprese le opportunità senza punti di contatto.
-* **Reddito Attribuito**: i ricavi totali dalle opportunità &quot;Closed Won&quot; con punti di contatto.
-* **Offerte attribuite**: numero di opportunità &quot;Closed Won&quot; con punti di contatto.
+* **Ricavi totali**: i ricavi totali delle opportunità &quot;Chiuse&quot;, incluse le opportunità senza punti di contatto.
+* **Offerte totali**: numero di opportunità &quot;Chiuse&quot;, incluse quelle senza punti di contatto.
+* **Entrate attribuite**: il totale delle entrate derivanti dalle opportunità &quot;Chiuse&quot; con punti di contatto.
+* **Offerte attribuite**: numero di opportunità &quot;Chiuse&quot; con punti di contatto.
 
 ### Grafico Ricavi e Ricavi attribuiti {#revenue-and-attributed-revenue-chart}
 
@@ -35,7 +35,7 @@ Questo grafico a barre affiancato delle serie temporali contrasta il Ricavo tota
 * utilizza le funzionalità drill-down e up per classificare i dati per trimestre e anno.
 * Passa il puntatore del mouse su una sezione del grafico a barre per visualizzarne le informazioni dettagliate.
 
-**Risposte alle domande del grafico:**
+**Risposte al grafico:**
 
 * Quale percentuale dei ricavi di agosto 2022 può essere attribuita alle nostre iniziative di marketing?
 * In che modo i ricavi attribuiti nel terzo trimestre dello scorso anno si sovrappongono al quarto trimestre?
@@ -46,7 +46,7 @@ Questo grafico a barre affiancato delle serie temporali contrasta il Ricavo tota
 
 Questo grafico a torta visualizza in modo chiaro la copertura dell’attribuzione segmentando i ricavi totali in ricavi attribuiti e non attribuiti, evidenziando la percentuale precisa di ricavi influenzata dalle attività di marketing.
 
-**Risposte alle domande del grafico:**
+**Risposte al grafico:**
 
 * Qual è stata la percentuale di copertura dei ricavi attribuita alle attività di marketing dell’anno scorso?
 
@@ -60,5 +60,5 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 >[!MORELIKETHIS]
 >
->* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [Criterio di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}

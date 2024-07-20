@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Notifiche di errore {#error-notifications}
 
-Di seguito è riportato un elenco di errori che potresti ricevere tramite notifica in-app o e-mail. Se ricevi uno di questi, segui i rispettivi passaggi per la risoluzione dei problemi. Se questi passaggi non risolvono il problema, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support).
+Di seguito è riportato un elenco di errori che potresti ricevere tramite notifica in-app o e-mail. Se ricevi uno di questi, segui i rispettivi passaggi per la risoluzione dei problemi. Se questi passaggi non risolvono il problema, contattare il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support).
 
-Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fai clic su **Visualizza tutto** nella parte inferiore della scheda Notifiche.
+Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fare clic su **Visualizza tutto** nella parte inferiore della scheda Notifiche.
 
 ![](assets/error-notifications-1.png)
 
@@ -30,7 +30,7 @@ Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fa
       <td>API_DISABLED</td>
       <td>Errore durante l'importazione CRM : API_DISABLED : le chiamate API sono state disabilitate per questo utente</td>
       <td>L’autorizzazione API è stata disabilitata per l’utente Marketo Measure.</td>
-      <td>Consulta la seguente documentazione di Salesforce su <a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">come abilitare l’accesso API</a>.</td>
+      <td>Consulta la seguente documentazione di Salesforce su <a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">come abilitare l'accesso API</a>.</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -45,8 +45,8 @@ Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fa
           </ul>
           <p>Puoi anche regolare i crediti CRM che Marketo Measure utilizza seguendo i passaggi seguenti:</p>
           <ul>
-            <li>Accedi a <b>Impostazioni</b> &gt; <b>CRM</b> &gt; <b>Generale</b></li>
-            <li>Aggiornare il limite API CRM giornaliero<br/>
+            <li>Passa a <b>Impostazioni</b> &gt; <b>CRM</b> &gt; <b>Generale</b></li>
+            <li>Aggiorna il limite API CRM giornaliero<br/>
               <ul>
                 <li><b>Nota: il valore predefinito è 100.000</b></li>
               </ul>
@@ -60,10 +60,11 @@ Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fa
     <tr>
       <td>CANNOT_EXECUTE_FLOW_TRIGGER</td>
       <td>Errore durante l’esportazione Crm: CANNOT_EXECUTE_FLOW_TRIGGER : tipo di entità "Contatto" Fornisci questi dettagli all’amministratore Salesforce.
-Limite superato È stato superato il limite massimo consentito per questa funzione per l'utente o l'organizzazione. ID errore: 123456</td>
+Limite superato
+Il limite massimo per questa funzione è stato superato dall’utente o dall’organizzazione. ID errore: 123456</td>
       <td>Impossibile salvare il record perché non soddisfa una regola di flusso del trigger impostata nell’organizzazione Salesforce.</td>
       <td>Rivedi tutti i dettagli del messaggio di notifica e controlla i trigger di flusso nell’organizzazione Salesforce.
-Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">si trova qui</a>.
+La documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated"> è disponibile qui</a>.
       </td>
     </tr>
     <tr>
@@ -84,14 +85,14 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
           </li>
         </ul>
         <p>
-        Fornisci tutte le autorizzazioni necessarie al <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Utente Marketo Measure</a>.
+        Fornisci tutte le autorizzazioni necessarie all'<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">utente Marketo Measure</a>.
       </td>
     </tr>
     <tr>
       <td>DUPLICATES_DETECTED</td>
       <td>Errore durante l'esportazione CRM: DUPLICATES_DETECTED : Tipo di entità 'Contatto': Codice errore CRM: DUPLICATES_DETECTED, Messaggio di errore CRM: Stai creando un record duplicato. È consigliabile utilizzare invece un record esistente., RecordId: 0123456</td>
       <td>Il record da importare nell’organizzazione Salesforce esiste già.</td>
-      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">Disattiva l’impostazione "Duplica regola"</a> per consentire duplicati.
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">Disattivare l'impostazione "Duplicate Rule"</a> per consentire duplicati.
           <p>
           Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</td>
     </tr>
@@ -119,7 +120,7 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
       <td>Errore durante l'esportazione CRM: FIELD_FILTER_VALIDATION_EXCEPTION : tipo di entità 'Lead': Codice errore CRM: FIELD_FILTER_VALIDATION_EXCEPTION, Campo/i: User__C, Messaggio errore CRM: il valore non esiste o non corrisponde ai criteri del filtro. Selezionare un utente con il ruolo "Account Executive, Inside Sales"; ID record: 0123456</td>
       <td>Il record modificato non soddisfa più i filtri di ricerca definiti sull'oggetto.</td>
-      <td>Verifica la presenza di filtri sull’oggetto che Marketo Measure sta tentando di modificare. Consulta <a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">questo articolo di Salesforce</a> per informazioni su come verificare la presenza di filtri in un oggetto.</td>
+      <td>Verifica la presenza di filtri sull’oggetto che Marketo Measure sta tentando di modificare. Consulta <a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">questo articolo di Salesforce</a> per scoprire come verificare la presenza di filtri su un oggetto.</td>
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
@@ -128,7 +129,7 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>Il caso più comune è che non si seguono gli standard di denominazione Stato/Paese impostati nell’organizzazione Salesforce perché i campi Stato/Paese sono stati standardizzati per accettare solo determinati valori della lista di selezione. Per risolvere questo problema, è possibile:
         <ul>
           <li>Aggiorna il record in modo che segua i valori accettati dall’organizzazione per quel campo. Contatta l’amministratore SFDC per ottenere l’elenco dei valori accettati.</li>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">Disattiva le liste di selezione Stato/Paese</a>.
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">Disattivare gli elenchi di selezione Stato/Paese</a>.
           </li>
         </ul>
       </td>
@@ -137,13 +138,13 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>Errore durante l'esportazione CRM: INACTIVE_OWNER_OR_USER : tipo di entità 'Contatto': Codice errore CRM: INACTIVE_OWNER_OR_USER, Messaggio di errore CRM: operazione eseguita con l'utente inattivo [1234] come proprietario del contatto, ID record: 0123456</td>
       <td>In Marketo Measure manca l’autorizzazione "Aggiorna record con proprietari inattivi".</td>
-      <td>Concedi a Marketo Measure il "<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">Aggiorna record con proprietari inattivi</a>".</td>
+      <td>Concedi a Marketo Measure l'autorizzazione "<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">Aggiorna record con proprietari inattivi</a>".</td>
     </tr>
     <tr>
       <td>INSUFFICIENTE_ACCESS_OR_READONLY</td>
       <td>Si è verificato un errore durante l'esportazione CRM: INSUFFICIENT_ACCESS_OR_READONLY : tipo di entità 'Account': CRM ErrorCode: INSUFFICIENT_ACCESS_OR_READONLY, CRM ErrorMessage: diritti di accesso insufficienti sull'ID oggetto: [123], RecordId: 456</td>
       <td>In Marketo Measure mancano le autorizzazioni per un oggetto o un campo oppure l’oggetto è di sola lettura.</td>
-      <td>Fai riferimento a quanto segue <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Experience League</a> per informazioni sulle autorizzazioni richieste da Marketo Measure.</td>
+      <td>Consulta il seguente <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Experience League</a> per informazioni sulle autorizzazioni richieste da Marketo Measure.</td>
     </tr>
     <tr>
       <td>INVALID_ADOBE_ANALYTICS_CONFIGURATION</td>
@@ -152,10 +153,10 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>Per garantire la corretta configurazione, consulta i seguenti articoli della guida:
         <ul>
           <li>
-            <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Integrazioni di Marketo Measure con Adobe Analytics</a>
+            <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Integrazioni Marketo Measure con Adobe Analytics</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">Creare un’origine di attributi cliente e caricare il file di dati</a>
+            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">Crea un'origine attributo cliente e carica il file di dati</a>
           </li>
         </ul>
       </td>
@@ -172,14 +173,14 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
       <td>Errore durante l'esportazione CRM: MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS : Tipo di entità 'Campaign': CRM ErrorCode: INVALID_FIELD_FOR_INSERT_UPDATE, Campo/i: bizible2__UniqueId__c, CRM ErrorMessage: Impossibile creare/aggiornare i campi: bizible2__UniqueId__c. Controlla le impostazioni di protezione di questo campo e verifica che sia in lettura/scrittura per il tuo profilo o set di autorizzazioni.</td>
       <td>In Marketo Measure mancano le autorizzazioni per i campi bizzarri.</td>
-      <td>Sono necessarie autorizzazioni di lettura e scrittura per tutti i campi con prefisso "bizible2__". Un elenco completo di questi campi è disponibile <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">in questo articolo</a>.</td>
+      <td>Sono necessarie autorizzazioni di lettura e scrittura per tutti i campi con prefisso "bizible2__". Un elenco completo di questi campi si trova <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">in questo articolo</a>.</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Errore durante l'esportazione CRM: MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>In Marketo Measure manca l’autorizzazione Visualizza/Modifica lead convertiti</td>
-      <td>Per assistenza sull’abilitazione di questa autorizzazione nel CRM, consulta il seguente documento di Experience League<br/>
-          <a href="/help/marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md">Abilitazione dell’autorizzazione per la modifica di lead convertiti</a></td>
+      <td>Per assistenza sull'abilitazione di questa autorizzazione nel CRM, fare riferimento al seguente Experience League di documento<br/>
+          <a href="/help/marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md">Abilitazione dell'autorizzazione per la modifica di lead convertiti</a></td>
     </tr>
     <tr>
       <td>CAMPO_MANCANTE_AUTORIZZAZIONE_LETTURA</td>
@@ -225,9 +226,9 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>Autorizzazioni mancanti per Marketo Measure.</td>
       <td>Questo errore è dovuto a diversi motivi specifici per l’organizzazione Salesforce. Di seguito sono riportati alcuni passaggi comuni per la risoluzione dei problemi che possono risolvere il problema:
         <ul>
-          <li>Rivedi tutte le autorizzazioni necessarie per ciascuna <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">oggetto e campo</a>.</li>
+          <li>Rivedi tutte le autorizzazioni necessarie per ogni <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">oggetto e campo</a>.</li>
           <li>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</li>
-          <li>Concedi Marketo Measure "<a href="https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/users_profiles_view_all_mod_all.htm">Modifica tutto</a>" autorizzazioni.</li>
+          <li>Concedi autorizzazioni "<a href="https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/users_profiles_view_all_mod_all.htm">Modifica tutte</a>" a Marketo Measure.</li>
         </ul>
       </td>
     </tr>
@@ -246,7 +247,7 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>Le impostazioni di gestione delle relazioni con i clienti non consentono a Marketo Measure di eseguire query su un set di dati sufficientemente grande</td>
       <td>Concedere a Marketo Measure le autorizzazioni 'Visualizza tutti i dati' per l'oggetto designato.
       <p>
-      Ulteriori informazioni sull’autorizzazione "Visualizza tutti i dati" <a href="https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/users_profiles_view_all_mod_all.htm">si trova qui</a>.</td>
+      Ulteriori informazioni sull'autorizzazione 'Visualizza tutti i dati' <a href="https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/users_profiles_view_all_mod_all.htm">sono disponibili qui</a>.</td>
     </tr>
     <tr>
       <td>RECORD_NONCOMPLIANT_WITH_VALIDATION_RULES</td>
@@ -254,7 +255,7 @@ Documentazione di Salesforce sui trigger di flusso <a href="https://admin.salesf
       <td>Il record in fase di aggiornamento non soddisfa una regola di convalida impostata nell’organizzazione Salesforce.</td>
       <td>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
       <p>
-      Aggiorna il tuo <a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">regole di convalida</a>.</td>
+      Aggiorna le <a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">regole di convalida</a>.</td>
     </tr>
     <tr>
       <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La dashboard ROI offre agli addetti al marketing una visualizzazione granulare del ritorno sull’investimento per canali, sottocanali e campagne. Suddivide meticolosamente i modelli di costi e ricavi, evidenziando al contempo metriche quali costo per lead, offerta e opportunità, garantendo una comprensione completa dell’attribuzione marketing.
 
-**Domande alle risposte della bacheca**
+**Risposte alle domande della bacheca**
 
 * Quali erano i valori del ROI per ogni canale, sottocanale e campagna?
 * In che modo i costi e i ricavi sono stati distribuiti su ciascun canale, sottocanale e campagna?
@@ -25,14 +25,14 @@ La dashboard ROI offre agli addetti al marketing una visualizzazione granulare d
 ### Riquadri KPI {#kpi-tiles}
 
 * **Costo**: costi totali da origini dati connesse e costi caricati manualmente.
-* **Reddito Attribuito**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto chiuse entro il periodo di data filtrato.
-* **Reddito Attribuito Realizzato**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, da Opportunità con punti di contatto entro il periodo di data filtrato, indipendentemente da quando sono state chiuse.
+* **Ricavi attribuiti**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, dalle opportunità con punti di contatto chiusi entro il periodo di date filtrato.
+* **Ricavi attribuiti realizzati**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, dalle opportunità con punti di contatto entro il periodo di data filtrato, indipendentemente da quando sono state chiuse.
 * **Totale nuovi lead**: numero totale di nuovi lead generati, inclusi quelli toccati e non toccati.
 * **Costo per nuovo lead**: il costo medio per nuovo lead, derivato dal costo totale diviso per il numero totale di nuovi lead.
-* **Nuove opportunità totali**: numero totale di nuove opportunità generate, incluse quelle toccate e non toccate.
+* **Totale nuove opportunità**: numero totale di nuove opportunità generate, incluse quelle toccate e quelle non toccate.
 * **Costo per nuova opportunità**: il costo medio per nuova opportunità, derivato dal costo totale diviso per il numero totale di nuove opportunità.
-* **Offerte totali**: numero di opportunità &quot;Closed Won&quot;, comprese le opportunità senza punti di contatto.
-* **ROI semplice**: ricavi attribuiti divisi per i costi nel periodo di data filtrato.
+* **Offerte totali**: numero di opportunità &quot;Chiuse&quot;, incluse quelle senza punti di contatto.
+* **ROI semplice**: ricavi attribuiti divisi per costi nel periodo di data filtrato.
 * **ROI realizzato**: ricavi attribuiti realizzati divisi per i costi nel periodo di data filtrato.
 
 ![](assets/roi-dashboard-1.png)
@@ -44,7 +44,7 @@ Grafico a barre che illustra costi e ricavi, progettato per offrire una prospett
 * utilizza le funzionalità drill-down e up per classificare i dati per sottocanale e campagna.
 * Passa il puntatore del mouse su ciascuna barra per visualizzare il ROI semplice e realizzato.
 
-**Domande sulle risposte del grafico**
+**Risposte alle domande del grafico**
 
 * Quali erano i valori del ROI per ogni canale, sottocanale e campagna?
 * Esistono canali o sottocanali meno recenti con costi insolitamente alti o bassi rispetto ai loro ricavi?
@@ -57,7 +57,7 @@ Grafico a linee delle serie temporali che mostra il confronto tra ROI realizzato
 
 * Passa il puntatore del mouse su una sezione del grafico per visualizzare il ROI semplice e realizzato.
 
-**Domande sulle risposte del grafico**
+**Risposte alle domande del grafico**
 
 * Come si confronta il ROI realizzato con il ROI semplice in periodi di tempo specifici?
 * In che modo la tendenza del ROI realizzato si relaziona a qualsiasi evento di marketing significativo durante lo stesso periodo?
@@ -71,7 +71,7 @@ Grafico a barre in pila che mostra i costi totali, segmentati per canali associa
 * utilizzare le funzionalità di espansione e aumento per categorizzare i dati in base a mese, trimestre o anno.
 * Passa il cursore del mouse su un segmento di una barra o sullo spazio tra le barre per visualizzare informazioni dettagliate.
 
-**Domande sulle risposte del grafico**
+**Risposte alle domande del grafico**
 
 * Come si confronta il costo combinato di tutti i canali da un trimestre/mese all&#39;altro?
 * Come si sono evoluti nel tempo i costi di un canale specifico?
@@ -84,7 +84,7 @@ Grafico a barre che mostra le spese di marketing segmentate per canale/sottocana
 
 * utilizza le funzionalità drill-down e up per classificare i dati per canale/sottocanale/campagna.
 
-**Domande sulle risposte del grafico**
+**Risposte alle domande del grafico**
 
 * Quali sottocanali o campagne all’interno di un canale principale hanno l’allocazione più elevata?
 * Quali percorsi di marketing (canale, sottocanale o campagna) sembrano sottofinanziati rispetto ad altri?
@@ -140,6 +140,6 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 >[!MORELIKETHIS]
 >
->* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [Criterio di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
 

@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Il dashboard Passport offre agli addetti al marketing una visualizzazione dinamica di lead, contatti e opportunità durante la transizione attraverso varie fasi entro un periodo specificato. Filtrando per una data specifica, gli utenti possono ottenere anche un’istantanea dei record per quel giorno.
 
-**Risponde alle domande della bacheca:**
+**Risposte alle domande della bacheca:**
 
 * Quanti lead, contatti o opportunità esistevano in ogni fase non terminale in un giorno scelto?
 * Durante un periodo specificato, quanti lead o contatti distinti sono progrediti in ogni fase transitoria?
-   * _Esempio_: se il piombo A fosse nella fase 1 il 1/1/2023 e fosse avanzato alla fase 5 entro il 3/31/2023, l’analisi Passport Q1 2023 conterà il piombo A nelle fasi da 1 a 5.
+   * _Esempio_: se il Lead A si trovava nella fase 1 il 1/1/2023 e fosse avanzato alla fase 5 entro il 3/31/2023, l&#39;analisi Passport Q1 2023 conterà il Lead A nelle fasi da 1 a 5.
 * Quante opportunità uniche sono passate attraverso ogni fase transitoria durante un determinato intervallo di tempo?
 
 ## Componenti del dashboard {#dashboard-components}
@@ -53,5 +53,5 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 >[!MORELIKETHIS]
 >
->* [Scopri nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [Criterio di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}

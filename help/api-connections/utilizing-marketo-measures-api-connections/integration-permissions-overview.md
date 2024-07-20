@@ -2,7 +2,8 @@
 description: Panoramica delle autorizzazioni di integrazione - [!DNL Marketo Measure]
 title: Panoramica delle autorizzazioni di integrazione
 feature: APIs, Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -49,19 +50,19 @@ Questa guida descrive le autorizzazioni necessarie per un’integrazione perfett
 I punti di contatto creati e altri dati vengono scritti in campi bizzarri personalizzati in Account, Campaign, CampaignMember, Case, Contact, Lead e Opportunity.</td>
     <td><b>Autorizzazioni utente connesso Salesforce (obbligatorio)</b>
     <p>
-    <b>Set Di Autorizzazioni Di Amministratore Marketo Measure Per Utente Dedicato:</b> Consenti all'amministratore SFDC di eseguire operazioni CRUD sul mercato per misurare gli oggetti.
+    <b>Set di autorizzazioni amministratore Marketo Measure per l'utente dedicato:</b> Consenti all'amministratore SFDC di eseguire operazioni CRUD sugli oggetti marketo di misura.
     <br>
     <b>Visualizza e modifica set di autorizzazioni lead convertiti:</b> Questo consente a Marketo Measure di decorare i lead dopo che sono stati convertiti in contatti.
     <br>
-    <b>Casella di selezione utente marketing Salesforce:</b> La casella di controllo Utente marketing consente agli utenti di creare campagne e utilizzare l’Importazione guidata campagne.
+    <b>Casella di controllo utente marketing Salesforce:</b> La casella di controllo Utente marketing consente agli utenti di creare campagne e utilizzare le procedure guidate di importazione campagne.
     <br>
-    <b>Utente Marketo Measure Standard:</b> Consente a un utente di leggere record da oggetti Marketo Measure.
+    <b>Utente Marketo Measure Standard:</b> consente a un utente di leggere record da oggetti Marketo Measure.
     <p>
     <b>Autorizzazioni per i campi Salesforce Standard</b>
     <br>
-    <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Oggetti e accesso standard Salesforce</a>
+    <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Oggetti standard Salesforce e accesso</a>
     <p>
-    <b>Autorizzazioni campo personalizzato Salesforce</b>
+    <b>Autorizzazioni per campi personalizzati Salesforce</b>
     <br>
     Forniamo le impostazioni della funzione per contenere i campi personalizzati di Salesforce che i clienti possono utilizzare. Se queste impostazioni di funzionalità sono definite, è necessario l’accesso in LETTURA a ciascuno dei campi Salesforce salvati nell’impostazione di funzionalità (ad esempio, se il valore dell’impostazione CustomLeadSourceField è uguale a "LeadSource__c", è necessario l’accesso in LETTURA a questo campo).
     </td>
@@ -92,11 +93,11 @@ I punti di contatto creati e altri dati vengono scritti in campi bizzarri person
 <li>bizible2_bizible_touchpoint
 <p>
 I punti di contatto creati e altri dati vengono scritti in campi bizzarri personalizzati su account, campagna, risposta campagna, contatto, lead, elenco, opportunità e chiamata</td>
-    <td><b>Autorizzazioni utente di Marketo Measure</b>
+    <td><b>Autorizzazioni utente Marketo Measure</b>
 <br>
 È consigliabile creare un utente Marketo Measure dedicato all’interno di Dynamics per esportare e importare dati tramite al fine di evitare problemi con altri utenti nel CRM. Prendi nota del nome utente e della password, nonché dell’URL dell’endpoint, in quanto verranno utilizzati durante la creazione dell’account Marketo Measure.
 <p>
-<b>Ruoli di sicurezza</b>
+<b>Ruoli di protezione</b>
 <br>
 Se l’organizzazione utilizza i ruoli di sicurezza di Dynamics, assicurati che l’utente connesso o l’utente Marketo Measure dedicato disponga di autorizzazioni di lettura/scrittura sufficienti per le entità richieste.
 <br>
@@ -104,11 +105,11 @@ I ruoli di sicurezza si trovano qui: Impostazioni &gt; Sicurezza &gt; Ruoli di s
 <br>
 Per le entità personalizzate Marketo Measure, saranno necessarie autorizzazioni complete per tutte le nostre entità.
 <p>
-<b>Autorizzazioni campo Dynamics Standard</b>
+<b>Autorizzazioni per i campi di Dynamics Standard</b>
 <br>
 <a href="/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">Schema Marketo Measure Dynamics</a>
 <p>
-<b>Autorizzazioni campo personalizzato Dynamics</b>
+<b>Autorizzazioni per campi personalizzati Dynamics</b>
 <br>
 È necessario l’accesso in LETTURA per qualsiasi campo nell’entità lead o contatto che il cliente desidera utilizzare per le regole personalizzate di eliminazione/rimozione delle impostazioni dei punti di contatto.
 <br>
@@ -132,13 +133,13 @@ Marketo Measure tiene traccia di account, campagne, gruppi di annunci, annunci, 
 <p>
 <b>Ambiti</b>
 <br>
-<a href="https://developers.facebook.com/docs/permissions/reference/ads_management/">ads_management</a>
+<a href="https://developers.facebook.com/docs/permissions/reference/ads_management/">gestione annunci</a>
 <br>
 <li>Crea campagne a livello di programmazione, gestisci annunci e recupera metriche.</li>
 <li>Creare strumenti di gestione degli annunci che forniscano soluzioni innovative e valore differenziato per gli inserzionisti.</li>
 <br>
 <br>
-<a href="https://developers.facebook.com/docs/permissions/reference/email">email</a>
+<a href="https://developers.facebook.com/docs/permissions/reference/email">e-mail</a>
 <br>
 <li>Comunicare con le persone e consentire loro di accedere all’app con l’indirizzo e-mail associato al loro profilo Facebook.</li></td>
   </tr>
@@ -156,11 +157,11 @@ Marketo Measure tiene traccia di account, campagne, gruppi di annunci, annunci, 
     <p>
     <b>Ambiti</b>
     <br>
-    <a href="https://www.linkedin.com/campaignmanager/accounts">Configurare il ruolo utente nel portale (è necessario accedere all'account LinkedIn)</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">Panoramica sui ruoli utente</a>: ruolo utente, visualizzazione e gestione delle autorizzazioni utente, assegnazione di ruoli come responsabile account o responsabile campagna
+    <a href="https://www.linkedin.com/campaignmanager/accounts">Configurare il ruolo utente nel portale (richiede l'accesso all'account LinkedIn)</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">Panoramica dei ruoli utente</a>: ruolo utente, visualizzare e gestire le autorizzazioni utente, assegnare ruoli come responsabile account o responsabile campagna
     <p>
-    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">Imposta ruolo amministratore pagina - <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">Definizioni dei ruoli di amministratore pagina</a>: ruolo amministratore pagina, nella pagina di amministrazione desiderata
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">Imposta ruolo amministratore pagina - <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">Definizioni ruolo amministratore pagina</a>: ruolo amministratore pagina, nella pagina di amministrazione desiderata
     <p>
-    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">Imposta ruolo amministratore media a pagamento (cerca amministratore media a pagamento) - <a href="https://www.linkedin.com/help/linkedin/answer/a554540">Definizioni dell’amministratore dei contenuti multimediali a pagamento</a>: Ruoli di amministratore di contenuti multimediali a pagamento</td>
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">Imposta ruolo amministratore media a pagamento (cerca amministratore media a pagamento) - <a href="https://www.linkedin.com/help/linkedin/answer/a554540">Definizioni amministratore media a pagamento</a>: ruoli amministratore media a pagamento</td>
   </tr>
   <tr>
     <td>Doppio clic</td>
@@ -174,11 +175,11 @@ Marketo Measure tiene traccia di account, campagne, gruppi di annunci, annunci, 
 <p>
     <b>Ambiti</b>
     <br>
-    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>: vedi l’indirizzo e-mail del tuo account Google principale
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>: visualizza l'indirizzo di posta elettronica dell'account Google principale
     <p>
-     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>: visualizzare e gestire i report DoubleClick for Advertisers
+     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>: visualizza e gestisci DoubleClick per i report degli inserzionisti
     <p>
-     <a href="https://www.googleapis.com/auth/dfatrafficking">https://www.googleapis.com/auth/dfatrafficking</a>: visualizza e gestisci le campagne pubblicitarie display di DoubleClick Campaign Manager (DCM)</td>
+     <a href="https://www.googleapis.com/auth/dfatrafficking">https://www.googleapis.com/auth/dfatrafficking</a>: visualizza e gestisci le campagne pubblicitarie di visualizzazione di DoubleClick Campaign Manager (DCM)</td>
   </tr>
   <tr>
     <td>AdWords</td>
@@ -194,24 +195,24 @@ Marketo Measure tiene traccia di campagne, gruppi di annunci, creatività, colle
 <p>
     <b>Ambiti</b>
     <br>
-    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>: vedi l’indirizzo e-mail del tuo account Google principale</td>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>: visualizza l'indirizzo di posta elettronica dell'account Google principale</td>
   </tr>
   <tr>
     <td>Bing</td>
     <td>Dati della piattaforma dell’annuncio</td>
     <td>Marketo Measure tiene traccia di account, campagne, gruppi di annunci, creatività e parole chiave.</td>
-    <td><li>L’utente deve concedere l’"accesso offline" tramite il proprio account Microsoft (che consente a Marketo Measure di accedere alle informazioni utente dell’utente finale anche quando non ha effettuato l’accesso). Consulta <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Pagina di Microsoft</a> su come farlo.</li>
+    <td><li>L’utente deve concedere l’"accesso offline" tramite il proprio account Microsoft (che consente a Marketo Measure di accedere alle informazioni utente dell’utente finale anche quando non ha effettuato l’accesso). Consulta la <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">pagina di Microsoft</a> su come farlo.</li>
 <p>
     <b>Ambiti</b>
     <br>
-    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>: gestisci l’accesso ai dati che gli hai concesso l’accesso all’autorizzazione.</td>
+    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>: mantieni l'accesso ai dati a cui hai dato l'autorizzazione.</td>
   </tr>
   <tr>
     <td>Marketo Engage</td>
     <td>Dati di sistema B2B</td>
-    <td>L’integrazione di Marketo consente a Marketo Measure di raccogliere attività, persone, programmi e iscrizioni al programma Marketo. Inoltre, Marketo Measure tiene traccia dei cookie di Marketo (ID Munchkin) allo scopo di collegare le attività web di Marketo ai punti di contatto principali di Marketo Measure, <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">come descritto qui</a>:
+    <td>L’integrazione di Marketo consente a Marketo Measure di raccogliere attività, persone, programmi e iscrizioni al programma Marketo. Inoltre, Marketo Measure tiene traccia dei cookie di Marketo (ID Munchkin) allo scopo di collegare le attività Web di Marketo ai punti di contatto principali di Marketo Measure, <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">come descritto qui</a>:
     <p>
-    <i>In seguito all’integrazione di Marketo Measure con Marketo, anche l’ID cookie di Marketo Measure viene mappato e sincronizzato con l’ID di Marketo Munchkin. Questo consente di colmare il divario per attribuire il primo contatto anonimo a una sessione web, anziché attribuire i tocchi FT e LC a un’attività Marketo.</i>
+    <i>In seguito all'integrazione di Marketo Measure con Marketo, anche l'ID cookie di Marketo Measure viene mappato e sincronizzato con l'ID di Marketo Munchkin. Questo consente di colmare il gap per attribuire il primo contatto anonimo a una sessione web anziché attribuire i tocchi FT e LC a un'attività Marketo.</i>
     </td>
     <td>Il cliente deve creare un utente API di Marketo Engage dedicato e fornire le credenziali a Marketo Measure. Non è richiesta alcuna configurazione di autorizzazioni aggiuntiva. <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md#configuring-the-integration">Ulteriori informazioni</a>.</td>
   </tr>
@@ -231,7 +232,7 @@ Marketo Measure tiene traccia di campagne, gruppi di annunci, creatività, colle
   <tr>
     <td>Javascript Bizible</td>
     <td></td>
-    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">Quali dati bizible.js raccoglie</a>.</td>
+    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">Dati raccolti da bizible.js</a>.</td>
     <td></td>
   </tr>
 </tbody>

@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874634
-description: Record duplicati nel mio report - [!DNL Marketo Measure]
+description: Record duplicati nel report - [!DNL Marketo Measure]
 title: Record duplicati nel mio report
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere comunque &quot;[!DNL Bizible]&quot; nel CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Mentre vi immergete nel [!DNL Marketo Measure] Rapporti in [!DNL Salesforce], è possibile che nei rapporti si trovino record &quot;duplicati&quot;. È probabile che provi questa sensazione quando rivedi [!DNL Marketo Measure] rapporti predefiniti.
+Mentre si immergono nei report [!DNL Marketo Measure] in [!DNL Salesforce], è possibile che si trovino record &quot;duplicati&quot; nei report. È probabile che provi questa sensazione quando esamini [!DNL Marketo Measure] rapporti predefiniti.
 
-Quando si esegue il reporting con l&#39;oggetto Punti di contatto buyer o con l&#39;oggetto Punto di contatto di attribuzione buyer, è importante comprendere che non si sta più eseguendo il reporting sul numero di lead, contatti o opportunità, ma che si eseguirà il reporting sul numero di punti di contatto buyer o di punti di contatto di attribuzione buyer associati a tali oggetti standard (lead, contatti, opportunità).
+Quando esegui un rapporto con l’oggetto Punti di contatto buyer o con l’oggetto Buyer Attribution Touchpoint, è importante comprendere che non stai più eseguendo un rapporto sul numero di lead, contatti o opportunità, ma piuttosto sul numero di Punti di contatto buyer o di Punti di contatto di attribuzione buyer associati a tali oggetti standard (lead, contatti, opportunità).
 
 Prendiamo il seguente rapporto come esempio:
 
-Questo è un **Contatti con i punti di contatto dell&#39;acquirente** rapporto. Anche in questo caso, ciò significa che stiamo esaminando il numero di punti di contatto associati a un singolo contatto.
+Questo è un report **Contatti con punti di contatto acquirenti**. Anche in questo caso, ciò significa che stiamo esaminando il numero di punti di contatto associati a un singolo contatto.
 
 ![](assets/1.gif)
 

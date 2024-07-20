@@ -1,6 +1,6 @@
 ---
-description: '[!DNL Marketo Measure] Panoramica Ultimate - [!DNL Marketo Measure]'
-title: '''[!DNL Marketo Measure] Panoramica di Ultimate'
+description: Panoramica di '[!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] Ultimate Overview'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772
@@ -10,24 +10,24 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Panoramica di Ultimate {#marketo-measure-ultimate-overview}
+# Panoramica di [!DNL Marketo Measure] Ultimate {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] (precedentemente Bizible) offre agli esperti di marketing informazioni sulle attività di marketing più efficaci per incrementare le entrate e massimizzare il ritorno sull’investimento. [!DNL Marketo Measure] è una soluzione di attribuzione marketing che tiene traccia automaticamente delle prestazioni dei canali e genera rapporti su di esse, fornendo visibilità sui canali che generano il coinvolgimento maggiore dei clienti e consentendo di ottimizzare di conseguenza le spese di marketing.
+[!DNL Marketo Measure] (precedentemente Bizible) offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate e massimizzare il ritorno sull&#39;investimento per l&#39;azienda. [!DNL Marketo Measure] è una soluzione di attribuzione marketing che tiene traccia e genera report automatici sulle prestazioni dei canali, fornendo visibilità su quali canali generano il maggior coinvolgimento dei clienti e consentendo di ottimizzare le spese di marketing di conseguenza.
 
 [!DNL Marketo Measure Ultimate] contiene le funzionalità aggiuntive:
 
 * Acquisisci da quasi tutte le origini dati e da più origini dati dello stesso tipo per inserire tutti i dati per l’attribuzione.
    * Utilizza con quasi tutte le CRM, non solo Salesforce e Dynamics.
-   * Connettere più istanze di CRM e/o istanze MAP a una [!DNL Marketo Measure] dell&#39;istanza.
+   * Connettere più istanze di CRM e/o istanze MAP a un&#39;istanza [!DNL Marketo Measure].
    * Importa dati di registrazione e partecipazione a webinar di terze parti.
 
 * Trasforma i dati con grande flessibilità attraverso le funzionalità di mappatura dei campi e trasformazione per garantire la forma corretta dei dati.
 
 * Rendi gli insight di attribuzione disponibili alle applicazioni esterne tramite il data warehouse incluso, per integrarli nel flusso di lavoro. Dati di risultati più granulari e reporting basato su BI, inclusa la Data Warehouse del Snowflake, che consente di accedere a dati di risultati granulari e di utilizzare qualsiasi strumento BI per l&#39;analisi e il reporting.
 
-* Integrazione con RTCDP (versione B2B o B2P), fornendo una soluzione di attribuzione B2B integrata per i clienti RTCDP come RTCDP e [!DNL Marketo Measure] entrambi funzionano da dati Adobe Experience Platform centralizzati (AEP).
+* Integrazione con RTCDP (versione B2B o B2P), che fornisce una soluzione di attribuzione B2B integrata per i clienti RTCDP, in quanto RTCDP e [!DNL Marketo Measure] entrambi funzionano da dati Adobe Experience Platform (AEP) centralizzati.
 
-**[!DNL Marketo Measure]Livelli 1-3**
+**[!DNL Marketo Measure]livelli 1-3**
 
 ![](assets/marketo-measure-ultimate-overview-1.png)
 
@@ -35,37 +35,37 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-ultimate-overview-2.png)
 
-## Novità in [!DNL Marketo Measure Ultimate] {#whats-new-in-marketo-measure-ultimate}
+## Novità di [!DNL Marketo Measure Ultimate] {#whats-new-in-marketo-measure-ultimate}
 
-**Importare dati B2B tramite AEP**
+**Importa dati B2B tramite AEP**
 
-Gli addetti al marketing devono inserire i propri dati B2B (ad esempio account, opportunità, contatto, lead, campagna, membro della campagna, attività) tramite AEP. Le connessioni dirette CRM e di Marketo Engage non sono più disponibili per Ultimate. Gli addetti al marketing continuano a portare dati di Ad Platform tramite connessioni dirette e il tracciamento delle attività web tramite [!DNL Marketo Measure] javascript.
+Gli addetti al marketing devono inserire i propri dati B2B (ad esempio account, opportunità, contatto, lead, campagna, membro della campagna, attività) tramite AEP. Le connessioni dirette CRM e di Marketo Engage non sono più disponibili per Ultimate. Gli addetti al marketing continuano a portare dati di Ad Platform tramite connessioni dirette e a tenere traccia delle attività web tramite JavaScript [!DNL Marketo Measure].
 
 ![](assets/marketo-measure-ultimate-overview-3.png)
 
 **Impostazione valuta predefinita**
 
-[!DNL Marketo Measure Ultimate] imposta la valuta predefinita su USD finché non viene modificata dall&#39;utente. L’impostazione di una nuova valuta predefinita aggiorna i dati senza rielaborarli. Se la valuta selezionata è presente come codice ISO di destinazione, non è necessario inviare i tassi di conversione.
+[!DNL Marketo Measure Ultimate] imposta la valuta predefinita su USD finché l&#39;utente non la modifica. L’impostazione di una nuova valuta predefinita aggiorna i dati senza rielaborarli. Se la valuta selezionata è presente come codice ISO di destinazione, non è necessario inviare i tassi di conversione.
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
-**[!DNL Marketo Measure Ultimate]Sandbox**
+Sandbox **[!DNL Marketo Measure Ultimate]**
 
-[!DNL Marketo Measure Ultimate] l&#39;istanza deve essere mappata a una sandbox di AEP prima di creare [!DNL Marketo Measure] i flussi di dati di destinazione in AEP.
+L&#39;istanza [!DNL Marketo Measure Ultimate] deve essere mappata a una sandbox di AEP prima di creare i flussi di dati di destinazione [!DNL Marketo Measure] in AEP.
 
 >[!NOTE]
 >
->A [!DNL Marketo Measure Ultimate] l&#39;istanza di produzione deve essere mappata su una sandbox di produzione AEP, una [!DNL Marketo Measure Ultimate] l&#39;istanza sviluppatore deve essere mappata a una sandbox sviluppatore AEP.
+>Un&#39;istanza di produzione [!DNL Marketo Measure Ultimate] deve essere mappata a una sandbox di produzione AEP, un&#39;istanza di sviluppo [!DNL Marketo Measure Ultimate] deve essere mappata a una sandbox di sviluppo AEP.
 
-Una volta salvata la selezione di mappatura sandbox, non è possibile modificarla nell’applicazione. Per modificarlo, contatta [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+Una volta salvata la selezione di mappatura sandbox, non è possibile modificarla nell’applicazione. Per modificarlo, contattare il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 I dati di una determinata entità (ad esempio, Conto) da una determinata origine dati possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arrestano il flusso di dati in fase di esecuzione.
 
 ![](assets/marketo-measure-ultimate-overview-5.png)
 
-**Mappatura stadio**
+**Mappatura fase**
 
-Tutti [!DNL Marketo Measure Ultimate] le regole sono specifiche per il set di dati. È necessario creare regole di mappatura stadio per tutti i set di dati e tutte le fasi selezionate.
+Tutte le regole [!DNL Marketo Measure Ultimate] sono specifiche per il set di dati. È necessario creare regole di mappatura stadio per tutti i set di dati e tutte le fasi selezionate.
 
 Sono disponibili sei fasi integrate:
 
@@ -74,9 +74,9 @@ Sono disponibili sei fasi integrate:
 * Lead convertito
 * Opportunità persa
 * Opportunità aperta
-* Opportunità acquisita
+* Opportunità vinta
 
-Le sezioni Lost, Won e Convertito non consentono fasi personalizzate. I dati di origine possono, tuttavia, essere mappati sugli stadi persi/vinti/convertiti incorporati aggiornando la regola di mappatura.
+Le sezioni Lost, Won e Convertito non consentono fasi personalizzate. I dati di Source possono, tuttavia, essere mappati sulle fasi perse/vinte/convertite incorporate aggiornando la regola di mappatura.
 
 Gli stadi personalizzati possono essere definiti solo per le sezioni aperte.
 Non includiamo più automaticamente le fasi di gestione delle relazioni con i clienti nella mappatura delle fasi.
@@ -86,7 +86,7 @@ Non includiamo più automaticamente le fasi di gestione delle relazioni con i cl
 * Apertura lead
 * Opportunità persa
 * Opportunità aperta
-* Opportunità acquisita
+* Opportunità vinta
 
 Le condizioni delle regole sono specifiche per il set di dati. È necessario creare regole di mappatura stadio per tutti i set di dati e tutte le fasi ad eccezione di Lead perso e Lead convertito.
 
@@ -102,7 +102,7 @@ Le regole dei punti di contatto per i membri della campagna e le regole dei punt
 
 I punti di contatto di attribuzione non vengono scritti in CRM perché Ultimate non dispone di una connessione CRM diretta.
 
-[!DNL Marketo Measure] I servizi ML di ABM (corrispondenza lead-account e punteggio di coinvolgimento predittivo) non sono disponibili per [!DNL Marketo Measure Ultimate]. Tali servizi sono inclusi gratuitamente nell’edizione B2B di RT-CDP.
+[!DNL Marketo Measure] servizi ABM ML (corrispondenza lead-account e punteggio di coinvolgimento predittivo) non disponibili per [!DNL Marketo Measure Ultimate]. Tali servizi sono inclusi gratuitamente nell’edizione B2B di RT-CDP.
 
 ## Limitazioni {#limitations}
 

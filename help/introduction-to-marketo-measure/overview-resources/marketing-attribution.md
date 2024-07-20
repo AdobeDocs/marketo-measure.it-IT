@@ -19,13 +19,13 @@ Marketo Measure offre agli esperti di marketing informazioni approfondite sulle 
 
 ## Marketing Attribution {#marketing-attribution-1}
 
-**Attribuzione di marketing** è il processo di assegnazione del credito ricavi a un punto di contatto di marketing. Questo viene fatto tenendo traccia dell’intero percorso di clienti di un potenziale cliente, a partire dalla prima interazione con la tua azienda fino alla chiusura dell’operazione. I ricavi generati dall’operazione vengono attribuiti ai punti di contatto di marketing che hanno determinato la vendita. L’importo del credito di ricavo assegnato a un punto di contatto dipende da quanto tale punto di contatto ha influenzato le decisioni di acquisto del cliente.
+**L&#39;attribuzione marketing** è il processo di assegnazione del credito dei ricavi a un punto di contatto marketing. Questo viene fatto tenendo traccia dell’intero percorso di clienti di un potenziale cliente, a partire dalla prima interazione con la tua azienda fino alla chiusura dell’operazione. I ricavi generati dall’operazione vengono attribuiti ai punti di contatto di marketing che hanno determinato la vendita. L’importo del credito di ricavo assegnato a un punto di contatto dipende da quanto tale punto di contatto ha influenzato le decisioni di acquisto del cliente.
 
-**Punti di contatto** consulta le interazioni che un potenziale cliente/lead ha con le tue attività di marketing online o offline. Sono quattro **punti di contatto principali** considerati nell’attribuzione marketing. Riflettono le diverse fasi del percorso del cliente. Questi punti di contatto principali, denominati anche **punti di contatto milestone**, sono: First Touch (FT), Lead Creation (LC), Opportunity Creation (OC), Closed Won deal (CW).
+**Punti di contatto** si riferiscono alle interazioni che un potenziale cliente/lead ha con le tue attività di marketing online o offline. Ci sono quattro **punti di contatto principali** considerati nell&#39;attribuzione marketing. Riflettono le diverse fasi del percorso del cliente. Questi punti di contatto principali, detti anche **punti di contatto milestone**, sono: Primo contatto (FT), Creazione lead (LC), Creazione opportunità (OC), Transazione Won chiusa (CW).
 
 ![](assets/1.png)
 
-Questi sono i punti cardine su cui si fonda Marketo Measure **modelli di attribuzione**. Marketo Measure offre sei modelli di attribuzione. Ogni modello si concentra su diverse fasi nel percorso di clienti e offre una struttura generale per l’attribuzione del merito di ricavo ai punti di contatto di marketing. Il modello utilizzato dipende dalle fasi del percorso a cui sei più interessato a misurare e dalla quantità di dati su cui desideri creare rapporti. I modelli di attribuzione offerti da Marketo Measure sono:
+Questi tocchi milestone sono alla base dei **modelli di attribuzione** di Marketo Measure. Marketo Measure offre sei modelli di attribuzione. Ogni modello si concentra su diverse fasi nel percorso di clienti e offre una struttura generale per l’attribuzione del merito di ricavo ai punti di contatto di marketing. Il modello utilizzato dipende dalle fasi del percorso a cui sei più interessato a misurare e dalla quantità di dati su cui desideri creare rapporti. I modelli di attribuzione offerti da Marketo Measure sono:
 
 * Primo contatto
 * Creazione di lead

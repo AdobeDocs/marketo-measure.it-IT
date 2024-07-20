@@ -26,9 +26,9 @@ Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti su
 
 ## Diagrammi di relazione entità {#entity-relationship-diagrams}
 
-Il _Data Warehouse modello dati_ ERD mostra il modo in cui i dati nel data warehouse devono fluire ed essere collegati tra loro. Questo diagramma non include tutte le tabelle disponibili nel data warehouse perché alcune di esse rappresentano tabelle di mappatura, viste di altre tabelle già presenti o tabelle obsolete che non si consiglia di utilizzare più. Vedi le descrizioni dettagliate delle tabelle e delle colonne presenti nel data warehouse di seguito. Molte di queste tabelle contengono campi denormalizzati, tuttavia questo diagramma è il modello dati consigliato, che sfrutta i dati provenienti da tabelle dimensionali.
+L&#39;ERD _Data Warehouse Data Model_ mostra il modo in cui i dati nel data warehouse devono scorrere e essere collegati tra loro. Questo diagramma non include tutte le tabelle disponibili nel data warehouse perché alcune di esse rappresentano tabelle di mappatura, viste di altre tabelle già presenti o tabelle obsolete che non si consiglia di utilizzare più. Vedi le descrizioni dettagliate delle tabelle e delle colonne presenti nel data warehouse di seguito. Molte di queste tabelle contengono campi denormalizzati, tuttavia questo diagramma è il modello dati consigliato, che sfrutta i dati provenienti da tabelle dimensionali.
 
-Il valore aggiuntivo _Aggiunge il modello dati dimensionale_ ERD presenta una visualizzazione del modo migliore per collegare le tabelle per le dimensioni specifiche degli annunci alle tabelle del modello dati principale. Anche se le dimensioni degli annunci vengono denormalizzate in altre tabelle, questo rappresenta il modello consigliato per unire queste dimensioni.
+L&#39;ulteriore modello dati dimensionale _Ads_ ERD presenta una visualizzazione del modo migliore per collegare le tabelle per le dimensioni specifiche degli annunci alle tabelle nel modello dati principale. Anche se le dimensioni degli annunci vengono denormalizzate in altre tabelle, questo rappresenta il modello consigliato per unire queste dimensioni.
 
 _Fare clic su un&#39;immagine per la versione a schermo intero_
 
@@ -69,13 +69,13 @@ Account importati dal sistema di origine.
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>La data di creazione dell’account, dal sistema di origine.</td>
-      <td>00/08/2016:32:55,000</td>
+      <td>2016-08-28 00:32:55.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica dell’account, dal sistema di origine.</td>
-      <td>01/08/2018 17:38:30,000</td>
+      <td>01/08/2018 17:38:30.000</td>
     </tr>
     <tr>
       <td>NOME</td>
@@ -92,7 +92,7 @@ Account importati dal sistema di origine.
     <tr>
       <td>ENGAGEMENT_RATING</td>
       <td>varchar</td>
-      <td>Un livello di lettera (A, B, C, D, N/A) generato dal [!DNL Marketo Measure] Modello di apprendimento automatico. Il valore sarà nullo se ABM è disabilitato.</td>
+      <td>Un livello lettera (A, B, C, D, N/A) generato dal modello di apprendimento automatico [!DNL Marketo Measure]. Il valore sarà nullo se ABM è disabilitato.</td>
       <td>B</td>
     </tr>
     <tr>
@@ -116,26 +116,26 @@ Account importati dal sistema di origine.
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Account_Type__c": "Security", "Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td><b>∗</b> SETTORE</td>
@@ -144,7 +144,7 @@ Account importati dal sistema di origine.
       <td>Retail, telecomunicazioni</td>
     </tr>
     <tr>
-      <td><b>∗</b> PAESE</td>
+      <td>PAESE <b>∗</b></td>
       <td>varchar</td>
       <td>Parte del paese dell’indirizzo dell’account.</td>
       <td>USA, Canada</td>
@@ -171,12 +171,12 @@ Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli acc
       <td>ID</td>
       <td>varchar</td>
       <td>ID univoco del record.</td>
-      <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13,000</td>
+      <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</td>
     </tr>
     <tr>
       <td>ACCOUNT_ID</td>
       <td>varchar</td>
-      <td>ID dell’account del sistema di origine.</td>
+      <td>ID account di sistema Source.</td>
       <td>0013100001phrBAAAY</td>
     </tr>
     <tr>
@@ -189,13 +189,13 @@ Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli acc
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica dell’account, dal sistema di origine.</td>
-      <td>23/08/2018:53:39,000</td>
+      <td>2018-08-31 23:53:39.000</td>
     </tr>
     <tr>
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>La data di creazione dell’account, dal sistema di origine.</td>
-      <td>22/08/2018:01:32,000</td>
+      <td>2018-08-18 22:01:32.000</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
@@ -207,19 +207,19 @@ Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli acc
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -273,13 +273,13 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>DATA_INIZIALE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio dell’attività, dal sistema di origine.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestapm_ntz</td>
       <td>Data di fine dell'attività, dal sistema di origine.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>ID_CAMPAGNA</td>
@@ -290,7 +290,7 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       </td>
     </tr>
     <tr>
-      <td>SISTEMA_DI_ORIGINE</td>
+      <td>SOURCE_SYSTEM</td>
       <td>varchar</td>
       <td>Identifica il tipo di sistema di origine.</td>
       <td>Marketo</td>
@@ -299,13 +299,13 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione della riga nel sistema di origine.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata alla riga nel sistema di origine.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
@@ -323,19 +323,19 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -428,13 +428,13 @@ Annunci importati da qualsiasi account annuncio collegato.
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record.</td>
-      <td>06/08/2018:35:59,000</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
       <td>PRIMO_IMPORTATO</td>
       <td>timestamp_ntz</td>
       <td>Data della prima importazione del record dal sistema di origine.</td>
-      <td>06/08/2018:35:59,000</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
       <td>NOME</td>
@@ -445,7 +445,7 @@ Annunci importati da qualsiasi account annuncio collegato.
     <tr>
       <td>NEED_UPDATE</td>
       <td>booleano</td>
-      <td>Se l’annuncio deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.
+      <td>Indica se l'annuncio deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].
       <p>(Campo diagnostico utilizzato dall'elaborazione interna).
       </td>
       <td>falso</td>
@@ -487,7 +487,7 @@ Annunci importati da qualsiasi account annuncio collegato.
     <tr>
       <td>URL_RICHIESTO</td>
       <td>varchar</td>
-      <td>Con cosa verrà decorato l’URL [!DNL Marketo Measure] parametri.
+      <td>Specifica l'URL con i parametri [!DNL Marketo Measure].
       <p>(Campo diagnostico, per elaborazione interna).
       </td>
       <td></td>
@@ -510,19 +510,19 @@ Annunci importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -615,13 +615,13 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record.</td>
-      <td>06/08/2018:35:59,000</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
       <td>PRIMO_IMPORTATO</td>
       <td>timestamp_ntz</td>
       <td>Data della prima importazione del record dal sistema di origine.</td>
-      <td>06/08/2018:35:59,000</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
       <td>NOME</td>
@@ -632,7 +632,7 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
     <tr>
       <td>NEED_UPDATE</td>
       <td>booleano</td>
-      <td>Indica se l'inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.
+      <td>Indica se l'inserzionista deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].
       <p>(Campo diagnostico utilizzato dall'elaborazione interna).
       </td>
       <td>falso</td>
@@ -665,19 +665,19 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -825,7 +825,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>12/09/2018:54:37,000</p>
+        <p>2018-09-06 12:54:37.000</p>
       </td>
     </tr>
     <tr>
@@ -837,7 +837,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
-        <p>06/08/2018:35:58,000</p>
+        <p>2018-08-02 06:35:58.000</p>
       </td>
     </tr>
     <tr>
@@ -858,7 +858,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l'inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se l'inserzionista deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
@@ -929,7 +929,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
     </tr>
     <tr>
       <td>
-        <p>MEDIA</p>
+        <p>MEDIUM</p>
       </td>
       <td>varchar</td>
       <td>Analizzato dall’URL da utm_medium.</td>
@@ -1049,19 +1049,19 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1223,7 +1223,7 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>06/08/2018:35:58,000</p>
+        <p>2018-08-02 06:35:58.000</p>
       </td>
     </tr>
     <tr>
@@ -1235,7 +1235,7 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
-        <p>06/08/2018:35:58,000</p>
+        <p>2018-08-02 06:35:58.000</p>
       </td>
     </tr>
     <tr>
@@ -1258,7 +1258,7 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
         <p>booleano</p>
       </td>
       <td>
-        <p>Se la campagna deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se la campagna deve essere aggiornata per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
@@ -1365,19 +1365,19 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1457,7 +1457,7 @@ Ad Forms importato da qualsiasi account Ad connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>06/08/2018:35:58,000</p>
+        <p>2018-08-02 06:35:58.000</p>
       </td>
     </tr>
     <tr>
@@ -1469,7 +1469,7 @@ Ad Forms importato da qualsiasi account Ad connesso.
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
-        <p>06/08/2018:35:58,000</p>
+        <p>2018-08-02 06:35:58.000</p>
       </td>
     </tr>
     <tr>
@@ -1566,24 +1566,24 @@ Ad Forms importato da qualsiasi account Ad connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>SOURCE_ID</td>
       <td>varchar</td>
-      <td>ID dell’origine del record.</td>
+      <td>ID del Source da cui proviene il record.</td>
       <td>aw.3284209</td>
     </tr>
   </tbody>
@@ -1752,7 +1752,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>06/08/2018:36:14,000</p>
+        <p>2018-08-02 06:36:14.000</p>
       </td>
     </tr>
     <tr>
@@ -1764,7 +1764,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
-        <p>06/08/2018:36:14,000</p>
+        <p>2018-08-02 06:36:14.000</p>
       </td>
     </tr>
     <tr>
@@ -1787,7 +1787,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se l'inserzionista deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se l'inserzionista deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
@@ -1892,19 +1892,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1961,19 +1961,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1993,7 +1993,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>Un ID univoco per il punto di contatto di attribuzione acquirente (BAT).</p>
+        <p>Un ID univoco per il Buyer Attribution Touchpoint (BAT).</p>
       </td>
       <td>
         <p>BAT2_0060Z00000lFHtOQAW_</p>
@@ -2007,7 +2007,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>04/09/2018:53:53,000</p>
+        <p>04.0}53.000 09/01 2018:53:</p>
       </td>
     </tr>
     <tr>
@@ -2071,7 +2071,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data del punto di contatto.</p>
       </td>
       <td>
-        <p>01/06/2017:05:20,000</p>
+        <p>2017-06-20 01:05:20.000</p>
       </td>
     </tr>
     <tr>
@@ -2098,7 +2098,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all’interno di [!DNL Marketo Measure] App. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
+        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all'interno dell'app [!DNL Marketo Measure]. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -2110,7 +2110,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la prima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la prima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>ABC</p>
@@ -2122,7 +2122,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la seconda categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la seconda categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Sì</p>
@@ -2134,7 +2134,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la terza categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la terza categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>PMI</p>
@@ -2145,7 +2145,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA4</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la quarta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la quarta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td>
         <p>Nuove attività</p>
       </td>
@@ -2155,7 +2155,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA5</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la 5a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la quinta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2163,7 +2163,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA6</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la sesta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la sesta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2171,7 +2171,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA7</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la settima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la settima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2179,7 +2179,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA8</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per l’ottava categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per l'ottava categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2187,7 +2187,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA9</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la nona categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la nona categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2195,7 +2195,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA10</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la decima categoria in cui rientra il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la decima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2203,7 +2203,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA11</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per l’11a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno del [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per l'11a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2211,7 +2211,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA12</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la dodicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la dodicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2219,7 +2219,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA13</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la 13a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la tredicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2227,7 +2227,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA14</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la quattordicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la quattordicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2235,7 +2235,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>CATEGORIA15</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la quindicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la quindicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -2367,7 +2367,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data di invio del modulo.</p>
       </td>
       <td>
-        <p>01/06/2017:06:41,000</p>
+        <p>2017-06-20 01:06:41.000</p>
       </td>
     </tr>
     <tr>
@@ -2408,11 +2408,11 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     </tr>
     <tr>
       <td>
-        <p>MEDIA</p>
+        <p>MEDIUM</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "cpc" o "display".</p>
+        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può trattarsi di valori quali "cpc" o "display".</p>
       </td>
       <td>
         <p>social</p>
@@ -2424,7 +2424,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall’URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Sorgente punto di contatto".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori quali "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -2448,7 +2448,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
+        <p>La piattaforma di annunci [!DNL Marketo Measure] è stata risolta da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>Google</p>
@@ -3016,19 +3016,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3051,7 +3051,7 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
     <td>CONVERSION_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data della conversione</td>
-    <td>01/01/2020:01:00,000</td>
+    <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>CONVERSION_NAME</td>
@@ -3069,7 +3069,7 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
     <td>ID evento MM originale per l’evento di conversione 
-    <br>mappa su un punto di contatto utente o una transizione di fase</td>
+    <br>corrisponde a un punto di contatto utente o a una transizione di fase</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
   <tr>
@@ -3087,14 +3087,14 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
   <tr>
     <td>CONVERSION_LEAD_ID</td>
     <td>varchar</td>
-    <td>ID lead MM originale per l’evento di conversione <br>è probabile che sia nullo la maggior parte delle volte</td>
+    <td>ID lead MM originale per l'evento di conversione <br> probabilmente nullo nella maggior parte dei casi</td>
     <td>00Q0Z000013dw4GUAQ</td>
   </tr>
   <tr>
     <td>CONVERSION_CONTACT_ID</td>
     <td>varchar</td>
     <td>ID contatto MM originale per l’evento di conversione
-    <br>è probabile che sia nullo la maggior parte delle volte</td>
+    <br> potrebbe essere nullo la maggior parte delle volte</td>
     <td>00331000032hMxRAAU</td>
   </tr>
   <tr>
@@ -3107,7 +3107,7 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
     <td>SCORE_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data dell’ultimo punteggio dei punti di contatto</td>
-    <td>01/01/2020:01:00,000</td>
+    <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>INFLUENZA_PERCENTUALE</td>
@@ -3125,7 +3125,7 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
     <td>DATA_PUNTO DI CONTATTO</td>
     <td>Timestamp_ntz</td>
     <td>il punto di contatto o la data di transizione dell’area di visualizzazione</td>
-    <td>01/01/2020:01:00,000</td>
+    <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>TOUCHPOINT_EVENT_ID</td>
@@ -3173,19 +3173,19 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
     <td>_CREATED_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data di creazione del record nel Snowflake</td>
-    <td>01/01/2020:01:00,000</td>
+    <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>_MODIFIED_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data dell'ultima modifica del record nel Snowflake</td>
-    <td>01/01/2020:01:00,000</td>
+    <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>_DELETED_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data in cui il record è stato eliminato nel Snowflake</td>
-    <td>01/01/2020:01:00,000</td>
+    <td>01/01/2020 01 :01:00.000</td>
   </tr>
 </tbody>
 </table>
@@ -3215,7 +3215,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>Data dell’ultima modifica del membro della campagna, dal sistema di origine.</p>
       </td>
       <td>
-        <p>31/08/2018:49:54,000</p>
+        <p>2018-08-31 20:49:54.000</p>
       </td>
     </tr>
     <tr>
@@ -3225,7 +3225,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>La data di creazione del membro della campagna, dal sistema di origine.</p>
       </td>
       <td>
-        <p>31/08/2018:49:54,000</p>
+        <p>2018-08-31 20:49:54.000</p>
       </td>
     </tr>
     <tr>
@@ -3237,7 +3237,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>Data e ora impostate dal cliente per sostituire la data della campagna e utilizzare questo valore per la data del punto di contatto.</p>
       </td>
       <td>
-        <p>18/08/2018:00:00,000</p>
+        <p>2018-08-30 18:00:00.000</p>
       </td>
     </tr>
     <tr>
@@ -3317,7 +3317,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
         <p>Data della prima risposta del membro della campagna.</p>
       </td>
       <td>
-        <p>07/08/2018:00:00,000</p>
+        <p>2018-08-30 07:00:00.000</p>
       </td>
     </tr>
     <tr>
@@ -3374,7 +3374,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
       </td>
       <td>varchar</td>
       <td>
-        <p>Nel campo Audit viene indicato se per il lead è stato generato o meno un punto di contatto dell'acquirente. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
+        <p>Campo di controllo, indica se per il lead è stato generato o meno un Buyer Touchpoint. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
       </td>
       <td>
         <p>Nessun punto di contatto: data esterna al modello</p>
@@ -3386,7 +3386,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
       </td>
       <td>varchar</td>
       <td>
-        <p>Nel campo Audit viene indicato se per il contatto è stato generato o meno un punto di contatto dell'acquirente. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
+        <p>Il campo Audit indica se per il contatto è stato generato o meno un Buyer Touchpoint. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
       </td>
       <td>
         <p>Punto di contatto creato</p>
@@ -3398,7 +3398,7 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
       </td>
       <td>varchar</td>
       <td>
-        <p>Nel campo Audit viene indicato se per l’opportunità è stato generato o meno un punto di contatto di attribuzione buyer. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
+        <p>Il campo Audit indica se per l’opportunità è stato generato o meno un Buyer Attribution Touchpoint. Se non è stato creato alcun punto di contatto, viene indicato il motivo per cui non è stato qualificato.</p>
       </td>
       <td>
         <p>Punto di contatto creato</p>
@@ -3421,33 +3421,33 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Campaign_Type__c":"Cene","Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
 
 ### BIZ_CHANNELS {#biz-channels}
 
-Canali di marketing, come creati nel [!DNL Marketo Measure] applicazione.
+Canali di marketing creati nell&#39;applicazione [!DNL Marketo Measure].
 
 <table>
   <tbody>
@@ -3497,19 +3497,19 @@ Canali di marketing, come creati nel [!DNL Marketo Measure] applicazione.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell'ultima modifica del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3543,7 +3543,7 @@ Contatti importati dal sistema di origine.
         <p>Data dell'ultima modifica del record Contatto dal sistema di origine.</p>
       </td>
       <td>
-        <p>05/09/2018:17:53,000</p>
+        <p>05/09/05/2018 :17:53.000</p>
       </td>
     </tr>
     <tr>
@@ -3553,7 +3553,7 @@ Contatti importati dal sistema di origine.
         <p>Data di creazione del record Contatto dal sistema di origine.</p>
       </td>
       <td>
-        <p>05/09/2018:17:51,000</p>
+        <p>05/09/2018 :17:51,000</p>
       </td>
     </tr>
     <tr>
@@ -3584,7 +3584,7 @@ Contatti importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Origine in cui è stato creato il lead.</p>
+        <p>Source in cui è stato creato il lead.</p>
       </td>
       <td>
         <p>Pubblicità</p>
@@ -3596,7 +3596,7 @@ Contatti importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Fase corrente del contatto, riconosciuta come fase personalizzata che può essere creata in [!DNL Marketo Measure] applicazione.</p>
+        <p>Fase corrente del contatto, riconosciuta come fase personalizzata che può essere creata nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Demo pianificata</p>
@@ -3608,7 +3608,7 @@ Contatti importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Tutte le fasi precedenti per il contatto, riconosciute come fasi personalizzate che possono essere create in [!DNL Marketo Measure] applicazione.</p>
+        <p>Tutte le fasi precedenti per il contatto, riconosciute come fasi personalizzate che possono essere create nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Apri - Contatto</p>
@@ -3634,7 +3634,7 @@ Contatti importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>L'ID cookie [!DNL Marketo Measure] utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione Web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -3659,7 +3659,7 @@ Contatti importati dal sistema di origine.
       <td>falso</td>
     </tr>
     <tr>
-      <td>SISTEMA_DI_ORIGINE</td>
+      <td>SOURCE_SYSTEM</td>
       <td>varchar</td>
       <td>Indica se il record proviene da un’integrazione CRM o Marketo.</td>
       <td>Crm</td>
@@ -3673,7 +3673,7 @@ Contatti importati dal sistema di origine.
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
     </tr>
     <tr>
@@ -3686,19 +3686,19 @@ Contatti importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td><b>∗</b> JOB_TITLE</td>
@@ -3746,13 +3746,13 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>DATA_INIZIALE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio del tasso di conversione.</td>
-      <td>00 11 10 00 18:00:00,000</td>
+      <td>00:00:00.000 01 11/01/2018</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio successiva per il tasso di conversione. La data di fine del tasso di conversione è data_finale meno 1 giorno.</td>
-      <td>00/09/2018:00:00,000</td>
+      <td>00:00:00.000 00 09/01/2018</td>
     </tr>
     <tr>
       <td>CONVERSION_RATE</td>
@@ -3770,13 +3770,13 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel sistema di origine.</td>
-      <td>00 03/03/2019:54:50,000</td>
+      <td>2019-03-30 00:54:50,000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell'ultima modifica del record nel sistema di origine.</td>
-      <td>00 03/03/2019:54:50,000</td>
+      <td>2019-03-30 00:54:50,000</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
@@ -3788,19 +3788,19 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3827,18 +3827,18 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record.</td>
-      <td>12/09/2018:22:45,000</td>
+      <td>2018-09-06 12:22:45.000</td>
     </tr>
     <tr>
       <td>COST_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il costo è stato sostenuto (o attribuito a).</td>
-      <td>00/09/2018:00:00,000</td>
+      <td>00:00:00.000 00 09/06/2018</td>
     </tr>
     <tr>
       <td>SORGENTE</td>
       <td>varchar</td>
-      <td>Origine del costo dichiarato.</td>
+      <td>Source del costo riportato.</td>
       <td>[Visualizzazione AdWords]</td>
     </tr>
     <tr>
@@ -3880,7 +3880,7 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
     <tr>
       <td>NOME_CANALE</td>
       <td>varchar</td>
-      <td>Nome del canale di marketing, creato dal cliente in [!DNL Marketo Measure] app.</td>
+      <td>Nome del canale di marketing, creato dal cliente nell'app [!DNL Marketo Measure].</td>
       <td>Display.Google</td>
     </tr>
     <tr>
@@ -4234,7 +4234,7 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
     <tr>
       <td>SOURCE_ID</td>
       <td>varchar</td>
-      <td>ID dell’origine del record.</td>
+      <td>ID del Source da cui proviene il record.</td>
       <td>aw.3284209</td>
     </tr>
     <tr>
@@ -4313,19 +4313,19 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -4487,7 +4487,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>06/08/2018:36:25,000</p>
+        <p>2018-08-02 06:36:25.000</p>
       </td>
     </tr>
     <tr>
@@ -4499,7 +4499,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
-        <p>06/08/2018:36:25,000</p>
+        <p>2018-08-02 06:36:25.000</p>
       </td>
     </tr>
     <tr>
@@ -4522,7 +4522,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Se la creatività deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se il componente Creative deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
@@ -4603,7 +4603,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Con cosa verrà decorato l’URL [!DNL Marketo Measure] parametri.</p>
+        <p>Specifica l'URL con i parametri [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
@@ -4723,7 +4723,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>ID condivisione. (Utilizzato solo per LinkedIn Ads).</p>
       </td>
       <td>
-        <p>urn:li:condividere:6376987561897848832</p>
+        <p>urn:li:condivisione:6376987561897848832</p>
       </td>
     </tr>
     <tr>
@@ -4740,19 +4740,19 @@ Creative importate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -4786,7 +4786,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data di creazione dell'evento dal sistema di origine.</p>
       </td>
       <td>
-        <p>19/12/2016:32:53,000</p>
+        <p>2016-12-12 19:32:53.000</p>
       </td>
     </tr>
     <tr>
@@ -4796,7 +4796,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data dell'ultima modifica apportata all'evento dal sistema di origine.</p>
       </td>
       <td>
-        <p>08/09/2018:39:51,000</p>
+        <p>08.0}51.000 09/09/2018:39:</p>
       </td>
     </tr>
     <tr>
@@ -4851,7 +4851,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
       </td>
       <td>varchar</td>
       <td>
-        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>L'ID cookie [!DNL Marketo Measure] utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione Web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -4878,7 +4878,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data di inizio dell’evento, una delle opzioni utilizzate per determinare la data del punto di contatto.</p>
       </td>
       <td>
-        <p>19/12/2016:30:00,000</p>
+        <p>2016-12-16 19:30:00.000</p>
       </td>
     </tr>
     <tr>
@@ -4890,7 +4890,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data di fine dell’evento, una delle opzioni utilizzate per determinare la data del punto di contatto.</p>
       </td>
       <td>
-        <p>21/12/2016:30:00,000</p>
+        <p>2016-12-16 21:30:00.000</p>
       </td>
     </tr>
     <tr>
@@ -4908,26 +4908,26 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Contact_Type__c":"CMO","Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -4961,7 +4961,7 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
         <p>Data di creazione dell'attività, dal sistema di origine.</p>
       </td>
       <td>
-        <p>18/08/2018:30:25,000</p>
+        <p>2018-08-27 18:30:25.000</p>
       </td>
     </tr>
     <tr>
@@ -4971,7 +4971,7 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
         <p>Data dell'ultima modifica apportata all'attività dal sistema di origine.</p>
       </td>
       <td>
-        <p>18/08/2018:31:53,000</p>
+        <p>2018-08-27 18:31:53.000</p>
       </td>
     </tr>
     <tr>
@@ -5026,7 +5026,7 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
       </td>
       <td>varchar</td>
       <td>
-        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>L'ID cookie [!DNL Marketo Measure] utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione Web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5053,7 +5053,7 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
         <p>Data in cui si è verificata l'attività, una delle opzioni utilizzate per determinare la data del punto di contatto.</p>
       </td>
       <td>
-        <p>07/08/2018:00:00,000</p>
+        <p>2018-08-27 07:00:00.000</p>
       </td>
     </tr>
     <tr>
@@ -5071,26 +5071,26 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5136,26 +5136,26 @@ Tabella di tutte le valute ISO.
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record in [!DNL Marketo Measure].</td>
-      <td>18/08/2018:30:25,000</td>
+      <td>Data dell'ultima modifica del record in [!DNL Marketo Measure].</td>
+      <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE_CRM</td>
       <td>timestamp_ntz</td>
       <td>Data dell'ultima modifica del record nel sistema di origine.</td>
-      <td>18/08/2018:30:25,000</td>
+      <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in [!DNL Marketo Measure]</td>
-      <td>18/08/2018:30:25,000</td>
+      <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
       <td>CREATED_DATE_CRM</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel sistema di origine.</td>
-      <td>18/08/2018:30:25,000</td>
+      <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
       <td>ISO_NUMERIC</td>
@@ -5179,19 +5179,19 @@ Tabella di tutte le valute ISO.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5236,13 +5236,13 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
       <td>
         <p>Data di registrazione della chat.</p>
       </td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>INDIRIZZO_IP</td>
@@ -5318,26 +5318,26 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
 
 ### BIZ_CUSTOMER_EVENTS {#biz-customer-events}
 
-Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabella sarà vuota se [!DNL Marketo Measure] Eventi non attivati.
+Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabella sarà vuota se [!DNL Marketo Measure] eventi non sono abilitati.
 
 <table>
   <tbody>
@@ -5375,13 +5375,13 @@ Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabell
       <td>
         <p>Data in cui l'evento è stato attivato dal codice JavaScript personalizzato.</p>
       </td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Ultima data di modifica del record.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>
@@ -5429,19 +5429,19 @@ Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabell
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5664,19 +5664,19 @@ Pagine di destinazione scaricate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5698,7 +5698,7 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
       <td>varchar</td>
       <td>ID univoco del record.</td>
       <td>
-        <p>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13,000</p>
+        <p>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</p>
       </td>
     </tr>
     <tr>
@@ -5732,7 +5732,7 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
         <p>Data dell’ultima modifica della riga</p>
       </td>
       <td>
-        <p>23/08/2018:55:03,000</p>
+        <p>2018-08-14 23:55:03.000</p>
       </td>
     </tr>
     <tr>
@@ -5742,7 +5742,7 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
         <p>Data di creazione della riga</p>
       </td>
       <td>
-        <p>23/08/2018:55:03,000</p>
+        <p>2018-08-14 23:55:03.000</p>
       </td>
     </tr>
     <tr>
@@ -5769,26 +5769,26 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
 
 ### BIZ_FACTS {#biz-facts}
 
-Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di contatto degli utenti, punti di contatto (BT), punti di contatto di attribuzione (BAT) e dati sui costi. Utilizzato internamente per supportare [!DNL Marketo Measure] reportistica.
+Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di contatto degli utenti, punti di contatto (BT), punti di contatto di attribuzione (BAT) e dati sui costi. Utilizzato internamente per supportare il reporting [!DNL Marketo Measure].
 
 >[!IMPORTANT]
 >
@@ -6113,7 +6113,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
     <tr>
       <td>TIPO</td>
       <td>numero(38,0)</td>
-      <td>Indica il tipo di fatto della riga. 1 = Punto Di Contatto Attribuzione Acquirente 2 = Costo 3 = Punto Di Contatto Acquirente 4 = Punto Di Contatto Utente 5 = Visualizzazione Pagina 6 = Sessione 7 = Invio Modulo 8 = Impression</td>
+      <td>Indica il tipo di fatto della riga. 1 = Buyer Attribution Touchpoint 2 = Costo 3 = Buyer Touchpoint 4 = Punto Di Contatto Utente 5 = Visualizzazione Pagina 6 = Sessione 7 = Invio Modulo 8 = Impression</td>
       <td>3</td>
     </tr>
     <tr>
@@ -6126,7 +6126,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
       <td>TIMESTAMP</td>
       <td>timestamp_ntz</td>
       <td>Data e ora in cui si è verificato l’evento.</td>
-      <td>19/08/2018:39:15,000</td>
+      <td>2018-08-28 19:39:15.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -6135,7 +6135,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Data dell’ultima modifica apportata alla riga.</p>
       </td>
       <td>
-        <p>00/08/2018:46:47,000</p>
+        <p>2018-08-29 00:46:47.000</p>
       </td>
     </tr>
     <tr>
@@ -6321,7 +6321,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Data di creazione dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
-        <p>31/08/2018:45:47,000</p>
+        <p>2018-08-31 15:45:47.000</p>
       </td>
     </tr>
     <tr>
@@ -6333,7 +6333,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Data di chiusura dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
-        <p>07/12/2018:00:00,000</p>
+        <p>2018-12-31 07:00:00.000</p>
       </td>
     </tr>
     <tr>
@@ -6344,7 +6344,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
       <td>
         <p>Data di creazione del record Contatto dal sistema di origine.</p>
       </td>
-      <td>00/04/2017:21:52,000</td>
+      <td>2017-04-28 00:21:52.000</td>
     </tr>
     <tr>
       <td>CONTACT_ID</td>
@@ -6371,7 +6371,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Data di creazione del record Lead dal sistema di origine.</p>
       </td>
       <td>
-        <p>00/04/2017:21:52,000</p>
+        <p>2017-04-28 00:21:52.000</p>
       </td>
     </tr>
     <tr>
@@ -6544,19 +6544,19 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -6630,7 +6630,7 @@ Invii di moduli acquisiti.
         <p>Data di invio del modulo.</p>
       </td>
       <td>
-        <p>01/08/2018:35:21,000</p>
+        <p>2018-08-06 01:35:21.000</p>
       </td>
     </tr>
     <tr>
@@ -6640,7 +6640,7 @@ Invii di moduli acquisiti.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>23/08/2018:09:52,000</p>
+        <p>2018-08-07 23:09:52.000</p>
       </td>
     </tr>
     <tr>
@@ -6813,19 +6813,19 @@ Invii di moduli acquisiti.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -6890,7 +6890,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Data in cui l’impression è stata trasmessa.</p>
       </td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -6898,7 +6898,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Data dell’ultima modifica del record.</p>
       </td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>
@@ -7064,7 +7064,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       </td>
       <td>varchar</td>
       <td>
-        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
+        <p>La piattaforma di annunci [!DNL Marketo Measure] è stata risolta da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>Google</td>
     </tr>
@@ -7454,19 +7454,19 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -7629,7 +7629,7 @@ Parole chiave importate da qualsiasi account annuncio collegato.
       <td>
         <p>Data dell’ultima modifica del record.</p>
       </td>
-      <td>06/08/2018:37:29,000</td>
+      <td>2018-08-02 06:37:29.000</td>
     </tr>
     <tr>
       <td>
@@ -7640,7 +7640,7 @@ Parole chiave importate da qualsiasi account annuncio collegato.
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
       <td>
-        <p>06/08/2018:37:29,000</p>
+        <p>2018-08-02 06:37:29.000</p>
       </td>
     </tr>
     <tr>
@@ -7663,7 +7663,7 @@ Parole chiave importate da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Specifica se la parola chiave deve essere aggiornata o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se la parola chiave deve essere aggiornata per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico, utilizzato per l'elaborazione interna).</p>
       </td>
       <td>
@@ -7819,19 +7819,19 @@ Parole chiave importate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8038,19 +8038,19 @@ Pagine di destinazione importate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8084,7 +8084,7 @@ Lead importati dal sistema di origine.
         <p>Data dell'ultima modifica del record Lead dal sistema di origine.</p>
       </td>
       <td>
-        <p>21/08/2018:52:10,000</p>
+        <p>2018-08-27 21:52:10.000</p>
       </td>
     </tr>
     <tr>
@@ -8093,7 +8093,7 @@ Lead importati dal sistema di origine.
       <td>
         <p>Data di creazione del record Lead dal sistema di origine.</p>
       </td>
-      <td>21/08/2018:52:10,000</td>
+      <td>2018-08-27 21:52:10.000</td>
     </tr>
     <tr>
       <td>
@@ -8135,7 +8135,7 @@ Lead importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Origine in cui è stato creato il lead.</p>
+        <p>Source in cui è stato creato il lead.</p>
       </td>
       <td>
         <p>Pubblicità</p>
@@ -8176,7 +8176,7 @@ Lead importati dal sistema di origine.
         <p>Data in cui il lead è stato convertito in contatto.</p>
       </td>
       <td>
-        <p>07/08/2018:00:00,000</p>
+        <p>2018-08-27 07:00:00.000</p>
       </td>
     </tr>
     <tr>
@@ -8209,7 +8209,7 @@ Lead importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Fase corrente del lead, riconosciuta come fase personalizzata che può essere creata in [!DNL Marketo Measure] applicazione.</p>
+        <p>Fase corrente del lead, riconosciuta come fase personalizzata che può essere creata nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Demo pianificata</p>
@@ -8221,7 +8221,7 @@ Lead importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Tutte le fasi precedenti per il lead, riconosciute come fasi personalizzate che possono essere create in [!DNL Marketo Measure] applicazione.</p>
+        <p>Tutte le fasi precedenti per il lead, riconosciute come fasi personalizzate che possono essere create nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>MQL</p>
@@ -8271,7 +8271,7 @@ Lead importati dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il [!DNL Marketo Measure] ID cookie utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione web. Requisito: Abilita tracciamento chiamate: True</p>
+        <p>L'ID cookie [!DNL Marketo Measure] utilizzato per compilare da un partner di integrazione per mappare un evento offline a una sessione Web. Requisito: Abilita tracciamento chiamate: True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -8306,7 +8306,7 @@ Lead importati dal sistema di origine.
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Lead_Type__c":"Vendite create", "Foo":"Bar"}</td>
     </tr>
     <tr>
@@ -8316,7 +8316,7 @@ Lead importati dal sistema di origine.
       <td>vero</td>
     </tr>
     <tr>
-      <td>SISTEMA_DI_ORIGINE</td>
+      <td>SOURCE_SYSTEM</td>
       <td>varchar</td>
       <td>Indica se il record proviene da un’integrazione CRM o Marketo.</td>
       <td>Crm</td>
@@ -8331,19 +8331,19 @@ Lead importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8410,7 +8410,7 @@ Transizioni nell&#39;area intermedia per lead o contatti.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del punto di contatto dell'acquirente associato alla transizione.</p>
+        <p>ID del Buyer Touchpoint associato alla transizione.</p>
       </td>
       <td>
         <p>TP2_Person_00Q3100001Fx6AlEAJ_2018-08-28:14-41-06-1674260.d00ceb09fbd3</p>
@@ -8425,7 +8425,7 @@ Transizioni nell&#39;area intermedia per lead o contatti.
         <p>Data di transizione del record nell’area di visualizzazione.</p>
       </td>
       <td>
-        <p>16/08/2018:05:34,000</p>
+        <p>2018-08-27 16:05:34.000</p>
       </td>
     </tr>
     <tr>
@@ -8460,7 +8460,7 @@ Transizioni nell&#39;area intermedia per lead o contatti.
         <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Il rango numerico dello stadio, come ordinato nel [!DNL Marketo Measure] Impostazioni di mappatura dello stage.</p>
+        <p>La classificazione numerica dello stage, come ordinato nelle impostazioni di mappatura dello stage [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>5</p>
@@ -8529,7 +8529,7 @@ Transizioni nell&#39;area intermedia per lead o contatti.
         <p>Data di transizione per la fase precedente, in base alla classificazione della fase.</p>
       </td>
       <td>
-        <p>21/11/2017:26:44,000</p>
+        <p>2017-11-28 21:26:44.000</p>
       </td>
     </tr>
     <tr>
@@ -8541,7 +8541,7 @@ Transizioni nell&#39;area intermedia per lead o contatti.
         <p>Data di transizione per la fase successiva, in base alla classificazione della fase.</p>
       </td>
       <td>
-        <p>22/12/2017:39:17,000</p>
+        <p>2017-12-11 22:39:17.000</p>
       </td>
     </tr>
     <tr>
@@ -8551,7 +8551,7 @@ Transizioni nell&#39;area intermedia per lead o contatti.
         <p>Data ultima modifica del record.</p>
       </td>
       <td>
-        <p>15 8-08-2018:31:10,000</p>
+        <p>2018-08-28 15:31:10.000</p>
       </td>
     </tr>
     <tr>
@@ -8572,19 +8572,19 @@ Transizioni nell&#39;area intermedia per lead o contatti.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8617,7 +8617,7 @@ Opportunità importate dal sistema di origine.
       <td>
         <p>Data dell’ultima modifica dell’opportunità, dal sistema di origine.</p>
       </td>
-      <td>21/11/2017:26:44,000</td>
+      <td>2017-11-28 21:26:44.000</td>
     </tr>
     <tr>
       <td>DATA_CREAZIONE</td>
@@ -8625,7 +8625,7 @@ Opportunità importate dal sistema di origine.
       <td>
         <p>La data di creazione dell’opportunità, dal sistema di origine.</p>
       </td>
-      <td>21/11/2017:26:44,000</td>
+      <td>2017-11-28 21:26:44.000</td>
     </tr>
     <tr>
       <td>
@@ -8688,7 +8688,7 @@ Opportunità importate dal sistema di origine.
         <p>Data di chiusura prevista o effettiva dell’opportunità, dal sistema di origine.</p>
       </td>
       <td>
-        <p>07/08/2019:00:00,000</p>
+        <p>2019-08-28 07:00:00.000</p>
       </td>
     </tr>
     <tr>
@@ -8787,7 +8787,7 @@ Opportunità importate dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Fase corrente dell’opportunità, come definita nella [!DNL Marketo Measure] applicazione.</p>
+        <p>Fase corrente dell'opportunità, come definita nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Demo DM</p>
@@ -8799,7 +8799,7 @@ Opportunità importate dal sistema di origine.
       </td>
       <td>varchar</td>
       <td>
-        <p>Una stringa di tutte le fasi che l’opportunità ha attraversato in precedenza, come definito nel [!DNL Marketo Measure] applicazione.</p>
+        <p>Stringa di tutte le fasi che l'opportunità ha attraversato in precedenza, come definito nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Discovery qualificato, demo pianificata</p>
@@ -8846,29 +8846,29 @@ Opportunità importate dal sistema di origine.
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>Proprietà personalizzate che [!DNL Marketo Measure] è stato importato dal sistema di origine in formato JSON.</td>
+      <td>Proprietà personalizzate importate da [!DNL Marketo Measure] dal sistema di origine in formato JSON.</td>
       <td>{"Opportunity_Location__c":"Seattle", "Foo":"Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
-      <td><b>∗</b> TIPO_OPPORTUNITÀ</td>
+      <td>TIPO_OPPORTUNITÀ <b>∗</b></td>
       <td>varchar</td>
       <td>Tipo di opportunità, ad esempio Nuova azienda, Rinnovo e così via.</td>
       <td>Rinnovo, potenziale cliente</td>
@@ -8953,7 +8953,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del punto di contatto di attribuzione acquirente associato alla transizione.</p>
+        <p>ID del Buyer Attribution Touchpoint associato alla transizione.</p>
       </td>
       <td>
         <p>BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
@@ -8968,7 +8968,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>Data di transizione del record nell’area di visualizzazione.</p>
       </td>
       <td>
-        <p>07/05/2018:29:43,000</p>
+        <p>2018-05-26 07:29:43.000</p>
       </td>
     </tr>
     <tr>
@@ -9003,7 +9003,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>numero(38,0)</p>
       </td>
       <td>
-        <p>Il rango numerico dello stadio, come ordinato nel [!DNL Marketo Measure] Impostazioni di mappatura dello stage.</p>
+        <p>La classificazione numerica dello stage, come ordinato nelle impostazioni di mappatura dello stage [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>4</p>
@@ -9070,7 +9070,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>Data di transizione per la fase precedente, in base alla classificazione della fase.</p>
       </td>
       <td>
-        <p>17/07/2015:41:49,000</p>
+        <p>2015-07-16 17:41:49.000</p>
       </td>
     </tr>
     <tr>
@@ -9082,7 +9082,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>Data di transizione per la fase successiva, in base alla classificazione della fase.</p>
       </td>
       <td>
-        <p>19/08/2018:40:52,000</p>
+        <p>2018-08-27 19:40:52.000</p>
       </td>
     </tr>
     <tr>
@@ -9092,7 +9092,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>Data ultima modifica del record.</p>
       </td>
       <td>
-        <p>03/08/2018:53:33,000</p>
+        <p>2018-08-28 03:53:33.000</p>
       </td>
     </tr>
     <tr>
@@ -9113,19 +9113,19 @@ Transizioni nell&#39;area intermedia per le opportunità.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9197,7 +9197,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>Data in cui si è verificata la visualizzazione della pagina.</p>
       </td>
       <td>
-        <p>16/08/2018:49:58,000</p>
+        <p>2018-08-19 16:49:58.000</p>
       </td>
     </tr>
     <tr>
@@ -9207,7 +9207,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>16/08/2018:55:37,000</p>
+        <p>16:55:37.000 18-08-19</p>
       </td>
     </tr>
     <tr>
@@ -9394,19 +9394,19 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9551,7 +9551,7 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>
         <p>Data dell’ultima modifica del record.</p>
       </td>
-      <td>06/08/2018:36:25,000</td>
+      <td>2018-08-02 06:36:25.000</td>
     </tr>
     <tr>
       <td>
@@ -9561,7 +9561,7 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
-      <td>06/08/2018:36:25,000</td>
+      <td>2018-08-02 06:36:25.000</td>
     </tr>
     <tr>
       <td>
@@ -9581,7 +9581,7 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
         <p>booleano</p>
       </td>
       <td>
-        <p>Specifica se il posizionamento deve essere aggiornato o meno per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se il posizionamento deve essere aggiornato o meno per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>falso</td>
@@ -9630,26 +9630,26 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record del Snowflake</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di modifica del Snowflake del record</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di eliminazione del record da parte del Snowflake, se è stato eliminato</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
 
 ### BIZ_SEGMENTS {#biz-segments}
 
-Valori del segmento come definiti nella [!DNL Marketo Measure] applicazione.
+Valori del segmento come definiti nell&#39;applicazione [!DNL Marketo Measure].
 
 <table>
   <tbody>
@@ -9699,19 +9699,19 @@ Valori del segmento come definiti nella [!DNL Marketo Measure] applicazione.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9747,7 +9747,7 @@ Mappa il nome del segmento personalizzato sul relativo valore di categoria. I no
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>18/02/2022:12:35,000</p>
+        <p>2022-02-28 18:12:35.000</p>
       </td>
     </tr>
     <tr>
@@ -9778,19 +9778,19 @@ Mappa il nome del segmento personalizzato sul relativo valore di categoria. I no
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9846,7 +9846,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Data della sessione.</p>
       </td>
       <td>
-        <p>01/08/2016 14:24:21,000</p>
+        <p>01/08/2016 14:24:21.000</p>
       </td>
     </tr>
     <tr>
@@ -9858,7 +9858,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>03/09/2018:49:10,000</p>
+        <p>03:49:10.000 09-01 2018</p>
       </td>
     </tr>
     <tr>
@@ -9873,7 +9873,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>varchar</td>
       <td>
-        <p>Canale attribuito alla sessione, come definito dalle definizioni dei canali impostate nella [!DNL Marketo Measure] applicazione.</p>
+        <p>Canale attribuito alla sessione, come definito dalle definizioni dei canali impostate nell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Ricerca a pagamento.AdWords</p>
@@ -9969,7 +9969,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato la sessione. Questo può essere analizzato dall’URL da utm_source o impostato su un Ad Provider se [!DNL Marketo Measure] è in grado di risolvere un annuncio.</p>
+        <p>Utilizzato per definire l’origine che ha generato la sessione. Questo può essere analizzato dall'URL da utm_source o impostato su un provider di annunci se [!DNL Marketo Measure] è in grado di risolvere un annuncio.</p>
       </td>
       <td>
         <p>Google AdWords</p>
@@ -10049,7 +10049,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>varchar</td>
       <td>
-        <p>La piattaforma dell’annuncio [!DNL Marketo Measure] risolto da, in genere uno dei nostri partner di integrazione.</p>
+        <p>Piattaforma annuncio [!DNL Marketo Measure] risolta da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>Google</p>
@@ -10353,7 +10353,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>MEDIA</p>
+        <p>MEDIUM</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10537,19 +10537,19 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -10698,7 +10698,7 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>
         <p>Data dell’ultima modifica del record.</p>
       </td>
-      <td>06/08/2018:37:29,000</td>
+      <td>2018-08-02 06:37:29.000</td>
     </tr>
     <tr>
       <td>
@@ -10708,7 +10708,7 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>
         <p>Data della prima importazione del record dal sistema di origine.</p>
       </td>
-      <td>06/08/2018:37:29,000</td>
+      <td>2018-08-02 06:37:29.000</td>
     </tr>
     <tr>
       <td>
@@ -10728,7 +10728,7 @@ Siti importati da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se il sito deve essere aggiornato per [!DNL Marketo Measure] assegnazione tag.</p>
+        <p>Indica se il sito deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico, utilizzato per l'elaborazione interna).</p>
       </td>
       <td>falso</td>
@@ -10779,19 +10779,19 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -10955,7 +10955,7 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
         <p>Data dell’ultima modifica della riga</p>
       </td>
       <td>
-        <p>06/08/2018:36:50,000</p>
+        <p>2018-08-02 06:36:50.000</p>
       </td>
     </tr>
     <tr>
@@ -10967,7 +10967,7 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
         <p>Data del primo download del collegamento al sito da parte di [!DNL Marketo Measure]</p>
       </td>
       <td>
-        <p>06/08/2018:36:50,000</p>
+        <p>2018-08-02 06:36:50.000</p>
       </td>
     </tr>
     <tr>
@@ -11059,7 +11059,7 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Con cosa verrà decorato l’URL [!DNL Marketo Measure] parametri.</p>
+        <p>Specifica l'URL con i parametri [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico, per elaborazione interna).</p>
       </td>
       <td></td>
@@ -11068,26 +11068,26 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record del Snowflake</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di modifica del Snowflake del record</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di eliminazione del record da parte del Snowflake, se è stato eliminato</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
 
 ### BIZ_STAGE_DEFINITIONS {#biz-stage-definitions}
 
-Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione.
+Elenco delle fasi importate o definite nell&#39;applicazione [!DNL Marketo Measure].
 
 <table>
   <tbody>
@@ -11114,7 +11114,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>17/08/2018:27:27,000</p>
+        <p>2018-08-22 17:27:27.000</p>
       </td>
     </tr>
     <tr>
@@ -11187,7 +11187,7 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
       </td>
       <td>varchar</td>
       <td>
-        <p>Stato dello stage, come definito nel [!DNL Marketo Measure] Application Stage Mapping.</p>
+        <p>Stato dello stage, come definito nel mapping dello stage dell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
         <p>Apri</p>
@@ -11251,19 +11251,19 @@ Elenco delle fasi importate o definite nella [!DNL Marketo Measure] applicazione
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -11284,7 +11284,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>Un ID univoco per il punto di contatto acquirente (BT).</p>
+        <p>Un ID univoco per il Buyer Touchpoint (BT).</p>
       </td>
       <td>
         <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
@@ -11297,7 +11297,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>22/08/2018:29:30,000</p>
+        <p>2018-08-29 22:29:30.000</p>
       </td>
     </tr>
     <tr>
@@ -11381,7 +11381,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>Data del punto di contatto.</p>
       </td>
       <td>
-        <p>2018-08-27 20:04:40,000</p>
+        <p>2018-08-27 20:04:40.000</p>
       </td>
     </tr>
     <tr>
@@ -11402,7 +11402,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all’interno di [!DNL Marketo Measure] App. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
+        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all'interno dell'app [!DNL Marketo Measure]. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
       </td>
       <td>Social.LinkedIn</td>
     </tr>
@@ -11412,7 +11412,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la prima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la prima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>ABC</td>
     </tr>
@@ -11422,7 +11422,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la seconda categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la seconda categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Sì</p>
@@ -11434,7 +11434,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la terza categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la terza categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Altro</p>
@@ -11446,7 +11446,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la quarta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la quarta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td>
         <p>Partner</p>
@@ -11458,7 +11458,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la 5a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la quinta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -11468,7 +11468,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la sesta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la sesta categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -11477,7 +11477,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA7</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la settima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la settima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11485,7 +11485,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA8</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per l’ottava categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per l'ottava categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11493,7 +11493,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA9</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la nona categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la nona categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11501,7 +11501,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA10</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la decima categoria in cui rientra il punto di contatto, come definito nelle definizioni del segmento all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la decima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11509,7 +11509,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA11</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per l’11a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno del [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per l'11a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11517,7 +11517,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA12</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la dodicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la dodicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11525,7 +11525,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>CATEGORIA13</p>
       </td>
       <td>varchar</td>
-      <td>Il valore del segmento per la 13a categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
+      <td>Il valore del segmento per la tredicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</td>
       <td></td>
     </tr>
     <tr>
@@ -11534,7 +11534,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la quattordicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la quattordicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -11544,7 +11544,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Il valore del segmento per la quindicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti all’interno della [!DNL Marketo Measure] App. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
+        <p>Il valore del segmento per la quindicesima categoria in cui rientra il punto di contatto, come definito nelle definizioni dei segmenti nell'app [!DNL Marketo Measure]. Nella gestione delle relazioni con i clienti, denominati "Segmenti".</p>
       </td>
       <td></td>
     </tr>
@@ -11665,7 +11665,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>Data di invio del modulo.</p>
       </td>
       <td>
-        <p>01/06/2017:06:41,000</p>
+        <p>2017-06-20 01:06:41.000</p>
       </td>
     </tr>
     <tr>
@@ -11706,11 +11706,11 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     </tr>
     <tr>
       <td>
-        <p>MEDIA</p>
+        <p>MEDIUM</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "cpc" o "display".</p>
+        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può trattarsi di valori quali "cpc" o "display".</p>
       </td>
       <td>
         <p>Social</p>
@@ -11722,7 +11722,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall’URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Sorgente punto di contatto".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori quali "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -11746,7 +11746,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
+        <p>La piattaforma di annunci [!DNL Marketo Measure] è stata risolta da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -12311,19 +12311,19 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -12386,19 +12386,19 @@ Aggregazione di URL da pagine di destinazione, pagine di provenienza e viste pag
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -12432,7 +12432,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>23/09/2018:30:53,000</p>
+        <p>2018-09-05 23:30:53.000</p>
       </td>
     </tr>
     <tr>
@@ -12532,7 +12532,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Data in cui si è verificato il punto di contatto utente.</p>
       </td>
       <td>
-        <p>16/01/2018:47:02,000</p>
+        <p>2018-01-05 16:47:02.000</p>
       </td>
     </tr>
     <tr>
@@ -12553,7 +12553,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all’interno di [!DNL Marketo Measure] App. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
+        <p>Il canale in cui rientra il punto di contatto, come definito nelle definizioni di canale personalizzate all'interno dell'app [!DNL Marketo Measure]. Nel sistema di gestione delle relazioni con i clienti, denominato "Canale di marketing - Percorso".</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -12688,7 +12688,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Data di invio del modulo.</p>
       </td>
       <td>
-        <p>03/06/2015 17:49:10,000</p>
+        <p>03/06/2015 17:49:10.000</p>
       </td>
     </tr>
     <tr>
@@ -12729,11 +12729,11 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>MEDIA</p>
+        <p>MEDIUM</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "cpc" o "display".</p>
+        <p>Utilizzato per definire il mezzo che ha determinato il punto di contatto. Questo può essere analizzato dall’URL da utm_medium. Oppure, se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può trattarsi di valori quali "cpc" o "display".</p>
       </td>
       <td>
         <p>pagato</p>
@@ -12745,7 +12745,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall’URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti, o se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Sorgente punto di contatto".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori quali "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -12769,7 +12769,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>Piattaforma annuncio [!DNL Marketo Measure] è stato in grado di risolvere da, in genere uno dei nostri partner di integrazione.</p>
+        <p>La piattaforma di annunci [!DNL Marketo Measure] è stata risolta da, in genere uno dei nostri partner di integrazione.</p>
       </td>
       <td>
         <p>Google</p>
@@ -13171,26 +13171,26 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe ECID e ID Munckin.
+Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] all&#39;ID Adobe ECID e Munckin.
 
 <table>
   <tbody>
@@ -13213,7 +13213,7 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
         <p>COOKIE_ID</p>
       </td>
       <td>varchar</td>
-      <td>Il [!DNL Marketo Measure] id cookie registrato.</td>
+      <td>ID cookie registrato da [!DNL Marketo Measure].</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -13229,7 +13229,7 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
         <p>SESSION_ID</p>
       </td>
       <td>varchar</td>
-      <td>Il [!DNL Marketo Measure] ID sessione.</td>
+      <td>ID sessione [!DNL Marketo Measure].</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
     <tr>
@@ -13239,7 +13239,7 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
       <td>timestamp_ntz</td>
       <td>Data di registrazione della mappatura.</td>
       <td>
-        <p>19/06/2020:03:36,000</p>
+        <p>2020-06-17 19:03:36.000</p>
       </td>
     </tr>
     <tr>
@@ -13249,7 +13249,7 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>19/06/2020:03:36,000</p>
+        <p>2020-06-17 19:03:36.000</p>
       </td>
     </tr>
     <tr>
@@ -13319,7 +13319,7 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
     <tr>
       <td>MAPPING_TYPE</td>
       <td>varchar</td>
-      <td>Tipo di ID mappato al [!DNL Marketo Measure] ID cookie.</td>
+      <td>Tipo di ID mappato all'ID cookie [!DNL Marketo Measure].</td>
       <td>Adobe_OrgId_Ecid</td>
     </tr>
     <tr>
@@ -13338,19 +13338,19 @@ Mappatura della tabella da mappare [!DNL Marketo Measure] ID sessione per Adobe 
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
-      <td>01/01/2020:01:00,000</td>
+      <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -13379,7 +13379,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1,2
 ```
 
-**Quanto Reddito Attribuito per ogni canale è stato chiuso nell’ultimo mese, per il modello di attribuzione del percorso completo?**
+**Quanto Reddito Attribuito per ogni canale è stato chiuso nell&#39;ultimo mese, per il modello di attribuzione del percorso completo?**
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
@@ -13406,7 +13406,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**Qual è l&#39;intero percorso per una persona?  (Mostra tutti i punti di contatto per un singolo indirizzo e-mail).**
+**Qual è l&#39;intero percorso per una persona?  (Mostra tutti i punti di contatto per un singolo indirizzo e-mail.)**
 
 ```
 select ut.touchpoint_date
@@ -13447,7 +13447,7 @@ group by 1,2
 order by 1
 ```
 
-**Mostra tutti i punti di contatto di attribuzione dell’acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
+**Mostra tutti i punti di contatto di attribuzione dell&#39;acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
 
 >[!NOTE]
 >

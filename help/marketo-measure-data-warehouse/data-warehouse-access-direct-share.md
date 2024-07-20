@@ -14,25 +14,25 @@ ht-degree: 0%
 
 ## Requisiti {#requirements}
 
-Per [!DNL Marketo Measure] per impostare una condivisione diretta al data warehouse, è necessario soddisfare i seguenti requisiti.
+Affinché [!DNL Marketo Measure] possa impostare una condivisione diretta al data warehouse, è necessario soddisfare i seguenti requisiti.
 
 * Hai una tua istanza di Snowflake.
 * L&#39;istanza di Snowflake si trova nell&#39;area Snowflake di Azure East US 2.
-* Fornisci [!DNL Marketo Measure] con il tuo id account di Snowflake.
+* Hai fornito a [!DNL Marketo Measure] l&#39;ID account di Snowflake.
 
 ## Limitazioni {#limitations}
 
-[!DNL Marketo Measure] potrà impostare solo condivisioni dirette di Snowflake con account situati in Azure East US 2 a causa delle limitazioni correnti di Condivisione diretta di Snowflake. Se i dati devono essere resi disponibili in altre aree del Snowflake, è consigliabile creare una copia dei dati in un account di Snowflake che si trova in Azure East US 2 e utilizzare [Replica database di Snowflake](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} per copiare i dati nell’area/account del Snowflake desiderato.
+[!DNL Marketo Measure] potrà impostare solo condivisioni dirette di Snowflake con account situati in Azure East US 2 a causa delle limitazioni correnti di Condivisione diretta di Snowflake. Se è necessario rendere disponibili i dati in altre aree del Snowflake, è consigliabile creare una copia dei dati in un account di Snowflake che si trova in Azure East US 2 e utilizzare la funzionalità [Replica database di Snowflake](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} per copiare i dati nell&#39;area o nell&#39;account di Snowflake desiderato.
 
 ## Immetti ID account Snowflake {#enter-snowflake-account-id}
 
-Apri **Impostazioni** nell’app Marketo Measure e passa alla sezione **Data Warehouse** pagina. In **Condivisione diretta** , immetti il [ID account Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} nella casella fornita e fai clic su **Connetti**.
+Apri la sezione **Impostazioni** nell&#39;app Marketo Measure e passa alla pagina **Data Warehouse**. Nella sezione **Condivisione diretta**, immetti l&#39;ID account [Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} nella casella fornita e fai clic su **Connetti**.
 
 ![](assets/data-warehouse-access-direct-share-1.png)
 
 ## Accesso alla condivisione {#accessing-the-share}
 
-Dopo aver creato la condivisione per l&#39;ID account fornito, devi completare [passaggi di configurazione](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} nell’istanza di Snowflake per accedere ai dati.
+Dopo la creazione della condivisione per l&#39;ID account fornito, devi completare i [passaggi di configurazione](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} nell&#39;istanza di Snowflake per accedere ai dati.
 
 >[!NOTE]
 >
@@ -63,4 +63,4 @@ GRANT IMPORTED PRIVILEGES ON DATABASE <database_name> TO ROLE <role_name>
 GRANT IMPORTED PRIVILEGES ON ALL SCHEMAS IN DATABASE <database_name> TO ROLE <role_name>
 ```
 
-Per istruzioni e passaggi più dettagliati per eseguire questi passaggi dall’interfaccia utente del Snowflake, consulta [Documentazione del Snowflake direttamente](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}.
+Per istruzioni e passaggi più dettagliati per eseguire questi passaggi dall&#39;interfaccia utente del Snowflake, fai riferimento direttamente alla documentazione di [Snowflake](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}.

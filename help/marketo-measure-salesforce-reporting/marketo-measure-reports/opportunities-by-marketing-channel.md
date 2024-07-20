@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Questo rapporto evidenzia il numero di opportunità generate dai canali di marketing e include tutte le opportunità. Tuttavia, puoi filtrare questo rapporto per analizzare tipi specifici di opportunità.
 
-1. Fai clic su **[!UICONTROL Reports]** in Salesforce e seleziona **[!UICONTROL New Report]**.
+1. Fare clic sulla scheda **[!UICONTROL Reports]** in Salesforce e selezionare **[!UICONTROL New Report]**.
 
-1. Nella ricerca rapida, digita in &quot;Bizible Attribution&quot; e seleziona la **[!UICONTROL Bizible Attribution Touchpoint with Opportunity]** tipo di rapporto e selezione **[!UICONTROL Create]**.
+1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot;, selezionare il tipo di report **[!UICONTROL Bizible Attribution Touchpoint with Opportunity]** e selezionare **[!UICONTROL Create]**.
 
    ![](assets/1-2.jpg)
 
-1. A partire dalla parte superiore del rapporto, mostra **[!UICONTROL All Bizible Attribution Touchpoints]** e regola il campo data in base all’intervallo di tempo su cui stai cercando di generare un rapporto. Nel nostro esempio, guardiamo a All Time (Tutti i tempi). Inoltre, modifica il formato del rapporto da [!UICONTROL Tabular] a **[!UICONTROL Summary]**.
+1. A partire dalla parte superiore del report, mostra **[!UICONTROL All Bizible Attribution Touchpoints]** e regola il campo data in base all&#39;intervallo di tempo su cui stai cercando di generare il report. Nel nostro esempio, guardiamo a All Time (Tutti i tempi). Inoltre, modificare il formato del report da [!UICONTROL Tabular] a **[!UICONTROL Summary]**.
 
    ![](assets/2-2.jpg)
 

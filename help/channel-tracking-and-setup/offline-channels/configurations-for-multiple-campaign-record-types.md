@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configurazioni per più tipi di record campagna {#configurations-for-multiple-campaign-record-types}
 
-**Valori dell&#39;elenco di selezione mancanti nel campo &quot;Abilita punti di contatto buyer&quot;**
+**Valori elenco di selezione mancanti dal campo &quot;Abilita punti di contatto buyer&quot;**
 
 Se l’organizzazione SFDC utilizza più tipi di record campagna, è necessario aggiungere i valori dell’elenco di selezione per &quot;Abilita punti di contatto buyer&quot; per ogni tipo di record. Per aggiungere le opzioni, segui la procedura riportata di seguito.
 
@@ -21,11 +21,11 @@ Se l’organizzazione SFDC utilizza più tipi di record campagna, è necessario 
 
    ![](assets/1.jpg)
 
-1. Seleziona i tipi di record della campagna facendo clic sul pulsante **[!UICONTROL Record Type Label]**, non il [!UICONTROL edit] pulsante.
+1. Selezionare i tipi di record della campagna facendo clic su **[!UICONTROL Record Type Label]**, non sul pulsante [!UICONTROL edit].
 
    ![](assets/2.jpg)
 
-1. Qui vengono visualizzati gli elenchi di selezione disponibili per il tipo di record. Seleziona **[!UICONTROL Edit]** accanto al campo &quot;Abilita punti di contatto buyer&quot;.
+1. Qui vengono visualizzati gli elenchi di selezione disponibili per il tipo di record. Selezionare **[!UICONTROL Edit]** accanto al campo &quot;Abilita punti di contatto buyer&quot;.
 
    ![](assets/3.jpg)
 
@@ -33,4 +33,4 @@ Se l’organizzazione SFDC utilizza più tipi di record campagna, è necessario 
 
    ![](assets/4.jpg)
 
-1. Imposta il valore predefinito su &quot;None&quot; e fai clic su **[!UICONTROL Save]**. Ripeti l’operazione per qualsiasi tipo di record campagna aggiuntivo.
+1. Impostare il valore predefinito su &quot;None&quot; e fare clic su **[!UICONTROL Save]**. Ripeti l’operazione per qualsiasi tipo di record campagna aggiuntivo.

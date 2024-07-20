@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874694
-description: Migrazione dalla sandbox Salesforce alla produzione - [!DNL Marketo Measure]
+description: Migrazione da Sandbox Salesforce a Produzione - [!DNL Marketo Measure]
 title: Migrazione dalla sandbox Salesforce alla produzione
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
@@ -13,20 +13,20 @@ ht-degree: 0%
 
 # Migrazione dalla sandbox Salesforce alla produzione {#salesforce-sandbox-to-production-migration}
 
-Se hai scelto di testare [!DNL Marketo Measure] in un [!DNL Salesforce] Ambiente sandbox, segui queste istruzioni per migrare alla produzione quando sei pronto. Le istruzioni seguenti presuppongono che tu abbia già scaricato [!DNL Marketo Measure] nell’organizzazione Sandbox, ha eseguito i test necessari e è pronto per eseguire il push [!DNL Marketo Measure] alla produzione.
+Se hai scelto di testare [!DNL Marketo Measure] in un ambiente Sandbox [!DNL Salesforce], segui queste istruzioni per migrare alla produzione quando sei pronto. Le istruzioni seguenti presuppongono che tu abbia già scaricato il pacchetto [!DNL Marketo Measure] nell&#39;organizzazione sandbox, che tu abbia eseguito i test necessari e che tu sia pronto a inviare [!DNL Marketo Measure] in produzione.
 
-## Passaggio 1: installare [!DNL Marketo Measure] Pacchetto nella tua produzione [!DNL Salesforce] Istanza
+## Passaggio 1: installare il pacchetto [!DNL Marketo Measure] nell&#39;istanza di produzione [!DNL Salesforce]
 
-* Installare [!DNL Marketo Measure] in produzione con il software &quot;[!UICONTROL All Users]&quot; impostazione
+* Installa il pacchetto [!DNL Marketo Measure] in produzione con l&#39;impostazione &quot;[!UICONTROL All Users]&quot;
 
    * [Pacchetto base](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
 
-* Per ulteriori informazioni su [!DNL Marketo Measure] relazione con [!DNL Salesforce], guarda [questo articolo](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
-* Un po&#39; di [!DNL Salesforce] è necessaria la configurazione. Le azioni specifiche sono descritte di seguito in [Passaggio 4 sotto](#salesforce-configuration)
+* Per ulteriori informazioni sulla relazione [!DNL Marketo Measure] con [!DNL Salesforce], vedere [questo articolo](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
+* È necessaria una configurazione di [!DNL Salesforce]. Gli elementi dell&#39;azione specifica sono descritti di seguito nel [passaggio 4 seguente](#salesforce-configuration)
 
-## Passaggio 2: eliminare la connessione alla gestione delle relazioni con i clienti sandbox corrente in [!DNL Marketo Measure] App {#delete-the-current-sandbox-crm-connection-in-marketo-measure-app}
+## Passaggio 2: eliminare la connessione al sistema CRM sandbox corrente nell&#39;app [!DNL Marketo Measure] {#delete-the-current-sandbox-crm-connection-in-marketo-measure-app}
 
-* Accedi a [!DNL Marketo Measure] applicazione all&#39;indirizzo experience.adobe.com/marketo-measure
+* Accedere all&#39;applicazione [!DNL Marketo Measure] all&#39;indirizzo experience.adobe.com/marketo-measure
 * Passa a Il mio account >[!UICONTROL Settings] >[!UICONTROL Connections]
 * Fai clic sull’icona del cestino accanto alla connessione SFDC per eliminarlo
 * Viene richiesto di confermare l&#39;eliminazione. Assicurati di leggere attentamente il prompt e comprendere le conseguenze dell’eliminazione
@@ -36,13 +36,13 @@ Se hai scelto di testare [!DNL Marketo Measure] in un [!DNL Salesforce] Ambiente
    * Digita il nome dell’azienda come richiesto nel modello di conferma e fai clic su &quot;Comprendo le conseguenze, elimina questa connessione&quot;
 * Questo attiva il processo di eliminazione e richiederà del tempo
 
-## Passaggio 3: connettere l’istanza CRM di produzione in [!DNL Marketo Measure] App {#connect-the-production-crm-instance-in-marketo-measure-app}
+## Passaggio 3: connettere l&#39;istanza di CRM di produzione nell&#39;app [!DNL Marketo Measure] {#connect-the-production-crm-instance-in-marketo-measure-app}
 
-* Accedi a [!DNL Marketo Measure] applicazione all&#39;indirizzo experience.adobe.com/marketo-measure
-* Accedi a [!UICONTROL My Account] >[!UICONTROL Settings] > [!UICONTROL Connections]
+* Accedere all&#39;applicazione [!DNL Marketo Measure] all&#39;indirizzo experience.adobe.com/marketo-measure
+* Passa a [!UICONTROL My Account] >[!UICONTROL Settings] > [!UICONTROL Connections]
 * Una volta eliminata correttamente la connessione Sandbox, questa scompare dalla pagina; in caso contrario la connessione sarà ancora presente con lo stato &quot;Eliminazione in corso&quot;
 * Fai clic su &quot;[!UICONTROL Set up New CRM connection]&quot;
-* Nella sezione &quot;[!UICONTROL Select CRM Connection]&quot; finestra di dialogo modale, fai clic su &quot;[!UICONTROL Connect]&quot; Azione accanto al [!DNL Salesforce] Platform, seleziona la &quot;[!UICONTROL Production]Opzione &quot;
+* Nella finestra di dialogo modale &quot;[!UICONTROL Select CRM Connection]&quot;, fai clic sull&#39;azione &quot;[!UICONTROL Connect]&quot; accanto alla piattaforma [!DNL Salesforce], seleziona l&#39;opzione &quot;[!UICONTROL Production]&quot;
 * Ti vengono richieste le credenziali, assicurati di inserire i dettagli di accesso alla produzione
 
 ## Passaggio 4: configurazione Salesforce {#salesforce-configuration}
@@ -51,7 +51,7 @@ Se hai scelto di testare [!DNL Marketo Measure] in un [!DNL Salesforce] Ambiente
 
 [Set di autorizzazioni](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 
-[Condivisione dei rapporti](https://help.salesforce.com/s/articleView?language=en_US&amp;id=analytics_share_folder.htm&amp;type=0){target="_blank"}
+[Condivisione di report](https://help.salesforce.com/s/articleView?language=en_US&amp;id=analytics_share_folder.htm&amp;type=0){target="_blank"}
 
 [Nascondere i tipi di report non necessari](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
 

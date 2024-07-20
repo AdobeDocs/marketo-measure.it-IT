@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] Modello di rapporto - Power BI - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Modello di rapporto - Power BI"
+description: "[!DNL Marketo Measure] modello di report - Power BI - [!DNL Marketo Measure]"
+title: "[!DNL Marketo Measure] modello di report - Power BI"
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -10,23 +10,23 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Modello di rapporto - Power BI {#marketo-measure-report-template-power-bi}
+# Modello di report [!DNL Marketo Measure] - Power BI {#marketo-measure-report-template-power-bi}
 
 ## Guida introduttiva {#getting-started}
 
-Puoi accedere al modello di rapporto Power BI [qui](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
+Puoi accedere al modello di report Power BI [qui](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
-Apri l’Adobe [!DNL Marketo Measure] File di Power BI del modello di reporting.
+Aprire il file di Power BI del modello di reporting Adobe [!DNL Marketo Measure].
 
 ![](assets/marketo-measure-report-template-power-bi-1.png)
 
-È possibile trovare informazioni specifiche su server, warehouse e schema nella sezione [!DNL Marketo Measure] Interfaccia utente su [!DNL Data Warehouse] pagina delle informazioni. Le istruzioni per individuare questa pagina sono dettagliate [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
+È possibile trovare informazioni specifiche su server, warehouse e schema nell&#39;interfaccia utente [!DNL Marketo Measure] nella pagina delle informazioni di [!DNL Data Warehouse]. Le istruzioni per individuare questa pagina sono dettagliate [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
-I parametri QueryFilterStartDate e QueryFilterEndDate vengono utilizzati per limitare la quantità di dati importati. Questi parametri devono essere in formato SQL come vengono utilizzati nelle query inviate a [!DNL Snowflake]. Ad esempio, se si desidera limitare i dati agli ultimi due anni, QueryFilterStartDate sarà `dateadd` (anno,-2,data_corrente()). Questi parametri vengono confrontati con i tipi di dati datetime, pertanto si consiglia di utilizzare `dateadd` (day,1,current_date()) affinché QueryFilterEndDate restituisca tutti i dati all&#39;ora corrente.
+I parametri QueryFilterStartDate e QueryFilterEndDate vengono utilizzati per limitare la quantità di dati importati. Questi parametri devono essere in formato SQL come vengono utilizzati nelle query inviate a [!DNL Snowflake]. Ad esempio, se si desidera limitare i dati agli ultimi due anni, QueryFilterStartDate sarà `dateadd` (anno,-2,current_date()). Questi parametri vengono confrontati con i tipi di dati datetime, pertanto si consiglia di utilizzare `dateadd` (day,1,current_date()) per QueryFilterEndDate per restituire tutti i dati all&#39;ora corrente.
 
 ## Connessione dati {#data-connection}
 
-I parametri immessi all&#39;apertura del file vengono utilizzati per strutturare le query native che importano tabelle dal data warehouse. Devi comunque impostare una connessione dati al tuo [!DNL Snowflake] dell&#39;istanza. A questo scopo, è necessario disporre degli stessi nomi di server e warehouse insieme al nome utente e alla password. Sono documentati i dettagli su dove trovare il nome utente e reimpostare la password, se necessario [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
+I parametri immessi all&#39;apertura del file vengono utilizzati per strutturare le query native che importano tabelle dal data warehouse. È comunque necessario impostare una connessione dati all&#39;istanza [!DNL Snowflake]. A questo scopo, è necessario disporre degli stessi nomi di server e warehouse insieme al nome utente e alla password. I dettagli su dove trovare il tuo nome utente e reimpostare la password, se necessario, sono documentati [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ## Importazione dati {#data-import}
 
@@ -38,7 +38,7 @@ Per limitare i dati importati nel modello, ogni tabella viene impostata utilizza
 
 ![](assets/marketo-measure-report-template-power-bi-2.png)
 
-Tutte le query escludono le righe eliminate e [!UICONTROL facts] le tabelle sono impostate per filtrare in righe con una data modificata compresa tra le date di inizio e di fine immesse come parametri.
+Tutte le query escludono le righe eliminate e le tabelle [!UICONTROL facts] sono impostate per filtrare le righe con una data di modifica compresa tra le date di inizio e di fine immesse come parametri.
 
 >[!NOTE]
 >
@@ -80,13 +80,13 @@ Sono state applicate alcune trasformazioni ai dati in Power Query. Per visualizz
 
 ### Colonne rimosse {#removed-columns}
 
-Per semplificare il modello dati e rimuovere i dati ridondanti e non necessari, abbiamo ridotto il numero di colonne importate in Power BI dall’originale [!DNL Snowflake] tabella. Le colonne rimosse includono chiavi esterne non necessarie, dati dimensionali denormalizzati meglio applicati tramite relazioni ad altre tabelle nel modello, colonne di controllo e campi utilizzati per le [!DNL Marketo Measure] elaborazione. Puoi aggiungere o rimuovere colonne in base alle tue esigenze aziendali. Passa al passaggio &quot;Altre colonne rimosse&quot; dopo il passaggio &quot;Origine&quot; in qualsiasi tabella, fai clic sull’icona a forma di ingranaggio e aggiorna le colonne selezionate nell’elenco fornito.
+Per semplificare il modello dati e rimuovere i dati ridondanti e non necessari, è stato ridotto il numero di colonne importate in Power BI dalla tabella [!DNL Snowflake] originale. Le colonne rimosse includono chiavi esterne non necessarie, dati dimensionali denormalizzati meglio applicati tramite relazioni ad altre tabelle nel modello, colonne di controllo e campi utilizzati per l&#39;elaborazione interna di [!DNL Marketo Measure]. Puoi aggiungere o rimuovere colonne in base alle tue esigenze aziendali. Passa al passaggio &quot;Altre colonne rimosse&quot; dopo il passaggio &quot;Source&quot; in una tabella, fai clic sull’icona a forma di ingranaggio e aggiorna le colonne selezionate nell’elenco fornito.
 
 >[!NOTE]
 >
 >* Presta attenzione quando aggiungi ulteriori valori di chiave esterna. Il Power BI è spesso impostato per rilevare automaticamente le relazioni nel modello e l’aggiunta di valori di chiave esterna può causare collegamenti indesiderati tra tabelle e/o la disabilitazione delle relazioni esistenti.
 >
->* La maggior parte delle tabelle in [!DNL Marketo Measure] data warehouse contiene dati dimensionali denormalizzati. Abbiamo lavorato per normalizzare e ripulire il modello il più possibile in Power BI per migliorare le prestazioni e l&#39;accuratezza dei dati. Prestare attenzione quando si includono campi denormalizzati aggiuntivi nelle tabelle dei fatti. Questo può interrompere il filtro dimensionale tra le tabelle e può inoltre causare rapporti non accurati.
+>* La maggior parte delle tabelle del data warehouse [!DNL Marketo Measure] contiene dati dimensionali denormalizzati. Abbiamo lavorato per normalizzare e ripulire il modello il più possibile in Power BI per migliorare le prestazioni e l&#39;accuratezza dei dati. Prestare attenzione quando si includono campi denormalizzati aggiuntivi nelle tabelle dei fatti. Questo può interrompere il filtro dimensionale tra le tabelle e può inoltre causare rapporti non accurati.
 
 
 ![](assets/marketo-measure-report-template-power-bi-5.png)
@@ -99,13 +99,15 @@ Le tabelle e le colonne sono state rinominate per renderle più facili da usare 
 
 ### Segmenti rinominati {#renamed-segments}
 
-Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowflake sono presenti nomi di colonna generici. [!DNL BIZ_SEGMENT_NAMES] è una tabella di mappatura che elenca il nome di segmento generico e il nome di segmento personalizzato mappato, definito nella sezione del segmento in [!DNL Marketo Measure] UI. La tabella Nome segmento viene utilizzata per rinominare le colonne del segmento nelle tabelle Punto di contatto lead e Punto di contatto attribuzione. Se non esiste alcun segmento personalizzato, viene mantenuto il nome del segmento generico.
+Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowflake sono presenti nomi di colonna generici. [!DNL BIZ_SEGMENT_NAMES] è una tabella di mappatura che elenca il nome del segmento generico e il nome del relativo segmento personalizzato mappato, definito nella sezione del segmento nell&#39;interfaccia utente [!DNL Marketo Measure]. La tabella Nome segmento viene utilizzata per rinominare le colonne del segmento nelle tabelle Punto di contatto lead e Punto di contatto attribuzione. Se non esiste alcun segmento personalizzato, viene mantenuto il nome del segmento generico.
 
 ![](assets/marketo-measure-report-template-power-bi-7.png)
 
 ### Conversione ID sensibile a maiuscole e minuscole {#case-sensitive-id-conversion}
 
-[!DNL Marketo Measure] I dati hanno un paio di tabelle in cui i valori della chiave primaria (ID) fanno distinzione tra maiuscole e minuscole, ovvero punto di contatto e Campaign. Il motore dati che guida il livello di modellazione Power BI non distingue tra maiuscole e minuscole, determinando in tal modo valori ID &quot;duplicati&quot;. Per mantenere la distinzione tra maiuscole e minuscole di questi valori chiave, sono stati implementati passaggi di trasformazione che associano caratteri invisibili ai caratteri minuscoli, mantenendo l’univocità dell’ID quando valutato nel livello del motore dati. Maggiori dettagli sul problema e i passaggi dettagliati sul metodo che abbiamo utilizzato sono disponibili [qui] https://blog.crossjoin.co.uk/2019 /10/06/power-bi-and-case-sensitive/{target="_blank"}. Questi valori ID con distinzione tra maiuscole e minuscole sono etichettati come &quot;ID join&quot; e vengono utilizzati come chiavi di join nel livello di relazione. Abbiamo nascosto gli ID di unione dal livello di reporting, mantenendo i valori ID originali visibili per l’utilizzo nei rapporti, poiché i caratteri invisibili possono interferire con le funzioni taglia/incolla e i filtri.
+I dati [!DNL Marketo Measure] contengono alcune tabelle in cui i valori della chiave primaria (ID) fanno distinzione tra maiuscole e minuscole, ovvero punto di contatto e Campaign. Il motore dati che guida il livello di modellazione Power BI non distingue tra maiuscole e minuscole, determinando in tal modo valori ID &quot;duplicati&quot;. Per mantenere la distinzione tra maiuscole e minuscole di questi valori chiave, sono stati implementati passaggi di trasformazione che associano caratteri invisibili ai caratteri minuscoli, mantenendo l’univocità dell’ID quando valutato nel livello del motore dati. Ulteriori dettagli sul problema e sui passaggi dettagliati sul metodo che abbiamo utilizzato sono disponibili [qui] (https://blog.crossjoin.co.uk/2019
+/10/06/power-bi-and-case-sensitive/){target="_blank"}. Questi valori ID con distinzione tra maiuscole e minuscole sono etichettati come &quot;ID join&quot; e vengono utilizzati come chiavi di join nel livello di relazione. Abbiamo nascosto gli ID di unione dal livello di reporting, mantenendo i valori ID originali visibili per l’utilizzo nei rapporti, poiché i caratteri invisibili possono interferire con il taglio
+/incolla funzioni e filtro.
 
 ![](assets/marketo-measure-report-template-power-bi-8.png)
 
@@ -113,15 +115,15 @@ Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowfla
 
 ### Righe aggiunte {#rows-added}
 
-Per aggiungere le funzionalità di conversione della valuta ai calcoli nel modello, è stata aggiunta una colonna del tasso di conversione aziendale alle tabelle Opportunità e Costo. Il valore di questa colonna viene aggiunto a livello di riga e viene valutato unendo alla tabella Tasso di conversione sia la data che l&#39;ID valuta. Per ulteriori dettagli sul funzionamento della conversione di valuta in questo modello, vedi [Conversione valuta](#currency-conversion) in questa documentazione.
+Per aggiungere le funzionalità di conversione della valuta ai calcoli nel modello, è stata aggiunta una colonna del tasso di conversione aziendale alle tabelle Opportunità e Costo. Il valore di questa colonna viene aggiunto a livello di riga e viene valutato unendo alla tabella Tasso di conversione sia la data che l&#39;ID valuta. Per ulteriori dettagli sul funzionamento della conversione di valuta in questo modello, consulta la sezione [Conversione valuta](#currency-conversion) in questa documentazione.
 
 ![](assets/marketo-measure-report-template-power-bi-10.png)
 
-Tabella Tasso di conversione memorizzata in [!DNL Snowflake] contiene un intervallo di date per ogni conversione. Il Power BI non consente criteri di unione in un calcolo, ovvero tra un intervallo di date. Per eseguire il join di una data, sono stati aggiunti dei passaggi alla tabella Tasso di conversione per espandere le righe in modo da creare una riga per ogni data nell’intervallo di date di conversione.
+La tabella Tasso di conversione archiviata in [!DNL Snowflake] contiene un intervallo di date per ogni conversione. Il Power BI non consente criteri di unione in un calcolo, ovvero tra un intervallo di date. Per eseguire il join di una data, sono stati aggiunti dei passaggi alla tabella Tasso di conversione per espandere le righe in modo da creare una riga per ogni data nell’intervallo di date di conversione.
 
 ![](assets/marketo-measure-report-template-power-bi-11.png)
 
-## Modello dati {#data-model}
+## Modello di dati {#data-model}
 
 Fai clic sull’immagine seguente per la versione di dimensioni intere.
 
@@ -129,17 +131,17 @@ Fai clic sull’immagine seguente per la versione di dimensioni intere.
 
 ### Relazioni e flusso di dati {#relationships-and-data-flow}
 
-I dati dell’evento, utilizzati per creare punti di contatto, vengono memorizzati nel [!UICONTROL Session], [!UICONTROL Task], [!UICONTROL Event], [!UICONTROL Activity]e le tabelle dei membri della campagna. Queste tabelle degli eventi si uniscono alla tabella dei punti di contatto tramite i rispettivi ID e, se l’evento ha generato un punto di contatto, i dettagli vengono memorizzati nella tabella dei punti di contatto.
+I dati evento, utilizzati per la creazione dei punti di contatto, sono memorizzati nelle tabelle [!UICONTROL Session], [!UICONTROL Task], [!UICONTROL Event], [!UICONTROL Activity] e Membri della campagna. Queste tabelle degli eventi si uniscono alla tabella dei punti di contatto tramite i rispettivi ID e, se l’evento ha generato un punto di contatto, i dettagli vengono memorizzati nella tabella dei punti di contatto.
 
 I punti di contatto lead e i punti di contatto di attribuzione vengono memorizzati in tabelle personalizzate, con un collegamento alla tabella dei punti di contatto. La maggior parte dei dati dimensionali per i punti di contatto di lead e attribuzione proviene dal collegamento al punto di contatto corrispondente.
 
 In questo modello, le dimensioni Campaign e Canale sono collegate al punto di contatto, pertanto tutti i rapporti su tali dimensioni si basano su questo collegamento e indicano che il reporting dimensionale sui dati dell’evento può essere incompleto. Questo perché molti eventi non dispongono di collegamenti a queste dimensioni fino a quando non vengono elaborati in punti di contatto. Nota: alcuni eventi, come Sessioni, dispongono di collegamenti diretti alle dimensioni Campaign e Canale. Per generare rapporti a livello di sessione su queste dimensioni, si consiglia di creare un modello dati separato a questo scopo.
 
-I dati relativi ai costi vengono memorizzati a diversi livelli di aggregazione all&#39;interno del [!DNL Snowflake] Data Warehouse Tabella dei costi. Per tutti i provider di annunci, è possibile eseguire il rollup dei dati a livello di campagna fino al livello di canale. Per questo motivo, questo modello richiama i dati dei costi in base al flag &quot;campaign_is_aggregatable_cost&quot;. I costi autodichiarati possono essere inviati solo a livello di canale e non è necessario che dispongano di dati di Campaign. Per fornire una dichiarazione dei costi il più accurata possibile, i costi autodichiarati vengono estratti in base al flag &quot;channel_is_aggregatable_cost&quot;. La query che importa i dati sui costi viene scritta con la seguente logica: Se ad_provider = &quot;SelfReported&quot; then channel_is_aggregatable_cost = true, else campaign_is_aggregatable_cost = true.
+I dati relativi ai costi vengono memorizzati a diversi livelli di aggregazione nella tabella dei costi del data warehouse [!DNL Snowflake]. Per tutti i provider di annunci, è possibile eseguire il rollup dei dati a livello di campagna fino al livello di canale. Per questo motivo, questo modello richiama i dati dei costi in base al flag &quot;campaign_is_aggregatable_cost&quot;. I costi autodichiarati possono essere inviati solo a livello di canale e non è necessario che dispongano di dati di Campaign. Per fornire una dichiarazione dei costi il più accurata possibile, i costi autodichiarati vengono estratti in base al flag &quot;channel_is_aggregatable_cost&quot;. La query che importa i dati sui costi viene scritta con la seguente logica: Se ad_provider = &quot;SelfReported&quot; then channel_is_aggregatable_cost = true, else campaign_is_aggregatable_cost = true.
 
 I dati dei costi e i dati dei punti di contatto hanno alcune dimensioni comuni, pertanto entrambe le tabelle dei fatti hanno relazioni con le tabelle delle dimensioni Campaign e Canale.
 
-Nel contesto di questo modello, [!UICONTROL Lead], [!UICONTROL Contact], [!UICONTROL Account], e [!UICONTROL Opportunity] I dati vengono considerati come dati dimensionali e uniti direttamente al [!UICONTROL Lead] Punto di contatto e [!UICONTROL Attribution] Tabelle dei punti di contatto.
+Nel contesto di questo modello, i dati [!UICONTROL Lead], [!UICONTROL Contact], [!UICONTROL Account] e [!UICONTROL Opportunity] sono considerati dati dimensionali e uniti direttamente alle tabelle dei punti di contatto [!UICONTROL Lead] e dei punti di contatto [!UICONTROL Attribution].
 
 ### Tabelle aggiunte {#added-tables}
 
@@ -160,7 +162,7 @@ Tutte le misure sono state aggiunte a un’apposita tabella Misure. Non è colle
 I tassi nella tabella Tasso di conversione rappresentano il valore necessario per convertire un importo dalla valuta aziendale. Le conversioni in qualsiasi valuta richiedono una doppia conversione, prima dalla valuta originale alla valuta aziendale e quindi dalla valuta aziendale alla valuta selezionata. Il primo passo di questa catena nel modello consiste nell&#39;aggiungere una colonna con il tasso di conversione da aziendale alle tabelle con importi, opportunità e costo. Questi passaggi sono descritti nell’intestazione Righe aggiunte della sezione Trasformazioni dati in questo documento. La conversione dalla valuta originale alla valuta aziendale consiste nel dividere il valore per questa colonna aggiunta. Il passaggio successivo consiste nel moltiplicare il valore della valuta aziendale per il tasso nella tabella Tasso di conversione che corrisponde alla valuta selezionata.
 
 * Converti il valore originale in valuta aziendale / tasso di conversione aziendale = valore in valuta aziendale
-* Converte il valore da società a valuta selezionata in valuta aziendale `*` tasso di conversione della valuta selezionata = valore nella valuta selezionata
+* Converte il valore da società a valuta selezionata nella valuta aziendale `*` Tasso di conversione della valuta selezionata = valore nella valuta selezionata
 
 Poiché i tassi di conversione non devono necessariamente essere statici e possono variare in base a intervalli di date specifici, tutti i calcoli di conversione della valuta devono essere eseguiti a livello di riga. Anche in questo caso, poiché i tassi di conversione si riferiscono a un intervallo di date specifico, il calcolo della ricerca deve essere eseguito all’interno del DAX della misura, in modo che la relazione possa essere definita sia sul codice valuta che sulla data.
 
@@ -178,7 +180,7 @@ Sono state aggiunte definizioni al modello di Power BI per tabelle, colonne pers
 
 ![](assets/marketo-measure-report-template-power-bi-16.png)
 
-Per visualizzare le definizioni per le colonne provenienti direttamente da [!DNL Snowflake], vedere [documentazione di data warehouse](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}
+Per visualizzare le definizioni per le colonne provenienti direttamente da [!DNL Snowflake], consulta la [documentazione del data warehouse](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}
 
 ## Discrepanze tra modelli e individuazione {#discrepancies-between-templates-and-discover}
 
@@ -200,7 +202,7 @@ Queste metriche, come mostrato nei modelli di reporting, non si riflettono in Di
 
 ### Traffico web {#web-traffic}
 
-Il modello dati del modello di reporting normalizza i dati dimensionali di canale, sottocanale e campagna tramite la relazione tra sessione e punto di contatto. Questa funzione è diversa dal modello di dati Discover, che denormalizza queste dimensioni in Session. A causa di questa distinzione, i conteggi complessivi per visite e visitatori devono corrispondere tra Discover e il modello di reporting; tuttavia, una volta visualizzati o filtrati per dimensione, non è previsto che tali numeri si allineino. Questo perché i dati dimensionali nel modello sono disponibili solo per gli eventi web che hanno generato un punto di contatto (ad esempio eventi non anonimi). Per ulteriori informazioni, consulta [Modello dati](#data-model) sezione di questa documentazione.
+Il modello dati del modello di reporting normalizza i dati dimensionali di canale, sottocanale e campagna tramite la relazione tra sessione e punto di contatto. Questa funzione è diversa dal modello di dati Discover, che denormalizza queste dimensioni in Session. A causa di questa distinzione, i conteggi complessivi per visite e visitatori devono corrispondere tra Discover e il modello di reporting; tuttavia, una volta visualizzati o filtrati per dimensione, non è previsto che tali numeri si allineino. Questo perché i dati dimensionali nel modello sono disponibili solo per gli eventi web che hanno generato un punto di contatto (ad esempio eventi non anonimi). Per ulteriori dettagli, consulta la sezione [Modello dati](#data-model) di questa documentazione.
 
 Potrebbero esserci piccole discrepanze nel conteggio totale dei moduli del sito tra [!DNL Discover] e il modello. Questo perché il modello dati nel modello di reporting ottiene i dati dimensionali per il modulo del sito tramite una relazione con Session e quindi Touchpoint; esistono alcune istanze in cui i dati del modulo del sito non hanno una sessione correlata.
 
@@ -212,7 +214,7 @@ Tutti i conteggi di lead in Discover sono conteggi di lead attribuiti e nel mode
 
 ### Percorso di coinvolgimento {#engagement-path}
 
-Non esiste un confronto diretto tra [!UICONTROL Engagement Path] report in Discover e nel modello. Il rapporto in [!DNL Discover] è modellato sul punto di contatto, mentre il rapporto nel modello è modellato sul punto di contatto di attribuzione. Invece di visualizzare tutti i dati dei punti di contatto, il modello si concentra solo sulle opportunità e sui relativi punti di contatto.
+Non esiste alcun confronto diretto tra il report [!UICONTROL Engagement Path] in Discover e il modello. Il report in [!DNL Discover] è modellato sul punto di contatto, mentre il report nel modello è modellato sul punto di contatto di attribuzione. Invece di visualizzare tutti i dati dei punti di contatto, il modello si concentra solo sulle opportunità e sui relativi punti di contatto.
 
 ### Velocità offerta {#deal-velocity}
 

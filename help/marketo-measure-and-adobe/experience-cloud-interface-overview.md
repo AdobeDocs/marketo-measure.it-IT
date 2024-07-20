@@ -1,5 +1,5 @@
 ---
-description: Panoramica dell’interfaccia di Adobe Experience Cloud - [!DNL Marketo Measure]
+description: Panoramica dell'interfaccia di Adobe Experience Cloud - [!DNL Marketo Measure]
 title: Panoramica dell’interfaccia di Adobe Experience Cloud
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
@@ -16,7 +16,7 @@ L&#39;interfaccia Adobe Experience Cloud consente di allineare l&#39;aspetto del
 
 ## Flusso utente {#user-flow}
 
-Se hai già effettuato l’accesso a un prodotto Adobe Experience Cloud, fai clic sull’icona del menu e seleziona **[!DNL Marketo Measure]**.
+Se si è già connessi a un prodotto Adobe Experience Cloud, fare clic sull&#39;icona del menu e selezionare **[!DNL Marketo Measure]**.
 
 ![](assets/unified-shell-overview-4.png)
 
@@ -24,21 +24,21 @@ Se hai già effettuato l’accesso a un prodotto Adobe Experience Cloud, fai cli
 >
 >Il menu a discesa potrebbe avere un aspetto diverso a seconda dei prodotti Adobe Experience Cloud a cui sei abbonato.
 
-Se sei _non_ ha già effettuato l’accesso a un prodotto Adobe Experience Cloud, accedi direttamente a [!DNL Marketo Measure] qui: [https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure).
+Se sei _not_ già connesso a un prodotto Adobe Experience Cloud, accedi direttamente a [!DNL Marketo Measure] qui: [https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure).
 
 ## Nuove funzioni {#new-features}
 
 Oltre al look and feel aggiornato, osserva le seguenti funzioni:
 
-**Gestione del dominio**
+**Gestione dominio**
 
-[Gestione [!DNL Marketo Measure] domini](/help/marketo-measure-and-adobe/domain-management.md) senza l&#39;assistenza di [!DNL Marketo Measure].
+[Gestisci i tuoi [!DNL Marketo Measure] domini](/help/marketo-measure-and-adobe/domain-management.md) senza assistenza da [!DNL Marketo Measure].
 
 ![](assets/unified-shell-overview-5.png)
 
 **Centro assistenza integrato**
 
-Cerca articoli di supporto, invia biglietti, fornisci feedback, il tutto dall’interno di [!DNL Marketo Measure] applicazione.
+Cerca articoli di supporto, invia ticket, fornisci feedback, il tutto dall&#39;interno dell&#39;applicazione [!DNL Marketo Measure].
 
 ![](assets/unified-shell-overview-6.png)
 
@@ -58,20 +58,20 @@ Visualizza e interagisce direttamente con le notifiche specifiche per il prodott
 
 **Impostazioni Adobe**
 
-Per modificare la lingua o altre preferenze a livello di Adobe, fai clic sull’icona del tuo profilo. Puoi anche effettuare le seguenti operazioni: [!DNL Marketo Measure]modifiche specifiche facendo clic su **Le mie impostazioni**.
+Per modificare la lingua o altre preferenze a livello di Adobe, fai clic sull’icona del tuo profilo. È inoltre possibile apportare [!DNL Marketo Measure] modifiche specifiche facendo clic su **Impostazioni personali**.
 
 ![](assets/unified-shell-overview-10.png)
 
 ## Domande frequenti {#faq}
 
-**Cosa succede ai miei segnalibri?**
+**Cosa succederà ai segnalibri?**
 
 I segnalibri vengono reindirizzati. Ad esempio, se dovessi passare a https://apps.marketo-measure.com/Discover/391, verrai reindirizzato a https://experience.adobe.com/marketo-measure/Discover/391 dopo aver completato l’autenticazione.
 
-**Non riesco ad accedere a [!DNL Marketo Measure] tramite l&#39;interfaccia Experience Cloud. Quale potrebbe essere il problema?**
+**Impossibile accedere a [!DNL Marketo Measure] tramite l&#39;interfaccia Experience Cloud. Quale potrebbe essere il problema?**
 
-Se è possibile accedere a Adobe Experience Cloud, ma si visualizza una pagina come quella riportata di seguito, il problema potrebbe verificarsi in [!DNL Marketo Measure] lato:
+Se è possibile accedere a Adobe Experience Cloud ma si visualizza una pagina come quella riportata di seguito, il problema potrebbe verificarsi sul lato [!DNL Marketo Measure]:
 
 ![](assets/unified-shell-overview-11.png)
 
-Se ricevi l’errore precedente, [contatta l’assistenza](https://nation.marketo.com/t5/support/ct-p/Support) per assistenza.
+Se ricevi l&#39;errore precedente, [contatta l&#39;assistenza](https://nation.marketo.com/t5/support/ct-p/Support).

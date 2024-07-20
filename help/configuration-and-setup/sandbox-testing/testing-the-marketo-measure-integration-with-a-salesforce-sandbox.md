@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874765
-description: Test dell’integrazione di Marketo Measure con una sandbox Salesforce - [!DNL Marketo Measure]
+description: Verifica dell'integrazione di Marketo Measure con una sandbox Salesforce - [!DNL Marketo Measure]
 title: Test dell’integrazione di Marketo Measure con una sandbox Salesforce
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Uno dei [!DNL Marketo Measure] le funzionalità di base consistono nella capacità di tenere traccia delle attività di marketing digitale attraverso le azioni sul sito web e quindi di inviare i dati alla produzione [!DNL Salesforce org] tramite lead e contatti. Tuttavia, in genere non sono presenti lead in entrata creati dal sito web all’interno di un’integrazione Sandbox, pertanto l’attenzione sui dati sarà focalizzata da un punto di vista puramente offline.
+Una delle funzionalità di base di [!DNL Marketo Measure] è la capacità di monitorare le attività di marketing digitale attraverso le azioni sul sito Web e quindi di inviare tali dati alla produzione [!DNL Salesforce org] tramite lead e contatti. Tuttavia, in genere non sono presenti lead in entrata creati dal sito web all’interno di un’integrazione Sandbox, pertanto l’attenzione sui dati sarà focalizzata da un punto di vista puramente offline.
 
 Di seguito sono elencate le due origini a cui si fa riferimento per entrambe le fasi del test. [Passaggi 1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&amp;language=en_US&amp;type=5) e [Passaggi 5-6](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md). Si consiglia di rivedere questi documenti in quanto forniscono maggiori dettagli in alcune aree.
 
@@ -31,6 +31,6 @@ Di seguito sono elencate le due origini a cui si fa riferimento per entrambe le 
 1. Accedi all’ambiente Sandbox.
 1. Crea una campagna di test. Utilizza un tipo di campagna come Evento o Newsletter.
 1. Una volta creata la campagna, carica i lead come membri della campagna selezionando **[!UICONTROL Manage Members]** > **[!UICONTROL Add Members]** > **[!UICONTROL Import Files]**.
-1. Una volta completato, tornando al layout della pagina Campaign, potrai &quot;Abilitare i punti di contatto dell’acquirente&quot;, che è un campo dell’elenco a discesa. Scegli il valore: **[!UICONTROL Include All Campaign Members]**.
+1. Una volta completato, tornando al layout della pagina Campaign, potrai &quot;Abilitare i punti di contatto dell’acquirente&quot;, che è un campo dell’elenco a discesa. Scegliere il valore: **[!UICONTROL Include All Campaign Members]**.
 
-Al termine, avvia una sincronizzazione tra [!DNL Marketo Measure] e [!DNL Salesforce] e applica i punti di contatto ai record Lead. Si consiglia di controllare nuovamente il giorno successivo tramite un rapporto denominato: &quot;Punto di contatto acquirente sui lead&quot; trovato in [!UICONTROL Buyer Touchpoints Reports] nella scheda Rapporti. Se il report compila un punto di contatto per ogni lead, questo è un segno di successo.
+Al termine, avvia una sincronizzazione tra [!DNL Marketo Measure] e [!DNL Salesforce] e applica punti di contatto ai record Lead. Si consiglia di controllare nuovamente il giorno successivo tramite un report denominato: &quot;Buyer Touchpoint su lead&quot; trovato nella cartella [!UICONTROL Buyer Touchpoints Reports] all&#39;interno della scheda Report. Se il report compila un punto di contatto per ogni lead, questo è un segno di successo.

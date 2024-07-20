@@ -1,15 +1,16 @@
 ---
-description: '[!DNL Marketo Measure] Guida all’implementazione di Ultimate: [!DNL Marketo Measure]'
-title: '''[!DNL Marketo Measure] Guida all’implementazione di Ultimate'
+description: Guida all'implementazione di '[!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]'
+title: '''[!DNL Marketo Measure] Guida all''implementazione di Ultimate'''
 feature: Integration, Tracking, Attribution
-source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
+exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Guida all’implementazione di Ultimate {#marketo-measure-ultimate-implementation-guide}
+# Guida all&#39;implementazione di [!DNL Marketo Measure] Ultimate {#marketo-measure-ultimate-implementation-guide}
 
 Questo articolo funge da guida all’implementazione per Marketo Measure Ultimate e fornisce passaggi chiari e informazioni approfondite per garantire un’integrazione e un utilizzo corretti.
 
@@ -36,26 +37,26 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 >[!NOTE]
 >
->Estrai [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
+>Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
 
 **Schema XDM = Classe + Gruppo di campi schema&#42;**
 
 * I campi obbligatori non sono modificabili. I clienti possono creare e aggiungere campi personalizzati in base alle esigenze.
 * Esempio di nome del campo basato sulla gerarchia: accountOrganization.annualRevenue.amount
 
-&#42; _Uno schema comprende una classe e zero o più gruppi di campi dello schema. Ciò significa che è possibile comporre uno schema di set di dati senza utilizzare i gruppi di campi._
+&#42; _Uno schema include una classe e zero o più gruppi di campi schema. Ciò significa che è possibile comporre uno schema di set di dati senza utilizzare i gruppi di campi._
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all’interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
+[Panoramica dei set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}: tutti i dati correttamente acquisiti in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
 ## Creazione di uno schema {#creating-a-schema}
 
 È consigliabile utilizzare un’utility di generazione automatica per creare dieci schemi B2B standard.
 
-* Passaggi per scaricare e configurare l&#39;utility [si trova qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
+* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
-Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origini.
+Per coloro che dispongono di un _**diritto CDP**_: crea gli schemi dalla pagina Origini.
 
 * Da un’origine, seleziona Aggiungi dati > Usa modelli
 
@@ -75,18 +76,18 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 
 **Passaggi per creare un flusso di dati:**
 
-1. Selezionare un&#39;origine.
+1. Seleziona un Source.
 1. Seleziona un account esistente o creane uno esistente.
-1. Selezionare un tipo di dati dall&#39;elenco dei tipi disponibili per l&#39;importazione dall&#39;origine.
+1. Selezionare un tipo di dati dall&#39;elenco dei tipi disponibili da importare da Source.
 1. Seleziona un set di dati esistente o creane uno.
-1. Mappa i campi dall’origine allo schema.
+1. Mappa i campi da Source allo schema.
 
    >[!NOTE]
    >
    >* Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
    >* Potete anche importare la mappatura da un altro flusso nel sistema.
-   >* È possibile mappare un campo di origine a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
-   >* È possibile creare campi calcolati ([Funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
+   >* È possibile mappare un campo Source a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
+   >* È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
 
    >[!CAUTION]
    >
@@ -101,7 +102,7 @@ Per chi ha un _**Adesione a CDP**_: per creare gli schemi, vai alla pagina Origi
 1. Revisione e completamento.
 1. Per informazioni sullo stato del flusso di dati, controlla la pagina &quot;Stato account&quot; nelle impostazioni dell’interfaccia utente Misura.
 
-**Monitoraggio**
+**Monitoraggio:**
 
 Origini > Pagina Flussi dati per controllare lo stato dei flussi dati
 
@@ -141,7 +142,7 @@ In Measure, la valuta predefinita deve essere impostata nella sezione &quot;Valu
 
 * Se utilizzi più valute, lo schema del tasso di conversione della valuta deve essere popolato in AEP per consentirne la lettura e l’utilizzo per le conversioni.
 
-**Mappatura stadio:**
+**Mappatura fase:**
 
 Non importiamo automaticamente gli stadi dai dati utente, pertanto tutti gli stadi devono essere mappati manualmente.
 
@@ -151,16 +152,16 @@ Non importiamo automaticamente gli stadi dai dati utente, pertanto tutti gli sta
 
 Se le fasi non sono mappate, il sistema non funzionerà perché non ci sarà nessun posto dove spostare i dati.
 
-Se si è un cliente di Marketo Measure Ultimate e si è impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni qui](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
 
 * b2b.personStatus
 * b2b.isConverted
 
-**Regole membro della campagna:**
+**Regole membro campagna:**
 
 Scegli un set di dati e imposta le regole per ciascuno di essi.
 
-**Regole degli eventi esperienza:**
+**Regole eventi esperienza:**
 
 Scegli un set di dati e seleziona i tipi di attività.
 
@@ -171,6 +172,6 @@ Scegli un set di dati e seleziona i tipi di attività.
 
 * Non facciamo regole di mappatura dei canali specifiche per i set di dati, quindi sarebbe globale.
 * Alla fine dobbiamo trovare una corrispondenza tra Tipo di campagna CRM e Canale, ma per ora, possiamo mappare il nome del canale su entrambi i campi come soluzione alternativa.
-* **Regole del canale: i dati in backfill non contengono dati di transizione dell’area di visualizzazione.**
+* **Regole canale: i dati in backfill non contengono dati di transizione fase.**
 
 Le impostazioni dei punti di contatto e dei segmenti rimangono invariate.

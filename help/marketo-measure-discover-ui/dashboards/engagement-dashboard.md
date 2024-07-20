@@ -14,13 +14,13 @@ ht-degree: 0%
 
 La dashboard di coinvolgimento tiene traccia meticolosamente delle metriche di coinvolgimento degli utenti. Mostra i punti di contatto, il numero di persone impegnate e la media dei punti di contatto per persona. Utilizza il grafico a barre delle serie temporali per una visualizzazione mensile, trimestrale o annuale e il grafico a barre per approfondimenti dettagliati su canale, sottocanale e campagna. Questo strumento è essenziale per comprendere i pattern di coinvolgimento e perfezionare le strategie di coinvolgimento.
 
-Monitoriamo ogni interazione con il cliente come punti di contatto utente (UT), i punti di dati raccolti &quot;grezzi&quot;, che fungono da base per le metriche di coinvolgimento sul nostro dashboard. Non tutte le UT evolvono in punti di contatto dell’acquirente (BT) o in punti di contatto di attribuzione dell’acquirente (BAT), in quanto si tratta di risultati selezionati per attribuire interazioni specifiche dei clienti ad attività correlate ai ricavi. È importante notare che le regole di soppressione non influiscono sulle UT o sul dashboard di coinvolgimento.
+Monitoriamo ogni interazione con il cliente come punti di contatto utente (UT), i punti di dati raccolti &quot;grezzi&quot;, che fungono da base per le metriche di coinvolgimento sul nostro dashboard. Non tutte le UT evolvono in punti di contatto per l’acquirente (BT) o in punti di contatto per l’attribuzione dell’acquirente (BAT), in quanto si tratta di risultati selezionati per attribuire interazioni specifiche dei clienti ad attività correlate ai ricavi. È importante notare che le regole di soppressione non influiscono sulle UT o sul dashboard di coinvolgimento.
 
 * **Punti di contatto utente**: punti di contatto creati da tutti gli impegni.
-* **Punti di contatto dell&#39;acquirente**: punti di contatto selezionati per l’attribuzione di lead e contatti. Le BT non sono collegate alle opportunità e non hanno ricavi associati.
-* **Punti di contatto di attribuzione acquirente**: punti di contatto selezionati per l’attribuzione dell’opportunità. Le BAT hanno implicazioni in termini di ricavi in quanto sono collegate alle opportunità.
+* **Punti di contatto buyer**: punti di contatto selezionati per l&#39;attribuzione di lead e contatti. L&#39;BT non è collegato alle opportunità e non ha ricavi associati.
+* **Punti di contatto di attribuzione buyer**: punti di contatto selezionati per l&#39;attribuzione dell&#39;opportunità. L&#39;BAT ha implicazioni sul fronte delle entrate in quanto è collegato alle opportunità.
 
-L’utilizzo di BT o BAT solo per misurare il coinvolgimento sottovaluterebbe la reale portata delle interazioni dei clienti, poiché il coinvolgimento è più ampio della semplice attribuzione.
+L’utilizzo del solo BT o BAT per misurare il coinvolgimento sottovaluterebbe la reale portata delle interazioni dei clienti, in quanto il coinvolgimento è più ampio della semplice attribuzione.
 
 Risposte alle domande della dashboard:
 

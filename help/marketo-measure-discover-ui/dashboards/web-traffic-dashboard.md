@@ -1,5 +1,5 @@
 ---
-description: Dashboard traffico web - [!DNL Marketo Measure] - Prodotto
+description: Dashboard traffico Web - [!DNL Marketo Measure] - Prodotto
 title: Dashboard traffico web
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
@@ -22,7 +22,7 @@ Risposte alle domande poste da questa dashboard:
 
 ## Componenti del dashboard {#dashboard-components}
 
-**Riquadri KPI**
+**Tessere KPI**
 
 <table>
 <thead>

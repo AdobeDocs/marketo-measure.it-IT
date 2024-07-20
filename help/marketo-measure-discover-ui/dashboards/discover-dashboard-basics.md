@@ -1,5 +1,5 @@
 ---
-description: Scopri nozioni di base sulla dashboard - [!DNL Marketo Measure] - Prodotto
+description: Nozioni di base sulla dashboard - [!DNL Marketo Measure] - Prodotto
 title: Scopri nozioni di base sulla dashboard
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545

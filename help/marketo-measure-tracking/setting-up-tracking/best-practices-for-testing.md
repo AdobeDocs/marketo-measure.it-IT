@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874722
-description: Best practice per i test - [!DNL Marketo Measure]
+description: Best practice per il test - [!DNL Marketo Measure]
 title: Best practice per i test
 exl-id: ff95a1a9-d324-47f5-b47d-39014dff77e4
 feature: Tracking
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Best practice per i test {#best-practices-for-testing}
 
-È necessario testare tutti i diversi tipi di moduli necessari per garantire [!DNL Marketo Measure] JavaScript funziona correttamente.
+È necessario eseguire il test di tutti i diversi tipi di moduli necessari per verificare che il JavaScript [!DNL Marketo Measure] funzioni correttamente.
 
 ## Processo di test consigliato {#recommended-test-process}
 
-1. Utilizza un browser in incognito o cancella i cookie tra ciascun test di invio del modulo _e_ utilizza ogni volta un indirizzo e-mail diverso.
+1. Utilizza un browser in incognito o cancella i cookie tra ogni test di invio modulo _e_ utilizza ogni volta un indirizzo e-mail diverso.
 
    >[!TIP]
    >
-   >Una best practice consiste nell’utilizzare un’e-mail falsa che contiene qualcosa che indica che si tratta di un test, nonché l’ora del giorno. Ad esempio: `testing830am@test.com`.
+   >Una best practice consiste nell’utilizzare un’e-mail falsa che contiene qualcosa che indica che si tratta di un test, nonché l’ora del giorno. Esempio: `testing830am@test.com`.
 
-1. Avvia la ricerca da un motore di ricerca (ad es. `google.com`) o passare direttamente a un modulo.
+1. Avviare la ricerca da un motore di ricerca (ad esempio, `google.com`) o passare direttamente a un modulo.
 
 1. Inviare il modulo sul sito Web utilizzando un indirizzo e-mail univoco.
 
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->È possibile utilizzare una [!DNL Marketo Measure] rapporto sulle scorte, ad esempio Lead con [!DNL Marketo Measure] Punti di contatto o osserva il layout della pagina Lead/Contatto se hai scelto di aggiornare i layout di pagina con [!DNL Marketo Measure] dettagli. L’elaborazione dei dati potrebbe richiedere del tempo.
+>Se si sceglie di aggiornare i layout di pagina con [!DNL Marketo Measure] dettagli, è possibile utilizzare un report azionario [!DNL Marketo Measure], ad esempio Lead con [!DNL Marketo Measure] punti di contatto, oppure esaminare il layout di pagina Lead/Contatto. L’elaborazione dei dati potrebbe richiedere del tempo.

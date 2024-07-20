@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874747
-description: Aggiunta [!DNL Marketo Measure] Script per pagine Sitecore - [!DNL Marketo Measure]
-title: Aggiunta [!DNL Marketo Measure] Script per pagine Sitecore
+description: Aggiunta di  [!DNL Marketo Measure] script alle pagine Sitecore in corso - [!DNL Marketo Measure]
+title: Aggiunta di  [!DNL Marketo Measure] script alle pagine Sitecore
 exl-id: 87ce1857-7532-45a7-8c39-255c6118b50a
 feature: Tracking
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# Aggiunta [!DNL Marketo Measure] Script per pagine Sitecore {#adding-marketo-measure-script-to-sitecore-pages}
+# Aggiunta dello script [!DNL Marketo Measure] alle pagine Sitecore {#adding-marketo-measure-script-to-sitecore-pages}
 
-I sistemi di gestione dei contenuti possono richiedere ulteriori passaggi oltre l&#39;implementazione di script standard per [!DNL Marketo Measure] per riconoscere gli invii di moduli. Il processo seguente illustra come aggiungere [!DNL Marketo Measure] javascript nel tuo [!DNL Sitecore] pagine.
+I sistemi di gestione dei contenuti possono richiedere ulteriori passaggi oltre l&#39;implementazione dello script standard per il riconoscimento degli invii di moduli da parte di [!DNL Marketo Measure]. Il processo seguente illustra come aggiungere JavaScript [!DNL Marketo Measure] alle pagine [!DNL Sitecore].
 
 Per i siti con pagine Sitecore:
 
-1. Accedi a Sitecore e naviga sul tuo sito web. Individua il [!UICONTROL Configuration] cartella che si trova sullo stesso livello della cartella [!UICONTROL Home] elemento e [!UICONTROL Metadata] cartella.
-1. Fai clic su **[!UICONTROL +]** accanto al [!UICONTROL Configuration] cartella.
-1. Fai clic su **[!UICONTROL +]** accanto al [!UICONTROL Tools] cartella.
-1. Seleziona la [!UICONTROL Javascript] elemento.
-1. In [!UICONTROL Content] , fare clic sulla scheda **[!UICONTROL Lock and Edit]** collegamento per sbloccare l&#39;elemento per la modifica.
-1. Trova il [!UICONTROL 'JavaScript'] sezione. Se non è già espanso, fare clic su **[!UICONTROL +]**.
-1. Inserisci il nostro script: `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js"async=""></script>`
-1. Clic **[!UICONTROL Save]** nell’angolo superiore sinistro.
+1. Accedi a Sitecore e naviga sul tuo sito web. Individuare la cartella [!UICONTROL Configuration] che si trova sullo stesso livello dell&#39;elemento [!UICONTROL Home] e della cartella [!UICONTROL Metadata].
+1. Fare clic su **[!UICONTROL +]** accanto alla cartella [!UICONTROL Configuration].
+1. Fare clic su **[!UICONTROL +]** accanto alla cartella [!UICONTROL Tools].
+1. Selezionare l&#39;elemento [!UICONTROL Javascript].
+1. Nella scheda [!UICONTROL Content], fare clic sul collegamento **[!UICONTROL Lock and Edit]** per sbloccare l&#39;elemento per la modifica.
+1. Trovare la sezione [!UICONTROL 'JavaScript']. Se non è già espanso, fare clic su **[!UICONTROL +]**.
+1. Immetti lo script: `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js"async=""></script>`
+1. Fare clic su **[!UICONTROL Save]** nell&#39;angolo superiore sinistro.

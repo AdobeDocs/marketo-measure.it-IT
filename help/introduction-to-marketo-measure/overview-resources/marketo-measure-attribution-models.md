@@ -31,8 +31,8 @@ Questi modelli variano in complessità. I modelli First Touch e Lead Creation so
 
 ![](assets/1-1.png)
 
-In **modelli a sfioramento singolo**, il credito di attribuzione viene attribuito solo a un punto di contatto milestone, da cui il nome &quot;single-touch&quot;.
-In **modelli multi-touch**, la maggior parte del credito di attribuzione viene assegnata a due o più punti di contatto milestone. Il credito rimanente viene attribuito ai punti di contatto che si verificano tra i punti di contatto di milestone.
+Nei **modelli a contatto singolo**, il credito di attribuzione viene attribuito a un solo punto di contatto milestone, da cui il nome &#39;a contatto singolo&#39;.
+Nei **modelli multi-touch**, la maggior parte del credito di attribuzione è assegnato a due o più punti di contatto milestone. Il credito rimanente viene attribuito ai punti di contatto che si verificano tra i punti di contatto di milestone.
 
 Le sezioni successive descrivono ogni modello di attribuzione e il modo in cui viene assegnato il credito di attribuzione.
 
@@ -42,7 +42,7 @@ Le sezioni successive descrivono ogni modello di attribuzione e il modo in cui v
 
 Il modello di primo contatto si concentra solo sulla prima interazione che un lead ha con la tua organizzazione. Questo modello attribuisce il 100% del credito di attribuzione alla prima volta che il lead viene a conoscenza della tua azienda, il Primo contatto (FT).
 
-Dire visite di Kate `www.adobe.com` per la prima volta tramite un annuncio Adwords e visualizza un white paper. Il canale Adwords riceverebbe il 100% del credito di attribuzione da tale opportunità.
+Supponiamo che Kate visiti `www.adobe.com` per la prima volta tramite un annuncio Adwords e visualizzi un white paper. Il canale Adwords riceverebbe il 100% del credito di attribuzione da tale opportunità.
 
 ![](assets/2.png)
 
@@ -50,7 +50,7 @@ Dire visite di Kate `www.adobe.com` per la prima volta tramite un annuncio Adwor
 
 Il modello di creazione di lead attribuisce il 100% del credito di attribuzione al punto di contatto LC, quando un potenziale cliente fornisce le informazioni di contatto e diventa un lead.
 
-Continuando dall&#39;esempio precedente, dopo la prima visita di Kate a `www.adobe.com` tramite Adwords, Austin visita il sito web tramite un post su LinkedIn. Austin compila un modulo e diventa un lead. In questo modello, Linkedin riceverebbe il 100% del credito di attribuzione.
+Continuando dall&#39;esempio precedente, dopo la prima visita di Kate a `www.adobe.com` tramite Adwords, Austin visita il sito web tramite un post su Linkedin. Austin compila un modulo e diventa un lead. In questo modello, Linkedin riceverebbe il 100% del credito di attribuzione.
 
 ![](assets/3.png)
 
@@ -58,7 +58,7 @@ Continuando dall&#39;esempio precedente, dopo la prima visita di Kate a `www.ado
 
 I modelli multi-touch vengono utilizzati per cicli di vendita più lunghi e complessi. Questi modelli sono particolarmente utili se diverse persone di un account/azienda sono coinvolte nel percorso dell&#39;acquirente.
 
-**Modello a forma di U**
+**Modello A Forma Di U**
 
 Il modello a forma di U si concentra sui punti di contatto FT e LC. In questo modello, i punti di contatto FT e LC ricevono ciascuno il 50% del credito di ricavo.
 
@@ -66,7 +66,7 @@ La prima visita di Kate a `www.adobe.com` tramite un annuncio Adwords riceverebb
 
 ![](assets/4.png)
 
-**Modello a forma di W**
+**Modello A Forma Di W**
 
 Tre dei punti di contatto milestone sono inclusi nel modello a forma di W. In questo modello, i punti di contatto FT, LC e OC vengono attribuiti a ciascuno il 30% del credito di attribuzione. Il restante 10% è attribuito in proporzione a qualsiasi punto di contatto intermedio che si verifica tra i tre punti di contatto milestone.
 
@@ -76,7 +76,7 @@ Hillary riceve un’e-mail con un collegamento alla pagina dei prezzi e visita l
 
 ![](assets/5.png)
 
-**Modello percorso completo**
+**Modello a percorso completo**
 
 Il modello del percorso completo include tutti e quattro i punti di contatto milestone. FT, LC, OC e CW ricevono il 22,5% del credito sul reddito, mentre il restante 10% viene distribuito equamente tra i contatti intermedi.
 

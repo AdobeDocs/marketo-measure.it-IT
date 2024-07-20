@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-[!DNL Marketo Measure] La segmentazione ti consente di definire regole, che sono essenzialmente filtri, in base ai campi del sistema di gestione delle relazioni con i clienti per includerli in segmenti singoli. Questi segmenti saranno quindi disponibili per l’utilizzo nelle tue dashboard di Discover e nel tuo [!DNL Salesforce] reportistica.
+La segmentazione di [!DNL Marketo Measure] ti consente di definire regole, che sono essenzialmente filtri, in base ai campi del tuo sistema di gestione delle relazioni con i clienti per includerli nei singoli segmenti. Questi segmenti saranno quindi disponibili per l&#39;utilizzo nelle dashboard di individuazione e nel reporting di [!DNL Salesforce].
 
-La segmentazione è fondamentale per l’utilizzo dei [!DNL Marketo Measure] account, in particolare all’interno di Discover boards. Perché il [!DNL Marketo Measure] Le bacheche Discover sono limitate a un set predeterminato di filtri, la segmentazione consente di dissezionare i dati in Discover in modo analogo a come si farebbe nelle [!DNL Salesforce] reportistica.
+La segmentazione è fondamentale per l&#39;utilizzo dell&#39;account [!DNL Marketo Measure], in particolare all&#39;interno delle bacheche Discover. Poiché le bacheche di individuazione di [!DNL Marketo Measure] sono limitate a un set di filtri predeterminato, la segmentazione consente di dissezionare i dati in Discover in modo analogo a quanto si farebbe nei rapporti di [!DNL Salesforce].
 
-Quando viene inviato a [!DNL Salesforce], I valori del segmento vengono scritti nel campo &quot;Segmento&quot; e si trovano all’interno di qualsiasi tipo di rapporto Punto di contatto buyer. Questo consente un reporting uniforme su entrambe le piattaforme. Il segmento si trova anche nel &quot;Dettaglio punto di contatto&quot; di qualsiasi punto di contatto.
+Quando viene inviato a [!DNL Salesforce], i valori del segmento vengono scritti nel campo &quot;Segmento&quot; e si trovano all&#39;interno di qualsiasi tipo di rapporto Punto di contatto buyer. Questo consente un reporting uniforme su entrambe le piattaforme. Il segmento si trova anche nel &quot;Dettaglio punto di contatto&quot; di qualsiasi punto di contatto.
 
-Quando viene inviato a [!UICONTROL Discover], I segmenti verranno visualizzati come filtro disponibile all’interno del menu a discesa del filtro che si trova su tutte le bacheche.
+Quando viene inviato a [!UICONTROL Discover], i segmenti verranno visualizzati come filtro disponibile all&#39;interno del menu a discesa dei filtri disponibile in tutte le bacheche.
 
 ## Best practice {#best-practice}
 
@@ -30,16 +30,16 @@ Se definisci la segmentazione per la prima volta o esamini solo la segmentazione
 * Allinea il nome del segmento alla nomenclatura dell’organizzazione, ovvero categoria = nome filtro, segmento = valore filtro
 * Non utilizzare i campi formula nelle regole
 * Quando possibile, crea la segmentazione sia sul lead/contatto che sull’opportunità in modo da poterla utilizzare nell’intero funnel
-   * Se si è un cliente di Marketo Measure Ultimate e si è impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([fai clic qui per saperne di più](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+   * Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni qui](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
       * b2b.personStatus
       * b2b.isConverted
    * Non tutte le categorie di segmenti saranno allineate in tutto il funnel
       * Ad esempio, una categoria di segmenti di &quot;Tipo di opportunità&quot; non è correlata ai lead, tuttavia un segmento correlato a &quot;Area&quot; è probabilmente una categoria che può essere definita in tutto il funnel
-* Pensa al modo in cui attualmente desideri suddividere i dati, sia che si tratti di un elemento di gestione delle relazioni con i clienti o di uno strumento di business intelligence. Considera la possibilità di creare questo elemento come un segmento in [!DNL Marketo Measure] in modo da poter avere lo stesso reporting in Discover
+* Pensa al modo in cui attualmente desideri suddividere i tuoi dati, sia che si tratti di un CRM o di uno strumento BI, e considera la creazione di questo come un segmento in [!DNL Marketo Measure] in modo da poter avere lo stesso reporting in Discover
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 
-Rivedere la segmentazione almeno due volte all’anno assicurerà che la segmentazione sia aggiornata. Come best practice, consigliamo di rivedere le regole all’interno di &quot;[!UICONTROL Segments]&#39; del tuo [!DNL Marketo Measure] Impostazioni account, nonché il richiamo di rapporti in [!DNL Salesforce] per rivedere i segmenti in azione. Questi passaggi aiuteranno te e il tuo team a sentirsi sicuri nella tua segmentazione e, di conseguenza, nella tua [!DNL Marketo Measure] reportistica.
+Rivedere la segmentazione almeno due volte all’anno assicurerà che la segmentazione sia aggiornata. Come best practice, ti consigliamo di rivedere le regole nella scheda &#39;[!UICONTROL Segments]&#39; delle impostazioni dell&#39;account [!DNL Marketo Measure], nonché di richiamare rapporti all&#39;interno di [!DNL Salesforce] per rivedere i tuoi segmenti in azione. Questi passaggi aiuteranno te e il tuo team a sentirsi sicuri della tua segmentazione e, di conseguenza, delle tue attività di reporting per [!DNL Marketo Measure].
 
 Altri motivi per cui potrebbe essere attivata una revisione della segmentazione sono...
 
@@ -49,4 +49,4 @@ Altri motivi per cui potrebbe essere attivata una revisione della segmentazione 
 
 >[!MORELIKETHIS]
 >
->[Impostare la segmentazione personalizzata](/help/advanced-marketo-measure-features/segmentation/custom-segmentation.md)
+>[Come impostare la segmentazione personalizzata](/help/advanced-marketo-measure-features/segmentation/custom-segmentation.md)

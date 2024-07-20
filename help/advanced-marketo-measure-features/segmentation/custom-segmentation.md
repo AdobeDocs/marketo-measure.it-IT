@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Segmentazione personalizzata {#custom-segmentation}
 
-I segmenti consentono di filtrare i dati nella [!DNL Marketo Measure] Dashboard ROI per approfondire ulteriormente un set di dati specifico. Ad esempio, un segmento può essere definito per territorio geografico o sistema di scarpate.
+I segmenti consentono di filtrare i dati nel dashboard ROI [!DNL Marketo Measure] per eseguire un ulteriore drill-down su un set di dati specifico. Ad esempio, un segmento può essere definito per territorio geografico o sistema di scarpate.
 
 **Perché la segmentazione personalizzata?**
 
@@ -21,7 +21,7 @@ La segmentazione personalizzata consente di filtrare i punti di contatto per cat
 
 **Quando è utile la funzione di segmentazione personalizzata?**
 
-La segmentazione personalizzata può essere utilizzata per visualizzare i dati per un particolare tipo di record. Una volta mappata la logica del filtro, dovresti essere in grado di visualizzare nel [!DNL Marketo Measure] Vista cascata della domanda del dashboard: gli stessi dati visualizzati nel CRM.
+La segmentazione personalizzata può essere utilizzata per visualizzare i dati per un particolare tipo di record. Una volta mappata la logica del filtro, dovresti essere in grado di visualizzare nella vista cascata della domanda del dashboard [!DNL Marketo Measure] gli stessi dati visualizzati nel CRM.
 
 **Come si configura?**
 
@@ -33,11 +33,11 @@ Passaggio 1: determinare quali informazioni si desidera visualizzare.
 
 Prima di utilizzare questa funzione, individua le informazioni sui punti di contatto in base alle quali desideri filtrare. Ricorda di utilizzare i valori esatti nel CRM per i tipi di record. La configurazione filtrerà i punti di contatto dalla parte superiore a quella inferiore del funnel di marketing.
 
-Passaggio 2: accedi e individua [!UICONTROL Segments] funzionalità.
+Passaggio 2: accedere e individuare la funzionalità [!UICONTROL Segments].
 
 * Vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} e accedi
-* Sotto [!UICONTROL My Account] , seleziona [!UICONTROL Settings]
-* Seleziona [!UICONTROL Segments] dalle opzioni sulla barra laterale a sinistra, sotto [!UICONTROL Reporting] sezione
+* Nella scheda [!UICONTROL My Account], seleziona [!UICONTROL Settings]
+* Seleziona [!UICONTROL Segments] dalle opzioni sulla barra laterale a sinistra, nella sezione [!UICONTROL Reporting]
 
 Passaggio 3: comprendere i componenti.
 
@@ -59,13 +59,13 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 
 >[!NOTE]
 >
->I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background senza modificare un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
+>I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background e non modificano un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
-* Il [!UICONTROL Value] L&#39;opzione non è un elenco a discesa e il relativo valore deve essere immesso manualmente. Verifica i valori nell’organizzazione Salesforce
+* L&#39;opzione [!UICONTROL Value] non è un elenco a discesa e il relativo valore deve essere immesso manualmente. Verifica i valori nell’organizzazione Salesforce
 * Ripeti questo processo per le regole del segmento Opportunità
 * La categoria &quot;Altro&quot; è un segmento predefinito che acquisirà eventuali punti di contatto non definiti. Puoi modificare il nome del segmento predefinito
 * Fai clic sull’icona del cestino per eliminare un’intera categoria o una singola regola all’interno di una categoria. In alternativa, fai clic sull’icona della matita per modificare la categoria o la regola
-* Nota che hai un &quot;[!UICONTROL Save]&quot; e un pulsante &quot;Salva ed elabora&quot;. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
+* Si noti che sono presenti un pulsante &quot;[!UICONTROL Save]&quot; e un pulsante &quot;Salva ed elabora&quot;. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
 
    * La mappatura è accurata
    * Hai aggiunto tutti i segmenti di cui desideri tenere traccia all’interno di una categoria
@@ -75,13 +75,13 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 
 Se le regole non sono impostate sia per lead/contatti che per opportunità, verrà visualizzata solo una parte dei dati. Per approfondire, se non configuri le regole Opportunità, visualizzerai solo i dati di lead/contatti senza le opportunità associate. Lo stesso vale se non si impostano regole per lead/contatti: verranno visualizzate solo le opportunità senza i lead/contatti associati.
 
-Al termine, fai clic su [!UICONTROL Save] innanzitutto, verificare tutto e quindi fare clic su [!UICONTROL Save and Process]. Ricorda che non puoi modificare le impostazioni per sette giorni dopo il salvataggio ed l’elaborazione perché [!DNL Marketo Measure] sta riformattando i dati in questo periodo di tempo.
+Al termine, fare clic su [!UICONTROL Save], controllare tutto e quindi fare clic su [!UICONTROL Save and Process]. Ricorda che non puoi modificare le impostazioni per sette giorni dopo il salvataggio ed l&#39;elaborazione perché [!DNL Marketo Measure] sta riformattando i dati in questo periodo.
 
-Se si è un cliente di Marketo Measure Ultimate e si è impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+Se sei un cliente di Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per il lead ([ulteriori informazioni](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
 
 * b2b.personStatus
 * b2b.isConverted
 
-**Come si salvano i rapporti generati?**
+**Come si salvano i report generati?**
 
-Non puoi salvare i rapporti generati direttamente nell’interfaccia utente. Tuttavia, [!DNL Marketo Measure] salva i nomi dei segmenti nell’URL, in modo da poter conservare un record di ciascun rapporto inserendo un segnalibro nella pagina.
+Non puoi salvare i rapporti generati direttamente nell’interfaccia utente. Tuttavia, [!DNL Marketo Measure] salva i nomi dei segmenti nell&#39;URL in modo da poter tenere un record di ogni report contrassegnando la pagina con un segnalibro.

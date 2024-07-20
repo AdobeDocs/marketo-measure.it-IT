@@ -1,6 +1,6 @@
 ---
-description: '[!DNL Salesforce] Consolidamento dei pacchetti - [!DNL Marketo Measure]'
-title: '[!DNL Salesforce] Consolidamento dei pacchetti'
+description: '[!DNL Salesforce] consolidamento pacchetto - [!DNL Marketo Measure]'
+title: '[!DNL Salesforce] consolidamento pacchetto'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
 source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Salesforce] Consolidamento dei pacchetti {#salesforce-package-consolidation}
+# Consolidamento pacchetto [!DNL Salesforce] {#salesforce-package-consolidation}
 
 Per migliorare l’esperienza utente e semplificare l’utilizzo, i pacchetti esistenti vengono compilati in un unico pacchetto completo.
 
@@ -24,12 +24,12 @@ Il nuovo pacchetto consolidato V2 incorpora tutte le funzionalità dei pacchetti
 
 Sono disponibili due nuovi campi per migliorare le funzionalità di reporting:
 
-* nome_modulo: ora disponibile negli oggetti BT/BAT, questo campo consente agli utenti di creare report basati sui nomi dei moduli.
-* user_touchpoint_id: questo campo consente agli utenti di creare rapporti con conteggi univoci dei punti di contatto degli utenti (`bizible2__User_Touchpoint_V2__c` in Salesforce).
+* form_name: ora disponibile negli oggetti BT/BAT, questo campo consente agli utenti di creare report basati sui nomi dei moduli.
+* user_touchpoint_id: questo campo consente agli utenti di creare report con conteggi di punti di contatto utente univoci (`bizible2__User_Touchpoint_V2__c` in Salesforce).
 
 ## Supporto e transizione {#support-and-transition}
 
-Il [Team di supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} è disponibile per rispondere a qualsiasi domanda e per garantire una transizione senza intoppi al nuovo pacchetto consolidato.
+Il [team di supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} è disponibile per rispondere a qualsiasi domanda e per garantire una transizione senza problemi al nuovo pacchetto consolidato.
 
 ## Azioni richieste {#retired-actions}
 
@@ -57,12 +57,12 @@ Non è necessario disinstallare il pacchetto prima di installarlo. Non ci sarann
 
 **Come posso eseguire la retrocompilazione dei dati dai miei pacchetti correnti?**
 
-È possibile archiviare un ticket [con supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per la retrocompilazione e la rielaborazione dei dati BT/BAT da compilare nei campi ID punto di contatto e ID modulo.
+È possibile archiviare un ticket [con supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per la retrocompilazione e la rielaborazione dei dati BT/BAT per compilare i campi ID punto di contatto e ID modulo.
 
 **I campi nei pacchetti V1 e V2_EXT saranno disponibili nel pacchetto consolidato?**
 
 Sì. Il pacchetto consolidato contiene gli stessi campi nella versione 1, con ulteriori raggruppamenti per oggetti e campi V2_EXT attraverso i campi dei punti di contatto.
 
-**È possibile ricreare nel pacchetto consolidato i rapporti che utilizzano i campi V2_EXT?**
+**È possibile ricreare i report che utilizzano i campi V2_EXT nel pacchetto consolidato?**
 
-Sì. Segui i passaggi descritti in [Azioni richieste](#retired-actions) sezione.
+Sì. Segui i passaggi descritti nella sezione [Azioni richieste](#retired-actions).

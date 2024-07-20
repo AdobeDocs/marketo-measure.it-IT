@@ -17,21 +17,21 @@ Ecco come impostare la connessione a Marketo.
 
 >[!PREREQUISITES]
 >
->[Creare un ruolo utente solo API](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) per [!DNL Marketo Measure]/Marketi Engage.
+>[Crea un ruolo utente solo API](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) per la connessione [!DNL Marketo Measure]/Marketo Engage.
 
-1. In entrata [!DNL Marketo Measure], fare clic su **[!UICONTROL My Account]** a discesa e selezionare **[!UICONTROL Settings]**.
+1. In [!DNL Marketo Measure], fare clic sul menu a discesa **[!UICONTROL My Account]** e selezionare **[!UICONTROL Settings]**.
 
    ![](assets/set-up-marketo-connection-1.png)
 
-1. Sotto [!UICONTROL Integrations], fai clic su **[!UICONTROL Connections]**.
+1. In [!UICONTROL Integrations], fare clic su **[!UICONTROL Connections]**.
 
    ![](assets/set-up-marketo-connection-2.png)
 
-1. Clic **[!UICONTROL Set Up New CRM Connection]**.
+1. Fare clic su **[!UICONTROL Set Up New CRM Connection]**.
 
    ![](assets/set-up-marketo-connection-3.png)
 
-1. Fai clic su **[!UICONTROL Connect]** accanto a Marketo.
+1. Fare clic sul pulsante **[!UICONTROL Connect]** accanto a Marketo.
 
    ![](assets/set-up-marketo-connection-4.png)
 
@@ -39,7 +39,7 @@ Ecco come impostare la connessione a Marketo.
 
    ![](assets/set-up-marketo-connection-5.png)
 
-1. Sempre nel Marketo Engage, seleziona **LaunchPoint** nell&#39;albero a sinistra. Trova il servizio personalizzato che desideri connettere a Marketo Measure e fai clic su **Visualizza dettagli**.
+1. Sempre nel Marketo Engage, seleziona **LaunchPoint** nella struttura a sinistra. Individuare il servizio personalizzato che si desidera connettere a Marketo Measure e fare clic su **Visualizza dettagli**.
 
    ![](assets/set-up-marketo-connection-6.png)
 
@@ -47,7 +47,7 @@ Ecco come impostare la connessione a Marketo.
 
    ![](assets/set-up-marketo-connection-7.png)
 
-1. Torna in [!DNL Marketo Measure], compila i campi con i dati raccolti.
+1. Compila nuovamente i campi in [!DNL Marketo Measure] con i dati raccolti.
 
    ![](assets/set-up-marketo-connection-8.png)
 
@@ -57,4 +57,4 @@ Ecco come impostare la connessione a Marketo.
 
    >[!NOTE]
    >
-   >[!DNL Marketo Measure] effettua chiamate all’API Marketo per tuo conto senza utilizzare nessuno dei limiti dell’API Marketo, quindi non preoccuparti di massimali e allocazione di credito con altre integrazioni.
+   >[!DNL Marketo Measure] effettua chiamate all&#39;API Marketo per tuo conto senza utilizzare i limiti dell&#39;API Marketo, quindi non è necessario preoccuparsi dei limiti e dell&#39;allocazione del credito con altre integrazioni.

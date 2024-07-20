@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Domande frequenti sul modello di apprendimento automatico {#machine-learning-model-faq}
 
-Il [!DNL Marketo Measure] Il modello di apprendimento automatico utilizza i dati del punto di contatto per calcolare la quantità di ponderazione dell’attribuzione da assegnare a ogni fase. Ciò è determinato dall&#39;importanza di ciascuna fase nel portare a termine le offerte.
+Il modello di apprendimento automatico [!DNL Marketo Measure] utilizza i dati dei punti di contatto per calcolare la quantità di ponderazione dell&#39;attribuzione da assegnare a ogni fase. Ciò è determinato dall&#39;importanza di ciascuna fase nel portare a termine le offerte.
 
 Quali sono le percentuali di attribuzione indicate dal modello di apprendimento automatico per ciascuna fase?
 
@@ -21,7 +21,7 @@ Le percentuali di attribuzione di ogni fase riflettono il potenziale impatto del
 
 Come viene calcolato il modello di apprendimento automatico?
 
-[!DNL Marketo Measure] calcola l’importanza di ogni fase personalizzata utilizzando i dati del punto di contatto del tuo account. I criteri utilizzati per determinare l&#39;importanza di ciascuna fase sono i seguenti:
+[!DNL Marketo Measure] calcola l&#39;importanza di ogni fase personalizzata utilizzando i dati del punto di contatto del tuo account. I criteri utilizzati per determinare l&#39;importanza di ciascuna fase sono i seguenti:
 
 * Precisione del modello: se costruiamo un modello predittivo con i dati dei punti di contatto per prevedere se alla fine vinceremo un’offerta, quanto sarà accurato il modello? Una maggiore precisione predittiva significa che i dettagli di questa fase sono più correlati con la chiusura o meno di un’offerta
 * Tasso di conversione: se lead o opportunità in questa fase vengono convertiti alla fase successiva a un tasso elevato, ciò suggerisce che le attività di marketing che si sono verificate in questa fase non hanno avuto molta importanza. Al contrario, se una certa fase converte alla fase successiva con un tasso basso, ciò può suggerire che le attività di marketing che si sono verificate in questa fase sono state influenti nel promuovere la conversione.
@@ -47,7 +47,7 @@ L’assegnazione di un credito di attribuzione del 10% a Middle Touches è un’
 
 Quando devo modificare la distribuzione dell’attribuzione?
 
-Rivolgiti al tuo account manager per discutere le implicazioni della modifica delle percentuali di attribuzione e quali fasi includere nel modello personalizzato. Ogni [!DNL Salesforce] e il processo di vendita è unico e vogliamo garantire che il modello personalizzato sia modellato accuratamente.
+Rivolgiti al tuo account manager per discutere le implicazioni della modifica delle percentuali di attribuzione e quali fasi includere nel modello personalizzato. Ogni [!DNL Salesforce] e processo di vendita è univoco e vogliamo garantire che il modello personalizzato sia modellato in modo accurato.
 
 Detto questo, abbiamo identificato alcune tendenze generali nei nostri clienti:
 

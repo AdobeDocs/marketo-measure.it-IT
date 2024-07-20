@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
-Il [!DNL Marketo Measure] La soluzione gestita è dotata di diversi report e dashboard azionari, progettati per soddisfare le esigenze di base durante la visualizzazione [!DNL Marketo Measure] dati in Dynamics. Di seguito è riportato l’elenco completo e alcuni casi d’uso comuni.
+La soluzione gestita [!DNL Marketo Measure] include diversi report e dashboard azionari progettati per soddisfare le esigenze di base durante la visualizzazione dei dati di [!DNL Marketo Measure] in Dynamics. Di seguito è riportato l’elenco completo e alcuni casi d’uso comuni.
 
 ## Dashboard (nove in totale) {#dashboards-total}
 
@@ -97,12 +97,12 @@ Il [!DNL Marketo Measure] La soluzione gestita è dotata di diversi report e das
   </tr> 
   <tr> 
    <td>Punteggio account per coinvolgimento</td> 
-   <td>Raggruppa tutti i conti con il relativo livello A, B, C, D, N/A dal [!DNL Marketo Measure] Punteggio di coinvolgimento predittivo.</td> 
+   <td>Raggruppa tutti gli account con il relativo livello A, B, C, D, N/A dal punteggio di coinvolgimento predittivo [!DNL Marketo Measure].</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 
    <td>Account con lead e contatti</td> 
-   <td>Visualizza tutti i lead e i contatti insieme raggruppati in base all'account, utilizzando [!DNL Marketo Measure] Lead per la corrispondenza dell’account.</td> 
+   <td>Visualizza tutti i lead e i contatti insieme, raggruppati in base all'account, utilizzando la corrispondenza Lead per account [!DNL Marketo Measure].</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 
@@ -141,7 +141,7 @@ Il [!DNL Marketo Measure] La soluzione gestita è dotata di diversi report e das
    <td>Tutte</td> 
   </tr> 
   <tr> 
-   <td>[!DNL Marketo Measure] Attribuzione per origine social</td> 
+   <td>[!DNL Marketo Measure] Attribuzione per social Source</td> 
    <td>Osserva l’attribuzione dei ricavi per i canali social e misurane l’efficacia.</td> 
    <td>Tutte</td> 
   </tr> 
@@ -161,12 +161,12 @@ Il [!DNL Marketo Measure] La soluzione gestita è dotata di diversi report e das
    <td>Tutte</td> 
   </tr> 
   <tr> 
-   <td>Lead per [!DNL Marketo Measure] Canale di marketing (FT)</td> 
+   <td>Lead per [!DNL Marketo Measure] canale di marketing (FT)</td> 
    <td>Misura quanti lead hanno avuto un primo contatto da ogni canale di marketing.</td> 
    <td>Tutte</td> 
   </tr> 
   <tr> 
-   <td>Lead per [!DNL Marketo Measure] Canale marketing (LC)</td> 
+   <td>Lead per [!DNL Marketo Measure] canale di marketing (LC)</td> 
    <td>Misura quanti lead sono stati generati con un contatto per la creazione di lead da ogni canale di marketing.</td> 
    <td>Tutte</td> 
   </tr> 
@@ -191,12 +191,12 @@ Il [!DNL Marketo Measure] La soluzione gestita è dotata di diversi report e das
    <td>Tutte</td> 
   </tr> 
   <tr> 
-   <td>Lead per origine social (FT)</td> 
+   <td>Lead per social Source (FT)</td> 
    <td>Misura quanti lead hanno avuto un primo contatto dal canale social.</td> 
    <td>Tutte</td> 
   </tr> 
   <tr> 
-   <td>Lead per origine social (LC)</td> 
+   <td>Lead per Social Source (LC)</td> 
    <td>Misura quanti lead sono stati generati con un tocco di creazione lead dal canale social.</td> 
    <td>Tutte</td> 
   </tr> 

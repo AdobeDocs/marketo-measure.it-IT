@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874616
-description: Tipo di rapporto per contatti senza opportunità - [!DNL Marketo Measure]
+description: Tipo di report per contatti senza opportunità - [!DNL Marketo Measure]
 title: Tipo di rapporto per contatti senza opportunità
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedi comunque &quot;[!DNL Bizible]&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
+>Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere comunque &quot;[!DNL Bizible]&quot; nel CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Per creare rapporti sui contatti con i punti di contatto dell&#39;acquirente non associati a un&#39;opportunità, è necessario creare un tipo di rapporto personalizzato.
 
@@ -23,11 +23,11 @@ Per creare rapporti sui contatti con i punti di contatto dell&#39;acquirente non
 
    ![](assets/1.jpg)
 
-1. Seleziona **[!UICONTROL New Custom Report Type]**.
+1. Selezionare **[!UICONTROL New Custom Report Type]**.
 
    ![](assets/2.jpg)
 
-1. Imposta il [!UICONTROL Primary Object] come &quot;[!UICONTROL Contacts].&quot; Assegna all&#39;etichetta del tipo di rapporto il nome &quot;Contatti con i punti di contatto dell&#39;acquirente&quot;. Utilizza la stessa denominazione per Nome tipo di rapporto. All&#39;interno dell&#39;input della descrizione, &quot;Contatti con i punti di contatto dell&#39;acquirente&quot;. Salva il report in &quot;[!UICONTROL Other]&quot; e imposta il rapporto su &quot;[!UICONTROL Deployed].&quot;
+1. Imposta [!UICONTROL Primary Object] come &quot;[!UICONTROL Contacts]&quot;. Assegna all&#39;etichetta del tipo di rapporto il nome &quot;Contatti con i punti di contatto dell&#39;acquirente&quot;. Utilizza la stessa denominazione per Nome tipo di rapporto. All&#39;interno dell&#39;input della descrizione, &quot;Contatti con i punti di contatto dell&#39;acquirente&quot;. Salvare il report in &quot;[!UICONTROL Other]&quot; e impostare il report su &quot;[!UICONTROL Deployed]&quot;.
 
    ![](assets/3.jpg)
 
@@ -35,4 +35,4 @@ Per creare rapporti sui contatti con i punti di contatto dell&#39;acquirente non
 
    ![](assets/4.jpg)
 
-1. Clic **[!UICONTROL Save]** e hai finito!
+1. Fai clic su **[!UICONTROL Save]** e l&#39;operazione è terminata.

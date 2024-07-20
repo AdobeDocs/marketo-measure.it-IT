@@ -1,6 +1,6 @@
 ---
 unique-page-id: 27656739
-description: Individuazione rapporti - [!DNL Marketo Measure]
+description: Individua report - [!DNL Marketo Measure]
 title: Individua reportistica
 exl-id: 73e1ffaf-01d0-4454-bd4f-b9e39c33615a
 feature: Multi-Currency, Discover

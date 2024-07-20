@@ -2,7 +2,8 @@
 description: Dati raccolti da JavaScript - [!DNL Marketo Measure]
 title: Dati raccolti da JavaScript
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: 83814168-9d3e-45ac-b514-df58f0b2e90b
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 6%
@@ -11,7 +12,7 @@ ht-degree: 6%
 
 # Dati raccolti da JavaScript {#data-collected-by-javascript}
 
-Scopri i dati raccolti da JavaScript di Marketo Measure durante la distribuzione.
+Scopri i dati raccolti da Marketo Measure JavaScript durante la distribuzione.
 
 **Richiesta di esempio:**
 

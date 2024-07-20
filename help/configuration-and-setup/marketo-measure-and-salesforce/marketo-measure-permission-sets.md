@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874789
-description: "[!DNL Marketo Measure] Set di autorizzazioni - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Set di autorizzazioni"
+description: "[!DNL Marketo Measure] set di autorizzazioni - [!DNL Marketo Measure]"
+title: "[!DNL Marketo Measure] set di autorizzazioni"
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Set di autorizzazioni {#marketo-measure-permission-sets}
+# [!DNL Marketo Measure] set di autorizzazioni {#marketo-measure-permission-sets}
 
-Scopri come accedere e assegnare [!DNL Marketo Measure] Set di autorizzazioni in Salesforce.
+Scopri come accedere e assegnare [!DNL Marketo Measure] set di autorizzazioni in Salesforce.
 
-## [!DNL Marketo Measure] Set di autorizzazioni {#marketo-measure-permission-sets-1}
+## [!DNL Marketo Measure] set di autorizzazioni {#marketo-measure-permission-sets-1}
 
-Tre set di autorizzazioni sono inclusi nel [!DNL Marketo Measure] Pacchetto Salesforce Questi set di autorizzazioni forniscono accesso a [!DNL Marketo Measure] per amministratori, addetti al marketing e utenti standard.
+Con il pacchetto Salesforce [!DNL Marketo Measure] sono inclusi tre set di autorizzazioni. Questi set di autorizzazioni forniscono l&#39;accesso a [!DNL Marketo Measure] per amministratori, addetti al marketing e utenti standard.
 
 Per accedere e assegnare i set di autorizzazioni in Salesforce:
 
-1. Clic **[!UICONTROL Setup]**.
-1. Nel margine sinistro, fai clic su **[!UICONTROL Users]**, quindi **[!UICONTROL Permission Sets]**.
-1. Seleziona la [!DNL Marketo Measure] Set di autorizzazioni che desideri assegnare.
-1. Clic **[!UICONTROL Manage Assignments]**, quindi **[!UICONTROL Add Assignments]**.
-1. Seleziona gli utenti per il set di autorizzazioni e fai clic su **[!UICONTROL Assign]**.
+1. Fare clic su **[!UICONTROL Setup]**.
+1. Nel margine sinistro fare clic su **[!UICONTROL Users]**, quindi su **[!UICONTROL Permission Sets]**.
+1. Selezionare il set di autorizzazioni [!DNL Marketo Measure] da assegnare.
+1. Fare clic su **[!UICONTROL Manage Assignments]**, quindi su **[!UICONTROL Add Assignments]**.
+1. Selezionare gli utenti per il set di autorizzazioni e fare clic su **[!UICONTROL Assign]**.
 
    ![](assets/1-5.png)
 
-## [!DNL Marketo Measure] Spiegazione dei set di autorizzazioni {#marketo-measure-permission-sets-explained}
+## [!DNL Marketo Measure] set di autorizzazioni spiegati {#marketo-measure-permission-sets-explained}
 
 <table> 
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Amministratore</strong></span></td> 
-   <td><span>Consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti. La licenza in base alla quale [!DNL Marketo Measure] invia i dati a SFDC se questo set di autorizzazioni è abilitato. Inoltre, si consiglia che questa licenza abbia la possibilità di modificare i lead convertiti negli scenari in cui il lead viene convertito prima [!DNL Marketo Measure] applicazione dei dati al record. Questo garantisce la precisione nella generazione dei rapporti tra Salesforce e [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">Fai clic qui per ulteriori informazioni</a>.</span></td> 
+   <td><span>Consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti. La licenza con cui [!DNL Marketo Measure] invia i dati a SFDC deve avere questo set di autorizzazioni abilitato. Inoltre, si consiglia che questa licenza abbia la possibilità di modificare i lead convertiti negli scenari in cui il lead viene convertito prima di [!DNL Marketo Measure] applicando i dati al record. In questo modo si garantisce la precisione nella generazione dei rapporti tra Salesforce e [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">Ulteriori informazioni</a>.</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Utente marketing</strong></span></td> 
-   <td><span>Consente a un utente marketing di leggere e scrivere record da [!DNL Marketo Measure] oggetti. Tutti i membri del team di marketing devono avere [!DNL Marketo Measure] Set di autorizzazioni per gli utenti marketing abilitato. <br></span></td> 
+   <td><span>Consente a un utente marketing di leggere e scrivere record da [!DNL Marketo Measure] oggetti. Tutti i membri del team marketing devono avere l'autorizzazione Utente marketing [!DNL Marketo Measure] abilitata. <br></span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Utente standard</strong></span></td> 
@@ -48,8 +48,8 @@ Per accedere e assegnare i set di autorizzazioni in Salesforce:
  </tbody> 
 </table>
 
-I team addetti allo sviluppo delle vendite in entrata e gli account executive possono trarre vantaggio da [!DNL Marketo Measure] dati. Se questi ruoli desiderano utilizzare [!DNL Marketo Measure] dati nel reporting, abilita [!DNL Marketo Measure] Set di autorizzazioni utente standard.
+I team di sviluppo vendite in entrata e i responsabili dell&#39;account potrebbero trarre vantaggio dai dati di [!DNL Marketo Measure]. Se questi ruoli desiderano utilizzare i dati [!DNL Marketo Measure] nel reporting, abilitare il set di autorizzazioni utente standard [!DNL Marketo Measure].
 
 >[!NOTE]
 >
->Inoltre, l’utente tramite il quale siamo connessi deve avere l’Utente di marketing [!DNL Salesforce] Profilo abilitato a livello di utente per l’accesso all’oggetto Campaign. Per verificare questa situazione, fai clic su in **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **Utenti assegnati**.
+>Inoltre, per poter accedere all’oggetto Campaign, l’utente tramite il quale siamo connessi deve avere il profilo &quot;Utente marketing&quot; [!DNL Salesforce] abilitato a livello di utente. Per verificare questa situazione, fare clic su **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **Utenti assegnati**.

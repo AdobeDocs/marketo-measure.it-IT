@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874608
 description: "[!DNL Marketo Measure] Parametri - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Parameters"
+title: "[!DNL Marketo Measure] Parametri"
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Parametri {#marketo-measure-parameters}
+# Parametri [!DNL Marketo Measure] {#marketo-measure-parameters}
 
-## [!DNL Marketo Measure] Spiegazione dei parametri {#marketo-measure-parameters-explained}
+## [!DNL Marketo Measure] parametri spiegati {#marketo-measure-parameters-explained}
 
-Per ottenere ulteriori informazioni dall&#39;uso di UTM, [!DNL Marketo Measure] aggiunge parametri personalizzati agli annunci in [!DNL Google] AdWords, Bing Ads e [!DNL Facebook] Annunci. [!DNL Marketo Measure] si integra con queste piattaforme per automatizzare la maggior parte del processo di configurazione. Se selezioni di utilizzare l’assegnazione tag automatica, [!DNL Marketo Measure] aggiungerà automaticamente i parametri agli URL degli annunci. [!DNL Marketo Measure] scarica automaticamente i costi di marketing dalle piattaforme e li carica nel [!DNL Marketo Measure] app.
+Per ottenere ulteriori informazioni sull&#39;utilizzo di UTM, [!DNL Marketo Measure] aggiunge parametri personalizzati agli annunci in [!DNL Google] AdWords, Bing Ads e [!DNL Facebook] Ads. [!DNL Marketo Measure] si integra con queste piattaforme per automatizzare la maggior parte del processo di installazione. Se si sceglie di utilizzare l&#39;assegnazione tag automatica, [!DNL Marketo Measure] aggiungerà automaticamente i relativi parametri agli URL degli annunci. [!DNL Marketo Measure] scaricherà inoltre automaticamente i costi di marketing dalle piattaforme e li caricherà nell&#39;app [!DNL Marketo Measure].
 
 Esempio di URL senza parametri:
 
 `http://adobe.com/landing-page?myParam=foo`
 
-Esempio di URL con [!DNL Marketo Measure] parametri:
+Esempio di un URL con [!DNL Marketo Measure] parametri:
 
 `http://adobe.com/landing-page?myParam=foo&_bt={creative}&_bk={keyword}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
 
@@ -42,11 +42,11 @@ Esempio di URL con [!DNL Marketo Measure] parametri:
 
 >[!TIP]
 >
->Per ulteriori informazioni sui tipi di corrispondenza, [ecco un articolo AdWords rilevante](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
+>Per ulteriori informazioni sui tipi di corrispondenza, [ecco un articolo AdWords pertinente](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
 
 * `_bn={network}`
-   * Rappresenta il tipo di rete dell’annuncio - [visualizzare o cercare](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
-   * È simile al parametro Origine UTM.
+   * Rappresenta il tipo di rete dell&#39;annuncio - [visualizzazione o ricerca](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
+   * È simile al parametro Source UTM.
 
 * `_bg={adgroupID}`
    * Rappresenta l’ID del gruppo di annunci a cui appartiene l’annuncio
