@@ -4,9 +4,9 @@ description: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM - Marketo
 title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Se l&#39;organizzazione utilizza i ruoli di Dynamics Security, verificare che l&
 I ruoli di sicurezza si trovano qui: **[!UICONTROL Settings]** > **[!UICONTROL Security]** > **[!UICONTROL Security Roles]**.
 
 Per le entità personalizzate [!DNL Marketo Measure], sono necessarie autorizzazioni complete per tutte le entità.
+
+Sono necessarie anche le autorizzazioni &quot;Crea&quot; per la campagna, oltre alle autorizzazioni di lettura/scrittura per le entità standard.
 
 >[!NOTE]
 >
