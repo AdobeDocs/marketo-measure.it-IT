@@ -3,16 +3,16 @@ description: Panoramica di '[!DNL Marketo Measure] Ultimate - [!DNL Marketo Meas
 title: '[!DNL Marketo Measure] Ultimate Overview'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 36688972c241f5a79c1730237598510cd44f032d
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 0%
+source-wordcount: '683'
+ht-degree: 4%
 
 ---
 
 # Panoramica di [!DNL Marketo Measure] Ultimate {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] (precedentemente Bizible) offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate e massimizzare il ritorno sull&#39;investimento per l&#39;azienda. [!DNL Marketo Measure] è una soluzione di attribuzione marketing che tiene traccia e genera report automatici sulle prestazioni dei canali, fornendo visibilità su quali canali generano il maggior coinvolgimento dei clienti e consentendo di ottimizzare le spese di marketing di conseguenza.
+[!DNL Marketo Measure] (precedentemente Bizible) offre ai marketer approfondimenti sulle iniziative di marketing più efficaci per aumentare i ricavi e ottimizzare il ritorno sull’investimento per l’azienda. [!DNL Marketo Measure] è una soluzione di attribuzione marketing che tiene traccia e genera report automatici sulle prestazioni dei canali, fornendo visibilità su quali canali generano il maggior coinvolgimento dei clienti e consentendo di ottimizzare le spese di marketing di conseguenza.
 
 [!DNL Marketo Measure Ultimate] contiene le funzionalità aggiuntive:
 
@@ -111,4 +111,6 @@ I punti di contatto di attribuzione non vengono scritti in CRM perché Ultimate 
 
 >[!MORELIKETHIS]
 >
->[Destinazione Marketo Measure Ultimate](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>* [Destinazione Marketo Measure Ultimate](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>
+>* [VIDEO: Panoramica di Marketo Measure Ultimate](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
