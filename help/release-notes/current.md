@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
+source-git-commit: 9d1001306a3e98ca85af5839ad4ea3ff662d1886
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,37 @@ ht-degree: 0%
 # Note sulla versione: 2024 {#release-notes-2024}
 
 Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.
+
+## Versione Q4 {#q4-release}
+
+### Regole di segmento migliorate
+
+Ora puoi creare segmenti utilizzando i campi Membro di Campaign e Campaign, oltre ai campi Punto di contatto e Contatto. Questo miglioramento consente di analizzare e sezionare i dati in modo più efficace in Discover.
+
+![Regole segmento per membri](assets/campaign-member.png)
+
+### Aggiornamento: impostazione di gestione degli errori per le esportazioni CRM
+
+Abbiamo ascoltato il tuo feedback sull’approccio alla sospensione dei processi e stiamo introducendo una nuova funzione nell’interfaccia utente. A partire da oggi, è possibile scegliere se i processi di esportazione devono essere messi in pausa quando si verificano errori. Utilizza il nuovo interruttore in **Il mio account** > **Impostazioni** → **CRM** → **Generale**. Questo switch è attivato per impostazione predefinita per migliorare l’integrità e la visibilità dei dati. Tuttavia, se preferisci non utilizzare questa funzione, puoi disattivarla nell’interfaccia utente e i processi di esportazione riprenderanno. Questo aggiornamento è progettato per migliorare l’affidabilità dei processi di gestione dei dati, fornendo al contempo un maggiore controllo.
+
+#### Date chiave e rollout graduale
+
+Disponibilità immediata: l’interruttore è ora attivo nell’interfaccia utente ed è abilitato per impostazione predefinita per impedire che i dati vengano ignorati durante i processi di esportazione. Se preferisci che i processi di esportazione continuino a essere in esecuzione nonostante gli errori, disattiva l’interruttore.
+
+Processo in pausa attivazione il 1° ottobre: a partire dal 1° ottobre 2024, se l’interruttore è attivo e si verifica un errore a livello di record durante un processo di esportazione, il processo viene sospeso per garantire che non venga perso alcun dato. Questi errori sono in genere dovuti a autorizzazioni mancanti, regole di convalida personalizzate applicate in modo errato o problemi nei flussi di lavoro/trigger. Riceverai notifiche relative al problema e, una volta corretto, il processo di esportazione riprenderà dal punto di interruzione. Se rinunci alla sospensione del processo, riceverai comunque le notifiche dei problemi e, una volta corretti, i record saltati vengono automaticamente riesportati.
+
+#### Perché è importante
+
+**Integrità dei dati migliorata e sicurezza dell&#39;integrazione per il futuro:** sospendendo il processo al primo segnale di un problema, si evita la perdita di dati e si garantisce l&#39;accuratezza. Ciò consente una rapida risoluzione degli errori, con conseguente miglioramento della qualità dell&#39;esportazione dei dati e dell&#39;affidabilità complessiva del sistema.
+
+**Visibilità immediata:** Tramite notifiche Pulse, riceverai avvisi tempestivi per gli errori di autorizzazione, consentendo risposte tempestive e riducendo al minimo il potenziale impatto sulle operazioni.
+
+#### Supporto della transizione
+
+Per aiutarti ad adattarti a questa modifica, abbiamo creato la documentazione sulla nuova funzione e chiare descrizioni degli errori con passaggi completi per la risoluzione dei problemi.
+
+* NUOVO DOC: impostazione di gestione degli errori per le esportazioni CRM
+* [Notifiche di errore](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md)
 
 ## Versione Q3 {#q3-release}
 

@@ -4,10 +4,10 @@ product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: "[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell'azienda."
-source-git-commit: 5759615376954806d6f0682378ce4bbc786bc43a
+source-git-commit: 8fa33a363b9e853dd074848032e1810b72fe169c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 0%
+source-wordcount: '802'
+ht-degree: 1%
 
 ---
 
@@ -57,6 +57,7 @@ ht-degree: 0%
       + [Connetti [!DNL Marketo Measure] a Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
       + [Best practice per il pacchetto CRM [!DNL Marketo Measure] ](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] oggetti Salesforce](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
+      + [Gestione degli errori per le esportazioni CRM](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure] tassonomia di oggetti e campi](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
       + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] ](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
