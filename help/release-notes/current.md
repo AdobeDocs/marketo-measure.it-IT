@@ -3,7 +3,7 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9d1001306a3e98ca85af5839ad4ea3ff662d1886
+source-git-commit: 24cb14c0f5db13c791966d21b4a1145b655ecc1b
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Processo in pausa attivazione il 1° ottobre: a partire dal 1° ottobre 2024, se
 
 Per aiutarti ad adattarti a questa modifica, abbiamo creato la documentazione sulla nuova funzione e chiare descrizioni degli errori con passaggi completi per la risoluzione dei problemi.
 
-* NUOVO DOC: impostazione di gestione degli errori per le esportazioni CRM
+* Nuova documentazione: [Impostazione gestione errori per esportazioni CRM](/help/configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
 * [Notifiche di errore](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md)
 
 ## Versione Q3 {#q3-release}
