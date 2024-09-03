@@ -2,9 +2,9 @@
 description: Scopri come gestire gli errori nelle esportazioni CRM
 title: Gestione degli errori per le esportazioni CRM
 feature: Salesforce
-source-git-commit: 24cb14c0f5db13c791966d21b4a1145b655ecc1b
+source-git-commit: ce5170330fb1d9f944762f401d29be4da5c0bd43
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ La funzione Pausa per errori di esportazione consente di controllare se i proces
 
 L&#39;impostazione è disponibile in **Account personale** > **Impostazioni** > **CRM** > **Generale**.
 
+![Pausa per errori di esportazione](assets/stop-progress.png)
+
 >[!NOTE]
 >
 >Questa funzione è visibile solo se la funzione &quot;Esporta in CRM&quot; è abilitata.
@@ -22,6 +24,8 @@ L&#39;impostazione è disponibile in **Account personale** > **Impostazioni** > 
 Quando questa funzione è abilitata, il processo di esportazione cessa di progredire e rimane sul record in cui si è verificato l’errore, fino a quando il problema non viene risolto. Questi errori sono in genere dovuti a autorizzazioni mancanti, regole di convalida personalizzate applicate in modo errato o problemi nei flussi di lavoro/trigger. Il processo continuerà a essere eseguito come pianificato e tenterà automaticamente di nuovo di esportare il record non riuscito fino a quando non avrà esito positivo.
 
 Se scegli di disabilitare questa funzione, verrà visualizzata una finestra a comparsa di avviso che ti informerà che ciò potrebbe causare incoerenze nei dati. Sarà tua responsabilità affrontare eventuali problemi che potrebbero sorgere da queste incoerenze.
+
+![Avviso di incoerenza dati](assets/data-inconsistency.png)
 
 In entrambi i casi, indipendentemente dal fatto che la funzionalità sia attivata o disattivata, tutti gli errori a livello di record rilevati vengono registrati nella tabella `ExportErrors` e il processo `CRMExport_ExportError` tenterà automaticamente di riesportare questi record ogni giorno. Questo elimina la necessità di una richiesta di supporto per avviare una riesportazione, in quanto ciò avverrà automaticamente senza alcun intervento degli sviluppatori.
 
