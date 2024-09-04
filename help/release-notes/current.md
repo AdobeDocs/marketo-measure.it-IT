@@ -3,7 +3,7 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 24cb14c0f5db13c791966d21b4a1145b655ecc1b
+source-git-commit: c576d2b125ac1699486e60240729a7f4d8908272
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
@@ -28,15 +28,15 @@ Abbiamo ascoltato il tuo feedback sull’approccio alla sospensione dei processi
 
 #### Date chiave e rollout graduale
 
-Disponibilità immediata: l’interruttore è ora attivo nell’interfaccia utente ed è abilitato per impostazione predefinita per impedire che i dati vengano ignorati durante i processi di esportazione. Se preferisci che i processi di esportazione continuino a essere in esecuzione nonostante gli errori, disattiva l’interruttore.
+1. **Disponibilità immediata attivazione:** L&#39;attivazione è ora attiva nell&#39;interfaccia utente ed è abilitata per impostazione predefinita per impedire che i dati vengano ignorati durante i processi di esportazione. Se preferisci che i processi di esportazione continuino a essere in esecuzione nonostante gli errori, disattiva l’interruttore.
 
-Processo in pausa attivazione il 1° ottobre: a partire dal 1° ottobre 2024, se l’interruttore è attivo e si verifica un errore a livello di record durante un processo di esportazione, il processo viene sospeso per garantire che non venga perso alcun dato. Questi errori sono in genere dovuti a autorizzazioni mancanti, regole di convalida personalizzate applicate in modo errato o problemi nei flussi di lavoro/trigger. Riceverai notifiche relative al problema e, una volta corretto, il processo di esportazione riprenderà dal punto di interruzione. Se rinunci alla sospensione del processo, riceverai comunque le notifiche dei problemi e, una volta corretti, i record saltati vengono automaticamente riesportati.
+1. **Processo in pausa attivazione il 1° ottobre:** A partire dal 1° ottobre 2024, se l&#39;interruttore è attivo e si verifica un errore a livello di record durante un processo di esportazione, il processo viene sospeso per garantire che non venga persa alcuna informazione. Questi errori sono in genere dovuti a autorizzazioni mancanti, regole di convalida personalizzate applicate in modo errato o problemi nei flussi di lavoro/trigger. Riceverai notifiche relative al problema e, una volta corretto, il processo di esportazione riprenderà dal punto di interruzione. Se rinunci alla sospensione del processo, riceverai comunque le notifiche dei problemi e, una volta corretti, i record saltati vengono automaticamente riesportati.
 
 #### Perché è importante
 
-**Integrità dei dati migliorata e sicurezza dell&#39;integrazione per il futuro:** sospendendo il processo al primo segnale di un problema, si evita la perdita di dati e si garantisce l&#39;accuratezza. Ciò consente una rapida risoluzione degli errori, con conseguente miglioramento della qualità dell&#39;esportazione dei dati e dell&#39;affidabilità complessiva del sistema.
+* **Integrità dei dati migliorata e sicurezza dell&#39;integrazione per il futuro:** sospendendo il processo al primo segnale di un problema, si evita la perdita di dati e si garantisce l&#39;accuratezza. Ciò consente una rapida risoluzione degli errori, con conseguente miglioramento della qualità dell&#39;esportazione dei dati e dell&#39;affidabilità complessiva del sistema.
 
-**Visibilità immediata:** Tramite notifiche Pulse, riceverai avvisi tempestivi per gli errori di autorizzazione, consentendo risposte tempestive e riducendo al minimo il potenziale impatto sulle operazioni.
+* **Visibilità immediata:** Tramite notifiche Pulse, riceverai avvisi tempestivi per gli errori di autorizzazione, consentendo risposte tempestive e riducendo al minimo il potenziale impatto sulle operazioni.
 
 #### Supporto della transizione
 
