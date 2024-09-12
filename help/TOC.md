@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “Guida [!DNL Marketo Measure]”
 user-guide-description: "[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell'azienda."
-source-git-commit: 8fa33a363b9e853dd074848032e1810b72fe169c
+source-git-commit: 0c94276bec390bb67dafe5dd679c1a0378a05c85
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '809'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,7 @@ ht-degree: 1%
    + [Panoramica di [!DNL Marketo Measure] Ultimate](marketo-measure-ultimate/marketo-measure-ultimate-overview.md)
    + [Requisiti di integrità dei dati](marketo-measure-ultimate/data-integrity-requirement.md)
    + [Guida all’implementazione](marketo-measure-ultimate/implementation-guide.md)
+   + [Migrazione dal livello 1-2 a  [!DNL Marketo Measure] Ultimate](marketo-measure-ultimate/migration-from-tier-to-marketo-measure-ultimate.md)
 + Varie {#miscellaneous}
    + Altre risorse correlate {#other-related-resources}
       + [Manutenzione di [!DNL Marketo Measure]](miscellaneous/other-related-resources/marketo-measure-maintenance.md)
