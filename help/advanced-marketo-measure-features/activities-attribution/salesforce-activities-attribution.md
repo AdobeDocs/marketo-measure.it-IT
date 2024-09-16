@@ -4,18 +4,22 @@ description: Attribuzione attività Salesforce - [!DNL Marketo Measure]
 title: Attribuzione attività Salesforce
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
 # Attribuzione attività Salesforce {#salesforce-activities-attribution}
 
-L&#39;integrazione delle attività di [!DNL Marketo Measure] Salesforce porta record specifici di attività ed eventi nel modello di attribuzione. Inizia a tenere traccia di elementi come e-mail di vendita o telefonate di vendita che non ricevevano il dovuto credito. Per configurare la regola delle attività, vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Da qui, passare alla scheda **[!UICONTROL Settings]** e fare clic sulla scheda **[!UICONTROL Activities]**.
+L&#39;integrazione delle attività di Salesforce [!DNL Marketo Measure] inserisce record Attività ed Evento specifici nel modello di attribuzione. Inizia a tenere traccia di elementi come e-mail di vendita o telefonate di vendita che non ricevevano il dovuto credito. Per configurare la regola delle attività, vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Da qui, passare alla scheda **[!UICONTROL Settings]** e fare clic sulla scheda **[!UICONTROL Activities]**.
 
 ![](assets/1.png)
+
+>[!AVAILABILITY]
+>
+>Questa funzione è abilitata solo per i clienti di livello 2. Per richiedere un livello di account superiore, contatta l’Adobe Account Team (il tuo account manager).
 
 Per iniziare, stiamo introducendo un nuovo concetto denominato [!DNL Marketo Measure] Campaign. Per ogni regola definita, eseguirai il bucket dei record in una campagna [!DNL Marketo Measure] a cui puoi assegnare un nome. Aggiungi più campagne in base alle esigenze. Immagina di misurare l’efficacia di una campagna di vendita in uscita accanto a una campagna a pagamento.
 
@@ -23,7 +27,7 @@ Stai per utilizzare questo nome della campagna [!DNL Marketo Measure] per indica
 
 Acquisisci familiarità con questa gerarchia:
 
-* Canale
+* Channel
    * Sottocanale
       * Campaign
       * Campaign
@@ -77,7 +81,7 @@ Nessun carattere jolly in pratica significa &quot;è uguale a&quot;, quindi assi
 | **Operatore** | **Caso d&#39;uso** |
 |---|---|
 | È uguale a | Valore singolo - Corrispondenza esatta |
-| Contiene | Valore singolo - contiene valore |
+| Contains | Valore singolo - contiene valore |
 | Corrisponde a qualsiasi | Più valori - Corrispondenza esatta |
 | Corrisponde a qualsiasi (contiene) | Più valori - &#42;valore&#42;, &#42;valore, &#42;valore&#42; |
 

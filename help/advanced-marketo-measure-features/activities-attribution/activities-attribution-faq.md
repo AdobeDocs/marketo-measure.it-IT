@@ -4,9 +4,9 @@ description: Domande frequenti su Attribuzione attività - [!DNL Marketo Measure
 title: Domande frequenti sull’attribuzione delle attività
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Domande frequenti sull’attribuzione delle attività {#activities-attribution-faq}
 
 [!DNL Marketo Measure] Le attività importano tutti i record Attività e generano punti di contatto per esse, consentendo a queste attività di ricevere il credito di attribuzione. Il caso d’uso più comune consiste nel tenere traccia delle attività del team vendite, in quanto solitamente creano un record di chiamate telefoniche o e-mail inviate ai potenziali clienti. Altre caratteristiche uniche che possono essere tracciate sono le interazioni di contenuto come download di risorse o visualizzazioni video.
+
+>[!AVAILABILITY]
+>
+>Questa funzione è abilitata solo per i clienti di livello 2. Per richiedere un livello di account superiore, contatta l’Adobe Account Team (il tuo account manager).
 
 **In che modo si differenzia da Campagne offline?**
 
@@ -25,7 +29,7 @@ L&#39;oggetto Activities funge da ombrello, o padre, sugli oggetti Task ed Event
 
 **Se ho un lead o un contatto con la stessa attività ricorrente, vedrò i punti di contatto dell&#39;acquirente per tutte queste attività?**
 
-Sì. Esiste una relazione 1:1 tra le attività sincronizzate e i punti di contatto creati.
+Sì.  Esiste una relazione 1:1 tra le attività sincronizzate e i punti di contatto creati.
 
 **Come posso sapere quali record determinano la creazione di punti di contatto?**
 
@@ -42,7 +46,7 @@ Poiché queste attività generano un punto di contatto, [!DNL Marketo Measure] d
 | Lead/Contatto | Tutte le attività sono correlate a un lead o a un contatto |
 | Campaign | Canale.Sottocanale [[!DNL Marketo Measure]] |
 | Source punto di contatto | Attività CRM |
-| Medium | Activity.Type |
+| Canale | Activity.Type |
 | Tipo di punto di contatto | Activity.Type |
 | Nome campagna pubblicitaria | Nome campagna [!DNL Marketo Measure] |
 | Contenuto annuncio | Oggetto attività |

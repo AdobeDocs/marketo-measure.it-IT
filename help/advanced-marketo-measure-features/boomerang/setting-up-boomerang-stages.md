@@ -4,9 +4,9 @@ description: Impostazione delle fasi del boomerang - [!DNL Marketo Measure]
 title: Impostazione delle fasi del boomerang
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->La funzione Boomerang è abilitata solo per i clienti di livello 2 e 3. Per richiedere un livello di account superiore, contatta l’Adobe Account Team (il tuo account manager).
+>La funzione Boomerang è abilitata solo per i clienti di livello 2. Per richiedere un livello di account superiore, contatta l’Adobe Account Team (il tuo account manager).
 
 Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amministratore account. In alternativa, è possibile abilitarlo contattando il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. Dopo aver attivato la funzione, segui queste istruzioni per configurarla.
 
@@ -29,7 +29,7 @@ Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amm
 
    ![](assets/2-2.png)
 
-1. Fare clic su **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -53,7 +53,7 @@ Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amm
 
    ![](assets/6-1.png)
 
-1. Imposta la percentuale di attribuzione da allocare agli stadi boomerang inclusi nel modello personalizzato. Assicurati che l’attribuzione totale per tutte le fasi sia pari al 100%. Fare clic su **[!UICONTROL Save and Process]**.
+1. Imposta la percentuale di attribuzione da allocare agli stadi boomerang inclusi nel modello personalizzato. Assicurati che l’attribuzione totale per tutte le fasi sia pari al 100%. Fai clic su **[!UICONTROL Save and Process]**.
 
    ![](assets/7-1.png)
 
