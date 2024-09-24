@@ -4,9 +4,9 @@ description: Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono - Mar
 title: Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
+source-git-commit: dec80278958e51c1f0449173d45fe74425fb047e
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1314'
 ht-degree: 18%
 
 ---
@@ -21,9 +21,9 @@ Esaminiamo ora la relazione tra [!DNL Marketo Measure] e Salesforce.
 
 ## Salesforce e [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-Una volta creato l&#39;account [!DNL Marketo Measure] e connessa [!DNL Salesforce], [!DNL Marketo Measure] inizia a inviare dati di marketing all&#39;istanza di CRM, purché il pacchetto gestito [!DNL Marketo Measure] sia installato e l&#39;utente Salesforce [!DNL Marketo Measure] disponga di autorizzazioni di modifica.
+Una volta creato l&#39;account [!DNL Marketo Measure] e connessa [!DNL Salesforce], [!DNL Marketo Measure] inizia a inviare dati di marketing all&#39;istanza di CRM, purché il pacchetto gestito [!DNL Marketo Measure] sia installato e l&#39;utente Salesforce [!DNL Marketo Measure] disponga delle autorizzazioni di modifica.
 
-Se non hai installato il pacchetto Salesforce [!DNL Marketo Measure], [!DNL Marketo Measure] non scriverà alcun dato nell&#39;istanza Salesforce.
+Se non hai installato il pacchetto Salesforce [!DNL Marketo Measure], [!DNL Marketo Measure] non scriverà alcun dato nell&#39;istanza di Salesforce.
 
 ![](assets/1-3.png)
 
@@ -33,14 +33,17 @@ Per impostazione predefinita, [!DNL Marketo Measure] esporta 200 record per cred
 
 Quando modifichi questa impostazione, tieni presente che le dimensioni batch più piccole consumano più crediti API dal CRM. È consigliabile ridurre la dimensione del batch solo se si verifica un timeout della CPU o un carico della CPU elevato nel CRM.
 
-## Autorizzazioni utente connesso Salesforce {#salesforce-connected-user-permissions}
+## Autorizzazioni utente connesso a Salesforce {#salesforce-connected-user-permissions}
 
-**Set di autorizzazioni amministratore Marketo Measure per l&#39;utente dedicato**: consente all&#39;amministratore SFDC di eseguire operazioni CRUD sugli oggetti Marketo Measure.
+**Set di autorizzazioni per l&#39;amministratore di Marketo Measure per l&#39;utente dedicato**: consente all&#39;amministratore di SFDC di eseguire operazioni CRUD sugli oggetti Marketo Measure.
 
 **Visualizza e modifica set di autorizzazioni lead convertiti**: consente a Marketo Measure di decorare i lead dopo che sono stati convertiti in contatti.
 
-**Casella di controllo utente marketing Salesforce**: consente agli utenti di creare campagne e utilizzare le procedure guidate di importazione campagne.
-* Sono necessarie autorizzazioni aggiuntive per &quot;Creare&quot; la campagna.
+**Casella di controllo Utente di Salesforce Marketing**: consente agli utenti di creare campagne e utilizzare le procedure guidate di importazione campagne.
+
+* Abbiamo bisogno di autorizzazioni aggiuntive per Campaign &quot;Crea&quot; e &quot;Aggiorna&quot; nei CRM.
+
+* Quando un punto di contatto viene creato da un’attività web, dobbiamo collegarlo a una campagna. Poiché le attività web non dispongono di campagne CRM corrispondenti, è necessario crearne una per stabilire questo collegamento. Questo vale sia per i punti di contatto lead che per quelli opportunità. È necessaria l’autorizzazione di aggiornamento perché la chiamata che utilizziamo è &quot;upsert&quot;: se il record esiste, lo aggiorniamo; in caso contrario, lo creiamo. Questo vale solo per le campagne che creiamo.
 
 **Utente Marketo Measure Standard**: consente a un utente di leggere i record dagli oggetti Marketo Measure.
 
@@ -55,7 +58,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -146,7 +149,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -195,7 +198,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -238,7 +241,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -281,7 +284,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -339,7 +342,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
    <td> </td> 
   </tr> 
   <tr> 
-   <td>NomeFase</td> 
+   <td>StageName</td> 
    <td>Standard</td> 
    <td>x</td> 
    <td> </td> 
@@ -366,7 +369,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -421,7 +424,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
  </tbody> 
 </table>
 
-**Campagna**
+**Campaign**
 
 <table> 
  <colgroup> 
@@ -434,7 +437,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -537,7 +540,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -660,7 +663,7 @@ Buyer Touchpoint è un oggetto personalizzato [!DNL Marketo Measure] per incapsu
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -927,7 +930,7 @@ La persona [!DNL Marketo Measure] è un oggetto personalizzato [!DNL Marketo Mea
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
@@ -968,7 +971,7 @@ Il Buyer Attribution Touchpoint è un oggetto personalizzato [!DNL Marketo Measu
   <tr> 
    <th>Campi</th> 
    <th>Standard/Personalizzato</th> 
-   <th>Letto</th> 
+   <th>Lettura</th> 
    <th>Scrittura</th> 
   </tr> 
   <tr> 
