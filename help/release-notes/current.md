@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: c576d2b125ac1699486e60240729a7f4d8908272
+source-git-commit: 9a5e267b4b268d067fbbe89a00a4da96752a44db
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.
 
 ## Versione Q4 {#q4-release}
+
+### Nuovo comportamento di riporto canale sessione
+
+Il canale della sessione precedente ora viene trasferito se una nuova sessione inizia entro sette giorni dopo 30 minuti di inattività, applicando solo alle visite dirette (nessun referrer o referrer interno). Dopo sette giorni di inattività, per impostazione predefinita la sessione è Direct/Other (Diretto/Altro). I canali non diretti non verranno sostituiti dai dati della sessione precedente.
+
+Inoltre, le sessioni che utilizzano l’accesso tramite social network (Google, Microsoft o Apple) ora vengono unite in un’unica sessione continua, garantendo un’esperienza più fluida. Senza questa attivazione di riporto, gli accessi social potrebbero creare sessioni separate a causa di differenze del referente esterno.
+
+Per i nuovi clienti, ora il comportamento predefinito è il riporto del canale di sessione. I clienti esistenti possono abilitare questa funzione attivando l’opzione Session Channel Carryover (Riporto canale sessione) in Settings → Everytouch Attribution (Impostazioni attribuzione Everytouch). Una volta attivata, questa impostazione non può essere annullata.
+
+Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+
+### Dashboard ROI per parola chiave
+
+La nuova dashboard del ROI delle parole chiave offre informazioni dettagliate sulle prestazioni delle campagne di ricerca a pagamento, fornendo una panoramica completa dei costi a livello di parola chiave, dei ricavi attribuiti e dei lead e delle opportunità generati. Questa dashboard consente di valutare il ROI di ogni parola chiave in Google Adwords, LinkedIn, Bing Ads e così via.
+
+Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### Regole di segmento migliorate
 
@@ -49,7 +65,7 @@ Per aiutarti ad adattarti a questa modifica, abbiamo creato la documentazione su
 
 <p>
 
-**Promemoria: campo Salesforce obsoleto - 14 giugno**
+**Promemoria: deprecazioni campi Salesforce - 14 giugno**
 
 Come annunciato lo scorso anno, [elimineremo gradualmente i processi di esportazione negli oggetti lead/contatto](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} per semplificare l&#39;integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Puoi ottenere gli stessi dati dagli oggetti punto di contatto seguendo i passaggi [qui documentati](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
 

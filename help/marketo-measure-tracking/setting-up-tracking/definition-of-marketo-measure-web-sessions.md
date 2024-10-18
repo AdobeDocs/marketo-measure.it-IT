@@ -4,9 +4,9 @@ description: Definizione di  [!DNL Marketo Measure] sessioni Web - [!DNL Marketo
 title: Definizione di  [!DNL Marketo Measure] sessioni Web
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 feature: Tracking
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 9a5e267b4b268d067fbbe89a00a4da96752a44db
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,29 @@ Esistono alcuni fattori che determinano la fine di una sessione e l’inizio di 
 
 ## Scadenza basata su tempo {#time-based-expiration}
 
+### Comportamento legacy {#legacy-behavior}
+
 **Quanto dura una sessione?**
 
-[!DNL Marketo Measure] sessioni termineranno dopo 30 minuti di inattività sul sito Web. Ad esempio:
+[!UICONTROL Marketo Measure] sessioni termineranno dopo 30 minuti di inattività sul sito Web. Ad esempio:
 
 Quando Haley visita adobe.com, inizia una sessione. Esplora il sito web per qualche minuto e poi si allontana dal computer, ma lascia il sito aperto. La sessione termina dopo 30 minuti di inattività.
 
-Attualmente, [!DNL Marketo Measure] considera solo l&#39;esplorazione delle pagine e l&#39;invio di moduli come attività. Lo scorrimento della pagina web o il passaggio del mouse su un elemento della pagina non sono considerati attività. Quindi se Haley visita adobe.com per leggere un post di blog, e le ci vuole un&#39;ora per leggere, la sua sessione web terminerà dopo 30 minuti anche se sta scorrendo il contenuto della pagina.
+Attualmente, [!UICONTROL Marketo Measure] considera solo l&#39;esplorazione delle pagine e l&#39;invio di moduli come attività. Lo scorrimento della pagina web o il passaggio del mouse su un elemento della pagina non sono considerati attività. Quindi se Haley visita adobe.com per leggere un post di blog, e le ci vuole un&#39;ora per leggere, la sua sessione web terminerà dopo 30 minuti anche se sta scorrendo il contenuto della pagina.
+
+### Nuovo comportamento {#new-behavior}
+
+Per i nuovi utenti, questo sarà il comportamento predefinito.
+
+Gli utenti esistenti possono adottare il nuovo comportamento attivando l&#39;interruttore in **Impostazioni** > **Attribuzione Everytouch** > **Riporto canale sessione**. Una volta attivata, questa impostazione non può essere annullata.
+
+Quando viene creata una nuova sessione dopo 30 minuti di inattività, il canale della sessione precedente viene trasferito se la nuova sessione inizia entro sette giorni. Questo riporto si applica solo alle visite dirette (senza referrer o referrer interni). Se l’inattività supera i sette giorni, per impostazione predefinita il canale della nuova sessione è Diretto/Altro. Ad esempio, se Haley visita landingpage.com da Google, è inattiva per oltre 30 minuti e ritorna entro sette giorni, la nuova sessione manterrà il canale Google. Tuttavia, se lo stesso utente rivede la pagina tramite un canale diverso, il canale non diretto non viene sovrascritto dal canale Google precedente.
+
+Solo il canale verrà trasferito, esclusi i dettagli della campagna o del referente. Questo perché la classificazione del canale è gestita da Marketo Measure, mentre gli altri punti dati vengono raccolti separatamente.
+
+**Accesso social**
+
+Quando un visitatore utilizza l’accesso tramite social network tramite Google, Microsoft o Apple, la sessione viene unita in un’unica sessione continua. Ad esempio, se un visitatore arriva a una pagina da LinkedIn, completa un accesso social a Google e raggiunge una pagina di ringraziamento, verranno conteggiati tutti come una singola sessione. Senza l’attivazione del riporto del canale di sessione, l’accesso social creerebbe sessioni separate a causa del referente esterno.
 
 ## Scadenza basata sul canale {#channel-based-expiration}
 
