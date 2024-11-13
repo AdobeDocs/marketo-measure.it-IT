@@ -4,7 +4,7 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Data Warehouse schema
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
+source-git-commit: 3ad812a05671f277d3dd3f9bc58e3b2ea3606e71
 workflow-type: tm+mt
 source-wordcount: '21110'
 ht-degree: 3%
@@ -32,11 +32,11 @@ L&#39;ulteriore modello dati dimensionale _Ads_ ERD presenta una visualizzazione
 
 _Fare clic su un&#39;immagine per la versione a schermo intero_
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <tbody> 
   <tr> 
-   <th>Data Warehouse modello dati</th> 
-   <th>Aggiunge il modello dati dimensionale</th> 
+   <th>Data Warehouse modello dati</th>
+   <th>Aggiunge il modello dati dimensionale</th>
   </tr> 
   <tr> 
    <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
@@ -45,7 +45,7 @@ _Fare clic su un&#39;immagine per la versione a schermo intero_
  </tbody> 
 </table>
 
-## Visualizzazioni {#views}
+## Viste {#views}
 
 ### BIZ_ACCOUNT {#biz-accounts}
 
@@ -80,7 +80,7 @@ Account importati dal sistema di origine.
     <tr>
       <td>NOME</td>
       <td>varchar</td>
-      <td>Nome account, dal sistema di origine.</td>
+      <td>Nome account dal sistema di origine.</td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
     <tr>
@@ -579,25 +579,25 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
       <td>AD_GROUP_UNIQUE_ID</td>
       <td>varchar</td>
       <td>Previsto null poiché non vi è alcun gruppo di annunci sopra l’inserzionista in alcuna gerarchia di annunci.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>AD_GROUP_NAME</td>
       <td>varchar</td>
       <td>Previsto null poiché non vi è alcun gruppo di annunci sopra l’inserzionista in alcuna gerarchia di annunci.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>AD_CAMPAIGN_UNIQUE_ID</td>
       <td>varchar</td>
       <td>Previsto null poiché nessuna campagna pubblicitaria si trova al di sopra dell’inserzionista in alcuna gerarchia di annunci.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>AD_CAMPAIGN_NAME</td>
       <td>varchar</td>
       <td>Previsto null poiché nessuna campagna si trova al di sopra dell’inserzionista in alcuna gerarchia di annunci.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>IS_ACTIVE</td>
@@ -720,7 +720,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>Previsto null poiché questo è il record per gli account annuncio nella gerarchia annunci.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -728,7 +728,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>Previsto null poiché questo è il record per gli account annuncio nella gerarchia annunci.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -738,7 +738,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>
         <p>Previsto null poiché non vi è alcun inserzionista al di sopra degli Account annuncio in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -748,7 +748,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>
         <p>Previsto null poiché non vi è alcun inserzionista al di sopra degli Account annuncio in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -758,7 +758,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>
         <p>Previsto null poiché non vi è alcun gruppo di annunci al di sopra della gerarchia degli account di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -768,7 +768,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>
         <p>Previsto null poiché non vi è alcun gruppo di annunci al di sopra della gerarchia degli account di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -778,7 +778,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>
         <p>Il valore atteso è nullo poiché nessuna campagna pubblicitaria si trova al di sopra della gerarchia degli account pubblicitari in qualsiasi gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -788,7 +788,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>
         <p>Il valore atteso è nullo poiché nessuna campagna pubblicitaria si trova al di sopra della gerarchia degli account pubblicitari in qualsiasi gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -1155,7 +1155,7 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
         <p>Previsto null poiché non vi è alcun gruppo di annunci sopra la campagna in alcuna gerarchia di annunci.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -1166,7 +1166,7 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
       <td>
         <p>Previsto null poiché non vi è alcun gruppo di annunci sopra la campagna in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -1654,7 +1654,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia degli annunci Doubleclick.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -1666,7 +1666,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia degli annunci Doubleclick.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -1678,7 +1678,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Previsto null poiché questo è il record per il gruppo di annunci nella gerarchia.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -1690,7 +1690,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Previsto null poiché questo è il record per il gruppo di annunci nella gerarchia.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -2792,7 +2792,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>Questo campo è stato dichiarato obsoleto. Utilizzare le tabelle Stage_Transitions per informazioni sull'area di visualizzazione.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -4902,7 +4902,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
       </td>
       <td>Indica se il record viene considerato eliminato o meno nel sistema di origine.</td>
       <td>
-        <p>Falso</p>
+        <p>False</p>
       </td>
     </tr>
     <tr>
@@ -7189,7 +7189,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
         <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia a doppio clic per le impression</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -7201,7 +7201,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
         <p>Previsto null poiché non è presente alcun gruppo di annunci nella gerarchia a doppio clic per le impression</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -7237,7 +7237,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
         <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -7248,7 +7248,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7258,7 +7258,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7268,7 +7268,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7278,7 +7278,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7288,7 +7288,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7298,7 +7298,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7308,7 +7308,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7318,7 +7318,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -7532,7 +7532,7 @@ Parole chiave importate da qualsiasi account annuncio collegato.
         <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -7544,7 +7544,7 @@ Parole chiave importate da qualsiasi account annuncio collegato.
         <p>Previsto null poiché non è presente alcuna parola chiave nella gerarchia di Doubleclick per Impression.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -8250,7 +8250,7 @@ Lead importati dal sistema di origine.
         <p>(obsoleto)</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -8262,7 +8262,7 @@ Lead importati dal sistema di origine.
         <p>(obsoleto)</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -8700,7 +8700,7 @@ Opportunità importate dal sistema di origine.
         <p>(obsoleto)</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -8727,7 +8727,7 @@ Opportunità importate dal sistema di origine.
         <p>Questo campo non è impostato e restituisce null nel Snowflake per tutti i clienti.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -8740,7 +8740,7 @@ Opportunità importate dal sistema di origine.
         <p>Questo campo non è impostato e restituisce null nel Snowflake per tutti i clienti.</p>
       </td>
       <td>
-        <p>nulle</p>
+        <p>null</p>
       </td>
     </tr>
     <tr>
@@ -9489,7 +9489,7 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>
         <p>Il valore atteso è nullo poiché non è presente alcun gruppo di annunci al di sopra del posizionamento in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -9499,7 +9499,7 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>
         <p>Il valore atteso è nullo poiché non è presente alcun gruppo di annunci al di sopra del posizionamento in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -10196,7 +10196,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Nome del gruppo di annunci da cui è stato risolto l’annuncio. Questo vale solo per Google Adwords.</p>
       </td>
       <td>
-        <p>Salesforce - Google Analytics</p>
+        <p>SALESFORCE - GOOGLE ANALYTICS</p>
       </td>
     </tr>
     <tr>
@@ -10634,7 +10634,7 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>
         <p>Previsto null poiché non vi è alcun gruppo di annunci sopra il sito in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -10644,7 +10644,7 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>
         <p>Previsto null poiché non vi è alcun gruppo di annunci sopra il sito in alcuna gerarchia di annunci.</p>
       </td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -11190,7 +11190,7 @@ Elenco delle fasi importate o definite nell&#39;applicazione [!DNL Marketo Measu
         <p>Stato dello stage, come definito nel mapping dello stage dell'applicazione [!DNL Marketo Measure].</p>
       </td>
       <td>
-        <p>Apri</p>
+        <p>Open</p>
       </td>
     </tr>
     <tr>
@@ -12080,7 +12080,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       <td>STAGES_TOUCHED</td>
       <td>varchar</td>
       <td>Questo campo è stato dichiarato obsoleto. Utilizzare le tabelle Stage_Transitions per informazioni sull'area di visualizzazione.</td>
-      <td>nulle</td>
+      <td>null</td>
     </tr>
     <tr>
       <td>
@@ -13190,7 +13190,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] all&#39;ID Adobe ECID e Munckin.
+Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su Adobe ECID e Munckin Id.
 
 <table>
   <tbody>
@@ -13331,7 +13331,7 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] all
     <tr>
       <td>MAPPING_COOKIE_ID</td>
       <td>varchar</td>
-      <td>Adobe di ECID per l’ID organizzazione specificato.</td>
+      <td>Adobe ECID per l’ID organizzazione specificato.</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
