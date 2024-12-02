@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] Guida alla generazione di rapporti - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Guida alla generazione di rapporti"
+description: Guida ai report di [!DNL Marketo Measure] - [!DNL Marketo Measure]
+title: Guida ai report di [!DNL Marketo Measure]
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
 source-git-commit: 3119b1754bba49139c1a6756851ada580e09c1ef

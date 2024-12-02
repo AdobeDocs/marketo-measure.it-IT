@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874582
-description: "[!DNL Marketo Measure] oggetti Salesforce - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] oggetti Salesforce"
+description: '[!DNL Marketo Measure] oggetti Salesforce - [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] oggetti Salesforce'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
@@ -23,7 +23,7 @@ Quando [!DNL Marketo Measure] è installato in [!DNL Salesforce] (SFDC), vengono
 * [Buyer Attribution Touchpoint](#attribution)
 * [[!DNL Marketo Measure] persona](#person)
 * [[!DNL Marketo Measure] test A/B](#ab)
-* [[!DNL Marketo Measure] eventi](#events)
+* [Eventi di [!DNL Marketo Measure]](#events)
 
 I punti di contatto acquisiti dagli elementi che si desidera monitorare verranno scritti negli oggetti personalizzati creati dall&#39;installazione del pacchetto [!DNL Bizible Salesforce].
 
@@ -55,19 +55,19 @@ L&#39;oggetto BAT è visibile nell&#39;oggetto [!UICONTROL Opportunity], [!UICON
 
 ## [!DNL Marketo Measure] persona {#marketo-measure-person}
 
-L&#39;oggetto persona [!DNL Marketo Measure] mette in relazione gli oggetti Lead e Contact. Con Salesforce non è possibile creare report utilizzando l’oggetto Lead e Contact all’interno dello stesso report. Tramite la relazione con l&#39;oggetto lead e contatto, la persona [!DNL Marketo Measure] consente di creare rapporti su entrambi gli oggetti all&#39;interno dello stesso rapporto. Questa funzione è particolarmente utile quando un lead è stato convertito in un contatto. In un record Persona [!DNL Marketo Measure] verrà visualizzata una ricerca nel record Lead e/o Contatto corrispondente, un elenco correlato dei punti di contatto associati alla persona e l&#39;ID persona (che è sempre l&#39;indirizzo e-mail del lead/contatto). Poiché la persona [!DNL Marketo Measure] si riferisce all&#39;oggetto lead e contatto, non ci sarà mai un record persona [!DNL Marketo Measure] legato a un Buyer Attribution Touchpoint. Di seguito è riportato un esempio di record persona [!DNL Marketo Measure] in Salesforce:
+L&#39;oggetto persona [!DNL Marketo Measure] mette in relazione gli oggetti Lead e Contact. Con Salesforce non è possibile creare report utilizzando l’oggetto Lead e Contact nello stesso report. Tramite la relazione con l&#39;oggetto lead e contatto, la persona [!DNL Marketo Measure] consente di creare rapporti su entrambi gli oggetti all&#39;interno dello stesso rapporto. Questa funzione è particolarmente utile quando un lead è stato convertito in un contatto. In un record Persona [!DNL Marketo Measure] verrà visualizzata una ricerca nel record Lead e/o Contatto corrispondente, un elenco correlato dei punti di contatto associati alla persona e l&#39;ID persona (che è sempre l&#39;indirizzo e-mail del lead/contatto). Poiché la persona [!DNL Marketo Measure] si riferisce all&#39;oggetto lead e contatto, non ci sarà mai un record persona [!DNL Marketo Measure] legato a un Buyer Attribution Touchpoint. Di seguito è riportato un esempio di record persona [!DNL Marketo Measure] in Salesforce:
 
 ![](assets/4.png)
 
 ## Test A/B [!DNL Marketo Measure] {#marketo-measure-a-b-test}
 
-Se si eseguono test A/B tramite [!DNL Optimizely] o VWO (Visual Web Optimizer), è possibile collegare tali account all&#39;account [!DNL Marketo Measure] per visualizzare i dati dei test A/B in Salesforce. L&#39;oggetto test A/B [!DNL Marketo Measure] consente di estrarre i dati del test A/B da Optimizely/VWO e collegarli a lead e contatti.
+Se si eseguono test A/B tramite [!DNL Optimizely] o VWO (Visual Web Optimizer), è possibile connettere tali account all&#39;account [!DNL Marketo Measure] per visualizzare i dati dei test A/B in Salesforce. L&#39;oggetto test A/B [!DNL Marketo Measure] consente di estrarre i dati del test A/B da Optimizely/VWO e collegarli a lead e contatti.
 
 ![](assets/5.png)
 
 L&#39;oggetto test A/B [!DNL Marketo Measure] viene visualizzato come elenco correlato nelle pagine [!UICONTROL Leads], [!UICONTROL Contacts] e [!UICONTROL Opportunity]. L’elenco fa emergere tutti gli esperimenti e le varianti che stai eseguendo in Optimizely o VWO, e ti consente di visualizzare gli esperimenti/le varianti in quanto si riferiscono a lead e contatti specifici.
 
-## [!DNL Marketo Measure] eventi {#marketo-measure-events}
+## Eventi di [!DNL Marketo Measure] {#marketo-measure-events}
 
 L&#39;oggetto [!DNL Marketo Measure] Events consente di tenere traccia di eventi specifici che si verificano sul sito Web. Per tenere traccia di eventi specifici che si verificano sul sito Web, è necessario aggiungere alle pagine il codice personalizzato oltre al codice JavaScript [!DNL Marketo Measure]. Le informazioni acquisite verranno visualizzate nell&#39;elenco correlato agli oggetti [!DNL Marketo Measure], disponibile nelle pagine [!UICONTROL Leads], [!UICONTROL Contacts] e [!UICONTROL Opportunity]. L&#39;oggetto eventi [!DNL Marketo Measure] *non è* collegato ai dati di attribuzione. Lo scopo di questo oggetto è quello di verificare se le persone stanno eseguendo azioni specifiche sul sito web.
 

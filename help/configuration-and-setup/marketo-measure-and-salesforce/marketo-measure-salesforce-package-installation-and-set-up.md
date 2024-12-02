@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] installazione e configurazione del pacchetto Salesforce - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione del pacchetto"
+description: Installazione e configurazione del pacchetto Salesforce [!DNL Marketo Measure] - [!DNL Marketo Measure]
+title: '[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione del pacchetto'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
 source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Installazione e configurazione del pacchetto Salesforce [!DNL Marketo Measure] {#marketo-measure-salesforce-package-installation-and-set-up}
 
-Prima di installare il pacchetto di base [!DNL Marketo Measure] [!DNL Salesforce], è necessario determinare se si sta installando in una sandbox [!DNL Salesforce] prima di passare all&#39;istanza di produzione Salesforce.
+Prima di installare il pacchetto di base [!DNL Marketo Measure] [!DNL Salesforce], è necessario determinare se si sta installando in una sandbox [!DNL Salesforce] prima di passare all&#39;istanza di produzione di Salesforce.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Il pacchetto di base [!DNL Marketo Measure] contiene:
 
 Per installare il pacchetto di base [!DNL Marketo Measure Salesforce], attenersi alla procedura riportata di seguito.
 
-1. Utilizzando un browser in incognito, vai all&#39;[AppExchange Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} e accedi.
+1. Utilizzando un browser in incognito, vai all&#39;[AppExchange di Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} e accedi.
 
 1. Eseguire l&#39;installazione nel pacchetto [!DNL Marketo Measure] in sandbox o produzione.
 
@@ -61,7 +61,7 @@ Passaggio 1: creare un profilo [!DNL Marketo Measure] specifico
 1. Assegna le seguenti autorizzazioni:
 
 * &quot;[!DNL Marketo Measure] set di autorizzazioni amministratore&quot;
-   * Il set di autorizzazioni gestite consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
+   * Il set di autorizzazioni gestite consente a un amministratore di SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
 * &quot;Visualizza e modifica set di autorizzazioni lead convertiti&quot;
    * Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
 

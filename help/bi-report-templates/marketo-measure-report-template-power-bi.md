@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] modello di report - Power BI - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] modello di report - Power BI"
+description: Modello di report [!DNL Marketo Measure] - Power BI - [!DNL Marketo Measure]
+title: Modello di report [!DNL Marketo Measure] - Power BI
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Modello di report [!DNL Marketo Measure] - Power BI {#marketo-measure-report-template-power-bi}
 
-## Guida introduttiva {#getting-started}
+## Guida introduttuva {#getting-started}
 
 Puoi accedere al modello di report Power BI [qui](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
-Aprire il file di Power BI del modello di reporting Adobe [!DNL Marketo Measure].
+Aprire il file di Power BI del modello di reporting di Adobe [!DNL Marketo Measure].
 
 ![](assets/marketo-measure-report-template-power-bi-1.png)
 
@@ -54,7 +54,7 @@ Le tabelle seguenti sono trattate come tabelle dei fatti; i limiti di data della
 * Punto di contatto di attribuzione
 * Costo
 * Modulo sito
-* Sessione
+* Session
 * Membro della campagna
 * Attività
 * Evento
@@ -70,7 +70,7 @@ Le tabelle seguenti vengono trattate come tabelle dimensione; per queste query n
 * Opportunità
 * Lead
 * Fase
-* Canale
+* Channel
 
 ## Trasformazioni dati {#data-transformations}
 

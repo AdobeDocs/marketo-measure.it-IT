@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874590
-description: "[!DNL Marketo Measure] cookie - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] cookie"
+description: '[!DNL Marketo Measure] cookie - [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applich
 
 >[!IMPORTANT]
 >
->A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annuncio della rimozione dei cookie di terze parti, annunciata nel terzo trimestre 2024 da Google Chrome, segna di fatto la fine di questa forma di tracciamento. Di conseguenza, Adobe ha dichiarato obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, le funzioni di tracciamento tra domini diversi e di attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti Adobe.
+>A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annuncio della rimozione dei cookie di terze parti, annunciata nel terzo trimestre 2024 da Google Chrome, segna di fatto la fine di questa forma di tracciamento. Di conseguenza, Adobe ha dichiarato obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, le funzioni di tracciamento tra domini diversi e di attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti di Adobe.
 
 <table>
 <thead>
@@ -116,6 +116,6 @@ Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applich
 </tbody>
 </table>
 
-Se durante la configurazione di JavaScript viene attivato un avviso WAF (Web Application Firewall), gli utenti possono disabilitare la regola WAF o inserire nell&#39;elenco Consentiti i cookie, come nell’esempio seguente:
+Se durante la configurazione di JavaScript viene attivato un avviso di Firewall applicazione Web (WAF), gli utenti possono disabilitare la regola di WAF o inserire nell&#39;elenco Consentiti i cookie, come nell’esempio seguente:
 
 ![](assets/marketo-measure-cookies-1.png)

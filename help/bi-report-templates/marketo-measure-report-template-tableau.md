@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] modello di report - Tableau - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] modello di report - Tableau"
+description: Modello di report [!DNL Marketo Measure] - Tableau - [!DNL Marketo Measure]
+title: Modello report [!DNL Marketo Measure] - Tableau
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Modello report [!DNL Marketo Measure] - Tableau {#marketo-measure-report-template-tableau}
 
-## Guida introduttiva {#getting-started}
+## Guida introduttuva {#getting-started}
 
 È possibile accedere al modello di report [!DNL Tableau] [qui](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 

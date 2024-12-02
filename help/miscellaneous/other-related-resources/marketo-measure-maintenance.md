@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874556
-description: "[!DNL Marketo Measure] manutenzione - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] manutenzione"
+description: '[!DNL Marketo Measure] manutenzione - [!DNL Marketo Measure]'
+title: Manutenzione di [!DNL Marketo Measure]
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 feature: Tracking
 source-git-commit: fca2db86611d16f4e74467405521a89dd5d825ab

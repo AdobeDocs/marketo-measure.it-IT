@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874574
-description: "[!DNL Marketo Measure] campi in Standard [!DNL Salesforce] Oggetti - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] "
+description: '[!DNL Marketo Measure] campi in Standard [!DNL Salesforce] Oggetti - [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] '
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
 source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e

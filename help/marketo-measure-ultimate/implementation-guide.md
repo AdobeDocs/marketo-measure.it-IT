@@ -1,12 +1,12 @@
 ---
-description: Guida all'implementazione di '[!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]'
-title: '''[!DNL Marketo Measure] Guida all''implementazione di Ultimate'''
+description: Guida all'implementazione di [!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]
+title: Guida all'implementazione di [!DNL Marketo Measure] Ultimate
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
 source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Questo articolo funge da guida all’implementazione per Marketo Measure Ultimat
 
 Importare dati B2B tramite AEP: gli addetti al marketing devono inserire i propri dati B2B (ad esempio account, opportunità, contatto, lead, campagna, membro della campagna, attività) tramite AEP. Acquisisci da quasi tutte le origini dati e da più origini dati dello stesso tipo per inserire tutti i dati per l’attribuzione.
 
-* Utilizza con quasi tutte le CRM, non solo Salesforce e Dynamics.
+* Da utilizzare con quasi tutte le CRM, non solo con Salesforce e Dynamics.
 * Connettere più istanze di CRM e/o istanze MAP a una singola istanza di Marketo Measure.
 * Importa dati di registrazione e partecipazione a webinar di terze parti.
 
@@ -48,7 +48,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[Panoramica dei set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}: tutti i dati correttamente acquisiti in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
+[Panoramica dei set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=it){target="_blank"}: tutti i dati correttamente acquisiti in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
 ## Creazione di uno schema {#creating-a-schema}
 

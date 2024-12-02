@@ -2,12 +2,12 @@
 cloud: Experience Cloud
 product: Bizible
 audience: end-user
-user-guide-title: “Guida [!DNL Marketo Measure]”
-user-guide-description: "[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell'azienda."
+user-guide-title: Guida [!DNL Marketo Measure]
+user-guide-description: '[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda.'
 source-git-commit: dec80278958e51c1f0449173d45fe74425fb047e
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 1%
       + [ [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso](configuration-and-setup/marketo-measure-and-salesforce/recommended-salesforce-permissions-for-marketo-measure-connected-user.md)
    + Test Sandbox {#sandbox-testing}
       + [Verifica dell&#39;integrazione  [!DNL Marketo Measure] con una sandbox Salesforce](configuration-and-setup/sandbox-testing/testing-the-marketo-measure-integration-with-a-salesforce-sandbox.md)
-      + [Migrazione dalla sandbox Salesforce alla produzione](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
+      + [Migrazione da Sandbox Salesforce a Produzione](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
    + [!DNL Marketo Measure] Approfondimenti (App Canvas) {#marketo-measure-insights-canvas-app}
       + [Spiegazione di [!DNL Marketo Measure] approfondimenti](configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-explained.md)
       + [Configurazione approfondimenti [!DNL Marketo Measure]](configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-configuration.md)
@@ -175,7 +175,7 @@ ht-degree: 1%
 + [!DNL Marketo Measure] e Dynamics {#marketo-measure-and-dynamics}
    + Guida introduttiva a [!DNL Marketo Measure] e Dynamics {#getting-started-with-marketo-measure-and-dynamics}
       + [Schema Dynamics [!DNL Marketo Measure]](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md)
-      + [Guida all’installazione di Microsoft Dynamics CRM](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)
+      + [Guida all&#39;installazione di Microsoft Dynamics CRM](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)
       + [[!DNL Marketo Measure] flussi di lavoro ricavi per  [!DNL Dynamics]](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-revenue-workflows-for-dynamics.md)
       + [OAuth con Azure Active Directory per  [!DNL Dynamics] CRM](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md)
       + [[!DNL Marketo Measure] e tassonomia Dynamics](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-and-dynamics-taxonomy.md)

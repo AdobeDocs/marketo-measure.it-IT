@@ -1,12 +1,12 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement - [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] Ultimate Data Integrity Requirement'
+description: Requisiti di integrità dei dati di [!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]
+title: Requisiti di integrità dei dati di [!DNL Marketo Measure] Ultimate
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
 source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
 workflow-type: tm+mt
 source-wordcount: '1611'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -891,7 +891,7 @@ ht-degree: 15%
 
 **Valuta predefinita**: in Marketo Measure, tutti i ricavi e i costi vengono convertiti in una valuta predefinita al momento della generazione del rapporto. Deve esistere un record con la stessa copertura data per la valuta target stessa (ad esempio, da USD a USD) con un tasso di conversione di 1.
 
-**Tassi di conversione**: ogni coppia (valuta di origine, valuta di destinazione) può avere più tassi di conversione per diversi periodi di date. Le tariffe devono coprire l&#39;intero intervallo di tempo compreso tra 0001-01-01 e 9999-12-31, in base all&#39;oggetto Salesforce DatedConversionRate.
+**Tassi di conversione**: ogni coppia (valuta di origine, valuta di destinazione) può avere più tassi di conversione per diversi periodi di date. Le percentuali devono coprire l&#39;intero intervallo di tempo compreso tra 0001-01-01 e 9999-12-31, in base all&#39;oggetto Salesforce DatedConversionRate.
 
 **Intervallo date**:
 * Nessun intervallo di date sovrapposto all’interno di un set di tassi (valuta di origine, valuta di destinazione) (ad esempio, dal 2023-01-01 al 2023-02-01 e dal 2023-01-01 al 2024-01-01).
@@ -1064,7 +1064,7 @@ ht-degree: 15%
 
 <table style="table-layout:auto">
   <tr>
-    <th>Tipo di evento</th>
+    <th>Tipo evento</th>
     <th>Tipo di evento XDM</th>
     <th>Descrizione</th>
   </tr>

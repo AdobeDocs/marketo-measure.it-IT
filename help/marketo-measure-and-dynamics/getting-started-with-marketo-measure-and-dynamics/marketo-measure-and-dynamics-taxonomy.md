@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] e Tassonomia Dynamics - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] e tassonomia Dynamics"
+description: '[!DNL Marketo Measure] e tassonomia Dynamics - [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] e tassonomia Dynamics'
 exl-id: 5d211710-3937-4d86-a570-8115e62b934f
 feature: Microsoft Dynamics
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5

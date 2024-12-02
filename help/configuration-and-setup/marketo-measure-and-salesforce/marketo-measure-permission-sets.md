@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874789
-description: "[!DNL Marketo Measure] set di autorizzazioni - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] set di autorizzazioni"
+description: '[!DNL Marketo Measure] set di autorizzazioni - [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] set di autorizzazioni'
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -21,7 +21,7 @@ Con il pacchetto Salesforce [!DNL Marketo Measure] sono inclusi tre set di autor
 
 Per accedere e assegnare i set di autorizzazioni in Salesforce:
 
-1. Fare clic su **[!UICONTROL Setup]**.
+1. Fai clic su **[!UICONTROL Setup]**.
 1. Nel margine sinistro fare clic su **[!UICONTROL Users]**, quindi su **[!UICONTROL Permission Sets]**.
 1. Selezionare il set di autorizzazioni [!DNL Marketo Measure] da assegnare.
 1. Fare clic su **[!UICONTROL Manage Assignments]**, quindi su **[!UICONTROL Add Assignments]**.
@@ -35,7 +35,7 @@ Per accedere e assegnare i set di autorizzazioni in Salesforce:
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Amministratore</strong></span></td> 
-   <td><span>Consente a un amministratore SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti. La licenza con cui [!DNL Marketo Measure] invia i dati a SFDC deve avere questo set di autorizzazioni abilitato. Inoltre, si consiglia che questa licenza abbia la possibilità di modificare i lead convertiti negli scenari in cui il lead viene convertito prima di [!DNL Marketo Measure] applicando i dati al record. In questo modo si garantisce la precisione nella generazione dei rapporti tra Salesforce e [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">Ulteriori informazioni</a>.</span></td> 
+   <td><span>Consente a un amministratore di SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti. La licenza con cui [!DNL Marketo Measure] invia i dati a SFDC deve avere questo set di autorizzazioni abilitato. Inoltre, si consiglia che questa licenza abbia la possibilità di modificare i lead convertiti negli scenari in cui il lead viene convertito prima di [!DNL Marketo Measure] applicando i dati al record. In questo modo viene garantita l'accuratezza del reporting tra Salesforce e [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">Ulteriori informazioni</a>.</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] Utente marketing</strong></span></td> 

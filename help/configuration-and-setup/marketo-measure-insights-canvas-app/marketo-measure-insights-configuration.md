@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874769
-description: "[!DNL Marketo Measure] Configurazione approfondimenti - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Configurazione approfondimenti"
+description: Configurazione approfondimenti [!DNL Marketo Measure] - [!DNL Marketo Measure]
+title: Configurazione approfondimenti [!DNL Marketo Measure]
 exl-id: f6fe296b-d22a-43f2-b124-5d4b2f74d67a
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5

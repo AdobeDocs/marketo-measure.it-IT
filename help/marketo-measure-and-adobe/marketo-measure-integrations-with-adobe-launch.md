@@ -1,12 +1,12 @@
 ---
-description: '[!DNL Marketo Measure] integrazioni con Adobe Launch - [!DNL Marketo Measure]'
-title: Integrazioni '[!DNL Marketo Measure]' con Adobe Launch
+description: Integrazioni [!DNL Marketo Measure] con Adobe Launch - [!DNL Marketo Measure]
+title: Integrazioni [!DNL Marketo Measure] con Adobe Launch
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
 source-git-commit: 6aaf6fd26f19e9382cc559e54558e1c5d84cfd6d
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L&#39;estensione Adobe Launch è progettata per gli utenti [!DNL Marketo Measure] esistenti che già utilizzano Adobe Launch sul loro sito Web. L’estensione funge da soluzione di gestione tag da utilizzare per configurare e caricare dinamicamente gli script sulle pagine in base a determinati eventi e condizioni.
 
-Quando è installata e configurata in Adobe Launch, l&#39;estensione [!DNL Marketo Measure] carica lo script bizible.js sulle pagine in cui è presente lo script Adobe Launch. Questo consente agli addetti al marketing di aggiungere bizible.js tramite la configurazione di Adobe Launch, anziché modificare esplicitamente la pagina web per aggiungere il tag di script bizible.js.
+Quando è installata e configurata in Adobe Launch, l&#39;estensione [!DNL Marketo Measure] carica lo script bizible.js sulle pagine in cui è presente lo script di Adobe Launch. Questo consente agli addetti al marketing di aggiungere bizible.js tramite la configurazione di Adobe Launch, anziché modificare esplicitamente la pagina web per aggiungere il tag di script bizible.js.
 
 ## Configurare l’estensione Adobe Launch {#configure-the-adobe-launch-extension}
 
@@ -32,7 +32,7 @@ Quando è installata e configurata in Adobe Launch, l&#39;estensione [!DNL Marke
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-1.png)
 
-1. Fare clic su **[!UICONTROL Extensions]**.
+1. Fai clic su **[!UICONTROL Extensions]**.
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-2.png)
 
@@ -48,7 +48,7 @@ Quando è installata e configurata in Adobe Launch, l&#39;estensione [!DNL Marke
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-5.png)
 
-1. Fare clic su **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-6.png)
 
@@ -72,7 +72,7 @@ Quando è installata e configurata in Adobe Launch, l&#39;estensione [!DNL Marke
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-11.png)
 
-1. Fare clic su **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-12.png)
 

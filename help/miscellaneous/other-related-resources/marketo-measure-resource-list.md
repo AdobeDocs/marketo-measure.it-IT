@@ -1,13 +1,13 @@
 ---
 unique-page-id: 37356962
-description: "[!DNL Marketo Measure] elenco risorse - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] elenco risorse"
+description: Elenco risorse [!DNL Marketo Measure] - [!DNL Marketo Measure]
+title: Elenco risorse [!DNL Marketo Measure]
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,20 +29,20 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 * [Configurazione canale offline](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 * [Cosa sono i parametri UTM?](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
 * [Best practice UTM](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
-* [Sincronizzazione delle campagne SFDC con i punti di contatto dell’acquirente](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+* [Sincronizzazione delle campagne SFDC con i punti di contatto dell&#39;acquirente](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
 * [Caricamento delle spese di marketing](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 * [Riconnetti account annuncio](/help/api-connections/utilizing-marketo-measures-api-connections/reauthorizing-connected-accounts.md)
 * [Aggiunta di  [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
    * [Escludi Forms](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
 
-**Generazione rapporti**
+**Reporting**
 
 * [Creazione di tipi di report personalizzati con [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) (se è necessario creare report sui campi lead/contatto/opportunità personalizzati)
 * [Glossario di  [!DNL Marketo Measure]  campi](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 **Risoluzione dei problemi**
 
-* [Concessione dell&#39;accesso al supporto  [!DNL Marketo Measure]  a SFDC](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
+* [Concessione dell&#39;accesso  [!DNL Marketo Measure] al supporto tecnico a SFDC](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
 * Contatto: [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}
 
 ## Video {#videos}
@@ -66,7 +66,7 @@ Argomenti trattati:
 
 **[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)**
 
-Questa serie di corsi è progettata come introduzione ai rapporti sulle scorte [!DNL Marketo Measure] installati in Salesforce. Questi report fungono da base per la maggior parte dei report che esegui con i dati di [!DNL Marketo Measure].
+Questa serie di corsi è stata progettata come introduzione ai report azionari [!DNL Marketo Measure] installati in Salesforce. Questi report fungono da base per la maggior parte dei report che esegui con i dati di [!DNL Marketo Measure].
 
 Argomenti trattati:
 

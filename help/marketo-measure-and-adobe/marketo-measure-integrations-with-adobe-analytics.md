@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] integrazioni con Adobe Analytics - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] integrazioni con [!DNL Adobe Analytics]"
+description: Integrazioni [!DNL Marketo Measure] con Adobe Analytics - [!DNL Marketo Measure]
+title: Integrazioni [!DNL Marketo Measure] con [!DNL Adobe Analytics]
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -34,7 +34,7 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
    Immetti l’ID della tua organizzazione Adobe IMS. Questo ID viene visualizzato nell’angolo inferiore destro dell’Admin Console di Adobe Experience Cloud. Per maggiori informazioni su come trovare questo ID, rivolgiti al team dell’account Adobe (il tuo Account Manager).
 
-1. Dopo aver completato la creazione della connessione nell&#39;account [!DNL Marketo Measure], devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). Non è necessario preoccuparsi del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato la parte. Passare alla schermata &quot;Visualizza/Modifica&quot; schema per l&#39;attributo cliente Source creato nel passaggio 1 e indicare all&#39;Adobe quali sono i tipi di dati per ciascuno degli attributi caricati da [!DNL Marketo Measure] per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
+1. Dopo aver completato la creazione della connessione nell&#39;account [!DNL Marketo Measure], devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). Non è necessario preoccuparsi del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato la parte. Passare alla schermata &quot;Visualizza/Modifica&quot; schema per l&#39;attributo cliente Source Adobe creato nel passaggio 1 e indicare i tipi di dati per ciascuno degli attributi caricati da [!DNL Marketo Measure] per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
 
    Se si è scelto di sincronizzare gli attributi dall&#39;oggetto account CRM, si consiglia di scegliere nuovi nomi visualizzati, in quanto [!DNL Marketo Measure] popola solo i nomi a livello API per questi attributi, che in genere non sono descrittivi dei rapporti.
 

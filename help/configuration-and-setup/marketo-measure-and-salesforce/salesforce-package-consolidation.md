@@ -1,12 +1,12 @@
 ---
-description: '[!DNL Salesforce] consolidamento pacchetto - [!DNL Marketo Measure]'
-title: '[!DNL Salesforce] consolidamento pacchetto'
+description: Consolidamento pacchetto [!DNL Salesforce] - [!DNL Marketo Measure]
+title: Consolidamento pacchetto [!DNL Salesforce]
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
 source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Sono disponibili due nuovi campi per migliorare le funzionalità di reporting:
 
 Il [team di supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} è disponibile per rispondere a qualsiasi domanda e per garantire una transizione senza problemi al nuovo pacchetto consolidato.
 
-## Azioni richieste {#retired-actions}
+## Azioni necessarie {#retired-actions}
 
 * Se il pacchetto V2 è già installato, è necessario aggiornarlo alla nuova versione consolidata.
 * Se disponi di report o dashboard da qualsiasi pacchetto di reporting, puoi ricrearli facilmente senza alcuna modifica necessaria, poiché tutti i campi sono presenti nel pacchetto consolidato.
@@ -61,8 +61,8 @@ Non è necessario disinstallare il pacchetto prima di installarlo. Non ci sarann
 
 **I campi nei pacchetti V1 e V2_EXT saranno disponibili nel pacchetto consolidato?**
 
-Sì. Il pacchetto consolidato contiene gli stessi campi nella versione 1, con ulteriori raggruppamenti per oggetti e campi V2_EXT attraverso i campi dei punti di contatto.
+Sì.  Il pacchetto consolidato contiene gli stessi campi nella versione 1, con ulteriori raggruppamenti per oggetti e campi V2_EXT attraverso i campi dei punti di contatto.
 
 **È possibile ricreare i report che utilizzano i campi V2_EXT nel pacchetto consolidato?**
 
-Sì. Segui i passaggi descritti nella sezione [Azioni richieste](#retired-actions).
+Sì.  Segui i passaggi descritti nella sezione [Azioni richieste](#retired-actions).

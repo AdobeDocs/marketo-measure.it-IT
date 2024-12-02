@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874680
-description: "[!DNL Facebook] API - [!DNL Marketo Measure]"
-title: "[!DNL Facebook] API"
+description: API [!DNL Facebook] - [!DNL Marketo Measure]
+title: API [!DNL Facebook]
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
 source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
@@ -87,7 +87,7 @@ Affinché l&#39;integrazione funzioni correttamente, è necessario abilitare l&#
    <td><p>"[!DNL Facebook]" o [utm_source] se fornito</p></td> 
   </tr> 
   <tr> 
-   <td><p>Medium</p></td> 
+   <td><p>Canale</p></td> 
    <td><p>"Social" o [utm_medium] se fornito</p></td> 
   </tr> 
   <tr> 

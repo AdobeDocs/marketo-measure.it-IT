@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874523
-description: "[!DNL Marketo Measure] Schema Dynamics - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Schema Dynamics"
+description: Schema [!DNL Marketo Measure] Dynamics - [!DNL Marketo Measure]
+title: Schema Dynamics [!DNL Marketo Measure]
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
 source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -34,7 +34,7 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -319,7 +319,7 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -722,7 +722,7 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -800,14 +800,14 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] eventi {#marketo-measure-events}
+## Eventi di [!DNL Marketo Measure] {#marketo-measure-events}
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -874,7 +874,7 @@ Questo diagramma è una visualizzazione di alto livello delle relazioni tra le e
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -921,7 +921,7 @@ Questo elenco fornisce le entità di Dynamics Standard con cui [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1006,7 +1006,7 @@ Questo elenco fornisce le entità di Dynamics Standard con cui [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1055,7 +1055,7 @@ Questo elenco fornisce le entità di Dynamics Standard con cui [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1098,7 +1098,7 @@ Questo elenco fornisce le entità di Dynamics Standard con cui [!DNL Marketo Mea
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1176,7 +1176,7 @@ Questo elenco fornisce le entità di Dynamics Standard con cui [!DNL Marketo Mea
  </tbody> 
 </table>
 
-**Campagna**
+**Campaign**
 
 Sono necessarie anche le autorizzazioni &quot;Crea&quot; per Campaign, oltre alle autorizzazioni di lettura/scrittura di seguito.
 
@@ -1185,7 +1185,7 @@ Sono necessarie anche le autorizzazioni &quot;Crea&quot; per Campaign, oltre all
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1258,7 +1258,7 @@ Sono necessarie anche le autorizzazioni &quot;Crea&quot; per Campaign, oltre all
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1355,7 +1355,7 @@ Sono necessarie anche le autorizzazioni &quot;Crea&quot; per Campaign, oltre all
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1404,7 +1404,7 @@ Sono necessarie anche le autorizzazioni &quot;Crea&quot; per Campaign, oltre all
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 
@@ -1447,7 +1447,7 @@ Sono necessarie anche le autorizzazioni &quot;Crea&quot; per Campaign, oltre all
   <tr> 
    <th><p>Nome schema</p></th> 
    <th><p>Standard/Personalizzato</p></th> 
-   <th><p>Letto</p></th> 
+   <th><p>Lettura</p></th> 
    <th><p>Scrittura</p></th> 
   </tr> 
   <tr> 

@@ -1,6 +1,6 @@
 ---
-description: Panoramica di '[!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] Ultimate Overview'
+description: Panoramica di [!DNL Marketo Measure] Ultimate - [!DNL Marketo Measure]
+title: Panoramica di [!DNL Marketo Measure] Ultimate
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
 source-git-commit: 36688972c241f5a79c1730237598510cd44f032d
@@ -17,7 +17,7 @@ ht-degree: 4%
 [!DNL Marketo Measure Ultimate] contiene le funzionalità aggiuntive:
 
 * Acquisisci da quasi tutte le origini dati e da più origini dati dello stesso tipo per inserire tutti i dati per l’attribuzione.
-   * Utilizza con quasi tutte le CRM, non solo Salesforce e Dynamics.
+   * Da utilizzare con quasi tutte le CRM, non solo con Salesforce e Dynamics.
    * Connettere più istanze di CRM e/o istanze MAP a un&#39;istanza [!DNL Marketo Measure].
    * Importa dati di registrazione e partecipazione a webinar di terze parti.
 
@@ -102,7 +102,7 @@ Le regole dei punti di contatto per i membri della campagna e le regole dei punt
 
 I punti di contatto di attribuzione non vengono scritti in CRM perché Ultimate non dispone di una connessione CRM diretta.
 
-[!DNL Marketo Measure] servizi ABM ML (corrispondenza lead-account e punteggio di coinvolgimento predittivo) non disponibili per [!DNL Marketo Measure Ultimate]. Tali servizi sono inclusi gratuitamente nell’edizione B2B di RT-CDP.
+[!DNL Marketo Measure] servizi ABM ML (corrispondenza lead-account e punteggio di coinvolgimento predittivo) non disponibili per [!DNL Marketo Measure Ultimate]. Tali servizi sono inclusi gratuitamente nel B2B edition RT-CDP.
 
 ## Limitazioni {#limitations}
 
@@ -113,4 +113,4 @@ I punti di contatto di attribuzione non vengono scritti in CRM perché Ultimate 
 >
 >* [Destinazione Marketo Measure Ultimate](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
 >
->* [VIDEO: Panoramica di Marketo Measure Ultimate](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
+>* [VIDEO: Panoramica di Marketo Measure Ultimate](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

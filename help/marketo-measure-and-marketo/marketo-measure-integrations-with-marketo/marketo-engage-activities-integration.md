@@ -1,7 +1,7 @@
 ---
 unique-page-id: 42762749
-description: "[!DNL Marketo Engage] Integrazione attività - [!DNL Marketo Measure]"
-title: "[!DNL Marketo Engage] Integrazione attività"
+description: Integrazione attività [!DNL Marketo Engage] - [!DNL Marketo Measure]
+title: Integrazione di [!DNL Marketo Engage] attività
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -81,7 +81,7 @@ Come parte dell&#39;integrazione complessiva di [!DNL Marketo Measure] e [!DNL M
    * Città
    * Paese
    * Area geografica
-   * Pagina di destinazione
+   * Landing Page
    * Pagina referrer
    * Pagina modulo
    * Data modulo
@@ -119,7 +119,7 @@ Cambiare la cadenza dello sviluppo (115)
 
 Fai clic sul collegamento (3)\
 Nuovo lead (12)\
-Lead di sincronizzazione per SFDC (19)\
+Sincronizza lead con SFDC (19)\
 Converti lead (21)\
 Cambia proprietario (23)\
 Rimuovi dall’elenco (25)\
@@ -135,9 +135,9 @@ Invia avviso (38)\
 Invia e-mail per vendite (39)\
 Apri e-mail per vendite (40)\
 Fai clic su E-mail vendita (41)\
-Aggiungi a campagna SFDC (42)\
-Rimuovi da Campagna SFDC (43)\
-Modifica stato in Campagna SFDC (44)\
+Aggiungi a SFDC Campaign (42)\
+Rimuovi da SFDC Campaign (43)\
+Modifica stato in SFDC Campaign (44)\
 Ricevi e-mail per vendite (45)\
 Richiedi campagna (47)\
 E-mail di vendita non recapitate (48)\

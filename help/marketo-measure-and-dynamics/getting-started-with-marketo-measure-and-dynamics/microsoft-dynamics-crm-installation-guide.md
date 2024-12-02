@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874763
-description: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM - Marketo Measure - Documentazione del prodotto"
-title: "[!DNL Microsoft Dynamics] Guida all'installazione di CRM"
+description: Guida all'installazione di [!DNL Microsoft Dynamics] CRM - Marketo Measure - Documentazione del prodotto
+title: Guida all'installazione di [!DNL Microsoft Dynamics] CRM
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
 source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
@@ -124,7 +124,7 @@ Dopo aver effettuato l&#39;accesso all&#39;applicazione [!DNL Marketo Measure] e
 
    ![](assets/microsoft-dynamics-crm-installation-guide-19.png)
 
-1. Selezionare [!UICONTROL Credentials] o [!UICONTROL OAuth].
+1. Seleziona [!UICONTROL Credentials] (Mostra origine dati) o [!UICONTROL OAuth] (Blocca selezione).
 
    ![](assets/microsoft-dynamics-crm-installation-guide-20.png)
 
