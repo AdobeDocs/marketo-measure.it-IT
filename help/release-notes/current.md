@@ -3,9 +3,9 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9a5e267b4b268d067fbbe89a00a4da96752a44db
+source-git-commit: 9ea72d0e1cf0f754cc8fe844944b93705fb2b12f
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Il canale della sessione precedente ora viene trasferito se una nuova sessione i
 
 Inoltre, le sessioni che utilizzano l’accesso tramite social network (Google, Microsoft o Apple) ora vengono unite in un’unica sessione continua, garantendo un’esperienza più fluida. Senza questa attivazione di riporto, gli accessi social potrebbero creare sessioni separate a causa di differenze del referente esterno.
 
-Per i nuovi clienti, ora il comportamento predefinito è il riporto del canale di sessione. I clienti esistenti possono abilitare questa funzione attivando l’opzione Session Channel Carryover (Riporto canale sessione) in Settings → Everytouch Attribution (Impostazioni attribuzione Everytouch). Una volta attivata, questa impostazione non può essere annullata.
+Per i nuovi clienti, ora il comportamento predefinito è il riporto del canale di sessione. I clienti esistenti possono abilitare questa funzione attivando l’opzione Session Channel Carryover (Riporto canale sessione) in Settings (Impostazioni) > Everytouch Attribution (Attribuzione Everytouch). Una volta attivata, questa impostazione non può essere annullata.
 
 Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
@@ -36,11 +36,11 @@ Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe
 
 Ora puoi creare segmenti utilizzando i campi Membro di Campaign e Campaign, oltre ai campi Punto di contatto e Contatto. Questo miglioramento consente di analizzare e sezionare i dati in modo più efficace in Discover.
 
-![Regole segmento per membri](assets/campaign-member.png)
+![Regole di segmento migliorate](assets/mm-q4-release-1.png)
 
 ### Aggiornamento: impostazione di gestione degli errori per le esportazioni CRM
 
-Abbiamo ascoltato il tuo feedback sull’approccio alla sospensione dei processi e stiamo introducendo una nuova funzione nell’interfaccia utente. A partire da oggi, è possibile scegliere se i processi di esportazione devono essere messi in pausa quando si verificano errori. Utilizza il nuovo interruttore in **Il mio account** > **Impostazioni** → **CRM** → **Generale**. Questo switch è attivato per impostazione predefinita per migliorare l’integrità e la visibilità dei dati. Tuttavia, se preferisci non utilizzare questa funzione, puoi disattivarla nell’interfaccia utente e i processi di esportazione riprenderanno. Questo aggiornamento è progettato per migliorare l’affidabilità dei processi di gestione dei dati, fornendo al contempo un maggiore controllo.
+Abbiamo ascoltato il tuo feedback sull’approccio alla sospensione dei processi e stiamo introducendo una nuova funzione nell’interfaccia utente. A partire da oggi, è possibile scegliere se i processi di esportazione devono essere messi in pausa quando si verificano errori. Utilizza il nuovo interruttore in **Il mio account** > **Impostazioni** > **CRM** > **Generale**. Questo switch è attivato per impostazione predefinita per migliorare l’integrità e la visibilità dei dati. Tuttavia, se preferisci non utilizzare questa funzione, puoi disattivarla nell’interfaccia utente e i processi di esportazione riprenderanno. Questo aggiornamento è progettato per migliorare l’affidabilità dei processi di gestione dei dati, fornendo al contempo un maggiore controllo.
 
 #### Date chiave e rollout graduale
 
@@ -65,27 +65,27 @@ Per aiutarti ad adattarti a questa modifica, abbiamo creato la documentazione su
 
 <p>
 
-**Promemoria: deprecazioni campi Salesforce - 14 giugno**
+### Promemoria: deprecazioni dal campo Salesforce - 14 giugno
 
-Come annunciato lo scorso anno, [elimineremo gradualmente i processi di esportazione negli oggetti lead/contatto](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} per semplificare l&#39;integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Puoi ottenere gli stessi dati dagli oggetti punto di contatto seguendo i passaggi [qui documentati](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
+Come annunciato lo scorso anno, [elimineremo gradualmente i processi di esportazione negli oggetti lead/contatto](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} per semplificare l&#39;integrazione ed eliminare la necessità di esportare in oggetti standard di Salesforce. Puoi ottenere gli stessi dati dagli oggetti punto di contatto seguendo i passaggi [qui documentati](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
 
 Questa modifica apporterà due vantaggi chiave:
 
-* **Costi API Salesforce ridotti**: i clienti possono aspettarsi di ridurre i costi API Salesforce di circa il 10%.
+* **Costi API Salesforce ridotti**: i clienti possono aspettarsi di ridurre i costi delle API Salesforce di circa il 10%.
 * **Integrazione semplificata**: il maggior numero di errori nei processi di esportazione è correlato a questi processi. La loro rimozione semplificherà notevolmente la nostra integrazione.
 
-**Dashboard opportunità attribuita**
+### Dashboard opportunità attribuita
 
 Siamo entusiasti di presentare il nuovo [dashboard delle opportunità attribuite](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}, progettato per fornire una visione completa del modo in cui le attività di marketing contribuiscono alle opportunità di pipeline sia nascenti che mature. Questa dashboard consente di approfondire i dettagli di ogni opportunità aperta e chiusa attribuibile alle strategie, con la flessibilità di filtrare per fase di opportunità. Fornisce informazioni sui canali, i sottocanali o le campagne con la classificazione più alta in termini di quantità di opportunità attribuita e visualizza l’importo totale dell’opportunità attribuita insieme al conteggio delle opportunità aperte e chiuse attribuite.
 
-**Sincronizzazione cookie di Marketo Engage per Marketo Measure Ultimate**
+### Sincronizzazione cookie di Marketo Engage per Marketo Measure Ultimate
 
 Marketo Engage Cookie Sync è ora disponibile per Marketo Measure Ultimate. Per utilizzare questa funzione:
 
 1. Nella pagina Schemi AEP, modifica lo schema Persona B2B e aggiungi il gruppo di campi &quot;Dettagli persona Marketo Engage&quot;.
 1. Quando acquisisci i dati su MMU, mappa il campo ID cookie dal gruppo di campi al campo Cookie dal Marketo Engage.
 
-**Stadi Boomerang abilitati per i clienti di livello 2**
+### Stadi Boomerang abilitati per i clienti di livello 2
 
 Precedentemente disponibile solo per i clienti di livello 3, la funzione Boomerang Stage è disponibile anche per tutti i clienti di livello 2 a partire dal 13 giugno 2024. Per informazioni più dettagliate su questa funzione, consulta la documentazione di seguito.
 
@@ -99,14 +99,14 @@ Precedentemente disponibile solo per i clienti di livello 3, la funzione Boomera
 
 <p>
 
-**Funzionalità Marketo Measure obsolete in risposta alla disattivazione graduale dei cookie di terze parti**
+### Funzionalità Marketo Measure obsolete in risposta al ritiro graduale dei cookie di terze parti
 
 In risposta ai crescenti problemi di privacy, i cookie di terze parti vengono gradualmente eliminati, con la scadenza del terzo trimestre del 2024 di Google Chrome che segnala la loro fine. Marketo Measure renderà obsolete alcune funzioni dipendenti dai cookie di terze parti, in particolare il tracciamento tra domini diversi e l’attribuzione view-through, che si basano sul cookie di impression Google/DoubleClick. Questa modifica non influirà su altre funzionalità di Marketo Measure o sull’utilizzo di cookie di prime parti. Seguendo la timeline di Google, queste funzionalità dovrebbero diventare obsolete entro il 1° giugno, anche se i dati raccolti prima di questa data saranno ancora accessibili ai clienti.
 
 * [Adattamento a cookie di terze parti obsoleti in Marketo Measure](https://nation.marketo.com/t5/employee-blogs/adapting-to-third-party-cookie-deprecation-in-marketo-measure/ba-p/345110){target="_blank"}
 * [Cookie Marketo Measure](/help/marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md){target="_blank"}
 
-**Rollout graduale della gestione avanzata degli errori**
+### Rollout graduale della gestione avanzata degli errori
 
 Stiamo introducendo un rollout graduale della gestione avanzata degli errori per i processi di esportazione, a partire da notifiche immediate in-app per gli errori di autorizzazione e dalla transizione a un nuovo approccio in cui i processi di esportazione verranno messi in pausa al punto dell’errore. Questa modifica mira a migliorare l’integrità e la visibilità dei dati, garantendo processi di gestione dei dati più fluidi e affidabili per i nostri utenti. Per garantire una transizione senza problemi e un&#39;interruzione minima delle operazioni, le modifiche vengono implementate in due fasi:
 
@@ -125,7 +125,6 @@ Per aiutarti ad adattarti a questa modifica, [abbiamo creato la documentazione](
 
 <br>
 
-**Azione richiesta per l&#39;integrazione di LinkedIn**
+### Azione richiesta per l’integrazione di LinkedIn
 
 LinkedIn ha rilasciato di recente una versione aggiornata dell’API di sincronizzazione dei lead. Per evitare interruzioni, autentica nuovamente la connessione LinkedIn nell’istanza Marketo Measure entro il 20 maggio.
-
