@@ -4,7 +4,7 @@ description: Integrazione dei programmi [!DNL Marketo Engage] - [!DNL Marketo Me
 title: Integrazione dei programmi [!DNL Marketo Engage]
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 0%
@@ -99,16 +99,12 @@ Attraverso l&#39;importazione dei dati dei programmi Marketo, i costi vengono sc
 
 **Mappature campi**
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
+<table><thead>
   <tr> 
    <th>biz_ad_campaigns</th> 
    <th>Marketo</th> 
-  </tr> 
+  </tr></thead>
+<tbody>
   <tr> 
    <td>ID</td> 
    <td>id</td> 
@@ -118,24 +114,60 @@ Attraverso l&#39;importazione dei dati dei programmi Marketo, i costi vengono sc
    <td>(verifica se il programma esiste ancora tramite API)</td> 
   </tr> 
   <tr> 
-   <td><p>NOME</p></td> 
+   <td>NOME</td> 
    <td>name</td> 
   </tr> 
  </tbody> 
 </table>
 
-| biz_campaign_members | Marketo |
-|---|---|
-| ID | &quot;MarketoProgramMembership&quot;_ProgramId_Lead Id |
-| MODIFIED_DATE | updatedAt |
-| DATA_CREAZIONE | membershipDate |
-| LEAD_ID | ID (iscrizione all’elenco) |
-| LEAD_EMAIL | E-mail (iscrizione all’elenco) |
-| STATO | progressionStatus |
-| HAS_RESPONDED | reachStatus |
-| NOME_CAMPAGNA | programName |
-| ID_CAMPAGNA | programId |
-| CAMPAIGN_TYPE | channel |
+<table><thead>
+  <tr>
+    <th>biz_campaign_members</th>
+    <th>Marketo</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>ID</td>
+    <td>"MarketoProgramMembership"_ProgramId_Lead Id</td>
+  </tr>
+  <tr>
+    <td>MODIFIED_DATE</td>
+    <td>updatedAt</td>
+  </tr>
+  <tr>
+    <td>DATA_CREAZIONE</td>
+    <td>membershipDate</td>
+  </tr>
+  <tr>
+    <td>LEAD_ID</td>
+    <td>ID (iscrizione all’elenco)</td>
+  </tr>
+  <tr>
+    <td>LEAD_EMAIL</td>
+    <td>E-mail (iscrizione all’elenco)</td>
+  </tr>
+  <tr>
+    <td>STATO</td>
+    <td>progressionStatus</td>
+  </tr>
+  <tr>
+    <td>HAS_RESPONDED</td>
+    <td>reachStatus</td>
+  </tr>
+  <tr>
+    <td>NOME_CAMPAGNA</td>
+    <td>programName</td>
+  </tr>
+  <tr>
+    <td>ID_CAMPAGNA</td>
+    <td>programId</td>
+  </tr>
+  <tr>
+    <td>CAMPAIGN_TYPE</td>
+    <td>channel</td>
+  </tr>
+</tbody>
+</table>
 
 ## Mappatura cookie {#cookie-mapping}
 

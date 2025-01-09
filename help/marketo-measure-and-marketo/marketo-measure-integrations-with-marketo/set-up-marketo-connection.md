@@ -4,7 +4,7 @@ description: Configura connessione Marketo - [!DNL Marketo Measure]
 title: Configura connessione Marketo
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
 feature: Integration
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Ecco come impostare la connessione a Marketo.
 
 >[!PREREQUISITES]
 >
->[Crea un ruolo utente solo API](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) per la connessione [!DNL Marketo Measure]/Marketo Engage.
+>[Crea un ruolo utente solo API](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html){target="_blank"} per la connessione [!DNL Marketo Measure]/Marketo Engage.
 
 1. In [!DNL Marketo Measure], fare clic sul menu a discesa **[!UICONTROL My Account]** e selezionare **[!UICONTROL Settings]**.
 
@@ -27,7 +27,7 @@ Ecco come impostare la connessione a Marketo.
 
    ![](assets/set-up-marketo-connection-2.png)
 
-1. Fare clic su **[!UICONTROL Set Up New CRM Connection]**.
+1. Fai clic su **[!UICONTROL Set Up New CRM Connection]**.
 
    ![](assets/set-up-marketo-connection-3.png)
 
