@@ -2,9 +2,10 @@
 description: Dashboard ROI per parola chiave - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ROI per parola chiave
 feature: Reporting
-source-git-commit: 3424f8a63da40f8762defae1e6ae22ebe60530d0
+exl-id: 9c85a3ad-1806-4e30-b0fb-686760aea587
+source-git-commit: f1adf53a9bf3adbc77d52c12dbafb09a28e51178
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -31,10 +32,10 @@ Approfondisci le parole chiave specifiche per visualizzare le opportunità influ
 
 * **Parola chiave**
 * **Campaign**
-* **ID account annuncio** (disponibile a breve)
-* **Nome account annuncio** (disponibile a breve)
-* **ID gruppo annunci** (disponibile a breve)
-* **Nome gruppo annunci** (disponibile a breve)
+* **ID account annuncio**
+* **Nome account annuncio**
+* **ID gruppo annuncio**
+* **Nome gruppo di annunci**
 * **Costo**: costi totali da origini dati connesse.
 * **Ricavi attribuiti**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, dalle opportunità con punti di contatto chiusi entro il periodo di date filtrato
 * **Ricavi attribuiti realizzati**: il contributo totale dei ricavi, in base al modello di attribuzione scelto, dalle opportunità con punti di contatto entro il periodo di data filtrato, indipendentemente da quando sono state chiuse.
@@ -52,10 +53,10 @@ Approfondisci le parole chiave specifiche per visualizzare le opportunità influ
 
 * **Parola chiave**
 * **Campaign**
-* **ID account annuncio** (disponibile a breve)
-* **Nome account annuncio** (disponibile a breve)
-* **ID gruppo annunci** (disponibile a breve)
-* **Nome gruppo annunci** (disponibile a breve)
+* **ID account annuncio**
+* **Nome account annuncio**
+* **ID gruppo annuncio**
+* **Nome gruppo di annunci**
 * **Costo**
 * **Nuovi lead**: numero totale di nuovi lead generati, inclusi quelli toccati e non toccati.
 * **Costo per nuovo lead**: il costo medio per nuovo lead, derivato dal costo totale diviso per il numero totale di nuovi lead.
