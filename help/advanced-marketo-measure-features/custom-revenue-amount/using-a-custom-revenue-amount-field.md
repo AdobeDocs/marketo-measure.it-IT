@@ -4,7 +4,7 @@ description: Utilizzo di un campo personalizzato per l'importo dei ricavi - [!DN
 title: Utilizzo di un campo personalizzato per l'importo dei ricavi
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 3794aaa8460fe3e4d366b833c933d10beda7da96
+source-git-commit: 03342bde87b75ab702eea4c63b581479a7e303c1
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -104,6 +104,6 @@ I passaggi seguenti sono per gli utenti di Salesforce Classic. Se hai effettuato
 
    Dopo aver completato questi passaggi, le opportunità dovranno essere aggiornate per attivare il flusso di lavoro in modo che abbia il nuovo valore dal campo [!UICONTROL custom opportunity].
 
-   Questo può essere ottenuto eseguendo le opportunità tramite Data Loader in SFDC. Trova dettagli sull&#39;utilizzo di Data Loader in [questo articolo](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
+   Questo può essere ottenuto eseguendo le opportunità tramite Data Loader in SFDC. Trova dettagli sull&#39;utilizzo di Data Loader in [questo articolo](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md){target="_blank"}.
 
-In caso di domande, rivolgiti al team dell&#39;account Adobe (il tuo Account Manager) o al [[!DNL Marketo] supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+In caso di domande, contatta il team dell&#39;account Adobe (il tuo Account Manager) o il [[!DNL Marketo] supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
