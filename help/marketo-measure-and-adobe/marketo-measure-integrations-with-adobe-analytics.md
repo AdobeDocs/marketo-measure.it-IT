@@ -20,7 +20,7 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
 ## Configurazione dell’integrazione {#configuring-the-integration}
 
-1. Crea un nuovo Customer Attributes Data Source nella tua console di Experienci Cloud. Le istruzioni dettagliate [sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html).
+1. Crea un nuovo Customer Attributes Data Source nella tua console di Experienci Cloud. Le istruzioni dettagliate [sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=it).
 
    Prendi nota delle seguenti informazioni, necessarie nei passaggi successivi:
 
@@ -34,11 +34,11 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
    Immetti l’ID della tua organizzazione Adobe IMS. Questo ID viene visualizzato nell’angolo inferiore destro dell’Admin Console di Adobe Experience Cloud. Per maggiori informazioni su come trovare questo ID, rivolgiti al team dell’account Adobe (il tuo Account Manager).
 
-1. Dopo aver completato la creazione della connessione nell&#39;account [!DNL Marketo Measure], devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). Non è necessario preoccuparsi del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato la parte. Passare alla schermata &quot;Visualizza/Modifica&quot; schema per l&#39;attributo cliente Source Adobe creato nel passaggio 1 e indicare i tipi di dati per ciascuno degli attributi caricati da [!DNL Marketo Measure] per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
+1. Dopo aver completato la creazione della connessione nell&#39;account [!DNL Marketo Measure], devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=it). Non è necessario preoccuparsi del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato la parte. Passare alla schermata &quot;Visualizza/Modifica&quot; schema per l&#39;attributo cliente Source Adobe creato nel passaggio 1 e indicare i tipi di dati per ciascuno degli attributi caricati da [!DNL Marketo Measure] per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
 
    Se si è scelto di sincronizzare gli attributi dall&#39;oggetto account CRM, si consiglia di scegliere nuovi nomi visualizzati, in quanto [!DNL Marketo Measure] popola solo i nomi a livello API per questi attributi, che in genere non sono descrittivi dei rapporti.
 
-1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni di Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [ sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
+1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni di Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [ sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html?lang=it).
 
 ## Descrizioni attributi {#attribute-descriptions}
 
