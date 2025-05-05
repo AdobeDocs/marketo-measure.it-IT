@@ -17,7 +17,7 @@ Questo articolo fornisce un glossario di tutti i campi Marketo Measure aggiunti 
 
 Per una mappa a cui si riferisce ogni campo Marketo Measure, [fai clic qui](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
-[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) · Q · [R](#r) {S](#s) · [T](#t) · [U](#u) · [V](#v) · W · X · Y · Z[
+[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) · Q · [R](#r) &lbrace;S[&#128279;](#s) · [T](#t) · [U](#u) · [V](#v) · W · X · Y · Z
 
 ## A {#a}
 

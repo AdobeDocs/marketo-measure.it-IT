@@ -2007,7 +2007,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>04.0}53.000 09/01 2018:53:</p>
+        <p>04.0&rbrace;53.000 09/01 2018:53:</p>
       </td>
     </tr>
     <tr>
@@ -4796,7 +4796,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data dell'ultima modifica apportata all'evento dal sistema di origine.</p>
       </td>
       <td>
-        <p>08.0}51.000 09/09/2018:39:</p>
+        <p>08.0&rbrace;51.000 09/09/2018:39:</p>
       </td>
     </tr>
     <tr>

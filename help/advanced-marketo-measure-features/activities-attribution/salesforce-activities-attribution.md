@@ -72,11 +72,11 @@ Inserire questi nuovi punti di contatto nel [canale di marketing](https://experi
 >
 >inizia con ( In uscita&#42; )
 >
-contiene ( &#42;In uscita&#42; )
+>contiene ( &#42;In uscita&#42; )
 >
-termina con ( &#42;In uscita )
+>termina con ( &#42;In uscita )
 >
-Nessun carattere jolly in pratica significa &quot;è uguale a&quot;, quindi assicurati di utilizzarli in base alle esigenze.
+>Nessun carattere jolly in pratica significa &quot;è uguale a&quot;, quindi assicurati di utilizzarli in base alle esigenze.
 
 | **Operatore** | **Caso d&#39;uso** |
 |---|---|
@@ -93,4 +93,4 @@ Infine, ma non per importanza, puoi immettere i costi per i nuovi canali. Il [ca
 
 >[!MORELIKETHIS]
 >
-[Domande frequenti su Activity Attribution](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
+>[Domande frequenti su Activity Attribution](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
