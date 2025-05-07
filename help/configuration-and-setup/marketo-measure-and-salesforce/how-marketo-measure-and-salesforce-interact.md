@@ -4,9 +4,9 @@ description: Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono - Mar
 title: Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 9ef6d16a73ef25846b90902eb22a544432c33931
+source-git-commit: ec5172286951f482905f97268f33f063d1860694
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1287'
 ht-degree: 17%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 Esaminiamo ora la relazione tra [!DNL Marketo Measure] e Salesforce.
 
-## Salesforce e [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
+## Salesforce e [!DNL Marketo Measure]  {#salesforce-and-marketo-measure}
 
 Una volta creato l&#39;account [!DNL Marketo Measure] e connessa [!DNL Salesforce], [!DNL Marketo Measure] inizia a inviare dati di marketing all&#39;istanza di CRM, purché il pacchetto gestito [!DNL Marketo Measure] sia installato e l&#39;utente Salesforce [!DNL Marketo Measure] disponga delle autorizzazioni di modifica.
 
@@ -27,11 +27,11 @@ Se non hai installato il pacchetto Salesforce [!DNL Marketo Measure], [!DNL Mark
 
 ![](assets/1-3.png)
 
-Per impostazione predefinita, [!DNL Marketo Measure] esporta 200 record per credito API ogni volta che un processo invia dati al CRM. Per la maggior parte dei clienti, questo fornisce l&#39;equilibrio ottimale tra i crediti API utilizzati da [!DNL Marketo Measure] e i requisiti delle risorse CPU nel CRM. Tuttavia, per i clienti con configurazioni di gestione delle relazioni con i clienti complesse, come flussi di lavoro e attivatori, potrebbe essere utile ridurre le dimensioni del batch per migliorare le prestazioni di gestione delle relazioni con i clienti. A questo scopo, [!DNL Marketo Measure] consente ai clienti di configurare la dimensione del batch di esportazione CRM. Questa impostazione è disponibile nella pagina [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] dell&#39;applicazione Web [!DNL Marketo Measure] e i clienti possono scegliere tra dimensioni batch di 200 (impostazione predefinita), 100, 50 o 25.
+Per impostazione predefinita, [!DNL Marketo Measure] esporta 200 record per credito API ogni volta che un processo invia dati al CRM. Per la maggior parte dei clienti, questo fornisce il saldo ottimale tra i crediti API utilizzati da [!DNL Marketo Measure] e i requisiti delle risorse CPU nel CRM. Tuttavia, per i clienti con configurazioni di gestione delle relazioni con i clienti complesse, come flussi di lavoro e attivatori, potrebbe essere utile ridurre le dimensioni del batch per migliorare le prestazioni di gestione delle relazioni con i clienti. A questo scopo, [!DNL Marketo Measure] consente ai clienti di configurare la dimensione del batch di esportazione CRM. Questa impostazione è disponibile nella pagina [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] dell&#39;applicazione Web [!DNL Marketo Measure] e i clienti possono scegliere tra dimensioni batch di 200 (impostazione predefinita), 100, 50 o 25.
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-Quando modifichi questa impostazione, tieni presente che le dimensioni batch più piccole consumano più crediti API dal CRM. È consigliabile ridurre la dimensione del batch solo se si verifica un timeout della CPU o un carico della CPU elevato nel CRM.
+Quando modifichi questa impostazione, tieni presente che le dimensioni batch più piccole consumano più crediti API dal CRM. È consigliabile ridurre la dimensione del batch solo se si verifica un timeout di CPU o un carico elevato di CPU nel CRM.
 
 ## Autorizzazioni utente connesso a Salesforce {#salesforce-connected-user-permissions}
 
@@ -449,7 +449,19 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
    <td>Tipo</td> 
    <td>Standard</td> 
    <td>x</td> 
-   <td><br></td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>DataInizio</td> 
+   <td>Standard</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>EndDate</td> 
+   <td>Standard</td> 
+   <td>x</td> 
+   <td> </td> 
   </tr>
   <tr> 
    <td>Nome</td> 
@@ -583,7 +595,7 @@ Elenca gli oggetti standard [!DNL Salesforce] con cui [!DNL Marketo Measure] int
 >* Attività
 
 
-## [!DNL Marketo Measure] oggetti personalizzati in [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
+## [!DNL Marketo Measure] oggetti personalizzati in [!DNL Salesforce]  {#marketo-measure-custom-objects-in-salesforce}
 
 Oltre a creare campi personalizzati sugli oggetti standard di SFDC, una volta installato il pacchetto [!DNL Marketo Measure], vengono creati un paio di oggetti personalizzati. Di seguito è riportato un elenco di questi oggetti personalizzati insieme a una tabella che indica i campi in cui [!DNL Marketo Measure] scriverà.
 
