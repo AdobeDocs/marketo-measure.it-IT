@@ -4,9 +4,9 @@ description: Metodologia mapping attribuzione - [!DNL Marketo Measure]
 title: Metodologia di mappatura attribuzione
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
+source-git-commit: 90d0d6481e5b338d08a56f555ca3addea8bdd304
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Pro: questo metodo di attribuzione è molto efficace per la maggior parte delle 
 Contro: se esistono forti accordi sui livelli di servizio di marketing e vendita che definiscono a chi assegnare il merito per cosa, allora questo metodo potrebbe essere problematico. Inoltre, se le persone non utilizzano le gerarchie dei conti per definire specifiche unità aziendali all’interno di un conto più grande (ad esempio, IBM), le interazioni di marketing specifiche per una unità aziendale possono essere distribuite tra altre opportunità di unità aziendali.
 
 ## Mappatura ruolo contatto opportunità {#opportunity-contact-role-mapping}
+
+>[!NOTE]
+>
+>I metodi di mappatura del ruolo di contatto sono disponibili solo per coloro che utilizzano Salesforce come CRM. Non è disponibile per gli utenti di Microsoft Dynamics a causa della mancanza di un oggetto Ruolo contatto all’interno di tale CRM.
 
 Sebbene la maggior parte dei client utilizzi il mapping degli ID account, [!DNL Marketo Measure] può cercare i ruoli di contatto (contatti associati all&#39;opportunità) all&#39;interno di un&#39;opportunità per suddividere il processo di attribuzione. Ciò significa che [!DNL Marketo Measure] invierà solo le interazioni di marketing associate ai ruoli di contatto dell&#39;opportunità come punti di contatto di attribuzione dell&#39;acquirente. Di seguito è riportata una rappresentazione di questo processo.
 
