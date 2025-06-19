@@ -4,9 +4,9 @@ description: Scenari fase boomerang - [!DNL Marketo Measure]
 title: Scenari Boomerang Stage
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
+source-git-commit: ce54eb497c55c4ab8da55e9b2803dc59a87c7267
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1499'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->La funzione Boomerang è abilitata solo per i clienti di livello 2 e 3. Per richiedere un livello di account superiore, contatta l’Adobe Account Team (il tuo account manager).
+>La funzione Boomerang è abilitata solo per i clienti di livello 2 e 3. Per richiedere un livello di account superiore, contatta il team dell’account di Adobe (il tuo account manager).
 
 Di seguito sono riportati alcuni esempi di scenari Boomerang Stage per comprendere come [!DNL Marketo Measure] crea punti di contatto in ogni situazione.
 
@@ -79,23 +79,7 @@ I punti di contatto FT, LC e MQL, SQL, SAL (arancione) del lead 3 si sono verifi
 
 Quando il lead 2 e 3 vengono convertiti in contatti, [!DNL Marketo Measure] non creerà un altro punto di contatto OC perché può essere presente una sola fase di creazione delle opportunità.
 
-**Scenario 2 -[!UICONTROL Three Leads with Opportunity]**
-
-In questo scenario, un cliente ha scelto di tenere traccia delle fasi **MQL**, **SQL** e **SAL** con punti di contatto boomerang.
-
-Tutti i punti di contatto della Lead 1 sono inclusi nell&#39;opportunità, da FT a SAL-01 (Last). Il punto di contatto LC della Lead 2 verrà incluso come punto di contatto Modulo tra i punti di contatto LC e MQL-01 sull’opportunità.
-
-![](assets/5.png)
-
-L’MQL-01 (ultimo) da Lead 2 finisce per essere il punto di contatto MQL-04 (ultimo) sull’opportunità. Poiché questo scenario esamina i percorsi di più lead all’interno di un’opportunità, la posizione e la numerazione dei punti di contatto dei lead possono cambiare quando vengono tradotti come punti di contatto nell’opportunità. Analogamente, SQL-01 (ultimo) dal lead 2 diventa SQL-04 (ultimo) sull&#39;Opp. La SAL-01 (Last) del lead 2 diventa anche la SAL-02 (Last) dell’opportunità.
-
-Nell’opportunità sono inclusi solo 2 punti di contatto SAL. [!DNL Marketo Measure] non tenterà di forzare/creare punti di contatto per le transizioni di fase se non si sono verificate.
-
-Il percorso del punto di contatto del lead 3 inizia poco prima che si verifichi il contatto OC, ma molto tempo dopo che il lead 1 e il lead 2 hanno avuto il contatto FT e LC. In questo caso, FT e LC del lead 3 vengono visualizzati come punto di contatto del modulo nell’opportunità. Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC.
-
-I contatti MQL, SQL e SAL del lead 3 si verificano tutti contemporaneamente, dopo il contatto OC. Poiché si sono verificati dopo il punto di contatto OC, questo punto di contatto apparirà come un Form/Middle Touch sull’opportunità anziché come una transizione di fase Boomerang.
-
-**Scenario 2a - Punti di contatto Boomerang per la visita al Web**
+**Scenario 2 - Punti Di Contatto Boomerang Per La Visita Al Web**
 
 In questo scenario, un cliente ha scelto di tenere traccia delle fasi **MQL**, **SQL** e **SAL** con punti di contatto boomerang. Questo scenario è quasi identico a quello precedente, con alcune eccezioni.
 
