@@ -4,10 +4,10 @@ description: '[!DNL Marketo Measure] cookie - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 0ba036e7ebba77d870931704a59b19011e84271e
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applich
 
 >[!IMPORTANT]
 >
->A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annuncio della rimozione dei cookie di terze parti, annunciata nel terzo trimestre 2024 da Google Chrome, segna di fatto la fine di questa forma di tracciamento. Di conseguenza, Adobe ha dichiarato obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, le funzioni di tracciamento tra domini diversi e di attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti di Adobe.
+>A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annuncio della rimozione dei cookie di terze parti, annunciata nel terzo trimestre 2024 da Google Chrome, segna di fatto la fine di questa forma di tracciamento. Di conseguenza, Adobe rende obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, il tracciamento tra domini diversi e l’attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti Adobe.
 
 <table>
 <thead>
@@ -106,7 +106,7 @@ Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applich
   </tr>
   <tr>
     <td>_BUID</td>
-    <td>Terza parte, dominio=.<a href="http://bizibly.com/">bizibly.com</a></td>
+    <td>Terza parte, dominio=.<a href="https://bizibly.com/">bizibly.com</a></td>
     <td>Mappatura tra l’ID cookie di Marketo Measure sul dominio del tenant e il relativo ID cookie di impression a doppio clic.</td>
     <td>1 anno</td>
     <td>Sì</td>

@@ -4,10 +4,10 @@ description: Canali e sottocanali marketing - [!DNL Marketo Measure]
 title: Canali marketing e sottocanali
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 0ba036e7ebba77d870931704a59b19011e84271e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 1%
+source-wordcount: '448'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ I canali di marketing vengono utilizzati per aiutare a categorizzare (o &quot;bu
 
 Ogni volta che ricevi un visitatore di una delle pagine di contenuto sul tuo sito (che si tratti di una pagina web, di un download di white paper, di un URL della pagina, ecc.), tale lead viene &quot;inserito&quot; in un canale/sottocanale in base a diversi parametri UTM trovati nell’URL:
 
-* Medium
+* Canale
 * Origine
 * Campaign
 * Pagina di destinazione
@@ -45,7 +45,7 @@ I sottocanali sono il secondo elemento del puzzle quando si inseriscono i lead i
 
 Il diagramma seguente illustra un esempio di canale di marketing, sottocanale e contenuto basato su una pagina web con il seguente URL:
 
-* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial)*
+`http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial`
 
 In questo caso, il contenuto a cui l’utente sta tentando di accedere è la Guida introduttiva all’attribuzione B2B di marketing. [!DNL Marketo Measure] analizzerà l&#39;URL che porta a questo contenuto utilizzando le regole di canale impostate in questa organizzazione e le utilizzerà per &quot;bucket&quot; di questo lead nel canale di marketing &quot;Paid Social&quot; e nel sottocanale &quot;LinkedIn&quot;.
 
