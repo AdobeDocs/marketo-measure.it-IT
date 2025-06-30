@@ -4,9 +4,9 @@ description: Scenari fase boomerang - [!DNL Marketo Measure]
 title: Scenari Boomerang Stage
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: ce54eb497c55c4ab8da55e9b2803dc59a87c7267
+source-git-commit: 855ae5abe6f8782ed1883f85be545c11bf86e7ce
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ I punti di contatto FT e LC sull’opportunità provengono da Lead 1 (blu), perc
 
 MQL-01 (Ultimo) da Lead 2 diventerà il primo MQL sull’opportunità. L’MQL-01 dal lead 1 non verrà visualizzato come punto di contatto nell’opportunità perché l’MQL del lead 2 è avvenuto per primo. Tuttavia, i modelli MQL-02 e MQL-03 del lead 1 verranno visualizzati nell’opportunità.
 
-Lo stadio SQL viene tracciato con stadi personalizzati, e non con stadi boomerang. Anche se ci sono tre occorrenze della fase SQL tra Lead 1 e Lead 2, solo l’ultima occorrenza SQL verrà inclusa come punto di contatto nell’opportunità.
+La fase SQL viene tracciata con fasi personalizzate e non con fasi boomerang. Anche se ci sono tre occorrenze della fase SQL tra Lead 1 e Lead 2, solo l’ultima occorrenza SQL verrà inclusa come punto di contatto nell’opportunità.
 
-Il punto di contatto SAL-01 (ultimo) da Lead 1 viene riportato come punto di contatto sull’opportunità. Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC. Il punto di contatto SAL-01 (ultimo) del lead 2 verrà creato come punto di contatto perché questa transizione di fase si è verificata _dopo_ il contatto OC.
+Il punto di contatto SAL-01 (ultimo) da Lead 1 viene riportato come punto di contatto sull’opportunità. Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC. Il punto di contatto SAL-01 (ultimo) del lead 2 non verrà creato come punto di contatto perché questa transizione di fase si è verificata _dopo_ il contatto OC.
 
 I punti di contatto FT, LC e MQL, SQL, SAL (arancione) del lead 3 si sono verificati tutti dopo il punto di contatto OC sull’opportunità. Questi punti di contatto sono inclusi nell’opportunità, ma sono considerati &quot;tocchi intermedi&quot;.
 
