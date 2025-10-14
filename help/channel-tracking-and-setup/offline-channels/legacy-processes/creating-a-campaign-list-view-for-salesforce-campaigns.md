@@ -44,4 +44,4 @@ La visualizzazione elenco di Campaign che è possibile creare consente di avere 
 
 >[!MORELIKETHIS]
 >
->[Risoluzione dei problemi comuni relativi alla modifica in linea della vista a elenco](http://help.salesforce.com/articleView?id=000003911&amp;language=en_US&amp;type=1){target="_blank"}
+>[Risoluzione dei problemi comuni relativi alla modifica in linea della vista a elenco](http://help.salesforce.com/articleView?id=000003911&language=en_US&type=1){target="_blank"}

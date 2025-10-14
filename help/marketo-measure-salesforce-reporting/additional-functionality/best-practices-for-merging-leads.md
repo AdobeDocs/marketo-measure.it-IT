@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Durante l&#39;unione di lead in [!DNL Salesforce], è sempre consigliabile prestare attenzione per evitare la perdita di dati.
 
-Per riferimento, ecco la suddivisione di [come unire lead](https://help.salesforce.com/s/articleView?id=leads_merge.htm&amp;language=en_US&amp;type=5) dal supporto di [!DNL Salesforce].
+Per riferimento, ecco la suddivisione di [come unire lead](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5) dal supporto di [!DNL Salesforce].
 
 L&#39;arrivo di [!DNL Marketo Measure] è il momento di selezionare i campi da compilare nel record unito. Dopo aver selezionato il record principale, verificare che i campi [!DNL Marketo Measure] siano selezionati per essere riportati al nuovo record.
 

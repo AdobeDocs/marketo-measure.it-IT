@@ -27,7 +27,7 @@ Il set di autorizzazioni gestite consente a un amministratore SFDC di creare, le
 
 * Visualizza e modifica set di autorizzazioni lead convertiti
 
-Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati. Puoi trovare ulteriori informazioni in [[!DNL Salesforce Trailblazer] community](https://help.salesforce.com/s/articleView?language=en_US&amp;id=leads_view_edit_converted.htm&amp;type=5).
+Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati. Puoi trovare ulteriori informazioni in [[!DNL Salesforce Trailblazer] community](https://help.salesforce.com/s/articleView?language=en_US&id=leads_view_edit_converted.htm&type=5).
 
 * Casella di controllo [!DNL Salesforce] utente marketing
 

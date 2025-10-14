@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Una delle funzionalità di base di [!DNL Marketo Measure] è la capacità di monitorare le attività di marketing digitale attraverso le azioni sul sito Web e quindi di inviare tali dati alla produzione [!DNL Salesforce org] tramite lead e contatti. Tuttavia, in genere non sono presenti lead in entrata creati dal sito web all’interno di un’integrazione Sandbox, pertanto l’attenzione sui dati sarà focalizzata da un punto di vista puramente offline.
 
-Di seguito sono elencate le due origini a cui si fa riferimento per entrambe le fasi del test. [Passaggi 1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&amp;language=en_US&amp;type=5) e [Passaggi 5-6](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md). Si consiglia di rivedere questi documenti in quanto forniscono maggiori dettagli in alcune aree.
+Di seguito sono elencate le due origini a cui si fa riferimento per entrambe le fasi del test. [Passaggi 1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&language=en_US&type=5) e [Passaggi 5-6](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md). Si consiglia di rivedere questi documenti in quanto forniscono maggiori dettagli in alcune aree.
 
 1. Devi creare alcuni lead in un CSV in modo da poterli caricare in una campagna. A tal fine, devi esportare alcuni lead tramite un rapporto nella tua Salesforce di produzione. In caso contrario, puoi creare manualmente i lead in un file Excel e quindi salvarlo come CSV per l’importazione. Sono necessari solo circa 20 record. Il file deve avere le seguenti colonne:
 

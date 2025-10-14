@@ -29,4 +29,4 @@ Dopo aver completato l&#39;installazione e aver iniziato a utilizzare i report, 
 
 >[!MORELIKETHIS]
 >
->[Salesforce - Nascondi tipi di report inutilizzati](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&amp;type=5&amp;language=en_us)
+>[Salesforce - Nascondi tipi di report inutilizzati](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)

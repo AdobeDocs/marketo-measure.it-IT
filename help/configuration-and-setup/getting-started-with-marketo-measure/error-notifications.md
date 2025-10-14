@@ -30,7 +30,7 @@ Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fa
       <td>API_DISABLED</td>
       <td>Errore durante l'importazione CRM : API_DISABLED : le chiamate API sono state disabilitate per questo utente</td>
       <td>L’autorizzazione API è stata disabilitata per l’utente Marketo Measure.</td>
-      <td>Consulta la seguente documentazione di Salesforce su <a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">come abilitare l'accesso API</a>.</td>
+      <td>Consulta la seguente documentazione di Salesforce su <a href="https://help.salesforce.com/s/articleView?language=en_US&id=sf.branded_apps_commun_api_permset.htm&type=5">come abilitare l'accesso API</a>.</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -79,7 +79,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       Autorizzazioni mancanti per l'oggetto.</td>
       <td>Esamina il codice del trigger che causa l’errore di inserimento/aggiornamento. Per ulteriori informazioni sui trigger, consulta la seguente documentazione di Salesforce:
         <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&amp;type=5">Trigger Apex</a>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&type=5">Trigger Apex</a>
           </li>
           <li><a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">Trigger del flusso</a>
           </li>
@@ -92,7 +92,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>DUPLICATES_DETECTED</td>
       <td>Errore durante l'esportazione CRM: DUPLICATES_DETECTED : Tipo di entità 'Contatto': Codice errore CRM: DUPLICATES_DETECTED, Messaggio di errore CRM: Stai creando un record duplicato. È consigliabile utilizzare invece un record esistente., RecordId: 0123456</td>
       <td>Il record da importare nell’organizzazione Salesforce esiste già.</td>
-      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">Disattivare l'impostazione "Duplicate Rule"</a> per consentire duplicati.
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">Disattivare l'impostazione "Duplicate Rule"</a> per consentire duplicati.
           <p>
           Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</td>
     </tr>
@@ -100,7 +100,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>DUPLICATE_VALUE</td>
       <td>Errore durante l'esportazione CRM: DUPLICATE_VALUE : tipo di entità 'Lead': Codice errore CRM: DUPLICATE_VALUE, Messaggio errore CRM: valore duplicato trovato: Email_Unique__c duplica il valore nel record con ID: 123, ID record: 456</td>
       <td>Il campo importato nell’organizzazione Salesforce non consente valori duplicati.</td>
-      <td>Deseleziona la <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">"Casella di controllo univoca"</a> in Salesforce.
+      <td>Deseleziona la <a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">"Casella di controllo univoca"</a> in Salesforce.
           <p>
           Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.</td>
     </tr>
@@ -120,7 +120,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
       <td>Errore durante l'esportazione CRM: FIELD_FILTER_VALIDATION_EXCEPTION : tipo di entità 'Lead': Codice errore CRM: FIELD_FILTER_VALIDATION_EXCEPTION, Campo/i: User__C, Messaggio errore CRM: il valore non esiste o non corrisponde ai criteri del filtro. Selezionare un utente con il ruolo "Account Executive, Inside Sales"; ID record: 0123456</td>
       <td>Il record modificato non soddisfa più i filtri di ricerca definiti sull'oggetto.</td>
-      <td>Verifica la presenza di filtri sull’oggetto che Marketo Measure sta tentando di modificare. Consulta <a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">questo articolo di Salesforce</a> per scoprire come verificare la presenza di filtri su un oggetto.</td>
+      <td>Verifica la presenza di filtri sull’oggetto che Marketo Measure sta tentando di modificare. Consulta <a href="https://help.salesforce.com/s/articleView?id=000384756&type=1">questo articolo di Salesforce</a> per scoprire come verificare la presenza di filtri su un oggetto.</td>
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
@@ -129,7 +129,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>Il caso più comune è che non si seguono gli standard di denominazione Stato/Paese impostati nell’organizzazione Salesforce perché i campi Stato/Paese sono stati standardizzati per accettare solo determinati valori della lista di selezione. Per risolvere questo problema, è possibile:
         <ul>
           <li>Aggiorna il record in modo che segua i valori accettati dall’organizzazione per quel campo. Contatta l’amministratore SFDC per ottenere l’elenco dei valori accettati.</li>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">Disattivare gli elenchi di selezione Stato/Paese</a>.
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&type=5">Disattivare gli elenchi di selezione Stato/Paese</a>.
           </li>
         </ul>
       </td>
@@ -138,7 +138,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>Errore durante l'esportazione CRM: INACTIVE_OWNER_OR_USER : tipo di entità 'Contatto': Codice errore CRM: INACTIVE_OWNER_OR_USER, Messaggio di errore CRM: operazione eseguita con l'utente inattivo [1234] come proprietario del contatto, ID record: 0123456</td>
       <td>In Marketo Measure manca l’autorizzazione "Aggiorna record con proprietari inattivi".</td>
-      <td>Concedi a Marketo Measure l'autorizzazione "<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">Aggiorna record con proprietari inattivi</a>".</td>
+      <td>Concedi a Marketo Measure l'autorizzazione "<a href="https://help.salesforce.com/s/articleView?id=000386699&type=1">Aggiorna record con proprietari inattivi</a>".</td>
     </tr>
     <tr>
       <td>INSUFFICIENTE_ACCESS_OR_READONLY</td>
@@ -255,7 +255,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>Il record in fase di aggiornamento non soddisfa una regola di convalida impostata nell’organizzazione Salesforce.</td>
       <td>Escludi l'utente dedicato Marketo Measure da <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">regole di convalida personalizzate</a>.
       <p>
-      Aggiorna le <a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">regole di convalida</a>.</td>
+      Aggiorna le <a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&type=5">regole di convalida</a>.</td>
     </tr>
     <tr>
       <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>

@@ -101,7 +101,7 @@ Google URL Builder è uno strumento standard per la creazione di URL formattati 
 
 **Foglio di calcolo Google generato da EpikOne**
 
-Questo foglio di calcolo contiene una formula che genererà automaticamente gli URL di destinazione con tag. Questo è un ottimo strumento da utilizzare se è necessario assegnare tag a un numero elevato di collegamenti. Accedi al foglio di calcolo [qui](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&amp;hl=en){target="_blank"}.
+Questo foglio di calcolo contiene una formula che genererà automaticamente gli URL di destinazione con tag. Questo è un ottimo strumento da utilizzare se è necessario assegnare tag a un numero elevato di collegamenti. Accedi al foglio di calcolo [qui](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&hl=en){target="_blank"}.
 
 **Strumento di assegnazione tag collegamento Rafflecopter**
 
