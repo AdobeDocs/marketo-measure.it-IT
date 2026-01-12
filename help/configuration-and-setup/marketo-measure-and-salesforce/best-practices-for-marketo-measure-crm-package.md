@@ -1,19 +1,19 @@
 ---
 description: Best practice per  [!DNL Marketo Measure] pacchetto CRM - [!DNL Marketo Measure]
-title: Best practice per il pacchetto CRM [!DNL Marketo Measure]
+title: 'Best practice per il pacchetto CRM [!DNL Marketo Measure] '
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
+
 # Best practice per il pacchetto CRM [!DNL Marketo Measure] {#best-practices-for-marketo-measure-crm-package}
 
 >[!NOTE]
->
 >Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere ancora &quot;Bizible&quot; nel tuo CRM. Questo è stato aggiornato e il rebranding verrà presto rispecchiato nel CRM.
 
 ## Panoramica {#overview}
@@ -49,12 +49,10 @@ Altri motivi potrebbero determinare una revisione...
 * Verifica di avere installato la versione più recente del pacchetto dei punti di contatto dell&#39;acquirente in [!DNL Salesforce]
 
 >[!NOTE]
->
->Se disattivi l’esportazione dei dati da Marketo Measure a Salesforce, i dati esistenti non verranno eliminati. Per rimuoverlo, segui i passaggi descritti in [questo articolo della Guida di Salesforce](https://help.salesforce.com/s/articleView?language=en_US&id=sf.c360_a_delete_data_stream_records.htm&type=5){target="_blank"}.
+>Se disattivi l’esportazione dei dati da Marketo Measure a Salesforce, i dati esistenti non verranno eliminati. Per rimuoverlo, seguire i passaggi descritti in [questo articolo della Guida di Salesforce](https://help.salesforce.com/s/articleView?language=en_US&id=sf.c360_a_delete_data_stream_records.htm&type=5){target="_blank"}.
 
 >[!MORELIKETHIS]
->
->* [Aggiorna pacchetto Buyer Touchpoint](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
->* [[!DNL Marketo Measure] Set di autorizzazioni](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
->* [Condivisione di report e dashboard](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
->* [Connetti Marketo Measure a Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
+> [Aggiorna pacchetto Buyer Touchpoint](/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)
+> [[!DNL Marketo Measure] Set di autorizzazioni](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
+> [Condivisione cartella report e dashboard](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
+> [Connetti Marketo Measure a Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)

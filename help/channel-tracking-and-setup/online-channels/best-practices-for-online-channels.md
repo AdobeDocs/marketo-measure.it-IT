@@ -3,12 +3,13 @@ description: Best practice per i canali online - [!DNL Marketo Measure]
 title: Best practice per i canali online
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
+
 
 # Best practice per i canali online {#best-practices-for-online-channels}
 
@@ -35,7 +36,7 @@ Aspetti da considerare:
 * La logica [!DNL Marketo Measure] assegna priorità alla mappatura dei punti di contatto in ordine decrescente, a partire dalla riga superiore del foglio di calcolo fino alla fine
    * [!DNL Marketo Measure] legge ogni regola (riga), cercando il vero e il primo adattamento. Il punto di contatto viene quindi mappato su quel canale/sottocanale
    * Non ordinare il foglio in ordine alfabetico in quanto questo interferisce con le regole logiche.
-* Mantieni le regole tra parentesi quadre, non modificare o aggiungere le regole tra parentesi quadre (ad esempio: [Ricerca AdWords Pagata] o [Ricerca Facebook Pagata] )
+* Mantieni le regole tra parentesi quadre, non modificare o aggiungere le regole tra parentesi quadre (ad esempio: [Ricerca AdWords Pagata] o [Facebook Pagata])
    * Sono regole predefinite [!DNL Marketo Measure] con logica incorporata, che sono collegate alle integrazioni [!DNL Marketo Measure]. Assegna a queste regole la massima priorità per la sezione canale/sottocanale per garantire che le integrazioni [!DNL Marketo Measure] funzionino come previsto.
 * Una volta caricato il file, non puoi modificare nessuna delle regole per sette giorni
    * [!DNL Marketo Measure] utilizza questo tempo per elaborare e aggiornare i punti di contatto, quindi assicurati di controllare le regole prima di caricare.
@@ -54,8 +55,7 @@ Altri elementi che potrebbero attivare il team per la manutenzione dei canali on
 Se il tuo team ha riscontrato uno degli eventi sopra descritti di recente, [!DNL Marketo Measure] ti consiglia di rivedere le regole dei canali online e apportare le modifiche appropriate.
 
 >[!MORELIKETHIS]
->
->* [Configurazione canale in linea](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
->* [Parametri UTM](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
->* [Canale di marketing e sottocanale](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
->* [Best practice UTM](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
+> [Configurazione canale in linea](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
+> [Parametri UTM](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
+> [Canale di marketing e sottocanale](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
+> [Best practice UTM](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)

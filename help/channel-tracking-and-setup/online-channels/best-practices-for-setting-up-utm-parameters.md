@@ -1,21 +1,21 @@
 ---
-unique-page-id: 18874732
 description: Procedure consigliate per la configurazione dei parametri UTM - [!DNL Marketo Measure]
 title: Procedure consigliate per la configurazione dei parametri UTM
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
+
 # Procedure consigliate per la configurazione dei parametri UTM {#best-practices-for-setting-up-utm-parameters}
 
 I parametri UTM sono un ottimo modo per suddividere i dati di marketing. [!DNL Marketo Measure] utilizza e acquisisce tutti i parametri UTM per compilare i campi in Salesforce e nell&#39;app [!DNL Marketo Measure]. Grazie a queste informazioni, potrai comprendere in modo granulare da dove provengono i tuoi lead, opportunità e offerte chiuse/vinte.
 
-Puoi utilizzare [Generatore URL di Google](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"} per impostare i parametri UTM e aggiungerli ai collegamenti nelle attività di marketing. Utilizza questo [foglio di calcolo Google](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"} per semplificare il tracciamento di tutti i collegamenti UTM.
+Puoi utilizzare [Google URL Builder](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"} per impostare i parametri UTM e aggiungerli ai collegamenti all&#39;interno delle tue attività di marketing. Utilizza questo [foglio di calcolo Google](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"} se desideri un modo più semplice per tenere traccia di tutti i collegamenti UTM.
 
 ## Valori di alto livello per ciascun parametro {#high-level-values-for-each-parameter}
 
@@ -27,7 +27,7 @@ Non utilizzare questo campo per richiamare il sottocanale.
 
 **utm_source**: questo campo viene mappato al campo Source del punto di contatto. Utilizzare utm_source per definire il sottocanale da cui ha origine il lead.
 
-Ad esempio, Facebook, Twitter, Linkedin, Drip_email, Email_blast, newsletter.
+Ad esempio, Facebook, Twitter, LinkedIn, Drip_email, Email_blast, newsletter.
 
 Semplificala. Non utilizzare questo parametro per indicare i tipi di annunci, come retargeting o sponsorizzati. Non aggiungere utm_source = homepage, webdirect, sito Web. [!DNL Marketo Measure] compila automaticamente queste informazioni.
 
@@ -55,7 +55,7 @@ Immaginiamo la gerarchia UTM come segue:
 
 Medium > [!UICONTROL Source] > [!UICONTROL Campaign] > [!UICONTROL Content/Term]
 
-Ad esempio, se un annuncio [!UICONTROL display] viene inserito in Facebook, si consiglia quanto segue:
+Ad esempio, se un annuncio [!UICONTROL display] viene inserito su Facebook, si consiglia quanto segue:
 
 fakewebsite.com/
 
@@ -69,4 +69,4 @@ fakewebsite.com/
 
 Tieni presente che i termini/canale non sono duplicati e che in questo caso utm_term non viene utilizzato.
 
-In caso di domande, rivolgiti al team dell&#39;account Adobe (il tuo Account Manager) o al [supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+In caso di domande, contatta il team dell&#39;account Adobe (il tuo Account Manager) o il [supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

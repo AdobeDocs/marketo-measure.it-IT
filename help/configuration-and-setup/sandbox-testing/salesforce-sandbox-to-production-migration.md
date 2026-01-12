@@ -1,17 +1,17 @@
 ---
-unique-page-id: 18874694
 description: Migrazione da Sandbox Salesforce a Produzione - [!DNL Marketo Measure]
-title: Migrazione dalla sandbox Salesforce alla produzione
+title: Migrazione da Sandbox Salesforce a Produzione
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# Migrazione dalla sandbox Salesforce alla produzione {#salesforce-sandbox-to-production-migration}
+
+# Migrazione da Sandbox Salesforce a Produzione {#salesforce-sandbox-to-production-migration}
 
 Se hai scelto di testare [!DNL Marketo Measure] in un ambiente Sandbox [!DNL Salesforce], segui queste istruzioni per migrare alla produzione quando sei pronto. Le istruzioni seguenti presuppongono che tu abbia già scaricato il pacchetto [!DNL Marketo Measure] nell&#39;organizzazione sandbox, che tu abbia eseguito i test necessari e che tu sia pronto a inviare [!DNL Marketo Measure] in produzione.
 
@@ -28,10 +28,10 @@ Se hai scelto di testare [!DNL Marketo Measure] in un ambiente Sandbox [!DNL Sal
 
 * Accedere all&#39;applicazione [!DNL Marketo Measure] all&#39;indirizzo experience.adobe.com/marketo-measure
 * Passa a Il mio account >[!UICONTROL Settings] >[!UICONTROL Connections]
-* Fai clic sull’icona del cestino accanto alla connessione SFDC per eliminarlo
+* Fai clic sull’icona cestino accanto alla connessione SFDC per eliminarla
 * Viene richiesto di confermare l&#39;eliminazione. Assicurati di leggere attentamente il prompt e comprendere le conseguenze dell’eliminazione
 
-  ![](assets/salesforce-sandbox-to-production-migration-1.png)
+  ![Pagina connessioni Marketo Measure che conferma l&#39;eliminazione di una sandbox Salesforce](assets/salesforce-sandbox-to-production-migration-1.png)
 
    * Digita il nome dell’azienda come richiesto nel modello di conferma e fai clic su &quot;Comprendo le conseguenze, elimina questa connessione&quot;
 * Questo attiva il processo di eliminazione e richiederà del tempo
@@ -55,4 +55,4 @@ Se hai scelto di testare [!DNL Marketo Measure] in un ambiente Sandbox [!DNL Sal
 
 [Nascondere i tipi di report non necessari](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
 
-[Flusso di lavoro personalizzato, se applicabile](/help/advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
+[Flusso di lavoro personalizzato, se applicabile](/help/advanced-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)

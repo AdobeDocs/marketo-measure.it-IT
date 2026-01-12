@@ -1,27 +1,25 @@
 ---
-unique-page-id: 35586140
-description: Schema Data Warehouse - Marketo Measure - Documentazione del prodotto
-title: Data Warehouse schema
+description: Schema Data Warehouse
+title: Schema Data Warehouse
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: e9861f8032475d3e60a3bb3ebf67dfee520bbb75
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '21110'
+source-wordcount: '21106'
 ht-degree: 3%
 
 ---
 
-# Data Warehouse schema {#data-warehouse-schema}
+
+# Schema Data Warehouse {#data-warehouse-schema}
 
 Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti sui dati di attribuzione ovunque desideri e collegarli ad altri set di dati.
 
 >[!IMPORTANT]
->
->* Le righe con un valore per _DELETED_DATE verranno mantenute per 7 Snowflake e quindi rimosse.
->* I fusi orari utilizzati nel Snowflake sono conformi al tempo coordinato universale (UTC).
+> Le righe con un valore per _DELETED_DATE verranno mantenute per 7 giorni e quindi rimosse da Snowflake.
+> I fusi orari utilizzati in Snowflake sono conformi al tempo coordinato universale (UTC).
 
 >[!NOTE]
->
 >[Fai clic qui](#sample-queries) per visualizzare le query di esempio in fondo a questo articolo.
 
 ## Diagrammi di relazione entità {#entity-relationship-diagrams}
@@ -35,14 +33,14 @@ _Fare clic su un&#39;immagine per la versione a schermo intero_
 <table style="table-layout:auto">
  <tbody> 
   <tr> 
-   <th>Data Warehouse modello dati</th>
+   <th>Modello dati Data Warehouse</th>
    <th>Aggiunge il modello dati dimensionale</th>
   </tr> 
   <tr> 
    <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
-   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td> 
-  </tr> 
- </tbody> 
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Viste {#views}
@@ -122,19 +120,19 @@ Account importati dal sistema di origine.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
@@ -206,19 +204,19 @@ Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli acc
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -322,19 +320,19 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -509,19 +507,19 @@ Annunci importati da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -664,19 +662,19 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -1048,19 +1046,19 @@ Account annuncio importati da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -1364,19 +1362,19 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -1565,19 +1563,19 @@ Ad Forms importato da qualsiasi account Ad connesso.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
@@ -1891,19 +1889,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -1960,19 +1958,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -1993,7 +1991,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>Un ID univoco per il Buyer Attribution Touchpoint (BAT).</p>
+        <p>Un ID univoco per Buyer Attribution Touchpoint (BAT).</p>
       </td>
       <td>
         <p>BAT2_0060Z00000lFHtOQAW_</p>
@@ -2007,7 +2005,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>04.0&rbrace;53.000 09/01 2018:53:</p>
+        <p>04.0}53.000 09/01 2018:53:</p>
       </td>
     </tr>
     <tr>
@@ -2016,7 +2014,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’opportunità a cui è attribuito l’BAT.</p>
+        <p>ID dell’opportunità a cui è attribuito il BAT.</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2026,7 +2024,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>CONTACT_ID</td>
       <td>varchar</td>
       <td>
-        <p>ID del contatto associato all’BAT.</p>
+        <p>ID del contatto associato al BAT.</p>
       </td>
       <td>
         <p>0030Z00003K5bpKQAR</p>
@@ -2035,7 +2033,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>EMAIL</td>
       <td>varchar</td>
-      <td>Indirizzo e-mail associato all’BAT.</td>
+      <td>Indirizzo e-mail associato al BAT.</td>
       <td>person@adobe.com</td>
     </tr>
     <tr>
@@ -2044,7 +2042,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’account a cui viene attribuito l’BAT.</p>
+        <p>ID dell’account a cui è attribuito il BAT.</p>
       </td>
       <td>
         <p>0013100001otbIAAY</p>
@@ -2056,7 +2054,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del punto di contatto utente che ha generato l’BAT.</p>
+        <p>ID del punto di contatto utente che ha generato il BAT.</p>
       </td>
       <td>
         <p>person@adobe.com_00v1B00003ZbWzHQAV</p>
@@ -2077,7 +2075,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>VISITOR_ID</td>
       <td>varchar</td>
-      <td>ID del visitatore associato all’BAT.</td>
+      <td>ID del visitatore associato al BAT.</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
@@ -2384,7 +2382,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     </tr>
     <tr>
       <td>
-        <p>REGIONE</p>
+        <p>AREA GEOGRAFICA</p>
       </td>
       <td>varchar</td>
       <td>
@@ -2424,7 +2422,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori quali "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, generalmente impostato come "Campagna CRM" se è stato sincronizzato dal CRM, oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può essere impostato come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -2468,7 +2466,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     </tr>
     <tr>
       <td>
-        <p>NOME_ACCOUNT</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -2628,7 +2626,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del contenuto creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del Creative dall’account annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.182716179597</p>
@@ -2636,11 +2634,11 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     </tr>
     <tr>
       <td>
-        <p>NOME_CREATIVO</p>
+        <p>NOME_Creative</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome dell’elemento creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome del Creative dall’account annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Attribuzione marketing B2B</p>
@@ -2652,7 +2650,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del Creative dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scarica la Guida CMO</p>
@@ -2664,7 +2662,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       </td>
       <td>varchar</td>
       <td>
-        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del Creative dall’annuncio di ricerca, prelevata dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scopri come l’attribuzione misura il ROI collegando le attività di marketing ai ricavi</p>
@@ -3015,19 +3013,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -3035,7 +3033,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
 
 ### BIZ_ATTRIBUTION_AI_TOUCHPOINTS {#biz-attribution-ai-touchpoints}
 
-Dati generati dall’integrazione Attribution AI. Questi campi sono compilati solo per i clienti Marketo Measure Ultimate.
+Dati generati dall’integrazione di Attribution AI. Questi campi sono compilati solo per i clienti Marketo Measure Ultimate.
 
 <table>
 <thead>
@@ -3068,7 +3066,7 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
   <tr>
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
-    <td>ID evento MM originale per l’evento di conversione 
+    <td>ID evento MM originale per l’evento di conversione
     <br>corrisponde a un punto di contatto utente o a una transizione di fase</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
@@ -3172,19 +3170,19 @@ Dati generati dall’integrazione Attribution AI. Questi campi sono compilati so
   <tr>
     <td>_CREATED_DATE</td>
     <td>Timestamp_ntz</td>
-    <td>data di creazione del record nel Snowflake</td>
+    <td>data di creazione del record in Snowflake</td>
     <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>_MODIFIED_DATE</td>
     <td>Timestamp_ntz</td>
-    <td>data dell'ultima modifica del record nel Snowflake</td>
+    <td>data dell’ultima modifica apportata al record in Snowflake</td>
     <td>01/01/2020 01 :01:00.000</td>
   </tr>
   <tr>
     <td>_DELETED_DATE</td>
     <td>Timestamp_ntz</td>
-    <td>data in cui il record è stato eliminato nel Snowflake</td>
+    <td>data in cui il record è stato eliminato in Snowflake</td>
     <td>01/01/2020 01 :01:00.000</td>
   </tr>
 </tbody>
@@ -3427,19 +3425,19 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -3496,19 +3494,19 @@ Canali di marketing creati nell&#39;applicazione [!DNL Marketo Measure].
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell'ultima modifica del record nel Snowflake.</td>
+      <td>Data dell’ultima modifica apportata al record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -3685,19 +3683,19 @@ Contatti importati dal sistema di origine.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
@@ -3787,19 +3785,19 @@ Tassi di conversione della valuta importati dal sistema di origine.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -3921,7 +3919,7 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
     </tr>
     <tr>
       <td>
-        <p>NOME_ACCOUNT</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -4065,7 +4063,7 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del contenuto creativo estratto dalla connessione dell’annuncio.</p>
+        <p>ID del Creative estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.51749608028.266050115160</p>
@@ -4073,11 +4071,11 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
     </tr>
     <tr>
       <td>
-        <p>NOME_CREATIVO</p>
+        <p>NOME_Creative</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome del contenuto creativo estratto dalla connessione dell’annuncio.</p>
+        <p>Nome del Creative estratto dalla connessione dell’annuncio.</p>
       </td>
       <td>
         <p>Gartner Magic Quadrant 2019</p>
@@ -4091,7 +4089,7 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene un costo che può essere riassunto da Creative. (ovvero, per ottenere il costo creativo, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere riassunto da Creative. (ovvero, per ottenere Creative Cost, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -4312,19 +4310,19 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -4346,7 +4344,7 @@ Creative importate da qualsiasi account annuncio collegato.
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>Un ID univoco per la creatività.</p>
+        <p>Un ID univoco per Creative.</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -4357,7 +4355,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>DISPLAY_ID</p>
       </td>
       <td>varchar</td>
-      <td>ID creativo dal sistema di origine.</td>
+      <td>ID Creative dal sistema di origine.</td>
       <td>
         <p>10426699711</p>
       </td>
@@ -4368,7 +4366,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’account annuncio da cui è stata importata la creatività.</p>
+        <p>ID dell’account annuncio da cui è stato importato Creative.</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -4378,7 +4376,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome dell’account annuncio da cui è stata importata la creatività.</p>
+        <p>Nome dell’account annuncio da cui è stato importato Creative.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -4390,7 +4388,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’inserzionista per il settore creativo, in particolare per Doubleclick.</p>
+        <p>ID dell’inserzionista per Creative, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>300181641</p>
@@ -4402,7 +4400,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome dell'inserzionista per la creatività, in particolare per Doubleclick.</p>
+        <p>Nome dell’inserzionista per Creative, in particolare per Doubleclick.</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing analytics</p>
@@ -4414,7 +4412,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del gruppo di annunci per la creatività.</p>
+        <p>ID del gruppo di annunci per Creative.</p>
       </td>
       <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
@@ -4424,7 +4422,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome del gruppo di annunci per la creatività.</p>
+        <p>Nome del gruppo di annunci per Creative.</p>
       </td>
       <td>Set di annunci per l’annuncio B</td>
     </tr>
@@ -4434,7 +4432,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID della campagna per la creatività.</p>
+        <p>ID della campagna per Creative.</p>
       </td>
       <td>
         <p>ba.3284209.132855866</p>
@@ -4446,7 +4444,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome della campagna per la creatività.</p>
+        <p>Nome della campagna per Creative.</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4460,7 +4458,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se Creative è ancora attivo nel sistema di origine.</p>
+        <p>Indica se il Creative è ancora attivo nel sistema di origine.</p>
       </td>
       <td>
         <p>vero</p>
@@ -4474,7 +4472,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la creatività è stata eliminata o meno nel sistema di origine.</p>
+        <p>Indica se il Creative è stato eliminato nel sistema di origine.</p>
       </td>
       <td>
         <p>falso</p>
@@ -4508,7 +4506,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome della creatività, dal sistema di origine.</p>
+        <p>Nome del Creative, dal sistema di origine.</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4522,7 +4520,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se il componente Creative deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].</p>
+        <p>Indica se il Creative deve essere aggiornato per l'assegnazione tag [!DNL Marketo Measure].</p>
         <p>(Campo diagnostico utilizzato dall'elaborazione interna).</p>
       </td>
       <td>
@@ -4546,7 +4544,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>Oggetto o entità principale per questa tabella. In questo caso, "Creative".</p>
       </td>
       <td>
-        <p>Creativo</p>
+        <p>Creative</p>
       </td>
     </tr>
     <tr>
@@ -4555,7 +4553,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome del provider di annunci per il contenuto creativo.</p>
+        <p>Nome del provider di annunci per Creative.</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -4580,7 +4578,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>L’URL abbreviato e intuitivo visualizzato sul contenuto creativo.</p>
+        <p>L’URL abbreviato e intuitivo visualizzato sul Creative.</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4613,7 +4611,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>URL_ABBREVIATO</p>
       </td>
       <td>varchar</td>
-      <td>L’URL abbreviato e intuitivo visualizzato sul contenuto creativo. (Utilizzato solo per LinkedIn Ads).</td>
+      <td>L’URL abbreviato e intuitivo visualizzato sul Creative. (Utilizzato solo per gli annunci LinkedIn).</td>
       <td></td>
     </tr>
     <tr>
@@ -4622,7 +4620,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>Tipo di elemento creativo, che può essere Testo o Visualizzazione</p>
+        <p>Il tipo di Creative, che può essere Testo o Visualizzazione</p>
       </td>
       <td>
         <p>Testo</p>
@@ -4720,7 +4718,7 @@ Creative importate da qualsiasi account annuncio collegato.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID condivisione. (Utilizzato solo per LinkedIn Ads).</p>
+        <p>ID condivisione. (Utilizzato solo per gli annunci LinkedIn).</p>
       </td>
       <td>
         <p>urn:li:condivisione:6376987561897848832</p>
@@ -4739,19 +4737,19 @@ Creative importate da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -4796,7 +4794,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data dell'ultima modifica apportata all'evento dal sistema di origine.</p>
       </td>
       <td>
-        <p>08.0&rbrace;51.000 09/09/2018:39:</p>
+        <p>08.0}51.000 09/09/2018:39:</p>
       </td>
     </tr>
     <tr>
@@ -4914,19 +4912,19 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5041,7 +5039,7 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
         <p>Nome del tipo di attività, dal sistema di origine.</p>
       </td>
       <td>
-        <p>Chiamata</p>
+        <p>Invito</p>
       </td>
     </tr>
     <tr>
@@ -5077,19 +5075,19 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5178,19 +5176,19 @@ Tabella di tutte le valute ISO.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5317,19 +5315,19 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5428,19 +5426,19 @@ Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabell
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5663,19 +5661,19 @@ Pagine di destinazione scaricate da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5768,19 +5766,19 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -5791,8 +5789,7 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
 Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di contatto degli utenti, punti di contatto (BT), punti di contatto di attribuzione (BAT) e dati sui costi. Utilizzato internamente per supportare il reporting [!DNL Marketo Measure].
 
 >[!IMPORTANT]
->
->Marketo Measure renderà obsoleta questa tabella a metà del 2024. Se desideri crearlo, esegui [questa query SQL](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
+>Marketo Measure renderà obsoleta questa tabella a metà del 2024. Se desideri crearlo, esegui [questa query SQL](/help/data-warehouse/assets/BIZ_FACTS.sql).
 
 <table>
   <tbody>
@@ -6472,7 +6469,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>booleano</p>
       </td>
       <td>
-        <p>Indica se la riga contiene un costo che può essere riassunto da Creative. (ovvero, per ottenere il costo creativo, somma le righe in cui questa colonna è uguale a true).</p>
+        <p>Indica se la riga contiene un costo che può essere riassunto da Creative. (ovvero, per ottenere Creative Cost, sommare le righe in cui questa colonna è uguale a true).</p>
       </td>
       <td>
         <p>falso</p>
@@ -6543,19 +6540,19 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -6664,7 +6661,7 @@ Invii di moduli acquisiti.
         <p>URL in cui è stato inviato il modulo, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6812,19 +6809,19 @@ Invii di moduli acquisiti.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -6918,7 +6915,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>URL in cui è stata distribuita l’impression, inclusi eventuali parametri di query.</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -7028,7 +7025,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
     </tr>
     <tr>
       <td>
-        <p>REGIONE</p>
+        <p>AREA GEOGRAFICA</p>
       </td>
       <td>varchar</td>
       <td>
@@ -7080,7 +7077,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
     </tr>
     <tr>
       <td>
-        <p>NOME_ACCOUNT</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -7234,7 +7231,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       </td>
       <td>varchar</td>
       <td>
-        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
+        <p>Previsto null poiché non è presente alcun Creative nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>
         <p>null</p>
@@ -7242,11 +7239,11 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
     </tr>
     <tr>
       <td>
-        <p>NOME_CREATIVO</p>
+        <p>NOME_Creative</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
+        <p>Previsto null poiché non è presente alcun Creative nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>null</td>
     </tr>
@@ -7256,7 +7253,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       </td>
       <td>varchar</td>
       <td>
-        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
+        <p>Previsto null poiché non è presente alcun Creative nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>null</td>
     </tr>
@@ -7266,7 +7263,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       </td>
       <td>varchar</td>
       <td>
-        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
+        <p>Previsto null poiché non è presente alcun Creative nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>null</td>
     </tr>
@@ -7276,7 +7273,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       </td>
       <td>varchar</td>
       <td>
-        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
+        <p>Previsto null poiché non è presente alcun Creative nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>null</td>
     </tr>
@@ -7286,7 +7283,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       </td>
       <td>varchar</td>
       <td>
-        <p>Previsto null poiché non è presente alcun elemento creativo nella gerarchia di Doubleclick per le impression.</p>
+        <p>Previsto null poiché non è presente alcun Creative nella gerarchia di Doubleclick per le impression.</p>
       </td>
       <td>null</td>
     </tr>
@@ -7453,19 +7450,19 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -7818,19 +7815,19 @@ Parole chiave importate da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -8037,19 +8034,19 @@ Pagine di destinazione importate da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -8330,19 +8327,19 @@ Lead importati dal sistema di origine.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -8571,19 +8568,19 @@ Transizioni nell&#39;area intermedia per lead o contatti.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -8724,7 +8721,7 @@ Opportunità importate dal sistema di origine.
       <td>varchar</td>
       <td>
         <p>L’ID del lead correlato che è stato convertito in questa opportunità.</p>
-        <p>Questo campo non è impostato e restituisce null nel Snowflake per tutti i clienti.</p>
+        <p>Questo campo non è impostato e restituisce null in Snowflake per tutti i clienti.</p>
       </td>
       <td>
         <p>null</p>
@@ -8737,7 +8734,7 @@ Opportunità importate dal sistema di origine.
       <td>varchar</td>
       <td>
         <p>L’e-mail del lead correlato che è stato convertito in questa opportunità.</p>
-        <p>Questo campo non è impostato e restituisce null nel Snowflake per tutti i clienti.</p>
+        <p>Questo campo non è impostato e restituisce null in Snowflake per tutti i clienti.</p>
       </td>
       <td>
         <p>null</p>
@@ -8852,19 +8849,19 @@ Opportunità importate dal sistema di origine.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
@@ -8898,7 +8895,7 @@ Transizioni nell&#39;area intermedia per le opportunità.
         <p>Un ID univoco per la transizione.</p>
       </td>
       <td>
-        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Pianificata-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Pianificato-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
       </td>
     </tr>
     <tr>
@@ -9112,19 +9109,19 @@ Transizioni nell&#39;area intermedia per le opportunità.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -9333,7 +9330,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>URL da cui ha avuto origine la visualizzazione pagina, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9393,19 +9390,19 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -9479,7 +9476,7 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>
         <p>Nome dell’inserzionista per il posizionamento, in particolare per Doubleclick.</p>
       </td>
-      <td>[!DNL Marketo Measure] Analytics</td>
+      <td>[!DNL Marketo Measure] Analisi</td>
     </tr>
     <tr>
       <td>
@@ -9629,19 +9626,19 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record del Snowflake</td>
+      <td>Data di creazione del record da parte di Snowflake</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di modifica del Snowflake del record</td>
+      <td>Data di modifica del record di Snowflake</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di eliminazione del record da parte del Snowflake, se è stato eliminato</td>
+      <td>Data di eliminazione del record da parte di Snowflake, se è stato eliminato</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -9698,19 +9695,19 @@ Valori del segmento come definiti nell&#39;applicazione [!DNL Marketo Measure].
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -9777,19 +9774,19 @@ Mappa il nome del segmento personalizzato sul relativo valore di categoria. I no
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -9888,7 +9885,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Nome della pagina web.</p>
       </td>
       <td>
-        <p>Google Analytics Salesforce | [!DNL Marketo Measure]</p>
+        <p>Salesforce Google Analytics | [!DNL Marketo Measure]</p>
       </td>
     </tr>
     <tr>
@@ -9912,7 +9909,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>URL della prima visualizzazione pagina della sessione, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -10069,7 +10066,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>NOME_ACCOUNT</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10225,7 +10222,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>varchar</td>
       <td>
-        <p>ID della creatività da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del Creative da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.83558988035</p>
@@ -10233,11 +10230,11 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>NOME_CREATIVO</p>
+        <p>NOME_Creative</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome della creatività da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome del Creative da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Integrare GA e Salesforce</p>
@@ -10249,7 +10246,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>varchar</td>
       <td>
-        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del Creative dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Integrare Salesforce &amp; Analytics In</p>
@@ -10261,7 +10258,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       </td>
       <td>varchar</td>
       <td>
-        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del Creative dall’annuncio di ricerca, prelevata dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Ottimizza per i ricavi. Scopri come.</p>
@@ -10399,7 +10396,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     </tr>
     <tr>
       <td>
-        <p>REGIONE</p>
+        <p>AREA GEOGRAFICA</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10536,19 +10533,19 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -10718,7 +10715,7 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>
         <p>Nome del sito, dal sistema di origine.</p>
       </td>
-      <td>Ricavi</td>
+      <td>Entrate</td>
     </tr>
     <tr>
       <td>
@@ -10778,19 +10775,19 @@ Siti importati da qualsiasi account annuncio collegato.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -10917,7 +10914,7 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
         <p>Nome della campagna per il collegamento del sito</p>
       </td>
       <td>
-        <p>Marchio</p>
+        <p>Brand</p>
       </td>
     </tr>
     <tr>
@@ -11067,19 +11064,19 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record del Snowflake</td>
+      <td>Data di creazione del record da parte di Snowflake</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di modifica del Snowflake del record</td>
+      <td>Data di modifica del record di Snowflake</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di eliminazione del record da parte del Snowflake, se è stato eliminato</td>
+      <td>Data di eliminazione del record da parte di Snowflake, se è stato eliminato</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -11250,19 +11247,19 @@ Elenco delle fasi importate o definite nell&#39;applicazione [!DNL Marketo Measu
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -11284,7 +11281,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>Un ID univoco per il Buyer Touchpoint (BT).</p>
+        <p>Un ID univoco per Buyer Touchpoint (BT).</p>
       </td>
       <td>
         <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
@@ -11305,7 +11302,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>EMAIL</p>
       </td>
       <td>varchar</td>
-      <td>Indirizzo e-mail associato all’BT.</td>
+      <td>Indirizzo e-mail associato al BT.</td>
       <td>
         <p>person@adobe.com</p>
       </td>
@@ -11314,7 +11311,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       <td>CONTACT_ID</td>
       <td>varchar</td>
       <td>
-        <p>ID del contatto associato all’BT.</p>
+        <p>ID del contatto associato al BT.</p>
       </td>
       <td>0030Z00003K5bpKQAR</td>
     </tr>
@@ -11324,7 +11321,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID dell’account associato all’BT.</p>
+        <p>ID dell’account associato al BT.</p>
       </td>
       <td>
         <p>0013100001lSLScAAO</p>
@@ -11336,7 +11333,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del lead associato all’BT.</p>
+        <p>ID del lead associato al BT.</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -11360,7 +11357,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del punto di contatto utente che ha generato l’BT.</p>
+        <p>ID del punto di contatto utente che ha generato il BT.</p>
       </td>
       <td>
         <p>person@adobe.com_2018-08-29:18-14-53-8102030.10df92cbb414</p>
@@ -11369,7 +11366,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     <tr>
       <td>VISITOR_ID</td>
       <td>varchar</td>
-      <td>ID del visitatore associato all’BT.</td>
+      <td>ID del visitatore associato al BT.</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
@@ -11613,7 +11610,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -11682,7 +11679,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     </tr>
     <tr>
       <td>
-        <p>REGIONE</p>
+        <p>AREA GEOGRAFICA</p>
       </td>
       <td>varchar</td>
       <td>
@@ -11722,7 +11719,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori quali "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, generalmente impostato come "Campagna CRM" se è stato sincronizzato dal CRM, oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può essere impostato come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -11766,7 +11763,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     </tr>
     <tr>
       <td>
-        <p>NOME_ACCOUNT</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -11918,7 +11915,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del contenuto creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del Creative dall’account annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>li.502664737.138949954.66452504</p>
@@ -11926,11 +11923,11 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     </tr>
     <tr>
       <td>
-        <p>NOME_CREATIVO</p>
+        <p>NOME_Creative</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome dell’elemento creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome del Creative dall’account annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -11942,7 +11939,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del Creative dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Generazione lead completata</p>
@@ -11954,7 +11951,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       </td>
       <td>varchar</td>
       <td>
-        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del Creative dall’annuncio di ricerca, prelevata dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scarica la guida definitiva al marketing della pipeline: https://lnkd.in/e9xYj5M</p>
@@ -12160,7 +12157,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch). È previsto 0 poiché si tratta di un BT.</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch). Il valore previsto è 0 poiché si tratta di un BT.</p>
       </td>
       <td>
         <p>0</p>
@@ -12174,7 +12171,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>numero(22,19)</p>
       </td>
       <td>
-        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). È previsto 0 poiché si tratta di un BT.</p>
+        <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Il valore previsto è 0 poiché si tratta di un BT.</p>
       </td>
       <td>
         <p>0</p>
@@ -12183,7 +12180,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     <tr>
       <td>PERCENTUALE_MODELLO_PERSONALIZZATO</td>
       <td>numero(22,19)</td>
-      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). È previsto 0 poiché si tratta di un BT.</p>
+      <td>La percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello personalizzato (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch). Il valore previsto è 0 poiché si tratta di un BT.</p>
       </td>
       <td>0</td>
     </tr>
@@ -12310,19 +12307,19 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -12385,19 +12382,19 @@ Aggregazione di URL da pagine di destinazione, pagine di provenienza e viste pag
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -12628,7 +12625,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12676,7 +12673,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Una pagina modulo non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo - Non elaborato".</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guida</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guida</p>
       </td>
     </tr>
     <tr>
@@ -12705,7 +12702,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>REGIONE</p>
+        <p>AREA GEOGRAFICA</p>
       </td>
       <td>varchar</td>
       <td>
@@ -12745,7 +12742,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, in genere impostato come "Campagna CRM" se è stato sincronizzato dal sistema di gestione delle relazioni con i clienti oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, potrebbe trattarsi di valori quali "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
+        <p>Utilizzato per definire l’origine che ha generato il punto di contatto. Questo può essere analizzato dall'URL da utm_source, generalmente impostato come "Campagna CRM" se è stato sincronizzato dal CRM, oppure se [!DNL Marketo Measure] è in grado di risolvere un annuncio, può essere impostato come "Google AdWords" o "Facebook". Nel sistema di gestione delle relazioni con i clienti è indicato come "Touchpoint Source".</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -12789,7 +12786,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>NOME_ACCOUNT</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -12892,7 +12889,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Nome della campagna dall’account annuncio da cui è stato risolto l’annuncio.</p>
       </td>
       <td>
-        <p>Marchio</p>
+        <p>Brand</p>
       </td>
     </tr>
     <tr>
@@ -12945,7 +12942,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>ID del contenuto creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>ID del Creative dall’account annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.195329631298</p>
@@ -12953,11 +12950,11 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     </tr>
     <tr>
       <td>
-        <p>NOME_CREATIVO</p>
+        <p>NOME_Creative</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>Nome dell’elemento creativo dall’account dell’annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>Nome del Creative dall’account annuncio da cui è stato risolto l’annuncio. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Sito ufficiale</p>
@@ -12969,7 +12966,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>La prima riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La prima riga del Creative dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Pianificazione ricavi e attribuzione</p>
@@ -12981,7 +12978,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       </td>
       <td>varchar</td>
       <td>
-        <p>La seconda riga del contenuto creativo dall’annuncio di ricerca, estratto dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
+        <p>La seconda riga del Creative dall’annuncio di ricerca, prelevata dall’account dell’annuncio da cui l’annuncio è stato risolto. Questo vale per Google AdWords e Bing Ads (ricerca).</p>
       </td>
       <td>
         <p>Scopri perché più di 250 aziende scelgono [!DNL Marketo Measure] per l’attribuzione marketing. Prendi una demo!</p>
@@ -13170,19 +13167,19 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -13265,7 +13262,7 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
       <td>varchar</td>
       <td>URL della visualizzazione pagina, inclusi eventuali parametri di query.</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>
@@ -13331,25 +13328,25 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
     <tr>
       <td>MAPPING_COOKIE_ID</td>
       <td>varchar</td>
-      <td>Adobe ECID per l’ID organizzazione specificato.</td>
+      <td>Adobe ECID per l’ID organizzazione fornito.</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data di creazione del record nel Snowflake.</td>
+      <td>Data di creazione del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data dell’ultima modifica apportata al record nel Snowflake.</td>
+      <td>Data dell’ultima modifica del record in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Data in cui il record è stato contrassegnato come eliminato nel Snowflake.</td>
+      <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
       <td>01/01/2020 01 :01:00.000</td>
     </tr>
   </tbody>
@@ -13357,11 +13354,11 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
 
 ## Query di esempio {#sample-queries}
 
-**Quanti punti di contatto dell&#39;acquirente (BT) erano presenti il mese scorso per ogni canale/sottocanale?**
+**Quanti punti di contatto dell&#39;acquirente erano presenti per ogni canale/sottocanale il mese scorso?**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
- 
+
 select trim(split(ch.name,'.')[0])  as channel
       ,trim(split(ch.name,'.')[1])  as subchannel
       ,count(bt.id)                 as buyer_touchpoint_count
@@ -13383,7 +13380,7 @@ group by 1,2
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
- 
+
 select trim(split(ch.name,'.')[0])  as channel
       ,sum(opp.amount*(bat.full_path_percentage/100))   as attributed_revenue
   from biz_user_touchpoints         ut
@@ -13450,7 +13447,6 @@ order by 1
 **Mostra tutti i punti di contatto di attribuzione dell&#39;acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
 
 >[!NOTE]
->
 >Questa query restituisce ricavi attribuiti per il modello di forma w. Modifica il modello aggiornando il campo nel calcolo dei ricavi attribuiti.
 
 ```

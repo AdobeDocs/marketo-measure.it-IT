@@ -1,21 +1,21 @@
 ---
-unique-page-id: 18874606
 description: Parametri UTM - [!DNL Marketo Measure]
 title: Parametri UTM
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
+
 
 # Parametri UTM {#utm-parameters}
 
 Assegnare tag agli URL è un modo semplice ed efficace per acquisire dati sulle attività di marketing digitale. Si tratta del processo di aggiunta di parametri alla fine degli URL che raccolgono e registrano dati. I parametri più comunemente utilizzati sono i moduli UTM (Urchin Tracking Modules), supportati da Google. Sono disponibili cinque parametri UTM principali: Medium, Source, Campaign, Content e Term. Questi sono descritti più dettagliatamente nella sezione successiva.
 
-I parametri UTM possono essere aggiunti manualmente agli URL o aggiunti tramite l’assegnazione tag automatica con determinate piattaforme, ad esempio AdWords. L’assegnazione automatica dei tag automatizza il processo di aggiunta dei parametri agli URL. È inoltre disponibile l&#39;opzione di [generatori URL](https://ga-dev-tools.web.app/campaign-url-builder/){target="_blank"} per velocizzare l&#39;assegnazione tag agli URL manualmente. Con un generatore di URL, puoi semplicemente specificare i valori da utilizzare per ciascun parametro e il generatore formatta l’URL al tuo posto.
+I parametri UTM possono essere aggiunti manualmente agli URL o aggiunti tramite l’assegnazione tag automatica con determinate piattaforme, ad esempio AdWords. L’assegnazione automatica dei tag automatizza il processo di aggiunta dei parametri agli URL. È inoltre disponibile l&#39;opzione di [generatori URL](https://ga-dev-tools.web.app/campaign-url-builder/){target="_blank"} per velocizzare l&#39;assegnazione di tag agli URL manualmente. Con un generatore di URL, puoi semplicemente specificare i valori da utilizzare per ciascun parametro e il generatore formatta l’URL al tuo posto.
 
 ## Cosa sono i parametri UTM? {#what-are-utm-parameters}
 
@@ -38,7 +38,7 @@ Scopri le [best practice per la configurazione dei parametri UTM](/help/channel-
 * Indica il canale di livello più alto.
 * Social media, e-mail, ricerca organica e ricerca a pagamento sono tutti esempi di potenziali valori Medium.
 * Questo parametro mappa i dati al campo &#39;Medium&#39; di [!DNL Marketo Measure].
-* _[!DNL Marketo Measure]Best practice:_ Non utilizzare questo campo per richiamare un sottocanale, altrimenti potrebbero verificarsi problemi durante la generazione di report sul canale effettivo. Utilizzalo per identificare il tuo veicolo di marketing o canale. Ad esempio, se desideri utilizzare l’e-mail per commercializzare il prodotto, il mezzo è l’e-mail.
+* _[!DNL Marketo Measure] Best Practice :_Non utilizzare questo campo per richiamare un sottocanale, altrimenti potrebbero verificarsi problemi durante la generazione di report sul canale effettivo. Utilizzalo per identificare il tuo veicolo di marketing o canale. Ad esempio, se desideri utilizzare l’e-mail per commercializzare il prodotto, il mezzo è l’e-mail.
 
 **utm_source**
 
@@ -48,14 +48,14 @@ Scopri le [best practice per la configurazione dei parametri UTM](/help/channel-
    * In questo esempio, [!DNL Facebook] è il valore Source. Altri esempi sono Twitter e Instagram. Se il Medium UTM è [!DNL Paid Search], il Source UTM potrebbe essere AdWords o BingAds.
 
 * Questo parametro è mappato al campo &#39;Touchpoint Source&#39; di [!DNL Marketo Measure] in SFDC.
-* _[!DNL Marketo Measure]Best practice:_ Questo parametro tiene traccia dell&#39;origine del traffico, pertanto non è adatto per indicare il tipo di annuncio, ad esempio retargeting, sponsorizzato e così via. È meglio utilizzarlo per tenere traccia del sottocanale di livello superiore. Ricordate, state rispondendo alla domanda &quot;Da dove viene il mio traffico?&quot; Stai cercando il referente. In questo esempio, UTM Source è il luogo in cui si trova l’annuncio (non la pagina web effettiva, in quanto viene tracciata automaticamente all’esterno dei tag). Se tieni traccia di una campagna e-mail goccia a goccia, la sorgente è la posta elettronica goccia a goccia.
+* _[!DNL Marketo Measure] Best Practice :_Questo parametro tiene traccia dell&#39;origine del traffico, pertanto non è adatto per indicare il tipo di annuncio, ad esempio retargeting, sponsorizzato e così via. È meglio utilizzarlo per tenere traccia del sottocanale di livello superiore. Ricordate, state rispondendo alla domanda &quot;Da dove viene il mio traffico?&quot; Stai cercando il referente. In questo esempio, UTM Source è il luogo in cui si trova l’annuncio (non la pagina web effettiva, in quanto viene tracciata automaticamente all’esterno dei tag). Se tieni traccia di una campagna e-mail goccia a goccia, la sorgente è la posta elettronica goccia a goccia.
 
 **utm_campaign**
 
 * La campagna viene utilizzata per identificare una campagna di marketing specifica.
 * Risponde alla domanda: &quot;Perché vengono da te?&quot;
 * Utilizzare questo tag per indicare il nome della campagna pubblicitaria esistente in [!DNL Google AdWords] o [!DNL BingAds] o per indicare il nome con cui si identifica la campagna internamente. Puoi anche utilizzare questo tag per specificare altre informazioni, ad esempio la geolocalizzazione o il tipo di rete degli annunci.
-* Questo parametro è mappato al campo &#39;Nome campagna annuncio&#39; di [!DNL Marketo Measure] in SFDC.
+* Questo parametro è mappato al campo &#39;Nome campagna annunci&#39; di [!DNL Marketo Measure] in SFDC.
 * _[!DNL Marketo Measure]Best Practice_: quando si determinano i nomi delle campagne, evitare di utilizzare segni di punteggiatura o spazi vuoti tra le parole, poiché l&#39;utilizzo di tali parole può causare errori di codifica del browser. Per ottenere risultati ottimali, utilizza i caratteri di sottolineatura.
 
 **utm_content**
@@ -74,9 +74,9 @@ Ogni parametro raccoglie informazioni rilevanti per il valore assegnato. Il valo
 
 Ecco un grafico dei parametri UTM [!DNL Marketo Measure] analizzati e il corrispondente campo punto di contatto a cui sono associati:
 
-| **Parametro UTM** | **Campo [!DNL Marketo Measure] Corrispondente** |
+| Parametro UTM | Campo [!DNL Marketo Measure] corrispondente |
 |---|---|
-| utm_medium | Medium |
+| utm_medium | Canale |
 | utm_source | Source punto di contatto |
 | utm_campaign | Nome campagna pubblicitaria |
 | utm_content | Contenuto annuncio |

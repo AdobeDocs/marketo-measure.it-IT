@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874596
 description: Configurazione canale personalizzato online - [!DNL Marketo Measure]
 title: Impostazione canale personalizzato online
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
+
 
 # Impostazione canale personalizzato online {#online-custom-channel-setup}
 
@@ -32,15 +32,15 @@ Aspetti da considerare:
 
 Il primo passaggio consiste nel scaricare il foglio di calcolo del canale personalizzato dall&#39;app [!DNL Marketo Measure]. Passa a **Impostazioni** nella scheda **Account personale** e seleziona **Online**. È possibile selezionare **Scarica modello originale** o **Scarica regole correnti**.
 
-![](assets/1.png)
+![Pagina Impostazioni che mostra la configurazione del canale online con le opzioni Scarica modello originale e Scarica regole correnti](assets/1.png)
 
 Il foglio di calcolo è composto da sette colonne:
 
-![](assets/2.png)
+![Foglio di calcolo del canale personalizzato che mostra sette colonne: Canale, Sottocanale, Campagna, Medium, Source, Pagina di destinazione e Sito Web di riferimento](assets/2.png)
 
 * **Canale:** aggiungi qui i tuoi vari canali di marketing
 * **Sottocanale:** aggiungi qui i sottocanali corrispondenti
-* **Campagna:** aggiungi qui i nomi delle campagne, sia che il valore provenga da UTM o da campagne Salesforce per la funzionalità [!DNL Marketo Measure] attività
+* **Campagna:** aggiungi qui i nomi delle campagne, sia che il valore provenga da UTM o da Salesforce Campaign per la funzionalità [!DNL Marketo Measure] attività
 * **Medium:** la colonna medium rappresenta il valore del parametro utm_medium
 * **Source:** la colonna di origine rappresenta il valore del parametro utm_source
 * **Pagina di destinazione:** aggiungi qui la pagina di destinazione
@@ -50,11 +50,11 @@ L’ottava colonna indica quali regole non è possibile eliminare dal foglio di 
 
 Le righe rappresentano le regole e l&#39;ordine in cui [!DNL Marketo Measure] assegna la priorità ai dati. La prima riga ha priorità rispetto alla seconda riga, la seconda riga ha priorità rispetto alla terza e così via. Quando determina in quale canale di marketing e sottocanale inserire i punti di contatto, [!DNL Marketo Measure] legge dall&#39;alto verso il basso, da sinistra a destra, finché non trova una riga che soddisfa i criteri del punto di contatto. (Se un punto di contatto ha un `utm_source=Facebook`, viene inserito nel bucket del canale Social.Facebook a causa della regola 15 nella schermata).
 
-![](assets/3.png)
+![Foglio di calcolo delle regole del canale che mostra l&#39;ordine di priorità dall&#39;alto verso il basso con l&#39;esempio di regola Social.Facebook evidenziato](assets/3.png)
 
 [!DNL Marketo Measure] viene fornito con 12 canali predefiniti per il tuo utilizzo. Questi canali sono correlati alle piattaforme con cui [!DNL Marketo Measure] è completamente integrato. Che li utilizzi o meno, non rimuoverli. Se ad esempio utilizzi una di queste piattaforme, Bing Ads, ma preferisci utilizzare una convenzione di denominazione diversa per il canale o il sottocanale, potrai aggiornare il nome. Un esempio è mostrato nell&#39;immagine seguente.
 
-![](assets/4.png)
+![Regole di canale predefinite che mostrano 12 piattaforme integrate con nomi di canali e sottocanali personalizzabili](assets/4.png)
 
 Anche la struttura delle norme è importante. Le regole possono sembrare informazioni ripetute e dati mancanti, ma questa struttura è intenzionale. Per un ordinamento accurato dei dati, è necessario mappare separatamente ogni singola origine sul canale appropriato, anche le origini che condividono sottocanali e canali. Più sono dettagliate e dettagliate le regole, più sono approfonditi i risultati. In pratica, è consigliabile scrivere una regola dettagliata per ogni attività di marketing che desideri monitorare.
 
@@ -62,13 +62,13 @@ Considera la seguente situazione: hai altri annunci che non desideri monitorare 
 
 Ogni parametro o componente della regola viene mappato separatamente al canale. Ad esempio, quando [!DNL Marketo Measure] ha [!DNL Facebook] dati da ordinare, cerca le regole relative a [!DNL Facebook]. Esegue la scansione dall&#39;alto verso il basso. Nell&#39;esempio illustrato di seguito, [!DNL Marketo Measure] comprenderebbe che per il primo sottocanale [!DNL Facebook], tutto ciò che deve leggere è il parametro di origine per rilasciare i dati nel bucket di quella regola.
 
-![](assets/5.png)
+![Esempio di regole del canale Facebook che mostra più righe con parametri diversi mappati a sottocanali](assets/5.png)
 
 La regola successiva richiede solo il parametro medium, quindi tutti i dati con quel parametro vengono inseriti in questo canale. Infine per [!DNL Facebook], tutti i dati provenienti dall&#39;URL di Facebook vengono inseriti nell&#39;ultimo bucket di Facebook.
 
 Il canale predefinito &quot;Altro&quot; esiste per acquisire dati che non soddisfano i criteri di alcuna regola. Alcuni bucket nell&#39;altro canale contengono asterischi (&#42;). Questi asterischi rappresentano caratteri jolly che fungono da modello.
 
-![](assets/6.png)
+![Altre regole di canale che mostrano asterischi con caratteri jolly come bucket catch-all per dati non corrispondenti](assets/6.png)
 
 Poiché la logica [!DNL Marketo Measure] funziona dall&#39;alto verso il basso, la regola con caratteri jolly, indicata con un asterisco (&#42;), deve trovarsi alla fine del foglio regole. Tutti i dati che non vengono rilevati o ordinati dalle altre regole vengono aggiunti a questo bucket di caratteri jolly.
 

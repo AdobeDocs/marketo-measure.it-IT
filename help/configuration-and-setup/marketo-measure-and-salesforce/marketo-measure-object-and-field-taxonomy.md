@@ -1,25 +1,25 @@
 ---
-unique-page-id: 18874584
 description: '[!DNL Marketo Measure] Tassonomia di oggetti e campi - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] tassonomia di oggetti e campi'
 exl-id: 67f1cac8-e2b4-45cc-b1c9-58bf4e1a760d
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
+
 
 # [!DNL Marketo Measure] tassonomia di oggetti e campi {#marketo-measure-object-and-field-taxonomy}
 
 Di seguito è riportato un diagramma di flusso che rappresenta la correlazione tra [!DNL Marketo Measure] oggetti personalizzati e [!DNL Salesforce] oggetti standard.
 
-![](assets/1-2.png)
+![ 2](assets/1-2.png)
 
 Per l&#39;immagine di dimensioni intere, [fare clic qui](assets/bizible-object-and-field-taxonomy-graph-full.png).
 
-Le definizioni dei campi [!DNL Marketo Measure] presenti in ciascun oggetto [&#x200B; sono disponibili qui](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md).
+Le definizioni dei campi [!DNL Marketo Measure] presenti in ciascun oggetto [ sono disponibili qui](/help/glossary.md).
 
 ## Domande frequenti {#faq}
 

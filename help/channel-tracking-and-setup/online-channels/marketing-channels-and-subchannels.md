@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874682
 description: Canali e sottocanali marketing - [!DNL Marketo Measure]
 title: Canali marketing e sottocanali
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 0ba036e7ebba77d870931704a59b19011e84271e
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
+
 
 # Canali marketing e sottocanali {#marketing-channels-and-subchannels}
 
@@ -49,7 +49,7 @@ Il diagramma seguente illustra un esempio di canale di marketing, sottocanale e 
 
 In questo caso, il contenuto a cui l’utente sta tentando di accedere è la Guida introduttiva all’attribuzione B2B di marketing. [!DNL Marketo Measure] analizzerà l&#39;URL che porta a questo contenuto utilizzando le regole di canale impostate in questa organizzazione e le utilizzerà per &quot;bucket&quot; di questo lead nel canale di marketing &quot;Paid Social&quot; e nel sottocanale &quot;LinkedIn&quot;.
 
-![](assets/1.jpg)
+![Diagramma che collega canale di marketing, sottocanale e contenuto da un URL con tag](assets/1.jpg)
 
 Altri esempi...
 

@@ -1,20 +1,19 @@
 ---
-unique-page-id: 18874574
 description: '[!DNL Marketo Measure] campi in Standard [!DNL Salesforce] Oggetti - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] '
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
 
 ---
 
+
 # [!DNL Marketo Measure] campi in [!DNL Salesforce] oggetti standard {#marketo-measure-fields-on-standard-salesforce-objects}
 
 >[!NOTE]
->
 >Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Scopri i vari campi [!DNL Marketo Measure] aggiunti agli oggetti standard [!DNL Salesforce].

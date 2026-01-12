@@ -1,22 +1,21 @@
 ---
-unique-page-id: 18874718
 description: Creazione di una visualizzazione elenco campagne per  [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]
 title: Creazione di una visualizzazione elenco campagne per [!DNL Salesforce] Campagne
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
+
 # Creazione di una visualizzazione elenco campagne per [!DNL Salesforce] campagne {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 Scopri come creare una Vista a elenco per le campagne da sincronizzare con i punti di contatto dell’acquirente.
 
 >[!NOTE]
->
 >Questo articolo riguarda un processo obsoleto. Invitiamo gli utenti a utilizzare il [nuovo processo in-app migliorato](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 La visualizzazione elenco di Campaign che è possibile creare consente di avere una posizione di destinazione per visualizzare e gestire i campi Tipo e Abilita punti di contatto dell&#39;acquirente per garantire che tutte le campagne [!DNL Salesforce] che informano i canali di marketing offline siano configurate correttamente.
@@ -43,5 +42,4 @@ La visualizzazione elenco di Campaign che è possibile creare consente di avere 
    * Assicurati di disporre delle autorizzazioni per i campi
 
 >[!MORELIKETHIS]
->
 >[Risoluzione dei problemi comuni relativi alla modifica in linea della vista a elenco](http://help.salesforce.com/articleView?id=000003911&language=en_US&type=1){target="_blank"}

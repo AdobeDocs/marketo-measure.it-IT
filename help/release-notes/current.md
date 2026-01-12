@@ -3,12 +3,13 @@ description: Note sulla versione corrente - [!DNL Marketo Measure]
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9ea72d0e1cf0f754cc8fe844944b93705fb2b12f
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
+
 
 # Note sulla versione: 2024 {#release-notes-2024}
 
@@ -24,13 +25,13 @@ Inoltre, le sessioni che utilizzano l’accesso tramite social network (Google, 
 
 Per i nuovi clienti, ora il comportamento predefinito è il riporto del canale di sessione. I clienti esistenti possono abilitare questa funzione attivando l’opzione Session Channel Carryover (Riporto canale sessione) in Settings (Impostazioni) > Everytouch Attribution (Attribuzione Everytouch). Una volta attivata, questa impostazione non può essere annullata.
 
-Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/it/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### Dashboard ROI per parola chiave
 
 La nuova dashboard del ROI delle parole chiave offre informazioni dettagliate sulle prestazioni delle campagne di ricerca a pagamento, fornendo una panoramica completa dei costi a livello di parola chiave, dei ricavi attribuiti e dei lead e delle opportunità generati. Questa dashboard consente di valutare il ROI di ogni parola chiave in Google Adwords, LinkedIn, Bing Ads e così via.
 
-Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/it/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### Regole di segmento migliorate
 
@@ -63,8 +64,6 @@ Per aiutarti ad adattarti a questa modifica, abbiamo creato la documentazione su
 
 ## Versione Q3 {#q3-release}
 
-<p>
-
 ### Promemoria: deprecazioni dal campo Salesforce - 14 giugno
 
 Come annunciato lo scorso anno, [elimineremo gradualmente i processi di esportazione negli oggetti lead/contatto](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} per semplificare l&#39;integrazione ed eliminare la necessità di esportare in oggetti standard Salesforce. Puoi ottenere gli stessi dati dagli oggetti punto di contatto seguendo i passaggi [qui documentati](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. Inoltre, condivideremo la documentazione sulla creazione di flussi di lavoro per aggiungere questi dati all’oggetto Lead/Contatto. La rimozione avrà effetto dal 14 giugno 2024.
@@ -76,7 +75,7 @@ Questa modifica apporterà due vantaggi chiave:
 
 ### Dashboard opportunità attribuita
 
-Siamo entusiasti di presentare il nuovo [dashboard delle opportunità attribuite](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}, progettato per fornire una visione completa del modo in cui le attività di marketing contribuiscono alle opportunità di pipeline sia nascenti che mature. Questa dashboard consente di approfondire i dettagli di ogni opportunità aperta e chiusa attribuibile alle strategie, con la flessibilità di filtrare per fase di opportunità. Fornisce informazioni sui canali, i sottocanali o le campagne con la classificazione più alta in termini di quantità di opportunità attribuita e visualizza l’importo totale dell’opportunità attribuita insieme al conteggio delle opportunità aperte e chiuse attribuite.
+Siamo entusiasti di presentare il nuovo [dashboard delle opportunità attribuite](/help/marketo-measure-discover-ui/attributed-opportunity-dashboard.md){target="_blank"}, progettato per fornire una visione completa del modo in cui le attività di marketing contribuiscono alle opportunità di pipeline sia nascenti che mature. Questa dashboard consente di approfondire i dettagli di ogni opportunità aperta e chiusa attribuibile alle strategie, con la flessibilità di filtrare per fase di opportunità. Fornisce informazioni sui canali, i sottocanali o le campagne con la classificazione più alta in termini di quantità di opportunità attribuita e visualizza l’importo totale dell’opportunità attribuita insieme al conteggio delle opportunità aperte e chiuse attribuite.
 
 ### Sincronizzazione cookie Marketo Engage per Marketo Measure Ultimate
 
@@ -89,22 +88,18 @@ Marketo Engage Cookie Sync è ora disponibile per Marketo Measure Ultimate. Per 
 
 Precedentemente disponibile solo per i clienti di livello 3, la funzione Boomerang Stage è disponibile anche per tutti i clienti di livello 2 a partire dal 13 giugno 2024. Per informazioni più dettagliate su questa funzione, consulta la documentazione di seguito.
 
-* [Stadi di Boomerang e punti di contatto](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
-* [Configurazione fasi boomerang](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
-* [Scenari fase boomerang](/help/advanced-marketo-measure-features/boomerang/boomerang-stage-scenarios.md){target="_blank"}
-
-<p>
+* [Stadi di Boomerang e punti di contatto](/help/advanced-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
+* [Configurazione fasi boomerang](/help/advanced-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
+* [Scenari fase boomerang](/help/advanced-features/boomerang/boomerang-stage-scenarios.md){target="_blank"}
 
 ## Versione secondo trimestre {#q2-release}
-
-<p>
 
 ### Funzionalità Marketo Measure obsolete in risposta al ritiro graduale dei cookie di terze parti
 
 In risposta ai crescenti problemi di privacy, i cookie di terze parti vengono gradualmente eliminati, con la scadenza del terzo trimestre del 2024 di Google Chrome che segnala la loro fine. Marketo Measure renderà obsolete alcune funzioni dipendenti dai cookie di terze parti, in particolare il tracciamento tra domini diversi e l’attribuzione view-through, che si basano sul cookie di impression Google/DoubleClick. Questa modifica non influirà su altre funzionalità di Marketo Measure o sull’utilizzo di cookie di prime parti. Seguendo la timeline di Google, queste funzionalità dovrebbero diventare obsolete entro il 1° giugno, anche se i dati raccolti prima di questa data saranno ancora accessibili ai clienti.
 
 * [Adattamento a cookie di terze parti obsoleti in Marketo Measure](https://nation.marketo.com/t5/employee-blogs/adapting-to-third-party-cookie-deprecation-in-marketo-measure/ba-p/345110){target="_blank"}
-* [Cookie Marketo Measure](/help/marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md){target="_blank"}
+* [Cookie Marketo Measure](/help/marketo-measure-tracking/marketo-measure-cookies.md){target="_blank"}
 
 ### Rollout graduale della gestione avanzata degli errori
 
@@ -122,8 +117,6 @@ Visibilità immediata: l’introduzione delle notifiche Pulse consente di rispon
 _Supporto della transizione_
 
 Per aiutarti ad adattarti a questa modifica, [abbiamo creato la documentazione](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"} con descrizioni chiare degli errori e passaggi completi per la risoluzione dei problemi.
-
-<br>
 
 ### Azione richiesta per l&#39;integrazione di LinkedIn
 

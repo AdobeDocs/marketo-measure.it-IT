@@ -3,12 +3,13 @@ description: '[!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimat
 title: '[!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimate'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 4f504bd940e2d28603af65b75151d8143cdcbea8
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1610'
 ht-degree: 16%
 
 ---
+
 
 # [!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimate {#marketo-measure-ultimate-data-integrity-requirement}
 
@@ -894,10 +895,9 @@ ht-degree: 16%
 **Tassi di conversione**: ogni coppia (valuta di origine, valuta di destinazione) può avere più tassi di conversione per diversi periodi di date. Le percentuali devono coprire l&#39;intero intervallo di tempo compreso tra 0001-01-01 e 9999-12-31, in base all&#39;oggetto Salesforce DatedConversionRate.
 
 **Intervallo date**:
+
 * Nessun intervallo di date sovrapposto all’interno di un set di tassi (valuta di origine, valuta di destinazione) (ad esempio, dal 2023-01-01 al 2023-02-01 e dal 2023-01-01 al 2024-01-01).
 * Nessun intervallo tra intervalli di date. La data di inizio è inclusiva e la data di fine è esclusiva.
-
-<p>
 
 ## ExperienceEvent {#experienceevent}
 
@@ -1080,7 +1080,7 @@ ht-degree: 16%
       <td>Utilizzare quando un lead di marketing viene convertito in un contatto qualificato per la vendita assegnato a un utente di vendita</td>
     </tr>
     <tr>
-      <td>Momento di interesse</td>
+      <td>Momento interessante</td>
       <td>leadOperation.interestingMoment</td>
       <td>Usa per il tracciamento delle attività di valore elevato da parte di clienti potenziali</td>
     </tr>
@@ -1100,7 +1100,7 @@ ht-degree: 16%
       <td>Utilizzare per acquisire dettagli quando una persona apre un’e-mail di marketing</td>
     </tr>
     <tr>
-      <td>Fai clic su E-mail</td>
+      <td>Fai clic sull’e-mail</td>
       <td>directMarketing.emailClicked</td>
       <td>Utilizzare per acquisire dettagli quando una persona fa clic su un collegamento in un’e-mail di marketing</td>
     </tr>
@@ -1133,7 +1133,7 @@ Per i record persona &quot;Lead&quot;, la chiave esterna dell’account non esis
 
 ### Account aziendale XDM {#xdm-business-account}
 
-```
+```sql
 select 'account source id', count(*) from salesforce_account where accountKey.sourceId is null
 union all
 select 'account source type', count(*) from salesforce_account where accountKey.sourceType is null
@@ -1151,7 +1151,7 @@ select 'last updated date', count(*) from salesforce_account where extSourceSyst
 
 ### Campagna aziendale XDM {#xdm-business-campaign}
 
-```
+```sql
 select 'campaign source id', count(*) from salesforce_campaign where campaignKey.sourceId is null
 union all
 select 'campaign source type', count(*) from salesforce_campaign where campaignKey.sourceType is null
@@ -1169,7 +1169,7 @@ select 'last updated date', count(*) from salesforce_campaign where extSourceSys
 
 ### Membro della campagna aziendale XDM {#xdm-business-campaign-member}
 
-```
+```sql
 select 'campaign member source id', count(*) from salesforce_campaign_member where campaignMemberKey.sourceId is null
 union all
 select 'campaign member source type', count(*) from salesforce_campaign_member where campaignMemberKey.sourceType is null
@@ -1207,7 +1207,7 @@ select 'last updated date', count(*) from salesforce_campaign_member where extSo
 
 ### Persona aziendale XDM {#xdm-business-person}
 
-```
+```sql
 select 'person source id', count(*) from marketo_person where b2b.personKey.sourceId is null
 union all
 select 'person source type', count(*) from marketo_person where b2b.personKey.sourceType is null
@@ -1229,7 +1229,7 @@ union all
 select 'last updated date', count(*) from marketo_person where extSourceSystemAudit.lastUpdatedDate is null;
 ```
 
-```
+```sql
 select 'person source id', count(*) from salesforce_contact where b2b.personKey.sourceId is null
 union all
 select 'person source type', count(*) from salesforce_contact where b2b.personKey.sourceType is null
@@ -1261,7 +1261,7 @@ select 'last updated date', count(*) from salesforce_contact where extSourceSyst
 
 ### Opportunità di business XDM {#xdm-business-opportunity}
 
-```
+```sql
 select 'opportunity source id', count(*) from salesforce_opportunity where opportunityKey.sourceId is null
 union all
 select 'opportunity source type', count(*) from salesforce_opportunity where opportunityKey.sourceType is null
@@ -1299,7 +1299,7 @@ select 'last updated date', count(*) from salesforce_opportunity where extSource
 
 ### XDM ExperienceEvent {#xdm-experienceevent}
 
-```
+```sql
 select 'id', count(*) from marketo_activity where _id is null
 union all
 select 'event type', count(*) from marketo_activity where eventType is null
@@ -1331,7 +1331,7 @@ union all
 select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
 ```
 
-```
+```sql
 select 'id', count(*) from salesforce_task where _id is null
 union all
 select 'event type', count(*) from salesforce_task where eventType is null
@@ -1349,7 +1349,7 @@ select 'person source key', count(*) from salesforce_task where personKey.source
 
 ### Conversione {#conversion}
 
-```
+```sql
 select 'conversion rate', count(*) from currency_conversion_rate where conversionRate is null
 union all
 select 'end date', count(*) from currency_conversion_rate where endDate is null
@@ -1377,8 +1377,8 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 
 È consigliabile utilizzare un campo calcolato nel mapping dei campi per impostare il campo come predefinito su un valore non NULL. Di seguito sono riportati due esempi:
 
-* Se il valore di NomeOpportunità di alcuni record di opportunità è Null, creare e utilizzare il seguente campo calcolato nella mappatura dei campi
+* Se `opportunityName` di alcuni record opportunità sono nulli, crea e utilizza il seguente campo calcolato nella mappatura dei campi
    * `iif(name != null && trim(name) != "", name, "Unknown")`
 
-* Se leadOperation.campaignProgression.campaignID di alcuni record experienceevent sono null, crea e utilizza il seguente campo calcolato nella mappatura dei campi
+* Se `leadOperation.campaignProgression.campaignID` di alcuni record evento esperienza sono nulli, crea e utilizza il seguente campo calcolato nella mappatura dei campi
    * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`

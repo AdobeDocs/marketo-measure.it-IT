@@ -3,12 +3,13 @@ description: Consolidamento pacchetto [!DNL Salesforce] - [!DNL Marketo Measure]
 title: Consolidamento pacchetto [!DNL Salesforce]
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
+
 
 # Consolidamento pacchetto [!DNL Salesforce] {#salesforce-package-consolidation}
 
@@ -24,7 +25,7 @@ Il nuovo pacchetto consolidato V2 incorpora tutte le funzionalità dei pacchetti
 
 Sono disponibili due nuovi campi per migliorare le funzionalità di reporting:
 
-* form_name: ora disponibile negli oggetti BT/BAT, questo campo consente agli utenti di creare report basati sui nomi dei moduli.
+* nome_modulo: ora disponibile negli oggetti BT/BAT, questo campo consente agli utenti di creare report basati sui nomi dei moduli.
 * user_touchpoint_id: questo campo consente agli utenti di creare report con conteggi di punti di contatto utente univoci (`bizible2__User_Touchpoint_V2__c` in Salesforce).
 
 ## Supporto e transizione {#support-and-transition}
@@ -41,13 +42,13 @@ Il [team di supporto](https://nation.marketo.com/t5/support/ct-p/Support){target
       * Query V2_EXT:
          * bizible2_ext__Ad_Content_FT__c contiene Outreach
 
-![](assets/package-consolidation-1.png)
+![Esempio di filtro per report tramite il campo FT V2_EXT Ad Content](assets/package-consolidation-1.png)
 
 * Query corrispondente nel pacchetto consolidato:
    * bizible2__Touchpoint_Position__c contiene FT AND
    * bizible2__Ad_Content__c contiene Outreach
 
-![](assets/salesforce-package-consolidation-2.png)
+![Filtro report equivalente che utilizza campi punto di contatto consolidati](assets/salesforce-package-consolidation-2.png)
 
 ## Domande frequenti {#faq}
 

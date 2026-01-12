@@ -1,14 +1,15 @@
 ---
-description: Accesso a Data Warehouse - Condivisione diretta - Documentazione del prodotto
+description: Accesso Data Warehouse - Condivisione diretta
 title: Accesso Data Warehouse - Condivisione diretta
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: bff10626589aba8c3dfe995dabde6eac1fc7809f
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
+
 
 # Accesso Data Warehouse - Condivisione diretta {#data-warehouse-access-direct-share}
 
@@ -28,14 +29,13 @@ Affinché [!DNL Marketo Measure] possa impostare una condivisione diretta al dat
 
 Apri la sezione **Impostazioni** nell&#39;app Marketo Measure e passa alla pagina **Data Warehouse**. Nella sezione **Condivisione diretta**, immetti il tuo [ID account Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} nella casella fornita e fai clic su **Connetti**.
 
-![](assets/data-warehouse-access-direct-share-1.png)
+![Impostazioni di Marketo Measure Data Warehouse che mostrano il modulo di condivisione diretta di Snowflake](assets/data-warehouse-access-direct-share-1.png)
 
 ## Accesso alla condivisione {#accessing-the-share}
 
 Dopo aver creato la condivisione per l&#39;ID account fornito, devi completare i [passaggi di configurazione](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} nell&#39;istanza Snowflake per accedere ai dati.
 
 >[!NOTE]
->
 >È possibile scegliere qualsiasi nome di database desiderato. Puoi assegnare i privilegi a qualsiasi ruolo scelto, purché esista nella tua istanza di Snowflake.
 
 * Utilizzare il ruolo Amministratore account
