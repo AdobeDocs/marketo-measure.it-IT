@@ -157,7 +157,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
             <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Integrazioni Marketo Measure con Adobe Analytics</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">Creazione di una sorgente attributo cliente e caricamento del file di dati</a>
+            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=it">Creazione di una sorgente attributo cliente e caricamento del file di dati</a>
           </li>
         </ul>
       </td>

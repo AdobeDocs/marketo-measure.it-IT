@@ -21,7 +21,7 @@ Gli utenti IMS con accesso a Adobe Admin Console possono aggiungere e convalidar
 
 ![Elenco domini Adobe Admin Console con stato di convalida](assets/domain-management-1.png)
 
-Le istruzioni per l&#39;aggiunta dei domini sono disponibili nella [documentazione di Admin Console](https://helpx.adobe.com/enterprise/using/add-domains-directories.html). Una volta aggiunto, il dominio deve essere [collegato a una directory](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
+Le istruzioni per l&#39;aggiunta dei domini sono disponibili nella [documentazione di Admin Console](https://helpx.adobe.com/it/enterprise/using/add-domains-directories.html). Una volta aggiunto, il dominio deve essere [collegato a una directory](https://helpx.adobe.com/it/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
 
 ## Gestione dei domini in [!DNL Marketo Measure] {#managing-domains-in-marketo-measure}
 

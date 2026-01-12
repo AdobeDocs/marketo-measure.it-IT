@@ -25,13 +25,13 @@ Inoltre, le sessioni che utilizzano l’accesso tramite social network (Google, 
 
 Per i nuovi clienti, ora il comportamento predefinito è il riporto del canale di sessione. I clienti esistenti possono abilitare questa funzione attivando l’opzione Session Channel Carryover (Riporto canale sessione) in Settings (Impostazioni) > Everytouch Attribution (Attribuzione Everytouch). Una volta attivata, questa impostazione non può essere annullata.
 
-Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/it/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### Dashboard ROI per parola chiave
 
 La nuova dashboard del ROI delle parole chiave offre informazioni dettagliate sulle prestazioni delle campagne di ricerca a pagamento, fornendo una panoramica completa dei costi a livello di parola chiave, dei ricavi attribuiti e dei lead e delle opportunità generati. Questa dashboard consente di valutare il ROI di ogni parola chiave in Google Adwords, LinkedIn, Bing Ads e così via.
 
-Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/it/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### Regole di segmento migliorate
 

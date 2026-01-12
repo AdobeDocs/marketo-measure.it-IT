@@ -37,7 +37,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 ## Schemi e set di dati {#schemas-and-datasets}
 
 >[!NOTE]
->Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
+>Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
 
 **Schema XDM = Classe + Gruppo di campi schema&#42;**
 
@@ -54,7 +54,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 È consigliabile utilizzare un’utility di generazione automatica per creare dieci schemi B2B standard.
 
-* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
+* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=it#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
 Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli schemi dalla pagina Origini.
 
@@ -71,7 +71,7 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
 >[!IMPORTANT]
 >Quando aggiungi un nuovo set di dati, ti consigliamo di creare un flusso invece di utilizzarne uno esistente.
 
-[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
+[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=it){target="_blank"}
 
 **Passaggi per creare un flusso di dati:**
 
@@ -85,7 +85,7 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
    > Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
    > Potete anche importare la mappatura da un altro flusso nel sistema.
    > È possibile mappare un campo Source a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
-   > È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
+   > È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it){target="_blank"}).
 
    >[!CAUTION]
    > Puoi modificare un flusso di dati, ma i dati non vengono recuperati quando viene modificata una mappatura.
@@ -111,7 +111,7 @@ Opzione 1: per eseguire le query direttamente dall’interfaccia utente, accedi 
 
 ![Scheda Query in Gestione dati che mostra l&#39;interfaccia query](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} (più veloce e affidabile).
+Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=it){target="_blank"} (più veloce e affidabile).
 
 ## Attiva set di dati per Marketo Measure {#activate-dataset-for-marketo-measure}
 

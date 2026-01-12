@@ -34,4 +34,4 @@ Questo rapporto evidenzia il numero di opportunità generate dai canali di marke
    Questo è un rapporto Opportunità riepilogato per canale di marketing. Questo rapporto è incentrato su tutte le Opp, ma puoi filtrare in base alla fase o al tipo di opportunità. Inoltre, puoi aggiungere qualsiasi campo su cui desideri creare un rapporto.
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] Esercitazioni: Stock SFDC Reports](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] Esercitazioni: Stock SFDC Reports](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

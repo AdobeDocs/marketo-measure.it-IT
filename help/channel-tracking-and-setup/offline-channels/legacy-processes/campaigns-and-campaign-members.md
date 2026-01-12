@@ -122,5 +122,5 @@ Per ovviare a questo problema, [!DNL Marketo Measure] ha creato un oggetto Crono
 >Tieni presente che questo trigger non tiene traccia dei membri della campagna rimossi in passato, quindi funziona solo in futuro. Se devi rimuovere un numero elevato di punti di contatto dei membri della campagna precedenti, contatta il [supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
->[[!DNL Marketo Measure] Esercitazioni: Mappatura dei canali offline](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] Esercitazioni: Mappatura dei canali offline](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}

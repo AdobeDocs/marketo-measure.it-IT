@@ -46,4 +46,4 @@ Anche se questo rapporto potrebbe dipendere dalle fasi dell’opportunità, ques
    Questo è un rapporto Opportunità riepilogato dal canale di marketing che misura le opportunità perse chiuse tra i canali. Questo rapporto consente di comprendere quali canali potrebbero avere prestazioni insoddisfacenti. Puoi aggiungere qualsiasi filtro o campo su cui desideri creare un rapporto.
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] Esercitazioni: Report SFDC Aggiuntivi](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] Esercitazioni: Report SFDC Aggiuntivi](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
