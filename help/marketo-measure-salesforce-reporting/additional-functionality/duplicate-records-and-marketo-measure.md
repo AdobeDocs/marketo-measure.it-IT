@@ -22,7 +22,7 @@ Come si presenta nel reporting di [!DNL Marketo Measure]?
 
 _Report di esempio: [!DNL Marketo Measure] persone con punti di contatto dell&#39;acquirente._
 
-![ 1](assets/1-1.png)
+![&#x200B; 1](assets/1-1.png)
 
 Per l&#39;ID persona [!DNL Marketo Measure] di kelsey@adobe.com è possibile vedere che esiste sia un lead che un contatto con tale indirizzo e-mail. In questo rapporto sono riportati 2 primi contatti, due contatti per la creazione di lead e due interazioni PostLC. Questi record duplicati condividono informazioni relative alla data e al punto di contatto che potrebbero portare alla conclusione che si tratta di due persone diverse nonostante siano la stessa persona.
 

@@ -44,7 +44,7 @@ Per quanto riguarda la configurazione, è necessario completare sette passaggi n
 >[!NOTE]
 >Se abiliti l’assegnazione tag automatica, verranno reimpostate la cronologia delle conversioni e le bozze social di tutti gli annunci a cui vengono assegnati tag. Ti consigliamo vivamente di [esportare questi dati come CSV](https://www.facebook.com/business/help/205067636197240) prima di abilitare l&#39;assegnazione tag automatica.
 
-![ 2](assets/2-2.png)
+![&#x200B; 2](assets/2-2.png)
 
 Dopo aver abilitato l&#39;integrazione, [!DNL Marketo Measure] inizierà a scaricare il costo a livello di annuncio nel dashboard [!DNL Marketo Measure Marketing ROI].
 

@@ -24,7 +24,7 @@ Una volta creato l&#39;account [!DNL Marketo Measure] e connessa [!DNL Salesforc
 
 Se non hai installato il pacchetto Salesforce [!DNL Marketo Measure], [!DNL Marketo Measure] non scriverà alcun dato nell&#39;istanza di Salesforce.
 
-![ 3](assets/1-3.png)
+![&#x200B; 3](assets/1-3.png)
 
 Per impostazione predefinita, [!DNL Marketo Measure] esporta 200 record per credito API ogni volta che un processo invia dati al CRM. Per la maggior parte dei clienti, questo fornisce il saldo ottimale tra i crediti API utilizzati da [!DNL Marketo Measure] e i requisiti delle risorse CPU nel CRM. Tuttavia, per i clienti con configurazioni di gestione delle relazioni con i clienti complesse, come flussi di lavoro e attivatori, potrebbe essere utile ridurre le dimensioni del batch per migliorare le prestazioni di gestione delle relazioni con i clienti. A questo scopo, [!DNL Marketo Measure] consente ai clienti di configurare la dimensione del batch di esportazione CRM. Questa impostazione è disponibile nella pagina [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] dell&#39;applicazione Web [!DNL Marketo Measure] e i clienti possono scegliere tra dimensioni batch di 200 (impostazione predefinita), 100, 50 o 25.
 

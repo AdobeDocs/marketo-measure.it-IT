@@ -51,6 +51,6 @@ A parte una revisione annuale, alcune modifiche organizzative potrebbero segnala
 
 >[!MORELIKETHIS]
 > [Utilizzo di un campo personalizzato per l&#39;importo dei ricavi](/help/advanced-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
-> [Utilizzo di Data Loader per aggiornare il campo personalizzato ](/help/advanced-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
+> [Utilizzo di Data Loader per aggiornare il campo personalizzato &#x200B;](/help/advanced-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
 > [Panoramica di più valute](/help/advanced-features/multi-currency/overview.md)
 > [Impostazioni multivaluta](/help/advanced-features/multi-currency/settings.md)

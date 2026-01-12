@@ -34,7 +34,7 @@ Inizia aggiungendo una regola e selezionando il Campo che definirà i criteri.
 
 Scegli da un elenco di operatori che saranno correlati al successivo set di valori, che aggiungerai nella colonna successiva.
 
-![ 1](assets/1-1.png)
+![&#x200B; 1](assets/1-1.png)
 
 >[!TIP]
 >Per aggiungere più valori in un campo, utilizza l’operatore &quot;corrisponde a qualsiasi&quot; con virgole che separano ciascun valore.

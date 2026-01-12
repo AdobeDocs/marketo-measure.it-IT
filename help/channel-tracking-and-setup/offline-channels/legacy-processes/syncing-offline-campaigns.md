@@ -36,7 +36,7 @@ Perché è importante? Immagina per un momento che la tua azienda abbia sponsori
 
 La data di caricamento sarebbe tre settimane dopo la data della conferenza. Per correggere questa differenza, è possibile utilizzare il pulsante [!UICONTROL Bulk Update Touchpoint Date] per impostare la data appropriata. Il pulsante è illustrato nell&#39;immagine seguente.
 
-![ 3](assets/1-3.png)
+![&#x200B; 3](assets/1-3.png)
 
 In questo caso, la data di caricamento verrebbe retrocompilata di tre settimane. Questo passaggio deve essere eseguito prima di impostare il campo &quot;[!UICONTROL Enable Buyer Touchpoints]&quot;.
 
@@ -47,17 +47,17 @@ Puoi anche aggiornare le date per tutti i membri della campagna su una campagna 
 >[!CAUTION]
 >Assicurati di aggiornare la data del punto di contatto _prima_ di abilitare i punti di contatto per tutti i membri della campagna.
 
-![ 3](assets/2-3.png)
+![&#x200B; 3](assets/2-3.png)
 
 ## Come creare una campagna e sincronizzare i punti di contatto dell’acquirente {#how-to-create-a-campaign-and-sync-buyer-touchpoints}
 
 Per creare una campagna in [!DNL Salesforce], passare alla scheda [!UICONTROL Campaigns] e selezionare &#39;[!UICONTROL New]&#39; come illustrato nell&#39;immagine seguente. A seconda della configurazione di [!DNL Salesforce], potrebbe essere necessario aggiungere Campagne alla barra superiore facendo clic sull&#39;icona più (+).
 
-![ 3](assets/3-3.png)
+![&#x200B; 3](assets/3-3.png)
 
 Quando si crea questa campagna, fare clic sul campo &quot;[!UICONTROL Enable Buyer Touchpoints]&quot; e selezionare una delle opzioni seguenti dall&#39;elenco a discesa:
 
-![ 3](assets/4-3.png)
+![&#x200B; 3](assets/4-3.png)
 
 * **Includi tutti i membri della campagna**
    * Questa opzione consente a [!DNL Marketo Measure] di attribuire un punto di contatto a ciascun membro della campagna.

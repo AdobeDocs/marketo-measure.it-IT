@@ -20,11 +20,11 @@ Crea un nuovo tipo di rapporto per includere tutte le opportunità con o senza p
 
 1. Vai a **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**.
 
-   ![ 1](assets/1-1.jpg)
+   ![&#x200B; 1](assets/1-1.jpg)
 
 1. Seleziona **[!UICONTROL New Custom Report Type]**.
 
-   ![ 1](assets/2-1.jpg)
+   ![&#x200B; 1](assets/2-1.jpg)
 
 1. Impostare l&#39;oggetto primario come &quot;[!UICONTROL Opportunities]&quot;.
 
@@ -32,11 +32,11 @@ Crea un nuovo tipo di rapporto per includere tutte le opportunità con o senza p
    * Utilizza la stessa denominazione per Nome tipo di rapporto. All’interno dell’input della descrizione, &quot;Opportunità con o senza punti di contatto di attribuzione acquirente&quot;.
    * Salvare il report in &quot;[!UICONTROL Other]&quot; e impostare il report su &quot;[!UICONTROL Deployed]&quot;.
 
-   ![ 1](assets/3-1.jpg)
+   ![&#x200B; 1](assets/3-1.jpg)
 
 1. A questo punto, verrà collegato l&#39;oggetto opportunità all&#39;oggetto punti di contatto di attribuzione buyer. Assicurarsi di scegliere il pulsante &quot;I record &#39;A&#39; possono avere o meno record &#39;B&#39; correlati.&quot; Al termine, fai clic su **[!UICONTROL Save]**.
 
-   ![ 1](assets/4-1.jpg)
+   ![&#x200B; 1](assets/4-1.jpg)
 
 >[!MORELIKETHIS]
 >[[!DNL Marketo Measure] Esercitazioni: Report SFDC Aggiuntivi](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

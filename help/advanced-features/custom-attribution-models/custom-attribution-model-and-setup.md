@@ -32,7 +32,7 @@ Il modello di attribuzione personalizzata [!DNL Marketo Measure] consente agli u
    >[!NOTE]
    >Sono consentiti fino a sei stadi personalizzati (esclusi i valori predefiniti: FT, LC, OC, Closed).
 
-   ![ 1](assets/1-1.png)
+   ![&#x200B; 1](assets/1-1.png)
 
    >[!NOTE]
    >_Tutte_ le fasi Contatti/lead e Opportunità verranno visualizzate qui, anche se la fase è inattiva o non è più utilizzata in [!DNL Salesforce]. Se si desidera rimuovere queste fasi, sarà necessario eliminarle definitivamente in [!DNL Salesforce].
@@ -43,7 +43,7 @@ Il modello di attribuzione personalizzata [!DNL Marketo Measure] consente agli u
 
    Nell’esempio seguente, viene definita una fase &quot;MQL&quot; personalizzata utilizzando un campo data. La regola afferma semplicemente che se il campo Data MQL non è vuoto, deve essere considerato un MQL e deve essere incluso nel modello personalizzato. È inoltre importante ordinare le fasi personalizzate una volta create in modo che seguano l’avanzamento del ciclo di vendita.
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
    >[!CAUTION]
    >Non dimenticare di abilitare il tracciamento della cronologia per i campi personalizzati.

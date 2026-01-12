@@ -55,17 +55,17 @@ ht-degree: 5%
       + [Installazione e configurazione del pacchetto Salesforce [!DNL Marketo Measure]](configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)
       + [Consolidamento pacchetto [!DNL Salesforce]](configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md)
       + [Connetti [!DNL Marketo Measure] a Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
-      + [Best practice per il pacchetto CRM [!DNL Marketo Measure] ](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
+      + [Best practice per il pacchetto CRM [!DNL Marketo Measure] &#x200B;](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] oggetti Salesforce](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
       + [Gestione degli errori per le esportazioni CRM](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure] tassonomia di oggetti e campi](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
-      + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] ](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
+      + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] &#x200B;](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
       + [Istruzioni di layout pagina](configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md)
       + [Nascondere i tipi di rapporto non necessari](configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
-      + [Creazione di un profilo  [!DNL Marketo Measure] ](configuration-and-setup/marketo-measure-and-salesforce/creating-a-marketo-measure-profile.md)
+      + [Creazione di un profilo  [!DNL Marketo Measure] &#x200B;](configuration-and-setup/marketo-measure-and-salesforce/creating-a-marketo-measure-profile.md)
       + [[!DNL Marketo Measure] set di autorizzazioni](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
-      + [ [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso](configuration-and-setup/marketo-measure-and-salesforce/recommended-permissions.md)
+      + [&#x200B; [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso](configuration-and-setup/marketo-measure-and-salesforce/recommended-permissions.md)
    + Test sandbox {#sandbox-testing}
       + [Verifica dell&#39;integrazione  [!DNL Marketo Measure] con una sandbox Salesforce](configuration-and-setup/sandbox-testing/sandbox-testing.md)
       + [Migrazione da Sandbox Salesforce a Produzione](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
@@ -144,7 +144,7 @@ ht-degree: 5%
       + [Panoramica del marketing basato sull’account](advanced-features/account-based-marketing/account-based-marketing-overview.md)
    + Test A/B {#a-b-testing}
       + [Configurazione e reporting dei test A/B](advanced-features/a-b-testing/a-b-testing-set-up-and-reporting.md)
-      + [Configurazione dell&#39;integrazione dei test A/B di  [!DNL Marketo Measure] ](advanced-features/a-b-testing/configure-a-b-testing.md)
+      + [Configurazione dell&#39;integrazione dei test A/B di  [!DNL Marketo Measure] &#x200B;](advanced-features/a-b-testing/configure-a-b-testing.md)
    + Integrazione chat {#chat-integration}
       + [Domande frequenti sull’integrazione della deriva](advanced-features/chat-integration/drift-integration-faq.md)
    + Valuta multipla {#multi-currency}
@@ -183,13 +183,13 @@ ht-degree: 5%
       + [Report azionari e dashboard in [!DNL Dynamics]](marketo-measure-and-dynamics/stock-reports-and-dashboards-in-dynamics.md)
 + [!DNL Marketo Measure] e Marketo {#marketo-measure-and-marketo}
    + Integrazioni [!DNL Marketo Measure] con Marketo {#marketo-measure-integrations-with-marketo}
-      + [Configura connessione [!DNL Marketo] ](marketo-measure-and-marketo/set-up-marketo-connection.md)
+      + [Configura connessione [!DNL Marketo] &#x200B;](marketo-measure-and-marketo/set-up-marketo-connection.md)
       + [Integrazione delle attività di Marketo Engage](marketo-measure-and-marketo/marketo-engage-activities-integration.md)
       + [Integrazione Marketo Engage People](marketo-measure-and-marketo/marketo-engage-people-integration.md)
       + [Integrazione dei programmi Marketo Engage](marketo-measure-and-marketo/marketo-engage-programs-integration.md)
 + [!DNL Marketo Measure] reportistica Salesforce {#marketo-measure-salesforce-reporting}
    + Nuovi tipi di rapporto {#new-report-types}
-      + [Creazione di tipi di report personalizzati [!DNL Marketo Measure] ](marketo-measure-salesforce-reporting/new-report-types/creating-report-types.md)
+      + [Creazione di tipi di report personalizzati [!DNL Marketo Measure] &#x200B;](marketo-measure-salesforce-reporting/new-report-types/creating-report-types.md)
       + [Tipo di rapporto per contatti senza opportunità](marketo-measure-salesforce-reporting/new-report-types/report-no-opps.md)
    + [!DNL Marketo Measure] report {#marketo-measure-reports}
       + [Guida ai report di [!DNL Marketo Measure]](marketo-measure-salesforce-reporting/marketo-measure-reports/marketo-measure-reporting-guide.md)

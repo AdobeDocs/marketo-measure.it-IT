@@ -17,16 +17,16 @@ Scopri come abilitare l&#39;autorizzazione per la modifica dei record lead conve
 
 1. Vai a [!UICONTROL Setup] ed espandi il raggruppamento [!UICONTROL Manage Users] per selezionare Profili.
 
-   ![ 2](assets/1-2.png)
+   ![&#x200B; 2](assets/1-2.png)
 
 1. Seleziona il profilo dell’utente tramite il quale siamo connessi.
 
 1. Cercare l&#39;autorizzazione per visualizzare e modificare lead convertiti.
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. Seleziona la casella per abilitare l&#39;autorizzazione per visualizzare e modificare i lead convertiti.
 
-   ![ 1](assets/3-1.png)
+   ![&#x200B; 1](assets/3-1.png)
 
 E hai finito!

@@ -21,10 +21,10 @@ L&#39;app area di lavoro Approfondimenti [!DNL Marketo Measure] deve essere aggi
 
 1. Nella sezione dei criteri [!UICONTROL OAuth], modifica l’impostazione Utenti consentiti in &quot;Gli utenti approvati dall’amministratore sono preautorizzati&quot;. Verrà visualizzato un popup, fare clic su **[!UICONTROL OK]** e quindi su **[!UICONTROL Save]**.
 
-   ![ 1](assets/1-1.png)
+   ![&#x200B; 1](assets/1-1.png)
 
 1. Una volta salvata la pagina, è possibile fare clic sul pulsante **[!UICONTROL Manage Profiles]**.
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. Selezionare tutti i profili che devono avere accesso a [!DNL Marketo Measure] Insights e fare clic su **[!UICONTROL Save]**.

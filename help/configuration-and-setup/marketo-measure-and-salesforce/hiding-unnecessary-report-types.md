@@ -25,7 +25,7 @@ Dopo aver completato l&#39;installazione e aver iniziato a utilizzare i report, 
 
 1. Fai clic sui rapporti contrassegnati di seguito con una X arancione per far sì che l’elenco dei rapporti sia lo stesso dell’immagine seguente.
 
-   ![ 4](assets/1-4.png)
+   ![&#x200B; 4](assets/1-4.png)
 
 >[!MORELIKETHIS]
 >[Salesforce - Nascondi tipi di report inutilizzati](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)

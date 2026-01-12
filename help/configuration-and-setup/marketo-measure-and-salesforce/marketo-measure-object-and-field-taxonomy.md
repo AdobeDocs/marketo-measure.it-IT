@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Di seguito è riportato un diagramma di flusso che rappresenta la correlazione tra [!DNL Marketo Measure] oggetti personalizzati e [!DNL Salesforce] oggetti standard.
 
-![ 2](assets/1-2.png)
+![&#x200B; 2](assets/1-2.png)
 
 Per l&#39;immagine di dimensioni intere, [fare clic qui](assets/bizible-object-and-field-taxonomy-graph-full.png).
 
-Le definizioni dei campi [!DNL Marketo Measure] presenti in ciascun oggetto [ sono disponibili qui](/help/glossary.md).
+Le definizioni dei campi [!DNL Marketo Measure] presenti in ciascun oggetto [&#x200B; sono disponibili qui](/help/glossary.md).
 
 ## Domande frequenti {#faq}
 
