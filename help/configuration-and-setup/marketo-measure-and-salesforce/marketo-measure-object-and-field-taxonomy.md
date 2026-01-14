@@ -18,7 +18,7 @@ Di seguito è riportato un diagramma di flusso che rappresenta la correlazione t
 
 Per l&#39;immagine di dimensioni intere, [fare clic qui](assets/bizible-full-1.png).
 
-Le definizioni dei campi [!DNL Marketo Measure] presenti in ciascun oggetto [ sono disponibili qui](/help/introduction/glossary.md).
+Le definizioni dei campi [!DNL Marketo Measure] presenti in ciascun oggetto [&#x200B; sono disponibili qui](/help/introduction/glossary.md).
 
 ## Domande frequenti {#faq}
 

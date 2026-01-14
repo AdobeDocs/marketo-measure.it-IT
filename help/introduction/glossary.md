@@ -305,7 +305,7 @@ Questo campo mostra il gruppo generale di attività di marketing o canale di mar
 
 Questo campo mostra il canale di marketing e il sottocanale a cui appartiene un punto di contatto. Nell’esempio seguente, Canale di marketing - Percorso è Social.LinkedIn, dove il canale di marketing è Social e il sottocanale è LinkedIn.
 
-![ 3](assets/overview-resources-16.png)
+![&#x200B; 3](assets/overview-resources-16.png)
 
 **Medium** | Buyer Touchpoint, Buyer Attribution Touchpoint
 

@@ -112,7 +112,7 @@ Dopo aver impostato la data e l&#39;ora, fare clic sul pulsante **[!UICONTROL Up
 
 ## Costi della campagna {#campaign-costs}
 
-Scopri tutto sui costi delle campagne [ in questo articolo](/help/marketing-spend/crm-campaign-costs.md){target="_blank"}.
+Scopri tutto sui costi delle campagne [&#x200B; in questo articolo](/help/marketing-spend/crm-campaign-costs.md){target="_blank"}.
 
 ## Rimozione membro della campagna {#campaign-member-removal}
 

@@ -56,7 +56,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 * I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
-Per coloro che dispongono di un _**diritto CDP**_: crea gli schemi dalla pagina Origini.
+Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli schemi dalla pagina Origini.
 
 * Da un’origine, seleziona Aggiungi dati > Usa modelli
 

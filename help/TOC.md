@@ -52,16 +52,16 @@ ht-degree: 6%
    + [!DNL Marketo Measure] e Salesforce {#marketo-measure-and-salesforce}
       + [Consolidamento pacchetto [!DNL Salesforce]](/help/configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md)
       + [Connetti [!DNL Marketo Measure] a Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
-      + [Best practice per il pacchetto CRM [!DNL Marketo Measure] ](/help/configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
+      + [Best practice per il pacchetto CRM [!DNL Marketo Measure] &#x200B;](/help/configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] oggetti Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
       + [Gestione degli errori per le esportazioni CRM](/help/configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure] tassonomia di oggetti e campi](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
-      + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] ](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
+      + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] &#x200B;](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
       + [Istruzioni di layout pagina](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md)
       + [Nascondere i tipi di rapporto non necessari](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
       + [Installazione pacchetto Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)
-      + [Creazione di un profilo  [!DNL Marketo Measure] ](/help/configuration-and-setup/marketo-measure-and-salesforce/creating-a-marketo-measure-profile.md)
+      + [Creazione di un profilo  [!DNL Marketo Measure] &#x200B;](/help/configuration-and-setup/marketo-measure-and-salesforce/creating-a-marketo-measure-profile.md)
       + [[!DNL Marketo Measure] set di autorizzazioni](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
       + [Autorizzazioni [!DNL Salesforce] per l&#39;utente connesso](/help/configuration-and-setup/marketo-measure-and-salesforce/recommended-permissions.md)
    + Test sandbox {#sandbox-testing}
@@ -176,7 +176,7 @@ ht-degree: 6%
       + [Report azionari e dashboard in [!DNL Dynamics]](/help/marketo-measure-and-dynamics/stock-reports-and-dashboards-in-dynamics.md)
 + [!DNL Marketo Measure] e Marketo {#marketo-measure-and-marketo}
    + Integrazioni [!DNL Marketo Measure] con Marketo {#marketo-measure-integrations-with-marketo}
-      + [Configura connessione [!DNL Marketo] ](/help/marketo-measure-and-marketo/set-up-marketo-connection.md)
+      + [Configura connessione [!DNL Marketo] &#x200B;](/help/marketo-measure-and-marketo/set-up-marketo-connection.md)
       + [Integrazione delle attività di Marketo Engage](/help/marketo-measure-and-marketo/marketo-engage-activities-integration.md)
       + [Integrazione dei programmi Marketo Engage](/help/marketo-measure-and-marketo/marketo-engage-programs-integration.md)
 + [!DNL Marketo Measure] reportistica Salesforce {#marketo-measure-salesforce-reporting}
