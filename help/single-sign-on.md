@@ -72,7 +72,7 @@ Imposta e mappa le impostazioni degli attributi utente in base ai rispettivi nom
     
      b. Suggerimento: se verifichi ora la configurazione SAML, verranno analizzati gli attributi E-mail, Nome e Cognome che puoi utilizzare per questa sezione.
 
-![ b. Suggerimento: se verifichi ora la configurazione SAML, verrà analizzato](assets/discover-control-1.png)
+![&#x200B; b. Suggerimento: se verifichi ora la configurazione SAML, verrà analizzato](assets/discover-control-1.png)
 
 Imposta e mappa le impostazioni del Ruolo utente sui rispettivi ruoli o gruppi classificati dal tuo IdP.
 
@@ -94,7 +94,7 @@ Verificare la configurazione Single Sign-On
     
      b. Se viene visualizzato un errore, seguire il messaggio e riprovare.
 
-![ b. Se viene visualizzato un errore, segui il messaggio e prova](assets/discover-control-3.png)
+![&#x200B; b. Se viene visualizzato un errore, segui il messaggio e prova](assets/discover-control-3.png)
 
 Salva le impostazioni e indirizza i tuoi colleghi a utilizzare [!UICONTROL Single Sign On] con il nuovo URL di accesso personalizzato.
 
@@ -110,7 +110,7 @@ Provalo!
     
     c. Congratulazioni! Hai configurato correttamente l&#39;accesso Single Sign-On nell&#39;applicazione  [!DNL Marketo Measure] per il tuo account!
 
-![c. Congratulazioni! Configurazione dell&#39;accesso Single Sign-On in ](assets/discover-control-3.png) completata
+![c. Congratulazioni! Configurazione dell&#39;accesso Single Sign-On in &#x200B;](assets/discover-control-3.png) completata
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Per [!DNL Dynamics] ruoli, utilizzare il nome di ogni ruolo di protezione. Tutti
 
 Una volta configurato l&#39;SSO personalizzato, la pagina [!UICONTROL Users] viene aggiornata per mostrare solo gli utenti esterni che sono stati aggiunti con gli accessi a Google. Poiché tutti gli utenti con accesso sono definiti tramite la configurazione SSO, qui sono elencati altri utenti esterni.
 
-![Una volta configurato l&#39;SSO personalizzato, la pagina Utenti è ](assets/discover-control-3.png)
+![Una volta configurato l&#39;SSO personalizzato, la pagina Utenti è &#x200B;](assets/discover-control-3.png)
 
 È possibile aggiungere solo account [!DNL Google] validi e deve essere definito un ruolo utente.
 

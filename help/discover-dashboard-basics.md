@@ -21,10 +21,10 @@ Ogni dashboard dispone di una serie di filtri, accompagnati dai seguenti control
 
 | Nome | Descrizione |
 | --- | --- |
-| Pulsante di attivazione/disattivazione filtro | Attiva/disattiva l&#39;apertura o la chiusura del riquadro dei filtri. ![| — | — |](assets/discover-basics-9.png) |
-| Barra di ricerca | Utilizza la funzione di ricerca nella parte superiore del riquadro dei filtri per cercare un filtro specifico. Ogni filtro ha anche una propria barra di ricerca. ![| — | — |](assets/discover-basics-10.png) |
-| Pulsante Cancella filtro | Per cancellare un filtro, fai clic sull’icona della gomma nell’angolo in alto a destra di ciascun filtro. ![| — | — |](assets/discover-basics-11.png) |
-| Pulsante Applica | Fai clic su per confermare e implementare le modifiche al filtro nel dashboard. ![| — | — |](assets/discover-3a-1.png) |
+| Pulsante di attivazione/disattivazione filtro | Attiva/disattiva l&#39;apertura o la chiusura del riquadro dei filtri. |||||||||||||||||||||||||![ — | — |] (apng) |
+| Barra di ricerca | Utilizza la funzione di ricerca nella parte superiore del riquadro dei filtri per cercare un filtro specifico. Ogni filtro ha anche una propria barra di ricerca. ||||||||||||||||||||||||||![ — | — |] (apng) |
+| Pulsante Cancella filtro | Per cancellare un filtro, fai clic sull’icona della gomma nell’angolo in alto a destra di ciascun filtro. ||||||||||||||||||||||||||![ — | — |] (apng) |
+| Pulsante Applica | Fai clic su per confermare e implementare le modifiche al filtro nel dashboard. |||||||||||||||||||||![ — | — |] (apng) |
 
 ## Filtri per elementi visivi {#filters-on-visual}
 
@@ -38,7 +38,7 @@ Passa il puntatore del mouse sull’angolo in alto a destra di un oggetto visivo
 
 * Posizionare il puntatore del mouse su un elemento visivo per identificare se dispone di una gerarchia. La presenza di opzioni di controllo di drilling nella barra delle azioni indica che si tratta di un elemento visivo.
 
-![Passa il puntatore del mouse su un elemento visivo per verificare se ha una gerarchia; il ](assets/discover-basics-7.png)
+![Passa il puntatore del mouse su un elemento visivo per verificare se ha una gerarchia; il &#x200B;](assets/discover-basics-7.png)
 
 * Attivare il drill-down facendo clic sulla singola freccia verso il basso, evidenziata da uno sfondo grigio. Per ripristinare, utilizzare l&#39;icona di espansione.
 

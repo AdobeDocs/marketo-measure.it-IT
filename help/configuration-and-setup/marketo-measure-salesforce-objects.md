@@ -36,7 +36,7 @@ L&#39;oggetto [!UICONTROL Buyer Touchpoint] (BT) racconta la storia di marketing
 
 L&#39;oggetto BT è visibile nelle pagine Lead e Contatti come **Elenco correlato** (vedi immagine seguente).
 
-![L&#39;oggetto BT è visibile nelle pagine lead e contatti come ](assets/bizible-taxonomy-1.png)
+![L&#39;oggetto BT è visibile nelle pagine lead e contatti come &#x200B;](assets/bizible-taxonomy-1.png)
 
 Nell&#39;elenco correlato a BT vengono visualizzati tutti i punti di contatto appartenenti al lead o al contatto. Nell&#39;elenco sono presenti campi [!DNL Marketo Measure] personalizzati che forniscono ulteriori dettagli su ogni punto di contatto. Facendo clic sul numero Buyer Touchpoint ID si accede alla pagina Dettagli Buyer Touchpoint, che fornisce ulteriori dettagli sul punto di contatto, come la prima pagina Web visitata dal lead/contatto durante la sessione Web (**pagina di destinazione**).
 

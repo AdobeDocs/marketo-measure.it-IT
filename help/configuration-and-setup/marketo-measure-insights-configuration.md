@@ -24,6 +24,6 @@ L&#39;app area di lavoro Approfondimenti [!DNL Marketo Measure] deve essere aggi
 
 1. Una volta salvata la pagina, è possibile fare clic sul pulsante **[!UICONTROL Manage Profiles]**.
 
-   ![1. Una volta salvata la pagina, puoi fare clic su ](assets/marketo-app-2.png)
+   ![1. Una volta salvata la pagina, puoi fare clic su &#x200B;](assets/marketo-app-2.png)
 
 1. Selezionare tutti i profili che devono avere accesso a [!DNL Marketo Measure] Insights e fare clic su **[!UICONTROL Save]**.

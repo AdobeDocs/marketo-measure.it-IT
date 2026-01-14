@@ -20,4 +20,4 @@ Esistono due bit di funzionalità separati associati a questa funzionalità, che
 
 Sotto [!UICONTROL User Settings] nell&#39;applicazione [!DNL Marketo Measure] verranno visualizzate la valuta aziendale ed eventuali valute supportate estratte dal CRM. Poiché questi valori vengono tutti estratti dal CRM, questi campi sono di sola lettura e non possono essere modificati. La valuta del dashboard è la valuta predefinita per ogni caricamento di un dashboard. È possibile tornare indietro e cambiare la valuta in base alle esigenze.
 
-![In Impostazioni utente nell&#39;applicazione Marketo Measure, ](assets/multi-currency-1.png)
+![In Impostazioni utente nell&#39;applicazione Marketo Measure, &#x200B;](assets/multi-currency-1.png)

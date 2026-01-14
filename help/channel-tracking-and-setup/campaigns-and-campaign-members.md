@@ -59,7 +59,7 @@ I membri della campagna sono nidificati in [!UICONTROL Campaigns] e sono correla
 
 Se attivato, [!DNL Marketo Measure] invierà un valore di stato al membro della campagna in 4 campi diversi inclusi nel pacchetto installato: Stato punto di contatto (lead), Stato punto di contatto (contatto), Stato punto di contatto (opportunità) e Data stato punto di contatto. Questo consente ai clienti di controllare se un punto di contatto è stato creato o meno come Buyer Touchpoint o Buyer Attribution Touchpoint, a seconda dell’oggetto a cui è correlato. La Data stato punto di contatto è semplicemente l’ultima data in cui lo stato è stato aggiornato sul membro della campagna.
 
-![Se abilitato, Marketo Measure invierà un valore di stato in ](assets/dynamics-lists-3.png)
+![Se abilitato, Marketo Measure invierà un valore di stato in &#x200B;](assets/dynamics-lists-3.png)
 
 ## Data Buyer Touchpoint {#buyer-touchpoint-date}
 
@@ -112,7 +112,7 @@ Dopo aver impostato la data e l&#39;ora, fare clic sul pulsante **[!UICONTROL Up
 
 ## Costi della campagna {#campaign-costs}
 
-Scopri tutto sui costi delle campagne [ in questo articolo](/help/crm-campaign-costs.md){target="_blank"}.
+Scopri tutto sui costi delle campagne [&#x200B; in questo articolo](/help/crm-campaign-costs.md){target="_blank"}.
 
 ## Rimozione membro della campagna {#campaign-member-removal}
 

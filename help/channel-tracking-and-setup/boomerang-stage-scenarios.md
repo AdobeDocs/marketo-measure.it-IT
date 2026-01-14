@@ -48,7 +48,7 @@ Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che vi
 
 Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha scelto solo di tenere traccia della fase SQL con punti di contatto boomerang. MQL e SAL sono ancora tracciati, ma con la funzione di staging personalizzato [!DNL Marketo Measure].
 
-![Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha ](assets/boomerang-stages-20.png)
+![Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha &#x200B;](assets/boomerang-stages-20.png)
 
 In questo scenario, il lead non passa mai effettivamente alla fase SAL. Si converte in un contatto prima di raggiungere la fase SAL, essenzialmente &quot;saltando&quot; la fase SAL. In questa situazione, [!DNL Marketo Measure] presuppone che la SAL si verifichi con il punto di contatto OC e che sia la posizione SAL che OC appariranno sullo stesso punto di contatto.
 

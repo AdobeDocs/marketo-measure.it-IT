@@ -49,12 +49,12 @@ ht-degree: 6%
    + [!DNL Marketo Measure] e Salesforce {#marketo-measure-and-salesforce}
       + [Consolidamento pacchetto [!DNL Salesforce]](/help/configuration-and-setup/salesforce-package-consolidation.md)
       + [Connetti [!DNL Marketo Measure] a Salesforce](/help/configuration-and-setup/connect-marketo-measure-to-salesforce.md)
-      + [Best practice per il pacchetto CRM [!DNL Marketo Measure] ](/help/configuration-and-setup/best-practices-for-marketo-measure-crm-package.md)
+      + [Best practice per il pacchetto CRM [!DNL Marketo Measure] &#x200B;](/help/configuration-and-setup/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] oggetti Salesforce](/help/configuration-and-setup/marketo-measure-salesforce-objects.md)
       + [Gestione degli errori per le esportazioni CRM](/help/configuration-and-setup/crm-error-handling.md)
       + [Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono](/help/configuration-and-setup/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure] tassonomia di oggetti e campi](/help/configuration-and-setup/marketo-measure-object-and-field-taxonomy.md)
-      + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] ](/help/configuration-and-setup/marketo-measure-fields-on-standard-salesforce-objects.md)
+      + [[!DNL Marketo Measure] campi in Oggetti Standard [!DNL Salesforce] &#x200B;](/help/configuration-and-setup/marketo-measure-fields-on-standard-salesforce-objects.md)
       + [Istruzioni di layout pagina](/help/configuration-and-setup/page-layout-instructions.md)
       + [Nascondere i tipi di rapporto non necessari](/help/configuration-and-setup/hiding-unnecessary-report-types.md)
       + [Installazione pacchetto Salesforce](/help/configuration-and-setup/install-set-up.md)
@@ -167,7 +167,7 @@ ht-degree: 6%
    + [OAuth con Azure Active Directory per  [!DNL Dynamics] CRM](/help/oauth-with-azure-active-directory-for-dynamics-crm.md)
    + [Report azionari e dashboard in [!DNL Dynamics]](/help/stock-reports-and-dashboards-in-dynamics.md)
 + [!DNL Marketo Measure] e Marketo {#marketo-measure-and-marketo}
-   + [Configura connessione [!DNL Marketo] ](/help/set-up-marketo-connection.md)
+   + [Configura connessione [!DNL Marketo] &#x200B;](/help/set-up-marketo-connection.md)
    + [Integrazione delle attività di Marketo Engage](/help/marketo-engage-activities-integration.md)
    + [Integrazione dei programmi Marketo Engage](/help/marketo-engage-programs-integration.md)
 + [!DNL Marketo Measure] reportistica Salesforce {#marketo-measure-salesforce-reporting}

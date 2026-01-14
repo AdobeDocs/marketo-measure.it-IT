@@ -45,11 +45,11 @@ I sottocanali sono il secondo elemento del puzzle quando si inseriscono i lead i
 
 Il diagramma seguente illustra un esempio di canale di marketing, sottocanale e contenuto basato su una pagina web con il seguente URL:
 
-* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
+* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
 
 In questo caso, il contenuto a cui l’utente sta tentando di accedere è la Guida introduttiva all’attribuzione B2B di marketing. [!DNL Marketo Measure] analizzerà l&#39;URL che porta a questo contenuto utilizzando le regole di canale impostate in questa organizzazione e le utilizzerà per &quot;bucket&quot; di questo lead nel canale di marketing &quot;Paid Social&quot; e nel sottocanale &quot;LinkedIn&quot;.
 
-![In questo caso, il contenuto a cui l&#39;utente sta tentando di accedere è ](assets/online-channels-1.png)
+![In questo caso, il contenuto a cui l&#39;utente sta tentando di accedere è &#x200B;](assets/online-channels-1.png)
 
 Altri esempi...
 

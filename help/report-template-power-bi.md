@@ -101,7 +101,7 @@ Le tabelle e le colonne sono state rinominate per renderle più facili da usare 
 
 Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowflake dispongono di nomi di colonna generici. [!DNL BIZ_SEGMENT_NAMES] è una tabella di mappatura che elenca il nome del segmento generico e il nome del relativo segmento personalizzato mappato, definito nella sezione del segmento nell&#39;interfaccia utente [!DNL Marketo Measure]. La tabella Nome segmento viene utilizzata per rinominare le colonne del segmento nelle tabelle Punto di contatto lead e Punto di contatto attribuzione. Se non esiste alcun segmento personalizzato, viene mantenuto il nome del segmento generico.
 
-![Poiché i nomi dei segmenti sono personalizzabili, in ](assets/marketo-bi-4.png) sono presenti nomi di colonna generici
+![Poiché i nomi dei segmenti sono personalizzabili, in &#x200B;](assets/marketo-bi-4.png) sono presenti nomi di colonna generici
 
 ### Conversione ID sensibile a maiuscole e minuscole {#case-sensitive-id-conversion}
 

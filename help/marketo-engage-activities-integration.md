@@ -39,7 +39,7 @@ Come parte dell&#39;integrazione complessiva di [!DNL Marketo Measure] e [!DNL M
 
 1. Quando tutte le attività necessarie sono selezionate, puoi visualizzarle compilate in [!UICONTROL Selected Activities List] e in [!UICONTROL Define Rules].
 
-   ![1. Quando tutte le attività necessarie sono selezionate, puoi visualizzare ](assets/marketo-engage-activities-04.png)
+   ![1. Quando tutte le attività necessarie sono selezionate, puoi visualizzare &#x200B;](assets/marketo-engage-activities-04.png)
 
 1. Per ogni tipo di attività, devi definire una o più regole che determinino quali record sono idonei per i punti di contatto. In questo esempio, aggiungiamo una regola per il tipo di attività &quot;Punteggio di modifica&quot; in modo che il sistema crei un punto di contatto quando una persona Marketo raggiunge un punteggio di 90 o superiore.
 

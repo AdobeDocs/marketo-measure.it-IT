@@ -28,7 +28,7 @@ Dopo aver effettuato l&#39;accesso all&#39;account [!DNL Pardot], eseguire la pr
 
 1. Determinare il modello di layout appropriato e fare clic su **[!UICONTROL Edit]** a destra.
 
-   ![1. Determinare il modello di layout appropriato e fare clic su Modifica in ](assets/adding-pages-1.png)
+   ![1. Determinare il modello di layout appropriato e fare clic su Modifica in &#x200B;](assets/adding-pages-1.png)
 
 1. Copiare e incollare il codice JavaScript [!DNL Marketo Measure] immediatamente prima del tag di intestazione Close nella pagina HTML.
 

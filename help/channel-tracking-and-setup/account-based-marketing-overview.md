@@ -87,7 +87,7 @@ Per iniziare a utilizzare PES, è necessario aggiungere il campo PES e l&#39;ele
 1. Passare quindi a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Leads]** > **[!UICONTROL Page Layout]** e selezionare i layout di pagina appropriati da modificare.
 1. Fai clic su **[!UICONTROL Fields]** e aggiungi il campo [!UICONTROL Account] che si adatta alla pagina.
 
-   ![1. Fai clic su Campi e aggiungi il campo Account in cui ](assets/account-marketing-5.png)
+   ![1. Fai clic su Campi e aggiungi il campo Account in cui &#x200B;](assets/account-marketing-5.png)
 
 È tutto pronto!
 

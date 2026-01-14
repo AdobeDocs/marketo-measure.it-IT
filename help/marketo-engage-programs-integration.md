@@ -32,9 +32,9 @@ Tutti i livelli.
 
 1. Per iniziare a impostare le regole per i programmi Marketo, passare a **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Programs]**. Fai clic sull&#39;icona **+** per iniziare a creare la prima regola.
 
-   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a ](assets/marketo-engage-programs-01.png)
+   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a &#x200B;](assets/marketo-engage-programs-01.png)
 
-   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a ](assets/marketo-engage-programs-06.png)
+   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a &#x200B;](assets/marketo-engage-programs-06.png)
 
 1. Facoltativamente, puoi impostare un nome per la regola, se questo contribuisce a tenerne traccia. per definire la regola, seleziona innanzitutto il campo dall’elenco dei campi Programma e Iscrizione al programma. Continua a creare la regola selezionando l’operatore e il valore previsto da verificare.
 
@@ -42,7 +42,7 @@ Tutti i livelli.
 
 1. Aggiungi un’altra istruzione nella stessa casella per impostare un criterio &quot;e&quot; nella regola oppure fai clic sull’icona + all’esterno della casella per impostare un’istruzione &quot;o&quot;.
 
-   ![1. Aggiungi un&#39;altra istruzione nella stessa casella per impostare un ](assets/bizible-discover-1.png)
+   ![1. Aggiungi un&#39;altra istruzione nella stessa casella per impostare un &#x200B;](assets/bizible-discover-1.png)
 
 1. Scegli la data o il campo data/ora da utilizzare per il mapping alla data del punto di contatto. Per visualizzare l&#39;elenco dei valori disponibili da Marketo, immettere una parentesi graffa `{`. Verranno visualizzati i campi disponibili.
 
@@ -72,7 +72,7 @@ Dopo aver creato alcune regole, è possibile testarle per verificare che l&#39;i
 
    Le regole vengono eseguite su un campione di 5000 membri. Se il programma contiene più di 5000 membri, è possibile che non venga eseguita alcuna verifica della compatibilità di tutti i membri. Questo strumento serve semplicemente come un modo per verificare che le regole siano costruite correttamente.
 
-   ![Le regole vengono eseguite su un campione di 5000 membri. Se ](assets/marketo-engage-programs-05.png)
+   ![Le regole vengono eseguite su un campione di 5000 membri. Se &#x200B;](assets/marketo-engage-programs-05.png)
 
    È possibile fare clic sul conteggio membri per visualizzare un elenco degli ID Marketo People idonei all&#39;interno del programma.
 

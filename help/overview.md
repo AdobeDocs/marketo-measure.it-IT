@@ -92,7 +92,7 @@ Le condizioni delle regole sono specifiche per il set di dati. È necessario cre
 
 Nessuna selezione per funnel vs boomerang vs modello personalizzato. Tutte le fasi sono selezionate per il modello funnel, boomerang e personalizzato. È previsto un limite per il numero di fasi supportate: 15 fasi personalizzate più 6 fasi integrate.
 
-![Nessuna selezione per funnel vs boomerang vs modello personalizzato. Tutte le fasi sono ](assets/marketo-overview-4.png)
+![Nessuna selezione per funnel vs boomerang vs modello personalizzato. Tutte le fasi sono &#x200B;](assets/marketo-overview-4.png)
 
 Le regole dei punti di contatto per i membri della campagna e le regole dei punti di contatto per le attività sono specifiche per set di dati.
 

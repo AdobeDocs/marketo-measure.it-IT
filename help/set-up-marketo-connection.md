@@ -40,7 +40,7 @@ Ecco come impostare la connessione a Marketo.
 
 1. Sempre in Marketo Engage, seleziona **LaunchPoint** nella struttura a sinistra. Individuare il servizio personalizzato che si desidera connettere a Marketo Measure e fare clic su **Visualizza dettagli**.
 
-   ![1. Sempre in Marketo Engage, seleziona LaunchPoint nella struttura in ](assets/set-connection-4.png)
+   ![1. Sempre in Marketo Engage, seleziona LaunchPoint nella struttura in &#x200B;](assets/set-connection-4.png)
 
 1. Evidenzia e salva l’ID client e il segreto client. Fai clic su **Chiudi**.
 

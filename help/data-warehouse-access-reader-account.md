@@ -26,7 +26,7 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 
 1. Questa pagina contiene il collegamento al data warehouse di Snowflake e il nome utente.
 
-   ![1. Questa pagina contiene il collegamento al data warehouse Snowflake e ](assets/data-account-9.png)
+   ![1. Questa pagina contiene il collegamento al data warehouse Snowflake e &#x200B;](assets/data-account-9.png)
 
    >[!NOTE]
    >
@@ -38,11 +38,11 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 
 1. Dopo aver effettuato l&#39;accesso, fare clic su **[!UICONTROL Worksheets]** nella parte superiore della pagina.
 
-   ![1. Una volta effettuato l&#39;accesso, fare clic su Fogli di lavoro nella parte superiore di ](assets/data-account-6.png)
+   ![1. Una volta effettuato l&#39;accesso, fare clic su Fogli di lavoro nella parte superiore di &#x200B;](assets/data-account-6.png)
 
 1. Gli oggetti di database BIZIBLE_ROI_V3 si trovano sul lato sinistro dello schermo. Immettere Warehouse, Database e Schema dalle opzioni a discesa nella parte superiore della finestra della query. Dovrebbe essere disponibile una sola opzione per ciascuno di essi. Ora puoi eseguire le query all’interno dell’editor di query di Snowflake.
 
-   ![1. Gli oggetti di database BIZIBLEROIV3 si trovano sul lato sinistro di ](assets/data-account-4.png)
+   ![1. Gli oggetti di database BIZIBLEROIV3 si trovano sul lato sinistro di &#x200B;](assets/data-account-4.png)
 
 ## Reimposta la password {#reset-your-password}
 
@@ -76,4 +76,4 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 * **Nome data warehouse** (non sempre obbligatorio)
    * Il warehouse esegue le query in Snowflake. È la risorsa calcolata. Il nome del magazzino è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
 
-  ![Il warehouse esegue le query in Snowflake. È il ](assets/data-account-2.png) calcolato
+  ![Il warehouse esegue le query in Snowflake. È il &#x200B;](assets/data-account-2.png) calcolato

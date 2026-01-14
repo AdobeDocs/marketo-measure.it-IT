@@ -30,7 +30,7 @@ Quando i lead o i contatti vengono aggiunti direttamente a una campagna, vengono
 
 Per includere questi record nel percorso dei punti di contatto, sono disponibili alcune opzioni per la sincronizzazione dei tipi di risposte alla campagna. Nel record Campaign dovrebbe essere presente un campo personalizzato della soluzione installata con etichetta &quot;[!UICONTROL Enable Buyer Touchpoints]&quot;. In caso contrario, il campo dovrà essere aggiunto tramite l’Editor di moduli.
 
-![Per includere questi record nel percorso dei punti di contatto, sono presenti alcuni ](assets/dynamics-lists-10.png)
+![Per includere questi record nel percorso dei punti di contatto, sono presenti alcuni &#x200B;](assets/dynamics-lists-10.png)
 
 Puoi scegliere di includere nella campagna tutti i record che hanno una risposta alla campagna, o solo quelli con una risposta di &quot;Interessato&quot;, oppure, per impostazione predefinita, non puoi includere le risposte alla campagna. Puoi lasciare vuoto il campo o scegliere esplicitamente di escluderlo.
 
@@ -60,7 +60,7 @@ Gli elenchi marketing rappresentano un altro modo per includere lead o contatti 
 
 [!DNL Marketo Measure] supporta solo elenchi marketing statici. Gli elenchi marketing dinamici non sono supportati perché l&#39;elaborazione richiede la verifica della data di modifica di un record, ma poiché un elenco dinamico si sta modificando di frequente, non esiste una data di modifica in base alla quale [!DNL Marketo Measure] deve effettuare la verifica. Ciò richiederebbe il download costante dell’intero set di dati nel corso della giornata.
 
-![Marketo Measure supporta solo elenchi marketing statici. Non sono supportati ](assets/dynamics-lists-5.png)
+![Marketo Measure supporta solo elenchi marketing statici. Non sono supportati &#x200B;](assets/dynamics-lists-5.png)
 
 La schermata precedente è un elenco di marketing per lead. Gli elenchi di marketing sono associati alle campagne e possono essere associati a più campagne. A meno che non si crei un solo elenco di marketing per una campagna, [!DNL Marketo Measure] sconsiglia ai clienti di utilizzare gli elenchi di marketing per tenere traccia delle campagne. È improbabile che lo stesso elenco esatto di lead/contatti sia idoneo per i punti di contatto in più campagne.
 

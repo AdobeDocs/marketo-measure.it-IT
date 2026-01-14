@@ -54,7 +54,7 @@ Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amm
 
 1. Imposta la percentuale di attribuzione da allocare agli stadi boomerang inclusi nel modello personalizzato. Assicurati che l’attribuzione totale per tutte le fasi sia pari al 100%. Fai clic su **[!UICONTROL Save and Process]**.
 
-   ![1. Imposta la percentuale di attribuzione da allocare a ](assets/boomerang-stages-24.png)
+   ![1. Imposta la percentuale di attribuzione da allocare a &#x200B;](assets/boomerang-stages-24.png)
 
    >[!NOTE]
    >

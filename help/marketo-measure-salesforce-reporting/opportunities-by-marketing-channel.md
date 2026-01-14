@@ -18,7 +18,7 @@ Questo rapporto evidenzia il numero di opportunità generate dai canali di marke
 
 1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot;, selezionare il tipo di report **[!UICONTROL Bizible Attribution Touchpoint with Opportunity]** e selezionare **[!UICONTROL Create]**.
 
-   ![1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot; e selezionare ](assets/bizible-guide-1.png)
+   ![1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot; e selezionare &#x200B;](assets/bizible-guide-1.png)
 
 1. A partire dalla parte superiore del report, mostra **[!UICONTROL All Bizible Attribution Touchpoints]** e regola il campo data in base all&#39;intervallo di tempo su cui stai cercando di generare il report. Nel nostro esempio, guardiamo a All Time (Tutti i tempi). Inoltre, modificare il formato del report da [!UICONTROL Tabular] a **[!UICONTROL Summary]**.
 
@@ -26,7 +26,7 @@ Questo rapporto evidenzia il numero di opportunità generate dai canali di marke
 
 1. Ora verranno aggiunti dei campi al rapporto. Nella ricerca rapida a sinistra, digita &quot;Canale di marketing&quot; e aggiungilo al raggruppamento di riepilogo nel rapporto.
 
-   ![1. Ora verranno aggiunti dei campi al rapporto. In ](assets/marketo-reports-10.jpg)
+   ![1. Ora verranno aggiunti dei campi al rapporto. In &#x200B;](assets/marketo-reports-10.jpg)
 
 1. Ora esegui il rapporto e analizza.
 

@@ -24,4 +24,4 @@ Da lì, dovresti essere libero di unire i lead e [!DNL Marketo Measure] dati ver
 
 In caso di domande, contatta il team dell&#39;account Adobe (il tuo Account Manager) o il [supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
-![In caso di domande, non esitare a contattare ](assets/additional-functionality-8.jpg)
+![In caso di domande, non esitare a contattare &#x200B;](assets/additional-functionality-8.jpg)

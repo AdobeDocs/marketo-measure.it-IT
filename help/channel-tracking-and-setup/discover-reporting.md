@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Entro [!UICONTROL User Settings], gli utenti avranno la possibilità di cambiare la valuta dalla valuta predefinita a una qualsiasi delle valute aziendali elencate. Questo modificherà la visualizzazione di importi quali Costo, Ricavi e Ricavi pipeline, ad esempio, insieme al codice valuta di tre lettere.
 
-![Nelle impostazioni utente, gli utenti avranno la possibilità di modificare ](assets/multi-currency-1.png)
+![Nelle impostazioni utente, gli utenti avranno la possibilità di modificare &#x200B;](assets/multi-currency-1.png)
