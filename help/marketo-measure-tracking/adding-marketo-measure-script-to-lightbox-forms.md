@@ -3,9 +3,9 @@ description: Aggiunta di  [!DNL Marketo Measure] script alle linee guida di Ligh
 title: Aggiunta dello script  [!DNL Marketo Measure]  a Lightbox Forms
 exl-id: fa9ce480-fc4f-4abd-8555-dbb74849747e
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Poiché un modulo all’interno di un lightbox è fondamentalmente un modulo all
 
 Individuare innanzitutto l&#39;iFrame in cui si trova il modulo [!UICONTROL lightbox].
 
-![](assets/adding-providers-8.png)
+![Individuare innanzitutto l&#39;iFrame in cui si trova il modulo lightbox.](assets/adding-providers-8.png)
 
 Posizionare il JavaScript [!DNL Marketo Measure] nell&#39;iFrame.
 
-![](assets/adding-providers-5.png)
+![Inserire il JavaScript di Marketo Measure nell&#39;iFrame.](assets/adding-providers-5.png)
 
 Infine, quando viene aggiunto il JavaScript, viene tenuta traccia degli invii di moduli di convalida seguendo queste istruzioni:
 

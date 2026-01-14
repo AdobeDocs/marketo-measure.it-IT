@@ -3,9 +3,9 @@ description: IFrame Forms e [!DNL Marketo Measure] guida per gli utenti di Marke
 title: IFrame Forms e [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,6 @@ Vediamo in molti casi che IFrame è gestito tramite un provider di automazione m
 
 Si consiglia di posizionare il JavaScript all&#39;interno della parte superiore dell&#39;IFrame e da lì verranno automaticamente collegati ai moduli all&#39;interno di tale cornice.
 
-![](assets/adding-pages-1.png)
+![Si consiglia di posizionare il JavaScript all&#39;interno dell&#39;intestazione del](assets/adding-pages-1.png)
 
 Per qualsiasi domanda sull&#39;aggiunta del nostro JavaScript ai moduli IFrame, rivolgiti al team dell&#39;account Adobe (il tuo Account Manager) o al [supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

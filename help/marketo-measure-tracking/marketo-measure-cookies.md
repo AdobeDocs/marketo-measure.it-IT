@@ -4,9 +4,9 @@ title: '[!DNL Marketo Measure] cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '386'
 ht-degree: 10%
 
 ---
@@ -33,4 +33,4 @@ Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applich
 
 Se durante la configurazione di JavaScript viene attivato un avviso di Firewall applicazione Web (WAF), gli utenti possono disabilitare la regola di WAF o inserire nell&#39;elenco Consentiti i cookie, come nell’esempio seguente:
 
-![](assets/adding-script-1.png)
+![Se viene attivato un avviso di Firewall applicazione Web (WAF) durante il JavaScript](assets/adding-script-1.png)

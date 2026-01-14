@@ -3,10 +3,10 @@ description: Informazioni [!DNL Marketo Measure] Guida ai tag AdWords per gli ut
 title: Informazioni sull'assegnazione di tag  [!DNL Marketo Measure] AdWords
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -60,11 +60,11 @@ Esistono due modelli di tracciamento [!DNL Marketo Measure] che si consiglia di 
 
 1. Fare clic su **[!UICONTROL All campaigns]** e quindi su **[!UICONTROL Settings]** nella finestra di espansione.
 
-   ![](assets/utilizing-connections-13.png)
+   ![1. Fare clic su Tutte le campagne e quindi su Impostazioni in ](assets/utilizing-connections-13.png) in espansione
 
 1. Fai clic su **[!UICONTROL Account Settings]** in alto, quindi su **[!UICONTROL Tracking Template]**. Immetti il modello di tracciamento [!DNL Marketo Measure].
 
-   ![](assets/bizible-guide-1.png)
+   ![1. Fare clic su Impostazioni account nella parte superiore e quindi su Verifica](assets/bizible-guide-1.png)
 
 1. Fai clic su **[!UICONTROL Save]**.
 
@@ -72,11 +72,11 @@ Esistono due modelli di tracciamento [!DNL Marketo Measure] che si consiglia di 
 
 1. Fare clic su **[!UICONTROL All campaigns]** e quindi su **[!UICONTROL Campaigns]** nella finestra di espansione.
 
-   ![](assets/utilizing-connections-12.png)
+   ![1. Fare clic su Tutte le campagne e quindi su Campagne nella ](assets/utilizing-connections-12.png) in espansione
 
 1. Selezionare tutte le campagne applicabili o **[!UICONTROL Select All]**, fare clic su **[!UICONTROL Edit]** e quindi su **[!UICONTROL Change Tracking Templates]**.
 
-   ![](assets/five-five-1.png)
+   ![1. Seleziona tutte le campagne applicabili o Seleziona tutto, fai clic su Modifica,](../assets/marketo-engage-activities-05.png)
 
 1. Immettere il modello di verifica [!DNL Marketo Measure] e fare clic su **[!UICONTROL Apply]**.
 
@@ -84,13 +84,13 @@ Esistono due modelli di tracciamento [!DNL Marketo Measure] che si consiglia di 
 
 1. Fare clic su **[!UICONTROL All campaigns]** e quindi su **[!UICONTROL Ad Groups]** nella finestra di espansione.
 
-   ![](assets/four-four-1.png)
+   ![1. Fare clic su Tutte le campagne e quindi su Gruppi di annunci in ](assets/api-connections-01.png)
 
 1. Selezionare tutti i gruppi di annunci applicabili o Seleziona tutto, fare clic su **[!UICONTROL Edit]** e quindi su **[!UICONTROL Change Tracking Templates]**.
 
 1. Immettere il modello di verifica [!DNL Marketo Measure] e fare clic su **[!UICONTROL Apply]**.
 
-   ![](assets/one-one-1.png)
+   ![1. Immettere il modello di tracciamento di Marketo Measure e fare clic su Applica.](../assets/marketo-engage-activities-01.png)
 
 ## Domande frequenti {#faq}
 

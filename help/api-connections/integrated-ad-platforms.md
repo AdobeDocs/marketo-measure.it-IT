@@ -4,9 +4,9 @@ title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Prima di entrare nelle specifiche di ciascuna piattaforma, esamineremo come coll
 
 Come mostrato nell’immagine seguente, verrà visualizzato un pulsante per impostare nuove connessioni di annunci.
 
-![](assets/bizible-guide-1.png)
+![Come mostrato nell&#39;immagine seguente, verrà visualizzato un pulsante per ](assets/bizible-guide-1.png)
 
 Dopo aver fatto clic sul pulsante [!UICONTROL Set up New Ads Connection], verrà visualizzata una finestra (mostrata di seguito) con quattro tipi di annunci [!UICONTROL connect] ioni. Facendo clic su Connetti verrà visualizzata un&#39;altra finestra in cui viene richiesto di immettere le credenziali. Immettere le credenziali e fare clic su [!UICONTROL authorize] per connettere l&#39;account a [!DNL Marketo Measure].
 
-![](assets/five-five-1.png)
+![Dopo aver fatto clic sul pulsante Configura connessione nuovi annunci, a](../assets/marketo-engage-activities-05.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -56,15 +56,15 @@ Dopo aver impostato un modello di tracciamento, seguire le istruzioni riportate 
 
 1. Vai a [!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections].
 
-   ![](assets/utilizing-connections-8.png)
+   ![1. Vai a Connessioni integrazioni impostazioni account utente.](assets/utilizing-connections-8.png)
 
 1. Fare clic sull&#39;icona a forma di matita accanto all&#39;account Adwords per il quale verrà attivata l&#39;assegnazione tag automatica [!DNL Marketo Measure].
 
-   ![](assets/utilizing-connections-9.png)
+   ![1. Fai clic sull&#39;icona a forma di matita accanto all&#39;account Adwords che ](assets/utilizing-connections-9.png)
 
 1. Nell&#39;angolo in alto a destra, impostare il parametro **[!UICONTROL Autotagging]** su **[!UICONTROL Yes]**. Nella parte inferiore della pagina fare clic su **[!UICONTROL Learn More]** per espandere la casella di testo e fare clic su **[!UICONTROL Save]**. Impostazione assegnazione automatica tag completata.
 
-   ![](assets/utilizing-connections-10.png)
+   ![1. Nell&#39;angolo in alto a destra, impostare il parametro di assegnazione automatica tag su ](assets/utilizing-connections-10.png)
 
 ## Impostare un modello di tracciamento in AdWords con [!DNL Marketo Measure] parametri {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 

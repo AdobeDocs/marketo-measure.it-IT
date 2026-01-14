@@ -3,10 +3,10 @@ description: Aggiunta di  [!DNL Marketo Measure] JavaScript alle [!DNL Pardot] l
 title: Aggiunta di  [!DNL Marketo Measure] JavaScript a  [!DNL Pardot] in corso
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 0%
+source-wordcount: '239'
+ht-degree: 1%
 
 ---
 
@@ -24,11 +24,11 @@ Dopo aver effettuato l&#39;accesso all&#39;account [!DNL Pardot], eseguire la pr
 
 1. Seleziona **[!UICONTROL Layout Template]**.
 
-   ![](assets/adding-providers-4.png)
+   ![1. Seleziona modello di layout.](assets/adding-providers-4.png)
 
 1. Determinare il modello di layout appropriato e fare clic su **[!UICONTROL Edit]** a destra.
 
-   ![](assets/adding-pages-1.png)
+   ![1. Determinare il modello di layout appropriato e fare clic su Modifica in ](assets/adding-pages-1.png)
 
 1. Copiare e incollare il codice JavaScript [!DNL Marketo Measure] immediatamente prima del tag di intestazione Close nella pagina HTML.
 

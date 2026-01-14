@@ -4,9 +4,9 @@ title: API [!DNL Facebook]
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Per quanto riguarda la configurazione, è necessario completare sette passaggi n
 
 ## Collegamento dell’account {#connecting-the-account}
 
-![](assets/utilizing-connections-2.gif)
+![Connessione all&#39;account {connecting-the-account}](assets/utilizing-connections-2.gif)
 
 ## Abilitazione del tag automatico {#enabling-autotagging}
 
@@ -46,87 +46,87 @@ Per quanto riguarda la configurazione, è necessario completare sette passaggi n
 >
 >Se abiliti l’assegnazione tag automatica, verranno reimpostate la cronologia delle conversioni e le bozze social di tutti gli annunci a cui vengono assegnati tag. Ti consigliamo vivamente di [esportare questi dati come CSV](https://www.facebook.com/business/help/205067636197240) prima di abilitare l&#39;assegnazione tag automatica.
 
-![](assets/bizible-guide-1.png)
+![Se abiliti l&#39;assegnazione tag automatica, verrà reimpostata la cronologia delle conversioni e la bozza social](assets/bizible-guide-1.png)
 
 Dopo aver abilitato l&#39;integrazione, [!DNL Marketo Measure] inizierà a scaricare il costo a livello di annuncio nel dashboard [!DNL Marketo Measure Marketing ROI].
 
 Affinché l&#39;integrazione funzioni correttamente, è necessario abilitare l&#39;assegnazione tag automatica sull&#39;account [!DNL Facebook]. Questo consentirà al nostro sistema di aggiungere un parametro _bf in tutti i collegamenti degli annunci. Questo processo aggiungerà il nuovo parametro oltre a tutti gli altri parametri di tracciamento già aggiunti agli annunci di [!DNL Facebook].
 
-![](assets/five-five-1.png)
+![Affinché l&#39;integrazione funzioni correttamente, devi abilitare l&#39;assegnazione tag automatica sul tuo](../assets/marketo-engage-activities-05.png)
 
 ## Mappatura campi {#field-mapping}
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
-  <tr> 
-   <th><p><strong>Campo punto di contatto</strong></p></th> 
-   <th><p><strong>Valore</strong></p></th> 
-  </tr> 
-  <tr> 
-   <td><p>ID campagna pubblicitaria</p></td> 
-   <td><p>[[!DNL Facebook] ID campagna]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Nome campagna pubblicitaria </p></td> 
-   <td><p>[[!DNL Facebook] Nome campagna], o [utm_campaign] se fornito</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>ID gruppo di annunci</p></td> 
-   <td><p>[[!DNL Facebook] ID set di annunci]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Nome gruppo di annunci</p></td> 
-   <td><p>[[!DNL Facebook] nome set di annunci]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Source punto di contatto</p></td> 
-   <td><p>"[!DNL Facebook]" o [utm_source] se fornito</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Canale</p></td> 
-   <td><p>"Social" o [utm_medium] se fornito</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>ID annuncio o Creative_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[ID personalizzato generato da utm_content]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Contenuto annuncio o Creative_Name (Data Warehouse)</p></td> 
-   <td><p>[utm_content] se fornito</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Testo parola chiave o Nome_parola chiave (Data Warehouse)</p></td> 
-   <td><p>[utm_term] se fornito</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook] ID annuncio]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Name (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook] nome annuncio]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Keyword_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[ID personalizzato generato da utm_term]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Provider (Data Warehouse)</p></td> 
-   <td><p>"[!DNL Facebook]"</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Account_Unique_ID (Data Warehouse)</p></td> 
-   <td><p>N. account [[!DNL Facebook]]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Nome_account (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook] Nome account]</p></td> 
-  </tr> 
- </tbody> 
+<table>
+ <colgroup>
+  <col>
+  <col>
+ </colgroup>
+ <tbody>
+  <tr>
+   <th><p><strong>Campo punto di contatto</strong></p></th>
+   <th><p><strong>Valore</strong></p></th>
+  </tr>
+  <tr>
+   <td><p>ID campagna pubblicitaria</p></td>
+   <td><p>[[!DNL Facebook] ID campagna]</p></td>
+  </tr>
+  <tr>
+   <td><p>Nome campagna pubblicitaria </p></td>
+   <td><p>[[!DNL Facebook] Nome campagna], o [utm_campaign] se fornito</p></td>
+  </tr>
+  <tr>
+   <td><p>ID gruppo di annunci</p></td>
+   <td><p>[[!DNL Facebook] ID set di annunci]</p></td>
+  </tr>
+  <tr>
+   <td><p>Nome gruppo di annunci</p></td>
+   <td><p>[[!DNL Facebook] nome set di annunci]</p></td>
+  </tr>
+  <tr>
+   <td><p>Source punto di contatto</p></td>
+   <td><p>"[!DNL Facebook]" o [utm_source] se fornito</p></td>
+  </tr>
+  <tr>
+   <td><p>Canale</p></td>
+   <td><p>"Social" o [utm_medium] se fornito</p></td>
+  </tr>
+  <tr>
+   <td><p>ID annuncio o Creative_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[ID personalizzato generato da utm_content]</p></td>
+  </tr>
+  <tr>
+   <td><p>Contenuto annuncio o Creative_Name (Data Warehouse)</p></td>
+   <td><p>[utm_content] se fornito</p></td>
+  </tr>
+  <tr>
+   <td><p>Testo parola chiave o Nome_parola chiave (Data Warehouse)</p></td>
+   <td><p>[utm_term] se fornito</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook] ID annuncio]</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Name (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook] nome annuncio]</p></td>
+  </tr>
+  <tr>
+   <td><p>Keyword_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[ID personalizzato generato da utm_term]</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Provider (Data Warehouse)</p></td>
+   <td><p>"[!DNL Facebook]"</p></td>
+  </tr>
+  <tr>
+   <td><p>Account_Unique_ID (Data Warehouse)</p></td>
+   <td><p>N. account [[!DNL Facebook]]</p></td>
+  </tr>
+  <tr>
+   <td><p>Nome_account (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook] Nome account]</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Domande frequenti {#faq}

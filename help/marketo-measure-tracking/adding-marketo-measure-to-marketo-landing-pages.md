@@ -3,9 +3,9 @@ description: Aggiunta di  [!DNL Marketo Measure]  alle pagine di destinazione di
 title: Aggiunta di  [!DNL Marketo Measure]  alle pagine di destinazione di Marketo
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Esempio nella schermata seguente
 
 1. Fai clic su **[!UICONTROL Save]**.
 
-   ![](assets/adding-pages-1.png)
+   ![1. Fare clic su Salva.](assets/adding-pages-1.png)
 
 ## Note aggiuntive {#additional-notes}
 
@@ -41,4 +41,4 @@ Esempio nella schermata seguente
 
 * È probabile che siano in uso più modelli di pagina di destinazione; assicurati di aggiungere il codice a tutti i modelli che contengono moduli.
 
-* A volte, quando modifichi il modello per le pagine di destinazione, devi approvare nuovamente le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=it){target="_blank"}.
+* A volte, quando modifichi il modello per le pagine di destinazione, devi approvare nuovamente le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.

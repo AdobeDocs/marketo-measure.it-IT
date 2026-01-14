@@ -4,9 +4,9 @@ title: Autorizzazione di nuovo account collegati
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Se la piattaforma pubblicitaria viene disconnessa, [!DNL Marketo Measure] non sa
 
 Se la piattaforma CRM viene disconnessa, [!DNL Marketo Measure] non sarà in grado di aggiornare i dati di [!DNL Marketo Measure] né di inviare nuovi punti di contatto all&#39;organizzazione. Una volta ristabilita la connessione CRM, [!DNL Marketo Measure] invierà tutti i dati mancanti durante la disconnessione dell&#39;account.
 
-![](assets/utilizing-connections-7.png)
+![Se la piattaforma CRM viene disconnessa, Marketo Measure non sarà](assets/utilizing-connections-7.png)
 
 ## Autorizzazione di nuovo account disconnessi {#re-authorizing-disconnected-accounts}
 
