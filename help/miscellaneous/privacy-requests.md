@@ -17,8 +17,8 @@ In questo documento viene fornita una panoramica sulla gestione delle singole ri
 
 È possibile inviare singole richieste per accedere ed eliminare i dati dei consumatori da [!DNL Marketo Measure] in due modi:
 
-* Tramite l&#39;[[!DNL Privacy Service] interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
-* Tramite l&#39;API **[!DNL Privacy Service]**. Consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} e il riferimento API [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
+* Tramite l&#39;[[!DNL Privacy Service] interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=it){target="_blank"}.
+* Tramite l&#39;API **[!DNL Privacy Service]**. Consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=it){target="_blank"} e il riferimento API [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it){target="_blank"} supporta due tipi di richieste: accesso ai dati ed eliminazione dei dati.
 

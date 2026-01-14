@@ -111,6 +111,6 @@ I punti di contatto di attribuzione non vengono scritti in CRM perché Ultimate 
 
 >[!MORELIKETHIS]
 >
->* [Destinazione Marketo Measure Ultimate](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>* [Destinazione Marketo Measure Ultimate](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=it){target="_blank"}
 >
 >* [VIDEO: Panoramica di Marketo Measure Ultimate](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

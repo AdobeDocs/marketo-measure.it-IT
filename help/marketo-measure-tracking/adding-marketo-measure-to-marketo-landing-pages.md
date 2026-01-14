@@ -41,4 +41,4 @@ Esempio nella schermata seguente
 
 * È probabile che siano in uso più modelli di pagina di destinazione; assicurati di aggiungere il codice a tutti i modelli che contengono moduli.
 
-* A volte, quando modifichi il modello per le pagine di destinazione, devi approvare nuovamente le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.
+* A volte, quando modifichi il modello per le pagine di destinazione, devi approvare nuovamente le pagine da cui viene utilizzata la pagina di destinazione. Questo articolo spiega [come approvare in massa](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=it){target="_blank"}.
