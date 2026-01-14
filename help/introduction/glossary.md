@@ -3,7 +3,7 @@ description: Glossario dei campi Marketo Measure
 title: Glossario dei campi Marketo Measure
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 feature: Fundamentals
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 0%
@@ -305,7 +305,7 @@ Questo campo mostra il gruppo generale di attività di marketing o canale di mar
 
 Questo campo mostra il canale di marketing e il sottocanale a cui appartiene un punto di contatto. Nell’esempio seguente, Canale di marketing - Percorso è Social.LinkedIn, dove il canale di marketing è Social e il sottocanale è LinkedIn.
 
-![&#x200B; 3](assets/1-3.png)
+![ 3](assets/overview-resources-16.png)
 
 **Medium** | Buyer Touchpoint, Buyer Attribution Touchpoint
 

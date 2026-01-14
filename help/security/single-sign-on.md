@@ -1,20 +1,24 @@
 ---
-description: Single Sign-On - [!DNL Marketo Measure]
+description: Linee guida per Single Sign-On per gli utenti di Marketo Measure
 title: Single Sign-On
 exl-id: a328e9cb-8352-4693-8a44-533e08f1a29c
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
-
 
 # Single Sign-On {#single-sign-on}
 
 SAML (Security Assertion Markup Language) per SSO (Single Sign-On) consente agli utenti di eseguire l&#39;autenticazione tramite il provider di identità di un&#39;azienda quando accedono all&#39;app [!DNL Marketo Measure]. SSO consente a un utente di eseguire l&#39;autenticazione una sola volta, senza dover eseguire l&#39;autenticazione di app separate. SAML è una necessità per i clienti aziendali perché non tutti gli utenti dispongono di un account [!DNL Salesforce] o [!DNL Google] all&#39;interno dell&#39;organizzazione. Per eseguire la scalabilità, [!DNL Marketo Measure] ha sviluppato una soluzione SAML in grado di supportare i provider di identità aziendali.
 
+>[!CAUTION]
+>
+>Questo articolo descrive il Single Sign-On (SSO) e la gestione avanzata degli utenti CRM. Se il provisioning del tuo account è stato eseguito **dopo il 9/10/2020**, ignora questo articolo, in quanto SSO e Identity Management verranno configurati in [Adobe Admin Console per la tua [!DNL Marketo Measure] integrazione](/help/configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-quick-start.md).
+
 >[!NOTE]
+>
 >È probabile che le aziende utilizzino diversi provider di identità (ad esempio, Ping Identity, Okta). I termini utilizzati nelle seguenti istruzioni di configurazione e nell’interfaccia utente di potrebbero non corrispondere direttamente a quelli utilizzati dal provider di identità.
 
 ## Requisiti {#requirements}
@@ -26,7 +30,7 @@ SAML (Security Assertion Markup Language) per SSO (Single Sign-On) consente agli
 
 Per iniziare, passare alla pagina Impostazioni > Protezione > Autenticazione nell&#39;applicazione [!DNL Marketo Measure]. Quindi imposta il tipo di accesso su SSO personalizzato per visualizzare le opzioni di configurazione. Le modifiche diventeranno effettive solo dopo aver verificato l&#39;autenticazione e aver fatto clic sul pulsante **[!UICONTROL Save]** nella parte inferiore della pagina.
 
-![Pagina delle impostazioni di autenticazione con opzione di tipo SSO personalizzato](assets/single-sign-on-1.png)
+![](assets/compliance-resources-1.png)
 
 ## Processo {#process}
 
@@ -68,7 +72,7 @@ Imposta e mappa le impostazioni degli attributi utente in base ai rispettivi nom
     
      b. Suggerimento: se verifichi ora la configurazione SAML, verranno analizzati gli attributi E-mail, Nome e Cognome che puoi utilizzare per questa sezione.
 
-![Modulo di configurazione SAML con campi di mappatura attributi utente](assets/single-sign-on-2.png)
+![](assets/discover-control-1.png)
 
 Imposta e mappa le impostazioni del Ruolo utente sui rispettivi ruoli o gruppi classificati dal tuo IdP.
 
@@ -82,7 +86,7 @@ Imposta e mappa le impostazioni del Ruolo utente sui rispettivi ruoli o gruppi c
     
     c. Se è necessario mappare più ruoli o gruppi a un ruolo, immettere ogni valore separato da una virgola.
 
-![Configurazione della mappatura dei ruoli utente con le opzioni utente standard e amministratore](assets/single-sign-on-3.png)
+![](assets/discover-control-2.png)
 
 Verificare la configurazione Single Sign-On
 
@@ -90,13 +94,13 @@ Verificare la configurazione Single Sign-On
     
      b. Se viene visualizzato un errore, seguire il messaggio e riprovare.
 
-![Pulsante Verifica autenticazione SAML e messaggio di stato di convalida](assets/single-sign-on-4.png)
+![](assets/discover-control-3.png)
 
 Salva le impostazioni e indirizza i tuoi colleghi a utilizzare [!UICONTROL Single Sign On] con il nuovo URL di accesso personalizzato.
 
     a. Importante: una volta salvate le nuove impostazioni di autenticazione, è possibile che la sessione termini quando si passa a una nuova pagina perché è stato disabilitato l&#39;accesso da parte degli utenti CRM e abilitato l&#39;SSO personalizzato.
 
-![Pulsante Salva per impostazioni di autenticazione e messaggio di conferma](assets/single-sign-on-5.png)
+![](assets/discover-control-3.png)
 
 Provalo!
 
@@ -106,9 +110,10 @@ Provalo!
     
     c. Congratulazioni! Hai configurato correttamente l&#39;accesso Single Sign-On nell&#39;applicazione  [!DNL Marketo Measure] per il tuo account!
 
-![Schermata di conferma dell&#39;accesso SSO completata](assets/single-sign-on-6.png)
+![](assets/discover-control-3.png)
 
 >[!NOTE]
+>
 >Dopo aver configurato l&#39;SSO, non sarà più necessario aggiungere utenti all&#39;interno dell&#39;applicazione [!DNL Marketo Measure]. Il provisioning degli utenti deve essere gestito direttamente all’interno del provider di identità.
 
 ## Utenti CRM (configurazione avanzata) {#crm-users-advanced-setup}
@@ -126,21 +131,21 @@ Se è necessario mappare più ruoli o gruppi a un ruolo, immettere ogni valore s
 
 Per [!DNL Salesforce] ruoli, utilizzare il nome di ogni ruolo. Tutti i ruoli sono disponibili nel menu [!UICONTROL Setup] >[!UICONTROL Manage Users] >[!UICONTROL Roles].
 
-![Il menu di installazione di Salesforce mostra i ruoli in Gestione utenti](assets/6.png)
+![](assets/discover-control-3.png)
 
 **Ruoli Dynamics**
 
 Per [!DNL Dynamics] ruoli, utilizzare il nome di ogni ruolo di protezione. Tutti i ruoli di protezione sono disponibili nel menu [!UICONTROL Settings] >[!UICONTROL Security] >[!UICONTROL Security Roles].
 
-![Navigazione del menu Impostazioni Dynamics ai ruoli di sicurezza](assets/7.png)
+![](assets/discover-control-3.png)
 
-![Elenco dei ruoli di sicurezza di Dynamics con le opzioni di ruolo disponibili](assets/8.png)
+![](assets/discover-control-3.png)
 
 **Utenti Google**
 
 Una volta configurato l&#39;SSO personalizzato, la pagina [!UICONTROL Users] viene aggiornata per mostrare solo gli utenti esterni che sono stati aggiunti con gli accessi a Google. Poiché tutti gli utenti con accesso sono definiti tramite la configurazione SSO, qui sono elencati altri utenti esterni.
 
-![Pagina Utenti con gli utenti esterni di accesso a Google](assets/9.png)
+![](assets/discover-control-3.png)
 
 È possibile aggiungere solo account [!DNL Google] validi e deve essere definito un ruolo utente.
 

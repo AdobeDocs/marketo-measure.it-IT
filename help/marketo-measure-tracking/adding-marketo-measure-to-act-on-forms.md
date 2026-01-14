@@ -1,15 +1,14 @@
 ---
-description: Aggiunta di  [!DNL Marketo Measure]  a Forms Act-On - [!DNL Marketo Measure]
+description: Aggiunta di  [!DNL Marketo Measure]  alle linee guida di Act-On Forms per gli utenti Marketo Measure
 title: Aggiunta di  [!DNL Marketo Measure]  a Forms Act-On
 exl-id: 3d246e6a-ad3b-4683-b2b7-ab3f0f4c5ab2
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
-
 
 # Aggiunta di [!DNL Marketo Measure] a Act-On Forms {#adding-marketo-measure-to-act-on-forms}
 
@@ -23,5 +22,7 @@ ht-degree: 0%
 `script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
 >[!NOTE]
+>
 >In quest&#39;area potrebbero essere già presenti altri snippet di codice di tracciamento, ad esempio un codice [!DNL Google Analytics]. Assicurarsi di separarli utilizzando un punto e virgola `;` e un singolo spazio, come segue:
->`<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>*; **<script async="true" type="someothercode" src="someotherfile.js" ></script>`
+>
+>`<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>**; **<script async="true" type="someothercode" src="someotherfile.js" ></script>`

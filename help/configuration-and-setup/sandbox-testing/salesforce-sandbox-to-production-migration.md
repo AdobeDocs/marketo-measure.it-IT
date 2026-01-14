@@ -1,15 +1,14 @@
 ---
-description: Migrazione da Sandbox Salesforce a Produzione - [!DNL Marketo Measure]
+description: Guida alla migrazione da Salesforce Sandbox a Production per gli utenti di Marketo Measure
 title: Migrazione da Sandbox Salesforce a Produzione
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Migrazione da Sandbox Salesforce a Produzione {#salesforce-sandbox-to-production-migration}
 
@@ -31,7 +30,7 @@ Se hai scelto di testare [!DNL Marketo Measure] in un ambiente Sandbox [!DNL Sal
 * Fai clic sull’icona cestino accanto alla connessione SFDC per eliminarla
 * Viene richiesto di confermare l&#39;eliminazione. Assicurati di leggere attentamente il prompt e comprendere le conseguenze dell’eliminazione
 
-  ![Pagina connessioni Marketo Measure che conferma l&#39;eliminazione di una sandbox Salesforce](assets/salesforce-sandbox-to-production-migration-1.png)
+  ![](assets/salesforce-migration-1.png)
 
    * Digita il nome dell’azienda come richiesto nel modello di conferma e fai clic su &quot;Comprendo le conseguenze, elimina questa connessione&quot;
 * Questo attiva il processo di eliminazione e richiederà del tempo

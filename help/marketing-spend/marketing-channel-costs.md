@@ -1,15 +1,15 @@
 ---
-description: Costi canale di marketing
+description: Indicazioni sui costi del canale di marketing per gli utenti di Marketo Measure
 title: Costi canale di marketing
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
-
 
 # Costi canale di marketing {#marketing-channel-costs}
 
@@ -77,13 +77,13 @@ Una volta che i canali e le regole di marketing sono stati impostati o aggiornat
 
 Vai al menu **[!UICONTROL My Account]**, fai clic su **[!UICONTROL Settings]**, quindi passa all&#39;opzione **[!UICONTROL Marketing Spend]** nella barra laterale a sinistra sotto la sezione **[!UICONTROL Reporting]**.
 
-![Pagina Impostazioni spesa di marketing in Marketo Measure](assets/1.png)
+![](assets/spend-management-4.png)
 
 **Passaggio 2: scarica il CSV dei costi correnti**
 
 Passare alla destra della schermata e fare clic su **[!UICONTROL Download Current Costs].** Questa opzione consente di scaricare un foglio di calcolo in formato CSV.
 
-![Opzione Scarica costi correnti nella pagina Spese di marketing](assets/2.png)
+![](assets/spend-management-1.png)
 
 **Passaggio 3: aprire il file CSV e apportare le modifiche**
 
@@ -95,7 +95,7 @@ Controlla le regole logiche nel foglio. Ogni riga deve contenere un canale e uno
 
 Ad esempio, per indicare Facebook come sottocanale e Social come canale, la regola deve essere scritta come segue: &quot;Social.Facebook&quot;. Allo stesso modo, per tenere traccia di un evento offline, la sintassi del canale dovrebbe essere: &quot;Events.Big Conference&quot;. L’immagine seguente mostra alcuni esempi:
 
-![Esempio CSV che mostra le voci di costo per canale e sottocanale](assets/3.png)
+![](assets/spend-management-2.png)
 
 _Note aggiuntive_:
 

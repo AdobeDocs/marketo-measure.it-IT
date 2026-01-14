@@ -1,17 +1,17 @@
 ---
-description: Nuova guida Discover Dashboard - [!DNL Marketo Measure] - Prodotto
-title: Nuova guida per Discover Dashboard
+description: Mappa le dashboard legacy di Discover alle versioni riprogettate ed evidenzia le modifiche chiave nella navigazione e nelle metriche
+title: Guida all’individuazione del dashboard
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
 
-
-# Nuova guida per Discover Dashboard {#new-discover-dashboard-guide}
+# Guida all’individuazione del dashboard {#new-discover-dashboard-guide}
 
 Siamo entusiasti di presentare la nuova progettazione della dashboard Discover. Il nostro obiettivo principale è offrirti un’esperienza più semplice e intuitiva. Con visualizzazioni più chiare e una navigazione più semplice, questo aggiornamento non solo mantiene la maggior parte delle metriche esistenti, ma introduce anche nuove informazioni. Immergiti e scopri la chiarezza e il valore aggiunto migliorati.
 
@@ -504,6 +504,7 @@ Le nuove funzioni sono disponibili nell&#39;articolo [Informazioni di base sulla
 Poiché continuiamo a migliorare la tua esperienza, ti invitiamo ad esprimere il tuo feedback su questo aggiornamento. I tuoi pensieri influenzeranno direttamente i perfezionamenti futuri, garantendo che la nostra piattaforma sia sempre allineata alle tue esigenze. Tieni d’occhio un modulo di feedback in Marketo Measure.
 
 >[!MORELIKETHIS]
->[Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
->[Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
 

@@ -1,11 +1,10 @@
 ---
-description: Domande frequenti sul modello di apprendimento automatico - [!DNL Marketo Measure]
+description: Domande frequenti sul modello di apprendimento automatico per gli utenti di Marketo Measure
 title: Domande frequenti sul modello di apprendimento automatico
-exl-id: 2fc142b2-8ac4-4c48-a8f1-398e29ccfe97
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Come viene calcolato il modello di apprendimento automatico?
 
 Il peso finale per una fase personalizzata viene calcolato come tale:
 
-**_Percentuale modello = Precisione modello x Tasso di conversione x Peso di unicità punto di contatto_**
+`Model Percentage = Model Accuracy x Conversion Rate x Touchpoint Uniqueness Weight`
 
 Alla fine, tutti i pesi degli stadi personalizzati vengono normalizzati e convertiti in % come mostrato di seguito.
 

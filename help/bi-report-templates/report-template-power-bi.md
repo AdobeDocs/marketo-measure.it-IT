@@ -3,13 +3,12 @@ description: Modello di report [!DNL Marketo Measure] - Power BI - [!DNL Marketo
 title: Modello di report [!DNL Marketo Measure] - Power BI
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
-
 
 # Modello di report [!DNL Marketo Measure] - Power BI {#marketo-measure-report-template-power-bi}
 
@@ -19,15 +18,15 @@ ht-degree: 0%
 
 Aprire il file Power BI del modello di reporting di Adobe [!DNL Marketo Measure].
 
-![Finestra di dialogo della connessione Power BI per il modello Marketo Measure](assets/marketo-measure-report-template-power-bi-1.png)
+![](assets/marketo-bi-1.png)
 
-È possibile trovare informazioni specifiche su server, warehouse e schema nell&#39;interfaccia utente [!DNL Marketo Measure] nella pagina delle informazioni di [!DNL Data Warehouse]. Le istruzioni per individuare questa pagina sono dettagliate [qui](/help/data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
+È possibile trovare informazioni specifiche su server, warehouse e schema nell&#39;interfaccia utente [!DNL Marketo Measure] nella pagina delle informazioni di [!DNL Data Warehouse]. Le istruzioni per individuare questa pagina sono dettagliate [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 I parametri QueryFilterStartDate e QueryFilterEndDate vengono utilizzati per limitare la quantità di dati importati. Questi parametri devono essere in formato SQL come vengono utilizzati nelle query inviate a [!DNL Snowflake]. Ad esempio, se si desidera limitare i dati agli ultimi due anni, QueryFilterStartDate sarà `dateadd` (anno,-2,current_date()). Questi parametri vengono confrontati con i tipi di dati datetime, pertanto si consiglia di utilizzare `dateadd` (day,1,current_date()) per QueryFilterEndDate per restituire tutti i dati all&#39;ora corrente.
 
 ## Connessione dati {#data-connection}
 
-I parametri immessi all&#39;apertura del file vengono utilizzati per strutturare le query native che importano tabelle dal data warehouse. È comunque necessario impostare una connessione dati all&#39;istanza [!DNL Snowflake]. A questo scopo, è necessario disporre degli stessi nomi di server e warehouse insieme al nome utente e alla password. I dettagli su dove trovare il tuo nome utente e reimpostare la password, se necessario, sono documentati [qui](/help/data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
+I parametri immessi all&#39;apertura del file vengono utilizzati per strutturare le query native che importano tabelle dal data warehouse. È comunque necessario impostare una connessione dati all&#39;istanza [!DNL Snowflake]. A questo scopo, è necessario disporre degli stessi nomi di server e warehouse insieme al nome utente e alla password. I dettagli su dove trovare il tuo nome utente e reimpostare la password, se necessario, sono documentati [qui](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ## Importazione dati {#data-import}
 
@@ -37,14 +36,15 @@ Per migliorare le prestazioni dei report e sfruttare le funzionalità di trasfor
 
 Per limitare i dati importati nel modello, ogni tabella viene impostata utilizzando una query nativa come origine. Per eseguire le query native è necessaria l’approvazione, è necessario fare clic su Esegui per ogni query. Questo passaggio è necessario solo la prima volta che vengono eseguite le query o se i parametri cambiano.
 
-![Finestra di dialogo di approvazione query nativa in Power BI](assets/marketo-measure-report-template-power-bi-2.png)
+![](assets/marketo-bi-2.png)
 
 Tutte le query escludono le righe eliminate e le tabelle [!UICONTROL facts] sono impostate per filtrare le righe con una data di modifica compresa tra le date di inizio e di fine immesse come parametri.
 
 >[!NOTE]
+>
 >Poiché i filtri di data vengono applicati alla data modificata di una riga, presta attenzione quando esegui rapporti su date che non rientrano nell’intervallo di date limitato. Ad esempio, l’intervallo di date modificato è limitato agli ultimi due anni. Può includere un evento con una data evento di tre anni fa, ma che è stato modificato di recente. Tuttavia, la segnalazione degli eventi di tre anni fa restituisce risultati incompleti, in quanto non tutte le righe sono state modificate nell’intervallo di tempo di due anni.
 
-![Editor query che mostra i parametri del filtro data](assets/marketo-measure-report-template-power-bi-3.png)
+![](assets/marketo-bi-3.png)
 
 Le tabelle seguenti sono trattate come tabelle dei fatti; i limiti di data della data di modifica sono stati aggiunti a queste query.
 
@@ -76,29 +76,32 @@ Le tabelle seguenti vengono trattate come tabelle dimensione; per queste query n
 
 Sono state applicate alcune trasformazioni ai dati in Power Query. Per visualizzare le trasformazioni specifiche di una tabella, aprire Power Query, passare a una tabella e annotare i passi applicati sul lato sinistro della finestra. Alcune delle trasformazioni specifiche sono descritte di seguito.
 
-![L&#39;editor Power Query mostra i passaggi di trasformazione applicati](assets/marketo-measure-report-template-power-bi-4.png)
+![](assets/marketo-bi-6.png)
 
 ### Colonne rimosse {#removed-columns}
 
 Per semplificare il modello dati e rimuovere i dati ridondanti e non necessari, è stato ridotto il numero di colonne importate in Power BI dalla tabella [!DNL Snowflake] originale. Le colonne rimosse includono chiavi esterne non necessarie, dati dimensionali denormalizzati meglio applicati tramite relazioni ad altre tabelle nel modello, colonne di controllo e campi utilizzati per l&#39;elaborazione interna di [!DNL Marketo Measure]. Puoi aggiungere o rimuovere colonne in base alle tue esigenze aziendali. Passa al passaggio &quot;Altre colonne rimosse&quot; dopo il passaggio &quot;Source&quot; in una tabella, fai clic sull’icona a forma di ingranaggio e aggiorna le colonne selezionate nell’elenco fornito.
 
 >[!NOTE]
-> Presta attenzione quando aggiungi ulteriori valori di chiave esterna. Power BI è spesso impostato per rilevare automaticamente le relazioni nel modello e l’aggiunta di valori di chiave esterna può causare collegamenti indesiderati tra tabelle e/o la disabilitazione delle relazioni esistenti.
-> La maggior parte delle tabelle del data warehouse [!DNL Marketo Measure] contiene dati dimensionali denormalizzati. Abbiamo lavorato per normalizzare e ripulire il modello in Power BI il più possibile per migliorare le prestazioni e la precisione dei dati. Prestare attenzione quando si includono campi denormalizzati aggiuntivi nelle tabelle dei fatti. Questo può interrompere il filtro dimensionale tra le tabelle e può inoltre causare rapporti non accurati.
+>
+>* Presta attenzione quando aggiungi ulteriori valori di chiave esterna. Power BI è spesso impostato per rilevare automaticamente le relazioni nel modello e l’aggiunta di valori di chiave esterna può causare collegamenti indesiderati tra tabelle e/o la disabilitazione delle relazioni esistenti.
+>
+>* La maggior parte delle tabelle del data warehouse [!DNL Marketo Measure] contiene dati dimensionali denormalizzati. Abbiamo lavorato per normalizzare e ripulire il modello in Power BI il più possibile per migliorare le prestazioni e la precisione dei dati. Prestare attenzione quando si includono campi denormalizzati aggiuntivi nelle tabelle dei fatti. Questo può interrompere il filtro dimensionale tra le tabelle e può inoltre causare rapporti non accurati.
 
-![Finestra di dialogo per la selezione delle colonne che mostra la configurazione delle colonne rimosse](assets/marketo-measure-report-template-power-bi-5.png)
+
+![](assets/marketo-bi-7.png)
 
 ### Colonne rinominate {#renamed-columns}
 
 Le tabelle e le colonne sono state rinominate per renderle più facili da usare e per standardizzare le convenzioni di denominazione. Per visualizzare le modifiche al nome della colonna, passare al passaggio &quot;Colonne rinominate&quot; dopo il passaggio &quot;Altre colonne rimosse&quot; in qualsiasi tabella.
 
-![Passaggio colonne rinominate che mostra i mapping dei nomi di colonna](assets/marketo-measure-report-template-power-bi-6.png)
+![](assets/marketo-bi-5.png)
 
 ### Segmenti rinominati {#renamed-segments}
 
 Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowflake dispongono di nomi di colonna generici. [!DNL BIZ_SEGMENT_NAMES] è una tabella di mappatura che elenca il nome del segmento generico e il nome del relativo segmento personalizzato mappato, definito nella sezione del segmento nell&#39;interfaccia utente [!DNL Marketo Measure]. La tabella Nome segmento viene utilizzata per rinominare le colonne del segmento nelle tabelle Punto di contatto lead e Punto di contatto attribuzione. Se non esiste alcun segmento personalizzato, viene mantenuto il nome del segmento generico.
 
-![Tabella di mapping dei nomi di segmento in Power Query](assets/marketo-measure-report-template-power-bi-7.png)
+![](assets/marketo-bi-4.png)
 
 ### Conversione ID sensibile a maiuscole e minuscole {#case-sensitive-id-conversion}
 
@@ -106,25 +109,25 @@ I dati [!DNL Marketo Measure] contengono alcune tabelle in cui i valori della ch
 /10/06/power-bi-and-case-sensitive/){target="_blank"}. Questi valori ID con distinzione tra maiuscole e minuscole sono etichettati come &quot;ID join&quot; e vengono utilizzati come chiavi di join nel livello di relazione. Abbiamo nascosto gli ID di unione dal livello di reporting, mantenendo i valori ID originali visibili per l’utilizzo nei rapporti, poiché i caratteri invisibili possono interferire con il taglio
 /incolla funzioni e filtro.
 
-![Tabella dei punti di contatto che mostra la trasformazione ID con distinzione tra maiuscole e minuscole](assets/marketo-measure-report-template-power-bi-8.png)
+![](assets/marketo-bi-8.png)
 
-![Tabella campagna con colonna ID join per corrispondenza con distinzione tra maiuscole e minuscole](assets/marketo-measure-report-template-power-bi-9.png)
+![](assets/marketo-bi-11.png)
 
 ### Righe aggiunte {#rows-added}
 
 Per aggiungere le funzionalità di conversione della valuta ai calcoli nel modello, è stata aggiunta una colonna del tasso di conversione aziendale alle tabelle Opportunità e Costo. Il valore di questa colonna viene aggiunto a livello di riga e viene valutato unendo alla tabella Tasso di conversione sia la data che l&#39;ID valuta. Per ulteriori dettagli sul funzionamento della conversione di valuta in questo modello, consulta la sezione [Conversione valuta](#currency-conversion) in questa documentazione.
 
-![Tabella opportunità con colonna del tasso di conversione aziendale](assets/marketo-measure-report-template-power-bi-10.png)
+![](assets/marketo-bi-10.png)
 
 La tabella Tasso di conversione archiviata in [!DNL Snowflake] contiene un intervallo di date per ogni conversione. Power BI non consente criteri di unione in un calcolo, ovvero tra un intervallo di date. Per eseguire il join di una data, sono stati aggiunti dei passaggi alla tabella Tasso di conversione per espandere le righe in modo da creare una riga per ogni data nell’intervallo di date di conversione.
 
-![Tabella Tasso di conversione con righe di date espanse](assets/marketo-measure-report-template-power-bi-11.png)
+![](assets/marketo-bi-9.png)
 
 ## Modello di dati {#data-model}
 
 Fai clic sull’immagine seguente per la versione di dimensioni intere.
 
-[![Diagramma del modello dati di Power BI con relazioni tra tabelle](assets/marketo-measure-report-template-power-bi-12.png)](/help/bi-report-templates/assets/power-bi-data-model.png){target="_blank"}
+[![](assets/marketo-bi-12.png)](/help/bi-report-templates/assets/power-model-1.png){target="_blank"}
 
 ### Relazioni e flusso di dati {#relationships-and-data-flow}
 
@@ -165,19 +168,19 @@ Poiché i tassi di conversione non devono necessariamente essere statici e posso
 
 Se non è possibile identificare un tasso di conversione, le misure di conversione della valuta in questo modello sostituiscono il valore 1,0 per il tasso. Sono state create misure separate per visualizzare il valore di valuta della misura e avvisare se un calcolo include più di un valore di valuta, ovvero se non è stato possibile convertire un valore nella valuta selezionata.
 
-![Formula di conversione valuta che mostra la logica di calcolo DAX](assets/marketo-measure-report-template-power-bi-13.png)
+![](assets/marketo-bi-13.png)
 
 ## Definizioni dei dati {#data-definitions}
 
 Al modello Power BI sono state aggiunte le definizioni per tabelle, colonne personalizzate e misure.
 
-![Proprietà tabella che mostrano le descrizioni delle definizioni](assets/marketo-measure-report-template-power-bi-14.png)
+![](assets/marketo-bi-15.png)
 
-![Definizioni di colonne personalizzate nel modello dati](assets/marketo-measure-report-template-power-bi-15.png)
+![](assets/marketo-bi-16.png)
 
-![Definizioni delle misure con formule DAX](assets/marketo-measure-report-template-power-bi-16.png)
+![](assets/marketo-bi-14.png)
 
-Per visualizzare le definizioni per le colonne provenienti direttamente da [!DNL Snowflake], consulta la [documentazione del data warehouse](/help/data-warehouse/data-warehouse-schema.md){target="_blank"}
+Per visualizzare le definizioni per le colonne provenienti direttamente da [!DNL Snowflake], consulta la [documentazione del data warehouse](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}
 
 ## Discrepanze tra modelli e individuazione {#discrepancies-between-templates-and-discover}
 

@@ -1,15 +1,14 @@
 ---
-description: Sincronizzazione campagna personalizzata - [!DNL Marketo Measure]
+description: Indicazioni di sincronizzazione di Campaign personalizzate per gli utenti di Marketo Measure
 title: Sincronizzazione campagna personalizzata
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
-
 
 # Sincronizzazione campagna personalizzata {#custom-campaign-sync}
 
@@ -25,32 +24,36 @@ Oggi, con il pacchetto [!DNL Marketo Measure] installato, è possibile indicare 
 1. Con le autorizzazioni AccountAdmin, puoi passare a **[!UICONTROL Settings]** > **[!UICONTROL Campaigns]** e visualizzare l’interfaccia utente delle regole di sincronizzazione dei membri della campagna.
 1. Fai clic sull&#39;icona **+** per iniziare a creare una regola.
 
-   ![Pagina delle impostazioni di sincronizzazione di Campaign con pulsante Aggiungi regola](assets/1-1.png)
+   ![](assets/offline-channels-1.png)
 
 1. È possibile creare una regola dai campi [!UICONTROL Campaign] o [!UICONTROL Campaign Member]. Compila il resto della regola con l’Operatore e il Valore che si prevede di convalidare. Nell’esempio seguente, stiamo verificando la presenza di una specifica campagna in base al suo nome.
 
-   ![Generatore di regole con selezione dei campi di Campaign e opzioni dell&#39;operatore](assets/2-1.png)
+   ![](assets/offline-channels-10.jpg)
 
    >[!NOTE]
+   >
    >I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background e non modificano un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
 1. Scegliere la data del punto di contatto. L&#39;elenco delle date possibili verrà visualizzato dopo l&#39;immissione di una parentesi graffa `{`, quindi è possibile selezionare la data che si desidera applicare a tutti i punti di contatto creati dalla regola.
 
-   ![Campo data punto di contatto con menu a discesa di completamento automatico che mostra i campi data disponibili](assets/3-1.png)
+   ![](assets/offline-channels-11.png)
 
    >[!NOTE]
+   >
    >Se si utilizzano le regole di sincronizzazione delle campagne personalizzate, [!DNL Marketo Measure] non leggerà gli aggiornamenti effettuati utilizzando il pulsante Bulk Update Touchpoint Date (Aggiorna data punto di contatto in blocco).
 
 1. Fai clic sul segno di spunta, quindi aggiungi ulteriori regole per le campagne aggiuntive in base alle esigenze.
 
-   ![Regola completata con segno di spunta e opzione per aggiungere altre regole](assets/4-1.png)
+   ![](assets/offline-channels-12.png)
 
    >[!NOTE]
+   >
    >Ora che le regole sono definite insieme alla sincronizzazione CRM, le regole dichiarate inizieranno naturalmente a entrare in conflitto. Se si sceglie di continuare a utilizzare sia la sincronizzazione campagna personalizzata _che_ il tipo di sincronizzazione CRM, è fondamentale creare regole in modo che i tipi di sincronizzazione CRM non vengano ignorati.
 
-   ![Più regole di sincronizzazione della campagna che mostrano le configurazioni del tipo di sincronizzazione CRM](assets/5-1.png)
+   ![](assets/offline-channels-13.png)
 
    >[!NOTE]
+   >
    >Se stai valutando la possibilità di arrestare l&#39;utente di [!UICONTROL CRM Sync Type], è consigliabile creare regole che non facciano riferimento al &quot;Tipo di sincronizzazione&quot; ma che _mantengano_ i punti di contatto CRM correnti. In questo modo le regole funzionano ancora se/quando viene effettuato il passaggio.
 
 Ecco un esempio di come apparirebbe, in modo che non vadano persi punti di contatto CRM esistenti:
@@ -59,22 +62,22 @@ Ecco un esempio di come apparirebbe, in modo che non vadano persi punti di conta
 
 Puoi controllare facilmente i punti di contatto dell’acquirente e i record di Buyer Attribution Touchpoint all’interno di Campaign per verificare che le regole funzionino correttamente. Ecco un BAT creato da [!DNL Marketo Measure] con la data del punto di contatto dinamico appropriata, estratto dalla campagna. Il campo Data di creazione è nell&#39;immagine sottostante.
 
-![Record Buyer Attribution Touchpoint con campo data punto di contatto dinamico](assets/6-1.png)
+![](assets/offline-channels-14.png)
 
 ## Test {#testing}
 
 1. La funzione di sincronizzazione di Campaign è dotata di una funzione di test che consente di verificare se le regole create soddisfano effettivamente i criteri di Campaign. Iniziare facendo clic sul pulsante [!UICONTROL Test]. Prima di iniziare il test, è necessario salvare le regole.
 
-   ![Pulsante Test nell&#39;interfaccia delle regole di sincronizzazione della campagna](assets/7-1.png)
+   ![](assets/offline-channels-15.jpg)
 
    Verrà visualizzato un pop-up in cui puoi immettere un ID campagna (15 o 18 caratteri dal CRM) da testare. Il punto è quello di inserire l’ID campagna dal sistema di gestione delle relazioni con i clienti che stavi tentando di sincronizzare per assicurarti che corrisponda alla regola creata.
 
-   ![Finestra di dialogo modale di test con campo di input ID campagna](assets/8-1.png)
+   ![](assets/offline-channels-16.png)
 
 1. Dopo aver fatto clic su [!UICONTROL Test], verranno visualizzati il nome della campagna e il numero di membri della campagna idonei per i punti di contatto. Di seguito verrà visualizzata una tabella che mostra tutte le regole che corrispondono al tuo ID campagna. Verranno visualizzate solo le corrispondenze.
 
-   ![Risultati del test che mostrano il nome della campagna e il numero di membri idonei](assets/9.png)
+   ![](assets/offline-channels-17.png)
 
 1. È inoltre possibile fare clic sul conteggio dei membri per visualizzare un elenco dei lead e dei contatti e dei relativi ID che fanno parte dell’idoneità della regola Campaign. Questo è solo un set di esempio e visualizzerà fino a 50 in modo da poter avere un’idea di quali record sono idonei.
 
-   ![Elenco dei membri della campagna idonei con ID lead e contatti](assets/10.png)
+   ![](assets/offline-channels-18.jpg)

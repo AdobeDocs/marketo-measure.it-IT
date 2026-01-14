@@ -1,15 +1,14 @@
 ---
-description: Best practice per il modello personalizzato - [!DNL Marketo Measure]
+description: Tecniche consigliate per la guida del modello personalizzato per gli utenti di Marketo Measure
 title: Best practice per il modello personalizzato
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per il modello personalizzato {#best-practices-for-custom-model}
 
@@ -24,6 +23,7 @@ Esistono due aspetti chiave del modello di attribuzione personalizzato:
 **Le fasi personalizzate** consentono agli utenti di definire il proprio funnel in relazione alla propria attività e ai propri processi. Le fasi personalizzate devono rappresentare le &quot;milestone&quot; in tutto il percorso dell&#39;acquirente, in modo analogo alle [!DNL Marketo Measure] attività cardine (Primo contatto, Tocco per la creazione di lead, Tocco per la creazione di opportunità e Tocco vinto chiuso) eseguite all&#39;interno dei modelli di attribuzione delle azioni. È fondamentale che le fasi personalizzate siano definite e mappate correttamente nel tuo account per garantire che [!DNL Marketo Measure] tenga traccia correttamente delle transizioni delle fasi. Questo consente di identificare quali punti di contatto devono essere associati a ciascuna fase e attribuire il credito in modo appropriato. La mappatura personalizzata dello staging è essenzialmente un’estensione della mappatura standard dello staging e deve seguire le stesse procedure.
 
 >[!NOTE]
+>
 >Fai riferimento alla risorsa Best practice per la mappatura degli stadi per ulteriori dettagli
 
 **La modellazione di attribuzione personalizzata** viene definita dopo aver selezionato il funnel Stadi personalizzati. Gli utenti possono quindi controllare la quantità di credito di attribuzione da assegnare a ogni fase personalizzata e alle fasi cardine [!DNL Marketo Measure]. Gli utenti possono assegnare il credito a ogni fase in base alle proprie esigenze oppure fare riferimento al modello di apprendimento automatico [!DNL Marketo Measure] che funge da &quot;modello suggestivo&quot; in base ai dati storici.
@@ -68,6 +68,7 @@ Altri motivi per cui potrebbe essere attivata una revisione del modello personal
 * Visualizzazione di posizioni dei punti di contatto popolate che non sono più rilevanti per la funnel delle organizzazioni
 
 >[!MORELIKETHIS]
-> [Modello di attribuzione personalizzato e installazione](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md)
-> [Abilita Tracciamento Cronologia Campi Per Modello Personalizzato](/help/advanced-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md)
-> [Modello di apprendimento automatico](/help/advanced-features/custom-attribution-models/machine-learning-model-faq.md)
+>
+>* [Modello di attribuzione personalizzato e installazione](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md)
+>* [Abilita Tracciamento Cronologia Campi Per Modello Personalizzato](/help/advanced-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md)
+>* [Modello di apprendimento automatico](/help/advanced-features/custom-attribution-models/machine-learning-model-faq.md)

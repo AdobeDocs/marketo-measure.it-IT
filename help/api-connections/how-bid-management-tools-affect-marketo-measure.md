@@ -1,15 +1,14 @@
 ---
-description: Effetti degli strumenti di gestione delle offerte su  [!DNL Marketo Measure] - [!DNL Marketo Measure]
+description: Influenza degli strumenti di gestione delle offerte [!DNL Marketo Measure] indicazioni per gli utenti di Marketo Measure
 title: Effetti degli strumenti di gestione delle offerte [!DNL Marketo Measure]
 exl-id: 67c00ad9-8b12-4238-8a1f-2d2f5ed04423
 feature: APIs, Integration, UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # Effetti degli strumenti di gestione delle offerte su [!DNL Marketo Measure] {#how-bid-management-tools-affect-marketo-measure}
 
@@ -31,6 +30,7 @@ Imposta un modello di tracciamento come segue:
       * `{lpurl}&_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
    * Se NESSUNO degli URL dell’annuncio ha un &quot;?&quot; in essi, utilizza questo URL:
       * `{lpurl}?_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
+
 
 ## Per gli account [!DNL Bing Ads] {#for-bing-ads-accounts}
 

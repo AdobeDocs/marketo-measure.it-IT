@@ -1,11 +1,11 @@
 ---
-description: Best practice per  [!DNL Marketo Measure] pacchetto CRM - [!DNL Marketo Measure]
+description: Procedure consigliate per  [!DNL Marketo Measure] Guida al pacchetto CRM per gli utenti di Marketo Measure
 title: 'Best practice per il pacchetto CRM [!DNL Marketo Measure] '
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---

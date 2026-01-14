@@ -1,23 +1,18 @@
 ---
-description: Domande frequenti su Attribuzione attività - [!DNL Marketo Measure]
+description: Domande frequenti sull’attribuzione delle attività per gli utenti di Marketo Measure
 title: Domande frequenti sull’attribuzione delle attività
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
-
 # Domande frequenti sull’attribuzione delle attività {#activities-attribution-faq}
 
 [!DNL Marketo Measure] Le attività importano tutti i record Attività e generano punti di contatto per esse, consentendo a queste attività di ricevere il credito di attribuzione. Il caso d’uso più comune consiste nel tenere traccia delle attività del team vendite, in quanto solitamente creano un record di chiamate telefoniche o e-mail inviate ai potenziali clienti. Altre caratteristiche uniche che possono essere tracciate sono le interazioni di contenuto come download di risorse o visualizzazioni video.
-
->[!AVAILABILITY]
->
->Questa funzione è abilitata solo per i clienti di livello 2. Per richiedere un livello di account superiore, contatta il team dell’account di Adobe (il tuo account manager).
 
 **In che modo si differenzia da Campagne offline?**
 
@@ -41,7 +36,7 @@ Poiché queste attività generano un punto di contatto, [!DNL Marketo Measure] d
 
 **Quali altri campi punto di contatto sono compilati?**
 
-| Campo punto di contatto | Valore |
+| **Campo punto di contatto** | **Valore** |
 |---|---|
 | Lead/Contatto | Tutte le attività sono correlate a un lead o a un contatto |
 | Campaign | Canale.Sottocanale [[!DNL Marketo Measure]] |

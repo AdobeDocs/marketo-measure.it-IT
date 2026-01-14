@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Marketo Measure] Guida all''implementazione di Ultimate - [!DNL Marketo Measure]'
+description: '''[!DNL Marketo Measure] Guida all''implementazione di Ultimate - [!DNL Marketo Measure]'''
 title: Guida all'implementazione di Ultimate [!DNL Marketo Measure]
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1008'
 ht-degree: 2%
 
 ---
-
 
 # Guida all&#39;implementazione di Ultimate [!DNL Marketo Measure] {#marketo-measure-ultimate-implementation-guide}
 
@@ -37,7 +36,8 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 ## Schemi e set di dati {#schemas-and-datasets}
 
 >[!NOTE]
->Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
+>
+>Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
 
 **Schema XDM = Classe + Gruppo di campi schema&#42;**
 
@@ -46,32 +46,33 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 &#42; _Uno schema include una classe e zero o più gruppi di campi schema. Ciò significa che è possibile comporre uno schema di set di dati senza utilizzare i gruppi di campi._
 
-![Diagramma struttura schema che mostra le relazioni tra classi e gruppi di campi](assets/marketo-measure-ultimate-implementation-guide-1.png)
+![](assets/marketo-guide-1.png)
 
-[Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=it){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
+[Panoramica sui set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview#){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
 ## Creazione di uno schema {#creating-a-schema}
 
 È consigliabile utilizzare un’utility di generazione automatica per creare dieci schemi B2B standard.
 
-* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=it#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
+* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
-Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli schemi dalla pagina Origini.
+Per coloro che dispongono di un _**diritto CDP**_: crea gli schemi dalla pagina Origini.
 
 * Da un’origine, seleziona Aggiungi dati > Usa modelli
 
-![Pagina Origini con opzioni Aggiungi dati e Usa modelli](assets/marketo-measure-ultimate-implementation-guide-2.png)
+![](assets/marketo-guide-2.png)
 
 * Seleziona un account e tutti i modelli B2B per creare dieci schemi B2B standard.
 
-![Selezione di modelli che mostra i modelli di schema B2B per la configurazione account](assets/marketo-measure-ultimate-implementation-guide-3.png)
+![](assets/marketo-guide-3.png)
 
 ## Flussi di dati {#dataflows}
 
 >[!IMPORTANT]
+>
 >Quando aggiungi un nuovo set di dati, ti consigliamo di creare un flusso invece di utilizzarne uno esistente.
 
-[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=it){target="_blank"}
+[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **Passaggi per creare un flusso di dati:**
 
@@ -82,16 +83,19 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
 1. Mappa i campi da Source allo schema.
 
    >[!NOTE]
-   > Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
-   > Potete anche importare la mappatura da un altro flusso nel sistema.
-   > È possibile mappare un campo Source a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
-   > È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it){target="_blank"}).
+   >
+   >* Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
+   >* Potete anche importare la mappatura da un altro flusso nel sistema.
+   >* È possibile mappare un campo Source a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
+   >* È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
 
    >[!CAUTION]
-   > Puoi modificare un flusso di dati, ma i dati non vengono recuperati quando viene modificata una mappatura.
-   > Se un campo obbligatorio è NULL, l&#39;intero flusso viene rifiutato.
+   >
+   >* Puoi modificare un flusso di dati, ma i dati non vengono recuperati quando viene modificata una mappatura.
+   >* Se un campo obbligatorio è NULL, l&#39;intero flusso viene rifiutato.
 
    >[!NOTE]
+   >
    >[Requisiti di integrità dei dati di Marketo Measure Ultimate](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}
 
 1. Imposta una cadenza di caricamento dati.
@@ -109,15 +113,16 @@ Origini > Pagina Flussi dati per controllare lo stato dei flussi dati
 
 Opzione 1: per eseguire le query direttamente dall’interfaccia utente, accedi alla scheda Query in Gestione dati.
 
-![Scheda Query in Gestione dati che mostra l&#39;interfaccia query](assets/marketo-measure-ultimate-implementation-guide-4.png)
+![](assets/marketo-guide-4.png)
 
-Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=it){target="_blank"} (più veloce e affidabile).
+Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} (più veloce e affidabile).
 
 ## Attiva set di dati per Marketo Measure {#activate-dataset-for-marketo-measure}
 
 Prima di iniziare, passa alla sezione &quot;Experience Platform > Mappatura sandbox&quot; nelle impostazioni dell’interfaccia utente Misura e mappa una sandbox.
 
 >[!CAUTION]
+>
 >Una volta selezionata, questa opzione non può essere modificata.
 
 1. In AEP, vai a &quot;Destinazioni > pagina Marketo Measure&quot; per esportare i set di dati.
@@ -126,11 +131,12 @@ Prima di iniziare, passa alla sezione &quot;Experience Platform > Mappatura sand
 1. Per informazioni sullo stato del flusso di dati, controlla la pagina &quot;Stato account&quot; nelle impostazioni dell’interfaccia utente Misura.
 
 >[!NOTE]
-> Si consiglia di includere un solo set di dati per flusso di dati.
-> I dati di una determinata entità (ad esempio, Conto) da una determinata origine possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arrestano il flusso di dati in fase di esecuzione.
-> Elimina l’intera destinazione in AEP per eliminare i dati in Measure. La disabilitazione interrompe le nuove esportazioni di dati e mantiene i dati precedenti.
-> La configurazione Misura avrà per lo più lo stesso aspetto, ma alcune parti, come Mappatura area di visualizzazione, avranno un aspetto diverso.
-> La generazione di un’esecuzione del flusso richiede alcune ore per un nuovo flusso di dati, che vengono quindi eseguiti a intervalli orari regolari.
+>
+>* Si consiglia di includere un solo set di dati per flusso di dati.
+>* I dati di una determinata entità (ad esempio, Conto) da una determinata origine possono essere inseriti in un solo set di dati. Ogni set di dati può essere incluso in un solo flusso di dati. Le violazioni arrestano il flusso di dati in fase di esecuzione.
+>* Elimina l’intera destinazione in AEP per eliminare i dati in Measure. La disabilitazione interrompe le nuove esportazioni di dati e mantiene i dati precedenti.
+>* La configurazione Misura avrà per lo più lo stesso aspetto, ma alcune parti, come Mappatura area di visualizzazione, avranno un aspetto diverso.
+>* La generazione di un’esecuzione del flusso richiede alcune ore per un nuovo flusso di dati, che vengono quindi eseguiti a intervalli orari regolari.
 
 In Measure, la valuta predefinita deve essere impostata nella sezione &quot;Valuta&quot;.
 
@@ -142,7 +148,7 @@ Non importiamo automaticamente gli stadi dai dati utente, pertanto tutti gli sta
 
 * Gli utenti possono mappare gli stadi da sorgenti diverse.
 
-![Interfaccia di mappatura stadio che mostra la configurazione dell&#39;area di visualizzazione da più origini](assets/marketo-measure-ultimate-implementation-guide-5.png)
+![](assets/marketo-guide-5.png)
 
 Se le fasi non sono mappate, il sistema non funzionerà perché non ci sarà nessun posto dove spostare i dati.
 

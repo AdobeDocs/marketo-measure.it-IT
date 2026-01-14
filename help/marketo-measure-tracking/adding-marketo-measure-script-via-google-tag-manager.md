@@ -1,15 +1,15 @@
 ---
-description: Aggiunta di  [!DNL Marketo Measure] script tramite [!DNL Google Tag Manager] - [!DNL Marketo Measure]
+description: Aggiunta di  [!DNL Marketo Measure] script tramite [!DNL Google Tag Manager] indicazioni per gli utenti di Marketo Measure
 title: Aggiunta di  [!DNL Marketo Measure] script tramite [!DNL Google Tag Manager]
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # Aggiunta dello script [!DNL Marketo Measure] tramite [!DNL Google Tag Manager] {#adding-marketo-measure-script-via-google-tag-manager}
 
@@ -18,6 +18,7 @@ Durante l&#39;installazione di [!DNL Marketo Measure] JavaScript, si consiglia d
 Se decidi di aggiungere lo script tramite GTM, imposta lo script [!DNL Marketo Measure] alla massima priorità nell&#39;ordine di attivazione e assicurati che non vi siano script sincroni davanti al tag [!DNL Marketo Measure] per ridurre eventuali effetti dalla latenza GTM.
 
 >[!NOTE]
+>
 >Utilizza questo articolo di supporto [di Google](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"} per ulteriori informazioni.
 
 ## Come aggiungere [!DNL Marketo Measure] JS tramite [!DNL Google Tag Manager] {#how-to-add-marketo-measure-js-via-google-tag-manager}

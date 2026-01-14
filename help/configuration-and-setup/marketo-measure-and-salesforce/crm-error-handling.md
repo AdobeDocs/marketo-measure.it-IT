@@ -2,33 +2,26 @@
 description: Scopri come gestire gli errori nelle esportazioni CRM
 title: Gestione degli errori per le esportazioni CRM
 feature: Salesforce
-exl-id: 7452bff0-4bf1-474b-a705-446c29882230
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
-
 # Gestione degli errori per le esportazioni CRM
 
-La funzione Pausa per errori di esportazione consente di controllare se i processi di esportazione CRM devono essere messi in pausa quando si verifica un errore a livello di record.
-
-L&#39;impostazione è disponibile in **Account personale** > **Impostazioni** > **CRM** > **Generale**.
-
-![Pausa per errori di esportazione](assets/stop-progress.png)
+L&#39;impostazione Pausa per errori di esportazione è disponibile in **Account personale** > **Impostazioni** > **CRM** > **Generale**. Consente di controllare se i processi di esportazione CRM devono essere messi in pausa quando si verifica un errore a livello di record.
 
 >[!NOTE]
+>
 >Questa funzione è visibile solo se la funzione &quot;Esporta in CRM&quot; è abilitata.
 
-Quando questa funzione è abilitata, il processo di esportazione cessa di progredire e rimane sul record in cui si è verificato l’errore, fino a quando il problema non viene risolto. Questi errori sono in genere dovuti a autorizzazioni mancanti, regole di convalida personalizzate applicate in modo errato o problemi nei flussi di lavoro/trigger. Il processo continuerà a essere eseguito come pianificato e tenterà automaticamente di nuovo di esportare il record non riuscito fino a quando non avrà esito positivo.
+Quando questa funzione è abilitata, il processo di esportazione cessa di progredire e rimane sul record in cui si è verificato l’errore, fino a quando il problema non viene risolto. Questi errori sono in genere dovuti a autorizzazioni mancanti, regole di convalida personalizzate applicate in modo errato o problemi nei flussi di lavoro/trigger. Il processo continua a essere eseguito come pianificato e tenterà automaticamente di nuovo di esportare il record non riuscito fino a quando non avrà esito positivo.
 
-Se scegli di disabilitare questa funzione, verrà visualizzata una finestra a comparsa di avviso che ti informerà che ciò potrebbe causare incoerenze nei dati. Sarà tua responsabilità affrontare eventuali problemi che potrebbero sorgere da queste incoerenze.
+Se scegli di disattivare questa funzione, viene visualizzata una finestra a comparsa di avviso che informa che ciò potrebbe causare incoerenze nei dati. È tua responsabilità affrontare eventuali problemi che possono sorgere da queste incongruenze.
 
-![Avviso di incoerenza dati](assets/data-inconsistency.png)
-
-In entrambi i casi, indipendentemente dal fatto che la funzionalità sia attivata o disattivata, tutti gli errori a livello di record rilevati vengono registrati nella tabella `ExportErrors` e il processo `CRMExport_ExportError` tenterà automaticamente di riesportare questi record ogni giorno. Questo elimina la necessità di una richiesta di supporto per avviare una riesportazione, in quanto ciò avverrà automaticamente senza alcun intervento degli sviluppatori.
+Se la funzionalità è attivata o disattivata, tutti gli errori a livello di record rilevati vengono registrati nella tabella `ExportErrors` e il processo `CRMExport_ExportError` tenterà automaticamente di riesportare questi record ogni giorno. Questo elimina la necessità di una richiesta di supporto per avviare una riesportazione, in quanto avviene automaticamente senza alcun intervento degli sviluppatori.
 
 Perché è necessario il comportamento di interruzione del processo data la funzionalità `ExportErrors`? Interrompendo i processi di esportazione CRM regolari in un record specifico, la risoluzione dei problemi diventa molto più semplice. Consente di eseguire processi in locale e di evitare la creazione di un numero potenzialmente elevato di errori di esportazione, che dovrebbero essere recuperati ed elaborati durante la riesportazione.
 

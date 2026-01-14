@@ -1,15 +1,15 @@
 ---
-description: OAuth con [!DNL Azure Active Directory] per Dynamics CRM - [!DNL Marketo Measure]
+description: OAuth con [!DNL Azure Active Directory] per le linee guida di Dynamics CRM per gli utenti di Marketo Measure
 title: OAuth con  [!DNL Azure Active Directory]  per Dynamics CRM
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
-
 
 # OAuth con [!DNL Azure Active Directory] per Dynamics CRM {#oauth-with-azure-active-directory-for-dynamics-crm}
 
@@ -18,6 +18,7 @@ ht-degree: 0%
 Questa configurazione è per i nuovi clienti [!DNL Marketo Measure] che utilizzano Dynamics CRM con un account [!DNL Azure Active Directory] (AAD) o per i clienti che desiderano migrare dal nome utente e password legacy a [!DNL Azure Active Directory] con OAuth.
 
 >[!NOTE]
+>
 >Per entrambi questi scenari, AAD è configurato qui per facilitare la connessione dell&#39;istanza Dynamics in [!DNL Marketo Measure] come provider di dati.
 
 ## Configura nuova applicazione {#set-up-new-application}
@@ -26,19 +27,19 @@ Questa configurazione è per i nuovi clienti [!DNL Marketo Measure] che utilizza
 
 1. Scegliere il tenant di Azure AD facendo clic sull&#39;account nell&#39;angolo superiore destro della pagina, quindi fare clic sulla navigazione Switch Directory e selezionare il tenant appropriato. Ignorare questo passaggio se si dispone di un solo tenant Azure AD nell&#39;account o se è già stato selezionato il tenant Azure AD appropriato.
 
-   ![Menu a discesa per la selezione del tenant di Azure Portal](assets/setup-2.png)
+   ![](assets/bizible-taxonomy-1.png)
 
 1. Cerca &quot;[!DNL Azure Active Directory]&quot; nella barra di ricerca e fai clic sul nome per aprire.
 
-   ![Risultati della ricerca nel portale di Azure con Azure Active Directory](assets/setup-3.png)
+   ![](assets/creating-2e-1.png)
 
 1. Fare clic su **[!UICONTROL App Registrations]** nel menu a sinistra.
 
-   ![Menu di navigazione di Azure Active Directory con registrazioni app](assets/setup-4.png)
+   ![](assets/getting-dynamics-1.png)
 
 1. Fai clic su **[!UICONTROL New Registration]** in alto.
 
-   ![Pagina Registrazioni app con pulsante Nuova registrazione](assets/setup-5.png)
+   ![](assets/getting-dynamics-10.png)
 
 1. Seguire le istruzioni e creare un&#39;applicazione. Non importa se si tratta di un&#39;applicazione Web o di un client pubblico (mobile e desktop), ma se desideri esempi specifici per applicazioni Web o applicazioni client pubbliche, vedi [quickstarts](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-overview).\
    a. Nome è il nome dell&#39;applicazione e descrive l&#39;applicazione agli utenti finali.\
@@ -51,33 +52,33 @@ Questa configurazione è per i nuovi clienti [!DNL Marketo Measure] che utilizza
 
 1. Fare clic su **[!UICONTROL Authentication]** nel menu a sinistra.
 
-   ![Menu applicazioni con opzione di autenticazione evidenziata](assets/setup-9.png)
+   ![](assets/getting-dynamics-11.png)
 
 1. Aggiungere gli URL di reindirizzamento [!DNL Marketo Measure]: `https://apps.bizible.com/OAuth2` e `https://apps.bizible.com/OAuth2?identityOnly=true` all&#39;elenco degli URL di reindirizzamento.
 
-   ![Impostazioni di autenticazione che mostrano gli URL di reindirizzamento di Marketo Measure](assets/setup-10.png)
+   ![](assets/getting-dynamics-2.png)
 
 1. Passa alla scheda Autorizzazioni API e accertati che all’applicazione siano assegnate le autorizzazioni corrette.
 
-   ![Scheda Autorizzazioni API con le autorizzazioni assegnate](assets/setup-10a.png)
+   ![](assets/getting-dynamics-3.png)
 
 1. Da qui immettere &quot;[!UICONTROL enterprise]&quot; nella casella di ricerca e fare clic su **[!UICONTROL Enterprise Applications]**.
 
-   ![Ricerca nel portale di Azure che mostra le applicazioni aziendali](assets/setup-11.png)
+   ![](assets/getting-dynamics-4.png)
 
 1. Di nuovo, individua e apri la nuova applicazione dall’elenco delle applicazioni.
 
 1. Nella scheda Autorizzazioni fare clic su **[!UICONTROL Grant Admin Consent for (instance name)]**.
 
-   ![Scheda Autorizzazioni con pulsante Concedi consenso amministratore](assets/setup-13a.png)
+   ![](assets/getting-dynamics-5.png)
 
 1. Fai clic su **[!UICONTROL Accept]**.
 
-   ![Finestra di dialogo di conferma del consenso dell&#39;amministratore con il pulsante Accetta](assets/setup-13b.png)
+   ![](assets/getting-dynamics-6.png)
 
 1. Dalla scheda &quot;[!UICONTROL Users and Groups]&quot;, assicurarsi che &quot;Utenti e gruppi&quot; validi siano assegnati all&#39;applicazione.
 
-   ![Scheda Utenti e gruppi con gli utenti assegnati](assets/setup-14.png)
+   ![](assets/getting-dynamics-7.png)
 
 ## Creazione di un utente dell&#39;applicazione {#creating-an-application-user}
 
@@ -94,8 +95,10 @@ Al termine della registrazione dell’applicazione, è possibile creare un utent
 1. Nel modulo Utente applicazione immettere le informazioni richieste.
 
    >[!NOTE]
-   > Le informazioni sul nome utente non devono corrispondere a un utente esistente in [!DNL Azure Active Directory].
-   > Nel campo ID applicazione immettere l&#39;ID applicazione dell&#39;app registrata in precedenza in Azure AD.
+   >
+   >* Le informazioni sul nome utente non devono corrispondere a un utente esistente in [!DNL Azure Active Directory].
+   >
+   >* Nel campo ID applicazione immettere l&#39;ID applicazione dell&#39;app registrata in precedenza in Azure AD.
 
 1. Se la configurazione è corretta, dopo aver selezionato **[!UICONTROL Save]**, i campi **[!UICONTROL Application ID URI]** e **[!UICONTROL Azure AD Object Id]** verranno compilati automaticamente con i valori corretti.
 
@@ -111,7 +114,7 @@ a. L’ID client è l’ID del passaggio #7 nella sezione precedente. Se non l&#
 
 b. Segreto client è il segreto dell’applicazione creato nel portale di Azure per l’applicazione in Certificati e segreti.
 
-![Pagina Certificati e segreti che mostra il valore segreto client](assets/creating-2e.png)
+![](assets/getting-dynamics-8.png)
 
 c. L’URI dell’ID applicazione è l’URL dell’API web di destinazione (risorsa protetta). Per trovare l&#39;URL dell&#39;ID app, nel portale di Azure fare clic su [!DNL Azure Active Directory], fare clic su Registrazioni applicazioni, aprire la pagina Impostazioni dell&#39;applicazione, quindi fare clic su Proprietà. Potrebbe anche essere una risorsa esterna come `https://graph.microsoft.com`. Questo è normalmente l’URL dell’istanza Dynamics.
 
@@ -125,6 +128,6 @@ c. L’URI dell’ID applicazione è l’URL dell’API web di destinazione (ris
 
 1. Quando si fa clic sulla chiave, viene visualizzato un pop-up in cui viene richiesto di immettere l&#39;ID client, il segreto client e l&#39;URI dell&#39;ID applicazione, in modo analogo al flusso di iscrizione.
 
-   ![Finestra di dialogo di riautenticazione con campi delle credenziali OAuth](assets/re-authenticating-3.png)
+   ![](assets/getting-dynamics-9.png)
 
 1. Dopo aver fatto clic su **[!UICONTROL Submit]**, ti verrà richiesto di accedere con [!DNL Azure Active Directory]. Quando l&#39;autenticazione ha esito positivo, l&#39;account Dynamics viene nuovamente autorizzato entro [!DNL Marketo Measure].

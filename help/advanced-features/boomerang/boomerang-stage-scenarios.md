@@ -1,19 +1,19 @@
 ---
-description: Scenari fase boomerang - [!DNL Marketo Measure]
+description: Guida agli scenari in fase di boomerang per gli utenti di Marketo Measure
 title: Scenari Boomerang Stage
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1768'
 ht-degree: 0%
 
 ---
 
-
 # Scenari Boomerang Stage {#boomerang-stage-scenarios}
 
 >[!AVAILABILITY]
+>
 >La funzione Boomerang è abilitata solo per i clienti di livello 2 e 3. Per richiedere un livello di account superiore, contatta il team dell’account di Adobe (il tuo account manager).
 
 Di seguito sono riportati alcuni esempi di scenari Boomerang Stage per comprendere come [!DNL Marketo Measure] crea punti di contatto in ogni situazione.
@@ -28,13 +28,13 @@ In questo scenario, un cliente ha scelto di tenere traccia delle fasi **MQL** e 
 
 Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC.
 
-![Diagramma del percorso di lead che mostra i punti di contatto boomerang MQL e SQL con progressione cronologica verso l&#39;opportunità](assets/1-1.png)
+![](assets/boomerang-boomerang-18.png)
 
 **Scenario 2: punti di contatto Boomerang E fasi personalizzate per un lead**
 
 In questo scenario, un cliente ha scelto di tenere traccia solo della **fase SQL** con punti di contatto boomerang. È ancora in corso il tracciamento degli stadi MQL e SAL, ma con la funzionalità [!DNL Marketo Measure] Custom Stage.
 
-![percorso di lead che mostra i punti di contatto del boomerang SQL con MQL e SAL tracciati come fasi personalizzate](assets/2-1.png)
+![](assets/boomerang-boomerang-19.png)
 
 La posizione del punto di contatto MQL non è etichettata con un numero. Questo perché non è stato selezionato per il tracciamento con punti di contatto Boomerang. Durante la creazione di punti di contatto per le fasi incluse nel modello personalizzato, ma non tracciate con Boomerang, [!DNL Marketo Measure] prende l&#39;ultima occorrenza da tale fase.
 
@@ -48,7 +48,7 @@ Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che vi
 
 Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha scelto solo di tenere traccia della fase SQL con punti di contatto boomerang. MQL e SAL sono ancora tracciati, ma con la funzione di staging personalizzato [!DNL Marketo Measure].
 
-![Il percorso di lead mostra la fase SAL saltata con le posizioni SAL e OC combinate nello stesso punto di contatto](assets/3.png)
+![](assets/boomerang-boomerang-20.png)
 
 In questo scenario, il lead non passa mai effettivamente alla fase SAL. Si converte in un contatto prima di raggiungere la fase SAL, essenzialmente &quot;saltando&quot; la fase SAL. In questa situazione, [!DNL Marketo Measure] presuppone che la SAL si verifichi con il punto di contatto OC e che sia la posizione SAL che OC appariranno sullo stesso punto di contatto.
 
@@ -64,15 +64,15 @@ La riga superiore (etichettata come Lead 1, in blu) rappresenta il percorso dei 
 
 In questo scenario, un cliente ha scelto di tenere traccia di **MQL** e **fasi SAL** con punti di contatto boomerang. La fase SQL viene tracciata dalle fasi personalizzate standard.
 
-![Diagramma a tre percorsi di lead che mostra i punti di contatto boomerang MQL e SAL che si traducono in opportunità](assets/4.png)
+![](assets/boomerang-boomerang-21.png)
 
 I punti di contatto FT e LC sull’opportunità provengono da Lead 1 (blu), perché si sono verificati prima del FT e LC di Lead 2 (rosa). Il punto di contatto LC per Lead 2 verrà visualizzato come punto di contatto &quot;Modulo&quot; nell’opportunità.
 
 MQL-01 (Ultimo) da Lead 2 diventerà il primo MQL sull’opportunità. L’MQL-01 dal lead 1 non verrà visualizzato come punto di contatto nell’opportunità perché l’MQL del lead 2 è avvenuto per primo. Tuttavia, i modelli MQL-02 e MQL-03 del lead 1 verranno visualizzati nell’opportunità.
 
-La fase SQL viene tracciata con fasi personalizzate e non con fasi boomerang. Anche se ci sono tre occorrenze della fase SQL tra Lead 1 e Lead 2, solo l’ultima occorrenza SQL verrà inclusa come punto di contatto nell’opportunità.
+Lo stadio SQL viene tracciato con stadi personalizzati, e non con stadi boomerang. Anche se ci sono tre occorrenze della fase SQL tra Lead 1 e Lead 2, solo l’ultima occorrenza SQL verrà inclusa come punto di contatto nell’opportunità.
 
-Il punto di contatto SAL-01 (ultimo) da Lead 1 viene riportato come punto di contatto sull’opportunità. Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC. Il punto di contatto SAL-01 (ultimo) del lead 2 non verrà creato come punto di contatto perché questa transizione di fase si è verificata _dopo_ il contatto OC.
+Il punto di contatto SAL-01 (ultimo) da Lead 1 viene riportato come punto di contatto sull’opportunità. Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC. Il punto di contatto SAL-01 (ultimo) del lead 2 verrà creato come punto di contatto perché questa transizione di fase si è verificata _dopo_ il contatto OC.
 
 I punti di contatto FT, LC e MQL, SQL, SAL (arancione) del lead 3 si sono verificati tutti dopo il punto di contatto OC sull’opportunità. Questi punti di contatto sono inclusi nell’opportunità, ma sono considerati &quot;tocchi intermedi&quot;.
 
@@ -84,7 +84,7 @@ In questo scenario, un cliente ha scelto di tenere traccia delle fasi **MQL**, *
 
 Tutti i punti di contatto della Lead 1 sono inclusi nell&#39;opportunità, da FT a SAL-01 (Last). Il punto di contatto LC della Lead 2 verrà incluso come punto di contatto Modulo tra i punti di contatto LC e MQL-01 sull’opportunità.
 
-![Tre percorsi principali che mostrano punti di contatto MQL, SQL e SAL boomerang con numerazione di posizione sull&#39;opportunità](assets/5.png)
+![](assets/boomerang-boomerang-22.png)
 
 L’MQL-01 (ultimo) da Lead 2 finisce per essere il punto di contatto MQL-04 (ultimo) sull’opportunità. Poiché questo scenario esamina i percorsi di più lead all’interno di un’opportunità, la posizione e la numerazione dei punti di contatto dei lead possono cambiare quando vengono tradotti come punti di contatto nell’opportunità. Analogamente, SQL-01 (ultimo) dal lead 2 diventa SQL-04 (ultimo) sull&#39;Opp. La SAL-01 (Last) del lead 2 diventa anche la SAL-02 (Last) dell’opportunità.
 
@@ -98,7 +98,7 @@ I contatti MQL, SQL e SAL del lead 3 si verificano tutti contemporaneamente, dop
 
 In questo scenario, un cliente ha scelto di tenere traccia delle fasi **MQL**, **SQL** e **SAL** con punti di contatto boomerang. Questo scenario è quasi identico a quello precedente, con alcune eccezioni.
 
-![Tre percorsi principali che mostrano i punti di contatto boomerang della visita web esclusi dall&#39;opportunità quando si verificano dopo la fase SQL](assets/6.png)
+![](assets/boomerang-boomerang-23.png)
 
 Tutti i punti di contatto da Lead 1 saranno inclusi nell&#39;opportunità, da FT a SAL-01 (Last). Il punto di contatto LC della Lead 2 verrà incluso come punto di contatto Modulo tra i punti di contatto LC e MQL-01 sull’opportunità.
 
@@ -114,7 +114,7 @@ I tocchi MQL, SQL e SAL del lead 3 sono inclusi come punto di contatto perché s
 
 In questo scenario, un cliente ha scelto di tenere traccia delle fasi **MQL**, **SQL** e **SAL** con punti di contatto boomerang.
 
-![Tre percorsi principali che mostrano la ponderazione dell&#39;attribuzione boomerang con più transizioni di fase](assets/7.png)
+![](assets/boomerang-boomerang-25.png)
 
 I punti di contatto FT e LC sull’opportunità provengono da Lead 1 (blu), perché si sono verificati prima del FT e LC di Lead 2 (rosa). Il punto di contatto LC per Lead 2 viene visualizzato come punto di contatto &#39;Modulo&#39; nell’opportunità.
 
@@ -136,7 +136,7 @@ Il punto di contatto SQL-01 (ultimo) del lead 2 non verrà incluso come punto di
 
 In questo scenario, un cliente ha scelto di tenere traccia delle transizioni della fase **Demo e negoziazione** nel **Contatto**. Ogni fase del boomerang può ricevere fino a due punti di contatto. La differenza tra le transizioni di fase su un contatto e le transizioni di fase su un lead è che le transizioni di fase di contatto possono apparire come punti di contatto Boomerang sull&#39;opportunità _dopo_ il punto di contatto OC. Questo non è vero per le transizioni di fase che si verificano sul lead poiché appaiono come punto di contatto di un modulo.
 
-![percorso di contatti che mostra i punti di contatto boomerang demo e negoziazione visualizzati dopo il punto di contatto OC sull&#39;opportunità](assets/8.png)
+![](assets/boomerang-boomerang-25.png)
 
 In questo esempio, le transizioni della fase Demo e Negoziazione di Contact 1 sono incluse come punti di contatto Demo-01 e Negotiation-01 sull’opportunità. La transizione della fase di dimostrazione del contatto 2 si verifica _dopo_ il punto di contatto del contatto 1 e viene visualizzato come punto di contatto Demo-02 (ultimo) sull&#39;opportunità.
 

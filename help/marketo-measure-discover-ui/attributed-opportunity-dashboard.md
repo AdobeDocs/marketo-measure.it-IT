@@ -1,15 +1,15 @@
 ---
-description: Dashboard opportunità attribuita - [!DNL Marketo Measure] - Prodotto
+description: Include il dashboard Opportunità attribuite che mostra gli importi e i conteggi delle opportunità per canale secondario e campagna nel tempo
 title: Dashboard opportunità attribuita
 feature: Reporting
 exl-id: b98cc45a-9483-42a5-8b75-b235273f867b
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
-
 
 # Dashboard opportunità attribuita {#attributed-opportunity-dashboard}
 
@@ -39,7 +39,7 @@ Grafico a barre in pila che mostra l’importo totale dell’opportunità attrib
 * Quali canali hanno generato l’importo di opportunità più attribuito ogni trimestre?
 * Qual è stato il raggruppamento dell’importo delle opportunità attribuite per canale il mese scorso?
 
-![Grafico cronologico quantità di opportunità attribuite per canale](assets/attributed-opportunity-dashboard-1.png)
+![](assets/attributed-dashboard-3.png)
 
 ### Tabella Importo opportunità attribuita {#attributed-opportunity-amount-table}
 
@@ -56,7 +56,7 @@ La vista a tabella offre informazioni chiare e organizzate sulla distribuzione d
 
 Fai clic sull&#39;icona **+** accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
 
-![Visualizzazione tabulare quantità opportunità attribuita per canale e campagna](assets/attributed-opportunity-dashboard-2.png)
+![](assets/attributed-dashboard-1.png)
 
 #### Vista ad albero {#tree-view}
 
@@ -64,7 +64,7 @@ La struttura ad albero consente un’esplorazione dei dati più interattiva e gr
 
 Fai clic su un ramo per approfondire il livello gerarchico successivo.
 
-![Gerarchia di visualizzazione della struttura dell&#39;importo dell&#39;opportunità attribuita](assets/attributed-opportunity-dashboard-3.png)
+![](assets/attributed-dashboard-2.png)
 
 ### Riquadro Filtro
 

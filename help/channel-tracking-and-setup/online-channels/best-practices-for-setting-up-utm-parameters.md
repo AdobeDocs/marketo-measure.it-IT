@@ -1,15 +1,15 @@
 ---
-description: Procedure consigliate per la configurazione dei parametri UTM - [!DNL Marketo Measure]
+description: Procedure consigliate per la configurazione dei parametri UTM - Linee guida per gli utenti di Marketo Measure
 title: Procedure consigliate per la configurazione dei parametri UTM
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
-
 
 # Procedure consigliate per la configurazione dei parametri UTM {#best-practices-for-setting-up-utm-parameters}
 

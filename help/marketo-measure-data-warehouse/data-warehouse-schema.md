@@ -1,25 +1,26 @@
 ---
-description: Schema Data Warehouse
+description: Riferimento per lo schema del data warehouse di Marketo Measure che descrive tabelle e colonne
 title: Schema Data Warehouse
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '21106'
+source-wordcount: '21115'
 ht-degree: 3%
 
 ---
-
 
 # Schema Data Warehouse {#data-warehouse-schema}
 
 Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti sui dati di attribuzione ovunque desideri e collegarli ad altri set di dati.
 
 >[!IMPORTANT]
-> Le righe con un valore per _DELETED_DATE verranno mantenute per 7 giorni e quindi rimosse da Snowflake.
-> I fusi orari utilizzati in Snowflake sono conformi al tempo coordinato universale (UTC).
+>
+>* Le righe con un valore per _DELETED_DATE verranno mantenute per 7 giorni e quindi rimosse da Snowflake.
+>* I fusi orari utilizzati in Snowflake sono conformi al tempo coordinato universale (UTC).
 
 >[!NOTE]
+>
 >[Fai clic qui](#sample-queries) per visualizzare le query di esempio in fondo a questo articolo.
 
 ## Diagrammi di relazione entità {#entity-relationship-diagrams}
@@ -30,17 +31,17 @@ L&#39;ulteriore modello dati dimensionale _Ads_ ERD presenta una visualizzazione
 
 _Fare clic su un&#39;immagine per la versione a schermo intero_
 
-<table style="table-layout:auto">
+<table style="table-layout:auto"> 
  <tbody> 
   <tr> 
-   <th>Modello dati Data Warehouse</th>
-   <th>Aggiunge il modello dati dimensionale</th>
+   <th>Modello dati Data Warehouse</th> 
+   <th>Aggiunge il modello dati dimensionale</th> 
   </tr> 
   <tr> 
-   <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
-   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td>
-  </tr>
- </tbody>
+   <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-thumb-1.png"></a></td>
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-thumb-1.png"></a></td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## Viste {#views}
@@ -78,7 +79,7 @@ Account importati dal sistema di origine.
     <tr>
       <td>NOME</td>
       <td>varchar</td>
-      <td>Nome account dal sistema di origine.</td>
+      <td>Nome account, dal sistema di origine.</td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
     <tr>
@@ -2005,7 +2006,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>04.0&rbrace;53.000 09/01 2018:53:</p>
+        <p>04.0}53.000 09/01 2018:53:</p>
       </td>
     </tr>
     <tr>
@@ -3066,7 +3067,7 @@ Dati generati dall’integrazione di Attribution AI. Questi campi sono compilati
   <tr>
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
-    <td>ID evento MM originale per l’evento di conversione
+    <td>ID evento MM originale per l’evento di conversione 
     <br>corrisponde a un punto di contatto utente o a una transizione di fase</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
@@ -4794,7 +4795,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data dell'ultima modifica apportata all'evento dal sistema di origine.</p>
       </td>
       <td>
-        <p>08.0&rbrace;51.000 09/09/2018:39:</p>
+        <p>08.0}51.000 09/09/2018:39:</p>
       </td>
     </tr>
     <tr>
@@ -5789,7 +5790,8 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
 Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di contatto degli utenti, punti di contatto (BT), punti di contatto di attribuzione (BAT) e dati sui costi. Utilizzato internamente per supportare il reporting [!DNL Marketo Measure].
 
 >[!IMPORTANT]
->Marketo Measure renderà obsoleta questa tabella a metà del 2024. Se desideri crearlo, esegui [questa query SQL](/help/data-warehouse/assets/BIZ_FACTS.sql).
+>
+>Marketo Measure renderà obsoleta questa tabella a metà del 2024. Se desideri crearlo, esegui [questa query SQL](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
 
 <table>
   <tbody>
@@ -6661,7 +6663,7 @@ Invii di moduli acquisiti.
         <p>URL in cui è stato inviato il modulo, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6915,7 +6917,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>URL in cui è stata distribuita l’impression, inclusi eventuali parametri di query.</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -9330,7 +9332,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>URL da cui ha avuto origine la visualizzazione pagina, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9909,7 +9911,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>URL della prima visualizzazione pagina della sessione, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -11610,7 +11612,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -12625,7 +12627,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12673,7 +12675,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Una pagina modulo non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo - Non elaborato".</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guida</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guida</p>
       </td>
     </tr>
     <tr>
@@ -13262,7 +13264,7 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
       <td>varchar</td>
       <td>URL della visualizzazione pagina, inclusi eventuali parametri di query.</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>
@@ -13358,7 +13360,7 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
-
+ 
 select trim(split(ch.name,'.')[0])  as channel
       ,trim(split(ch.name,'.')[1])  as subchannel
       ,count(bt.id)                 as buyer_touchpoint_count
@@ -13380,7 +13382,7 @@ group by 1,2
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
-
+ 
 select trim(split(ch.name,'.')[0])  as channel
       ,sum(opp.amount*(bat.full_path_percentage/100))   as attributed_revenue
   from biz_user_touchpoints         ut
@@ -13403,7 +13405,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**Qual è l&#39;intero percorso per una persona? (Mostra tutti i punti di contatto per un singolo indirizzo e-mail.)**
+**Qual è l&#39;intero percorso per una persona?  (Mostra tutti i punti di contatto per un singolo indirizzo e-mail.)**
 
 ```
 select ut.touchpoint_date
@@ -13447,6 +13449,7 @@ order by 1
 **Mostra tutti i punti di contatto di attribuzione dell&#39;acquirente (BAT) e i relativi ricavi attribuiti per una singola opportunità.**
 
 >[!NOTE]
+>
 >Questa query restituisce ricavi attribuiti per il modello di forma w. Modifica il modello aggiornando il campo nel calcolo dei ricavi attribuiti.
 
 ```

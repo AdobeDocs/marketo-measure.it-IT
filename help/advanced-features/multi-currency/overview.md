@@ -1,15 +1,14 @@
 ---
-description: Panoramica - [!DNL Marketo Measure]
+description: Linee guida generali per gli utenti di Marketo Measure
 title: Panoramica
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
 feature: Multi-Currency
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '339'
+ht-degree: 1%
 
 ---
-
 
 # Panoramica {#overview}
 
@@ -29,11 +28,11 @@ In Dynamics, il cliente può impostare tassi di cambio statici nelle Impostazion
 
 ## Termini {#terms}
 
-| Termine | Descrizione |
+| **Durata** | Descrizione |
 |---|---|
-| Valuta avanzata | Il cliente dispone di Advanced Currency Management e Multiple Currencies abilitati, il che significa che possono avere tassi di conversione diversi per periodi di tempo diversi. |
-| Valuta aziendale | Si tratta delle varie valute elencate e dichiarate da un’organizzazione nel CRM, tutte con tassi di conversione. [!DNL Marketo Measure] importerà questi valori e li renderà disponibili agli utenti nel nostro prodotto. |
-| Impostazioni internazionali valuta | La valuta unica utilizzata per un&#39;organizzazione, impostata nella pagina Informazioni società. |
-| Valuta locale (o valuta utente) | La valuta impostata per un singolo utente sul profilo utente, in modo che possa visualizzare qualsiasi importo nella propria valuta locale. L’organizzazione dovrà dichiarare e impostare la valuta prima che un utente possa selezionare la propria valuta locale. |
-| Moneta Unica | Utilizzato per i clienti che non utilizzano più valute nel CRM, ma la cui organizzazione viene eseguita in una valuta diversa, quindi hanno una &quot;Lingua valuta&quot;. Questa è ancora una valuta unica per l’organizzazione, ma senza alcuna conversione. |
-| Valuta semplice | Il cliente ha più valute abilitate, ma ha un tasso di conversione statico per valuta. |
+| **Valuta avanzata** | Il cliente dispone di Advanced Currency Management e Multiple Currencies abilitati, il che significa che possono avere tassi di conversione diversi per periodi di tempo diversi. |
+| **Valuta aziendale** | Si tratta delle varie valute elencate e dichiarate da un’organizzazione nel CRM, tutte con tassi di conversione. [!DNL Marketo Measure] importerà questi valori e li renderà disponibili agli utenti nel nostro prodotto. |
+| **Impostazioni locali valuta** | La valuta unica utilizzata per un&#39;organizzazione, impostata nella pagina Informazioni società. |
+| **Valuta locale (o valuta utente)** | La valuta impostata per un singolo utente sul profilo utente, in modo che possa visualizzare qualsiasi importo nella propria valuta locale. L’organizzazione dovrà dichiarare e impostare la valuta prima che un utente possa selezionare la propria valuta locale. |
+| **Moneta Unica** | Utilizzato per i clienti che non utilizzano più valute nel CRM, ma la cui organizzazione viene eseguita in una valuta diversa, quindi hanno una &quot;Lingua valuta&quot;. Questa è ancora una valuta unica per l’organizzazione, ma senza alcuna conversione. |
+| **Valuta semplice** | Il cliente ha più valute abilitate, ma ha un tasso di conversione statico per valuta. |

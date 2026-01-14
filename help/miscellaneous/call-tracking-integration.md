@@ -1,15 +1,14 @@
 ---
-description: Integrazione tracciamento chiamate - [!DNL Marketo Measure]
+description: Guida all’integrazione del tracciamento delle chiamate per gli utenti di Marketo Measure
 title: Integrazione tracciamento chiamate
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
-
 
 # Integrazione tracciamento chiamate {#call-tracking-integration}
 
@@ -19,7 +18,7 @@ L&#39;integrazione con [!DNL CallTrackingMetrics] ha lo scopo di unire una sessi
 
 Il &quot;tracciamento delle chiamate&quot; in senso generale è un prodotto di aziende come [!DNL CallTrackingMetrics], [!DNL DiaglogTech], [!DNL Invoca] o [!DNL CallRail], per citarne alcune. I numeri di telefono univoci vengono visualizzati agli utenti in base ai diversi canali o campagne di marketing da cui provengono. In questo modo gli addetti al marketing possono vedere le prestazioni di tali canali o campagne.
 
-![Diagramma che mostra numeri di telefono univoci visualizzati in base a diversi canali e campagne di marketing](assets/1.png)
+![](assets/other-resources-6.png)
 
 ## Prima e dopo {#before-and-after}
 
@@ -27,11 +26,11 @@ Osservare il diagramma di flusso seguente per vedere come [!DNL Marketo Measure]
 
 Con l&#39;integrazione, potete vedere che la sessione web era in realtà legata a una telefonata. Il successivo riempimento del modulo diventa un tocco PostLC e viene ancora tracciato come parte del percorso.
 
-![Prima e dopo il diagramma di flusso che confronta il tracciamento delle chiamate telefoniche senza e con l&#39;integrazione CallTrackingMetrics](assets/2.png)
+![](assets/other-resources-4.png)
 
 ## Come funziona {#how-it-works}
 
-CallTrackingMetrics deve completare un lavoro di sviluppo affinché questo funzioni. Con il JavaScript inserito sul sito, CallTrackingMetrics può acquisire _biz_uid dal cookie [!DNL Marketo Measure]. Questo &quot;[!DNL BizibleId]&quot; viene quindi archiviato da CallTrackingMetrics.
+CallTrackingMetrics deve completare un lavoro di sviluppo affinché questo funzioni. Con il JavaScript inserito sul sito, CallTrackingMetrics può acquisire `_biz_uid` dal cookie [!DNL Marketo Measure]. Questo &quot;BizibleId&quot; viene quindi memorizzato da CallTrackingMetrics.
 
 Quando un visitatore accede al tuo sito e effettua una telefonata, è compito di CallTrackingMetrics inviare tali dati a [!DNL Salesforce].  In genere, viene creato un [!DNL Salesforce Task] che popola dati quali numero di telefono, oggetto, tipo e ora, il [!DNL BizibleId]
 
@@ -39,7 +38,7 @@ Quando un visitatore accede al tuo sito e effettua una telefonata, è compito di
 
 Di seguito è riportato un esempio di record Attività con [!DNL BizibleId] popolato.
 
-![Esempio di record attività Salesforce che mostra il campo BizibleId popolato con il valore](assets/3.png)
+![](assets/other-resources-5.png)
 
 Quando [!DNL Marketo Measure] trova un record Attività con un valore [!DNL BizibleId] noto compilato, [!DNL Marketo Measure] può mappare l&#39;utente a una sessione Web con lo stesso [!DNL BizibleId] e attribuire tale sessione a una telefonata invece che a una visita Web.
 
@@ -49,13 +48,13 @@ Quando [!DNL Marketo Measure] può importare/scaricare l&#39;attività, i dettag
 
 Il tipo [!UICONTROL Touchpoint] &quot;Call&quot; viene estratto dall&#39;attività, dalla schermata precedente, che viene popolata anche da CallTrackingMetrics al momento della creazione dell&#39;attività.
 
-![Record punto di contatto che mostra il tipo come chiamata dai dati di chiamata e sessione Web uniti](assets/4.png)
+![](assets/one-one-1.png)
 
 ## Generazione dei rapporti {#reporting}
 
 I valori del tipo di punto di contatto che [!DNL Marketo Measure] invia in genere sono Visita Web, Modulo Web o Chat Web, ma nel caso dei punti di contatto di CallTrackingMetrics il tipo di punto di contatto è Chiamata telefonica. In questo modo gli addetti al marketing possono vedere quali canali assorbono il maggior numero di telefonate e generare ricavi per la loro organizzazione.
 
-![Rapporto che mostra i tipi di punti di contatto, inclusa la chiamata per il tracciamento dei ricavi generati dalle chiamate per canale](assets/5.png)
+![](assets/other-resources-1.png)
 
 ## Domande frequenti {#faq}
 
@@ -73,7 +72,7 @@ Innanzitutto, controlla l&#39;Attività per assicurarti che sia popolato [!DNL B
 
 Se è presente un valore, tieni presente che consideriamo tutte le sessioni web solo 30 minuti. Se è stato fatto clic su un annuncio Google alle 12:17pm (inizio della sessione sul sito Web), ma la telefonata è stata effettuata solo all&#39;1:05pm, la sessione Web e la telefonata non verranno unite. Piuttosto, [!DNL Marketo Measure] crea un punto di contatto [!DNL Salesforce Task] separato per tenere traccia della telefonata, ma non avrà dati di sessione web.
 
-![Diagramma che mostra un intervallo di timeout della sessione Web di 30 minuti tra il clic dell&#39;annuncio e la chiamata telefonica](assets/6.png)
+![](assets/other-resources-2.png)
 
 ## Partnership {#partnerships}
 

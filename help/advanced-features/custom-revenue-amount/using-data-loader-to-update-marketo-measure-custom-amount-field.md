@@ -1,15 +1,14 @@
 ---
-description: Utilizzo di Data Loader per aggiornare [!DNL Marketo Measure] Campo importo personalizzato - [!DNL Marketo Measure]
+description: Utilizzo di Data Loader per aggiornare le linee guida del campo Importo personalizzato di Marketo Measure per gli utenti di Marketo Measure
 title: Utilizzo di Data Loader per aggiornare il campo personalizzato Importo di Marketo Measure
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 feature: Custom Revenue Amount
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzo di Data Loader per aggiornare il campo personalizzato dell&#39;importo [!DNL Marketo Measure] {#using-data-loader-to-update-marketo-measure-custom-amount-field}
 

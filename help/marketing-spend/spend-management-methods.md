@@ -1,15 +1,14 @@
 ---
-description: Metodi di gestione delle spese - [!DNL Marketo Measure]
+description: Guida ai metodi di gestione delle spese per gli utenti di Marketo Measure
 title: Metodi di gestione della spesa
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Metodi di gestione della spesa {#spend-management-methods}
 
@@ -25,7 +24,7 @@ Sincronizzazione costi campagna CRM **2**
 
 Ogni account [!DNL Marketo Measure] ha accesso a una funzionalità denominata [Sincronizza costi campagna CRM](/help/marketing-spend/crm-campaign-costs.md#availability). Per impostazione predefinita, questo bit di funzione è impostato su &quot;No&quot; ma può essere attivato in qualsiasi momento.
 
-![Pagina delle impostazioni delle connessioni che mostra l&#39;opzione Sincronizzazione costo campagna CRM](assets/spend-management-methods-1.png)
+![](assets/spend-management-1.png)
 
 Quando è abilitata, questa funzione richiama automaticamente le spese da qualsiasi campagna/programma di gestione delle relazioni con i clienti che soddisfa i seguenti criteri:
 

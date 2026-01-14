@@ -1,15 +1,14 @@
 ---
-description: Assicurare il consenso per il RGPD in Marketo Measure Js
+description: Mostra come configurare bizible.js per attendere il consenso degli utenti per il RGPD prima di impostare i cookie o inviare i dati
 title: Assicurare il consenso per il RGPD in Marketo Measure Js
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Assicurare il consenso per il RGPD in Marketo Measure Js {#ensuring-consent-for-gdpr-in-marketo-measure-js}
 
@@ -31,12 +30,11 @@ Opzione 1 - Sostituire il tag di script predefinito [!DNL bizible.js] con:
 
 **Se si utilizza [!DNL Google Tag Manager] per installare lo script**, tenere presente che GTM rimuove gli attributi dei dati, quindi utilizzare il seguente script:
 
-```html
-<span id="bizible-settings" data-consent-button-id="ConsentButtonId"></span>
-<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async></script>
-```
+`<span id="bizible-settings" data-consent-button-id="ConsentButtonId"></span>`
+`<script type="text/javascript" src=https://cdn.bizible.com/scripts/bizible.js async=""></script>`
 
 >[!NOTE]
+>
 >In questo caso, [!DNL bizible.js] allega un evento al clic all&#39;elemento HTML con ID &quot;ConsentButtonId&quot;.
 
 Quando si fa clic su questo elemento di HTML, [!DNL bizible.js] crea un cookie per ricordare che il consenso dell&#39;utente è stato ricevuto e inizia a raccogliere i dati di analisi come di consueto.
@@ -55,12 +53,11 @@ Questo comunica a [!DNL bizible.js] di non tenere traccia finché non viene ragg
 
 **Se si utilizza [!DNL Google Tag Manager] per installare lo script**, tenere presente che GTM rimuove gli attributi dei dati, quindi utilizzare il seguente script:
 
-```html
-<span id="bizible-settings" data-requires-user-consent="true"></span>
-<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async></script>
-```
+`<span id="bizible-settings" data-requires-user-consent="true"></span>`
+`<script type="text/javascript" src=https://cdn.bizible.com/scripts/bizible.js async=""></script>`
 
 >[!NOTE]
+>
 >bizible.js creerà un cookie per ricordare che il consenso dell’utente è stato ricevuto e inizierà a raccogliere i dati di analisi come di consueto solo dopo la chiamata all’API JS.
 
 Al contrario, i clienti possono utilizzare questa API anche per revocare il consenso dell’utente:

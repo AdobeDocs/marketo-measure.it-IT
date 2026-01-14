@@ -1,15 +1,14 @@
 ---
-description: Best practice per l'unione di lead - [!DNL Marketo Measure]
+description: Tecniche consigliate per l’unione di lead, indicazioni per gli utenti di Marketo Measure
 title: Best practice per l’unione di lead
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per l’unione di lead {#best-practices-for-merging-leads}
 
@@ -25,4 +24,4 @@ Da lì, dovresti essere libero di unire i lead e [!DNL Marketo Measure] dati ver
 
 In caso di domande, contatta il team dell&#39;account Adobe (il tuo Account Manager) o il [supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
-![Finestra di dialogo Lead di unione di Salesforce con i campi di Marketo Measure mantenuti](assets/1.jpg)
+![](assets/additional-functionality-8.jpg)

@@ -1,15 +1,14 @@
 ---
-description: Differenza tra una conversione Google Analytics e un Buyer Touchpoint
+description: Differenza tra una conversione Google Analytics e una guida di Buyer Touchpoint per gli utenti di Marketo Measure
 title: Differenza tra una conversione Google Analytics e un Buyer Touchpoint
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
-
 
 # Differenza tra una conversione Google Analytics e un Buyer Touchpoint {#difference-between-a-google-analytics-conversion-and-a-buyer-touchpoint}
 
@@ -21,39 +20,39 @@ Le conversioni [!UICONTROL Google Analytics] sono determinate dal modo in cui un
 
 Tuttavia, gli obiettivi non possono essere codificati per gestire un comportamento specifico. Piuttosto, esistono Tipi di Obiettivo che uno sviluppatore web può configurare. Di seguito sono riportati alcuni di questi esempi:
 
-<table>
- <colgroup>
-  <col>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <td><strong>Tipo di obiettivo</strong></td>
-   <td><p><strong>Descrizione</strong></p></td>
-   <td><strong>Esempio</strong></td>
-  </tr>
-  <tr>
-   <td><p>Destinazione</p></td>
-   <td>Caricamenti di una posizione specifica</td>
-   <td><em>Grazie per la registrazione.</em> pagina Web o schermata dell'app</td>
-  </tr>
-  <tr>
-   <td>Durata</td>
-   <td>Sessioni che durano una specifica quantità di tempo o più</td>
-   <td>10 minuti o più trascorsi su un sito di supporto</td>
-  </tr>
-  <tr>
-   <td>Pagine/Screens per sessione</td>
-   <td>Un utente visualizza un numero specifico di pagine o schermate</td>
-   <td>Sono state caricate 5 pagine o schermate</td>
-  </tr>
-  <tr>
-   <td>Evento</td>
-   <td>Viene attivata un'azione definita come evento</td>
-   <td>Consigli social, riproduzione video e clic</td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <td><strong>Tipo di obiettivo</strong></td> 
+   <td><p><strong>Descrizione</strong></p></td> 
+   <td><strong>Esempio</strong></td> 
+  </tr> 
+  <tr> 
+   <td><p>Destinazione</p></td> 
+   <td>Caricamenti di una posizione specifica</td> 
+   <td><em>Grazie per la registrazione.</em> pagina Web o schermata dell'app</td> 
+  </tr> 
+  <tr> 
+   <td>Durata</td> 
+   <td>Sessioni che durano una specifica quantità di tempo o più</td> 
+   <td>10 minuti o più trascorsi su un sito di supporto</td> 
+  </tr> 
+  <tr> 
+   <td>Pagine/Screens per sessione</td> 
+   <td>Un utente visualizza un numero specifico di pagine o schermate</td> 
+   <td>Sono state caricate 5 pagine o schermate</td> 
+  </tr> 
+  <tr> 
+   <td>Evento</td> 
+   <td>Viene attivata un'azione definita come evento</td> 
+   <td>Consigli social, riproduzione video e clic</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 La maggior parte degli esperti di marketing configura le conversioni come &quot;Obiettivi di destinazione&quot;, il che significa che solitamente creano una pagina di ringraziamento dopo un modulo per considerare tale conversione formale.

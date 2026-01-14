@@ -1,15 +1,15 @@
 ---
-description: Dashboard panoramica ricavi - [!DNL Marketo Measure] - Prodotto
+description: Riepiloga il pannello di controllo Panoramica ricavi con i ricavi totali e attribuiti e i conteggi delle transazioni nel tempo
 title: Dashboard panoramica ricavi
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
-
 
 # Dashboard panoramica ricavi {#revenue-overview-dashboard}
 
@@ -41,7 +41,7 @@ Questo grafico a barre affiancato delle serie temporali contrasta il Ricavo tota
 * Quale percentuale dei ricavi di agosto 2022 può essere attribuita alle nostre iniziative di marketing?
 * In che modo i ricavi attribuiti nel terzo trimestre dello scorso anno si sovrappongono al quarto trimestre?
 
-![Grafico di panoramica dei ricavi che confronta i ricavi totali e attribuiti nel tempo](assets/revenue-overview-dashboard-1.png)
+![](assets/revenue-dashboard-1.png)
 
 ### Grafico di copertura dell&#39;attribuzione {#attribution-coverage-chart}
 
@@ -51,7 +51,7 @@ Questo grafico a torta visualizza in modo chiaro la copertura dell’attribuzion
 
 * Qual è stata la percentuale di copertura dei ricavi attribuita alle attività di marketing dell’anno scorso?
 
-![Divisione grafico a torta copertura attribuzione ricavi attribuiti e non attribuiti](assets/revenue-overview-dashboard-2.png)
+![](assets/revenue-dashboard-2.png)
 
 ## Riquadro Filtro {#filter-pane}
 
@@ -60,5 +60,6 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 * Data (in base alla data di chiusura)
 
 >[!MORELIKETHIS]
-> [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}

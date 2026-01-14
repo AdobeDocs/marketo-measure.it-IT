@@ -1,15 +1,14 @@
 ---
-description: Metodologia mapping attribuzione - [!DNL Marketo Measure]
+description: Linee guida sulla metodologia di mappatura delle attribuzioni per gli utenti di Marketo Measure
 title: Metodologia di mappatura attribuzione
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
-
 
 # Metodologia di mappatura attribuzione {#attribution-mapping-methodology}
 
@@ -19,7 +18,7 @@ La metodologia di mappatura dell’attribuzione è il processo di ricerca di det
 
 Per impostazione predefinita, [!DNL Marketo Measure] fornisce la mappatura dell&#39;ID account. [!DNL Marketo Measure] esamina le informazioni di marketing dell&#39;account e dei relativi contatti per creare punti di contatto di attribuzione associati all&#39;opportunità. Di seguito è riportata una semplice rappresentazione di tale processo.
 
-![&#x200B; 1](assets/1-1.png)
+![](assets/adobe-setup-1.png)
 
 Tieni presente che **non tutti** i punti di contatto dei tuoi contatti vengono inseriti nell&#39;opportunità come punti di contatto di attribuzione. La timeline dell’opportunità (data del primo contatto, data di chiusura) determina se un punto di contatto conta come influencer sull’opportunità. Pertanto, se si è verificato un punto di contatto sul contatto A dopo che l&#39;opportunità è stata chiusa con successo/perso, [!DNL Marketo Measure] non invierà tale punto di contatto all&#39;opportunità. Questa procedura timeline viene seguita in tutte le altre mappature di oggetti di attribuzione.
 
@@ -29,13 +28,9 @@ Contro: se esistono forti accordi sui livelli di servizio di marketing e vendita
 
 ## Mappatura ruolo contatto opportunità {#opportunity-contact-role-mapping}
 
->[!NOTE]
->
->I metodi di mappatura del ruolo di contatto sono disponibili solo per coloro che utilizzano Salesforce come CRM. Non è disponibile per gli utenti di Microsoft Dynamics a causa della mancanza di un oggetto Ruolo contatto all’interno di tale CRM.
-
 Sebbene la maggior parte dei client utilizzi il mapping degli ID account, [!DNL Marketo Measure] può cercare i ruoli di contatto (contatti associati all&#39;opportunità) all&#39;interno di un&#39;opportunità per suddividere il processo di attribuzione. Ciò significa che [!DNL Marketo Measure] invierà solo le interazioni di marketing associate ai ruoli di contatto dell&#39;opportunità come punti di contatto di attribuzione dell&#39;acquirente. Di seguito è riportata una rappresentazione di questo processo.
 
-![&#x200B; 1](assets/2-1.png)
+![](assets/adobe-setup-2.png)
 
 Pro: se il team dispone di un processo per i ruoli di contatto ben definito, questo tipo di mappatura di attribuzione potrebbe essere ideale per te. Aiuta ad allineare le vendite e il marketing un po’ di più, in quanto tutti capirebbero appieno come l’attribuzione viene suddivisa. Questo processo è utile anche quando le organizzazioni eseguono il targeting di più business unit all’interno di una grande azienda e quando vendono contemporaneamente prodotti diversi.
 
@@ -45,7 +40,7 @@ Contro: tuttavia, se non è attivo alcun processo per il ruolo di contatto, il m
 
 Oltre a esaminare semplicemente i ruoli di contatto nell&#39;opportunità, [!DNL Marketo Measure] può concentrarsi di più per esaminare solo i contatti principali in un&#39;opportunità. Tenendo presente questa configurazione, [!DNL Marketo Measure] acquisisce solo il punto di contatto di marketing associato ai contatti primari su un&#39;opportunità e invia tali informazioni nella storia di attribuzione di tale opportunità specifica. Vedi l’immagine seguente.
 
-![Diagramma di mappatura attribuzione che utilizza solo i ruoli di contatto primari](assets/3.png)
+![](assets/adobe-setup-3.png)
 
 Pro: se il team è interessato solo a comprendere l’influenza di marketing sui contatti impostati come &quot;primari&quot; nell’opportunità, questo tipo di mappatura è più adatto al team.
 

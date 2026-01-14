@@ -1,15 +1,14 @@
 ---
-description: Informazioni sull'assegnazione tag di  [!DNL Marketo Measure] AdWords - [!DNL Marketo Measure]
+description: Informazioni [!DNL Marketo Measure] Guida ai tag AdWords per gli utenti di Marketo Measure
 title: Informazioni sull'assegnazione di tag  [!DNL Marketo Measure] AdWords
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sull&#39;assegnazione tag di [!DNL Marketo Measure] AdWords {#understanding-marketo-measure-adwords-tagging}
 
@@ -61,11 +60,11 @@ Esistono due modelli di tracciamento [!DNL Marketo Measure] che si consiglia di 
 
 1. Fare clic su **[!UICONTROL All campaigns]** e quindi su **[!UICONTROL Settings]** nella finestra di espansione.
 
-   ![Navigazione di Google AdWords che mostra il menu Tutte le campagne con l&#39;opzione Impostazioni](assets/1.png)
+   ![](assets/utilizing-connections-13.png)
 
 1. Fai clic su **[!UICONTROL Account Settings]** in alto, quindi su **[!UICONTROL Tracking Template]**. Immetti il modello di tracciamento [!DNL Marketo Measure].
 
-   ![Pagina Impostazioni account con campo Modello di verifica per l&#39;immissione dei parametri di Marketo Measure](assets/2-1.png)
+   ![](assets/bizible-guide-1.png)
 
 1. Fai clic su **[!UICONTROL Save]**.
 
@@ -73,11 +72,11 @@ Esistono due modelli di tracciamento [!DNL Marketo Measure] che si consiglia di 
 
 1. Fare clic su **[!UICONTROL All campaigns]** e quindi su **[!UICONTROL Campaigns]** nella finestra di espansione.
 
-   ![Navigazione di Google AdWords che mostra il menu Tutte le campagne con l&#39;opzione Campagne](assets/3.png)
+   ![](assets/utilizing-connections-12.png)
 
 1. Selezionare tutte le campagne applicabili o **[!UICONTROL Select All]**, fare clic su **[!UICONTROL Edit]** e quindi su **[!UICONTROL Change Tracking Templates]**.
 
-   ![Pagina di selezione della campagna con menu Modifica che mostra l&#39;opzione Modelli di tracciamento delle modifiche](assets/4-1.png)
+   ![](assets/five-five-1.png)
 
 1. Immettere il modello di verifica [!DNL Marketo Measure] e fare clic su **[!UICONTROL Apply]**.
 
@@ -85,13 +84,13 @@ Esistono due modelli di tracciamento [!DNL Marketo Measure] che si consiglia di 
 
 1. Fare clic su **[!UICONTROL All campaigns]** e quindi su **[!UICONTROL Ad Groups]** nella finestra di espansione.
 
-   ![Navigazione Google AdWords che mostra il menu Tutte le campagne con l&#39;opzione Gruppi di annunci](assets/5-1.png)
+   ![](assets/four-four-1.png)
 
 1. Selezionare tutti i gruppi di annunci applicabili o Seleziona tutto, fare clic su **[!UICONTROL Edit]** e quindi su **[!UICONTROL Change Tracking Templates]**.
 
 1. Immettere il modello di verifica [!DNL Marketo Measure] e fare clic su **[!UICONTROL Apply]**.
 
-   ![Pagina di selezione del gruppo di annunci con il menu Modifica che mostra l&#39;opzione Modelli di rilevamento modifiche e il pulsante Applica](assets/6-1.png)
+   ![](assets/one-one-1.png)
 
 ## Domande frequenti {#faq}
 
@@ -112,6 +111,7 @@ R: 4 ore
 R: Non è possibile recuperare singoli dettagli creativi per gli annunci di ricerca dinamica, ma se è abilitato il tag automatico possiamo comunque ottenere l’ID creativo e i ricavi degli attributi.
 
 >[!NOTE]
+>
 >Dopo aver apportato le modifiche, l’operazione è completata. Puoi rivolgerti al [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} in caso di domande durante l&#39;installazione.
 
 [Fare clic qui](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"} per istruzioni da Google sulla creazione di modelli di verifica a livello di account.

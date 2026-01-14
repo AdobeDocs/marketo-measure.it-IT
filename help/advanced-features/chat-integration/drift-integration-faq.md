@@ -1,15 +1,14 @@
 ---
-description: Domande frequenti sull'integrazione della deriva - [!DNL Marketo Measure]
+description: Domande frequenti sull’integrazione della deriva per gli utenti di Marketo Measure
 title: Domande frequenti sull’integrazione della deriva
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # Domande frequenti sull’integrazione della deriva {#drift-integration-faq}
 
@@ -41,4 +40,4 @@ Se sono presenti campagne CRM per la creazione di punti di contatto per le inter
 
 Se sono presenti regole di attività per creare punti di contatto per le interazioni di chat in modalità drift, è necessario aggiungere alle regole un ulteriore elemento di logica. Aggiungi la logica utilizzando il campo Data di creazione attività per impedire la creazione di duplicazioni di punti di contatto (ossia CrmTask.CreatedDate è minore della data in cui è stato abilitato il bit della funzione). Vedi la schermata seguente, ad esempio.
 
-![Esempio di regola di attività CRM configurata per i punti di contatto della chat di deriva](assets/activity-rule-drift.png)
+![](assets/chat-integration-1.png)

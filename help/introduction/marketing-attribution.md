@@ -3,7 +3,8 @@ description: Marketing Attribution
 title: Marketing Attribution
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Marketo Measure offre agli esperti di marketing insight le risorse di marketing 
 
 **Punti di contatto** si riferiscono alle interazioni che un potenziale cliente/lead ha con le tue attività di marketing online o offline. Ci sono quattro **punti di contatto principali** considerati nell&#39;attribuzione marketing. Riflettono le diverse fasi del percorso del cliente. Questi punti di contatto principali, detti anche **punti di contatto milestone**, sono: Primo contatto (FT), Creazione lead (LC), Creazione opportunità (OC), Transazione Won chiusa (CW).
 
-![Diagramma dei punti di contatto milestone dal primo contatto fino al vincitore chiuso](assets/1.png)
+![Diagramma dei punti di contatto milestone dal primo contatto fino al vincitore chiuso](assets/overview-resources-8.png)
 
 Questi tocchi milestone sono alla base dei **modelli di attribuzione** di Marketo Measure. Marketo Measure offre sei modelli di attribuzione. Ogni modello si concentra su diverse fasi nel percorso di clienti e offre una struttura generale per l’attribuzione del merito di ricavo ai punti di contatto di marketing. Il modello utilizzato dipende dalle fasi del percorso a cui sei più interessato a misurare e dalla quantità di dati su cui desideri creare rapporti. I modelli di attribuzione offerti da Marketo Measure sono:
 
@@ -35,7 +36,7 @@ Questi tocchi milestone sono alla base dei **modelli di attribuzione** di Market
 * Modello personalizzato
 
 >[!NOTE]
->[Ulteriori informazioni su ciascun modello di attribuzione](/help/attribution-models.md).
+>[Ulteriori informazioni su ciascun modello di attribuzione](/help/introduction/attribution-models.md).
 
 ## Perché l’attribuzione è importante {#why-attribution-is-important}
 

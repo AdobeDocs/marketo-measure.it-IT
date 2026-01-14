@@ -1,15 +1,14 @@
 ---
-description: Domande frequenti (più divise) - [!DNL Marketo Measure]
+description: Domande frequenti (multi-valuta) guida per gli utenti di Marketo Measure
 title: Domande frequenti (più divise)
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
-
 
 # Domande frequenti (più divise) {#faq-multi-currency}
 
@@ -60,4 +59,5 @@ Per il lettore interessato, ecco perché funziona in questo modo. I nostri punti
 Poiché ora l’offerta gestirà le conversioni per il cliente, si consiglia di rimuovere i flussi di lavoro e i campi personalizzati e di importare il valore della quantità non elaborata.
 
 >[!MORELIKETHIS]
+>
 >[Notifiche di errore](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

@@ -1,15 +1,14 @@
 ---
-description: Integrazione LinkedIn - [!DNL Marketo Measure]
+description: LinkedIn - Linee guida per l’integrazione per gli utenti di Marketo Measure
 title: Integrazione LinkedIn
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2634'
 ht-degree: 0%
 
 ---
-
 
 # Integrazione LinkedIn {#linkedin-integration}
 
@@ -27,7 +26,7 @@ Disponibile per tutti gli utenti.
 
 ## Requisiti {#requirements}
 
-**Ruoli Manager Campaign**
+### Ruoli di Campaign Manager
 
 Affinché [!DNL Marketo Measure] possa scaricare i dati sui costi di Ads Data &amp; Ads, devi avere uno dei seguenti ruoli in Campaign Manager:
 
@@ -37,7 +36,7 @@ Affinché [!DNL Marketo Measure] possa scaricare i dati sui costi di Ads Data &a
 
 Ulteriori informazioni: [Ruoli utente e funzioni in Campaign Manager](https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager).
 
-**Ruoli Amministratore Media Pagati**
+### Ruoli di amministratore media a pagamento
 
 Affinché [!DNL Marketo Measure] possa creare/aggiornare i contenuti creati da Sponsorizzati, devi avere uno dei seguenti ruoli di Amministratore di contenuti multimediali a pagamento:
 
@@ -48,7 +47,7 @@ Ulteriori informazioni: [Ruoli di amministratore pagina collegati](https://www.l
 
 Ci sono altri [!DNL LinkedIn] ruoli che **non** richiedono per la nostra integrazione. Questi ruoli vengono spesso scambiati per i ruoli richiesti, quindi tieni presente che c’è una differenza!
 
-**Ruoli Amministratore Pagina**
+### Ruoli di amministratore pagina
 
 Affinché [!DNL Marketo Measure] possa scaricare/integrare lead dai moduli lead gen, è necessario disporre del seguente ruolo Amministratore pagina:
 
@@ -60,29 +59,31 @@ Ulteriori informazioni: [Ruoli di amministratore pagina collegati](https://www.l
 
 [!DNL Marketo Measure] supporterà:
 
-**Contenuto sponsorizzato:** Contenuto sponsorizzato consente di distribuire contenuto al feed [!DNL LinkedIn] dei membri oltre a quelli che seguono la società. I contenuti sponsorizzati possono essere indirizzati a un pubblico specifico e possono aiutare gli inserzionisti a raggiungere [!DNL LinkedIn] membri ovunque e in qualsiasi momento si trovino coinvolti nella piattaforma [!DNL LinkedIn] su desktop, dispositivi mobili e tablet. Sono supportati i contenuti sponsorizzati con Lead Gen Forms.
+Contenuto sponsorizzato consente di distribuire contenuto al feed [!DNL LinkedIn] dei membri oltre a quelli che seguono l&#39;azienda. I contenuti sponsorizzati possono essere indirizzati a un pubblico specifico e possono aiutare gli inserzionisti a raggiungere [!DNL LinkedIn] membri ovunque e in qualsiasi momento si trovino coinvolti nella piattaforma [!DNL LinkedIn] su desktop, dispositivi mobili e tablet. Sono supportati i contenuti sponsorizzati con Lead Gen Forms.
 
 I tipi di formati di annunci di contenuti sponsorizzati supportati da [!DNL Marketo Measure] sono Annunci immagine singola e Annunci video (tramite Forms di generazione lead). A causa della complessità dello schema, non sono supportati gli annunci Carosello.
 
 [!DNL Marketo Measure] non supporta la messaggistica sponsorizzata, gli annunci di testo o gli annunci dinamici.
 
-![Tipi di formato di annunci LinkedIn che mostrano le opzioni Annunci immagine singola, Annunci video e Carosello con il supporto di Forms di generazione lead](assets/one.png)
+![](assets/bizible-guide-1.png)
 
 >[!TIP]
+>
 >Per qualsiasi campagna/spesa proveniente da un&#39;origine di contenuto non sponsorizzato, ad esempio il tipo di campagna &quot;Annuncio testuale&quot; o &quot;InMail sponsorizzato&quot;, [!DNL Marketo Measure] non supporta _non_ intrinsecamente il tracciamento di questi tipi di campagna. Se desideri tenere traccia della spesa per campagne come queste insieme alla spesa per &quot;contenuti sponsorizzati&quot;, assicurati di utilizzare il CSV della spesa di marketing per registrare manualmente tale spesa.
 
 ## Come funziona: contenuti sponsorizzati {#how-it-works-sponsored-content}
 
 >[!NOTE]
+>
 >Prima del primo utilizzo, questa impostazione della funzionalità deve essere abilitata passando a [!DNL Marketo Measure] [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Ads] > [!UICONTROL Enable LinkedIn Lead Gen Forms].
 
-**[!DNL LinkedIn's]requisiti univoci di assegnazione tag automatica**
+### [!DNL LinkedIn's] requisiti univoci di assegnazione tag automatica
 
 [!DNL Marketo Measure] può aiutare a tenere traccia delle prestazioni della tua campagna [!DNL LinkedIn] assegnando tag automatici alle pagine di destinazione.
 
 [!DNL Marketo Measure] cercherà i creativi con una condivisione LinkedIn univoca e aggiungerà un parametro `?_bl={creativeId}` alla fine.
 
-**Copia condivisioni**
+### Copia delle condivisioni
 
 Con questa integrazione di [!DNL Marketo Measure/LinkedIn], chiediamo ai clienti di non copiare, clonare o duplicare elementi creativi esistenti. Se vengono trovate condivisioni che vengono rilevate per essere utilizzate solo su un Creative, [!DNL Marketo Measure] può assegnare i tag di condivisione senza dover ricreare alcuna creativa o condivisione e la cronologia di tutti gli annunci (impression, clic, condivisioni) rimarrà.
 
@@ -90,13 +91,13 @@ Non appena una condivisione verrà trovata condivisa tra più creativi, [!DNL Ma
 
 In futuro, [!DNL Marketo Measure] consiglia di non duplicare le condivisioni [!DNL LinkedIn] e di mantenere tutte le creative e le condivisioni il più possibile univoche, in modo che sia possibile aggiungere semplicemente il tracciamento senza dover cancellare la cronologia degli annunci.
 
-**URL abbreviati**
+### URL abbreviati
 
 Il motivo del passaggio aggiuntivo è che LinkedIn consente agli URL di destinazione di essere un URL abbreviato (bit.ly, goog.le, ecc.), il che significa che [!DNL Marketo Measure] non vede l&#39;URL lungo e risolto e [!DNL Marketo Measure] deve aggiungere parametri di tracciamento a un URL risolto. Per risolvere il problema, [!DNL Marketo Measure] cerca gli URL abbreviati prima di ricreare un annuncio, espande l&#39;URL, quindi crea il nuovo annuncio con l&#39;URL risolto e tutti i relativi parametri, consentendo a [!DNL Marketo Measure] di aggiungere tag. La creazione di un nuovo annuncio cancellerà la cronologia degli annunci (impression, clic, condivisioni), per cui è necessario disporre dell’autorizzazione per assegnare tag agli URL abbreviati.
 
 Se utilizzi URL abbreviati in modo massiccio, questo potrebbe avere un forte impatto sui tuoi creativi. È consigliabile non utilizzare più URL abbreviati in modo che [!DNL Marketo Measure] possa assegnare tag alle pagine di destinazione senza dover creare nuovi annunci e cancellare la cronologia degli annunci.
 
-**Il processo**
+### Il processo
 
 Cominciamo con alcuni esempi. Supponiamo di sì....
 
@@ -105,7 +106,7 @@ Creative B: Share 234\
 Creative C: Share 234\
 Creative D : Share 234
 
-![Diagramma che mostra quattro creativi con le condivisioni associate prima del processo di assegnazione automatica tag](assets/two.png)
+![](assets/five-five-1.png)
 
 `1)` [!DNL Marketo Measure] esamina innanzitutto tutte le campagne, i contenuti creativi e le condivisioni con stato &quot;Attivo&quot;. [!DNL Marketo Measure] non assegnerà tag agli annunci in pausa, archiviati o annullati. Se un annuncio è stato messo in pausa e poi impostato su [!UICONTROL active], verrà contrassegnato una volta riattivato. Se è possibile trovare una condivisione univoca, ovvero che non viene utilizzata in più creative o campagne (ad esempio, Creative A: Share 123), [!DNL Marketo Measure] aggiungerà il parametro personalizzato `>> ?_bl={creativeId}` all&#39;URL di condivisione.
 
@@ -118,19 +119,16 @@ Creative D : Share 234
 `5)` [!DNL Marketo Measure] dovrà controllare regolarmente che le condivisioni non vengano condivise. In tal caso, il processo verrà riavviato al passaggio 2 di cui sopra.
 
 >[!NOTE]
+>
 >Implementando questa impostazione, i nostri clienti perderanno la cronologia degli annunci di Creative B: Share 234, Creative C: Share 234 e Creative D: Share 234 perché ora viene ricreato con Creative E: Share 345, Share F: Share 456 e Creative G: Share 567 rispettivamente.
 
-![Diagramma che mostra nuovi creativi con condivisioni univoche create dopo il processo di assegnazione tag automatica e archiviazione](assets/three.png)
+![](assets/four-four-1.png)
 
 ## Come Funziona: Lead Gen Forms {#how-it-works-lead-gen-forms}
-
-**[!DNL LinkedIn's]requisiti univoci di assegnazione tag automatica**
 
 [!DNL Marketo Measure] può aiutare a tenere traccia delle prestazioni della tua campagna [!DNL LinkedIn] assegnando tag automatici alle pagine di destinazione.
 
 [!DNL Marketo Measure] cercherà i creativi con una condivisione LinkedIn univoca e aggiungerà un parametro `?_bl={creativeId}` alla fine.
-
-**Il processo**
 
 Tramite l&#39;API del modulo annunci di [!DNL LinkedIn's] e l&#39;API di risposta del modulo annunci, siamo in grado di raccogliere i dati di invio del modulo per un account annuncio e associare l&#39;indirizzo e-mail a un lead dal CRM o dal Marketo.
 
@@ -139,9 +137,9 @@ I moduli LinkedIn possono contenere più indirizzi e-mail. Quando scariciamo le 
 Indipendentemente dallo stato di Campaign o Creative, tutte le risposte al modulo daranno luogo a un punto di contatto. [!DNL Marketo Measure] ha una restrizione di lookback di 90 giorni, pertanto [!DNL Marketo Measure] non è in grado di accedere alle risposte del modulo più vecchie di 90 giorni. Tuttavia, più a lungo l&#39;integrazione di [!DNL Marketo Measure] e [!DNL LinkedIn] è abilitata, più punti di contatto del modulo generazione lead saranno visibili tramite [!DNL Marketo Measure].
 
 >[!NOTE]
+>
 >I costi di LinkedIn vengono comunque scaricati come parte delle campagne di contenuti sponsorizzati.
 
-**Tracciamento di Forms di generazione lead in CRM o Marketo**
 
 Prima dell&#39;esistenza dell&#39;integrazione di Forms con [!DNL Marketo Measure] e LinkedIn Lead Gen, era prassi comune per i clienti inviare i moduli a un programma Marketo e/o a una campagna CRM per tenere traccia dei moduli e ricevere l&#39;attribuzione su tali attività. Una volta abilitata l’impostazione Lead Gen Forms, vogliamo assicurarci che gli invii dei moduli non vengano conteggiati due volte. Verifica quanto segue:
 
@@ -150,107 +148,108 @@ Prima dell&#39;esistenza dell&#39;integrazione di Forms con [!DNL Marketo Measur
 * Aggiorna eventuali regole della campagna CRM correlate
 
 >[!NOTE]
+>
 >L&#39;API LinkedIn ha un limite di lookback di 90 giorni, pertanto se utilizzi regole di Marketo o di gestione delle relazioni con i clienti, è consigliabile impostare la data di fine sulla regola su 90 giorni prima della data in cui hai abilitato l&#39;integrazione in [!DNL Marketo Measure].
 
 ## Dettagli punto di contatto {#touchpoint-details}
 
 Dopo che [!DNL Marketo Measure] ha taggato correttamente la pagina di destinazione nella creatività di LinkedIn, puoi visualizzare i dati degli annunci risolti nel punto di contatto. Di seguito è riportata la mappatura dei valori di dati che si prevede di visualizzare:
 
-<table>
- <colgroup>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <th style="width:30%">Campo punto di contatto</th>
-   <th>Valore di esempio</th>
-  </tr>
-  <tr>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <th style="width:30%">Campo punto di contatto</th> 
+   <th>Valore di esempio</th> 
+  </tr> 
+  <tr> 
    <td>ID annuncio</td>
    <td>84186224</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>Contenuto annuncio</td>
    <td>copy-1-image-2-man Il 95% degli esperti di marketing #B2B considera la strategia di creazione della domanda un successo. Ulteriori informazioni: [!DNL https]://lnkd.in/jgdi50vKrgv</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>ID gruppo di annunci</td>
    <td>(vuoto)</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>Nome gruppo di annunci</td>
    <td>(vuoto)</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>ID campagna pubblicitaria</td>
    <td>138949954</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>Nome campagna pubblicitaria</td>
    <td>Account SU - COM - Abilità della domanda</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>URL di destinazione annuncio <b>*</b></td>
-   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td>
-  </tr>
-  <tr>
-   <td>URL modulo</td>
-   <td>info.bizible.com/demo</td>
-  </tr>
-  <tr>
-   <td>URL modulo - Non elaborato</td>
-   <td>info.bizible.com/demo</td>
-  </tr>
-  <tr>
-   <td>ID parola chiave</td>
-   <td>(vuoto)</td>
-  </tr>
-  <tr>
-   <td>Tipo di corrispondenza parole chiave</td>
-   <td>(vuoto)</td>
-  </tr>
-  <tr>
-   <td>Pagina di destinazione</td>
-   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td>
-  </tr>
-  <tr>
-   <td>Pagina di destinazione - Raw</td>
-   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td>
-  </tr>
-  <tr>
-   <td>Canale di marketing</td>
-   <td>Social a pagamento</td>
-  </tr>
-  <tr>
-   <td>Canale di marketing - Percorso</td>
-   <td>Social a pagamento.LinkedIn</td>
-  </tr>
-  <tr>
-   <td>Canale</td>
-   <td>"cpc" o "Modulo generazione lead"</td>
-  </tr>
-  <tr>
-   <td>Pagina referrer</td>
-   <td>www.linkedin.com/</td>
-  </tr>
-  <tr>
-   <td>Pagina referrer - Raw</td>
-   <td>www.linkedin.com/</td>
-  </tr>
-  <tr>
-   <td>Frase di ricerca</td>
-   <td>(vuoto)</td>
-  </tr>
-  <tr>
-   <td>Tipo di punto di contatto</td>
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
+  </tr> 
+  <tr> 
+   <td>URL modulo</td> 
+   <td>info.bizible.com/demo</td> 
+  </tr> 
+  <tr> 
+   <td>URL modulo - Non elaborato</td> 
+   <td>info.bizible.com/demo</td> 
+  </tr> 
+  <tr> 
+   <td>ID parola chiave</td> 
+   <td>(vuoto)</td> 
+  </tr> 
+  <tr> 
+   <td>Tipo di corrispondenza parole chiave</td> 
+   <td>(vuoto)</td> 
+  </tr> 
+  <tr> 
+   <td>Pagina di destinazione</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td> 
+  </tr> 
+  <tr> 
+   <td>Pagina di destinazione - Raw</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
+  </tr> 
+  <tr> 
+   <td>Canale di marketing</td> 
+   <td>Social a pagamento</td> 
+  </tr> 
+  <tr> 
+   <td>Canale di marketing - Percorso</td> 
+   <td>Social a pagamento.LinkedIn</td> 
+  </tr> 
+  <tr> 
+   <td>Canale</td> 
+   <td>"cpc" o "Modulo generazione lead"</td> 
+  </tr> 
+  <tr> 
+   <td>Pagina referrer</td> 
+   <td>www.linkedin.com/</td> 
+  </tr> 
+  <tr> 
+   <td>Pagina referrer - Raw</td> 
+   <td>www.linkedin.com/</td> 
+  </tr> 
+  <tr> 
+   <td>Frase di ricerca</td> 
+   <td>(vuoto)</td> 
+  </tr> 
+  <tr> 
+   <td>Tipo di punto di contatto</td> 
    <td>Modulo web</td>
-  </tr>
-  <tr>
+  </tr> 
+  <tr> 
    <td>Source punto di contatto</td>
    <td>LinkedIn</td>
-  </tr>
- </tbody>
+  </tr> 
+ </tbody> 
 </table>
 
 Il campo &quot;URL di destinazione dell&#39;annuncio&quot; di **&#42;** _è compilato solo per il contenuto sponsorizzato. Non è compilata per la generazione di lead Forms._
@@ -263,7 +262,7 @@ Poiché [!DNL Marketo Measure] ha un&#39;integrazione diretta con [!DNL LinkedIn
 
 Come per altre integrazioni di annunci, [!DNL Marketo Measure] ha definito una regola del canale di marketing per inserire tutte le [!DNL LinkedIn] campagne, creatività e costo. Per utilizzare la regola, il cliente dovrà inserire una nuova riga per le attività di [!DNL LinkedIn] a pagamento. Può essere un canale nuovo o esistente. Nella colonna Referrer, utilizza la definizione &quot;[[!DNL LinkedIn] Paid]&quot; che [!DNL Marketo Measure] ha definito come qualsiasi punto di contatto con un tag [!DNL Marketo Measure].
 
-![Configurazione della regola del canale di marketing che mostra la definizione del canale LinkedIn a pagamento con la colonna del referente](assets/four.png)
+![](assets/one-one-1.png)
 
 ## [!DNL Marketo Measure] individuazione {#marketo-measure-discover}
 
@@ -315,7 +314,7 @@ LinkedIn richiede che tutti gli annunci creati o modificati vengano sottoposti a
 
 Entrambi. L&#39;integrazione di [!DNL Marketo Measure] consente di assegnare tag all&#39;URL di destinazione dall&#39;immagine click-through nell&#39;annuncio, ma aggiorna anche automaticamente l&#39;URL abbreviato nella descrizione dell&#39;annuncio.
 
-![Annuncio LinkedIn che mostra sia l&#39;URL di destinazione che l&#39;URL abbreviato nella descrizione con tag](assets/five.png)
+![](assets/select-type-1.png)
 
 **Ho connesso il mio account [!DNL LinkedIn ads]. Perché [!DNL Marketo Measure] non sta assegnando tag ai miei collegamenti?**
 
@@ -325,7 +324,7 @@ L&#39;utente [!DNL LinkedIn] connesso deve disporre dell&#39;accesso di modifica
 
 L&#39;ID di condivisione non viene fornito in un report [!DNL LinkedIn], pertanto non esiste un modo chiaro e ovvio per verificare la presenza di mappature da creatività a condivisione. Se si sospetta che un contenuto creativo possa essere una copia, è possibile controllare manualmente aprendo l&#39;annuncio dall&#39;interno del gestore [!DNL LinkedIn] Campaign. In questo modo l&#39;annuncio verrà aperto in una nuova scheda e sarà possibile trovare l&#39;ID condivisione nell&#39;URL.
 
-![LinkedIn Campaign Manager mostra l&#39;annuncio aperto in una nuova scheda con ID di condivisione visibile nell&#39;URL](assets/six.png)
+![](assets/six-six-1.png)
 
 ## Domande frequenti su Forms della generazione lead {#lead-gen-forms-faq}
 

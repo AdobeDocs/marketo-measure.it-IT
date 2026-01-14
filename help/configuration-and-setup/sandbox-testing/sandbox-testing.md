@@ -1,19 +1,19 @@
 ---
-description: Verifica dell'integrazione di Marketo Measure con una sandbox Salesforce - [!DNL Marketo Measure]
+description: Test dell’integrazione di Marketo Measure con una guida alle sandbox di Salesforce per gli utenti di Marketo Measure
 title: Test dell’integrazione di Marketo Measure con una sandbox Salesforce
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
 
-
 # Test dell’integrazione di Marketo Measure con una sandbox Salesforce {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
 
 >[!NOTE]
+>
 >Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Una delle funzionalità di base di [!DNL Marketo Measure] è la capacità di monitorare le attività di marketing digitale attraverso le azioni sul sito Web e quindi di inviare tali dati alla produzione [!DNL Salesforce org] tramite lead e contatti. Tuttavia, in genere non sono presenti lead in entrata creati dal sito web all’interno di un’integrazione Sandbox, pertanto l’attenzione sui dati sarà focalizzata da un punto di vista puramente offline.

@@ -1,15 +1,14 @@
 ---
-description: Dashboard velocità opportunità - [!DNL Marketo Measure] - Prodotto
+description: Descrive il dashboard Velocità opportunità per tenere traccia del tempo in ogni fase di vendita e confrontare le tendenze per canale nel tempo
 title: Dashboard velocità opportunità
 feature: Reporting
 exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '394'
 ht-degree: 1%
 
 ---
-
 
 # Dashboard velocità opportunità {#opportunity-velocity-dashboard}
 
@@ -36,9 +35,10 @@ Risposte alle domande del grafico:
 * Come si confronta la durata media delle opportunità nella fase di &quot;Creazione opportunità&quot; con le fasi &quot;Prospect&quot; e &quot;Qualifiche opportunità&quot;?
 
 >[!NOTE]
+>
 >Per le fasi precedenti alla &quot;Creazione di opportunità&quot;, come data di &quot;transizione in&quot; verrà utilizzata la data del punto di contatto più recente.
 
-![Grafico a barre per fase di vendita](assets/lead-velocity-dashboard-1.png)
+![](assets/lead-dashboard-1.png)
 
 ### Velocità dell’opportunità nel tempo {#opportunity-velocity-over-time}
 
@@ -52,7 +52,7 @@ Risposte alle domande del grafico:
 * Quali sono le tendenze nel tempo trascorso in ciascuna fase per le opportunità nel corso dei mesi osservati?
 * In quale mese le opportunità hanno registrato la progressione più rapida attraverso le fasi di vendita?
 
-![Tendenze della velocità opportunità nel grafico a linee temporali](assets/lead-velocity-dashboard-2.png)
+![](assets/lead-dashboard-2.png)
 
 ### Velocità opportunità per canale {#opportunity-velocity-by-channel}
 
@@ -65,7 +65,7 @@ Risposte alle domande del grafico:
 * Quale canale mostra la progressione più rapida attraverso le fasi di funnel?
 * In che modo la velocità di opportunità nella fase &quot;Prospect&quot; varia tra i diversi canali?
 
-![Grafico di confronto velocità opportunità per canale](assets/lead-velocity-dashboard-3.png)
+![](assets/lead-dashboard-3.png)
 
 ## Riquadro Filtro {#filter-pane}
 

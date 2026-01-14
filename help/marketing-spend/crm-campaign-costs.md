@@ -1,15 +1,14 @@
 ---
-description: Costi campagna CRM
+description: Guida ai costi delle campagne CRM per gli utenti di Marketo Measure
 title: Costi campagna CRM
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # Costi campagna CRM {#crm-campaign-costs}
 
@@ -31,7 +30,7 @@ Se in uno dei 3 campi manca un valore, [!DNL Marketo Measure] non importa i cost
 
 Affinché [!DNL Marketo Measure] determini la distribuzione di una campagna tra mesi, la data di inizio e di fine della campagna viene utilizzata per distribuire l&#39;importo in modo uniforme al giorno.
 
-![Esempio di distribuzione dei costi della campagna CRM per mese](assets/1.jpg)
+![](assets/spend-management-3.jpg)
 
 In questo esempio, una campagna dura 109 giorni, quindi con un costo totale di $ 18.000, la spesa al giorno arriva a ~ $ 165,14.
 

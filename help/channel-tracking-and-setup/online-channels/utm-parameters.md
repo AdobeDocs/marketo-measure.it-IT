@@ -1,15 +1,15 @@
 ---
-description: Parametri UTM - [!DNL Marketo Measure]
+description: Guida ai parametri UTM per gli utenti di Marketo Measure
 title: Parametri UTM
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
-
 
 # Parametri UTM {#utm-parameters}
 
@@ -74,7 +74,7 @@ Ogni parametro raccoglie informazioni rilevanti per il valore assegnato. Il valo
 
 Ecco un grafico dei parametri UTM [!DNL Marketo Measure] analizzati e il corrispondente campo punto di contatto a cui sono associati:
 
-| Parametro UTM | Campo [!DNL Marketo Measure] corrispondente |
+| **Parametro UTM** | **Campo [!DNL Marketo Measure] Corrispondente** |
 |---|---|
 | utm_medium | Canale |
 | utm_source | Source punto di contatto |

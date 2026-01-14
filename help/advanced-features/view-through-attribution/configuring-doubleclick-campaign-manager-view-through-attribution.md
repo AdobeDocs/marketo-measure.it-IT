@@ -1,24 +1,25 @@
 ---
-description: Configurazione della visualizzazione di Doubleclick Campaign Manager tramite Attribution - [!DNL Marketo Measure]
+description: Configurazione della vista di Doubleclick Campaign Manager tramite le linee guida di attribuzione per gli utenti di Marketo Measure
 title: Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione Della Visualizzazione Di Doubleclick Campaign Manager Tramite Attribution {#configuring-doubleclick-campaign-manager-view-through-attribution}
 
 ## Misurazione della vista tramite l&#39;attribuzione {#measuring-view-through-attribution}
 
 >[!IMPORTANT]
+>
 >A causa di problemi di privacy, i cookie di terze parti sono in uscita. L’annuncio della rimozione dei cookie di terze parti, annunciata nel terzo trimestre 2024 da Google Chrome, segna di fatto la fine di questa forma di tracciamento. Di conseguenza, Adobe rende obsolete le funzioni di Marketo Measure che si basano su cookie di terze parti; in particolare, il tracciamento tra domini diversi e l’attribuzione view-through, che utilizzano il cookie di impression Google/DoubleClick. Nessun’altra funzione di Marketo Measure sarà interessata. Anche l’utilizzo di cookie di prime parti non è interessato. Alla luce della pianificazione di Google, la data prevista di deprecazione per le due funzioni di cui sopra è il 6/1/2024. I dati correlati raccolti prima di questa data rimangono disponibili per i clienti Adobe.
 
 >[!NOTE]
+>
 >Se utilizzi l&#39;integrazione di [!DNL Marketo Measure] e [!DNL DoubleClick Campaign Manager], è necessaria una [connessione API](/help/api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) per scaricare i dettagli delle campagne e dei creativi per risolvere gli annunci.
 
 Per ottenere un insight più granulare dalla visualizzazione al tracciamento con [!DNL Doubleclick Campaign Manager], è necessario configurare il pixel di tracciamento.
@@ -47,7 +48,7 @@ Aggiungi il tag in Doubleclick sotto l’impostazione dell’inserzionista e cre
    m = %m Macro codice di corrispondenza\
    n = %n Macro numero casuale
 
-   ![Tag DCM Floodlight configurato con macro Marketo Measure](assets/1.png)
+   ![](assets/view-attribution-1.png)
 
 ## Domande frequenti {#faq}
 

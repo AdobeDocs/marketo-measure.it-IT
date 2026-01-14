@@ -1,15 +1,14 @@
 ---
-description: Dashboard velocità lead - [!DNL Marketo Measure] - Prodotto
+description: Utilizza il dashboard Lead Velocity per misurare il tempo in ogni fase di funnel e confrontare il ritmo per canale nel tempo
 title: Dashboard della velocità del lead
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
-
 
 # Dashboard della velocità del lead {#lead-velocity-dashboard}
 
@@ -33,7 +32,7 @@ Risposte alle domande del grafico:
 * Quale fase di vendita ha in genere la durata più lunga per lead/contatti?
 * Come si confronta il tempo trascorso nella fase &quot;Primo contatto&quot; con la fase &quot;MQL&quot;?
 
-![Grafico a barre lead o velocità contatto per fase vendite](assets/lead-velocity-dashboard-1.png)
+![](assets/lead-dashboard-1.png)
 
 ### Velocità lead/contatto nel tempo {#lead-contact-velocity-over-time}
 
@@ -47,7 +46,7 @@ Risposte alle domande del grafico:
 * Quali sono le tendenze nel tempo trascorso in ciascuna fase per lead/contatti nei mesi osservati?
 * In quale mese i lead/contatti hanno registrato la progressione più rapida attraverso le fasi di vendita?
 
-![Tendenze della velocità lead nel grafico a linee temporali](assets/lead-velocity-dashboard-2.png)
+![](assets/lead-dashboard-2.png)
 
 ### Velocità lead/contatto per canale {#lead-contact-velocity-by-channel}
 
@@ -60,7 +59,7 @@ Risposte alle domande del grafico:
 * Quale canale mostra la progressione più rapida del lead attraverso le fasi di funnel?
 * In che modo la velocità di avanzamento nella fase &#39;MQL&#39; varia tra canali diversi?
 
-![Grafico di confronto della velocità lead per canale](assets/lead-velocity-dashboard-3.png)
+![](assets/lead-dashboard-3.png)
 
 ## Riquadro Filtro {#filter-pane}
 

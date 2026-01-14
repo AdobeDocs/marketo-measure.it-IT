@@ -1,19 +1,20 @@
 ---
-description: 'Creazione di tipi di report personalizzati [!DNL Marketo Measure] '
+description: Creazione di report personalizzati [!DNL Marketo Measure] Guida ai tipi di report per gli utenti di Marketo Measure
 title: 'Creazione di tipi di report personalizzati [!DNL Marketo Measure] '
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
 # Creazione di tipi di report [!DNL Marketo Measure] personalizzati {#creating-custom-marketo-measure-report-types}
 
 >[!NOTE]
+>
 >Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere comunque &quot;[!DNL Bizible]&quot; nel CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] personalizzati. È consigliabile creare tre diversi tipi di rapporti: lead con punti di contatto buyer (personalizzati), [!DNL Marketo Measure] persona con punti di contatto buyer (personalizzati), opportunità con Buyer Attribution Touchpoint (personalizzati).
@@ -22,7 +23,7 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
 
 1. Vai a **[!UICONTROL Setup]** > **[!UICONTROL Build]** > **[!UICONTROL Report Types]** > **[!UICONTROL New Custom Report Types]**.
 
-   ![Navigazione del menu di installazione di Salesforce ai nuovi tipi di report personalizzati](assets/1.png)
+   ![](assets/new-types-1.png)
 
 1. Definisci il tipo di rapporto personalizzato.
 
@@ -31,7 +32,7 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
    * [!UICONTROL Store in Category]: altri report
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]: distribuito
 
-   ![Modulo di definizione del tipo di report personalizzato con lead come oggetto principale](assets/2.png)
+   ![](assets/new-types-10.jpg)
 
 1. Definire le relazioni tra oggetti.
 
@@ -39,13 +40,13 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
    * Assicurati che il record &quot;[!UICONTROL Each A/B record must have at least one B/C]&quot; sia selezionato
    * [!UICONTROL Save]
 
-   ![Diagramma delle relazioni tra gli oggetti che mostra le connessioni lead-persona](assets/3.png)
+   ![](assets/new-types-11.png)
 
 ## [!DNL Marketo Measure] persona con punti di contatto dell&#39;acquirente (personalizzato) {#marketo-measure-person-with-buyer-touchpoints-custom}
 
 1. Vai a **[!UICONTROL Setup]** > **[!UICONTROL Build]** > **[!UICONTROL Report Types]** > **[!UICONTROL New Custom Report Types]**.
 
-   ![Navigazione del menu di installazione di Salesforce ai nuovi tipi di report personalizzati](assets/4.png)
+   ![](assets/new-types-12.png)
 
 1. Definisci il tipo di rapporto personalizzato.
 
@@ -54,7 +55,7 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
    * [!UICONTROL Store in Category]: altri report
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]: distribuito
 
-   ![Modulo di definizione del tipo di report personalizzato con Marketo Measure Person come oggetto principale](assets/5.png)
+   ![](assets/new-types-13.jpg)
 
 1. Definire le relazioni tra oggetti.
 
@@ -62,13 +63,13 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
    * Assicurati che il record &quot;[!UICONTROL Each A record must have at least one B]&quot; sia selezionato
    * [!UICONTROL Save]
 
-   ![Diagramma delle relazioni tra gli oggetti che mostra la connessione da persona a punto di contatto](assets/6.png)
+   ![](assets/new-types-9.png)
 
 ## Opportunità con Buyer Attribution Touchpoint (personalizzato) {#opportunities-with-buyer-attribution-touchpoint-custom}
 
 1. Vai a **[!UICONTROL Setup]** > **[!UICONTROL Build]** > **[!UICONTROL Report Types]** > **[!UICONTROL New Custom Report Types]**.
 
-   ![Navigazione del menu di installazione di Salesforce ai nuovi tipi di report personalizzati](assets/7.png)
+   ![](assets/new-types-8.png)
 
 1. Definisci il tipo di rapporto personalizzato.
 
@@ -77,7 +78,7 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
    * [!UICONTROL Store in Category]: altri report
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]: distribuito
 
-   ![Modulo di definizione del tipo di report personalizzato con opportunità come oggetto principale](assets/8.png)
+   ![](assets/new-types-14.jpg)
 
 1. Definire le relazioni tra oggetti.
 
@@ -85,14 +86,14 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
    * Assicurati che il record &quot;[!UICONTROL Each A record must have at least one B]&quot; sia selezionato
    * [!UICONTROL Save]
 
-   ![Diagramma delle relazioni tra gli oggetti che mostra la connessione opportunità-punto di contatto attribuzione](assets/9.png)
+   ![](assets/new-types-15.png)
 
 ## Aggiunta di campi personalizzati a tipi di rapporti personalizzati {#adding-custom-fields-to-custom-report-types}
 
 1. Una volta creati i rapporti, verrai reindirizzato a una panoramica del tipo di rapporto. Fai clic su **[!UICONTROL Edit Layout]**.
 
-   ![Schermata di panoramica del tipo di report con pulsante Modifica layout](assets/10.png)
+   ![](assets/new-types-2.png)
 
 1. Assicurati che i campi personalizzati che desideri aggiungere al rapporto siano visualizzati nella sezione Proprietà layout campo. Se sono presenti altri campi da aggiungere, utilizzare l&#39;opzione &quot;[!UICONTROL Add fields related via lookup]&quot;.
 
-   ![Sezione Proprietà layout campo con campi personalizzati disponibili](assets/11.png)
+   ![](assets/new-types-3.png)

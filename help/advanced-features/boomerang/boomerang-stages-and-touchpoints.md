@@ -1,19 +1,19 @@
 ---
-description: Fasi e punti di contatto Boomerang - [!DNL Marketo Measure]
+description: Indicazioni su fasi di boomerang e punti di contatto per gli utenti di Marketo Measure
 title: Fasi e punti di contatto del boomerang
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-
 # Fasi e punti di contatto del boomerang {#boomerang-stages-and-touchpoints}
 
 >[!AVAILABILITY]
+>
 >La funzione Boomerang è abilitata solo per i clienti di livello 2 e 3. Per richiedere un livello di account superiore, contatta il team dell’account di Adobe (il tuo account manager).
 
 [!DNL Marketo Measure] ha rilasciato la funzionalità Boomerang Stage. La funzione Boomerang Stage è stata creata per fornire maggiore visibilità al percorso del cliente per [!DNL Marketo Measure] clienti con lunghi cicli di vendita. Questa funzione consente agli addetti al marketing di creare punti di contatto per tutte le transizioni di fase che si verificano nel percorso di opportunità, ad esempio quando un contatto si sposta su SAL e quindi ritorna alla fase MQL. Quando i contatti &quot;entrano di nuovo nello stadio MQL&quot; o &quot;ri-MQL&quot;, il MQL è considerato uno stadio di boomerang. La funzionalità Boomerang Stage funziona insieme alle [!DNL Marketo Measure] fasi personalizzate.
@@ -26,13 +26,14 @@ ht-degree: 0%
 * Se sei un utente del modello personalizzato, puoi determinare la ponderazione dell’attribuzione e il credito percentuale che desideri allocare a ciascuno di questi stadi (ad esempio designare il peso dell’attribuzione per la prima o l’ultima occorrenza MQL, oppure distribuire uniformemente la ponderazione dell’attribuzione tra tutte le occorrenze)
 
 >[!NOTE]
+>
 >[Istruzioni su come impostare le fasi del boomerang](/help/advanced-features/boomerang/setting-up-boomerang-stages.md).
 
 ## Come si presentano le fasi di boomerang e i punti di contatto nel CRM {#what-boomerang-stages-and-touchpoints-look-like-in-your-crm}
 
 Senza le fasi Boomerang (il &quot;prima&quot;), viene visualizzato solo il punto di contatto MQL o SQL più recente associato a un record Lead/Contatto.
 
-![Record di opportunità che mostra solo i punti di contatto della fase più recenti senza boomerang](assets/1.png)
+![](assets/boomerang-boomerang-18.png)
 
 Con Stadi di Boomerang e punti di contatto, puoi vedere i punti di contatto che si verificano per ogni transizione di fase. Le convenzioni di denominazione per questi punti di contatto boomerang sono:
 
@@ -40,7 +41,7 @@ Con Stadi di Boomerang e punti di contatto, puoi vedere i punti di contatto che 
 
 Utilizzando l&#39;esempio seguente, questo account [!DNL Marketo Measure] ha incluso MQL e SQL nelle fasi di boomerang e ha scelto di visualizzare 2 punti di contatto boomerang per fase.
 
-![Punti di contatto boomerang elencati per più transizioni di fase MQL e SQL](assets/2.png)
+![](assets/boomerang-boomerang-19.png)
 
 **MQL-01** è la prima transizione di fase MQL.
 

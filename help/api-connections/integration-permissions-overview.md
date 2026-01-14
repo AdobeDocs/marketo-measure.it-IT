@@ -1,11 +1,11 @@
 ---
-description: Panoramica delle autorizzazioni di integrazione - [!DNL Marketo Measure]
+description: Panoramica delle autorizzazioni di integrazione per gli utenti di Marketo Measure
 title: Panoramica delle autorizzazioni di integrazione
 feature: APIs, Integration
 exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1291'
 ht-degree: 2%
 
 ---
@@ -220,7 +220,7 @@ Marketo Measure tiene traccia di campagne, gruppi di annunci, creatività, colle
   <tr>
     <td>Adobe Analytics</td>
     <td>Dati di sistema B2B</td>
-    <td>L’integrazione degli attributi del cliente B2B consente ai reciproci utenti di Marketo Measure e Adobe Analytics di arricchire i profili utente di Adobe Analytics con metadati preziosi derivati dal motore di attribuzione Marketo Measure e tramite la sua funzionalità di sincronizzazione con i CRM (Microsoft Dynamics e Salesforce). <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Ulteriori informazioni</a>.</td>
+    <td>L’integrazione degli attributi del cliente B2B consente ai reciproci utenti di Marketo Measure e Adobe Analytics di arricchire i profili utente di Adobe Analytics con metadati preziosi derivati dal motore di attribuzione Marketo Measure e tramite la sua funzionalità di sincronizzazione con i CRM (Microsoft Dynamics e Salesforce). <a href="/help/marketo-measure-and-adobe/adobe-analytics.md">Ulteriori informazioni</a>.</td>
     <td>Il cliente deve fornire a Marketo Measure un ID alias e le credenziali del server FTP in una posizione in cui i dati verranno caricati nella propria istanza di Analytics.
     <p>
     Prendi nota delle seguenti informazioni, in quanto saranno necessarie per alcune delle fasi successive del processo:
@@ -228,7 +228,7 @@ Marketo Measure tiene traccia di campagne, gruppi di annunci, creatività, colle
     <li>L’ID alias, che può essere qualsiasi valore vuoi che sia. Consigliamo "marketomeasure_id"</li>
     <li>Nome host e credenziali del server FTP (nome utente e password)</li>
     <p>
-    <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md#configuring-the-integration">Ulteriori informazioni</a></td>
+    <a href="/help/marketo-measure-and-adobe/adobe-analytics.md#configuring-the-integration">Ulteriori informazioni</a></td>
   </tr>
   <tr>
     <td>Javascript Bizible</td>

@@ -1,21 +1,22 @@
 ---
-description: Dashboard ricavi attribuiti - [!DNL Marketo Measure] - Prodotto
+description: Descrive il dashboard Ricavi attribuiti che suddivide i ricavi e le offerte attribuiti per canale secondario e campagna nel tempo
 title: Dashboard ricavi attribuiti
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
-
 
 # Dashboard ricavi attribuiti {#attributed-revenue-dashboard}
 
 Il dashboard Ricavi attribuiti offre una prospettiva incentrata sui ricavi direttamente collegati alle attività di marketing. Scopri in che modo le tue strategie di marketing sono state utili per sigillare gli accordi.
 
 >[!NOTE]
+>
 >Questa dashboard si trova in Beta. Durante questa fase di transizione, sarà possibile accedere sia alle dashboard attuali che a quelle nuove. La dashboard corrente diventerà obsoleta dopo la completa transizione e dopo aver garantito funzionalità ottimali.
 
 **Risposte alle domande della bacheca**:
@@ -42,7 +43,7 @@ Grafico a barre in pila che mostra i Ricavi attribuiti totali, segmentati per ca
 * Quali canali hanno generato il maggior ricavo attribuito ogni trimestre?
 * Qual è stata la suddivisione dei ricavi attribuiti per canale il mese scorso?
 
-![Grafico Ricavi attribuiti per canale nel tempo](assets/attributed-revenue-dashboard-1.png)
+![](assets/attributed-dashboard-4.png)
 
 ### Tabella Ricavi Attribuiti {#attributed-revenue-table}
 
@@ -58,14 +59,14 @@ Ricavi attribuiti totali segmentati per canale, sottocanale e campagna, in forma
 * La vista a tabella offre informazioni chiare e organizzate sulla distribuzione dei ricavi attribuiti. Gli utenti possono distinguere rapidamente i pattern di prestazioni e individuare strategie di marketing di forte impatto, suddividendo i dati in canali, sottocanali e campagne.
 * Fai clic sull’icona &quot;+&quot; accanto a ciascun canale per visualizzare il raggruppamento per sottocanale e campagna.
 
-![Visualizzazione tabella ricavi attribuiti per canale, sottocanale e campagna](assets/attributed-revenue-dashboard-2.png)
+![](assets/attributed-dashboard-5.png)
 
 **Visualizzazione struttura**
 
 * La struttura ad albero consente un’esplorazione dei dati più interattiva e granulare, consentendo agli addetti al marketing di identificare tendenze, anomalie o prestazioni di rilievo nelle loro attività di marketing.
 * Fate clic su un ramo per approfondire il livello gerarchico successivo.
 
-![Visualizzazione ad albero dei ricavi attribuiti per l&#39;esplorazione gerarchica](assets/attributed-revenue-dashboard-3.png)
+![](assets/attributed-dashboard-6.png)
 
 ## Riquadro Filtro {#filter-pane}
 
@@ -78,6 +79,7 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 * Segmenti
 
 >[!MORELIKETHIS]
-> [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
 

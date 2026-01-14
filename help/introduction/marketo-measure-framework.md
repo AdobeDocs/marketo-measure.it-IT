@@ -3,7 +3,8 @@ description: Framework Marketo Measure
 title: Framework Marketo Measure
 exl-id: fa6de27c-cdd2-4fd9-ac35-7286fe2752d8
 feature: Fundamentals
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -35,7 +36,7 @@ JS di Marketo Measure acquisisce i dati dalle visite web (comprese le visite web
 
 Marketo Measure si integra con i sistemi di gestione delle relazioni con i clienti per ospitare e organizzare tutti i dati acquisiti da Marketo Measure JS. Attualmente, Marketo Measure dispone di integrazioni API con due CRM:
 
-![&#x200B; 2](assets/1-2.png)
+![ 2](assets/overview-resources-14.png)
 
 Facendo emergere i dati di Marketo Measure nel CRM, puoi visualizzare le informazioni granulari relative a ciascun punto di contatto e generare rapporti per comprendere le prestazioni dei tuoi canali.
 
@@ -43,7 +44,7 @@ Facendo emergere i dati di Marketo Measure nel CRM, puoi visualizzare le informa
 
 La maggior parte degli esperti di marketing si basa su poche applicazioni diverse per eseguire le attività di marketing. Oltre a Salesforce e MS Dynamics, Marketo Measure è integrato con 13 applicazioni di terze parti (elencate di seguito).
 
-![&#x200B; 1](assets/2-1.png)
+![ 1](assets/overview-resources-15.png)
 
 Se esegui attività di marketing utilizzando le applicazioni di cui sopra, puoi collegare tali account al tuo account Marketo Measure. Questo consente di tracciare e trasferire facilmente i dati sul tuo account Marketo Measure.
 

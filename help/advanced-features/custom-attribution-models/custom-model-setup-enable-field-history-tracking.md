@@ -1,15 +1,15 @@
 ---
-description: Impostazione modello personalizzato - Abilita tracciamento cronologia campi - [!DNL Marketo Measure]
+description: 'Impostazione modello personalizzato: abilita indicazioni per il tracciamento della cronologia dei campi per gli utenti di Marketo Measure'
 title: Impostazione modello personalizzato - Abilita tracciamento cronologia campi
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Impostazione modello personalizzato: abilita tracciamento cronologia campi {#custom-model-setup-enable-field-history-tracking}
 
@@ -24,14 +24,15 @@ Per abilitare il tracciamento della cronologia dei campi, segui le istruzioni ri
 ## Abilita tracciamento cronologia campi {#enable-field-history-tracking}
 
 >[!NOTE]
+>
 >Per apportare queste modifiche ai campi dell&#39;oggetto Lead/Contatto/Opportunità, è necessario essere amministratore di sistema.
 
 1. Passare all&#39;oggetto in cui si trova il campo personalizzato e fare clic sul pulsante **[!UICONTROL Set History Tracking]**.
 
-   ![Pulsante Imposta tracciamento cronologia nei campi oggetto](assets/1.png)
+   ![](assets/custom-models-1.png)
 
 1. Seleziona i campi in cui desideri tenere traccia delle modifiche.
 
-   ![Selezione dei campi per abilitare il tracciamento della cronologia](assets/2.png)
+   ![](assets/custom-models-10.png)
 
 [!DNL Marketo Measure] può reimportare un record solo se vede che è stato modificato di recente. I campi formula tecnicamente non modificano un record quando viene modificato, in quanto il calcolo viene eseguito in background. Si sono verificati problemi in cui una regola viene ignorata perché [!DNL Marketo Measure] non ha visto la modifica del record, pertanto si consiglia di **non utilizzare i campi formula nelle definizioni delle regole**. La soluzione consiste nel creare un campo di testo e utilizzare un flusso di lavoro per compilare tale campo con il valore o il calcolo corretto ogni volta che il record viene modificato o soddisfa i criteri. Questo richiede che tutti i record vengano modificati in modo che il flusso di lavoro possa funzionare retroattivamente sui record precedenti.

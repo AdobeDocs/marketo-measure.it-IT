@@ -3,7 +3,7 @@ description: Modelli di attribuzione Marketo Measure
 title: Modelli di attribuzione Marketo Measure
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Questi modelli variano in complessità. I modelli First Touch e Lead Creation so
 * Creazione opportunità (OC)
 * Contratto a trattativa privata (CW)
 
-![La timeline del percorso di clienti mostra quattro punti di contatto fondamentali: Primo contatto, Creazione di lead, Creazione di opportunità e Concluso](assets/1-1.png)
+![La timeline del percorso di clienti mostra quattro punti di contatto fondamentali: Primo contatto, Creazione di lead, Creazione di opportunità e Concluso](assets/overview-resources-8.png)
 
 Nei **modelli a contatto singolo**, il credito di attribuzione viene attribuito a un solo punto di contatto milestone, da cui il nome &#39;a contatto singolo&#39;.
 Nei **modelli multi-touch**, la maggior parte del credito di attribuzione è assegnato a due o più punti di contatto milestone. Il credito rimanente viene attribuito ai punti di contatto che si verificano tra i punti di contatto di milestone.
@@ -44,7 +44,7 @@ Il modello di primo contatto si concentra solo sulla prima interazione che un le
 
 Supponiamo che Kate visiti `www.adobe.com` per la prima volta tramite un annuncio Adwords e visualizzi un white paper. Il canale Adwords riceverebbe il 100% del credito di attribuzione da tale opportunità.
 
-![Diagramma del modello di primo contatto che mostra il 100% di credito di attribuzione al canale Adwords](assets/2.png)
+![Diagramma del modello di primo contatto che mostra il 100% di credito di attribuzione al canale Adwords](assets/overview-resources-9.png)
 
 **Modello di creazione lead**
 
@@ -52,7 +52,7 @@ Il modello di creazione di lead attribuisce il 100% del credito di attribuzione 
 
 Continuando dall&#39;esempio precedente, dopo la prima visita di Kate a `www.adobe.com` tramite Adwords, Austin visita il sito web tramite un post su Linkedin. Austin compila un modulo e diventa un lead. In questo modello, Linkedin riceverebbe il 100% del credito di attribuzione.
 
-![Diagramma del modello di creazione del lead che mostra il 100% di credito di attribuzione al canale LinkedIn](assets/3.png)
+![Diagramma del modello di creazione del lead che mostra il 100% di credito di attribuzione al canale LinkedIn](assets/overview-resources-10.png)
 
 ## Modelli multi-touch {#multi-touch-models}
 
@@ -64,7 +64,7 @@ Il modello a forma di U si concentra sui punti di contatto FT e LC. In questo mo
 
 La prima visita di Kate a `www.adobe.com` tramite un annuncio Adwords riceverebbe il 50% del credito di attribuzione. Il restante 50% sarebbe stato attribuito al post di Linkedin che spinse Austin a compilare un modulo e diventare un lead.
 
-![Diagramma modello a forma di U che mostra il 50% di credito ad Adwords e il 50% a LinkedIn](assets/4.png)
+![Diagramma modello a forma di U che mostra il 50% di credito ad Adwords e il 50% a LinkedIn](assets/overview-resources-11.png)
 
 **Modello A Forma Di W**
 
@@ -74,7 +74,7 @@ Kate e Austin menzionano Marketo Measure alla loro collega, Hillary. Trova un co
 
 Hillary riceve un’e-mail con un collegamento alla pagina dei prezzi e visita la pagina. Quindi viene creata un’opportunità per il loro account. La visita web di Hillary alla pagina dei prezzi riceve il merito per la creazione dell’opportunità perché è stata l’interazione di marketing più vicina alla data di creazione dell’opportunità. A ciascuno dei punti di contatto milestone viene assegnato il 30% del credito di attribuzione e ai punti di contatto intermediari viene assegnato il restante 10%.
 
-![Diagramma del modello a forma di W che mostra il 30% di credito per ogni punto di contatto FT, LC e OC con il 10% di punti di contatto intermedi](assets/5.png)
+![Diagramma del modello a forma di W che mostra il 30% di credito per ogni punto di contatto FT, LC e OC con il 10% di punti di contatto intermedi](assets/overview-resources-12.png)
 
 **Modello a percorso completo**
 
@@ -82,7 +82,7 @@ Il modello del percorso completo include tutti e quattro i punti di contatto mil
 
 Dopo la creazione dell&#39;opportunità, Kate, Austin e Hillary decidono di presentare Marketo Measure al loro CMO, Elizabeth. Elizabeth partecipa a una conferenza in cui Marketo Measure ospita un evento. Kate vede un post di LinkedIn su un caso di studio e compila un modulo per scaricare il contenuto. Elizabeth partecipa a una cena di vendita ospitata da Marketo Measure. Dopo la cena, decide di acquistare Marketo Measure e diventa un cliente. In questo scenario, alla cena di vendita verrebbe attribuito il 22,5% del credito sul ricavo derivante dall&#39;operazione chiusa. Anche i punti di contatto FT, LC e OC ricevono il 22,5% del credito. Ai punti di contatto intermediari viene assegnato anche il restante 10% del credito sulle entrate.
 
-![Diagramma del modello a percorso completo che mostra il 22,5% di credito verso punti di contatto FT, LC, OC e CW con il 10% verso punti di contatto intermedi](assets/6.png)
+![Diagramma del modello a percorso completo che mostra il 22,5% di credito verso punti di contatto FT, LC, OC e CW con il 10% verso punti di contatto intermedi](assets/overview-resources-13.png)
 
 **Modello di attribuzione personalizzato**
 

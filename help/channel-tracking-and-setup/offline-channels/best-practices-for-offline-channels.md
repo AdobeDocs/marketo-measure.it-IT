@@ -1,11 +1,11 @@
 ---
-description: Best practice per i canali offline - [!DNL Marketo Measure]
+description: Linee guida sulle best practice per i canali offline per gli utenti di Marketo Measure
 title: Best practice per i canali offline
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---

@@ -1,15 +1,14 @@
 ---
-description: Rimozione punto di contatto ed eliminazione punto di contatto - [!DNL Marketo Measure]
+description: Linee guida per la rimozione e la soppressione dei punti di contatto per gli utenti di Marketo Measure
 title: Rimozione e soppressione dei punti di contatto
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
-
 
 # Rimozione e soppressione dei punti di contatto {#touchpoint-removal-and-touchpoint-suppression}
 
@@ -34,38 +33,41 @@ Inizia aggiungendo una regola e selezionando il Campo che definirà i criteri.
 
 Scegli da un elenco di operatori che saranno correlati al successivo set di valori, che aggiungerai nella colonna successiva.
 
-![&#x200B; 1](assets/1-1.png)
+![](assets/touchpoint-settings-10.png)
 
 >[!TIP]
+>
 >Per aggiungere più valori in un campo, utilizza l’operatore &quot;corrisponde a qualsiasi&quot; con virgole che separano ciascun valore.
 
 >[!TIP]
+>
 >Per includere un valore vuoto o NULL in un campo, è sufficiente lasciare vuota la casella [!UICONTROL Value]. Questo prenderà in considerazione scenari come la valutazione rispetto a un punto di contatto senza URL modulo.
 
 >[!NOTE]
+>
 >I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background e non modificano un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
 `2)` Aggiungi regole nello stesso gruppo per utilizzare la logica &quot;AND&quot; nell&#39;istruzione.
 In alternativa, aggiungere nuove istruzioni all&#39;esterno del gruppo per utilizzare la logica &quot;OR&quot; nell&#39;istruzione.
 
-![Generatore di regole di soppressione con logica AND/OR raggruppata](assets/2.png)
+![](assets/touchpoint-settings-11.png)
 
 `3)` Se le regole diventano complesse ed è necessario ricreare i gruppi e apportare piccole modifiche a ogni istruzione, utilizzare l&#39;opzione [!UICONTROL Clone] per semplificare.
 
-![Opzione Clona per duplicare i gruppi di regole di soppressione](assets/3.png)
+![](assets/touchpoint-settings-6.png)
 
 Se fai un errore, non preoccuparti. È inoltre possibile eliminare singole righe dell&#39;istruzione o gruppi completi.
 
-![Icone di eliminazione per singole istruzioni e gruppi di regole](assets/4.png)
+![](assets/touchpoint-settings-7.png)
 
 `4)` Impostare le regole per i punti di contatto di attribuzione buyer se si desidera applicarle a entrambi gli oggetti. La nostra flessibilità consente di impostare regole per uno o entrambi gli oggetti e, se applicabili, può scegliere di impostarle per entrambi.
 
-![Configurazione delle regole di soppressione dei punti di contatto per l&#39;attribuzione dell&#39;acquirente](assets/5.png)
+![](assets/touchpoint-settings-8.png)
 
 Per terminare, [!UICONTROL Save and Process] le tue regole. Se effettui molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i tuoi punti di contatto fino a quando non fai clic su
 [!UICONTROL **Salva ed elabora**].
 
-| Operatore | Caso d’uso |
+| **Operatore** | **Caso d&#39;uso** |
 |---|---|
 | È uguale a | Valore singolo - Corrispondenza esatta |
 | Contiene | Valore singolo - contiene valore |

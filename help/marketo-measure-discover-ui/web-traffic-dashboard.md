@@ -1,15 +1,15 @@
 ---
-description: Dashboard traffico Web - [!DNL Marketo Measure] - Prodotto
+description: Descrive il dashboard Traffico web per visite, visualizzazioni pagina, moduli e prestazioni dei canali nel tempo
 title: Dashboard traffico web
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
-
 
 # Dashboard traffico web {#web-traffic-dashboard}
 
@@ -25,36 +25,14 @@ Risposte alle domande poste da questa dashboard:
 
 **Tessere KPI**
 
-<table>
-<thead>
-  <tr>
-    <td>Visite</td>
-    <td>Il totale delle visite al sito (sessioni) avviate da pagine esterne che includono utenti noti e anonimi.</td>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Visitatori</td>
-    <td>Il numero totale di visitatori univoci.</td>
-  </tr>
-  <tr>
-    <td>Page Views</td>
-    <td>Numero totale di visualizzazioni tra le pagine del sito Web.</td>
-  </tr>
-  <tr>
-    <td>Forms</td>
-    <td>Numero totale di invii di moduli, incluso LinkedIn Lead Gen Forms.</td>
-  </tr>
-  <tr>
-    <td>E-mail univoche da Forms</td>
-    <td>Numero totale di e-mail univoche da invii di moduli.</td>
-  </tr>
-  <tr>
-    <td>Lead creati da Forms</td>
-    <td>Numero totale di nuovi lead creati dall'invio del modulo.</td>
-  </tr>
-</tbody>
-</table>
+| KPI | Definizione |
+| --- | --- |
+| Visite | Il totale delle visite al sito (sessioni) avviate da pagine esterne che includono utenti noti e anonimi. |
+| Visitatori | Il numero totale di visitatori univoci. |
+| Page Views | Numero totale di visualizzazioni tra le pagine del sito Web. |
+| Forms | Numero totale di invii di moduli, incluso LinkedIn Lead Gen Forms. |
+| E-mail univoche da Forms | Numero totale di e-mail univoche da invii di moduli. |
+| Lead creati da Forms | Numero totale di nuovi lead creati dall&#39;invio del modulo. |
 
 ## Traffico Web nel tempo {#web-traffic-over-time}
 
@@ -68,7 +46,7 @@ Risposte alle domande del grafico:
 * Come si confrontano le tendenze nelle visite totali con i visitatori univoci e gli invii di moduli nell’arco temporale visualizzato?
 * In quale periodo il sito web ha registrato il maggior numero di visitatori univoci rispetto al totale di visite e invii di moduli?
 
-![Grafico del traffico web nel tempo per visite, visitatori e invii di moduli](assets/web-traffic-dashboard-1.png)
+![](assets/web-dashboard-1.png)
 
 ## Tabella riepilogo traffico Web {#web-traffic-summary-table}
 
@@ -85,7 +63,7 @@ Tabella che mostra visualizzazioni pagina, visite, visitatori, Forms, e-mail uni
 * E-mail univoche da moduli
 * Creazione di lead dai moduli
 
-![Tabella riepilogo traffico Web per titolo pagina e URL](assets/web-traffic-dashboard-2.png)
+![](assets/web-dashboard-2.png)
 
 ## Tabella referrer {#referrer-table}
 
@@ -97,7 +75,7 @@ Tabella in cui sono visualizzate le Visite totali e Visitatori univoci per Refer
 * Visite
 * Visitatori univoci
 
-![Tabella del referrer che mostra visite e visitatori univoci](assets/web-traffic-dashboard-3.png)
+![](assets/web-dashboard-3.png)
 
 ## Visite/Visitatori per canale {#visits-visitors-by-channel}
 
@@ -111,7 +89,7 @@ Risposte alle domande del grafico:
 * Quale canale/sottocanale/campagna attrae il maggior numero di visite o visitatori univoci?
 * Come si confronta il numero di visitatori univoci con il totale delle visite all’interno di un canale/sottocanale/campagna specifico?
 
-![Visite e visitatori univoci per grafico a barre dei canali](assets/web-traffic-dashboard-4.png)
+![](assets/web-dashboard-4.png)
 
 ## Riquadro Filtro {#filter-pane}
 

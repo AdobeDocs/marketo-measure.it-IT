@@ -1,15 +1,14 @@
 ---
-description: Segmentazione personalizzata - [!DNL Marketo Measure]
+description: Indicazioni di segmentazione personalizzata per gli utenti di Marketo Measure
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
-
 
 # Segmentazione personalizzata {#custom-segmentation}
 
@@ -26,6 +25,7 @@ La segmentazione personalizzata può essere utilizzata per visualizzare i dati p
 **Come si configura?**
 
 >[!NOTE]
+>
 >L’aggiornamento delle regole dei segmenti rielabora i dati storici.
 
 Passaggio 1: determinare quali informazioni si desidera visualizzare.
@@ -42,7 +42,7 @@ Passaggio 3: comprendere i componenti.
 
 * Utilizza questa legenda per comprendere le varie icone presenti in questa pagina.
 
-![La legenda dei segmenti mostra le icone utilizzate nell&#39;amministratore](assets/1.png)
+![](assets/segmentation-segmentation-2.png)
 
 Passaggio 4: Aggiungere Regole Di Filtro.
 
@@ -50,13 +50,14 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 * Fai clic sul segno più per aggiungere un segmento
 * Immetti un nome per il segmento. Ad esempio, puoi avere un segmento per Nuova azienda, Partner, Rinnovo o Upselling
 
-![Aggiunta di una categoria di segmenti e di un nome in Marketo Measure](assets/2.png)
+![](assets/segmentation-segmentation-3.png)
 
 * Fai clic sull’icona più per visualizzare i campi di input della regola. Le opzioni nell’elenco a discesa Campo estraggono i campi direttamente dal CRM
 
-![Campi di input della regola per definire un filtro di segmento](assets/3.png)
+![](assets/segmentation-segmentation-4.png)
 
 >[!NOTE]
+>
 >I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background e non modificano un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 
 * L&#39;opzione [!UICONTROL Value] non è un elenco a discesa e il relativo valore deve essere immesso manualmente. Verifica i valori nell’organizzazione Salesforce

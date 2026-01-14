@@ -1,15 +1,15 @@
 ---
-description: Gestione dominio - [!DNL Marketo Measure]
+description: Linee guida per la gestione dei domini per gli utenti di Marketo Measure
 title: Gestione del dominio
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Gestione del dominio {#domain-management}
 
@@ -19,19 +19,19 @@ Per i tenant abilitati per IMS che eseguono [!DNL Marketo Measure] nell&#39;inte
 
 Gli utenti IMS con accesso a Adobe Admin Console possono aggiungere e convalidare i domini di loro proprietà. La convalida del dominio comporta l’aggiunta di un record DNS per ciascun dominio e quindi la possibilità per Admin Console di verificarlo.
 
-![Elenco domini Adobe Admin Console con stato di convalida](assets/domain-management-1.png)
+![](assets/domain-management-4.png)
 
-Le istruzioni per l&#39;aggiunta dei domini sono disponibili nella [documentazione di Admin Console](https://helpx.adobe.com/it/enterprise/using/add-domains-directories.html). Una volta aggiunto, il dominio deve essere [collegato a una directory](https://helpx.adobe.com/it/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
+Le istruzioni per l&#39;aggiunta dei domini sono disponibili nella [documentazione di Admin Console](https://helpx.adobe.com/enterprise/using/add-domains-directories.html). Una volta aggiunto, il dominio deve essere [collegato a una directory](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
 
 ## Gestione dei domini in [!DNL Marketo Measure] {#managing-domains-in-marketo-measure}
 
 Dopo l&#39;aggiunta di un dominio in Admin Console, [!DNL Marketo Measure] sincronizza regolarmente il record nel database. Questa sincronizzazione viene eseguita ogni notte e ogni volta che un utente visita la pagina **[!UICONTROL Domains]** nell&#39;interfaccia utente di [!DNL Marketo Measure]. Per impostazione predefinita, tutti i record importati da [!DNL Marketo Measure] sono disabilitati e il tenant deve abilitare manualmente ogni dominio.
 
-![Pagina Domini Marketo Measure in cui sono elencati i domini verificati con le opzioni di attivazione](assets/domain-management-2.png)
+![](assets/domain-management-2.png)
 
 Nella pagina **[!UICONTROL Integration]** > **[!UICONTROL Domains]**, l&#39;utente visualizza tutti i domini registrati in Admin Console, insieme al relativo stato. Ogni dominio può essere abilitato o disabilitato. Se un dominio è abilitato, il monitoraggio [!DNL Marketo Measure] raccoglie tutto il traffico visualizzato in quel dominio. Se un dominio è disabilitato, [!DNL Marketo Measure] ignora il traffico proveniente da tale dominio e non crea punti di contatto o altri dati. [!DNL Marketo Measure] conferma la disabilitazione di un dominio e avvisa di eventuali ramificazioni:
 
-![Finestra di dialogo di conferma durante la disabilitazione di un dominio in Marketo Measure](assets/domain-management-3.png)
+![](assets/domain-management-3.png)
 
 L’attivazione di un dominio ha un impatto immediato e le modifiche non sono retroattive. In futuro, [!DNL Marketo Measure] eliminerà i dati dai domini disabilitati dopo un periodo impostato.
 

@@ -3,22 +3,22 @@ description: Panoramica di [!DNL Marketo Measure] 101 report - [!DNL Marketo Mea
 title: Panoramica di [!DNL Marketo Measure] 101 report
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
-
 # Panoramica di [!DNL Marketo Measure] 101 report {#marketo-measure-101-reports-overview}
 
 >[!NOTE]
+>
 >Potresti vedere le istruzioni che specificano &quot;[!DNL Marketo Measure]&quot; nella documentazione, ma vedere ancora &quot;Bizible&quot; nel tuo CRM. Stiamo lavorando per aggiornarlo e il rebranding verrà riportato nel tuo CRM a breve.
 
 Tutti i clienti [!DNL Marketo Measure] che utilizzano [!DNL Marketo Measure] e [!DNL Salesforce] hanno accesso alla cartella &quot;Rapporti sui punti di contatto dell&#39;acquirente&quot; all&#39;interno della propria istanza di SFDC. Questa cartella contiene una serie di rapporti predefiniti che possono aiutarti a iniziare a generare rapporti con i dati di Buyer Touchpoint.
 
-![Cartella Rapporti sui punti di contatto dell&#39;acquirente Salesforce in Marketo Measure 101](assets/bizible-101-reports-overview-1.png)
+![](assets/bizible-guide-1.png)
 
 Anche se molti di questi report hanno obiettivi di reporting specifici già stabiliti, esistono sei &quot;_[!DNL Marketo Measure]101..._&quot; rappresentati da tre tipi di report chiave che coprono la maggior parte delle esigenze di reporting.
 
@@ -26,7 +26,7 @@ Anche se molti di questi report hanno obiettivi di reporting specifici già stab
 * [!DNL Marketo Measure] persone con punti di contatto dell&#39;acquirente
 * Punti di contatto di attribuzione acquirente con opportunità
 
-![Esempio di elenco dei report di Marketo Measure 101 in Salesforce](assets/bizible-101-reports-overview-2.png)
+![](assets/bizible-guide-2.png)
 
 Questi report forniscono i campi e l&#39;infrastruttura di base necessari per qualsiasi report correlato a [!DNL Marketo Measure] che si desidera creare. Invitiamo tutti i clienti, nuovi e meno recenti, a iniziare con questi rapporti quando esplorano le domande di attribuzione marketing. Di seguito è riportata una spiegazione di ciascuno dei sei report &quot;_[!DNL Marketo Measure]101..._&quot;.
 

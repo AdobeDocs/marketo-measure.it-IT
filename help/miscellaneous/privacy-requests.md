@@ -1,12 +1,12 @@
 ---
-description: Richieste di accesso a dati personali - [!DNL Marketo Measure]
+description: Indicazioni sulle richieste di accesso a dati personali per gli utenti di Marketo Measure
 title: Richieste sulla privacy
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 25%
+source-wordcount: '259'
+ht-degree: 24%
 
 ---
 
@@ -17,8 +17,8 @@ In questo documento viene fornita una panoramica sulla gestione delle singole ri
 
 È possibile inviare singole richieste per accedere ed eliminare i dati dei consumatori da [!DNL Marketo Measure] in due modi:
 
-* Tramite l&#39;[[!DNL Privacy Service] interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=it){target="_blank"}.
-* Tramite l&#39;API **[!DNL Privacy Service]**. Consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=it){target="_blank"} e il riferimento API [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
+* Tramite l&#39;[[!DNL Privacy Service] interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
+* Tramite l&#39;API **[!DNL Privacy Service]**. Consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} e il riferimento API [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it){target="_blank"} supporta due tipi di richieste: accesso ai dati ed eliminazione dei dati.
 
@@ -65,7 +65,7 @@ Per richiedere l&#39;accesso e l&#39;eliminazione dei dati per [!DNL Marketo Mea
 
 Richiesta JSON
 
-```text
+```json
 {
   "companyContexts": [
     {
@@ -96,7 +96,7 @@ Richiesta JSON
 
 Risposta JSON
 
-```text
+```json
 {
   "requestId": "16331241037112570RX-245",
   "totalRecords": 1,
@@ -128,7 +128,7 @@ Risposta JSON
 
 Richiesta JSON
 
-```text
+```json
 {
   "companyContexts": [
     {
@@ -159,7 +159,7 @@ Richiesta JSON
 
 Risposta JSON
 
-```text
+```json
 {
   "requestId": "16329573462631890RX-207",
   "totalRecords": 1,

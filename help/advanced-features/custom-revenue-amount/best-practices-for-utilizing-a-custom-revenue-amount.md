@@ -1,15 +1,14 @@
 ---
-description: Procedure consigliate per l'utilizzo di un importo di ricavi personalizzato - [!DNL Marketo Measure]
+description: Tecniche consigliate per l’utilizzo di un importo di ricavi personalizzato - Guida per gli utenti di Marketo Measure
 title: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
-
 
 # Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato {#best-practices-for-utilizing-a-custom-revenue-amount}
 
@@ -50,7 +49,8 @@ A parte una revisione annuale, alcune modifiche organizzative potrebbero segnala
 * Modifiche dell&#39;organizzazione nella modalità di dichiarazione dei ricavi
 
 >[!MORELIKETHIS]
-> [Utilizzo di un campo personalizzato per l&#39;importo dei ricavi](/help/advanced-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
-> [Utilizzo di Data Loader per aggiornare il campo personalizzato &#x200B;](/help/advanced-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
-> [Panoramica di più valute](/help/advanced-features/multi-currency/overview.md)
-> [Impostazioni multivaluta](/help/advanced-features/multi-currency/settings.md)
+>
+>* [Utilizzo di un campo personalizzato per l&#39;importo dei ricavi](/help/advanced-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
+>* [Utilizzo di Data Loader per aggiornare il campo personalizzato](/help/advanced-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
+>* [Panoramica multi-valuta](/help/advanced-features/multi-currency/overview.md)
+>* [Impostazioni multivaluta](/help/advanced-features/multi-currency/settings.md)

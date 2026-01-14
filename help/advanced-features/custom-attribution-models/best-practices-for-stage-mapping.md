@@ -1,15 +1,14 @@
 ---
-description: Best practice per la mappatura dello staging - [!DNL Marketo Measure]
+description: Tecniche consigliate per la mappatura delle fasi per gli utenti di Marketo Measure
 title: Best practice per la mappatura degli staging
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per la mappatura degli staging {#best-practices-for-stage-mapping}
 
@@ -52,4 +51,5 @@ Altri motivi che potrebbero attivare una revisione della mappatura dello staging
 * Visualizzazione dei dati errati sui ricavi nei rapporti di [!DNL Marketo Measure]
 
 >[!MORELIKETHIS]
+>
 >[Differenza tra gli stadi di Funnel e gli stadi del modello personalizzato](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)

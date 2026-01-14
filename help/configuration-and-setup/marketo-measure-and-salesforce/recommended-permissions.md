@@ -1,15 +1,14 @@
 ---
-description: ' [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso - [!DNL Marketo Measure]'
+description: Consigliate [!DNL Salesforce] Autorizzazioni per [!DNL Marketo Measure] Linee guida utente connesso per gli utenti di Marketo Measure
 title: ' [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso'
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # Autorizzazioni [!DNL Salesforce] consigliate per [!DNL Marketo Measure] utente connesso {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
 

@@ -3,13 +3,12 @@ description: Scopri l’attribuzione basata sull’account e come Adobe Marketo 
 title: Attribuzione basata sull’account
 exl-id: 9c1a03c8-f884-4c08-97ae-b848cc200038
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
-
 
 # Attribuzione basata sull’account {#account-based-attribution}
 
@@ -21,7 +20,7 @@ Quando ci sono più opportunità in un account, le diverse opportunità condivid
 
 Ad esempio, l’account di seguito dispone di due opportunità. Per la prima opportunità, dispone di un solo punto di contatto. Tale punto di contatto comprende il punto di contatto FT, LC e il punto di contatto OC (Opportunity Creation). La seconda opportunità ha lo stesso FT &amp; LC della prima opportunità, ma il punto di contatto OC è diverso. Inoltre, la seconda opportunità dispone di punti di contatto aggiuntivi non associati alla prima opportunità, a causa dei quali si verificano dopo la data di chiusura della prima opportunità.
 
-![Account con due opportunità che condividono punti di contatto FT e LC](assets/1.jpg)
+![](assets/account-marketing-4.jpg)
 
 ## In Che Modo Questo Aiuta? {#how-does-this-help}
 

@@ -3,13 +3,12 @@ description: Configurazione approfondimenti [!DNL Marketo Measure] - [!DNL Marke
 title: Configurazione approfondimenti [!DNL Marketo Measure]
 exl-id: f6fe296b-d22a-43f2-b124-5d4b2f74d67a
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione approfondimenti [!DNL Marketo Measure] {#marketo-measure-insights-configuration}
 
@@ -21,10 +20,10 @@ L&#39;app area di lavoro Approfondimenti [!DNL Marketo Measure] deve essere aggi
 
 1. Nella sezione dei criteri [!UICONTROL OAuth], modifica l’impostazione Utenti consentiti in &quot;Gli utenti approvati dall’amministratore sono preautorizzati&quot;. Verrà visualizzato un popup, fare clic su **[!UICONTROL OK]** e quindi su **[!UICONTROL Save]**.
 
-   ![&#x200B; 1](assets/1-1.png)
+   ![](assets/marketo-app-1.png)
 
 1. Una volta salvata la pagina, è possibile fare clic sul pulsante **[!UICONTROL Manage Profiles]**.
 
-   ![&#x200B; 1](assets/2-1.png)
+   ![](assets/marketo-app-2.png)
 
 1. Selezionare tutti i profili che devono avere accesso a [!DNL Marketo Measure] Insights e fare clic su **[!UICONTROL Save]**.

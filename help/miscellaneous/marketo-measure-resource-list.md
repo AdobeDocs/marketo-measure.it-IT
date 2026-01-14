@@ -1,15 +1,14 @@
 ---
-description: Elenco risorse [!DNL Marketo Measure]
+description: Elenco risorse [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Elenco risorse [!DNL Marketo Measure]
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 1%
 
 ---
-
 
 # Elenco risorse [!DNL Marketo Measure] {#marketo-measure-resource-list}
 
@@ -19,8 +18,8 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 
 **Informazioni generali**
 
-* [Cos’è l’attribuzione marketing?](/help/marketing-attribution.md)
-* [Modelli di attribuzione [!DNL Marketo Measure]](/help/attribution-models.md)
+* [Cos’è l’attribuzione marketing?](/help/introduction/marketing-attribution.md)
+* [Modelli di attribuzione [!DNL Marketo Measure]](/help/introduction/attribution-models.md)
 
 **Configurazione**
 
@@ -38,11 +37,11 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 **Generazione rapporti**
 
 * [Creazione di tipi di report personalizzati con [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-report-types.md) (se è necessario creare report sui campi lead/contatto/opportunità personalizzati)
-* [Glossario di  [!DNL Marketo Measure]  campi](/help/glossary.md)
+* [Glossario di  [!DNL Marketo Measure]  campi](/help/introduction/glossary.md)
 
 **Risoluzione dei problemi**
 
-* [Concessione dell&#39;accesso  [!DNL Marketo Measure] al supporto tecnico a SFDC](/help/miscellaneous/granting-salesforce-access-to-marketo-measure-support.md)
+* [Concessione dell&#39;accesso  [!DNL Marketo Measure] al supporto tecnico a SFDC](/help/miscellaneous/salesforce-access.md)
 * Contatto: [[!DNL Marketo] Supporto](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}
 
 ## Video {#videos}
@@ -50,9 +49,9 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 Ecco alcuni video    ti aiuterà a imparare a usare al meglio:
 
 * [[!DNL Marketo Measure] Corso di formazione introduttivo](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) (22 minuti)
-* [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (30-45 minuti)
+* [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)
 
-**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (~30 minuti)**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (~30 minuti)**
 
 Questa serie di corsi è progettata come introduzione generale ai concetti di base che è necessario conoscere per padroneggiare [!DNL Marketo Measure]. Fornisce un&#39;introduzione al concetto di attribuzione, a ciò che [!DNL Marketo Measure] fa come strumento e al framework generale sul quale [!DNL Marketo Measure] opera.
 
@@ -64,7 +63,7 @@ Argomenti trattati:
 * Punti di contatto
 * Modelli di attribuzione
 
-**[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (30-45 minuti)**
+**[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)**
 
 Questa serie di corsi è stata progettata come introduzione ai report azionari [!DNL Marketo Measure] installati in Salesforce. Questi report fungono da base per la maggior parte dei report che esegui con i dati di [!DNL Marketo Measure].
 
@@ -77,7 +76,7 @@ Argomenti trattati:
 * Rapporto Opportunità per ID
 * Rapporto Opportunità per canale
 
-**[Gestione canali](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it)**
+**[Gestione canali](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
 
 Questo corso illustra vari modi per personalizzare [!DNL Marketo Measure] in termini di tracciamento online e offline. Questo corso è più avanzato e potrebbe non essere pertinente per tutti gli utenti.
 
@@ -89,4 +88,4 @@ Argomenti trattati:
 * Campi membro campagna e campagna
 * Gestione dei canali offline
 
-Ecco tutti i [video di E-Learning per principianti](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it).
+Ecco tutti i [video di E-Learning per principianti](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html).

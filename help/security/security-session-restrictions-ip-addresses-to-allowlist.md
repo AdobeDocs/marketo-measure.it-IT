@@ -1,15 +1,14 @@
 ---
-description: Inserire nell'elenco Consentiti Limitazioni delle sessioni di sicurezza - Indirizzi IP da
+description: Elenca gli intervalli IP di Salesforce da inserire nell'elenco Consentiti in modo che Marketo Measure possa connettersi quando vengono applicate le restrizioni di sessione
 title: Inserire nell'elenco Consentiti Limitazioni delle sessioni di sicurezza - Indirizzi IP da
 exl-id: aaf5190f-893c-4872-8d03-93f516e70a59
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
-
 
 # Inserire nell&#39;elenco Consentiti Limitazioni della sessione di sicurezza: indirizzi IP da {#security-session-restrictions-ip-addresses-to-allowlist}
 
@@ -21,4 +20,4 @@ Se sono presenti [Impostazioni di sicurezza sessione](https://help.salesforce.co
 
 Per aggiungere [!DNL Marketo Measure] IP agli intervalli IP attendibili in Salesforce, fare clic su **[!UICONTROL Setup]** > **[!UICONTROL Administration Setup]** > **[!UICONTROL Security Controls]** > **[!UICONTROL Network Access]** > **[!UICONTROL New]**.
 
-![Pagina Accesso alla rete di Salesforce per l&#39;aggiunta di intervalli IP attendibili](assets/1.png)
+![](assets/compliance-resources-1.png)

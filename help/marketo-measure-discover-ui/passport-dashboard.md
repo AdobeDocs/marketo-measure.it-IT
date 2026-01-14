@@ -1,15 +1,15 @@
 ---
-description: Dashboard Passport - [!DNL Marketo Measure] - Prodotto
+description: Descrive il dashboard Passport che tiene traccia del modo in cui i contatti e le opportunità passano attraverso le fasi nel tempo
 title: Dashboard Passport
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Dashboard Passport {#passport-dashboard}
 
@@ -31,7 +31,7 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 * Sono escluse le fasi terminali come &quot;Closed Won&quot; e &quot;Closed Lost&quot;.
 * Le date di inizio e di fine sono entrambe inclusive.
 
-![Dashboard Passport che mostra le opportunità nell&#39;area di visualizzazione in base al nome dell&#39;area di visualizzazione](assets/passport-dashboard-1.png)
+![](assets/passport-dashboard-1.png)
 
 ### Lead o contatti nell&#39;area di visualizzazione per nome area di visualizzazione {#leads-or-contacts-in-stage-by-stage-name}
 
@@ -41,7 +41,7 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 * Sono escluse le fasi terminali come &quot;Closed Won&quot; e &quot;Closed Lost&quot;.
 * Le date di inizio e di fine sono entrambe inclusive.
 
-![Dashboard Passport che mostra i lead o i contatti nella fase in base al nome della fase](assets/passport-dashboard-2.png)
+![](assets/passport-dashboard-2.png)
 
 ## Riquadro Filtro {#filter-pane}
 
@@ -53,5 +53,6 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 * Segmenti
 
 >[!MORELIKETHIS]
-> [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [Nozioni di base sulla dashboard](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [Criteri di visibilità dei dati del dashboard](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}

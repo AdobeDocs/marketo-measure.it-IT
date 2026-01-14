@@ -3,13 +3,12 @@ description: Scopri Account-Based Marketing (ABM) e come Adobe Marketo Measure a
 title: Panoramica del marketing basato sull’account
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
-
 
 # Panoramica del marketing basato sull’account {#account-based-marketing-overview}
 
@@ -27,6 +26,7 @@ Affinché il modello di marketing basato sull&#39;account possa iniziare a esser
 * L&#39;altra faccia della medaglia, il tuo CRM ha bisogno di almeno 25 Account senza Opportunità Closed Won (tutti gli opp devono essere in una categoria di fase &quot;Open&quot;, o in una categoria &quot;Closed Lost&quot;) - questo ci aiuta a misurare ciò che rende un conto di livello inferiore nella tua organizzazione.
 
 >[!NOTE]
+>
 >Gli account &quot;bad&quot; di cui sopra devono essere aperti per almeno 12 mesi senza accumulare un&#39;operazione Closed Won; questa è la linea guida di base per stabilire se un&#39;operazione è diventata obsoleta per gli scopi del modello.
 
 ## Mappatura lead-account {#lead-to-account-mapping}
@@ -45,6 +45,7 @@ La mappatura lead-account è una parte fondamentale di un approccio ABM efficace
 I lead/contatti degli account vengono convalidati dai domini e-mail/sito Web e confrontati con il dominio o sottodominio dell’e-mail/sito Web del lead. Viene utilizzato l’account con più corrispondenze.
 
 >[!NOTE]
+>
 >Ogni lead tenta di ottenere un abbinamento a un account nell’ordine preferenziale dei metodi di cui sopra. Una volta trovata una corrispondenza, l’AccountId viene immediatamente impostato sul Lead e non viene trovato utilizzando un altro metodo.
 
 ## Punteggio di coinvolgimento predittivo {#predictive-engagement-score}
@@ -64,6 +65,7 @@ Ci sono molti componenti che entrano nell’algoritmo che calcola l’PES. L’a
 * Probabilità di chiusura persa/vinta
 
 >[!NOTE]
+>
 >Potresti notare un livello di &quot;N/A&quot; o &quot;-&quot; (il simbolo del trattino) nel Punteggio di Coinvolgimento Predittivo per alcuni Account.
 
 _Un livello &quot;N/D&quot; significa semplicemente che non sono disponibili dati sufficienti in tale account per consentire al modello di generare un livello effettivo. Con più dati, alla fine verrà assegnato un livello._
@@ -76,16 +78,16 @@ Per iniziare a utilizzare PES, è necessario aggiungere il campo PES e l&#39;ele
 1. Passa a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Accounts]** > **[!UICONTROL Page Layout]**. Quindi seleziona il layout di pagina da modificare.
 1. Vai a [!UICONTROL Fields] e sposta il campo &quot;Punteggio di coinvolgimento predittivo&quot; nella sezione Informazioni account.
 
-   ![Layout della pagina dell&#39;account con il campo Punteggio di coinvolgimento predittivo](assets/1.png)
+   ![](assets/account-marketing-3.png)
 
 1. Infine, vai a [!UICONTROL Related Lists] e sposta l&#39;elenco correlato &quot;Lead&quot; nel layout della pagina.
 
-   ![Aggiunta dell&#39;elenco dei lead correlati al layout della pagina dell&#39;account](assets/2.png)
+   ![](assets/account-marketing-4.jpg)
 
 1. Passare quindi a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Leads]** > **[!UICONTROL Page Layout]** e selezionare i layout di pagina appropriati da modificare.
 1. Fai clic su **[!UICONTROL Fields]** e aggiungi il campo [!UICONTROL Account] che si adatta alla pagina.
 
-   ![Layout pagina lead con campo Account aggiunto](assets/3.png)
+   ![](assets/account-marketing-5.png)
 
 È tutto pronto!
 

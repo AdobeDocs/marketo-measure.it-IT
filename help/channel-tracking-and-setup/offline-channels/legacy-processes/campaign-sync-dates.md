@@ -1,21 +1,21 @@
 ---
-description: Date di sincronizzazione campagna - [!DNL Marketo Measure]
+description: Guida alle date di sincronizzazione di Campaign per gli utenti di Marketo Measure
 title: Date di sincronizzazione della campagna
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
-
 
 # Date di sincronizzazione della campagna {#campaign-sync-dates}
 
 Scopri le funzionalità della funzione Campaign Sync Dates e offre alcuni casi d’uso per questa funzione.
 
 >[!NOTE]
+>
 >Questo articolo riguarda un processo obsoleto. Invitiamo gli utenti a utilizzare il [nuovo processo in-app migliorato](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 Pacchetto **[!DNL Marketo Measure]richiesto: 6.9 o versione successiva**
@@ -27,7 +27,7 @@ Questa funzione è costituita da due semplici campi data sull&#39;oggetto campag
 
 Una volta abilitati i punti di contatto dell’acquirente in una determinata campagna, le date di sincronizzazione della campagna ti consentiranno di impostare i parametri della data del punto di contatto nella singola campagna. Pertanto, se aggiungi un punto di contatto con data di fine 1 marzo 2017, [!DNL Marketo Measure] creerà solo punti di contatto sui membri della campagna aggiunti alla campagna prima di tale data. [!DNL Marketo Measure] non creerà punti di contatto per i membri della campagna aggiunti dopo il 1° marzo 2017.
 
-![Campagna Salesforce con i campi Data di inizio e Data di fine del punto di contatto](assets/1.gif)
+![](assets/legacy-processes-3.gif)
 
 Analogamente, se si aggiunge una data di inizio punto di contatto in una campagna (ad esempio, 1° gennaio 2017), [!DNL Marketo Measure] non creerà punti di contatto sui membri della campagna aggiunti alla campagna prima del 1° gennaio 2017. Non è necessario aggiungere una data di inizio punto di contatto se si aggiunge una data di fine punto di contatto e viceversa.
 

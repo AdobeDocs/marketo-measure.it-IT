@@ -1,15 +1,14 @@
 ---
-description: Best practice per l'attribuzione delle attività - [!DNL Marketo Measure]
+description: Linee guida sulle best practice per l’attribuzione delle attività per gli utenti di Marketo Measure
 title: Attribuzione delle best practice per le attività
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # Attribuzione delle best practice per le attività {#best-practices-for-activities-attribution}
 
@@ -30,6 +29,7 @@ Se definisci le regole di attività per la prima volta o esamini solo le regole 
    * Come accennato, il caso d’uso principale di questa funzione consiste nel creare punti di contatto che tracciano l’efficacia del team di sviluppo delle vendite, in particolare chiamate telefoniche in uscita e e-mail in uscita.
 
 >[!NOTE]
+>
 >Si consiglia di **NON** tenere traccia delle attività di vendita che si verificano dopo la creazione dell&#39;opportunità, in quanto il monitoraggio di un processo dei responsabili vendite non offre molto insight. L’obiettivo è monitorare l’influenza delle vendite insieme all’influenza del marketing, principalmente nello sviluppo di una nuova generazione di opportunità/pipeline
 
 * Non utilizzare i campi formula per definire le regole
@@ -51,5 +51,6 @@ Altri motivi per cui potrebbe attivare una revisione delle regole di attività s
 * Modifiche o aggiornamenti agli strumenti di supporto alle vendite
 
 >[!MORELIKETHIS]
-> Attribuzione [Attività](/help/advanced-features/activities-attribution/salesforce-activities-attribution.md)
-> [Domande frequenti sull&#39;attribuzione delle attività di vendita](/help/advanced-features/activities-attribution/activities-attribution-faq.md)
+>
+>* Attribuzione [Attività](/help/advanced-features/activities-attribution/salesforce-activities-attribution.md)
+>* [Domande frequenti sull&#39;attribuzione delle attività di vendita](/help/advanced-features/activities-attribution/activities-attribution-faq.md)

@@ -1,15 +1,14 @@
 ---
-description: Best practice per la segmentazione - [!DNL Marketo Measure]
+description: Tecniche consigliate per la segmentazione - Guida per gli utenti di Marketo Measure
 title: Best practice per la segmentazione
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per la segmentazione {#best-practices-for-segmentation}
 
@@ -49,4 +48,5 @@ Altri motivi per cui potrebbe essere attivata una revisione della segmentazione 
 * Aggiunte o modifiche ai segmenti già stabilite
 
 >[!MORELIKETHIS]
+>
 >[Come impostare la segmentazione personalizzata](/help/advanced-features/segmentation/custom-segmentation.md)

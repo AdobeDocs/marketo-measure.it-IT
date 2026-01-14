@@ -10,6 +10,7 @@ ht-degree: 0%
 
 ---
 
+
 # Configurazione e reporting dei test A/B {#a-b-testing-set-up-and-reporting}
 
 L&#39;integrazione del test A/B di [!DNL Marketo Measure] consente di tenere traccia dell&#39;impatto sui ricavi degli esperimenti [in modo ottimale](https://www.optimizely.com/){target="_blank"} e del sito VWO. Questo articolo fornisce istruzioni su come aggiungere [!DNL Marketo Measure] sezioni di test A/B ai layout di pagina Lead, [!UICONTROL Contact], Case e [!UICONTROL Opportunity]. Vengono inoltre trattate le procedure di reporting generali e le raccomandazioni per l&#39;esecuzione di [!DNL Marketo Measure] tipi di report A/B.
@@ -21,15 +22,15 @@ Aggiungere le sezioni del test A/B [!DNL Marketo Measure] su lead, contatto, cas
 1. Verificare di utilizzare il pacchetto [!DNL Marketo Measure] v3.9 o versione successiva. Per eseguire questa operazione, vai a [!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages].
 1. Modificare il layout della pagina del lead e aggiungere l&#39;elenco **[!DNL Marketo Measure]test A/B** correlati alla pagina.
 
-   ![](../assets/advanced-features-2.png)
+   ![](assets/advanced-features-10.png)
 
 1. Fare clic sul pulsante [!UICONTROL Wrench]. Rimuovi il campo &quot;Id&quot; stock dall’elenco dei campi Selezionati. Aggiungere **[!UICONTROL Experiment]**, **[!UICONTROL Variation]** e **[!UICONTROL DateReported]** campi. Cambia &quot;[!UICONTROL Sort by]&quot; in **[!UICONTROL Date Reported]** e seleziona **[!UICONTROL Descending]** nel menu a discesa.
 
-   ![](../assets/advanced-features-3.png)
+   ![](assets/advanced-features-2.png)
 
 1. In [!UICONTROL Buttons], deselezionare **[!UICONTROL New]**.
 
-   ![](../assets/advanced-features-7.png)
+   ![](assets/advanced-features-3.png)
 
 1. Contatta il tuo rappresentante [!DNL Marketo Measure] o il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} per abilitare la funzione.
 
@@ -42,7 +43,7 @@ I clienti hanno accesso a due tipi di report A/B [!DNL Marketo Measure] che cons
 * [!DNL Marketo Measure] test A/BT con lead
 * [!DNL Marketo Measure] test A/BT con opportunità
 
-![](../assets/advanced-features-8.png)
+![](assets/advanced-features-7.png)
 
 I tipi di rapporto A/B vengono utilizzati per indicare su quale lead, contatto o opportunità è stato esposto a un test A/B. Questi rapporti mostrano anche l’importo dei ricavi legati a un’opportunità che è stata esposta a un test A/B.
 
@@ -61,8 +62,8 @@ Di seguito sono riportati alcuni campi consigliati da utilizzare per la generazi
 
 **[!DNL Marketo Measure]test A/B con lead**
 
-![](../assets/advanced-features-9.png)
+![](assets/advanced-features-8.png)
 
 **[!DNL Marketo Measure]test A/B con opportunità**
 
-![](../assets/advanced-features-10.png)
+![](assets/advanced-features-9.png)

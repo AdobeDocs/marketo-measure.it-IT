@@ -1,15 +1,14 @@
 ---
-description: Consolidamento pacchetto [!DNL Salesforce] - [!DNL Marketo Measure]
+description: '''[!DNL Salesforce] consolidamento pacchetto - [!DNL Marketo Measure]'''
 title: Consolidamento pacchetto [!DNL Salesforce]
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
-
 
 # Consolidamento pacchetto [!DNL Salesforce] {#salesforce-package-consolidation}
 
@@ -42,13 +41,13 @@ Il [team di supporto](https://nation.marketo.com/t5/support/ct-p/Support){target
       * Query V2_EXT:
          * bizible2_ext__Ad_Content_FT__c contiene Outreach
 
-![Esempio di filtro per report tramite il campo FT V2_EXT Ad Content](assets/package-consolidation-1.png)
+![](assets/bizible-full-1.png)
 
 * Query corrispondente nel pacchetto consolidato:
    * bizible2__Touchpoint_Position__c contiene FT AND
    * bizible2__Ad_Content__c contiene Outreach
 
-![Filtro report equivalente che utilizza campi punto di contatto consolidati](assets/salesforce-package-consolidation-2.png)
+![](assets/bizible-taxonomy-1.png)
 
 ## Domande frequenti {#faq}
 

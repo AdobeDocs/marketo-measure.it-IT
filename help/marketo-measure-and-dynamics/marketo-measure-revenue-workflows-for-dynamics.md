@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Marketo Measure] flussi di lavoro ricavi per Dynamics - [!DNL Marketo Measure]'
+description: Flussi di lavoro per allineare i ricavi di Dynamics e i campi data di chiusura per i rapporti di Marketo Measure
 title: '[!DNL Marketo Measure] flussi di lavoro ricavi per Dynamics'
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Measure] flussi di lavoro ricavi per Dynamics {#marketo-measure-revenue-workflows-for-dynamics}
 
@@ -20,11 +19,13 @@ ht-degree: 0%
 Passaggio 1: creare un campo importo opportunità personalizzato in Dynamics
 
 >[!NOTE]
+>
 >Tutti i campi Ricavo Dynamics hanno un campo base e un campo regolare. Ignorare il campo di base.
 
 Passaggio 2: creare un flusso di lavoro che aggiorni sia il campo importo opportunità personalizzato creato nel passaggio 1 che il campo importo opportunità [!DNL Marketo Measure].
 
 >[!NOTE]
+>
 >Non è possibile puntare al campo Importo opportunità [!DNL Marketo Measure] (bizible2_bizible_OPPORTUNITY_amount) in Discover con account Dynamics. I clienti Dynamics devono creare un campo quantità opportunità personalizzato per [!DNL Marketo Measure] per puntare a in Discover. Una volta completato, il cliente deve creare un flusso di lavoro che aggiorna **entrambi** l&#39;importo dell&#39;opportunità [!DNL Marketo Measure] (bizible2_bizible_OPPORTUNITY_amount) **e** il campo dell&#39;importo dell&#39;opportunità personalizzato. Il campo Importo opportunità [!DNL Marketo Measure] viene fornito con il pacchetto, ma è necessario creare un campo personalizzato.
 
 Istruzioni flusso di lavoro importo:
@@ -65,6 +66,8 @@ Per aggiornare le opportunità chiuse...
 1. Verifica la presenza di errori nel file di importazione.
 
 >[!NOTE]
+>
 >I flussi di lavoro descritti in questo documento sono solo uno dei modi per aggiornare i campi in modo che [!DNL Marketo Measure] possa mostrare i dati corretti in Discover. Se si dispone di un altro modo di eseguire la stessa attività, è possibile andare per esso. Fondamentalmente ciò di cui abbiamo bisogno da loro è un qualche tipo di flusso di lavoro che esegua le seguenti operazioni:
+>
 > * Se Opp = Apri, aggiorna il campo della data di chiusura personalizzata, il campo dell&#39;importo opp personalizzato e il campo dell&#39;importo opp [!DNL Marketo Measure] in modo che corrispondano rispettivamente alla data di chiusura stimata e alla retribuzione stimata.
 > * Se Opp = Closed Won, aggiornare il campo della data di chiusura personalizzato, il campo dell&#39;importo opp personalizzato e il campo dell&#39;importo opp [!DNL Marketo Measure] in modo che corrispondano rispettivamente alla data di chiusura effettiva e alla retribuzione effettiva.
