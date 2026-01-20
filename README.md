@@ -1,5 +1,5 @@
 ---
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 82%
@@ -8,6 +8,7 @@ ht-degree: 82%
 # Contribuire agli articoli
 
 Apprezziamo i contributi dalla community e da dipendenti Adobe esterni ai team di documentazione.
+
 
 ## Codice di condotta open source di Adobe
 
