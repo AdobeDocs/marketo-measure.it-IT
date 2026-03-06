@@ -38,7 +38,7 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
    Se si è scelto di sincronizzare gli attributi dall&#39;oggetto account CRM, si consiglia di scegliere nuovi nomi visualizzati, in quanto [!DNL Marketo Measure] popola solo i nomi a livello API per questi attributi, che in genere non sono descrittivi dei rapporti.
 
-1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [ sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
+1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [&#x200B; sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
 
 ## Descrizioni attributi {#attribute-descriptions}
 

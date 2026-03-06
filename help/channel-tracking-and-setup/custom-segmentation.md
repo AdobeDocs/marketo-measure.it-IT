@@ -50,7 +50,7 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 * Fai clic sul segno più per aggiungere un segmento
 * Immetti un nome per il segmento. Ad esempio, puoi avere un segmento per Nuova azienda, Partner, Rinnovo o Upselling
 
-![Immettere il nome di un segmento. Ad esempio, potresti avere un segmento per ](assets/custom-segmentation-2.png)
+![Immettere il nome di un segmento. Ad esempio, potresti avere un segmento per &#x200B;](assets/custom-segmentation-2.png)
 
 * Fai clic sull’icona più per visualizzare i campi di input della regola. Le opzioni nell’elenco a discesa Campo estraggono i campi direttamente dal CRM
 

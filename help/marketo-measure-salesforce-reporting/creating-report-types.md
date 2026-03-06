@@ -92,8 +92,8 @@ Scopri come creare tipi di report [!DNL Marketo Measure] [!DNL Salesforce] perso
 
 1. Una volta creati i rapporti, verrai reindirizzato a una panoramica del tipo di rapporto. Fai clic su **[!UICONTROL Edit Layout]**.
 
-   ![1. Una volta creati i report, verrai reindirizzato a un ](assets/new-types-2.png)
+   ![1. Una volta creati i report, verrai reindirizzato a un &#x200B;](assets/new-types-2.png)
 
 1. Assicurati che i campi personalizzati che desideri aggiungere al rapporto siano visualizzati nella sezione Proprietà layout campo. Se sono presenti altri campi da aggiungere, utilizzare l&#39;opzione &quot;[!UICONTROL Add fields related via lookup]&quot;.
 
-   ![1. Assicurati che i campi personalizzati che desideri aggiungere a ](assets/new-types-3.png)
+   ![1. Assicurati che i campi personalizzati che desideri aggiungere a &#x200B;](assets/new-types-3.png)

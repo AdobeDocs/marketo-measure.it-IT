@@ -66,7 +66,7 @@ Se nel modello personalizzato viene utilizzato un campo personalizzato, il tracc
 
 Una volta salvate ed elaborate le percentuali di attribuzione, i punti di contatto verranno aggiornati e riceveranno i loro nuovi stadi e posizioni. Al punto di contatto che si è verificato più di recente, prima di una transizione di fase, verrà attribuito il merito per quella fase (come mostrato di seguito). Anche la ponderazione personalizzata e le entrate vengono ridistribuite.
 
-![Una volta salvate ed elaborate le percentuali di attribuzione, i punti di contatto saranno ](assets/custom-models-3.png)
+![Una volta salvate ed elaborate le percentuali di attribuzione, i punti di contatto saranno &#x200B;](assets/custom-models-3.png)
 
 ## Differenza tra gli stadi di Funnel e gli stadi di modello personalizzati {#the-difference-between-funnel-stages-and-custom-model-stages}
 

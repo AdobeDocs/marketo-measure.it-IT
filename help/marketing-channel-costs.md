@@ -95,7 +95,7 @@ Controlla le regole logiche nel foglio. Ogni riga deve contenere un canale e uno
 
 Ad esempio, per indicare Facebook come sottocanale e Social come canale, la regola deve essere scritta come segue: &quot;Social.Facebook&quot;. Allo stesso modo, per tenere traccia di un evento offline, la sintassi del canale dovrebbe essere: &quot;Events.Big Conference&quot;. L’immagine seguente mostra alcuni esempi:
 
-![Ad esempio, per indicare Facebook come sottocanale e Social come ](assets/spend-management-2.png)
+![Ad esempio, per indicare Facebook come sottocanale e Social come &#x200B;](assets/spend-management-2.png)
 
 _Note aggiuntive_:
 

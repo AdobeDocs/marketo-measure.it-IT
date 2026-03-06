@@ -25,7 +25,7 @@ Aggiungere le sezioni del test A/B [!DNL Marketo Measure] su lead, contatto, cas
 
 1. Fare clic sul pulsante [!UICONTROL Wrench]. Rimuovi il campo &quot;Id&quot; stock dall’elenco dei campi Selezionati. Aggiungere **[!UICONTROL Experiment]**, **[!UICONTROL Variation]** e **[!UICONTROL DateReported]** campi. Cambia &quot;[!UICONTROL Sort by]&quot; in **[!UICONTROL Date Reported]** e seleziona **[!UICONTROL Descending]** nel menu a discesa.
 
-   ![1. Fare clic sul pulsante Chiave. Rimuovi il campo &quot;Id&quot; azionario da ](assets/advanced-features-3.png)
+   ![1. Fare clic sul pulsante Chiave. Rimuovi il campo &quot;Id&quot; azionario da &#x200B;](assets/advanced-features-3.png)
 
 1. In [!UICONTROL Buttons], deselezionare **[!UICONTROL New]**.
 

@@ -27,7 +27,7 @@ Questa configurazione è per i nuovi clienti [!DNL Marketo Measure] che utilizza
 
 1. Scegli il tenant di Azure AD facendo clic sul tuo account nell’angolo in alto a destra della pagina, quindi facendo clic sulla navigazione Switch Directory e selezionando il tenant appropriato. Ignora questo passaggio se disponi di un solo tenant Azure AD nel tuo account o se hai già selezionato il tenant Azure AD appropriato.
 
-   ![1. Scegli il tenant di Azure AD facendo clic sul tuo account in ](assets/bizible-taxonomy-1.png)
+   ![1. Scegli il tenant di Azure AD facendo clic sul tuo account in &#x200B;](assets/bizible-taxonomy-1.png)
 
 1. Cerca &quot;[!DNL Azure Active Directory]&quot; nella barra di ricerca e fai clic sul nome per aprire.
 
@@ -60,7 +60,7 @@ c. Specifica l&#39;URI di reindirizzamento. Per le applicazioni web, questo è l
 
 1. Passa alla scheda Autorizzazioni API e accertati che all’applicazione siano assegnate le autorizzazioni corrette.
 
-   ![1. Passa alla scheda Autorizzazioni API e assicurati che ](assets/microsoft-guide-6.png)
+   ![1. Passa alla scheda Autorizzazioni API e assicurati che &#x200B;](assets/microsoft-guide-6.png)
 
 1. Da qui immettere &quot;[!UICONTROL enterprise]&quot; nella casella di ricerca e fare clic su **[!UICONTROL Enterprise Applications]**.
 
@@ -78,7 +78,7 @@ c. Specifica l&#39;URI di reindirizzamento. Per le applicazioni web, questo è l
 
 1. Dalla scheda &quot;[!UICONTROL Users and Groups]&quot;, assicurarsi che &quot;Utenti e gruppi&quot; validi siano assegnati all&#39;applicazione.
 
-   ![1. Dalla scheda &quot;Utenti e gruppi&quot;, assicurati che ](assets/microsoft-guide-10.png)
+   ![1. Dalla scheda &quot;Utenti e gruppi&quot;, assicurati che &#x200B;](assets/microsoft-guide-10.png)
 
 ## Creazione di un utente dell&#39;applicazione {#creating-an-application-user}
 
@@ -114,7 +114,7 @@ a. L’ID client è l’ID del passaggio #7 nella sezione precedente. Se non l&#
 
 b. Segreto client è il segreto dell’applicazione creato nel portale Azure per l’applicazione in Certificati e segreti.
 
-![ b. Segreto client è il segreto dell&#39;applicazione creato nel portale Azure](assets/microsoft-guide-11.png)
+![&#x200B; b. Segreto client è il segreto dell&#39;applicazione creato nel portale Azure](assets/microsoft-guide-11.png)
 
 c. L’URI dell’ID applicazione è l’URL dell’API web di destinazione (risorsa protetta). Per trovare l&#39;URL dell&#39;ID app, nel portale Azure, fare clic su [!DNL Azure Active Directory], fare clic su Registrazioni applicazioni, aprire la pagina Impostazioni dell&#39;applicazione, quindi fare clic su Proprietà. Potrebbe anche essere una risorsa esterna come `https://graph.microsoft.com`. Questo è normalmente l’URL dell’istanza Dynamics.
 

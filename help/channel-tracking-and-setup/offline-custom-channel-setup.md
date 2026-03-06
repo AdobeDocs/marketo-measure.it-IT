@@ -67,13 +67,13 @@ In genere i team di marketing creano [!DNL Salesforce] campagne per monitorare v
 
 Un altro suggerimento per la gestione delle campagne per le attività online consiste nel mappare il tipo di campagna [!DNL Salesforce] su NULL. A questo scopo, creare innanzitutto un canale nell&#39;app [!DNL Marketo Measure] denominato NULL, come illustrato nell&#39;immagine seguente. Si trova nell&#39;app [!DNL Marketo Measure] nella sezione **Crea canali**. Questo sarà utile nel caso in cui una campagna che non deve essere sincronizzata venga sincronizzata accidentalmente. È facile trovare la campagna e correggere lo stato di sincronizzazione osservando tutti gli elementi inseriti nel bucket con NULL.
 
-![Un altro suggerimento per la gestione delle campagne per le attività online consiste nel mappare ](assets/offline-channels-14.png)
+![Un altro suggerimento per la gestione delle campagne per le attività online consiste nel mappare &#x200B;](assets/offline-channels-14.png)
 
 ## Immissione delle regole del canale offline nell’app {#entering-your-offline-channel-rules-to-the-app}
 
 Dopo aver modificato e aggiornato il foglio di calcolo con le regole personalizzate, il passaggio successivo consiste nel ricreare la mappatura dei canali nell&#39;app [!DNL Marketo Measure]. Non verrà caricato un foglio di calcolo per i canali offline. Piuttosto, immetterai le informazioni nelle caselle dell’elenco a discesa come mostrato nell’immagine seguente. Trovato facendo clic su **[!UICONTROL Offline Channels]** nella sezione **[!UICONTROL Channels]**.
 
-![Dopo aver modificato e aggiornato il foglio di calcolo con le regole personalizzate, ](assets/offline-channels-20.png)
+![Dopo aver modificato e aggiornato il foglio di calcolo con le regole personalizzate, &#x200B;](assets/offline-channels-20.png)
 
 >[!TIP]
 >

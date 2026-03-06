@@ -30,7 +30,7 @@ Devi impostare una connessione dati all’istanza Snowflake. A questo scopo, è 
 
 È inoltre necessario immettere un comando SQL iniziale. In questo modo è possibile utilizzare query personalizzate nel modello dati. Il comando da immettere è &quot;Usa schema `<your schema name>`&quot;. Puoi individuare il nome dello schema nella pagina [!UICONTROL data warehouse connections], consulta la documentazione di cui sopra.
 
-![Sarà inoltre necessario immettere un comando SQL iniziale. Questo supporta ](assets/marketo-tableau-6.png)
+![Sarà inoltre necessario immettere un comando SQL iniziale. Questo supporta &#x200B;](assets/marketo-tableau-6.png)
 
 ### Query SQL personalizzate {#custom-sql-queries}
 

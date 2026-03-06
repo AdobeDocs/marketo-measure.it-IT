@@ -20,7 +20,7 @@ Anche se questo rapporto potrebbe dipendere dalle fasi dell’opportunità, ques
 
 1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot; e selezionare il tipo di report **[!UICONTROL Bizible Attribution Touchpoint with Opportunity]**, quindi selezionare **[!UICONTROL Create]**.
 
-   ![1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot; e selezionare ](assets/bizible-guide-2.png)
+   ![1. Nel tipo di ricerca rapida in &quot;Attribuzione Bizible&quot; e selezionare &#x200B;](assets/bizible-guide-2.png)
 
 1. A partire dalla parte superiore del report, mostra &quot;[!UICONTROL All Bizible Attribution Touchpoints]&quot; e regola il campo data in base all&#39;intervallo di tempo su cui stai cercando di generare il report. Nel nostro esempio, guardiamo a All Time (Tutti i tempi). Inoltre, modifica il formato del rapporto da Tabulare a Riepilogo.
 
@@ -30,11 +30,11 @@ Anche se questo rapporto potrebbe dipendere dalle fasi dell’opportunità, ques
 
 1. Ora verranno aggiunti dei campi al rapporto. Nella ricerca rapida a sinistra, digita &quot;Canale di marketing&quot; e aggiungilo al raggruppamento di riepilogo nel rapporto.
 
-   ![1. Ora verranno aggiunti dei campi al rapporto. In ](assets/bizible-guide-4.png)
+   ![1. Ora verranno aggiunti dei campi al rapporto. In &#x200B;](assets/bizible-guide-4.png)
 
 1. Ora, aggiungeremo un filtro per guardare solo le operazioni chiuse perse. Nella ricerca rapida a sinistra, cercare il campo &quot;Stage&quot; e trascinarlo nell&#39;area del filtro.
 
-   ![1. Successivamente, verrà aggiunto un filtro per esaminare solo ](assets/marketo-reports-16.jpg)
+   ![1. Successivamente, verrà aggiunto un filtro per esaminare solo &#x200B;](assets/marketo-reports-16.jpg)
 
 1. Da qui si selezionerà la lente di ingrandimento per scegliere qualsiasi fase utilizzata per le opportunità &quot;Chiuse perse&quot;. Nel nostro caso, utilizzeremo la denominazione standard &quot;Closed Lost&quot;.
 

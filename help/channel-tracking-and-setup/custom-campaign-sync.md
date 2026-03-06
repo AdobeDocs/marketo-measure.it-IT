@@ -76,7 +76,7 @@ Puoi controllare facilmente i punti di contatto dell’acquirente e i record di 
 
 1. Dopo aver fatto clic su [!UICONTROL Test], verranno visualizzati il nome della campagna e il numero di membri della campagna idonei per i punti di contatto. Di seguito verrà visualizzata una tabella che mostra tutte le regole che corrispondono al tuo ID campagna. Verranno visualizzate solo le corrispondenze.
 
-   ![1. Dopo aver fatto clic su Prova, verrà visualizzato il nome di ](assets/offline-channels-17.png)
+   ![1. Dopo aver fatto clic su Prova, verrà visualizzato il nome di &#x200B;](assets/offline-channels-17.png)
 
 1. È inoltre possibile fare clic sul conteggio dei membri per visualizzare un elenco dei lead e dei contatti e dei relativi ID che fanno parte dell’idoneità della regola Campaign. Questo è solo un set di esempio e visualizzerà fino a 50 in modo da poter avere un’idea di quali record sono idonei.
 

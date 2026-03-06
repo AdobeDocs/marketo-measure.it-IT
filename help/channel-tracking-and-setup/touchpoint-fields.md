@@ -51,7 +51,7 @@ Obiettivo: utilizza il valore di un campo personalizzato e inseriscilo nell’og
    * **)** segna la fine dell&#39;estrazione
    * **.&#42;** ci dice che stiamo estraendo la stringa completa
 
-![.&amp;42; indica che è in corso l&#39;estrazione della stringa completa](assets/touchpoint-fields-10.png)
+![.&42; indica che è in corso l&#39;estrazione della stringa completa](assets/touchpoint-fields-10.png)
 
 **Esempio #2**
 
@@ -106,7 +106,7 @@ Man mano che le pagine di destinazione si complicano e si hanno più parametri d
    * **(** segna l&#39;inizio dell&#39;estrazione
    * **)** segna la fine dell&#39;estrazione
    * **\w** ci ha detto che stiamo estraendo una &quot;parola&quot;
-   * ****** è il numero di caratteri che si stanno estraendo
+   * **&#x200B;**&#x200B;** è il numero di caratteri che si stanno estraendo
 
 * Creare un campo calcolato e etichettarlo come &quot;ID campagna personalizzato&quot;
 * Definisci la regola iniziando con la ricerca del campo Touchpoint.Session.LandingPage
@@ -148,7 +148,7 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 
       * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi chiusa
    * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
-   * ****** è il numero di caratteri che si stanno estraendo
+   * **&#x200B;**&#x200B;** è il numero di caratteri che si stanno estraendo
 
 
 
@@ -161,12 +161,12 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 * In base alla mappatura e all’URL indicati sopra, il &quot;Region_Value&quot; di un punto di contatto con questa pagina di destinazione sarà &quot;EMEA&quot;
 * Ripeti l’estrazione e la mappatura per i rimanenti 4 set di cifre
 
-   * Per estrarre 01, è necessario definire il valore come &quot;BZ=\d **-**(\d**)**-\d**-\d**-\d**&quot;
+   * Per estrarre 01, è necessario definire il valore come &quot;BZ=\d **-**(\d&#x200B;**)**-\d&#x200B;**-\d**-\d**&quot;
    * Per estrarre il valore 09, è necessario definire il valore come &quot;BZ=\d **-\d**-**(\d**)**-\d**-\d**&quot;
-   * Per estrarre lo 03, è necessario definire il valore come &quot;BZ=\d **-\d**-\d**-**(\d**)**-\d**&quot;
-   * Per estrarre il valore 10, definire il valore come &quot;BZ=\d **-\d**-\d**-\d**-**(\d**)**&quot;
+   * Per estrarre lo 03, è necessario definire il valore come &quot;BZ=\d **-\d**-\d&#x200B;**-**(\d&#x200B;**)**-\d**&quot;
+   * Per estrarre il valore 10, definire il valore come &quot;BZ=\d **-\d**-\d&#x200B;**-\d**-**(\d**)**&quot;
 
-![Per estrarre il 10, è necessario definire il valore come &quot;BZ=\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-(\d](assets/touchpoint-fields-3.png))&quot;](assets/touchpoint-fields-3.png)
+![Per estrarre il 10, è necessario definire il valore come &quot;BZ=\d](assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-(\d&rbrack;(assets/touchpoint-fields-3.png))&quot;&rbrack;(assets/touchpoint-fields-3.png)
 
 **Concatena**
 

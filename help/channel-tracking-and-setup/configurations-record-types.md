@@ -26,10 +26,10 @@ Se l’organizzazione SFDC utilizza più tipi di record della campagna, è neces
 
 1. Qui vengono visualizzati gli elenchi di selezione disponibili per il tipo di record. Selezionare **[!UICONTROL Edit]** accanto al campo &quot;Abilita punti di contatto buyer&quot;.
 
-   ![1. Qui sei portato sullo schermo con gli elenchi a discesa disponibili per ](assets/offline-channels-18.jpg)
+   ![1. Qui sei portato sullo schermo con gli elenchi a discesa disponibili per &#x200B;](assets/offline-channels-18.jpg)
 
 1. Aggiungi tutti e tre i valori dal gruppo &quot;Valori disponibili&quot; al gruppo &quot;Valori selezionati&quot;.
 
-   ![1. Aggiungi tutti e tre i valori dal raggruppamento &quot;Valori disponibili&quot; a ](assets/offline-channels-10.jpg)
+   ![1. Aggiungi tutti e tre i valori dal raggruppamento &quot;Valori disponibili&quot; a &#x200B;](assets/offline-channels-10.jpg)
 
 1. Impostare il valore predefinito su &quot;None&quot; e fare clic su **[!UICONTROL Save]**. Ripeti l’operazione per qualsiasi tipo di record campagna aggiuntivo.

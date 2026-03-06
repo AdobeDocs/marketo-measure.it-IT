@@ -57,7 +57,7 @@ Infine, scegli uno dei campi data o data/ora da utilizzare come data Buyer Touch
 
 Non dimenticare di impostare regole diverse per Attività o Eventi. È necessario conoscere l&#39;oggetto utilizzato dal team vendite per registrare le attività.
 
-![Non dimenticare di impostare regole diverse per attività o eventi. Tu ](assets/activities-attribution-5.png)
+![Non dimenticare di impostare regole diverse per attività o eventi. Tu &#x200B;](assets/activities-attribution-5.png)
 
 Inserire questi nuovi punti di contatto nel [canale di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target="_blank"} appropriato. Per farlo, definisci il canale con la nuova mappatura Campaign appena creata.
 
@@ -80,7 +80,7 @@ Inserire questi nuovi punti di contatto nel [canale di marketing](https://experi
 | Corrisponde a qualsiasi | Più valori - Corrispondenza esatta |
 | Corrisponde a qualsiasi (contiene) | Più valori - &#42;valore&#42;, &#42;valore, &#42;valore&#42; |
 
-![| Corrisponde a qualsiasi (contiene) | Più valori - &amp;42;valore&amp;42;, &amp;42;valore, &amp;42;valore&amp;42; |](assets/activities-attribution-8.png)
+![| Corrisponde a qualsiasi (contiene) | Più valori - &42;valore&42;, &42;valore, &42;valore&42; |](assets/activities-attribution-8.png)
 
 Infine, ma non per importanza, puoi immettere i costi per i nuovi canali. Il caricamento della [spesa di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target="_blank"} ti consente di inserire la spesa a livello di canale, sottocanale o campagna. Con le nuove [!DNL Marketo Measure] campagne, puoi aggiungere questi costi correlati per mese, quindi visualizzare il ROI di ogni campagna.
 

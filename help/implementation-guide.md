@@ -46,7 +46,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/migration-from-tier-t
 
 &#42; _Uno schema include una classe e zero o più gruppi di campi schema. Ciò significa che è possibile comporre uno schema di set di dati senza utilizzare i gruppi di campi._
 
-![&amp;42; Uno schema comprende una classe e zero o più campi schema](assets/marketo-guide-1.png)
+![&42; Uno schema comprende una classe e zero o più campi schema](assets/marketo-guide-1.png)
 
 [Panoramica sui set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview#){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
@@ -56,7 +56,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/migration-from-tier-t
 
 * I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
-Per coloro che dispongono di un _**diritto CDP**_: crea gli schemi dalla pagina Origini.
+Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli schemi dalla pagina Origini.
 
 * Da un’origine, seleziona Aggiungi dati > Usa modelli
 

@@ -32,7 +32,7 @@ Dopo aver effettuato l&#39;accesso a Adobe Admin Console, vengono visualizzate l
 
 Facendo clic sulla scheda prodotto [!DNL Marketo Measure] vengono visualizzate tutte le istanze di [!DNL Marketo Measure]. Per impostazione predefinita, ogni istanza di [!DNL Marketo Measure] ha un proprio profilo con prefisso &#39;[!DNL Marketo Measure]&#39;. Tutti gli amministratori o gli utenti aggiunti a questo o a qualsiasi altro profilo all&#39;interno di questa istanza potranno accedere a [!DNL Marketo Measure].
 
-![Facendo clic sulla scheda prodotto di Marketo Measure vengono visualizzati tutti i ](assets/adobe-setup-2.png)
+![Facendo clic sulla scheda prodotto di Marketo Measure vengono visualizzati tutti i &#x200B;](assets/adobe-setup-2.png)
 
 Non è richiesta alcuna azione per creare un profilo all&#39;interno delle [!DNL Marketo Measure] istanze di prodotto.
 
