@@ -1,12 +1,12 @@
 ---
-unique-page-id: 18874594
-description: Piattaforme di annunci integrate - [!DNL Marketo Measure]
+description: Linee guida sulle piattaforme di annunci integrate per gli utenti di Marketo Measure
 title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
+hidefromtoc: true
 source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il numero massimo di connessioni ad Platform è 300.
+>Il numero massimo di connessioni ad Platform che puoi connettere è 300.
 
 Prima di entrare nelle specifiche di ciascuna piattaforma, esamineremo come collegare uno qualsiasi di questi account a [!DNL Marketo Measure]. Accedi a [!DNL Marketo Measure] e passa all&#39;opzione **[!UICONTROL Settings]** nella scheda **[!UICONTROL My Account]** in alto a sinistra dello schermo. Selezionare **[!UICONTROL Connections]** nella sezione **[!UICONTROL Integrations]** a sinistra.
 
 Come mostrato nell’immagine seguente, verrà visualizzato un pulsante per impostare nuove connessioni di annunci.
 
-![](assets/2.png)
+![Come mostrato nell&#39;immagine seguente, verrà visualizzato un pulsante per ](assets/bizible-guide-1.png)
 
 Dopo aver fatto clic sul pulsante [!UICONTROL Set up New Ads Connection], verrà visualizzata una finestra (mostrata di seguito) con quattro tipi di annunci [!UICONTROL connect] ioni. Facendo clic su Connetti verrà visualizzata un&#39;altra finestra in cui viene richiesto di immettere le credenziali. Immettere le credenziali e fare clic su [!UICONTROL authorize] per connettere l&#39;account a [!DNL Marketo Measure].
 
-![](assets/select-account-type.png)
+![Dopo aver fatto clic sul pulsante Configura connessione nuovi annunci, a](../assets/marketo-engage-activities-05.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -42,13 +42,13 @@ Il modello di tracciamento è uno strumento fornito da Google per aggiungere que
 [!DNL Marketo Measure] Cerca modelli di tracciamento nel tuo account [!DNL AdWords]:
 
 * *Opzione A*: modello di tracciamento trovato. [!DNL Marketo Measure] aggiunge i relativi parametri al modello.
-* *Opzione B*: trovato reindirizzamento di terze parti. Se nel modello di tracciamento viene trovato un reindirizzamento di terze parti, [!DNL Marketo Measure] non può eseguire alcuna azione. Sarà necessario aggiungere manualmente i tag [!DNL Marketo Measure] al sistema di terze parti. Un esempio di reindirizzamento di terze parti potrebbe essere uno strumento di gestione delle offerte come Kenshoo o Marin. Ulteriori informazioni sugli effetti degli strumenti di gestione delle offerte [su [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
+* *Opzione B*: trovato reindirizzamento di terze parti. Se nel modello di tracciamento viene trovato un reindirizzamento di terze parti, [!DNL Marketo Measure] non può eseguire alcuna azione. Sarà necessario aggiungere manualmente i tag [!DNL Marketo Measure] al sistema di terze parti. Un esempio di reindirizzamento di terze parti potrebbe essere uno strumento di gestione delle offerte come Kenshoo o Marin. Ulteriori informazioni sugli effetti degli strumenti di gestione delle offerte [su [!DNL Marketo Measure]](/help/api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 * *Opzione C*: nessun modello di tracciamento trovato. [!DNL Marketo Measure] eseguirà la scansione di tutti gli URL di destinazione annuncio per i parametri [!DNL Marketo Measure]. In base alla scansione, se:
    * Sono stati trovati dei parametri: la configurazione è stata completata.
    * Parametri non trovati: [!DNL Marketo Measure] aggiungerà i suoi parametri alla fine degli URL di destinazione dell&#39;annuncio. [!DNL Marketo Measure] aggiunge nuovi annunci entro due ore dalla loro creazione. I parametri non verranno aggiunti a un modello.
 
-Ulteriori informazioni sulla [[!DNL AdWords] funzionalità di assegnazione tag automatica](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}.
+Ulteriori informazioni sulla [[!DNL AdWords] funzionalità di assegnazione tag automatica](/help/api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}.
 
 ## Come abilitare l&#39;assegnazione tag automatici a [!DNL Marketo Measure] per Adwords {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
@@ -60,15 +60,15 @@ Dopo aver impostato un modello di tracciamento, seguire le istruzioni riportate 
 
 1. Vai a [!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections].
 
-   ![](assets/4.png)
+   ![1. Vai a Connessioni integrazioni impostazioni account utente.](assets/utilizing-connections-8.png)
 
 1. Fare clic sull&#39;icona a forma di matita accanto all&#39;account Adwords per il quale verrà attivata l&#39;assegnazione tag automatica [!DNL Marketo Measure].
 
-   ![](assets/5.png)
+   ![1. Fai clic sull&#39;icona a forma di matita accanto all&#39;account Adwords che ](assets/utilizing-connections-9.png)
 
 1. Nell&#39;angolo in alto a destra, impostare il parametro **[!UICONTROL Autotagging]** su **[!UICONTROL Yes]**. Nella parte inferiore della pagina fare clic su **[!UICONTROL Learn More]** per espandere la casella di testo e fare clic su **[!UICONTROL Save]**. Impostazione assegnazione automatica tag completata.
 
-   ![](assets/6.png)
+   ![1. Nell&#39;angolo in alto a destra, impostare il parametro di assegnazione automatica tag su ](assets/utilizing-connections-10.png)
 
 ## Impostare un modello di tracciamento in AdWords con [!DNL Marketo Measure] parametri {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
