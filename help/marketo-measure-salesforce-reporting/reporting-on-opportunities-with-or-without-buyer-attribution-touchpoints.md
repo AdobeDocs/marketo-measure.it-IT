@@ -40,4 +40,4 @@ Crea un nuovo tipo di rapporto per includere tutte le opportunità con o senza p
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Esercitazioni: Report SFDC Aggiuntivi](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] Esercitazioni: Report SFDC Aggiuntivi](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
