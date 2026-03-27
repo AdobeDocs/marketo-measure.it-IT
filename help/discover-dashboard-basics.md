@@ -38,7 +38,7 @@ Passa il puntatore del mouse sull’angolo in alto a destra di un oggetto visivo
 
 * Posizionare il puntatore del mouse su un elemento visivo per identificare se dispone di una gerarchia. La presenza di opzioni di controllo di drilling nella barra delle azioni indica che si tratta di un elemento visivo.
 
-![Passa il puntatore del mouse su un elemento visivo per verificare se ha una gerarchia; il ](assets/discover-basics-7.png)
+![Passa il puntatore del mouse su un elemento visivo per verificare se ha una gerarchia; il &#x200B;](assets/discover-basics-7.png)
 
 * Attivare il drill-down facendo clic sulla singola freccia verso il basso, evidenziata da uno sfondo grigio. Per ripristinare, utilizzare l&#39;icona di espansione.
 
