@@ -4,7 +4,7 @@ feature-set: Marketo Measure
 landing-page-name: marketo-measure
 landing-page-breadcrumb-title: Marketo Measure
 type: Documentation
-git-repo: https://github.com/AdobeDocs/marketo-measure.en
+git-repo: https://github.com/AdobeDocs/marketo-measure.it-IT
 index: true
 source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
 workflow-type: tm+mt
