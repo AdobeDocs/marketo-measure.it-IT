@@ -4,9 +4,9 @@ description: Parametro di tracciamento e-mail - [!DNL Marketo Measure]
 title: Parametro di tracciamento e-mail
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
@@ -47,15 +47,15 @@ Marketo Measure accetta i seguenti valori: Indirizzo e-mail, ID lead Salesforce 
   </tr> 
   <tr> 
    <td><p>Marketo</p></td> 
-   <td><p>{{lead.Email Address}} </p></td> 
-   <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId={{lead.EmailAddress}}</p></td> 
-   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=it</p></td> 
+   <td><p>"{{lead.Email Address}}" </p></td> 
+   <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`</p></td> 
+   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html</p></td> 
   </tr> 
   <tr> 
    <td><p>Pardot</p></td> 
    <td><p>%%email%% </p><p>oppure</p><p>%%user_crm_id%%</p></td> 
    <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%</p></td> 
-   <td><p>https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5</p></td> 
+   <td><p>https://help.salesforce.com/s/articleView?language=en_US&amp;id=pardot_variable_tags_reference.htm&amp;type=5</p></td> 
   </tr> 
   <tr> 
    <td><p>Hubspot</p></td> 

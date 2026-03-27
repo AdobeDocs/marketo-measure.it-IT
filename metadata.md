@@ -1,12 +1,14 @@
 ---
 solution: Marketo Measure
 feature-set: Marketo Measure
+landing-page-name: marketo-measure
+landing-page-breadcrumb-title: Marketo Measure
 type: Documentation
-git-repo: https://github.com/AdobeDocs/marketo-measure.it-IT
+git-repo: https://github.com/AdobeDocs/marketo-measure.en
 index: true
-source-git-commit: ce2ce5c5652d4067f50e88b062d7d951b645d93b
+source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
