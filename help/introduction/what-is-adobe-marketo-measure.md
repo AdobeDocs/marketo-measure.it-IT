@@ -3,7 +3,7 @@ description: Cos’è Adobe Marketo Measure
 title: Cos’è Adobe Marketo Measure?
 hide: true
 hidefromtoc: true
-source-git-commit: 7c3f586e308ba885d10f3f9b8925af93277ad2e0
+source-git-commit: 3f04c21a6990f61000418642713217a490d10f86
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -26,10 +26,10 @@ Parliamo di più di come funziona
 Come funziona Marketo Measure
 Marketo Measure si integra con molti strumenti del tuo stack tecnologico. Si integra anche direttamente con le piattaforme di annunci elencate di seguito.
 
-●    Google Ads
-●    Bing Ads
-●    Facebook/Meta
-●    LinkedIn
+● Google Ads
+● Bing Ads
+● Facebook/Meta
+● LinkedIn
 
 Queste integrazioni aiutano a risolvere il traffico delle campagne multimediali a pagamento per la campagna pubblicitaria esatta da queste piattaforme, quando è attivato il tag automatico.
 
@@ -46,10 +46,10 @@ Con tutti questi dati, state creando punti di contatto da una pletora di diverse
 
 Ai punti di contatto viene inoltre assegnata una posizione. Questa posizione si basa sulla posizione del punto di contatto nella procedura di acquisto e nel percorso. Sono disponibili quattro posizioni standard ed è possibile creare posizioni personalizzate. Le posizioni standard sono le seguenti:
 
-●    Primo contatto (FT): il primo punto di contatto (potrebbe essere anonimo)
-●    Creazione di lead (LC): il primo punto di contatto in cui viene acquisito un indirizzo e-mail
-●    Creazione opportunità (OC): ultimo contatto prima della creazione di un’opportunità
-●    Chiuso: ultimo contatto prima della chiusura (chiuso o chiuso perso) di un’opportunità
+● Primo contatto (FT) - Il primo punto di contatto (potrebbe essere anonimo)
+● Creazione di lead (LC): il primo punto di contatto in cui viene acquisito un indirizzo e-mail
+Creazione opportunità ●: ultimo contatto prima della creazione di un&#39;opportunità
+● chiuso - Ultimo contatto prima della chiusura (chiuso o chiuso perso) di un&#39;opportunità
 
 Le posizioni determinano quindi il peso, in base ai diversi modelli di attribuzione.
 
