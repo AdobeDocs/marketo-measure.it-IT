@@ -1,10 +1,61 @@
 ---
-source-git-commit: e9a09ff91476446f0b6d803f044575acfa5460d9
+source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
 workflow-type: tm+mt
-source-wordcount: '7'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 83%
 
 ---
-# ARCHIVIATO
+# Contribuire agli articoli
 
-Questo repository è stato migrato a <https://github.com/Adobe-Enterprise-Docs/marketo-measure.it-IT>.
+Apprezziamo i contributi dalla community e da dipendenti Adobe esterni ai team di documentazione.
+
+
+## Codice di condotta open source di Adobe
+
+Questo progetto ha adottato il [Codice di condotta open source di Adobe](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Come contribuire](contributing.md).
+
+## Informazioni sui contributi ai contenuti Adobe
+
+Consulta la [Guida collaboratore per i documenti di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+
+Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con le quali desideri contribuire:
+
+### Modifiche minori
+
+Se desideri contribuire con piccoli aggiornamenti su base volontaria, consulta l’articolo e fai clic sul collegamento **Modifica**, che rimanda all’origine GitHub dell’articolo. Quindi, utilizza l’interfaccia utente di GitHub per apportare gli aggiornamenti. Per ulteriori informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it) generale.
+
+Le correzioni o i chiarimenti minori inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
+
+### Modifiche principali o nuovi articoli dai membri della community
+
+Se fai parte della community Adobe e desideri creare un nuovo articolo o inviare modifiche importanti, utilizza la scheda Issues (Problemi) nell’archivio Git per inviare una segnalazione e avviare una conversazione con il team addetto alla documentazione. Dopo aver concordato un piano, dovrai collaborare con un dipendente per coordinare la pubblicazione dei nuovi contenuti attraverso una combinazione di interventi negli archivi pubblici e privati.
+
+<!--
+If you submit a pull request with significant changes to documentation and code examples, you will see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
+-->
+
+### Modifiche principali da dipendenti Adobe
+
+Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud e ti occupi di creare o contribuire ad articoli tecnici, dovrai utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+
+<!--Employees from other parts of the Adobe world should use the public repository for minor updates.-->
+
+## Strumenti e configurazione
+
+I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per le modifiche di base o effettuare il forking dell’archivio per apportare contributi principali.
+
+Per informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+
+## Come utilizzare Markdown per formattare l’argomento
+
+Tutti gli articoli in questo archivio utilizzano GitHub Flavored Markdown. Se non conosci Markdown, consulta:
+
+* [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Scheda di riferimento stampabile su Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Etichette
+
+Nell’archivio pubblico, le etichette automatizzate vengono assegnate alle richieste di pull per consentire di gestire il flusso di lavoro di richieste di pull e conoscere lo stato della richiesta di pull:
+
+* **Change sent to author**: l’autore ha ricevuto una notifica della richiesta di pull in sospeso.
+* **ready-to-merge**: pronta per la revisione da parte del team di revisione delle richieste di pull.
