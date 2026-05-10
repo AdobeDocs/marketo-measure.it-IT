@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: Guida [!DNL Marketo Measure]
 user-guide-description: '[!DNL Marketo Measure] offre agli esperti di marketing informazioni approfondite sulle attività di marketing più efficaci per incrementare le entrate dell’azienda.'
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+source-git-commit: 5eb42c797a34163504fe24fef19949d2c647793b
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '779'
 ht-degree: 5%
 
 ---
@@ -216,7 +216,7 @@ ht-degree: 5%
    + Risorse relative alla conformità {#compliance-related-resources}
       + [Scopri il controllo dell’accesso al download dei dati](security-and-compliance/compliance-related-resources/discover-data-download-access-control.md)
       + [Garanzia del consenso per il RGPD in [!DNL Marketo Measure] Js](security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md)
-      + [Inserire nell&#39;elenco Consentiti Limitazioni della sessione di sicurezza: indirizzi IP da](security-and-compliance/compliance-related-resources/security-session-restrictions-ip-addresses-to-allowlist.md)
+      + [Limitazioni della sessione di sicurezza: indirizzi IP da](security-and-compliance/compliance-related-resources/security-session-restrictions-ip-addresses-to-allowlist.md)
 + Ultimate [!DNL Marketo Measure] {#marketo-measure-ultimate}
    + [Panoramica di [!DNL Marketo Measure] Ultimate](marketo-measure-ultimate/marketo-measure-ultimate-overview.md)
    + [Requisiti di integrità dei dati](marketo-measure-ultimate/data-integrity-requirement.md)
@@ -233,7 +233,7 @@ ht-degree: 5%
       + [Richiesta di accesso a dati personali](miscellaneous/other-related-resources/privacy-requests.md)
       + [Rimuovi [!DNL Marketo Measure] Parametri di tracciamento dall&#39;URL della pagina di destinazione in Google Analytics](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
       + [Transizione a  [!DNL Marketo Measure]  da Cerchio completo](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
-   + [Test](miscellaneous/test.md)
+   + {hide-from-toc}[Test](miscellaneous/test.md)
 + Note sulla versione {#release-notes}
    + [Note sulla versione corrente](release-notes/current.md)
    + Versioni precedenti {#previous-releases}
