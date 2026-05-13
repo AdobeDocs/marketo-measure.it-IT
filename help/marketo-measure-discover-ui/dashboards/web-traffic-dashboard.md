@@ -3,9 +3,13 @@ description: Dashboard traffico Web - [!DNL Marketo Measure] - Prodotto
 title: Dashboard traffico web
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/-EWWl-FHRDswkwvgJqVoYVA-rvWca7h5iwfcpTvO1LA
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: 445
 ht-degree: 2%
 
 ---
@@ -41,7 +45,7 @@ Risposte alle domande poste da questa dashboard:
     <td>Numero totale di visualizzazioni tra le pagine del sito Web.</td>
   </tr>
   <tr>
-    <td>Forms</td>
+    <td>Moduli</td>
     <td>Numero totale di invii di moduli, incluso LinkedIn Lead Gen Forms.</td>
   </tr>
   <tr>

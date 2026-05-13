@@ -4,10 +4,12 @@ description: Utilizzo di un campo personalizzato per l'importo dei ricavi - [!DN
 title: Utilizzo di un campo personalizzato per l'importo dei ricavi
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/EygbB-2KJDZKMRdKS2Mx7JQwdzhmJ77swewudzsGIb0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: 602
+ht-degree: 1%
 
 ---
 
@@ -42,7 +44,7 @@ I seguenti passaggi sono per gli utenti di Salesforce Lightning. Se utilizzi anc
 
    ![](assets/using-a-custom-revenue-amount-field-3.png)
 
-1. Nella sezione Imposta condizioni di ingresso selezionare [!UICONTROL Condition Requirements] in **[!UICONTROL Custom Condition Logic Is Met]**.
+1. Nella sezione Imposta condizioni di ingresso selezionare **[!UICONTROL Custom Condition Logic Is Met]** in [!UICONTROL Condition Requirements].
    * Dal campo di ricerca, selezionare il campo Importo personalizzato.
    * Impostare l&#39;operatore come **Is Null** e il valore come **[!UICONTROL False]**.
    * Impostare i criteri di valutazione su **[!UICONTROL Every time a record is updated and meets the condition requirements]**.
@@ -67,7 +69,7 @@ I seguenti passaggi sono per gli utenti di Salesforce Lightning. Se utilizzi anc
 
    ![](assets/using-a-custom-revenue-amount-field-7.png)
 
-1. Fare clic su **[!UICONTROL Save]**. Viene visualizzata una finestra a comparsa. Digita &quot;Etichetta flusso&quot; nella finestra Salva il flusso (il Nome API del flusso verrà generato automaticamente). Fare di nuovo clic su **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**. Viene visualizzata una finestra a comparsa. Digita &quot;Etichetta flusso&quot; nella finestra Salva il flusso (il Nome API del flusso verrà generato automaticamente). Fare di nuovo clic su **[!UICONTROL Save]**.
 
    ![](assets/using-a-custom-revenue-amount-field-8.png)
 

@@ -4,10 +4,12 @@ description: Impostazione delle fasi del boomerang - [!DNL Marketo Measure]
 title: Impostazione delle fasi del boomerang
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/2H-AGYIsCbmW2sakkMBRPTcz6LWn48HJEcfCwanx8kw
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 0%
+source-wordcount: 308
+ht-degree: 5%
 
 ---
 
@@ -21,7 +23,7 @@ Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amm
 
 ## Configurazione fase boomerang {#boomerang-stage-setup}
 
-1. Vai a [!UICONTROL Stage Mapping]. Nella colonna &quot;[!UICONTROL Boomerang]&quot; selezionare le caselle accanto alle fasi che si desidera monitorare.
+1. Passa a [!UICONTROL Stage Mapping]. Nella colonna &quot;[!UICONTROL Boomerang]&quot; selezionare le caselle accanto alle fasi che si desidera monitorare.
 
    ![](assets/1-2.png)
 
@@ -37,7 +39,7 @@ Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amm
 
 ## Configurazione di Boomerang Stage con attribuzione di modello personalizzato {#boomerang-stage-setup-with-custom-model-attribution}
 
-1. Vai a [!UICONTROL Stage Mapping]. Nella colonna &quot;[!UICONTROL Boomerang]&quot; selezionare le caselle accanto alle fasi che si desidera monitorare.
+1. Passa a [!UICONTROL Stage Mapping]. Nella colonna &quot;[!UICONTROL Boomerang]&quot; selezionare le caselle accanto alle fasi che si desidera monitorare.
 
    ![](assets/3-1.png)
 

@@ -3,9 +3,13 @@ description: Integrazioni [!DNL Marketo Measure] con Adobe Analytics - [!DNL Mar
 title: Integrazioni [!DNL Marketo Measure] con [!DNL Adobe Analytics]
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/6IzJMn8-MWNL1vIX5-O1f7CgCmBtSAituyE2rfYLKPQ
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 960
 ht-degree: 0%
 
 ---
@@ -20,7 +24,7 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
 ## Configurazione dell’integrazione {#configuring-the-integration}
 
-1. Crea un nuovo Customer Attributes Data Source nella console Experience Cloud. Le istruzioni dettagliate [sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=it).
+1. Crea un nuovo Customer Attributes Data Source nella console Experience Cloud. Le istruzioni dettagliate [sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html).
 
    Prendi nota delle seguenti informazioni, necessarie nei passaggi successivi:
 
@@ -34,11 +38,11 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
    Immetti l’ID della tua organizzazione Adobe IMS. Questo ID viene visualizzato nell’angolo inferiore destro dell’Admin Console di Adobe Experience Cloud. Per maggiori informazioni su come trovare questo ID, rivolgiti al team dell’account di Adobe (il tuo Account Manager).
 
-1. Dopo aver completato la creazione della connessione nell&#39;account [!DNL Marketo Measure], devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=it). Non è necessario preoccuparsi del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato la parte. Passare alla schermata &quot;Visualizza/Modifica&quot; schema per l&#39;attributo cliente Source creato nel passaggio 1 e indicare ad Adobe i tipi di dati per ciascuno degli attributi caricati da [!DNL Marketo Measure] per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
+1. Dopo aver completato la creazione della connessione nell&#39;account [!DNL Marketo Measure], devi tornare alla console Experience Cloud per [convalidare lo schema](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). Non è necessario preoccuparsi del caricamento del file FTP, [!DNL Marketo Measure] ha automatizzato la parte. Passare alla schermata &quot;Visualizza/Modifica&quot; schema per l&#39;attributo cliente Source creato nel passaggio 1 e indicare ad Adobe i tipi di dati per ciascuno degli attributi caricati da [!DNL Marketo Measure] per tuo conto. Se necessario, puoi anche creare nuovi nomi descrittivi per gli attributi caricati.
 
    Se si è scelto di sincronizzare gli attributi dall&#39;oggetto account CRM, si consiglia di scegliere nuovi nomi visualizzati, in quanto [!DNL Marketo Measure] popola solo i nomi a livello API per questi attributi, che in genere non sono descrittivi dei rapporti.
 
-1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [&#x200B; sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html?lang=it).
+1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [ sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
 
 ## Descrizioni attributi {#attribute-descriptions}
 

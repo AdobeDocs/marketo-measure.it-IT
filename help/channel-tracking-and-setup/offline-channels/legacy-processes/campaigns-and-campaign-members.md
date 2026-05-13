@@ -4,9 +4,11 @@ description: Campagne e membri della campagna - [!DNL Marketo Measure]
 title: Campagne e membri della campagna
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/bGHbuHCn0cI99duchXSFkqieTipt7FIcsHfvqqv21OU
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: 1183
 ht-degree: 0%
 
 ---
@@ -112,7 +114,7 @@ Dopo aver impostato la data e l&#39;ora, fare clic sul pulsante **[!UICONTROL Up
 
 ## Costi della campagna {#campaign-costs}
 
-Scopri tutto sui costi delle campagne [&#x200B; in questo articolo](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}.
+Scopri tutto sui costi delle campagne [ in questo articolo](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}.
 
 ## Rimozione membro della campagna {#campaign-member-removal}
 
@@ -126,6 +128,6 @@ Per ovviare a questo problema, [!DNL Marketo Measure] ha creato un oggetto Crono
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
 >
->[[!DNL Marketo Measure] Tutorial: Mappatura Dei Canali Offline](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] Tutorial: Mappatura Dei Canali Offline](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}

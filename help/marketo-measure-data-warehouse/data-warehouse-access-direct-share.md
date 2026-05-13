@@ -3,9 +3,11 @@ description: Accesso a Data Warehouse - Condivisione diretta - Documentazione de
 title: Accesso Data Warehouse - Condivisione diretta
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/TT2LYCV4Zv1jdx-ZgzlnThNGVdUAJDwLlely6WgNfXY
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: 308
 ht-degree: 0%
 
 ---
@@ -17,12 +19,12 @@ ht-degree: 0%
 Affinché [!DNL Marketo Measure] possa impostare una condivisione diretta al data warehouse, è necessario soddisfare i seguenti requisiti.
 
 * Disponi di un’istanza Snowflake personalizzata.
-* L&#39;istanza di Snowflake si trova nell&#39;area Snowflake di Azure East US 2.
+* L’istanza di Snowflake si trova nell’area geografica Azure East US 2 Snowflake.
 * Hai fornito a [!DNL Marketo Measure] l&#39;ID del tuo account Snowflake.
 
 ## Limitazioni {#limitations}
 
-[!DNL Marketo Measure] potrà configurare solo condivisioni dirette Snowflake con account situati in Azure East US 2 (si tratta di una limitazione in Marketo Measure, non in Snowflake). Se i dati devono essere resi disponibili in altre aree geografiche di Snowflake, è consigliabile creare una copia dei dati in un account di Snowflake che si trova in Azure East US 2 e utilizzare la funzionalità [Replica database Snowflake](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} per copiare i dati nell&#39;area o nell&#39;account di Snowflake desiderato.
+[!DNL Marketo Measure] potrà impostare solo condivisioni dirette Snowflake con account situati in Azure East US 2 (questa è una limitazione in Marketo Measure, non in Snowflake). Se i dati devono essere resi disponibili in altre aree geografiche di Snowflake, è consigliabile creare una copia dei dati in un account Snowflake che si trova in Azure East US 2 e utilizzare la funzionalità [Replica database Snowflake](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} per copiare i dati nell&#39;area o nell&#39;account Snowflake desiderato.
 
 ## Immetti ID account Snowflake {#enter-snowflake-account-id}
 

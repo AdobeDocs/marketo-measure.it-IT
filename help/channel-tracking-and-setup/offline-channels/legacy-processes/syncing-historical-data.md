@@ -4,9 +4,12 @@ description: Sincronizzazione dati cronologici - [!DNL Marketo Measure]
 title: Sincronizzazione dei dati cronologici
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RODJgjoLhJW0g3ra0H-mn8bOeBicfOuVlLSvU--Gaeo
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: 1507
 ht-degree: 1%
 
 ---
@@ -25,7 +28,7 @@ ht-degree: 1%
 
 a. Per poter generare i punti di contatto, i dati devono essere organizzati in campagne da sincronizzare con [!DNL Marketo Measure]. Se al momento non è organizzato in Campagne, dovrai valutare se vale la pena dedicare tempo e risorse per segmentare i dati nelle campagne appropriate.
 
-b. La data in cui il membro è stato aggiunto alla campagna o contrassegnato come risposta verrà utilizzata per la data del punto di contatto, quindi anche questo deve essere accurato. [!DNL Marketo Measure] offre soluzioni alternative sia in SFDC che in MSD per aggiornare le date, ma potrebbe richiedere tempo a seconda del volume.
+b. La data in cui il membro è stato aggiunto alla campagna o contrassegnato come risposta verrà utilizzata per la data del punto di contatto, quindi è necessario che sia accurata. [!DNL Marketo Measure] offre soluzioni alternative sia in SFDC che in MSD per aggiornare le date, ma potrebbe richiedere tempo a seconda del volume.
 
 **La quantità di dati organizzati in campagne è abbastanza uguale per tutti i canali (ricerca a pagamento, eventi, organica, ecc.)?**
 
@@ -69,7 +72,7 @@ I dati online aggiunti in questo modo saranno intrinsecamente meno granulari dei
 
 Potrebbe non essere possibile o ragionevole disporre del numero di tipi di campagna SFDC per supportare la mappatura granulare dei canali, pertanto puoi ricorrere solo alla mappatura a livello di canale ignorando i sottocanali. Se anche il livello del canale non è noto, puoi impostare un canale proxy come &quot;Historic Digital&quot; in modo da sapere se era un contatto online.
 
-Se devi modificare in massa la data del punto di contatto che verrà inviata per queste attività online storiche, utilizza il pulsante &quot;[!DNL Marketo Measure]&quot; personalizzato [!UICONTROL Bulk Update Touchpoint Date] (disponibile come campo personalizzato nell&#39;oggetto Campaign in SFDC). Se la campagna ha un breve intervallo di tempo, forse sarebbe utile modificare in massa la data del punto di contatto in un intervallo giorno per giorno, mentre potrebbe essere utile aggiornare in massa su base settimanale se la campagna ha un intervallo di tempo più lungo. Se utilizzi la funzionalità Bulk Update Touchpoint Date (Data punto di contatto per aggiornamento in blocco), assicurati di aggiornare la regola di sincronizzazione delle campagne per utilizzare la data Buyer Touchpoint nel campo data. Tieni presente che potrebbe essere necessario diventare creativi con le regole di sincronizzazione delle campagne se questo si applica solo a una o due campagne e non a tutte.
+Se devi modificare in massa la data del punto di contatto che verrà inviata per queste attività online storiche, utilizza il pulsante &quot;[!UICONTROL Bulk Update Touchpoint Date]&quot; personalizzato [!DNL Marketo Measure] (disponibile come campo personalizzato nell&#39;oggetto Campaign in SFDC). Se la campagna ha un breve intervallo di tempo, forse sarebbe utile modificare in massa la data del punto di contatto in un intervallo giorno per giorno, mentre potrebbe essere utile aggiornare in massa su base settimanale se la campagna ha un intervallo di tempo più lungo. Se utilizzi la funzionalità Bulk Update Touchpoint Date (Data punto di contatto per aggiornamento in blocco), assicurati di aggiornare la regola di sincronizzazione delle campagne per utilizzare la data Buyer Touchpoint nel campo data. Tieni presente che potrebbe essere necessario diventare creativi con le regole di sincronizzazione delle campagne se questo si applica solo a una o due campagne e non a tutte.
 
 **Non in linea:**
 

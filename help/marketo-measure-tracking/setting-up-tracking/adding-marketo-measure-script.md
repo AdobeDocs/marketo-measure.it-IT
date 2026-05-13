@@ -4,9 +4,12 @@ description: Aggiunta di  [!DNL Marketo Measure] script - [!DNL Marketo Measure]
 title: Aggiunta dello script  [!DNL Marketo Measure]  in corso
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/N88BiNzKTpyS1gl0OyNXwnRk1QrZ1k6UykMd8VWf7dw
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -116,7 +119,7 @@ Se durante la configurazione di JavaScript viene attivato un avviso [!DNL Web Ap
 
 **Secondo dominio**
 
-* Problema: [!DNL Marketo Measure] JavaScript è specifico per il dominio, pertanto è necessario eseguire ulteriori passaggi per qualsiasi dominio separato o internazionale. [!DNL Marketo Measure] JS può gestire sottodomini sullo stesso dominio radice.
+* Problema: [!DNL Marketo Measure] JavaScript è specifico per il dominio, pertanto è necessario eseguire ulteriori passaggi per qualsiasi dominio separato o internazionale. [!DNL Marketo Measure] JS può gestire sottodomini sullo stesso dominio principale.
 * Soluzione: se possiedi più domini principali, che desideri che vengano tracciati da [!DNL Marketo Measure], assicurati di aggiungere JS ai domini E informa il tuo consulente [!DNL Marketo Measure] sui domini da associare manualmente al tuo account [!DNL Marketo Measure].
 
 ## Verifica di [!DNL Marketo Measure] JavaScript {#testing-marketo-measure-javascript}
@@ -129,12 +132,12 @@ Per verificare manualmente un modulo, eseguire la procedura seguente:
 
 1. Utilizza sempre un browser in incognito o cancella la cache tra ciascun test di invio del modulo E utilizza ogni volta un indirizzo e-mail diverso.
 
-   a. Una best practice consiste nell’utilizzare un’e-mail falsa che contiene qualcosa che indica che si tratta di un test e l’ora del giorno. Ad esempio: testing830am@test.com.
+   a. Una best practice consiste nell’utilizzare un’e-mail falsa che contiene qualcosa che indica che si tratta di un test e dell’ora del giorno. Ad esempio: testing830am@test.com.
 
 1. Registra l’URL della pagina a cui stai inviando il modulo e l’e-mail utilizzata.
 
 1. Individua il record creato nel CRM (lead o contatto) per l’invio del modulo e verifica che sia stato creato correttamente un punto di contatto.
 
-   a. È possibile utilizzare un report azionario [!DNL Marketo Measure] come Lead con punti di contatto dell&#39;acquirente oppure esaminare il layout della pagina Lead/Contatto se si è scelto di aggiornare i layout di pagina con i dettagli [!DNL Marketo Measure].
+   a. Se si sceglie di aggiornare i layout di pagina con i dettagli [!DNL Marketo Measure], è possibile utilizzare un report azionario [!DNL Marketo Measure], ad esempio Lead con punti di contatto dell&#39;acquirente, oppure esaminare il layout di pagina Lead/Contatto.
 
    b. L’elaborazione dei dati potrebbe richiedere del tempo.

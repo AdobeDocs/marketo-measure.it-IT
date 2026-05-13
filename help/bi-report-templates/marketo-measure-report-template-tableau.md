@@ -3,9 +3,12 @@ description: Modello di report [!DNL Marketo Measure] - Tableau - [!DNL Marketo 
 title: Modello report [!DNL Marketo Measure] - Tableau
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/yeKdQAe2ZyoFluQuk8CbqA-yWw3XeSdtGYvAFf2WROM
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: 2287
 ht-degree: 0%
 
 ---
@@ -34,7 +37,7 @@ Devi impostare una connessione dati all’istanza Snowflake. A questo scopo, è 
 
 ### Query SQL personalizzate {#custom-sql-queries}
 
-Poiché [!DNL Tableau] applica i filtri dell&#39;origine dati alla query complessiva e non alla singola tabella su cui è impostato il filtro, è stato scelto di utilizzare SQL personalizzato per ogni tabella del modello. Questo consente al modello di filtrare le righe eliminate e duplicate a livello di tabella. Ad esempio, se applicato come filtro dell’origine dati, sessione._deleted_date è null verrà aggiunto alla clausola where della query, generando la query seguente.
+Poiché [!DNL Tableau] applica i filtri dell&#39;origine dati alla query complessiva e non alla singola tabella su cui è impostato il filtro, è stato scelto di utilizzare SQL personalizzato per ogni tabella del modello. Questo consente al modello di filtrare le righe eliminate e duplicate a livello di tabella. Ad esempio, se applicato come filtro dell&#39;origine dati, la proprietà session._deleted_date è null verrà aggiunta alla clausola where della query, generando la query seguente.
 
 **Filtri aggiunti a Data Source**
 

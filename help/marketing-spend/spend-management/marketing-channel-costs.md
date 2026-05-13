@@ -4,9 +4,13 @@ description: Costi canale di marketing -  [!DNL Marketo Measure]
 title: Costi canale di marketing
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: 1277
 ht-degree: 0%
 
 ---
@@ -81,7 +85,7 @@ Vai al menu **[!UICONTROL My Account]**, fai clic su **[!UICONTROL Settings]**, 
 
 **Passaggio 2: scarica il CSV dei costi correnti**
 
-Passare alla destra della schermata e fare clic su **[!UICONTROL Download Current Costs].** Questa opzione consente di scaricare un foglio di calcolo in formato CSV.
+Spostarsi a destra dello schermo e fare clic su **[!UICONTROL Download Current Costs].** Questa opzione consente di scaricare un foglio di calcolo in formato CSV.
 
 ![](assets/2.png)
 
@@ -91,7 +95,7 @@ Puoi importare il file e aprirlo utilizzando i fogli di Google, i numeri di Appl
 
 Dopo aver importato il foglio, apportare le modifiche desiderate, ad esempio aggiungere costi ai canali e ai sottocanali o aggiornare le informazioni esistenti.
 
-Controlla le regole logiche nel foglio. Ogni riga deve contenere un canale e uno dei relativi sottocanali separati da un punto (.) alla fine. È importante utilizzare questo formato in modo coerente.
+Controlla le regole logiche nel foglio. Ogni riga deve contenere un canale e uno dei relativi sottocanali separati da un segno (.) punto alla fine. È importante utilizzare questo formato in modo coerente.
 
 Ad esempio, per indicare Facebook come sottocanale e Social come canale, la regola deve essere scritta come segue: &quot;Social.Facebook&quot;. Allo stesso modo, per tenere traccia di un evento offline, la sintassi del canale dovrebbe essere: &quot;Events.Big Conference&quot;. L’immagine seguente mostra alcuni esempi:
 

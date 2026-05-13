@@ -4,9 +4,12 @@ description: Glossario dei campi Marketo Measure - Marketo Measure - Documentazi
 title: Glossario dei campi Marketo Measure
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 feature: Fundamentals
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/xpadEsIBtdeUuwq8ltJh8iknt4-r3yMZf9ymu1CwXM4
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '3213'
+source-wordcount: 3228
 ht-degree: 0%
 
 ---
@@ -25,7 +28,7 @@ Per una mappa a cui si riferisce ogni campo Marketo Measure, [fai clic qui](/hel
 
 Questo campo viene compilato con il nome account associato al BAT.
 
-**ID campagna annuncio** | Trovato su Buyer Touchpoint, Buyer Attribution Touchpoint
+**ID campagna annuncio** | Su Buyer Touchpoint, Buyer Attribution Touchpoint
 
 È possibile compilare questo campo in tre modi:
 
@@ -33,7 +36,7 @@ Questo campo viene compilato con il nome account associato al BAT.
 
 `2)` Se il punto di contatto non proviene da una ricerca a pagamento, il campo verrà popolato utilizzando il valore utm_campaign dall&#39;URL della pagina di destinazione.
 
-Esempio: `http://info.marketomeasure.com/adwords-for-lead-generation?utm_source=Event&utm_medium=booth&utm_campaign=Marketo%20Virtual%20Event%20sep2014`
+e.g. `http://info.marketomeasure.com/adwords-for-lead-generation?utm_source=Event&utm_medium=booth&utm_campaign=Marketo%20Virtual%20Event%20sep2014`
 
 In questo esempio, l&#39;ID della campagna pubblicitaria verrebbe visualizzato: __GAId__ Marketing Virtual Event sept2014
 
@@ -53,11 +56,11 @@ Se nessuno dei precedenti, questo campo sarà vuoto.
 
 Se nessuno dei precedenti, questo campo sarà vuoto.
 
-**Nome campagna annuncio (FT)** | Buyer Touchpoint
+**Nome campagna annuncio (FT)** | BUYER TOUCHPOINT
 
 Questo campo viene popolato nello stesso modo del Nome della campagna pubblicitaria. Tuttavia, questo campo mostra in modo specifico il nome della campagna pubblicitaria che ha generato il punto di contatto Primo contatto.
 
-**Nome campagna annuncio (LC)** | Buyer Touchpoint
+**Nome campagna annuncio (LC)** | BUYER TOUCHPOINT
 
 Questo campo viene popolato nello stesso modo del Nome della campagna pubblicitaria. Tuttavia, questo campo mostra in modo specifico il nome della campagna pubblicitaria che ha generato il punto di contatto Creazione lead.
 
@@ -97,29 +100,29 @@ Se il punto di contatto non proviene dalla ricerca a pagamento, il campo sarà v
 
 Se il punto di contatto non proviene dalla ricerca a pagamento, il campo sarà vuoto.
 
-**Modello personalizzato % attribuzione** | Buyer Attribution Touchpoint
+**Modello personalizzato % attribuzione** | BUYER ATTRIBUTION TOUCHPOINT
 
 Se utilizzi un modello di attribuzione personalizzato, questo campo visualizza la percentuale di ricavi attribuita a un punto di contatto in base ai valori impostati nel modello personalizzato.
 
 Se non utilizzi un modello personalizzato, questo campo sarà vuoto.
 
-**Attribuzione % primo contatto** | Buyer Attribution Touchpoint
+**Attribuzione % primo contatto** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo visualizza la percentuale di ricavi attribuita a un punto di contatto in base a un modello di primo contatto.
 
-**Attribuzione % completa** | Buyer Attribution Touchpoint
+**Attribuzione % completa** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo visualizza la percentuale di ricavi attribuita a un punto di contatto in base a un modello a percorso completo.
 
-**Creazione lead % attribuzione** | Buyer Attribution Touchpoint
+**Creazione lead % attribuzione** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo visualizza la percentuale di ricavi attribuita a un punto di contatto, in base a un modello di creazione di lead.
 
-**Attribuzione a forma di U** | Buyer Attribution Touchpoint
+**Attribuzione a forma di U** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo visualizza la percentuale di ricavi attribuita a un punto di contatto in base a un modello a forma di U.
 
-**Attribuzione % a forma di W** | Buyer Attribution Touchpoint
+**Attribuzione % a forma di W** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo visualizza la percentuale di ricavi attribuita a un punto di contatto in base a un modello a forma di W.
 
@@ -143,53 +146,53 @@ Questo campo mostra il tipo di browser web utilizzato durante la sessione (Chrom
 
 Il campo mostra il Contatto a cui appartiene il punto di contatto.
 
-**Conteggio - Modello personalizzato** | Buyer Attribution Touchpoint
+**Conteggio - Modello personalizzato** | BUYER ATTRIBUTION TOUCHPOINT
 
 Se utilizzi un modello di attribuzione personalizzato, questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base ai valori impostati nel modello personalizzato.
 
 Se non utilizzi un modello personalizzato, questo campo sarà vuoto.
 
-**Conteggio - Modello personalizzato** | Buyer Touchpoint
+**Conteggio - Modello personalizzato** | BUYER TOUCHPOINT
 
 Se utilizzi un modello di attribuzione personalizzato, questo campo mostra, in formato decimale, la percentuale di credito di attribuzione data a un punto di contatto in base ai valori impostati nel modello personalizzato. Poiché questo campo si riferisce all’oggetto Buyer Touchpoint, non riflette il credito di ricavo, ma solo il credito di attribuzione.
 
 Se non utilizzi un modello personalizzato, questo campo sarà vuoto.
 
-**Conteggio - Primo contatto** | Buyer Attribution Touchpoint
+**Conteggio - Primo contatto** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base a un modello di primo contatto.
 
-**Conteggio - Primo contatto** | Buyer Touchpoint
+**Conteggio - Primo contatto** | BUYER TOUCHPOINT
 
 Questo campo mostra, in forma decimale, la percentuale di credito di attribuzione data a un punto di contatto in base a un modello di primo contatto. Se il punto di contatto è il Primo contatto, questo campo sarà sempre 1,0 (che indica un credito di attribuzione del 100%). Se il punto di contatto non è il Primo contatto, questo campo sarà sempre 0 (che indica un credito di attribuzione dello 0 %).
 
 Poiché questo campo si riferisce all’oggetto Buyer Touchpoint, non riflette il credito di ricavo, ma solo il credito di attribuzione.
 
-**Conteggio - Percorso completo** | Buyer Attribution Touchpoint
+**Conteggio - Percorso completo** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra, in formato decimale, la percentuale di ricavi assegnata a un punto di contatto in base a un modello a percorso completo.
 
-**Conteggio - Tocco creazione lead** | Buyer Attribution Touchpoint
+**Conteggio - Tocco creazione lead** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base a un modello di creazione di lead.
 
-**Conteggio - Tocco creazione lead** | Buyer Touchpoint
+**Conteggio - Tocco creazione lead** | BUYER TOUCHPOINT
 
 Questo campo mostra, in formato decimale, la percentuale di credito di attribuzione data a un punto di contatto in base a un modello di creazione di lead. Se il punto di contatto è il contatto di Creazione lead, questo campo sarà sempre 1.0 (che indica un credito di attribuzione del 100%). Se il punto di contatto non è il contatto di creazione del lead, questo campo sarà sempre 0 (che indica un credito di attribuzione dello 0%).
 
 Poiché questo campo si riferisce all’oggetto Buyer Touchpoint, non riflette il credito di ricavo, ma solo il credito di attribuzione.
 
-**Conteggio - A forma di U** | Buyer Attribution Touchpoint
+**Conteggio - A forma di U** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra, in formato decimale, la percentuale di credito ricavi assegnata a un punto di contatto in base a un modello a forma di U.
 
-**Conteggio - A forma di U** | Buyer Touchpoint
+**Conteggio - A forma di U** | BUYER TOUCHPOINT
 
 Questo campo mostra, in forma decimale, la percentuale di credito di attribuzione data a un punto di contatto in base a un modello a forma di U. Nel modello a forma di U, il credito è diviso tra il primo contatto, il contatto di creazione del lead e qualsiasi invio di moduli intermediari che si è verificato tra il primo contatto e il contatto di creazione del lead.
 
 Poiché questo campo si riferisce all’oggetto Buyer Touchpoint, non riflette il credito di ricavo, ma solo il credito di attribuzione.
 
-**Conteggio - A forma di W** | Buyer Attribution Touchpoint
+**Conteggio - A forma di W** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra, in forma decimale, la percentuale di credito assegnata a un punto di contatto in base a un modello a forma di W.
 
@@ -269,7 +272,7 @@ Se il punto di contatto proviene da una ricerca a pagamento, questo campo visual
 
 `1)` Se il punto di contatto proviene da una ricerca a pagamento, in questo campo verrà visualizzato il testo della parola chiave dalla piattaforma dell&#39;annuncio (Adwords/BingAds) OPPURE il valore del parametro _bk nell&#39;URL della pagina di destinazione.
 
-Esempio: `http://info.marketomeasure.com/intro-guide-b2b-marketing-attribution?_bt=12345678&_bk=marketing%20attribution&_bm=p&gclid=ABc123def456ghi789jkl`
+e.g. `http://info.marketomeasure.com/intro-guide-b2b-marketing-attribution?_bt=12345678&_bk=marketing%20attribution&_bm=p&gclid=ABc123def456ghi789jkl`
 
 `2)` Se il punto di contatto non proviene da una ricerca a pagamento, in questo campo verrà visualizzato il valore utm_term dall&#39;URL della pagina di destinazione.
 
@@ -289,7 +292,7 @@ Questo campo visualizza la versione ridotta dell’URL (nessun parametro UTM) de
 
 Questo campo visualizza l’intero URL (inclusi i parametri UTM) della prima pagina web visitata durante una sessione web.
 
-**Lead** | Buyer Touchpoint, Marketo Measure Person
+**Lead** | Buyer Touchpoint, persona Marketo Measure
 
 Questo campo visualizza il nome del lead a cui appartiene un punto di contatto.
 
@@ -323,7 +326,7 @@ In caso contrario, Marketo Measure imposta automaticamente un valore Medium.
 
 O
 
-**Opportunità** | Buyer Attribution Touchpoint
+**Opportunità** | BUYER ATTRIBUTION TOUCHPOINT
 
 In questo campo viene visualizzata l&#39;opportunità a cui appartiene BAT.
 
@@ -353,29 +356,29 @@ Ad esempio:
 
 Questo campo visualizza le stesse informazioni della pagina Referrer, con la differenza che questo campo visualizza l’intero URL di riferimento (inclusi i parametri UTM).
 
-**Ricavi - Modello personalizzato** | Buyer Attribution Touchpoint
+**Ricavi - Modello personalizzato** | BUYER ATTRIBUTION TOUCHPOINT
 
 Se utilizzi un modello di attribuzione personalizzato, questo campo mostra l’importo del ricavo in dollari attribuito a un punto di contatto in base alla percentuale di attribuzione impostata nel modello personalizzato.
 
 Se non utilizzi un modello personalizzato, l’importo in dollari sarà 0.
 
-**Ricavi - Primo contatto** | Buyer Attribution Touchpoint
+**Ricavi - Primo contatto** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra l’importo del ricavo in dollari attribuito a un punto di contatto in base alla percentuale di attribuzione nel modello di primo contatto.
 
-**Ricavi - Percorso completo** | Buyer Attribution Touchpoint
+**Ricavi - Percorso completo** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra l’importo delle entrate in dollari attribuito a un punto di contatto in base alla percentuale di attribuzione nel modello a percorso completo.
 
-**Ricavi - Contatto creazione lead** | Buyer Attribution Touchpoint
+**Ricavi - Contatto creazione lead** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra l’importo del ricavo in dollari attribuito a un punto di contatto in base alla percentuale di attribuzione nel modello per la creazione di lead.
 
-**Ricavi - A forma di U** | Buyer Attribution Touchpoint
+**Ricavi - A forma di U** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra l’importo delle entrate in dollari attribuito a un punto di contatto in base alla percentuale di attribuzione nel modello a forma di U.
 
-**Ricavi - A forma di W** | Buyer Attribution Touchpoint
+**Ricavi - A forma di W** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo mostra l’importo delle entrate in dollari attribuito a un punto di contatto in base alla percentuale di attribuzione nel modello a forma di W.
 
@@ -391,7 +394,7 @@ Questo campo visualizza la campagna Salesforce a cui appartiene il punto di cont
 
 Se il punto di contatto proviene da una ricerca organica o a pagamento, in questo campo verrà visualizzata la frase di ricerca digitata nel motore di ricerca. Tuttavia, per motivi di privacy, queste informazioni di solito non sono disponibili.
 
-**Segmento** | Buyer Attribution Touchpoint
+**Segmento** | BUYER ATTRIBUTION TOUCHPOINT
 
 Questo campo visualizza i segmenti a cui appartiene il punto di contatto. Questo dipenderà da come hai configurato le regole di segmentazione nell’app Marketo Measure.
 
@@ -407,11 +410,11 @@ T
 
 `3)` Se il punto di contatto proviene da un&#39;attività, in questo campo verranno visualizzate la data e l&#39;ora del campo selezionato come data del punto di contatto nelle regole dell&#39;attività.
 
-**Data punto di contatto (FT)** | Buyer Touchpoint
+**Data punto di contatto (FT)** | BUYER TOUCHPOINT
 
 Questo è lo stesso campo della Data del punto di contatto, tuttavia questo campo visualizza specificamente la data e l’ora in cui si è verificato il primo punto di contatto.
 
-**Data punto di contatto (LC)** | Buyer Touchpoint
+**Data punto di contatto (LC)** | BUYER TOUCHPOINT
 
 Questo è lo stesso campo della Data punto di contatto, tuttavia questo campo visualizza in modo specifico la data e l’ora in cui si è verificato il punto di contatto per la creazione di lead.
 
@@ -443,15 +446,15 @@ Chiuso: l’interazione di marketing più vicina a quando l’Opp viene chiusa (
 
 Se nessuno dei precedenti, questo campo verrà compilato come &#39;Web Direct&#39; o &#39;Web&#39;.
 
-**Source punto di contatto (FT)** | Buyer Touchpoint
+**Source punto di contatto (FT)** | BUYER TOUCHPOINT
 
 Questo è lo stesso campo del punto di contatto Source, tuttavia questo campo mostra in modo specifico l’origine del punto di contatto Primo contatto.
 
-**Source punto di contatto (LC)** | Buyer Touchpoint
+**Source punto di contatto (LC)** | BUYER TOUCHPOINT
 
 Questo è lo stesso campo del punto di contatto Source, tuttavia questo campo visualizza in modo specifico l’origine del punto di contatto Creazione lead.
 
-**Tipo punto di contatto** | Trovato su Buyer Touchpoint e Buyer Attribution Touchpoint.
+**Tipo punto di contatto** | Disponibile su Buyer Touchpoint e Buyer Attribution Touchpoint.
 
 Questo campo visualizza il tipo di interazione del punto di contatto. Verrà visualizzato come: Visita web, Modulo web o Chat web per punti di contatto JavaScript. Per i punti di contatto della campagna CRM, verrà visualizzato come CRM. Verrà compilata con il Tipo di attività o evento per i punti di contatto attività.
 

@@ -4,9 +4,11 @@ description: Utilizzo di Data Loader per aggiornare [!DNL Marketo Measure] Campo
 title: Utilizzo di Data Loader per aggiornare il campo personalizzato Importo di Marketo Measure
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 feature: Custom Revenue Amount
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: 191
 ht-degree: 0%
 
 ---
@@ -30,4 +32,4 @@ ht-degree: 0%
 1. Crea una visualizzazione elenco personalizzata per tutte le opportunità.
 1. L&#39;aggiunta di un filtro per il campo ricavi preferiti non è vuota _e_ il campo Importo opportunità misura [!UICONTROL Marketo] è vuoto.
 1. Fai clic su **[!UICONTROL Mass Edit]**, ma non modificare nulla.
-1. Fare clic su **[!UICONTROL Save]**. In questo modo il flusso di lavoro compilerà i campi Importo opportunità [!DNL Marketo Measure] con il campo Ricavo software.
+1. Fai clic su **[!UICONTROL Save]**. In questo modo il flusso di lavoro compilerà i campi Importo opportunità [!DNL Marketo Measure] con il campo Ricavo software.

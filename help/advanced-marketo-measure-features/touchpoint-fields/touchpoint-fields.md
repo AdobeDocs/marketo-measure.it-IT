@@ -4,9 +4,12 @@ description: Campi punto di contatto - [!DNL Marketo Measure]
 title: Campi punto di contatto
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/f45LL11QRQWjzRDTMdsiSUKbB357lPibq8nFNVt75bk
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: 1956
 ht-degree: 0%
 
 ---
@@ -50,7 +53,7 @@ Obiettivo: utilizza il valore di un campo personalizzato e inseriscilo nell’og
 
    * **(** segna l&#39;inizio dell&#39;estrazione
    * **)** segna la fine dell&#39;estrazione
-   * **.&#42;** ci ha detto che stiamo estraendo la stringa completa
+   * **.&#42;** ci dice che stiamo estraendo la stringa completa
 
 ![](assets/two.png)
 
@@ -140,7 +143,7 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 * Creare un campo calcolato e etichettarlo come &quot;Area&quot;
 * Definisci la regola iniziando con la ricerca del campo Touchpoint.Session.LandingPage
 * Utilizza l&#39;operatore &quot;[!UICONTROL extracts]&quot; perché è necessario estrarre il valore dal parametro
-* Per estrarre il valore &quot;04&quot;, definiremo il valore come &quot;BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}&quot;
+* Per estrarre il valore &quot;04&quot;, verrà definito il valore come &quot;BZ=(\d)-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}&quot;
 
    * **(** segna l&#39;inizio dell&#39;estrazione
 
@@ -153,7 +156,7 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 
 
 
-* Fare clic su [!UICONTROL Save]. È necessario salvare il nuovo campo prima che sia disponibile per l&#39;utilizzo per la regola successiva.
+* Fai clic su [!UICONTROL Save]. È necessario salvare il nuovo campo prima che sia disponibile per l&#39;utilizzo per la regola successiva.
 * Quindi, è necessario mappare tutti i valori possibili per le prime cifre ai relativi nomi descrittivi
 * Creare un campo calcolato e etichettarlo come &quot;Region_Name&quot;
 * Definisci la regola iniziando con la ricerca del campo estratto. In questo caso, [!DNL Touchpoint.Region]

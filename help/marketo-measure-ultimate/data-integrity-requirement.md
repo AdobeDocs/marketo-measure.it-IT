@@ -3,10 +3,13 @@ description: '[!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimat
 title: '[!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimate'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/bsfx5FTcHyxii6iTHPyHBemX9Wfwo9-iIvHO6uTX95E
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 16%
+source-wordcount: 1703
+ht-degree: 22%
 
 ---
 
@@ -45,7 +48,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td>ID</td>
       <td>Sì</td>
-      <td>Esempio: - 123</td>
+      <td>E.g. - 123</td>
     </tr>
     <tr>
       <td></td>
@@ -53,7 +56,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -61,7 +64,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -98,7 +101,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -106,7 +109,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td>ID</td>
       <td>Sì</td>
-      <td>Ad esempio: - 55555</td>
+      <td>E.g. - 55555</td>
     </tr>
     <tr>
       <td></td>
@@ -114,7 +117,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -122,7 +125,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -210,7 +213,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 987654321@999-abc-888.Marketo</td>
+      <td>E.g. - 987654321@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -218,7 +221,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td>ID</td>
       <td>Sì</td>
-      <td>Ad esempio: - 987654321</td>
+      <td>E.g. - 987654321</td>
     </tr>
     <tr>
       <td></td>
@@ -226,7 +229,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -234,7 +237,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -258,7 +261,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 333@999-abc-888.Marketo</td>
+      <td>E.g. - 333@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -267,7 +270,7 @@ ht-degree: 16%
       <td>ID lead o ID contatto</td>
       <td>Sì</td>
       <td>
-        <p>Ad esempio: - 333, a seconda della tabella dell’origine dati, può essere un ID lead o un ID contatto.</p>
+        <p>E.g. - 333, a seconda della tabella dell’origine dati, è l’ID lead o l’ID contatto.</p>
         <p>Chiave esterna per lead o contatto</p>
       </td>
     </tr>
@@ -277,7 +280,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -285,7 +288,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -293,7 +296,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -302,7 +305,7 @@ ht-degree: 16%
       <td>ID campagna</td>
       <td>Sì</td>
       <td>
-        <p>Ad esempio: - 55555.</p>
+        <p>E.g. - 55555.</p>
         <p>Chiave esterna di Campaign</p>
       </td>
     </tr>
@@ -312,7 +315,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -320,7 +323,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -381,7 +384,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -389,7 +392,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -458,7 +461,7 @@ ht-degree: 16%
       <td></td>
       <td>No</td>
       <td>
-        <p>Ad esempio: 123@999-abc-888.Marketo.</p>
+        <p>E.g. - 123@999-abc-888.Marketo.</p>
         <p>Il set di campi sourceAccountKey è "obbligatorio" solo per i record Contatto effettivi, definiti come record persona collegati a Account. Se manca, il set di dati non verrà rifiutato, ma i risultati dell’attribuzione saranno disattivati.</p>
         <p>personComponents è un array, ma Marketo Measure accetta solo il primo elemento personComponents[0]</p>
       </td>
@@ -470,7 +473,7 @@ ht-degree: 16%
       <td>ID account</td>
       <td>No</td>
       <td>
-        <p>Esempio: - 123.</p>
+        <p>E.g. - 123.</p>
         <p>Chiave esterna dell’account</p>
       </td>
     </tr>
@@ -488,7 +491,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>No</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td colspan="7"><strong>Opportunità</strong> (opportunità per Salesforce, opportunità per Marketo)</td>
@@ -496,7 +499,7 @@ ht-degree: 16%
     <tr>
       <td rowspan="13">Opportunità di business XDM</td>
       <td></td>
-      <td>opportunityKey.sourceKey</td>
+      <td>optionKey.sourceKey</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
@@ -504,27 +507,27 @@ ht-degree: 16%
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceID</td>
+      <td>optionKey.sourceID</td>
       <td>stringa</td>
       <td>ID</td>
       <td>Sì</td>
-      <td>Ad esempio: - 77777</td>
+      <td>E.g. - 77777</td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceInstanceID</td>
+      <td>optionKey.sourceInstanceID</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceType</td>
+      <td>optionKey.sourceType</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -557,7 +560,7 @@ ht-degree: 16%
       <td>ID account</td>
       <td>Sì</td>
       <td>
-        <p>Esempio: - 123.</p>
+        <p>E.g. - 123.</p>
         <p>Chiave esterna dell’account</p>
       </td>
     </tr>
@@ -567,7 +570,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -575,7 +578,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -628,7 +631,7 @@ ht-degree: 16%
     </tr>
     <tr>
       <td></td>
-      <td>opportunityAmount.amount</td>
+      <td>chanceAmount.amount</td>
       <td>numero</td>
       <td>Importo</td>
       <td>Sì</td>
@@ -636,7 +639,7 @@ ht-degree: 16%
     </tr>
     <tr>
       <td></td>
-      <td>opportunityAmount.currencyCode</td>
+      <td>optionAmount.currencyCode</td>
       <td>
         <p>stringa</p>
         <p>^[A-Z]{3}$</p>
@@ -664,7 +667,7 @@ ht-degree: 16%
       <td>ID contatto</td>
       <td>Sì</td>
       <td>
-        <p>Esempio: - 333.</p>
+        <p>e.g. - 333.</p>
         <p>Chiave esterna al contatto</p>
       </td>
     </tr>
@@ -674,7 +677,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -682,7 +685,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -694,7 +697,7 @@ ht-degree: 16%
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceKey</td>
+      <td>optionKey.sourceKey</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
@@ -702,34 +705,34 @@ ht-degree: 16%
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceID</td>
+      <td>optionKey.sourceID</td>
       <td>stringa</td>
       <td>ID opportunità</td>
       <td>Sì</td>
       <td>
-        <p>Esempio: - 77777.</p>
+        <p>e.g. - 77777.</p>
         <p>Chiave esterna dell’opportunità</p>
       </td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceInstanceID</td>
+      <td>optionKey.sourceInstanceID</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityKey.sourceType</td>
+      <td>optionKey.sourceType</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityPersonKey.sourceKey</td>
+      <td>optionPersonKey.sourceKey</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
@@ -737,27 +740,27 @@ ht-degree: 16%
     </tr>
     <tr>
       <td></td>
-      <td>opportunityPersonKey.sourceID</td>
+      <td>optionPersonKey.sourceID</td>
       <td>stringa</td>
       <td>ID</td>
       <td>Sì</td>
-      <td>Esempio: - 222222</td>
+      <td>e.g. - 222222</td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityPersonKey.sourceInstanceID</td>
+      <td>optionPersonKey.sourceInstanceID</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
-      <td>opportunityPersonKey.sourceType</td>
+      <td>optionPersonKey.sourceType</td>
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -801,7 +804,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td>ID</td>
       <td>Sì</td>
-      <td>Esempio: - 8888</td>
+      <td>e.g. - 8888</td>
     </tr>
     <tr>
       <td></td>
@@ -809,7 +812,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: - 0x012345</td>
+      <td>E.g. - 0x012345</td>
     </tr>
     <tr>
       <td></td>
@@ -817,7 +820,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Salesforce</td>
+      <td>E.g. - SALESFORCE</td>
     </tr>
     <tr>
       <td></td>
@@ -874,7 +877,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td>Codice ISOC</td>
       <td>Sì</td>
-      <td>Ad esempio EUR</td>
+      <td>E.g. EUR</td>
     </tr>
     <tr>
       <td></td>
@@ -947,7 +950,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 333@999-abc-888.Marketo</td>
+      <td>E.g. - 333@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -957,7 +960,7 @@ ht-degree: 16%
       <td>ID lead o ID contatto</td>
       <td>Sì</td>
       <td>
-        <p>Ad esempio: - 333, a seconda della tabella dell’origine dati, può essere un ID lead o un ID contatto.</p>
+        <p>E.g. - 333, a seconda della tabella dell’origine dati, è l’ID lead o l’ID contatto.</p>
         <p>Chiave esterna per lead o contatto</p>
       </td>
     </tr>
@@ -968,7 +971,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -977,7 +980,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -986,7 +989,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì solo per il tipo leadOperation.addToCampaign</td>
-      <td>Esempio: 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -996,7 +999,7 @@ ht-degree: 16%
       <td>ID campagna</td>
       <td>Sì solo per il tipo leadOperation.addToCampaign</td>
       <td>
-        <p>Ad esempio: - 55555.</p>
+        <p>E.g. - 55555.</p>
         <p>Chiave esterna di Campaign</p>
       </td>
     </tr>
@@ -1007,7 +1010,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì solo per il tipo leadOperation.addToCampaign</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -1016,7 +1019,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì solo per il tipo leadOperation.addToCampaign</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -1025,7 +1028,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì solo per il tipo leadOperation.campaignProgression</td>
-      <td>Esempio: 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -1035,7 +1038,7 @@ ht-degree: 16%
       <td>ID campagna</td>
       <td>Sì solo per il tipo leadOperation.campaignProgression</td>
       <td>
-        <p>Ad esempio: - 55555.</p>
+        <p>E.g. - 55555.</p>
         <p>Chiave esterna di Campaign</p>
       </td>
     </tr>
@@ -1046,7 +1049,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì solo per il tipo leadOperation.campaignProgression</td>
-      <td>Esempio: 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -1055,7 +1058,7 @@ ht-degree: 16%
       <td>stringa</td>
       <td></td>
       <td>Sì solo per il tipo leadOperation.campaignProgression</td>
-      <td>Esempio: Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
   </tbody>
 </table>
@@ -1081,7 +1084,7 @@ ht-degree: 16%
     </tr>
     <tr>
       <td>Momento interessante</td>
-      <td>leadOperation.interestingMoment</td>
+      <td>leadOperation.interessantiMoment</td>
       <td>Usa per il tracciamento delle attività di valore elevato da parte di clienti potenziali</td>
     </tr>
     <tr>
@@ -1091,7 +1094,7 @@ ht-degree: 16%
     </tr>
     <tr>
       <td>Annulla iscrizione e-mail</td>
-      <td>directMarketing.emailUnsubscribed</td>
+      <td>directMarketing.emailUnsubscscribe</td>
       <td>Utilizzare per acquisire dettagli quando una persona annulla l’iscrizione a un’e-mail</td>
     </tr>
     <tr>

@@ -3,10 +3,13 @@ description: '[!DNL Marketo Measure] Guida all''implementazione di Ultimate - [!
 title: Guida all'implementazione di Ultimate [!DNL Marketo Measure]
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Dj1Dbz4wPQt99NlAEtcn7v3AQoQPdIV5HDExXmlbcZ0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 2%
+source-wordcount: 1074
+ht-degree: 3%
 
 ---
 
@@ -37,7 +40,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 >[!NOTE]
 >
->Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
+>Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
 
 **Schema XDM = Classe + Gruppo di campi schema&#42;**
 
@@ -54,9 +57,9 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/marketo-measure-ultim
 
 È consigliabile utilizzare un’utility di generazione automatica per creare dieci schemi B2B standard.
 
-* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=it#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
+* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
-Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli schemi dalla pagina Origini.
+Per coloro che dispongono di un _**diritto CDP**_: crea gli schemi dalla pagina Origini.
 
 * Da un’origine, seleziona Aggiungi dati > Usa modelli
 
@@ -72,7 +75,7 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
 >
 >Quando aggiungi un nuovo set di dati, ti consigliamo di creare un flusso invece di utilizzarne uno esistente.
 
-[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=it){target="_blank"}
+[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **Passaggi per creare un flusso di dati:**
 
@@ -87,7 +90,7 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
    >* Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
    >* Potete anche importare la mappatura da un altro flusso nel sistema.
    >* È possibile mappare un campo Source a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
-   >* È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it){target="_blank"}).
+   >* È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
 
    >[!CAUTION]
    >
@@ -115,7 +118,7 @@ Opzione 1: per eseguire le query direttamente dall’interfaccia utente, accedi 
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=it){target="_blank"} (più veloce e affidabile).
+Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} (più veloce e affidabile).
 
 ## Attiva set di dati per Marketo Measure {#activate-dataset-for-marketo-measure}
 

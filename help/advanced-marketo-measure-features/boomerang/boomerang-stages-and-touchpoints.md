@@ -4,9 +4,11 @@ description: Fasi e punti di contatto Boomerang - [!DNL Marketo Measure]
 title: Fasi e punti di contatto del boomerang
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/mp1vsPh6lSoJuX4jvuENn7kuiYwIVCMrSw19y86u5UA
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: 722
 ht-degree: 0%
 
 ---

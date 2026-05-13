@@ -4,9 +4,12 @@ description: '[!DNL Marketo Measure] flussi di lavoro ricavi per Dynamics - [!DN
 title: '[!DNL Marketo Measure] flussi di lavoro ricavi per Dynamics'
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/JuO-Wg0yApkF8GK--qS4tHkBweWLDbkg6Bd-qNXGUDE
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: 791
 ht-degree: 0%
 
 ---
@@ -61,7 +64,7 @@ Per aggiornare le opportunità chiuse...
 1. Esporta tutti i record in Excel.
 1. Apri un file Excel e abilita il contenuto.
 1. Copia i dati della data di chiusura effettiva alla data di chiusura personalizzata [!DNL Marketo Measure].
-1. Copiare i dati dei ricavi effettivi nell&#39;importo dell&#39;opportunità personalizzato [!DNL Marketo Measure] **e** [!DNL Marketo Measure] (sono disponibili due campi).
+1. Copiare i dati dei ricavi effettivi nell&#39;importo dell&#39;opportunità personalizzato **[!DNL Marketo Measure] e** [!DNL Marketo Measure] (sono disponibili due campi).
 1. Salva file.
 1. Importa file. Dynamics lo riconoscerà come file con record esistenti da aggiornare.
 1. Verifica la presenza di errori nel file di importazione.
