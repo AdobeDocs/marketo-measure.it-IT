@@ -4,9 +4,13 @@ title: Integrazioni [!DNL Marketo Measure] con [!DNL Adobe Analytics]
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
 TQID: https://experienceleague.adobe.com/6IzJMn8-MWNL1vIX5-O1f7CgCmBtSAituyE2rfYLKPQ
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 960
@@ -42,7 +46,7 @@ L&#39;integrazione degli attributi del cliente B2B consente agli utenti reciproc
 
    Se si è scelto di sincronizzare gli attributi dall&#39;oggetto account CRM, si consiglia di scegliere nuovi nomi visualizzati, in quanto [!DNL Marketo Measure] popola solo i nomi a livello API per questi attributi, che in genere non sono descrittivi dei rapporti.
 
-1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [ sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
+1. L’ultimo passaggio consiste nel configurare le sottoscrizioni di attributi per le applicazioni Experience Cloud in cui desideri utilizzare gli attributi. È possibile configurare le sottoscrizioni per [!DNL Adobe Analytics] o [!DNL Adobe Target].  Ulteriori informazioni su come eseguire questa operazione [&#x200B; sono disponibili qui](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
 
 ## Descrizioni attributi {#attribute-descriptions}
 
