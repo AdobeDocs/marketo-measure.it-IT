@@ -4,9 +4,14 @@ description: Rapporto Lead con punti di contatto buyer - [!DNL Marketo Measure]
 title: Rapporto Lead con punti di contatto buyer
 exl-id: 0376abb0-5eed-41bb-ab4f-3c204ab437df
 feature: Touchpoints, Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/pr-ldAGFJZVvB-gv2JyCAs4DUefL7byUfffY1wiLOZs
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 188
 ht-degree: 0%
 
 ---

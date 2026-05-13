@@ -3,9 +3,14 @@ description: Panoramica di [!DNL Marketo Measure] 101 report - [!DNL Marketo Mea
 title: Panoramica di [!DNL Marketo Measure] 101 report
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/13R7Z5YTxgq5QdoT4O90MHzgva5e-cXf50V9jH75-TE
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: 930
 ht-degree: 0%
 
 ---
@@ -32,10 +37,10 @@ Questi report forniscono i campi e l&#39;infrastruttura di base necessari per qu
 
 _Se non riesci a trovare la cartella Report punti di contatto acquirenti o i sei report &quot;_[!DNL Marketo Measure] 101..._&quot; all&#39;interno di tale cartella, contatta il supporto tecnico._
 
-**Lead con punti di contatto acquirenti** | Le due varianti seguenti generano rapporti sui lead e sui relativi punti di contatto dell&#39;acquirente. Anche se utilizzano lo stesso tipo di rapporto di base, sono raggruppati per metriche diverse, ID lead e Canale di marketing, per fornire due visualizzazioni chiave dei dati. Questo tipo di rapporto è progettato per essere utilizzato al meglio per la generazione di rapporti su funnel ed è ideale quando si vuole esplorare il modo in cui i lead interagiscono con le attività di marketing. Prima di qualsiasi personalizzazione, i due rapporti seguenti mostrano quanto segue:
+**Lead con punti di contatto acquirenti** | Le due varianti seguenti forniscono un rapporto sui lead e sui relativi punti di contatto dell’acquirente. Anche se utilizzano lo stesso tipo di rapporto di base, sono raggruppati per metriche diverse, ID lead e Canale di marketing, per fornire due visualizzazioni chiave dei dati. Questo tipo di rapporto è progettato per essere utilizzato al meglio per la generazione di rapporti su funnel ed è ideale quando si vuole esplorare il modo in cui i lead interagiscono con le attività di marketing. Prima di qualsiasi personalizzazione, i due rapporti seguenti mostrano quanto segue:
 
-**[!DNL Marketo Measure]101: lead per canale** | Una panoramica generale del modo in cui i canali di marketing influenzano la creazione di lead e i relativi impegni aggiuntivi.
-**[!DNL Marketo Measure]101: lead per ID** | Questo mostra la storia Lead ed è un rapporto molto più granulare, che mostra ogni singolo Lead e i relativi punti di contatto dell&#39;acquirente.
+**[!DNL Marketo Measure]101: lead per canale** | Una panoramica generale del modo in cui i canali di marketing influenzano la creazione di lead e i loro impegni aggiuntivi.
+**[!DNL Marketo Measure]101: lead per ID** | Questa mostra la storia Lead ed è un rapporto molto più granulare, che mostra ogni singolo Lead e i relativi punti di contatto dell&#39;acquirente.
 
 **Lead/Contatti con i punti di contatto dell&#39;acquirente** | Questi rapporti sono comunemente denominati rapporti di [!DNL Marketo Measure] persone. Nei report sopra indicati viene utilizzato l&#39;oggetto personalizzato [!DNL Marketo Measure] _[!DNL Marketo Measure]Persona_ anziché l&#39;oggetto Lead.
 
@@ -43,12 +48,12 @@ L&#39;oggetto persona [!DNL Marketo Measure] mette in relazione gli oggetti Lead
 
 Le due varianti di rapporto seguenti utilizzano lo stesso tipo di rapporto, ma sono raggruppate per metriche diverse: ID persona (e-mail) rispetto al canale di marketing. Questi sono i report principali o intermedi di funnel e funnel che sono ottimi quando si vuole esplorare il modo in cui i lead e i contatti interagiscono con le attività di marketing. Prima di qualsiasi personalizzazione, i due rapporti seguenti mostrano quanto segue:
 
-**[!DNL Marketo Measure]101: lead/contatti per canale** | Una panoramica generale del modo in cui i canali di marketing influenzano la creazione di lead o contatti e i relativi impegni aggiuntivi. Questo rapporto è ideale quando si cerca di comprendere il coinvolgimento totale nei diversi canali di marketing e quali canali di marketing stanno guidando l’emergere di nuovi nomi all’interno della tua istanza Salesforce.
-**[!DNL Marketo Measure]101: lead/contatti per ID** | Questo mostra la storia di ogni persona [!DNL Marketo Measure] ed è un report molto più granulare, che mostra ogni persona e i suoi punti di contatto dell&#39;acquirente, indipendentemente dal fatto che il punto di contatto si sia verificato quando era un lead o come un contatto.
+**[!DNL Marketo Measure]101: lead/contatti per canale** | Una panoramica generale del modo in cui i canali di marketing influiscono sulla creazione di lead o contatti e sui loro impegni aggiuntivi. Questo rapporto è ideale quando si cerca di comprendere il coinvolgimento totale nei diversi canali di marketing e quali canali di marketing stanno guidando l’emergere di nuovi nomi all’interno della tua istanza Salesforce.
+**[!DNL Marketo Measure]101: lead/contatti per ID** | Questo mostra la storia di ogni persona [!DNL Marketo Measure] ed è un report molto più granulare, che mostra ogni persona e i suoi punti di contatto dell&#39;acquirente, indipendentemente dal fatto che il punto di contatto si sia verificato quando era un lead o un contatto.
 
 **Opportunità con punti di contatto di attribuzione buyer** | Gli ultimi due report &quot;_[!DNL Marketo Measure]101..._&quot; sono alla fine dei report di funnel che visualizzano i dati di Buyer Attribution Touchpoint relativi alle opportunità. Il fattore chiave per questi rapporti è che sono generati da _Punti di contatto di attribuzione buyer_ che si riferiscono ai dati a livello di opportunità e opportunità, ad esempio i ricavi. Ogni volta che desideri generare rapporti sulle opportunità o sui ricavi attribuiti, devi utilizzare questo tipo di rapporto. I due rapporti seguenti utilizzano lo stesso tipo di rapporto, ma sono raggruppati per metriche diverse, ID opportunità e Canale di marketing. Prima di qualsiasi personalizzazione, i due rapporti seguenti mostrano quanto segue:
 
-**[!DNL Marketo Measure]101: opportunità per canale** | Una visione di alto livello di come i canali di marketing influenzano e generano ricavi attribuiti nelle opportunità.
+**[!DNL Marketo Measure]101: opportunità per canale** | Una visione ad alto livello di come i canali di marketing influenzano e generano ricavi attribuiti nelle opportunità.
 **[!DNL Marketo Measure]101: opportunità per ID** | Questa versione di report granulare mostra il percorso completo delle opportunità. In questo rapporto puoi vedere ogni Buyer Attribution Touchpoint associato a un’opportunità e i relativi ricavi attribuiti tramite i vari modelli di attribuzione.
 
 È consigliabile considerare i report &quot;_[!DNL Marketo Measure]101..._&quot; come modelli per le proprie esigenze di reporting. Iniziare da uno dei rapporti di cui sopra ti farà risparmiare tempo e assicurarti di utilizzare i campi corretti relativi ai dati [!DNL Marketo Measure]. Assicurati sempre di salvare con nome ogni volta che apporti personalizzazioni ai modelli &quot;_[!DNL Marketo Measure]101..._&quot; per mantenere la variante originale del rapporto.

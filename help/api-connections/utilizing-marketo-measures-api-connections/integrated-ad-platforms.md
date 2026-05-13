@@ -4,9 +4,17 @@ description: Piattaforme di annunci integrate - [!DNL Marketo Measure]
 title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+TQID: https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: 1763
 ht-degree: 0%
 
 ---
@@ -44,7 +52,7 @@ Il modello di tracciamento è uno strumento fornito da Google per aggiungere que
 * *Opzione A*: modello di tracciamento trovato. [!DNL Marketo Measure] aggiunge i relativi parametri al modello.
 * *Opzione B*: trovato reindirizzamento di terze parti. Se nel modello di tracciamento viene trovato un reindirizzamento di terze parti, [!DNL Marketo Measure] non può eseguire alcuna azione. Sarà necessario aggiungere manualmente i tag [!DNL Marketo Measure] al sistema di terze parti. Un esempio di reindirizzamento di terze parti potrebbe essere uno strumento di gestione delle offerte come Kenshoo o Marin. Ulteriori informazioni sugli effetti degli strumenti di gestione delle offerte [su [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
-* *Opzione C*: nessun modello di tracciamento trovato. [!DNL Marketo Measure] eseguirà la scansione di tutti gli URL di destinazione annuncio per i parametri [!DNL Marketo Measure]. In base alla scansione, se:
+* *Opzione C*: nessun modello di tracciamento trovato. [!DNL Marketo Measure] eseguirà la scansione di tutti gli URL di destinazione dell&#39;annuncio per i parametri [!DNL Marketo Measure]. In base alla scansione, se:
    * Sono stati trovati dei parametri: la configurazione è stata completata.
    * Parametri non trovati: [!DNL Marketo Measure] aggiungerà i suoi parametri alla fine degli URL di destinazione dell&#39;annuncio. [!DNL Marketo Measure] aggiunge nuovi annunci entro due ore dalla loro creazione. I parametri non verranno aggiunti a un modello.
 
@@ -152,7 +160,7 @@ Visitare il sito Web [[!DNL Bing Ads]](https://advertise.bingads.microsoft.com/e
 
 ## Facebook Ads {#facebook-ads}
 
-L&#39;integrazione di [!DNL Marketo Measure] con [!DNL Facebook] consente di scaricare automaticamente le informazioni sull&#39;annuncio e di assegnare tag all&#39;URL con i relativi parametri. [!DNL Marketo Measure] richiamerà le informazioni sulla campagna e sul set di annunci tramite l’assegnazione automatica di tag. Il set di annunci compilerà il campo Nome gruppo di annunci. Per ulteriori informazioni sulla configurazione dei tag URL sulla piattaforma [!DNL Facebook], visitare la pagina [!DNL Facebook] [business](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"}.
+L&#39;integrazione di [!DNL Marketo Measure] con [!DNL Facebook] consente di scaricare automaticamente le informazioni sull&#39;annuncio e di assegnare tag all&#39;URL con i relativi parametri. [!DNL Marketo Measure] richiamerà le informazioni sulla campagna e sul set di annunci tramite l&#39;assegnazione tag automatica. Il set di annunci compilerà il campo Nome gruppo di annunci. Per ulteriori informazioni sulla configurazione dei tag URL sulla piattaforma [!DNL Facebook], visitare la pagina [!DNL Facebook] [business](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"}.
 
 Prima di abilitare l&#39;assegnazione tag automatici con [!DNL Facebook Ads], è importante esportare la cronologia delle prestazioni precedente come file CSV. A questo punto, quando [!DNL Marketo Measure] assegna a [!DNL Facebook Ads] i tag con il relativo parametro _bf, [!DNL Facebook] legge gli annunci come nuovi e cancella la cronologia delle prestazioni. Pertanto, è importante esportare un record delle prestazioni precedenti se questo è qualcosa di valore per te e la tua organizzazione.
 
@@ -166,7 +174,7 @@ L&#39;integrazione LinkedIn consente a [!DNL Marketo Measure] di assegnare tag a
 
 Poiché le condivisioni [!DNL LinkedIn] possono essere utilizzate in più campagne e creatività, chiediamo ai clienti di non copiare/clonare/duplicare i contenuti creativi esistenti in modo che possano mantenerne l&#39;univocità. Se vengono trovate condivisioni che vengono rilevate per essere utilizzate solo su un Creative, [!DNL Marketo Measure] può assegnare i tag di condivisione senza dover ricreare alcuna creativa o condivisione e la cronologia di tutti gli annunci (impression, clic, condivisioni) rimarrà.
 
-Non appena una condivisione verrà trovata condivisa tra più creativi, [!DNL Marketo Measure] dovrà eseguire un processo di pausa, copia e riassegnazione tag per creare un set univoco. [!DNL Marketo Measure] mette in pausa e archivia i contenuti creativi in tempo reale, il che significa che vengono archiviati anche i contenuti creativi contenenti impression, clic e condivisioni social.
+Non appena una condivisione verrà trovata condivisa tra più creativi, [!DNL Marketo Measure] dovrà eseguire un processo di pausa, copia e riassegnazione tag per creare un set univoco. [!DNL Marketo Measure] metterà in pausa e archivierà i contenuti creativi in tempo reale, il che significa che verranno archiviati anche i contenuti creativi contenenti le impression, i clic e le condivisioni social.
 
 ## Piattaforme non integrate {#non-integrated-platforms}
 

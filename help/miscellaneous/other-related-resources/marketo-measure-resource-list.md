@@ -4,10 +4,16 @@ description: Elenco risorse [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Elenco risorse [!DNL Marketo Measure]
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/oY2h-o6vE-X-TcsklCmmKitANBYszLt7SSBWbAmy1lU
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 1%
+source-wordcount: 341
+ht-degree: 3%
 
 ---
 
@@ -47,7 +53,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 
 ## Video {#videos}
 
-Ecco alcuni video    ti aiuterà a imparare a usare al meglio:
+Ecco un paio di video che ti aiutano a imparare a usare la velocità:
 
 * [[!DNL Marketo Measure] Corso di formazione introduttivo](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) (22 minuti)
 * [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (30-45 minuti)

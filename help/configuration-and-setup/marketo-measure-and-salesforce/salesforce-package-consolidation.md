@@ -3,10 +3,17 @@ description: Consolidamento pacchetto [!DNL Salesforce] - [!DNL Marketo Measure]
 title: Consolidamento pacchetto [!DNL Salesforce]
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/tnukDAuF9C1oI2Req6SWqg3C9gLFJASkIWDDt-0HUm0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 1%
+source-wordcount: 446
+ht-degree: 4%
 
 ---
 
@@ -61,8 +68,8 @@ Non è necessario disinstallare il pacchetto prima di installarlo. Non ci sarann
 
 **I campi nei pacchetti V1 e V2_EXT saranno disponibili nel pacchetto consolidato?**
 
-Sì.  Il pacchetto consolidato contiene gli stessi campi nella versione 1, con ulteriori raggruppamenti per oggetti e campi V2_EXT attraverso i campi dei punti di contatto.
+Sì. Il pacchetto consolidato contiene gli stessi campi nella versione 1, con ulteriori raggruppamenti per oggetti e campi V2_EXT attraverso i campi dei punti di contatto.
 
 **È possibile ricreare i report che utilizzano i campi V2_EXT nel pacchetto consolidato?**
 
-Sì.  Segui i passaggi descritti nella sezione [Azioni richieste](#retired-actions).
+Sì. Segui i passaggi descritti nella sezione [Azioni richieste](#retired-actions).

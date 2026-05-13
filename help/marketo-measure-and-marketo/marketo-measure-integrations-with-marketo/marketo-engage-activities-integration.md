@@ -4,9 +4,16 @@ description: Integrazione attività [!DNL Marketo Engage] - [!DNL Marketo Measur
 title: Integrazione di [!DNL Marketo Engage] attività
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/X0GAwexe-IPzGn-ITUglGHhbiwVWtTy1uHEnfDNpQCI
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: 1642
 ht-degree: 0%
 
 ---
@@ -44,7 +51,7 @@ Come parte dell&#39;integrazione complessiva di [!DNL Marketo Measure] e [!DNL M
 
 1. Per ogni tipo di attività, devi definire una o più regole che determinino quali record sono idonei per i punti di contatto. In questo esempio, aggiungiamo una regola per il tipo di attività &quot;Punteggio di modifica&quot; in modo che il sistema crei un punto di contatto quando una persona Marketo raggiunge un punteggio di 90 o superiore.
 
-1. In primo luogo, a seconda del tipo di attività, potrebbe essere necessario impostare un nome della campagna [!DNL Marketo Measure] che può essere utilizzato successivamente per la mappatura del canale. I nomi delle campagne [!DNL Marketo Measure] possono essere riutilizzati in più regole. Questo consente di avere nomi più ampi che possono essere utilizzati in una regola a canale singolo. Non tutti i tipi di attività contengono un programma Marketo, pertanto è necessario specificare un nome come primo passaggio.
+1. In primo luogo, a seconda del tipo di attività, potrebbe essere necessario impostare un nome della campagna [!DNL Marketo Measure] che può essere utilizzato successivamente per la mappatura del canale. [!DNL Marketo Measure] I nomi delle campagne possono essere riutilizzati in più regole. Questo consente di avere nomi più ampi che possono essere utilizzati in una regola a canale singolo. Non tutti i tipi di attività contengono un programma Marketo, pertanto è necessario specificare un nome come primo passaggio.
 
    Ecco un esempio di come apparirebbe quel passaggio aggiuntivo:
 

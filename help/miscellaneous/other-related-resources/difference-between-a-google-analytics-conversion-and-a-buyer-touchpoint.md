@@ -4,9 +4,12 @@ description: Differenza tra una conversione Google Analytics e un Buyer Touchpoi
 title: Differenza tra una conversione Google Analytics e un Buyer Touchpoint
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/lgrksIiybtRf6YujoQci-RffEe5-wiEdX2BI71RaBYg
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: 494
 ht-degree: 1%
 
 ---
@@ -36,7 +39,7 @@ Tuttavia, gli obiettivi non possono essere codificati per gestire un comportamen
   <tr> 
    <td><p>Destinazione</p></td> 
    <td>Caricamenti di una posizione specifica</td> 
-   <td><em>Grazie per la registrazione.</em> pagina Web o schermata dell'app</td> 
+   <td><em>Grazie per la registrazione!</em> pagina web o schermata dell’app</td> 
   </tr> 
   <tr> 
    <td>Durata</td> 

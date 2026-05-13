@@ -4,10 +4,13 @@ description: Best practice per il test - [!DNL Marketo Measure]
 title: Best practice per i test
 exl-id: ff95a1a9-d324-47f5-b47d-39014dff77e4
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RH2rV7k3KuYd1I8s5e96wCWJ1z7Q8CYVoxu7YWV7Kq8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 1%
+source-wordcount: 182
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   >Una best practice consiste nell’utilizzare un’e-mail falsa che contiene qualcosa che indica che si tratta di un test, nonché l’ora del giorno. Esempio: `testing830am@test.com`.
+   >Una best practice consiste nell’utilizzare un’e-mail falsa che contiene qualcosa che indica che si tratta di un test, nonché l’ora del giorno. Ad esempio: `testing830am@test.com`.
 
 1. Avviare la ricerca da un motore di ricerca (ad esempio, `google.com`) o passare direttamente a un modulo.
 

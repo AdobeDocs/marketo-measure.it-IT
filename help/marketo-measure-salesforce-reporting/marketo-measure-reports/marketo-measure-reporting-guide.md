@@ -3,10 +3,17 @@ description: Guida ai report di [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Guida ai report di [!DNL Marketo Measure]
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/qdhOT569T3OyHBOuwBGbxAV-kYaCJnfP6qJ8Mb-A4Wk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '5602'
-ht-degree: 0%
+source-wordcount: 5685
+ht-degree: 1%
 
 ---
 
@@ -101,8 +108,8 @@ Riepilogare i dati Buyer Touchpoint del lead per il campo &quot;Canale di market
    <td>Quali canali di marketing stanno influenzando i lead nella creazione?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
-   <td>Punti di contatto lead e buyer (CRM)<br>
+   <td>Tipo di report</td> 
+   <td>Punti di contatto lead e acquirenti (CRM)<br>
    Metrica: lead ([!DNL Marketo Measure] individuazione)</td> 
   </tr>
   <tr>
@@ -127,7 +134,7 @@ Riepilogare i dati Buyer Touchpoint del lead per il campo &quot;Canale di market
 
 >[!TIP]
 >
->Per qualsiasi tipo di report &quot;Lead con punti di contatto buyer&quot;, iniziare personalizzando il report predefinito denominato &#39;[!DNL Marketo Measure] 101 | Lead per canale. Questo rapporto è disponibile come standard ed è un ottimo ambiente sandbox predefinito, come descritto nella tabella precedente, e può essere rapidamente personalizzato per esigenze di reporting più specifiche.
+>Per qualsiasi tipo di report &quot;Lead con punti di contatto buyer&quot;, iniziare personalizzando il report predefinito denominato &#39;[!DNL Marketo Measure] 101 | Lead per canale&quot;. Questo rapporto è disponibile come standard ed è un ottimo ambiente sandbox predefinito, come descritto nella tabella precedente, e può essere rapidamente personalizzato per esigenze di reporting più specifiche.
 
 **1,2 | Nuovi lead per campagna (o informazioni più dettagliate)**
 
@@ -140,8 +147,8 @@ Per un’insight più granulare nei dati riepilogati nel rapporto &quot;Nuovi le
    <td>Quali <i>campagne</i> influenzano i lead nella creazione?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
-   <td>Punti di contatto lead e buyer (CRM)<br>
+   <td>Tipo di report</td> 
+   <td>Punti di contatto lead e acquirenti (CRM)<br>
    Metrica: lead ([!DNL Marketo Measure] individuazione)</td> 
   </tr>
   <tr>
@@ -175,8 +182,8 @@ Per un’insight più granulare nei dati riepilogati nel rapporto &quot;Nuovi le
    <td>Quali <i>parole chiave</i> influenzano i lead nella creazione?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
-   <td>Punti di contatto lead e buyer (CRM)<br>
+   <td>Tipo di report</td> 
+   <td>Punti di contatto lead e acquirenti (CRM)<br>
    Metrica: lead ([!DNL Marketo Measure] individuazione)</td> 
   </tr>
   <tr>
@@ -228,7 +235,7 @@ I gestori di eventi, tuttavia, potrebbero essere più interessati a quali eventi
    <td>Quali <i>contenuti</i> influenzano i lead nella creazione?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>Punti di contatto lead e acquirenti (CRM)</td> 
   </tr>
   <tr>
@@ -270,7 +277,7 @@ I rapporti basati su &quot;Contenuto&quot; offrono un ottimo valore quando si es
 
 I rapporti basati su &#39;Contenuto&#39; sono ideali per ottenere da insight ciò che sta guidando i Lead in modo più specifico all&#39;interno del canale di marketing di livello superiore, in questo caso &quot;Ricerca organica&quot;.
 
-**1,4 | Coinvolgimento lead totale in un intervallo di date specificato**
+**1,4 | Coinvolgimento lead totale in un determinato intervallo di date**
 
 <table> 
  <tbody>
@@ -279,9 +286,9 @@ I rapporti basati su &#39;Contenuto&#39; sono ideali per ottenere da insight ci�
    <td>Quali canali di marketing hanno avuto il maggior <i>coinvolgimento lead totale</i> negli ultimi (settimana/mese/trimestre)?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>Punti di contatto lead e buyer (CRM)<br> 
-   Metrica: lead ([!DNL Marketo Measure] individuazione)</td> 
+   Metrica: lead ([!DNL Marketo Measure] Discover)</td> 
   </tr>
   <tr>
    <td>Campo data / Tipo data</td> 
@@ -319,9 +326,9 @@ Questo approccio per misurare l’impatto del marketing sull’influenza degli M
    <td>Quali canali di marketing sono più adatti a generare nuovi lead che diventano <i>MQLs</i>?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>Punti di contatto lead e buyer (CRM)<br> 
-   Metrica: lead ([!DNL Marketo Measure] individuazione)</td> 
+   Metrica: lead ([!DNL Marketo Measure] Discover)</td> 
   </tr>
   <tr>
    <td>Filtri</td> 
@@ -348,7 +355,7 @@ Questo approccio per misurare l’impatto del marketing sull’influenza degli M
  </tbody>
 </table>
 
-**2,2 | Lead qualificati per il marketing per canale (solo contatto singolo, CRM)**
+**2,2 | Lead qualificati per il marketing per canale (tocco singolo, solo CRM)**
 
 Questo approccio per la misurazione dell&#39;impatto del marketing sull&#39;influenza degli MQL si concentra maggiormente sull&#39;identificazione di quale _singolo punto di contatto_ è stato l&#39;ultimo contatto prima che il lead raggiungesse MQL.
 
@@ -363,8 +370,8 @@ Questo approccio per la misurazione dell&#39;impatto del marketing sull&#39;infl
    <td>Quali canali di marketing sono più efficaci nel spingere i lead per raggiungere lo stato MQL?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
-   <td>Punti di contatto lead e buyer (CRM)<br>
+   <td>Tipo di report</td> 
+   <td>Punti di contatto lead e acquirenti (CRM)<br>
    <i>questo report è possibile solo all'interno dei report CRM. Impossibile filtrare alcuni valori di 'Posizione punto di contatto' in [!DNL Marketo Measure] Discover</i></td> 
   </tr>
   <tr>
@@ -411,7 +418,7 @@ Questo rapporto equivale a un rapporto basato su &quot;Contenuto&quot; a livello
    <td>Quante persone hanno scaricato una particolare risorsa?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>[!DNL Marketo Measure] Punti di contatto per persone e acquirenti (CRM)</td> 
   </tr>
   <tr>
@@ -459,7 +466,7 @@ _Questo report è applicabile solo se i moduli di registrazione sono ospitati ne
    <td>Quali canali di marketing sono più determinanti per la registrazione agli eventi?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>[!DNL Marketo Measure] Punti di contatto per persone e acquirenti (CRM)</td> 
   </tr>
   <tr>
@@ -498,7 +505,7 @@ Un aspetto fondamentale di questo rapporto è che i dati Buyer Touchpoint fornir
 
 Considerando che la persona [!DNL Marketo Measure] ci consente di creare rapporti su tutti i punti di contatto in un singolo rapporto, è il tipo di rapporto ideale da utilizzare quando si cercano di convalidare i dati. Vogliamo assicurarci di non trascurare i punti di contatto che potrebbero rivelare dove, ad esempio, si verifica un problema nella configurazione dei tuoi &quot;Canali di marketing&quot; (consulta gli articoli di supporto collegati di seguito per ulteriori informazioni sulla configurazione dei tuoi &quot;Canali di marketing&quot;).
 
-* [Configurazione canale personalizzato in linea](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}
+* [Impostazione canale personalizzato online](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}
 * [Impostazione canale personalizzato offline](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md){target="_blank"}
 
 In sostanza, i dati del punto di contatto rifletteranno ciò che è stato tracciato da [!DNL Marketo Measure] e possono essere controllati per garantire che la configurazione corrisponda agli input in base a elementi come: valori dei parametri UTM, pagine di riferimento o tipi di campagne. Se i dati del punto di contatto non corrispondono alla configurazione, è probabile che sia necessario apportare delle modifiche. Oltre alla configurazione di &quot;Canale di marketing&quot;, puoi esaminare i dati dei punti di contatto per determinare quali punti di contatto possono essere [soppressi](/help/advanced-marketo-measure-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md) o [segmentati](/help/advanced-marketo-measure-features/segmentation/custom-segmentation.md){target="_blank"}. Si consiglia di controllare i dati dei punti di contatto all&#39;interno di un report &#39;[!DNL Marketo Measure] Punti di contatto persone e buyer&#39; alla fine di ogni mese o trimestre, se possibile. In questo modo l’attribuzione sarà il più accurata possibile. &#39;[!DNL Marketo Measure] 101 | Il rapporto Lead/Contatti per canale, disponibile da subito, rappresenta un ottimo punto di partenza. Includi i campi seguenti, se non sono già inclusi, per rivedere alcune delle parti più importanti della configurazione:
@@ -575,7 +582,7 @@ Riepilogare i dati Buyer Attribution Touchpoint delle opportunità con il campo 
    <td>Quali <i>canali di marketing</i> stanno influenzando le opportunità nella creazione?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>Punti di contatto di attribuzione buyer con opportunità (CRM)<br> 
    Metrica: opportunità ([!DNL Marketo Measure] Discover)</td> 
   </tr>
@@ -626,7 +633,7 @@ Riepilogare i dati Buyer Attribution Touchpoint delle opportunità con il campo 
 </td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>Punti di contatto di attribuzione buyer con opportunità (CRM)<br> 
    Metrica: opportunità ([!DNL Marketo Measure] Discover)</td> 
   </tr>
@@ -670,7 +677,7 @@ Questo rapporto è sostanzialmente lo stesso del primo esempio di Buyer Attribut
    <td>Quali <i>canali di marketing</i> stanno influenzando la chiusura delle offerte?</td> 
   </tr>
   <tr>
-   <td>Tipo di rapporto</td> 
+   <td>Tipo di report</td> 
    <td>Punti di contatto di attribuzione buyer con opportunità (CRM)<br> 
    Metrica: offerte ([!DNL Marketo Measure] Discover)</td> 
   </tr>
@@ -679,7 +686,7 @@ Questo rapporto è sostanzialmente lo stesso del primo esempio di Buyer Attribut
    <td>
    <li>La fase dell'opportunità (<i>solo le opportunità realizzate chiuse devono essere incluse nel report</i>) OPPURE</li>
    <li>Opportunità acquisita = True</li>
-   <li>Tipo di opportunità (è comune filtrare in base a determinate opportunità, ad esempio 'Nuova azienda' anziché a tutte)<br>
+   <li>Tipo di opportunità (è comune filtrare in base a determinate opportunità, ad esempio "Nuova azienda" anziché tutte)<br>
    </td> 
   </tr>
   <tr>

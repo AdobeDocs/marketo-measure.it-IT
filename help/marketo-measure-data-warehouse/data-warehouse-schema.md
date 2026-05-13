@@ -4,10 +4,17 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Schema Data Warehouse
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '21110'
-ht-degree: 3%
+source-wordcount: 21775
+ht-degree: 8%
 
 ---
 
@@ -75,7 +82,7 @@ Account importati dal sistema di origine.
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica dell’account, dal sistema di origine.</td>
-      <td>01/08/2018 17:38:30.000</td>
+      <td>2018-08-01 17:38:30.000</td>
     </tr>
     <tr>
       <td>NOME</td>
@@ -123,19 +130,19 @@ Account importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td><b>∗</b> SETTORE</td>
@@ -207,19 +214,19 @@ Mappatura della tabella tra gli indirizzi e-mail di lead/contatti noti e gli acc
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -273,13 +280,13 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>DATA_INIZIALE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio dell’attività, dal sistema di origine.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestapm_ntz</td>
       <td>Data di fine dell'attività, dal sistema di origine.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>ID_CAMPAGNA</td>
@@ -299,13 +306,13 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione della riga nel sistema di origine.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata alla riga nel sistema di origine.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
@@ -323,19 +330,19 @@ Attività importate da un sistema di origine o da un account annuncio connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -510,19 +517,19 @@ Annunci importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -665,19 +672,19 @@ Inserzionisti importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -948,7 +955,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
         <p>La quantità di spesa importata per gli ultimi 30 giorni, applicabile solo ad AdWords.</p>
       </td>
       <td>
-        <p>17260,000000000000000000</p>
+        <p>17260.000000000000000000</p>
       </td>
     </tr>
     <tr>
@@ -1049,19 +1056,19 @@ Account annuncio importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1365,19 +1372,19 @@ Campagne importate da account di annunci, sistemi di origine, utm e auto-segnala
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1566,19 +1573,19 @@ Ad Forms importato da qualsiasi account Ad connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>SOURCE_ID</td>
@@ -1892,19 +1899,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -1961,19 +1968,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -2007,7 +2014,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>04.0&rbrace;53.000 09/01 2018:53:</p>
+        <p>2018-09-01 04:53:53.000</p>
       </td>
     </tr>
     <tr>
@@ -2875,7 +2882,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch).</p>
       </td>
       <td>
-        <p>0,0153374234214425</p>
+        <p>0.0153374234214425</p>
       </td>
     </tr>
     <tr>
@@ -2889,7 +2896,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</p>
       </td>
       <td>
-        <p>0,0143061513081193</p>
+        <p>0.0143061513081193</p>
       </td>
     </tr>
     <tr>
@@ -3016,19 +3023,19 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3051,7 +3058,7 @@ Dati generati dall’integrazione di Attribution AI. Questi campi sono compilati
     <td>CONVERSION_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data della conversione</td>
-    <td>01/01/2020 01 :01:00.000</td>
+    <td>2020-01-01 01:01:00.000</td>
   </tr>
   <tr>
     <td>CONVERSION_NAME</td>
@@ -3107,7 +3114,7 @@ Dati generati dall’integrazione di Attribution AI. Questi campi sono compilati
     <td>SCORE_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data dell’ultimo punteggio dei punti di contatto</td>
-    <td>01/01/2020 01 :01:00.000</td>
+    <td>2020-01-01 01:01:00.000</td>
   </tr>
   <tr>
     <td>INFLUENZA_PERCENTUALE</td>
@@ -3125,7 +3132,7 @@ Dati generati dall’integrazione di Attribution AI. Questi campi sono compilati
     <td>DATA_PUNTO DI CONTATTO</td>
     <td>Timestamp_ntz</td>
     <td>il punto di contatto o la data di transizione dell’area di visualizzazione</td>
-    <td>01/01/2020 01 :01:00.000</td>
+    <td>2020-01-01 01:01:00.000</td>
   </tr>
   <tr>
     <td>TOUCHPOINT_EVENT_ID</td>
@@ -3173,19 +3180,19 @@ Dati generati dall’integrazione di Attribution AI. Questi campi sono compilati
     <td>_CREATED_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data di creazione del record in Snowflake</td>
-    <td>01/01/2020 01 :01:00.000</td>
+    <td>2020-01-01 01:01:00.000</td>
   </tr>
   <tr>
     <td>_MODIFIED_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data dell’ultima modifica apportata al record in Snowflake</td>
-    <td>01/01/2020 01 :01:00.000</td>
+    <td>2020-01-01 01:01:00.000</td>
   </tr>
   <tr>
     <td>_DELETED_DATE</td>
     <td>Timestamp_ntz</td>
     <td>data in cui il record è stato eliminato in Snowflake</td>
-    <td>01/01/2020 01 :01:00.000</td>
+    <td>2020-01-01 01:01:00.000</td>
   </tr>
 </tbody>
 </table>
@@ -3428,19 +3435,19 @@ Membri della campagna importati dal sistema di origine. Questa tabella sarà vuo
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3497,19 +3504,19 @@ Canali di marketing creati nell&#39;applicazione [!DNL Marketo Measure].
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica apportata al record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3543,7 +3550,7 @@ Contatti importati dal sistema di origine.
         <p>Data dell'ultima modifica del record Contatto dal sistema di origine.</p>
       </td>
       <td>
-        <p>05/09/05/2018 :17:53.000</p>
+        <p>2018-09-05 05:17:53.000</p>
       </td>
     </tr>
     <tr>
@@ -3553,7 +3560,7 @@ Contatti importati dal sistema di origine.
         <p>Data di creazione del record Contatto dal sistema di origine.</p>
       </td>
       <td>
-        <p>05/09/2018 :17:51,000</p>
+        <p>2018-09-05 05:17:51.000</p>
       </td>
     </tr>
     <tr>
@@ -3686,19 +3693,19 @@ Contatti importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td><b>∗</b> JOB_TITLE</td>
@@ -3746,13 +3753,13 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>DATA_INIZIALE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio del tasso di conversione.</td>
-      <td>00:00:00.000 01 11/01/2018</td>
+      <td>2018-11-01 00:00:00.000</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di inizio successiva per il tasso di conversione. La data di fine del tasso di conversione è data_finale meno 1 giorno.</td>
-      <td>00:00:00.000 00 09/01/2018</td>
+      <td>2018-09-01 00:00:00.000</td>
     </tr>
     <tr>
       <td>CONVERSION_RATE</td>
@@ -3770,13 +3777,13 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>DATA_CREAZIONE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record nel sistema di origine.</td>
-      <td>2019-03-30 00:54:50,000</td>
+      <td>2019-03-30 00:54:50.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell'ultima modifica del record nel sistema di origine.</td>
-      <td>2019-03-30 00:54:50,000</td>
+      <td>2019-03-30 00:54:50.000</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
@@ -3788,19 +3795,19 @@ Tassi di conversione della valuta importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -3833,7 +3840,7 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
       <td>COST_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il costo è stato sostenuto (o attribuito a).</td>
-      <td>00:00:00.000 00 09/06/2018</td>
+      <td>2018-09-06 00:00:00.000</td>
     </tr>
     <tr>
       <td>SORGENTE</td>
@@ -4313,19 +4320,19 @@ Dati sui costi importati da account annuncio collegati o da spese di marketing d
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -4546,7 +4553,7 @@ Creative importate da qualsiasi account annuncio collegato.
         <p>Oggetto o entità principale per questa tabella. In questo caso, "Creative".</p>
       </td>
       <td>
-        <p>Creative</p>
+        <p>Settore creativo</p>
       </td>
     </tr>
     <tr>
@@ -4740,19 +4747,19 @@ Creative importate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -4796,7 +4803,7 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
         <p>Data dell'ultima modifica apportata all'evento dal sistema di origine.</p>
       </td>
       <td>
-        <p>08.0&rbrace;51.000 09/09/2018:39:</p>
+        <p>2018-09-03 08:39:51.000</p>
       </td>
     </tr>
     <tr>
@@ -4915,19 +4922,19 @@ Eventi importati dal sistema di origine. Questa tabella sarà vuota se la sincro
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5078,19 +5085,19 @@ Attività importate dal sistema di origine. Questa tabella viene compilata se è
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5179,19 +5186,19 @@ Tabella di tutte le valute ISO.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5236,13 +5243,13 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
       <td>
         <p>Data di registrazione della chat.</p>
       </td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>INDIRIZZO_IP</td>
@@ -5318,19 +5325,19 @@ Test AB registrati. Questa tabella sarà vuota se i test AB non sono abilitati.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5375,13 +5382,13 @@ Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabell
       <td>
         <p>Data in cui l'evento è stato attivato dal codice JavaScript personalizzato.</p>
       </td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Ultima data di modifica del record.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>
@@ -5429,19 +5436,19 @@ Eventi web registrati tramite eventi personalizzati in JavaScript. Questa tabell
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5664,19 +5671,19 @@ Pagine di destinazione scaricate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -5769,19 +5776,19 @@ Tabella di mappatura per indirizzi e-mail e ID visitatore.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -6120,7 +6127,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
       <td>DATA</td>
       <td>data</td>
       <td>Data in cui si è verificato l’evento.</td>
-      <td>28/08/2018</td>
+      <td>2018-08-28</td>
     </tr>
     <tr>
       <td>TIMESTAMP</td>
@@ -6213,7 +6220,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un contatto a forma di U.</p>
       </td>
       <td>
-        <p>100,0000000000000000000</p>
+        <p>100.0000000000000000000</p>
       </td>
     </tr>
     <tr>
@@ -6269,7 +6276,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Quantità dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
-        <p>42000,00000000</p>
+        <p>42000.00000000</p>
       </td>
     </tr>
     <tr>
@@ -6544,19 +6551,19 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -6676,7 +6683,7 @@ Invii di moduli acquisiti.
         <p>L'indirizzo IP registrato al momento dell'invio del modulo.</p>
       </td>
       <td>
-        <p>174 127 184 158</p>
+        <p>174.127.184.158</p>
       </td>
     </tr>
     <tr>
@@ -6813,19 +6820,19 @@ Invii di moduli acquisiti.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -6890,7 +6897,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Data in cui l’impression è stata trasmessa.</p>
       </td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -6898,7 +6905,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>Data dell’ultima modifica del record.</p>
       </td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>
@@ -6928,7 +6935,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>L’indirizzo IP registrato al momento dell’impression.</p>
       </td>
-      <td>174 127 184 158</td>
+      <td>174.127.184.158</td>
     </tr>
     <tr>
       <td>
@@ -7454,19 +7461,19 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -7819,19 +7826,19 @@ Parole chiave importate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8038,19 +8045,19 @@ Pagine di destinazione importate da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8331,19 +8338,19 @@ Lead importati dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8572,19 +8579,19 @@ Transizioni nell&#39;area intermedia per lead o contatti.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -8714,7 +8721,7 @@ Opportunità importate dal sistema di origine.
         <p>Importo dell’offerta previsto o chiuso dall’opportunità, dal sistema di origine.</p>
       </td>
       <td>
-        <p>8988,00000000</p>
+        <p>8988.00000000</p>
       </td>
     </tr>
     <tr>
@@ -8853,19 +8860,19 @@ Opportunità importate dal sistema di origine.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>TIPO_OPPORTUNITÀ <b>∗</b></td>
@@ -9113,19 +9120,19 @@ Transizioni nell&#39;area intermedia per le opportunità.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9207,7 +9214,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>16:55:37.000 18-08-19</p>
+        <p>2018-08-19 16:55:37.000</p>
       </td>
     </tr>
     <tr>
@@ -9243,7 +9250,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>L'indirizzo IP registrato al momento dell'invio del modulo.</p>
       </td>
       <td>
-        <p>174 127 184 158</p>
+        <p>174.127.184.158</p>
       </td>
     </tr>
     <tr>
@@ -9394,19 +9401,19 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9630,19 +9637,19 @@ Tabella in cui sono memorizzati tutti i posizionamenti scaricati da qualsiasi ac
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record da parte di Snowflake</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di modifica del record di Snowflake</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di eliminazione del record da parte di Snowflake, se è stato eliminato</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9699,19 +9706,19 @@ Valori del segmento come definiti nell&#39;applicazione [!DNL Marketo Measure].
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9778,19 +9785,19 @@ Mappa il nome del segmento personalizzato sul relativo valore di categoria. I no
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -9846,7 +9853,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Data della sessione.</p>
       </td>
       <td>
-        <p>01/08/2016 14:24:21.000</p>
+        <p>2016-08-01 14:24:21.000</p>
       </td>
     </tr>
     <tr>
@@ -9858,7 +9865,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>Data dell’ultima modifica del record.</p>
       </td>
       <td>
-        <p>03:49:10.000 09-01 2018</p>
+        <p>2018-09-01 03:49:10.000</p>
       </td>
     </tr>
     <tr>
@@ -10436,7 +10443,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>L'indirizzo IP registrato al momento della sessione.</p>
       </td>
       <td>
-        <p>174 127 184 158</p>
+        <p>174.127.184.158</p>
       </td>
     </tr>
     <tr>
@@ -10537,19 +10544,19 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -10779,19 +10786,19 @@ Siti importati da qualsiasi account annuncio collegato.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -11068,19 +11075,19 @@ Collegamenti ai siti da qualsiasi account Ads connesso.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record da parte di Snowflake</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di modifica del record di Snowflake</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di eliminazione del record da parte di Snowflake, se è stato eliminato</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -11251,19 +11258,19 @@ Elenco delle fasi importate o definite nell&#39;applicazione [!DNL Marketo Measu
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -12311,19 +12318,19 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -12386,19 +12393,19 @@ Aggregazione di URL da pagine di destinazione, pagine di provenienza e viste pag
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -12688,7 +12695,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Data di invio del modulo.</p>
       </td>
       <td>
-        <p>03/06/2015 17:49:10.000</p>
+        <p>2015-06-03 17:49:10.000</p>
       </td>
     </tr>
     <tr>
@@ -13171,19 +13178,19 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
@@ -13273,7 +13280,7 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
       <td>varchar</td>
       <td>Indirizzo IP registrato.</td>
       <td>
-        <p>159 203 142 127</p>
+        <p>159.203.142.127</p>
       </td>
     </tr>
     <tr>
@@ -13338,19 +13345,19 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data di creazione del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data dell’ultima modifica del record in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Data in cui il record è stato contrassegnato come eliminato in Snowflake.</td>
-      <td>01/01/2020 01 :01:00.000</td>
+      <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>

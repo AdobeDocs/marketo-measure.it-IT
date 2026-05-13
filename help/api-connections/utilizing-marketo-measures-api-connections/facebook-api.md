@@ -4,9 +4,17 @@ description: API [!DNL Facebook] - [!DNL Marketo Measure]
 title: API [!DNL Facebook]
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/yW6j0Ha8-O0-AQo2ledBBpzji3hy7UHxFPa5L-9WNEg
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+subfeature_v2:
+  - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: 485
 ht-degree: 0%
 
 ---
@@ -34,7 +42,7 @@ Per quanto riguarda la configurazione, è necessario completare sette passaggi n
    >La persona che connette l&#39;account [!DNL Facebook Ads] deve essere un amministratore nell&#39;account [!DNL Facebook Ads].
 
 1. Una volta che [!DNL Marketo Measure] è connesso al tuo account Facebook, fai clic sull&#39;icona della matita accanto all&#39;account.
-1. All’interno di questa vista, sposta l’assegnazione automatica tag? passa a &#39;Sì&#39;. Selezionare quindi la casella di controllo nella sezione [!UICONTROL Learn More] per accettare i termini e le condizioni. Verificare che l&#39;interruttore [!UICONTROL Auto-tagging] sia ancora impostato su &#39;[!UICONTROL Yes]&#39;.
+1. All’interno di questa vista, sposta l’opzione &quot;Assegnazione automatica tag?&quot; su &quot;Sì&quot;. Selezionare quindi la casella di controllo nella sezione [!UICONTROL Learn More] per accettare i termini e le condizioni. Verificare che l&#39;interruttore [!UICONTROL Auto-tagging] sia ancora impostato su &#39;[!UICONTROL Yes]&#39;.
 
 ## Collegamento dell’account {#connecting-the-account}
 
@@ -87,7 +95,7 @@ Affinché l&#39;integrazione funzioni correttamente, è necessario abilitare l&#
    <td><p>"[!DNL Facebook]" o [utm_source] se fornito</p></td> 
   </tr> 
   <tr> 
-   <td><p>Canale</p></td> 
+   <td><p>Media</p></td> 
    <td><p>"Social" o [utm_medium] se fornito</p></td> 
   </tr> 
   <tr> 

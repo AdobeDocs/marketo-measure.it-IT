@@ -3,9 +3,19 @@ description: Panoramica delle autorizzazioni di integrazione - [!DNL Marketo Mea
 title: Panoramica delle autorizzazioni di integrazione
 feature: APIs, Integration
 exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/e0BkGPzfpf6LjR0eIUfOTLku8d-Dgm6Kh6Jlfs3cLBA
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: 1406
 ht-degree: 2%
 
 ---
@@ -151,9 +161,9 @@ Marketo Measure tiene traccia di account, campagne, gruppi di annunci, annunci, 
     <td>Marketo Measure tiene traccia di campagne LinkedIn Ads, creatività e dati sui costi, nonché delle risposte e dei Forms della generazione di lead. In base ai dati importati, possiamo generare punti di contatto di LinkedIn e associare le risposte dei moduli lead ai lead per i clienti.</td>
     <td><li>È necessario il ruolo di Campaign Manager o Account Manager per consentire a Marketo Measure di scaricare i dati sui costi. (Riga ambito 1)</li>
     <br>
-    <li>Forms Per consentire a Marketo Measure di accedere ai dati dei moduli di generazione lead è necessario un ruolo di amministratore privilegiato (ruolo di amministratore pagina, riga 2 ambiti) o un ruolo di amministratore responsabile di generazione (ruolo di amministratore media a pagamento, riga 3 ambiti)</li>
+    <li>Per consentire a Marketo Measure di accedere ai dati dei moduli di generazione lead è necessario un ruolo di amministratore privilegiato (ruolo di amministratore pagina, riga 2 ambiti) o un ruolo di amministratore responsabile di generazione (ruolo di amministratore media a pagamento, riga 3 ambiti)</li>
     <br>
-    <li>Marketo Measure Per poter manipolare l’assegnazione automatica di tag è necessario un amministratore privilegiato (ruolo di amministratore pagina, riga 2 ambiti) o un poster di contenuti sponsorizzati (ruolo di amministratore dei contenuti multimediali a pagamento, riga 3 ambiti)</li>
+    <li>Per poter manipolare l’assegnazione automatica di tag è necessario un amministratore privilegiato (ruolo di amministratore pagina, riga 2 ambiti) o un poster di contenuti sponsorizzati (ruolo di amministratore dei contenuti multimediali a pagamento, riga 3 ambiti)</li>
     <p>
     <b>Ambiti</b>
     <br>

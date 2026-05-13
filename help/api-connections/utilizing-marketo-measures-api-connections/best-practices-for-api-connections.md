@@ -3,9 +3,18 @@ description: Best practice per le connessioni API - [!DNL Marketo Measure]
 title: Best practice per le connessioni API
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/3f-fqPIPf40brt2-xfiMLLO6McY6hlT7rKkBvXb2laA
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+subfeature_v2:
+  - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: 751
 ht-degree: 0%
 
 ---
@@ -35,7 +44,7 @@ Prima di abilitare l’assegnazione tag automatica, esporta la cronologia degli 
 
 Seguendo le nostre raccomandazioni sulle best practice, l&#39;API [!DNL Marketo Measure] [!DNL Facebook] sarà in grado di:
 
-* Applica tag automatici a tutti gli annunci [!DNL Facebook] con il parametro [!DNL Marketo Measure] di `_bf ={creative}` necessario
+* Applica tag automatici a tutti gli annunci [!DNL Facebook] con il parametro `_bf ={creative}` di [!DNL Marketo Measure] necessario
 * Scarica informazioni sui costi degli annunci in tutti gli annunci [!DNL Facebook] attivi
 
 >[!NOTE]

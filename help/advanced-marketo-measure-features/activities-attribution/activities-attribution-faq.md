@@ -4,9 +4,12 @@ description: Domande frequenti su Attribuzione attività - [!DNL Marketo Measure
 title: Domande frequenti sull’attribuzione delle attività
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -29,7 +32,7 @@ L&#39;oggetto Activities funge da ombrello, o padre, sugli oggetti Task ed Event
 
 **Se ho un lead o un contatto con la stessa attività ricorrente, vedrò i punti di contatto dell&#39;acquirente per tutte queste attività?**
 
-Sì.  Esiste una relazione 1:1 tra le attività sincronizzate e i punti di contatto creati.
+Sì. Esiste una relazione 1:1 tra le attività sincronizzate e i punti di contatto creati.
 
 **Come posso sapere quali record determinano la creazione di punti di contatto?**
 

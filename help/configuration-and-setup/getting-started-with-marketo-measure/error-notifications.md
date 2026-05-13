@@ -3,10 +3,21 @@ description: Notifiche di errore - [!DNL Marketo Measure]
 title: Notifiche di errore
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/SDJqtYTppmKWPpLQrhI9EkK-mYQ3f3Xh2BLoWzqIGx4
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+subfeature_v2:
+  - id: ec526b86-7a6d-4fae-87bd-f61c37b9b506
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 0%
+source-wordcount: 1915
+ht-degree: 1%
 
 ---
 
@@ -46,7 +57,7 @@ Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fa
           <p>Puoi anche regolare i crediti CRM che Marketo Measure utilizza seguendo i passaggi seguenti:</p>
           <ul>
             <li>Passa a <b>Impostazioni</b> &gt; <b>CRM</b> &gt; <b>Generale</b></li>
-            <li>Aggiorna il limite API CRM giornaliero<br/>
+            <li>Aggiornare il limite API CRM giornaliero<br/>
               <ul>
                 <li><b>Nota: il valore predefinito è 100.000</b></li>
               </ul>
@@ -124,7 +135,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
-      <td>Errore durante l'esportazione CRM: FIELD_INTEGRITY_EXCEPTION : Tipo di entità 'Lead': Codice errore CRM: FIELD_INTEGRITY_EXCEPTION, Campo/i: Country, Messaggio di errore CRM: Si è verificato un problema con questo paese, anche se potrebbe sembrare corretto. Selezionare un paese dall'elenco dei paesi validi.: Country, RecordId: 0123456</td>
+      <td>Errore durante l'esportazione CRM: FIELD_INTEGRITY_EXCEPTION : Tipo di entità 'Lead': Codice errore CRM: FIELD_INTEGRITY_EXCEPTION, Campo/i: Country, Messaggio di errore CRM: Si è verificato un problema con questo paese, anche se potrebbe sembrare corretto. Seleziona un paese/territorio dall’elenco dei paesi validi.: Paese, ID record: 0123456</td>
       <td>Il tipo previsto del record non corrisponde.</td>
       <td>Il caso più comune è che non si seguono gli standard di denominazione Stato/Paese impostati nell’organizzazione Salesforce, perché i campi Stato/Paese sono stati standardizzati per accettare solo determinati valori dell’elenco di selezione. Per risolvere questo problema, è possibile:
         <ul>
@@ -179,7 +190,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Errore durante l'esportazione CRM: MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>In Marketo Measure manca l’autorizzazione Visualizza/Modifica lead convertiti</td>
-      <td>Per assistenza sull'abilitazione di questa autorizzazione nel CRM, fare riferimento al seguente documento di Experience League<br/>
+      <td>Consulta il seguente documento di Experience League per assistenza sull’abilitazione di questa autorizzazione nel tuo CRM<br/>
           <a href="/help/marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md">Abilitazione dell'autorizzazione per la modifica di lead convertiti</a></td>
     </tr>
     <tr>
