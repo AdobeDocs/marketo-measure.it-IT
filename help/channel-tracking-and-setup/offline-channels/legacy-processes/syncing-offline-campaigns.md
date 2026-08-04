@@ -5,8 +5,7 @@ title: Sincronizzazione delle campagne offline
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
 TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
-product_v2:
-  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 727
@@ -65,18 +64,18 @@ Quando si crea questa campagna, fare clic sul campo &quot;[!UICONTROL Enable Buy
 ![](assets/4-3.png)
 
 * **Includi tutti i membri della campagna**
-   * Questa opzione consente a [!DNL Marketo Measure] di attribuire un punto di contatto a ciascun membro della campagna.
+  * Questa opzione consente a [!DNL Marketo Measure] di attribuire un punto di contatto a ciascun membro della campagna.
 
 * **Includi membri della campagna &quot;Rispondenti&quot;.**
-   * Questa opzione applica i punti di contatto ai membri della campagna che hanno lo stato &quot;Risposta&quot;.
+  * Questa opzione applica i punti di contatto ai membri della campagna che hanno lo stato &quot;Risposta&quot;.
 
 * **Escludi tutti i membri della campagna.**
-   * Questa opzione non attribuisce punti di contatto ad alcun membro della campagna e funge da flag per segnalare che la campagna è stata deliberatamente esclusa da [!DNL Marketo Measure]. Se sincronizzi una campagna con i punti di contatto dell’acquirente per errore, puoi cambiare lo stato in &quot;Escludi tutti i membri della campagna&quot; e i punti di contatto verranno rimossi.
+  * Questa opzione non attribuisce punti di contatto ad alcun membro della campagna e funge da flag per segnalare che la campagna è stata deliberatamente esclusa da [!DNL Marketo Measure]. Se sincronizzi una campagna con i punti di contatto dell’acquirente per errore, puoi cambiare lo stato in &quot;Escludi tutti i membri della campagna&quot; e i punti di contatto verranno rimossi.
 
 Una volta selezionata una di queste selezioni, [!DNL Marketo Measure] assegnerà a ogni membro della campagna un punto di contatto, se applicabile. Il lead o il contatto aggiunto alla campagna _deve_ avere un indirizzo e-mail associato al record affinché [!DNL Marketo Measure] possa creare un punto di contatto. Senza un indirizzo e-mail, [!DNL Marketo Measure] non assegnerà un punto di contatto al membro della campagna.
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Tutorial: Mappatura Dei Canali Offline](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] Tutorial: Mappatura Dei Canali Offline](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
