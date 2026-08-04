@@ -65,13 +65,13 @@ Quando si crea questa campagna, fare clic sul campo &quot;[!UICONTROL Enable Buy
 ![](assets/4-3.png)
 
 * **Includi tutti i membri della campagna**
-   * Questa opzione consente a [!DNL Marketo Measure] di attribuire un punto di contatto a ciascun membro della campagna.
+  * Questa opzione consente a [!DNL Marketo Measure] di attribuire un punto di contatto a ciascun membro della campagna.
 
 * **Includi membri della campagna &quot;Rispondenti&quot;.**
-   * Questa opzione applica i punti di contatto ai membri della campagna che hanno lo stato &quot;Risposta&quot;.
+  * Questa opzione applica i punti di contatto ai membri della campagna che hanno lo stato &quot;Risposta&quot;.
 
 * **Escludi tutti i membri della campagna.**
-   * Questa opzione non attribuisce punti di contatto ad alcun membro della campagna e funge da flag per segnalare che la campagna è stata deliberatamente esclusa da [!DNL Marketo Measure]. Se sincronizzi una campagna con i punti di contatto dell’acquirente per errore, puoi cambiare lo stato in &quot;Escludi tutti i membri della campagna&quot; e i punti di contatto verranno rimossi.
+  * Questa opzione non attribuisce punti di contatto ad alcun membro della campagna e funge da flag per segnalare che la campagna è stata deliberatamente esclusa da [!DNL Marketo Measure]. Se sincronizzi una campagna con i punti di contatto dell’acquirente per errore, puoi cambiare lo stato in &quot;Escludi tutti i membri della campagna&quot; e i punti di contatto verranno rimossi.
 
 Una volta selezionata una di queste selezioni, [!DNL Marketo Measure] assegnerà a ogni membro della campagna un punto di contatto, se applicabile. Il lead o il contatto aggiunto alla campagna _deve_ avere un indirizzo e-mail associato al record affinché [!DNL Marketo Measure] possa creare un punto di contatto. Senza un indirizzo e-mail, [!DNL Marketo Measure] non assegnerà un punto di contatto al membro della campagna.
 
