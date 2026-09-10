@@ -4,12 +4,8 @@ title: Guida ai report di [!DNL Marketo Measure]
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
 TQID: https://experienceleague.adobe.com/qdhOT569T3OyHBOuwBGbxAV-kYaCJnfP6qJ8Mb-A4Wk
-product_v2:
-  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 5685
@@ -43,7 +39,7 @@ Al livello più alto, esistono due categorie di reporting basate sui due diversi
 
    * Comunemente utilizzato per le metriche &quot;top of the funnel&quot; (TOFU) e per i rapporti relativi a _singoli utenti_ (lead, contatti, [!DNL Marketo Measure] persone)
    * I BTs vengono utilizzati per comprendere tutte le interazioni di marketing relative a **persone**, in quanto contengono la cronologia completa dei punti di contatto per ogni persona. Come promemoria, questi punti di contatto vengono creati in CRM per il primo contatto anonimo, il contatto per la creazione di lead e qualsiasi successivo invio di moduli o punto di contatto scelto per la sincronizzazione
-una campagna o un’attività offline.
+     una campagna o un’attività offline.
 
 1. **Punti di contatto per l&#39;attribuzione dell&#39;acquirente** (BAT) / Opportunità / Livello account / Ricavi
 
