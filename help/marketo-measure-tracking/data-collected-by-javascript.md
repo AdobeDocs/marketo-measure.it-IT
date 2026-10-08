@@ -3,14 +3,18 @@ description: Dati raccolti dalle linee guida di JavaScript per gli utenti di Mar
 title: Dati raccolti da JavaScript
 feature: Tracking
 exl-id: 83814168-9d3e-45ac-b514-df58f0b2e90b
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 13%
-
 ---
-
 # Dati raccolti da JavaScript {#data-collected-by-javascript}
 
 Scopri i dati raccolti da Marketo Measure JavaScript durante la distribuzione.

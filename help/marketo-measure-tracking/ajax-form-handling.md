@@ -3,13 +3,17 @@ description: Linee guida per la gestione dei moduli in AJAX per gli utenti di Ma
 title: Gestione dei moduli di AJAX
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # Gestione dei moduli di AJAX {#ajax-form-handling}
 
 Per segnalare manualmente le conversioni dei clienti in [!DNL Marketo Measure], è possibile utilizzare una semplice API. Entrambe queste API di JavaScript sono automaticamente disponibili sul tuo sito, se hai un codice di tracciamento su di esso. Non è necessario eseguire alcuna operazione speciale per accedervi.
@@ -18,7 +22,7 @@ Per segnalare manualmente le conversioni dei clienti in [!DNL Marketo Measure], 
 
 Quando si utilizzano moduli contenenti AJAX (o un altro meccanismo) per inviare le date di conversione dal client ai nostri server, [!DNL Marketo Measure] potrebbe non essere a conoscenza della conversione del cliente tramite nessuno dei percorsi standard monitorati. In questo scenario, possiamo utilizzare una semplice API (fornita di seguito).
 
-Se gestisci i tuoi invii di moduli, puoi chiamare esplicitamente [!DNL Marketo Measure] da JavaScript. [!DNL Marketo Measure] raccoglie tutte le informazioni pertinenti dal modulo e le pubblica in modo asincrono sui nostri server.
+Se gestisci i tuoi invii di moduli, puoi chiamare esplicitamente [!DNL Marketo Measure] da JavaScript. [!DNL Marketo Measure] raccoglie tutte le informazioni rilevanti dal modulo e le pubblica in modo asincrono sui nostri server.
 
 **Di seguito è riportato un esempio di codice che utilizza JQuery (supponendo che l&#39;ID nel modulo sia &quot;formId&quot;):**
 

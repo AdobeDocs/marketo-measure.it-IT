@@ -3,13 +3,17 @@ description: Elenco risorse [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Elenco risorse [!DNL Marketo Measure]
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 3%
-
 ---
-
 # Elenco risorse [!DNL Marketo Measure] {#marketo-measure-resource-list}
 
 Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiutarti a iniziare a utilizzare [!DNL Marketo Measure].
@@ -32,7 +36,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 * [Caricamento delle spese di marketing](/help/marketing-channel-costs.md)
 * [Riconnetti account annuncio](/help/api-connections/reauthorizing-connected-accounts.md)
 * [Aggiunta di  [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)
-   * [Escludi Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
+  * [Escludi Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
 
 **Generazione rapporti**
 
@@ -46,7 +50,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 
 ## Video {#videos}
 
-Ecco alcuni video    ti aiuterà a imparare a usare al meglio:
+Ecco un paio di video che ti aiutano a imparare a usare la velocità:
 
 * [[!DNL Marketo Measure] Corso di formazione introduttivo](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) (22 minuti)
 * [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (30-45 minuti)

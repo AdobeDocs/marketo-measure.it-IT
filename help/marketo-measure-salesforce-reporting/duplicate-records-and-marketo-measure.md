@@ -1,15 +1,19 @@
 ---
-description: Record duplicati e  [!DNL Marketo Measure]  indicazioni per gli utenti di Marketo Measure
-title: Record duplicati e  [!DNL Marketo Measure]
+description: Record duplicati e [!DNL Marketo Measure] indicazioni per gli utenti di Marketo Measure
+title: Record duplicati e [!DNL Marketo Measure]
 exl-id: e340100c-120a-4771-946d-336a1458da4e
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 0%
-
 ---
-
 # Record duplicati e [!DNL Marketo Measure] {#duplicate-records-and-marketo-measure}
 
 >[!NOTE]
@@ -28,5 +32,5 @@ Per l&#39;ID persona [!DNL Marketo Measure] di kelsey@adobe.com è possibile ved
 
 **Consiglio**
 
-* Per massimizzare il ritorno nei rapporti, ti consigliamo di utilizzare uno strumento di deduplicazione all’interno del CRM per assicurarti di creare solo record netti nuovi e univoci. Questa operazione può essere eseguita con lo strumento di automazione marketing o con un software separato installato nel CRM. [!DNL Marketo Measure] non deduplica automaticamente i record e non offre questo servizio tramite il nostro software.
+* Per massimizzare il ritorno nei rapporti, ti consigliamo di utilizzare uno strumento di deduplicazione all’interno del CRM per assicurarti di creare solo record netti nuovi e univoci. Questa operazione può essere eseguita con lo strumento di automazione marketing o con un software separato installato nel sistema CRM. [!DNL Marketo Measure] non deduplica automaticamente i record e non offre questo servizio tramite il nostro software.
 * In alternativa, è possibile unire manualmente i record durante l&#39;identificazione dei duplicati. Questo processo può essere lungo e noioso, ma l&#39;output di un reporting accurato vale l&#39;investimento di tempo.

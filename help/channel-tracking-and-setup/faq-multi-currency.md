@@ -3,13 +3,17 @@ description: Domande frequenti (multi-valuta) guida per gli utenti di Marketo Me
 title: Domande frequenti (più divise)
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
-
 ---
-
 # Domande frequenti (più divise) {#faq-multi-currency}
 
 **Come posso sapere quale bit di funzionalità abilitare?**
@@ -52,7 +56,7 @@ Per i clienti [!DNL Dynamics] e [!DNL Salesforce] che utilizzano solo la gestion
 
 Purtroppo, per gli utenti di [!DNL Salesforce] Advanced Currency Management, questo funzionamento presenta alcune sfumature, a causa di una limitazione di lunga data di [!DNL Salesforce]. La risposta breve a &quot;cosa facciamo in questo caso&quot; è che convertiamo gli importi dei ricavi utilizzando i tassi fissi definiti nella scheda &quot;Gestisci valute&quot; di base (non avanzata). In altre parole, ignoriamo completamente i tassi di cambio datati nonostante il fatto che il cliente abbia definito tassi di cambio datati.
 
-Per il lettore interessato, ecco perché funziona in questo modo. I nostri punti di contatto utilizzano i campi della formula per calcolare i ricavi (derivati dall’importo dell’opportunità associata). [!DNL Salesforce] supporta in modo nativo la conversione della valuta per questi calcoli di formula, ma solo per il gusto di base del supporto della valuta. È impossibile definire un campo formula che faccia riferimento ai tassi di cambio con data. [!DNL Salesforce] semplicemente non supporta questa funzionalità, quindi non abbiamo modo di fare riferimento ai tassi con data nei nostri calcoli dei ricavi nonostante il fatto che tali tassi con data esistano in [!DNL Salesforce] (sembra folle, ma è così che funziona).
+Per il lettore interessato, ecco perché funziona in questo modo. I nostri punti di contatto utilizzano i campi della formula per calcolare i ricavi (derivati dall’importo dell’opportunità associata). [!DNL Salesforce] supporta in modo nativo la conversione della valuta per questi calcoli di formula, ma solo per il tipo di supporto di base per la valuta. È impossibile definire un campo formula che faccia riferimento ai tassi di cambio con data. [!DNL Salesforce] semplicemente non supporta questa funzionalità, quindi non abbiamo modo di fare riferimento ai tassi con data nei nostri calcoli dei ricavi nonostante tali tassi con data esistano in [!DNL Salesforce] (sembra folle, ma è così che funziona).
 
 **Se il cliente ha utilizzato un flusso di lavoro per compilare un campo convertito, come deve utilizzare questo campo per andare avanti?**
 

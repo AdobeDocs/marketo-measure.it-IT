@@ -3,13 +3,17 @@ description: Linee guida per la rimozione e la soppressione dei punti di contatt
 title: Rimozione e soppressione dei punti di contatto
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
-
 ---
-
 # Rimozione e soppressione dei punti di contatto {#touchpoint-removal-and-touchpoint-suppression}
 
 Scopri come rimuovere o eliminare dal CRM i punti di contatto che soddisfano criteri specifici. Questo può essere utile per liberare spazio di dati se si dispone di [!DNL Salesforce] limiti di archiviazione dati.
@@ -64,7 +68,7 @@ Se fai un errore, non preoccuparti. È inoltre possibile eliminare singole righe
 
 ![4) Impostare le regole per i punti di contatto di attribuzione buyer se si desidera](assets/touchpoint-settings-8.png)
 
-Per terminare, [!UICONTROL Save and Process] le tue regole. Se effettui molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà a rimuovere i punti di contatto finché non fai clic su
+Per terminare, [!UICONTROL Save and Process] le tue regole. Se effettui molte modifiche, assicurati di salvarle durante il processo. [!DNL Marketo Measure] non inizierà effettivamente a rimuovere i tuoi punti di contatto fino a quando non fai clic su
 [!UICONTROL **Salva ed elabora**].
 
 | **Operatore** | **Caso d&#39;uso** |

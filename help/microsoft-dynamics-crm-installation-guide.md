@@ -3,14 +3,23 @@ description: Guida dettagliata per installare e configurare il pacchetto Marketo
 title: Guida all'installazione di [!DNL Microsoft Dynamics] CRM
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 1%
-
 ---
-
 # Guida all&#39;installazione di [!DNL Microsoft Dynamics] CRM {#microsoft-dynamics-crm-installation-guide}
 
 >[!NOTE]
@@ -72,7 +81,7 @@ Per le entità standard di Dynamics, fare riferimento al documento dello schema 
 1. Selezionare l&#39;oggetto (Punti di contatto di attribuzione buyer o Punti di contatto buyer) di cui eseguire il rendering nella griglia secondaria, a seconda della relazione oggetto. È possibile modificare le colonne visualizzate facendo clic sul pulsante Modifica. Il layout predefinito è impostato dalla soluzione gestita.
 
    Subgrid Buyer Attribution Touchpoint: account, opportunità e contatti
-Griglia secondaria Buyer Touchpoint - Lead e contatti
+   Griglia secondaria Buyer Touchpoint - Lead e contatti
 
 1. Dopo aver completato l’aggiornamento del modulo, pubblica e salva le modifiche.
 

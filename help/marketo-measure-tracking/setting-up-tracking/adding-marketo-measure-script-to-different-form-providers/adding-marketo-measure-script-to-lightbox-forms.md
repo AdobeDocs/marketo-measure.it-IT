@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874519
-description: Aggiunta dello script  [!DNL Marketo Measure]  a Lightbox Forms in corso - [!DNL Marketo Measure]
-title: Aggiunta dello script  [!DNL Marketo Measure]  a Lightbox Forms
+description: Aggiunta dello script [!DNL Marketo Measure] a Lightbox Forms - [!DNL Marketo Measure]
+title: Aggiunta dello script [!DNL Marketo Measure] a Lightbox Forms
 exl-id: fa9ce480-fc4f-4abd-8555-dbb74849747e
 feature: Tracking
-TQID: https://experienceleague.adobe.com/FGsXJ6c98YinAH4rgzfySe0wNCkHb5AWH1KcZ6whnjA
+TQID: 'https://experienceleague.adobe.com/FGsXJ6c98YinAH4rgzfySe0wNCkHb5AWH1KcZ6whnjA'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 187
+source-wordcount: '189'
 ht-degree: 0%
-
 ---
-
 # Aggiunta dello script [!DNL Marketo Measure] a Lightbox Forms {#adding-marketo-measure-script-to-lightbox-forms}
 
 Scopri come aggiungere correttamente il JavaScript [!DNL Marketo Measure] a un modulo all&#39;interno di un lightbox.

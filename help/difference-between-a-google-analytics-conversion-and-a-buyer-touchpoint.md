@@ -3,13 +3,17 @@ description: Differenza tra una conversione Google Analytics e una guida di Buye
 title: Differenza tra una conversione Google Analytics e un Buyer Touchpoint
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 1%
-
 ---
-
 # Differenza tra una conversione Google Analytics e un Buyer Touchpoint {#difference-between-a-google-analytics-conversion-and-a-buyer-touchpoint}
 
 Scopri cos&#39;è un obiettivo di [!DNL Google Analytics (GA)] e come si differenzia da un Buyer Touchpoint.
@@ -63,7 +67,7 @@ Tuttavia, i punti di contatto dell’acquirente agiscono in modo diverso.
 
 **Differenze tra i punti di contatto dell&#39;acquirente**
 
-[!DNL Marketo Measure] JavaScript tiene traccia dei dati di sessione e degli invii di moduli in tutti i moduli di un sito specifico. Non è necessario programmare gli obiettivi dal punto di vista di [!DNL Marketo Measure]. Questo processo è automatico. Per l&#39;invio di moduli, [!DNL Marketo Measure] segnala il completamento di un modulo ogni volta che un utente anonimo compila i campi delle informazioni in un determinato modulo e fa clic sul pulsante di invio del modulo. [!DNL Marketo Measure] non ha bisogno di una pagina di ringraziamento per registrare l’invio del modulo.
+[!DNL Marketo Measure] JavaScript tiene traccia dei dati di sessione e degli invii di moduli in tutti i moduli di un sito specifico. Non è necessario programmare gli obiettivi dal punto di vista di [!DNL Marketo Measure]. Questo processo è automatico. Per l&#39;invio di moduli, [!DNL Marketo Measure] segnala il completamento di un modulo ogni volta che un utente anonimo compila i campi delle informazioni in un determinato modulo e fa clic sul pulsante di invio del modulo. [!DNL Marketo Measure] non ha bisogno di una pagina di ringraziamento per registrare l&#39;invio del modulo.
 
 [!DNL Marketo Measure] crea un punto di contatto del modulo quando:
 

@@ -1,22 +1,26 @@
 ---
 unique-page-id: 18874718
-description: Creazione di una visualizzazione elenco campagne per  [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]
-title: Creazione di una visualizzazione elenco campagne per [!DNL Salesforce] Campagne
+description: Creazione di una visualizzazione elenco campagne per [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]
+title: Creazione di una visualizzazione elenco campagne per [!DNL Salesforce] campagne
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-TQID: https://experienceleague.adobe.com/MYh66JaJKdgBI7XVxfffWlX9QDg4SqLWDhpsdv1kSG4
+TQID: 'https://experienceleague.adobe.com/MYh66JaJKdgBI7XVxfffWlX9QDg4SqLWDhpsdv1kSG4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Troubleshooting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 0%
-
+source-wordcount: '448'
+ht-degree: 2%
 ---
-
 # Creazione di una visualizzazione elenco campagne per [!DNL Salesforce] campagne {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 Scopri come creare una Vista a elenco per le campagne da sincronizzare con i punti di contatto dell’acquirente.
@@ -33,7 +37,7 @@ La visualizzazione elenco di Campaign che è possibile creare consente di avere 
 
    * **Tipo** [UGUALE A] &#39;Tutti i tipi di campagna mappati ai tuoi canali offline&#39;. Consulta il tuo piano di implementazione o la scheda Canali offline in [!DNL Marketo Measure] ([experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} -> Il mio account -> Impostazioni -> Canali offline). Puoi selezionare i Tipi desiderati (quelli mappati a un canale di marketing offline) tramite l’icona della lente di ingrandimento.
 
-      * Scegli un massimo di 3 tipi per ciascun filtro. In un campo filtro è disponibile un limite di caratteri. Inizia con 3 Tipi per filtro e aggiungi ulteriori righe di filtri &quot;Tipo&quot;, se necessario.
+     * Scegli un massimo di 3 tipi per ciascun filtro. In un campo filtro è disponibile un limite di caratteri. Inizia con 3 Tipi per filtro e aggiungi ulteriori righe di filtri &quot;Tipo&quot;, se necessario.
 
    * **Data creazione** [MAGGIORE O UGUALE] la data di inizio [!DNL Marketo Measure]. Puoi trovare la data di inizio nel dashboard del ROI all&#39;interno dell&#39;app [!DNL Marketo Measure]. Seleziona semplicemente &quot;Dalla data di creazione&quot; nell’intervallo di date del trattino per visualizzare la data di inizio.
    * **&#42;Tipo di record&#42;** - Per apportare modifiche nella visualizzazione elenco, è necessario aggiungere un filtro per il tipo di record. Ogni record della campagna che potresti dover modificare deve avere lo stesso Tipo di record.

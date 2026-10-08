@@ -4,18 +4,21 @@ description: Configurazione e reporting test A/B - [!DNL Marketo Measure]
 title: Configurazione e reporting dei test A/B
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-TQID: https://experienceleague.adobe.com/lMtRvc6owu6vx-FsOjCyd40HGhQefpNIr48cnKP5CmM
+TQID: 'https://experienceleague.adobe.com/lMtRvc6owu6vx-FsOjCyd40HGhQefpNIr48cnKP5CmM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 348f752d-f464-5239-ab5e-c1faaeafb983
+    internal-label: A/B Testing
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: '409'
 ht-degree: 2%
-
 ---
-
 # Configurazione e reporting dei test A/B {#a-b-testing-set-up-and-reporting}
 
 L&#39;integrazione del test A/B di [!DNL Marketo Measure] consente di tenere traccia dell&#39;impatto sui ricavi degli esperimenti [in modo ottimale](https://www.optimizely.com/){target="_blank"} e del sito VWO. Questo articolo fornisce istruzioni su come aggiungere [!DNL Marketo Measure] sezioni di test A/B ai layout di pagina Lead, [!UICONTROL Contact], Case e [!UICONTROL Opportunity]. Vengono inoltre trattate le procedure di reporting generali e le raccomandazioni per l&#39;esecuzione di [!DNL Marketo Measure] tipi di report A/B.

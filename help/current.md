@@ -3,13 +3,17 @@ description: Note sulla versione corrente - Guida per gli utenti di Marketo Meas
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: ffecc0ee-70f2-5687-bca0-deee982ffbfa
+    internal-label: Release Notes
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 0%
-
 ---
-
 # Note sulla versione: 2024 {#release-notes-2024}
 
 Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.

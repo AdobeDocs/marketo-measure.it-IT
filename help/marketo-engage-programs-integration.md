@@ -3,13 +3,17 @@ description: Integrazione dei programmi [!DNL Marketo Engage] - [!DNL Marketo Me
 title: Integrazione dei programmi [!DNL Marketo Engage]
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 1%
-
 ---
-
 # Integrazione dei programmi [!DNL Marketo Engage] {#marketo-engage-programs-integration}
 
 Attraverso l&#39;integrazione di [!DNL Marketo Measure] con i programmi [!DNL Marketo Engage], i nostri clienti possono iniziare a creare punti di contatto per il tracciamento dell&#39;attribuzione dalle iscrizioni al programma Marketo. Questa funzionalità consente agli addetti al marketing di iniziare a tenere traccia delle iscrizioni ai programmi di e-mail o di coinvolgimento che altrimenti non sarebbero visibili da JavaScript [!DNL Marketo Measure] e dovrebbero essere misurati all&#39;interno del percorso di attribuzione.

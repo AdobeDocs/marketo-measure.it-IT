@@ -3,13 +3,17 @@ description: Indicazioni sulle impostazioni per gli utenti di Marketo Measure
 title: Impostazioni
 exl-id: 704dc52d-fa21-4475-878b-073e2e65c566
 feature: Multi-Currency
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 1%
-
 ---
-
 # Impostazioni {#settings}
 
 Esistono due bit di funzionalità separati associati a questa funzionalità, che si trovano nella scheda [!UICONTROL General Settings] del sistema di gestione delle relazioni con i clienti: Valute multiple e Valute avanzate.

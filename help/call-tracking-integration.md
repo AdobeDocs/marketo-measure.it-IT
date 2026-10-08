@@ -3,13 +3,19 @@ description: Guida all’integrazione del tracciamento delle chiamate per gli ut
 title: Integrazione tracciamento chiamate
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '767'
 ht-degree: 0%
-
 ---
-
 # Integrazione tracciamento chiamate {#call-tracking-integration}
 
 L&#39;integrazione con [!DNL CallTrackingMetrics] ha lo scopo di unire una sessione Web con una telefonata. Una telefonata viene trattata come un invio di un modulo a [!DNL Marketo Measure]. Dà credito a una sessione web che altrimenti sarebbe stata considerata solo una visita web perché non c&#39;era un invio effettivo del modulo.
@@ -70,7 +76,7 @@ Sia il tipo di punto di contatto che Medium contengono i dati estratti dal tipo 
 
 Innanzitutto, controlla l&#39;Attività per assicurarti che sia popolato [!DNL BizibleId]. Se non è presente alcun valore, non è possibile creare un punto di contatto. Questa situazione deve essere aggravata con CallTrackingMetrics.
 
-Se è presente un valore, tieni presente che consideriamo tutte le sessioni web solo 30 minuti. Se è stato fatto clic su un annuncio Google alle 12:17pm (inizio della sessione sul sito Web), ma la telefonata è stata effettuata solo all&#39;1:05pm, la sessione Web e la telefonata non verranno unite. Piuttosto, [!DNL Marketo Measure] crea un punto di contatto [!DNL Salesforce Task] separato per tenere traccia della telefonata, ma non avrà dati di sessione web.
+Se è presente un valore, tieni presente che consideriamo tutte le sessioni web solo 30 minuti. Se un annuncio Google è stato fatto clic alle 12:17 (inizio della sessione sul sito web), ma la telefonata è avvenuta solo alle 13:05, la sessione web e la chiamata non verranno unite. Piuttosto, [!DNL Marketo Measure] crea un punto di contatto [!DNL Salesforce Task] separato per tenere traccia della telefonata, ma non avrà dati di sessione web.
 
 ![Se è presente un valore, si noti che verranno considerati solo tutti i siti Web](assets/other-resources-2.png)
 

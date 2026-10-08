@@ -3,13 +3,17 @@ description: Tecniche consigliate per l’utilizzo di un importo di ricavi perso
 title: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
-
 ---
-
 # Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato {#best-practices-for-utilizing-a-custom-revenue-amount}
 
 ## Panoramica {#overview}
@@ -25,10 +29,10 @@ Quando si imposta un importo di ricavi personalizzato, tenere presenti le best p
 Aspetti da considerare:
 
 * Seleziona il campo dei ricavi accurato e utilizzato per tutte le opportunità
-   * ARR o valore totale del contratto consigliato
+  * ARR o valore totale del contratto consigliato
 * Non utilizzare un campo formula
 * Se si utilizza un importo di ricavi personalizzato per le conversioni di valuta, il metodo preferito è la funzionalità [!UICONTROL Marketo Measure Multiple Currencies].
-   * La funzionalità [!DNL Marketo Measure] più valute fa riferimento ai tassi di conversione stabiliti in [!DNL Salesforce] per garantire al meglio l&#39;allineamento tra le conversioni di valuta. Ciò ti consente di continuare a utilizzare il campo standard &quot;Importo&quot; (predefinito SFDC) o qualsiasi altro campo personalizzato relativo ai tassi di conversione [!DNL Salesforce].
+  * La funzionalità [!DNL Marketo Measure] più valute fa riferimento ai tassi di conversione stabiliti in [!DNL Salesforce] per garantire al meglio l&#39;allineamento tra le conversioni di valuta. Ciò ti consente di continuare a utilizzare il campo standard &quot;Importo&quot; (predefinito SFDC) o qualsiasi altro campo personalizzato relativo ai tassi di conversione [!DNL Salesforce].
 * Se aggiorni il campo Importo a cui desideri fare riferimento [!DNL Marketo Measure], utilizza Data Loader per aggiornare le opportunità passate in modo da garantire che i dati dei ricavi siano coerenti e che il campo corretto venga popolato tramite il flusso di lavoro
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}

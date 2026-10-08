@@ -3,18 +3,21 @@ description: Best practice per la segmentazione - [!DNL Marketo Measure]
 title: Best practice per la segmentazione
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-TQID: https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY
+TQID: 'https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d3432b7d-03be-560e-8abb-8681f1afaeb4
+    internal-label: Segmentation
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: '449'
 ht-degree: 0%
-
 ---
-
 # Best practice per la segmentazione {#best-practices-for-segmentation}
 
 ## Panoramica {#overview}
@@ -35,11 +38,11 @@ Se definisci la segmentazione per la prima volta o esamini solo la segmentazione
 * Allinea il nome del segmento alla nomenclatura dell’organizzazione, ovvero categoria = nome filtro, segmento = valore filtro
 * Non utilizzare i campi formula nelle regole
 * Quando possibile, crea la segmentazione sia sul lead/contatto che sull’opportunità in modo da poterla utilizzare in tutto il funnel
-   * Se sei un cliente Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni qui](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
-      * b2b.personStatus
-      * b2b.isConverted
-   * Non tutte le categorie di segmenti verranno allineate in tutto funnel
-      * Ad esempio, una categoria di segmenti &quot;Tipo di opportunità&quot; non è correlata ai lead, tuttavia un segmento correlato a &quot;Area&quot; è probabilmente una categoria che può essere definita in funnel
+  * Se sei un cliente Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni qui](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+    * b2b.personStatus
+    * b2b.isConverted
+  * Non tutte le categorie di segmenti verranno allineate in tutto funnel
+    * Ad esempio, una categoria di segmenti &quot;Tipo di opportunità&quot; non è correlata ai lead, tuttavia un segmento correlato a &quot;Area&quot; è probabilmente una categoria che può essere definita in funnel
 * Pensa al modo in cui attualmente desideri suddividere i tuoi dati, sia che si tratti di un CRM o di uno strumento BI, e considera la creazione di questo come un segmento in [!DNL Marketo Measure] in modo da poter avere lo stesso reporting in Discover
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}

@@ -3,21 +3,25 @@ description: Gestione dominio - [!DNL Marketo Measure]
 title: Gestione del dominio
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-TQID: https://experienceleague.adobe.com/kDKzgnweet5U9iOfl1fg8ewsgq6uU3T48SxLFpuC7tY
+TQID: 'https://experienceleague.adobe.com/kDKzgnweet5U9iOfl1fg8ewsgq6uU3T48SxLFpuC7tY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Integrations
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 559
+source-wordcount: '559'
 ht-degree: 0%
-
 ---
-
 # Gestione del dominio {#domain-management}
 
-Per i tenant abilitati per IMS che eseguono [!DNL Marketo Measure] nell&#39;interfaccia di Experience Cloud, [!DNL Marketo Measure] fornisce un&#39;interfaccia che consente agli utenti di gestire il proprio elenco di domini. Gli utenti di [!DNL Marketo Measure] devono prima verificare tutti i domini che desiderano monitorare in [Adobe Admin Console](https://adminconsole.adobe.com/). Una volta verificati i domini in Admin Console, gli utenti possono gestire se [!DNL Marketo Measure] utilizza questi domini per tenere traccia del traffico del sito Web.
+Per i tenant abilitati per IMS che eseguono [!DNL Marketo Measure] nell&#39;interfaccia Experience Cloud, [!DNL Marketo Measure] fornisce un&#39;interfaccia che consente agli utenti di gestire il proprio elenco di domini. Gli utenti di [!DNL Marketo Measure] devono prima verificare tutti i domini che desiderano monitorare in [Adobe Admin Console](https://adminconsole.adobe.com/). Una volta verificati i domini in Admin Console, gli utenti possono gestire se [!DNL Marketo Measure] utilizza questi domini per tenere traccia del traffico del sito Web.
 
 ## Aggiunta di domini in Admin Console {#adding-domains-in-admin-console}
 

@@ -1,16 +1,20 @@
 ---
-description: Creazione di report personalizzati [!DNL Marketo Measure] Guida ai tipi di report per gli utenti di Marketo Measure
-title: 'Creazione di tipi di report personalizzati [!DNL Marketo Measure] '
+description: Guida alla creazione di tipi di report [!DNL Marketo Measure] personalizzati per gli utenti di Marketo Measure
+title: Creazione di tipi di report [!DNL Marketo Measure] personalizzati
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '333'
 ht-degree: 1%
-
 ---
-
 # Creazione di tipi di report [!DNL Marketo Measure] personalizzati {#creating-custom-marketo-measure-report-types}
 
 >[!NOTE]

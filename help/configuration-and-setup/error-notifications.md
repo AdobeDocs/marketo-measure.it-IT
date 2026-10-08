@@ -3,13 +3,17 @@ description: Indicazioni sulle notifiche di errore per gli utenti di Marketo Mea
 title: Notifiche di errore
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
-
 ---
-
 # Notifiche di errore {#error-notifications}
 
 Di seguito è riportato un elenco di errori che potresti ricevere tramite notifica in-app o e-mail. Se ricevi uno di questi, segui i rispettivi passaggi per la risoluzione dei problemi. Se questi passaggi non risolvono il problema, contattare il [Supporto Marketo](https://nation.marketo.com/t5/support/ct-p/Support).
@@ -46,7 +50,7 @@ Per visualizzare il messaggio di notifica completo in [!DNL Marketo Measure], fa
           <p>Puoi anche regolare i crediti CRM che Marketo Measure utilizza seguendo i passaggi seguenti:</p>
           <ul>
             <li>Passa a <b>Impostazioni</b> &gt; <b>CRM</b> &gt; <b>Generale</b></li>
-            <li>Aggiorna il limite API CRM giornaliero<br/>
+            <li>Aggiornare il limite API CRM giornaliero<br/>
               <ul>
                 <li><b>Nota: il valore predefinito è 100.000</b></li>
               </ul>
@@ -179,7 +183,7 @@ La documentazione di Salesforce sui trigger di flusso <a href="https://admin.sal
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Errore durante l'esportazione CRM: MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>In Marketo Measure manca l’autorizzazione Visualizza/Modifica lead convertiti</td>
-      <td>Per assistenza sull'abilitazione di questa autorizzazione nel CRM, fare riferimento al seguente documento di Experience League<br/>
+      <td>Consulta il seguente documento di Experience League per assistenza sull’abilitazione di questa autorizzazione nel tuo CRM<br/>
           <a href="/help/marketo-measure-salesforce-reporting/enabling-the-permission-to-edit-converted-leads.md">Abilitazione dell'autorizzazione per la modifica di lead convertiti</a></td>
     </tr>
     <tr>

@@ -4,19 +4,23 @@ description: Sincronizzazione dati cronologici - [!DNL Marketo Measure]
 title: Sincronizzazione dei dati cronologici
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-TQID: https://experienceleague.adobe.com/RODJgjoLhJW0g3ra0H-mn8bOeBicfOuVlLSvU--Gaeo
+TQID: 'https://experienceleague.adobe.com/RODJgjoLhJW0g3ra0H-mn8bOeBicfOuVlLSvU--Gaeo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1507
+source-wordcount: '1507'
 ht-degree: 1%
-
 ---
-
 # Sincronizzazione dei dati cronologici {#syncing-historical-data}
 
 [!DNL Marketo Measure] è una soluzione che fornisce i dati più granulari e actionable. Tuttavia, è possibile che tu disponga di dati esistenti di cui desideri l’attribuzione. È possibile generare punti di contatto per i dati storici, ma è importante prendere in considerazione alcuni fattori prima di procedere con questo processo.

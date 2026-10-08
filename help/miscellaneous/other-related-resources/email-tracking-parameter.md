@@ -4,16 +4,18 @@ description: Parametro di tracciamento e-mail - [!DNL Marketo Measure]
 title: Parametro di tracciamento e-mail
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-TQID: https://experienceleague.adobe.com/IC3sOBtb9A4EUwhhtD4s7JBTx2gT07y9DtKtM5F1qRQ
+TQID: 'https://experienceleague.adobe.com/IC3sOBtb9A4EUwhhtD4s7JBTx2gT07y9DtKtM5F1qRQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 462
+source-wordcount: '462'
 ht-degree: 2%
-
 ---
-
 # Parametro di tracciamento e-mail {#email-tracking-parameter}
 
 Il parametro di tracciamento e-mail [!DNL Marketo Measure] consente agli addetti al marketing di trattare i clic sulle e-mail come invii di moduli, in modo che vengano generati punti di contatto per tali azioni. Senza utilizzare un parametro di tracciamento e-mail, i click-through da un’e-mail vengono trattati solo come &quot;visite web&quot; fino a quando l’utente non si impegna effettivamente con il sito tramite l’invio di un modulo o una chat web.

@@ -2,13 +2,14 @@
 description: Linee guida per Single Sign-On per gli utenti di Marketo Measure
 title: Single Sign-On
 exl-id: a328e9cb-8352-4693-8a44-533e08f1a29c
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 0%
-
 ---
-
 # Single Sign-On {#single-sign-on}
 
 SAML (Security Assertion Markup Language) per SSO (Single Sign-On) consente agli utenti di eseguire l&#39;autenticazione tramite il provider di identità di un&#39;azienda quando accedono all&#39;app [!DNL Marketo Measure]. SSO consente a un utente di eseguire l&#39;autenticazione una sola volta, senza dover eseguire l&#39;autenticazione di app separate. SAML è una necessità per i clienti aziendali perché non tutti gli utenti dispongono di un account [!DNL Salesforce] o [!DNL Google] all&#39;interno dell&#39;organizzazione. Per eseguire la scalabilità, [!DNL Marketo Measure] ha sviluppato una soluzione SAML in grado di supportare i provider di identità aziendali.

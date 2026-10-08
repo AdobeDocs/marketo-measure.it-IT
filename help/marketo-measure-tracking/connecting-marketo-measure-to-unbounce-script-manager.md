@@ -1,15 +1,19 @@
 ---
-description: Connessione in corso [!DNL Marketo Measure] alle indicazioni di Gestione script per l'annullamento dei messaggi di mancato recapito per gli utenti Marketo Measure
-title: Connessione in corso  [!DNL Marketo Measure]  a Gestione script per l'annullamento della remissione
+description: Connessione di [!DNL Marketo Measure] alle linee guida di Unbounce Script Manager per gli utenti di Marketo Measure
+title: Connessione di [!DNL Marketo Measure] a Gestione script per l'annullamento della remissione
 exl-id: c3212bc3-1d8f-4da5-bb2d-11ffd2fb4e98
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '116'
 ht-degree: 3%
-
 ---
-
 
 # Connessione di [!DNL Marketo Measure] a Gestione script per l&#39;annullamento della remissione {#connecting-marketo-measure-to-unbounce-script-manager}
 

@@ -4,18 +4,26 @@ description: Attribuzione attività Salesforce - [!DNL Marketo Measure]
 title: Attribuzione attività Salesforce
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-TQID: https://experienceleague.adobe.com/ti99Z40gvNCYWahCq2viPcNh-eAW4-laO3C6fBY7INU
+TQID: 'https://experienceleague.adobe.com/ti99Z40gvNCYWahCq2viPcNh-eAW4-laO3C6fBY7INU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '642'
 ht-degree: 1%
-
 ---
-
 # Attribuzione attività Salesforce {#salesforce-activities-attribution}
 
 L&#39;integrazione delle attività di Salesforce [!DNL Marketo Measure] inserisce record Attività ed Evento specifici nel modello di attribuzione. Inizia a tenere traccia di elementi come e-mail di vendita o telefonate di vendita che non ricevevano il dovuto credito. Per configurare la regola delle attività, vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Da qui, passare alla scheda **[!UICONTROL Settings]** e fare clic sulla scheda **[!UICONTROL Activities]**.
@@ -33,11 +41,11 @@ Stai per utilizzare questo nome della campagna [!DNL Marketo Measure] per indica
 Acquisisci familiarità con questa gerarchia:
 
 * Channel
-   * Sottocanale
-      * Campaign
-      * Campaign
-   * Sottocanale
-      * Campaign
+  * Sottocanale
+    * Campaign
+    * Campaign
+  * Sottocanale
+    * Campaign
 
 >[!TIP]
 >

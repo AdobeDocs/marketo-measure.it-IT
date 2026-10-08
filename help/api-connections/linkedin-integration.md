@@ -3,13 +3,19 @@ description: LinkedIn - Linee guida per l’integrazione per gli utenti di Marke
 title: Integrazione LinkedIn
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2769'
 ht-degree: 0%
-
 ---
-
 # Integrazione LinkedIn {#linkedin-integration}
 
 ## Panoramica {#overview}
@@ -87,7 +93,7 @@ I tipi di formati di annunci di contenuti sponsorizzati supportati da [!DNL Mark
 
 Con questa integrazione di [!DNL Marketo Measure/LinkedIn], chiediamo ai clienti di non copiare, clonare o duplicare elementi creativi esistenti. Se vengono trovate condivisioni che vengono rilevate per essere utilizzate solo su un Creative, [!DNL Marketo Measure] può assegnare i tag di condivisione senza dover ricreare alcuna creativa o condivisione e la cronologia di tutti gli annunci (impression, clic, condivisioni) rimarrà.
 
-Non appena una condivisione verrà trovata condivisa tra più creativi, [!DNL Marketo Measure] dovrà eseguire un processo di pausa, copia e riassegnazione tag per creare un set univoco. [!DNL Marketo Measure] mette in pausa e archivia i contenuti creativi in tempo reale, cancellando quindi Ad History (Storico annunci) tra cui impression, clic e condivisioni social per assegnare correttamente i tag automatici a tutto.
+Non appena una condivisione verrà trovata condivisa tra più creativi, [!DNL Marketo Measure] dovrà eseguire un processo di pausa, copia e riassegnazione tag per creare un set univoco. [!DNL Marketo Measure] sospenderà e archivierà i creativi in tempo reale e quindi cancellerà la cronologia degli annunci, inclusi impression, clic e condivisioni social per assegnare correttamente i tag automatici a tutto.
 
 In futuro, [!DNL Marketo Measure] consiglia di non duplicare le condivisioni [!DNL LinkedIn] e di mantenere tutte le creative e le condivisioni il più possibile univoche, in modo che sia possibile aggiungere semplicemente il tracciamento senza dover cancellare la cronologia degli annunci.
 
@@ -108,7 +114,7 @@ Creative D : Share 234
 
 ![Creative D: Condividi 234](../assets/marketo-engage-activities-05.png)
 
-`1)` [!DNL Marketo Measure] esamina innanzitutto tutte le campagne, i contenuti creativi e le condivisioni con stato &quot;Attivo&quot;. [!DNL Marketo Measure] non assegna tag agli annunci in pausa, archiviati o annullati. Se un annuncio è stato messo in pausa e poi impostato su [!UICONTROL active], verrà contrassegnato una volta riattivato. Se è possibile trovare una condivisione univoca, ovvero che non viene utilizzata in più creative o campagne (ad esempio, Creative A: Share 123), [!DNL Marketo Measure] aggiungerà il parametro personalizzato `>> ?_bl={creativeId}` all&#39;URL di condivisione.
+`1)` [!DNL Marketo Measure] esamina innanzitutto tutte le campagne, i contenuti creativi e le condivisioni con stato &quot;Attivo&quot;. [!DNL Marketo Measure] non assegnerà tag agli annunci in pausa, archiviati o annullati. Se un annuncio è stato messo in pausa e poi impostato su [!UICONTROL active], verrà contrassegnato una volta riattivato. Se è possibile trovare una condivisione univoca, ovvero che non viene utilizzata in più creative o campagne (ad esempio, Creative A: Share 123), [!DNL Marketo Measure] aggiungerà il parametro personalizzato `>> ?_bl={creativeId}` all&#39;URL di condivisione.
 
 `2)` Se la condivisione è stata condivisa e ha perso la sua unicità (ad esempio, Creative B: Share 234 e Creative C: Share 234 e Creative D: Share 234), [!DNL Marketo Measure] sospenderà e archivierà tutte le creazioni simili (ovvero Creative B, Creative C e Creative D).
 
@@ -134,7 +140,7 @@ Tramite l&#39;API del modulo annunci di [!DNL LinkedIn's] e l&#39;API di rispost
 
 I moduli LinkedIn possono contenere più indirizzi e-mail. Quando scariciamo le risposte al modulo, cercheremo gli indirizzi e-mail con la seguente priorità: E-mail aziendale, Indirizzo e-mail (campo modulo principale) o campi personalizzati con un valore e-mail valido.
 
-Indipendentemente dallo stato di Campaign o Creative, tutte le risposte al modulo daranno luogo a un punto di contatto. [!DNL Marketo Measure] ha una restrizione di lookback di 90 giorni, pertanto [!DNL Marketo Measure] non è in grado di accedere alle risposte del modulo più vecchie di 90 giorni. Tuttavia, più a lungo l&#39;integrazione di [!DNL Marketo Measure] e [!DNL LinkedIn] è abilitata, più punti di contatto del modulo della generazione lead saranno visibili tramite [!DNL Marketo Measure].
+Indipendentemente dallo stato di Campaign o Creative, tutte le risposte al modulo daranno luogo a un punto di contatto. [!DNL Marketo Measure] ha una restrizione di lookback di 90 giorni, pertanto [!DNL Marketo Measure] non è in grado di accedere alle risposte del modulo più vecchie di 90 giorni. Tuttavia, più a lungo l&#39;integrazione di [!DNL Marketo Measure] e [!DNL LinkedIn] è abilitata, più punti di contatto del modulo generazione lead saranno visibili tramite [!DNL Marketo Measure].
 
 >[!NOTE]
 >
@@ -284,7 +290,7 @@ Una dark share è un post in cui non viene mai pubblicato sulla pagina dell&#39;
 
 **Quali sono gli stati contrassegnati da [!DNL Marketo Measure]?**
 
-In una campagna [!DNL LinkedIn] e in Creative sono disponibili quattro stati diversi: Attivo, In pausa, Archiviato e Annullato. Eseguiamo il tag solo per le campagne e le creatività attive. Se si assegnano tag ad altri stati, questi verranno impostati nuovamente su Attivo. [!DNL Marketo Measure] non assegnerà tag alle campagne o alle creatività in pausa, archiviate o annullate, ma riprenderà l’assegnazione tag se lo stato diventa Attivo.
+In una campagna [!DNL LinkedIn] e in Creative sono disponibili quattro stati diversi: Attivo, In pausa, Archiviato e Annullato. Eseguiamo il tag solo per le campagne e le creatività attive. Se si assegnano tag ad altri stati, questi verranno impostati nuovamente su Attivo. [!DNL Marketo Measure] non assegnerà tag alle campagne o alle creatività in pausa, archiviate o annullate, ma riprenderà l&#39;assegnazione tag se lo stato diventa Attivo.
 
 **Qual è il valore utilizzato da [!DNL Marketo Measure] per assegnare tag?**
 
@@ -304,11 +310,11 @@ Alcuni esperti di marketing hanno rilevato che inseriranno un collegamento immag
 
 **Oh no, qualcuno nel mio team ha clonato accidentalmente una condivisione. Posso metterlo in pausa?**
 
-Nessun problema. [!DNL Marketo Measure] verifica a livello di programmazione la presenza di condivisioni non più univoche, ovvero che sono state copiate in un Creative diverso. Una volta rilevata la copia, [!DNL Marketo Measure] seguirà il solito flusso per assegnare tag e creare nuovi annunci.
+Nessun problema. [!DNL Marketo Measure] controllerà a livello di programmazione la presenza di condivisioni non più univoche, ovvero che sono state copiate in un altro Creative. Una volta rilevata la copia, [!DNL Marketo Measure] seguirà il solito flusso per assegnare tag e creare nuovi annunci.
 
 **Il mio annuncio era in attesa di revisione in precedenza. Perché è di nuovo in attesa di revisione dopo che [!DNL Marketo Measure] l&#39;ha taggata?**
 
-LinkedIn richiede che tutti gli annunci creati o modificati vengano sottoposti al normale processo di sicurezza prima della pubblicazione. [!DNL Marketo Measure] tenta di intercettare l’annuncio il più rapidamente possibile, eseguendo la scansione per nuovi annunci ogni 6 ore, ma con [!DNL LinkedIn's] passaggio aggiuntivo, può ritardare il lancio di alcune ore.
+LinkedIn richiede che tutti gli annunci creati o modificati vengano sottoposti al normale processo di sicurezza prima della pubblicazione. [!DNL Marketo Measure] tenta di intercettare l&#39;annuncio il più rapidamente possibile, eseguendo la scansione per nuovi annunci ogni 6 ore, ma con [!DNL LinkedIn's] passaggio aggiuntivo, può ritardare il lancio di alcune ore.
 
 **Sono presenti 2 URL nel mio annuncio. A quale viene assegnato un tag?**
 

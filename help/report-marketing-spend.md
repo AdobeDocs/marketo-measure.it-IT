@@ -3,13 +3,19 @@ description: Indicazioni sulle spese di marketing per gli utenti di Marketo Meas
 title: Segnala spesa di marketing
 exl-id: 46b0f81c-acd1-47a5-bf75-6a943edb9009
 feature: Reporting, Spend Management
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # Segnala spesa di marketing {#report-marketing-spend}
 
 ## Tabella delle spese di marketing {#marketing-spend-table}
@@ -30,7 +36,7 @@ Se la valuta del provider di annunci non corrisponde a una valuta estratta dal C
 
 ## Migrare alle spese di marketing convertite {#migrate-to-converted-marketing-spend}
 
-Poiché la spesa di marketing è stata storicamente solo in una singola valuta (USD), è necessaria una piccola quantità di lavoro per modificare tutte le spese riportate nella nuova valuta. Anche se nel tuo account non sono abilitate più divise, se hai una singola divisa aziendale diversa da USD, devi effettuare questa migrazione.
+Poiché storicamente le spese di marketing sono state in un’unica valuta (USD), è necessario un po’ di lavoro per convertire tutte le spese riportate nella nuova valuta. Anche se per il tuo account non sono abilitate più valute, se disponi di una singola valuta aziendale diversa da USD devi effettuare questa migrazione.
 
 1. Scarica il file Spesa corrente in un file CSV
 1. Nella colonna Valuta viene visualizzato &quot;[!UICONTROL USD]&quot; come valuta assunta. È possibile sostituire manualmente tutte le occorrenze di &quot;[!UICONTROL USD]&quot; oppure utilizzare Trova+Sostituisci per modificare tutte le istanze &quot;[!UICONTROL USD]&quot; nella propria valuta aziendale, ad esempio &quot;[!UICONTROL EUR]&quot; o &quot;[!UICONTROL GBP]&quot;.

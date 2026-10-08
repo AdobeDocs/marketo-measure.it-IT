@@ -1,21 +1,27 @@
 ---
 unique-page-id: 18874672
-description: Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono - Marketo Measure - Documentazione del prodotto
-title: Come [!DNL Marketo Measure] e [!DNL Salesforce] interagiscono
+description: Interazione di [!DNL Marketo Measure] e [!DNL Salesforce] - Marketo Measure - Documentazione del prodotto
+title: Interazione di [!DNL Marketo Measure] e [!DNL Salesforce]
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/71lT9aeqiSrxM12rpi7rDPoVaq-vX5GDOEdiOl8Dnds
+TQID: 'https://experienceleague.adobe.com/71lT9aeqiSrxM12rpi7rDPoVaq-vX5GDOEdiOl8Dnds'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Taxonomy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1284
+source-wordcount: '1288'
 ht-degree: 17%
-
 ---
-
 # Interazione di [!DNL Marketo Measure] e [!DNL Salesforce] {#how-marketo-measure-and-salesforce-interact}
 
 >[!NOTE]

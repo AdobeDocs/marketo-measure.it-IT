@@ -3,14 +3,18 @@ description: '[!DNL Marketo Measure] cookie - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 10%
-
 ---
-
 # Cookie di Marketo Measure {#marketo-measure-cookies}
 
 Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applichi il JavaScript [!DNL Marketo Measure] alle pagine di destinazione. Queste informazioni possono essere utili al team di sviluppo web durante l’implementazione.
@@ -31,6 +35,6 @@ Scopri i vari cookie [!DNL Marketo Measure] caricati sul tuo sito quando applich
 | `_BUID` | Terze parti, dominio=.bizible.com | ID utente universale per identificare un utente tra più domini. | 1 anno | Sì | No | Edgecast |
 | `_BUID` | Terze parti, dominio=.bizibly.com | Mappatura tra l’ID cookie di Marketo Measure sul dominio del tenant e il relativo ID cookie di impression a doppio clic. | 1 anno | Sì | No | Edgecast |
 
-Se durante la configurazione di JavaScript viene attivato un avviso di Firewall applicazione Web (WAF), gli utenti possono disabilitare la regola di WAF o inserire nell&#39;elenco Consentiti i cookie, come nell’esempio seguente:
+Se durante la configurazione di JavaScript viene attivato un avviso di WAF (Web Application Firewall), gli utenti possono disabilitare la regola di WAF o inserire nell&#39;elenco Consentiti i cookie, come nell’esempio seguente:
 
 ![Se viene attivato un avviso di Firewall applicazione Web (WAF) durante il JavaScript](assets/adding-script-1.png)

@@ -3,23 +3,27 @@ description: Panoramica dell'interfaccia di Adobe Experience Cloud - [!DNL Marke
 title: Panoramica sull’interfaccia di Adobe Experience Cloud
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-TQID: https://experienceleague.adobe.com/sWShCKtPiGe5MWS09Le1F9a-gbds18qA9Cae0asctfg
+TQID: 'https://experienceleague.adobe.com/sWShCKtPiGe5MWS09Le1F9a-gbds18qA9Cae0asctfg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: '304'
 ht-degree: 24%
-
 ---
-
 # Panoramica sull’interfaccia di Adobe Experience Cloud {#experience-cloud-interface-overview}
 
-L&#39;interfaccia Adobe Experience Cloud consente di allineare l&#39;aspetto delle applicazioni e dei servizi Adobe Experience Cloud. Ma non si tratta solo di un nuovo design. Si tratta di un&#39;applicazione a pagina singola che offre l&#39;esperienza utente in una singola istanza.
+L’interfaccia di Adobe Experience Cloud allinea l’aspetto delle applicazioni e dei servizi Adobe Experience Cloud. Ma non si tratta solo di un nuovo design. Si tratta di un&#39;applicazione a pagina singola che offre l&#39;esperienza utente in una singola istanza.
 
 ## Flusso utente {#user-flow}
 
-Se si è già connessi a un prodotto Adobe Experience Cloud, fare clic sull&#39;icona del menu e selezionare **[!DNL Marketo Measure]**.
+Se hai già effettuato l&#39;accesso a un prodotto Adobe Experience Cloud, fai clic sull&#39;icona del menu e seleziona **[!DNL Marketo Measure]**.
 
 ![](assets/unified-shell-overview-4.png)
 
@@ -73,7 +77,7 @@ I segnalibri vengono reindirizzati. Ad esempio, se dovessi passare a https://app
 
 **Impossibile accedere a [!DNL Marketo Measure] tramite l&#39;interfaccia Experience Cloud. Quale potrebbe essere il problema?**
 
-Se è possibile accedere a Adobe Experience Cloud ma si visualizza una pagina come quella riportata di seguito, il problema potrebbe verificarsi sul lato [!DNL Marketo Measure]:
+Se è possibile accedere ad Adobe Experience Cloud ma si visualizza una pagina come quella riportata di seguito, il problema potrebbe verificarsi sul lato [!DNL Marketo Measure]:
 
 ![](assets/unified-shell-overview-11.png)
 

@@ -1,20 +1,25 @@
 ---
 description: Installazione e configurazione del pacchetto Salesforce [!DNL Marketo Measure] - [!DNL Marketo Measure]
-title: '[!DNL Marketo Measure] [!DNL Salesforce] Installazione e configurazione del pacchetto'
+title: Installazione e configurazione del pacchetto [!DNL Marketo Measure] [!DNL Salesforce]
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-TQID: https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g
+TQID: 'https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Integrations
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 504
+source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # Installazione e configurazione del pacchetto Salesforce [!DNL Marketo Measure] {#marketo-measure-salesforce-package-installation-and-set-up}
 
 Prima di installare il pacchetto di base [!DNL Marketo Measure] [!DNL Salesforce], è necessario determinare se si sta installando in una sandbox [!DNL Salesforce] prima di passare all&#39;istanza di produzione di Salesforce.
@@ -66,9 +71,9 @@ Passaggio 1: creare un profilo [!DNL Marketo Measure] specifico
 1. Assegna le seguenti autorizzazioni:
 
 * &quot;[!DNL Marketo Measure] set di autorizzazioni amministratore&quot;
-   * Il set di autorizzazioni gestite consente a un amministratore di SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
+  * Il set di autorizzazioni gestite consente a un amministratore di SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
 * &quot;Visualizza e modifica set di autorizzazioni lead convertiti&quot;
-   * Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
+  * Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
 
 >[!NOTE]
 >

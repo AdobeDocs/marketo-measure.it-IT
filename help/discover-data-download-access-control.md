@@ -3,13 +3,17 @@ description: Scopri come controllare quali utenti possono scaricare i dati da Di
 title: Controllo dell'accesso a [!UICONTROL Discover Data Download]
 exl-id: fa9f2245-4bb0-4b58-849c-1941c108e1c1
 feature: Discover
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 12b64954-e901-54a3-a305-e8e9aa516eb3
+    internal-label: Discover
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 5%
-
 ---
-
 # Controllo dell&#39;accesso a [!UICONTROL Discover Data Download] {#discover-data-download-access-control}
 
 Il controllo [!UICONTROL Discover Data Download] consente agli amministratori di [!DNL Marketo Measure] di impostare i criteri di download dei dati per le dashboard di individuazione in base ai ruoli degli utenti. Il controllo copre tutte le azioni di download dei dati nei dashboard di individuazione.

@@ -1,23 +1,26 @@
 ---
 unique-page-id: 18874539
-description: Creazione di tipi di report personalizzati [!DNL Marketo Measure] - [!DNL Marketo Measure]
-title: 'Creazione di tipi di report personalizzati [!DNL Marketo Measure] '
+description: Creazione di tipi di report [!DNL Marketo Measure] personalizzati - [!DNL Marketo Measure]
+title: Creazione di tipi di report [!DNL Marketo Measure] personalizzati
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-TQID: https://experienceleague.adobe.com/9EUfRTrISEMdz70ZgJE5MjP1bworxRqnFZVnjYEmSio
+TQID: 'https://experienceleague.adobe.com/9EUfRTrISEMdz70ZgJE5MjP1bworxRqnFZVnjYEmSio'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 263
+source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # Creazione di tipi di report [!DNL Marketo Measure] personalizzati {#creating-custom-marketo-measure-report-types}
 
 >[!NOTE]

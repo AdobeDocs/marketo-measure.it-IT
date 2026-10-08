@@ -3,13 +3,17 @@ description: Guida ai metodi di gestione delle spese per gli utenti di Marketo M
 title: Metodi di gestione della spesa
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
-
 ---
-
 # Metodi di gestione della spesa {#spend-management-methods}
 
 I dati di spesa sono fondamentali per il corretto reporting del ROI con [!DNL Marketo Measure]. Per ottenere rapporti sul ROI precisi e completi su tutti i canali e i sottocanali, è necessario assicurarsi di disporre dei dati di spesa appropriati da inserire in [!DNL Marketo Measure].
@@ -28,7 +32,7 @@ Ogni account [!DNL Marketo Measure] ha accesso a una funzionalità denominata [S
 
 Quando è abilitata, questa funzione richiama automaticamente le spese da qualsiasi campagna/programma di gestione delle relazioni con i clienti che soddisfa i seguenti criteri:
 
-i. [!DNL Marketo Measure] verifica innanzitutto se la campagna/il programma sta creando punti di contatto da una [regola di sincronizzazione campagna](/help/channel-tracking-and-setup/custom-campaign-sync.md) creata o da una [regola di sincronizzazione programma](/help/marketo-engage-programs-integration.md) creata oppure il valore [Abilita punti di contatto buyer](/help/channel-tracking-and-setup/syncing-offline-campaigns.md) è &quot;Includi tutti i membri della campagna&quot; o &quot;Includi membri della campagna &#39;Risponsi&#39;.&quot;
+i. [!DNL Marketo Measure] verifica innanzitutto se la campagna o il programma sta creando punti di contatto da una [regola di sincronizzazione campagna](/help/channel-tracking-and-setup/custom-campaign-sync.md) creata o da una [regola di sincronizzazione programma](/help/marketo-engage-programs-integration.md) creata oppure il valore [Abilita punti di contatto buyer](/help/channel-tracking-and-setup/syncing-offline-campaigns.md) è &quot;Includi tutti i membri della campagna&quot; o &quot;Includi i membri della campagna &quot;Risponsi&quot;.&quot;
 
 ii. È necessario inserire una data di inizio nella campagna/nel programma
 

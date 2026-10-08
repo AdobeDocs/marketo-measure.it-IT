@@ -3,13 +3,17 @@ description: Scopri l’attribuzione basata sull’account e come Adobe Marketo 
 title: Attribuzione basata sull’account
 exl-id: 9c1a03c8-f884-4c08-97ae-b848cc200038
 feature: Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
-
 ---
-
 # Attribuzione basata sull’account {#account-based-attribution}
 
 Con l&#39;ascesa di Account-Based Marketing (ABM), è importante capire come [!DNL Marketo Measure] può completare la tua strategia ABM. [!DNL Marketo Measure] fa emergere ogni punto di contatto per ogni lead e contatto sotto i tuoi account.

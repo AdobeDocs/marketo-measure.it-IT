@@ -1,15 +1,22 @@
 ---
-description: Consigliate [!DNL Salesforce] Autorizzazioni per [!DNL Marketo Measure] Linee guida utente connesso per gli utenti di Marketo Measure
-title: ' [!DNL Salesforce] Autorizzazioni consigliate per [!DNL Marketo Measure] Utente connesso'
+description: Autorizzazioni [!DNL Salesforce] consigliate per [!DNL Marketo Measure] Guida utente connesso per gli utenti di Marketo Measure
+title: Autorizzazioni [!DNL Salesforce] consigliate per [!DNL Marketo Measure] utente connesso
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '448'
 ht-degree: 1%
-
 ---
-
 # Autorizzazioni [!DNL Salesforce] consigliate per [!DNL Marketo Measure] utente connesso {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
 
 [!DNL Marketo Measure] invia e riceve dati tramite un utente [!DNL Salesforce] connesso all&#39;interno dell&#39;app [!DNL Marketo Measure].
@@ -30,7 +37,7 @@ Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati 
 
 * Casella di controllo [!DNL Salesforce] utente marketing
 
-La casella di controllo [!UICONTROL Marketing User] consente all&#39;utente di creare campagne e utilizzare l&#39;Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell’oggetto della campagna.
+La casella di controllo [!UICONTROL Marketing User] consente all&#39;utente di creare campagne e utilizzare l&#39;Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell&#39;oggetto della campagna.
 
 **Risoluzione dei problemi aggiuntivi**
 
@@ -42,6 +49,6 @@ Se l&#39;utente dedicato non ha accesso ai lead nelle code, non può modificare 
 
 * Sicurezza e accessibilità a livello di campo
 
-La sicurezza a livello di campo e l’accessibilità del campo sono correlate, ma presentano alcune differenze chiave. La sicurezza a livello di campo definisce la visibilità del campo per un determinato profilo, mentre l’accessibilità dei campi determina se un campo è modificabile in base alla sicurezza a livello di campo e alla configurazione del layout di pagina. Utilizzando i set di autorizzazioni del pacchetto [!DNL Marketo Measure], si ricevono le impostazioni di sicurezza necessarie per gli oggetti campo. A volte, per avere la corretta accessibilità dei campi, l&#39;utente connesso deve avere i campi [!DNL Marketo Measure] nei layout di pagina. [!DNL Marketo Measure] i campi nel layout consentono la mappatura dei dati [!DNL Marketo Measure] in [!DNL Salesforce]. Dipende dall&#39;ambiente [!DNL Salesforce] specifico.
+La sicurezza a livello di campo e l’accessibilità del campo sono correlate, ma presentano alcune differenze chiave. La sicurezza a livello di campo definisce la visibilità del campo per un determinato profilo, mentre l’accessibilità dei campi determina se un campo è modificabile in base alla sicurezza a livello di campo e alla configurazione del layout di pagina. Utilizzando i set di autorizzazioni del pacchetto [!DNL Marketo Measure], si ricevono le impostazioni di sicurezza necessarie per gli oggetti campo. A volte, per avere la corretta accessibilità dei campi, l&#39;utente connesso deve avere i campi [!DNL Marketo Measure] nei layout di pagina. I campi [!DNL Marketo Measure] nel layout consentono il mapping dei dati [!DNL Marketo Measure] in [!DNL Salesforce]. Dipende dall&#39;ambiente [!DNL Salesforce] specifico.
 
 Ogni [!DNL Salesforce] organizzazione ha esigenze individuali, ma ti forniamo i nostri requisiti per bilanciare le esigenze di accesso a [!DNL Marketo Measure] con i tuoi protocolli di sicurezza. Non esitare a contattare [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

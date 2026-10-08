@@ -3,23 +3,31 @@ description: '''[!DNL Marketo Measure] Panoramica di Ultimate - [!DNL Marketo Me
 title: Panoramica di [!DNL Marketo Measure] Ultimate
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 2%
-
+ht-degree: 5%
 ---
-
 # Panoramica di [!DNL Marketo Measure] Ultimate {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] (precedentemente Bizible) offre agli esperti di marketing insight le attività di marketing più efficaci per incrementare le entrate e massimizzare il ritorno sull&#39;investimento per l&#39;azienda. [!DNL Marketo Measure] è una soluzione di attribuzione marketing che tiene traccia automaticamente delle prestazioni dei canali e genera rapporti su di esse, fornendo visibilità sui canali che generano il coinvolgimento maggiore dei clienti e consentendo di ottimizzare di conseguenza le spese di marketing.
+[!DNL Marketo Measure] (precedentemente Bizible) offre ai marketer approfondimenti sulle iniziative di marketing più efficaci per aumentare i ricavi e ottimizzare il ritorno sull’investimento per l’azienda. [!DNL Marketo Measure] è una soluzione di attribuzione marketing che tiene traccia e genera report automatici sulle prestazioni dei canali, fornendo visibilità su quali canali generano il maggior coinvolgimento dei clienti e consentendo di ottimizzare le spese di marketing di conseguenza.
 
 [!DNL Marketo Measure Ultimate] contiene le funzionalità aggiuntive:
 
 * Acquisisci da quasi tutte le origini dati e da più origini dati dello stesso tipo per inserire tutti i dati per l’attribuzione.
-   * Da utilizzare con quasi tutte le CRM, non solo con Salesforce e Dynamics.
-   * Connettere più istanze di CRM e/o istanze MAP a un&#39;istanza [!DNL Marketo Measure].
-   * Importa dati di registrazione e partecipazione a webinar di terze parti.
+  * Da utilizzare con quasi tutte le CRM, non solo con Salesforce e Dynamics.
+  * Connettere più istanze di CRM e/o istanze MAP a un&#39;istanza [!DNL Marketo Measure].
+  * Importa dati di registrazione e partecipazione a webinar di terze parti.
 
 * Trasforma i dati con grande flessibilità attraverso le funzionalità di mappatura dei campi e trasformazione per garantire la forma corretta dei dati.
 

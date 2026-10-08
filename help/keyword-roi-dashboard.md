@@ -3,13 +3,17 @@ description: Dashboard ROI per parola chiave - [!DNL Marketo Measure] - Prodotto
 title: Dashboard ROI per parola chiave
 feature: Reporting
 exl-id: 9c85a3ad-1806-4e30-b0fb-686760aea587
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
-
 ---
-
 # Dashboard ROI per parola chiave {#keyword-roi-dashboard}
 
 La dashboard del ROI delle parole chiave fornisce informazioni dettagliate sulle prestazioni delle campagne di ricerca a pagamento. Offre un’analisi completa dei costi a livello di parola chiave, dei ricavi attribuiti e dei nuovi lead e opportunità generati, garantendo una chiara comprensione del ROI delle parole chiave.
@@ -68,11 +72,11 @@ Approfondisci le parole chiave specifiche per visualizzare le opportunità influ
 Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 * Data
-   * In base a:
-      * Data di creazione: nuovi lead, nuove opportunità
-      * Data costo sostenuto: costo
-      * Data di chiusura: ricavi attribuiti (ROI semplice), offerte
-      * Data punto di contatto: punti di contatto da ricavi attribuiti realizzati (ROI realizzato)
+  * In base a:
+    * Data di creazione: nuovi lead, nuove opportunità
+    * Data costo sostenuto: costo
+    * Data di chiusura: ricavi attribuiti (ROI semplice), offerte
+    * Data punto di contatto: punti di contatto da ricavi attribuiti realizzati (ROI realizzato)
 * Modello di attribuzione
 * Parola chiave
 * Campaign

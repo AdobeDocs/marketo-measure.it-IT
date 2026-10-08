@@ -3,14 +3,18 @@ description: Introduce l’interfaccia del dashboard Discover, i filtri, le azio
 title: Scopri nozioni di base sulla dashboard
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-hidefromtoc: true
-source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
-
+source-wordcount: '576'
+ht-degree: 3%
 ---
-
 # Scopri nozioni di base sulla dashboard {#discover-dashboard-basics}
 
 Questo articolo illustra le funzionalità fondamentali dell’interfaccia riprogettata, consentendoti di accedere e interpretare facilmente i dati. Approfondisci le dinamiche del riquadro dei filtri e scopri le complessità delle funzionalità di reporting avanzate, come le funzioni di drilling, i filtri incrociati e le descrizioni.

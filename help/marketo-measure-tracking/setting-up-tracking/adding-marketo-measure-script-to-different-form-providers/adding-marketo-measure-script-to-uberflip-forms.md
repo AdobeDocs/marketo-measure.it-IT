@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874749
-description: Aggiunta dello script  [!DNL Marketo Measure]  a  [!DNL Uberflip] Forms - [!DNL Marketo Measure] in corso
-title: Aggiunta di  [!DNL Marketo Measure] script a [!DNL Uberflip] Forms
+description: Aggiunta dello script [!DNL Marketo Measure] al Forms [!DNL Uberflip] - [!DNL Marketo Measure]
+title: Aggiunta dello script [!DNL Marketo Measure] a [!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-TQID: https://experienceleague.adobe.com/5G801toR2LSXxPwnXjLE-bw92pwe0gPc7HDFq-Bi5oU
+TQID: 'https://experienceleague.adobe.com/5G801toR2LSXxPwnXjLE-bw92pwe0gPc7HDFq-Bi5oU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 200
+source-wordcount: '204'
 ht-degree: 0%
-
 ---
-
 # Aggiunta dello script [!DNL Marketo Measure] a [!DNL Uberflip] Forms {#adding-marketo-measure-script-to-uberflip-forms}
 
 Se stai utilizzando [!DNL Uberflip] per gestire il contenuto, è importante che tu prenda le misure necessarie per assicurarti che [!DNL Marketo Measure] stia tenendo traccia di tali invii di moduli. Anche il tuo Success Manager in [!DNL Uberflip] dovrebbe essere in grado di aiutarti in questo.

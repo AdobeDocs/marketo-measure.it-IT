@@ -3,13 +3,20 @@ description: Nascondere le indicazioni sui tipi di rapporto non necessari per gl
 title: Nascondere i tipi di rapporto non necessari
 exl-id: 7c181340-c154-49ca-a852-243bce71c7a0
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
-
 ---
-
 # Nascondere i tipi di rapporto non necessari {#hiding-unnecessary-report-types}
 
 Dopo aver completato l&#39;installazione e aver iniziato a utilizzare i report, non tutti i report forniti con il pacchetto [!DNL Marketo Measure] verranno utilizzati dall&#39;organizzazione. Pertanto, è utile nascondere i tipi di rapporto non utilizzati per eliminare ogni confusione e consentire un aspetto più pulito. Puoi nascondere qualsiasi rapporto desiderato, ma i rapporti identificati nell’immagine seguente sono in genere nascosti.

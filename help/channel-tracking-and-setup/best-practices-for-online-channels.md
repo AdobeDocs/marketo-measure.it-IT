@@ -3,13 +3,17 @@ description: Tecniche consigliate per la guida ai canali online per gli utenti d
 title: Best practice per i canali online
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '617'
 ht-degree: 0%
-
 ---
-
 
 # Best practice per i canali online {#best-practices-for-online-channels}
 
@@ -30,20 +34,20 @@ Prenditi un po&#39; di tempo per pensare all&#39;organizzazione delle campagne d
 Aspetti da considerare:
 
 * Tutti i canali digitali e i sottocanali devono essere rappresentati con almeno una regola
-   * Se il canale non porta le persone al sito, non è un canale online
+  * Se il canale non porta le persone al sito, non è un canale online
 * È possibile avere più regole per un canale/sottocanale
-   * È possibile considerare più regole come &quot;lanciare una rete più ampia&quot; per garantire che ogni punto di contatto sia mappato correttamente. Spesso i parametri possono essere aggiunti o saltati completamente in modo errato, pertanto l’esistenza di più regole per acquisire un canale/sottocanale è una buona idea per garantire la precisione della mappatura.
+  * È possibile considerare più regole come &quot;lanciare una rete più ampia&quot; per garantire che ogni punto di contatto sia mappato correttamente. Spesso i parametri possono essere aggiunti o saltati completamente in modo errato, pertanto l’esistenza di più regole per acquisire un canale/sottocanale è una buona idea per garantire la precisione della mappatura.
 * La logica [!DNL Marketo Measure] assegna priorità alla mappatura dei punti di contatto in ordine decrescente, a partire dalla riga superiore del foglio di calcolo fino alla fine
-   * [!DNL Marketo Measure] legge ogni regola (riga), cercando il vero e il primo adattamento. Il punto di contatto viene quindi mappato su quel canale/sottocanale
-   * Non ordinare il foglio in ordine alfabetico in quanto questo interferisce con le regole logiche.
+  * [!DNL Marketo Measure] legge ogni regola (riga), cercando il vero e il primo adattamento. Il punto di contatto viene quindi mappato su quel canale/sottocanale
+  * Non ordinare il foglio in ordine alfabetico in quanto questo interferisce con le regole logiche.
 * Mantieni le regole tra parentesi quadre, non modificare o aggiungere le regole tra parentesi quadre (ad esempio: [Ricerca AdWords Pagata] o [Facebook Pagata])
-   * Sono regole predefinite [!DNL Marketo Measure] con logica incorporata, che sono collegate alle integrazioni [!DNL Marketo Measure]. Assegna a queste regole la massima priorità per la sezione canale/sottocanale per garantire che le integrazioni [!DNL Marketo Measure] funzionino come previsto.
+  * Sono regole predefinite [!DNL Marketo Measure] con logica incorporata, che sono collegate alle integrazioni [!DNL Marketo Measure]. Assegna a queste regole la massima priorità per la sezione canale/sottocanale per garantire che le integrazioni [!DNL Marketo Measure] funzionino come previsto.
 * Una volta caricato il file, non puoi modificare nessuna delle regole per sette giorni
-   * [!DNL Marketo Measure] utilizza questo tempo per elaborare e aggiornare i punti di contatto, quindi assicurati di controllare le regole prima di caricare.
+  * [!DNL Marketo Measure] utilizza questo tempo per elaborare e aggiornare i punti di contatto, quindi assicurati di controllare le regole prima di caricare.
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenace}
 
-Dopo il salvataggio e l’elaborazione delle regole del canale online, queste funzionano continuamente per raccogliere i punti di contatto digitali. Tuttavia, alcune modifiche o scenari richiedono la revisione della configurazione del canale online. [!DNL Marketo Measure] consiglia di rivedere le regole del canale online una volta ogni sei mesi. In questo modo i dati di [!DNL Marketo Measure] saranno allineati con le definizioni interne dei canali/sottocanali online e con l&#39;utilizzo di UTM.
+Dopo il salvataggio e l’elaborazione delle regole del canale online, queste funzionano continuamente per raccogliere i punti di contatto digitali. Tuttavia, alcune modifiche o scenari richiedono la revisione della configurazione del canale online. [!DNL Marketo Measure] consiglia di rivedere le regole del canale online ogni sei mesi. In questo modo i dati di [!DNL Marketo Measure] saranno allineati con le definizioni interne dei canali/sottocanali online e con l&#39;utilizzo di UTM.
 
 Altri elementi che potrebbero attivare il team per la manutenzione dei canali online sono....
 
@@ -55,7 +59,7 @@ Altri elementi che potrebbero attivare il team per la manutenzione dei canali on
 Se il tuo team ha riscontrato uno degli eventi sopra descritti di recente, [!DNL Marketo Measure] ti consiglia di rivedere le regole dei canali online e apportare le modifiche appropriate.
 
 >[!MORELIKETHIS]
-> [Configurazione canale in linea](/help/channel-tracking-and-setup/online-custom-channel-setup.md)
+> [Configurazione canale online](/help/channel-tracking-and-setup/online-custom-channel-setup.md)
 > [Parametri UTM](/help/channel-tracking-and-setup/utm-parameters.md)
 > [Canale di marketing e sottocanale](/help/channel-tracking-and-setup/marketing-channels-and-subchannels.md)
 > [Best practice UTM](/help/channel-tracking-and-setup/best-practices-for-setting-up-utm-parameters.md)

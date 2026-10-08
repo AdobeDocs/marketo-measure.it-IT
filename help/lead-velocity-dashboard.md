@@ -3,13 +3,17 @@ description: Utilizza il dashboard Lead Velocity per misurare il tempo in ogni f
 title: Dashboard della velocità del lead
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
-
 ---
-
 # Dashboard della velocità del lead {#lead-velocity-dashboard}
 
 La dashboard di Velocity offre una visualizzazione dinamica del ritmo con cui i potenziali clienti passano attraverso il funnel di vendita, fornendo agli addetti al marketing e ai team di vendita informazioni essenziali sui tempi di conversione tra i vari canali. Questo strumento è prezioso per rispondere a domande chiave sulle durate di conversione dei lead e sull’efficienza della progressione attraverso le fasi di vendita, consentendoti di ottimizzare le strategie di coinvolgimento per una crescita e conversioni accelerate.
@@ -66,7 +70,7 @@ Risposte alle domande del grafico:
 Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 * Data
-   * Basato su: Transizione in data
+  * Basato su: Transizione in data
 * Fase
 * Channel
 * Sottocanale

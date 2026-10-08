@@ -4,20 +4,25 @@ description: '[!DNL Marketo Measure] Parametri - [!DNL Marketo Measure]'
 title: Parametri [!DNL Marketo Measure]
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
-TQID: https://experienceleague.adobe.com/IurdaUgr2R1vxfOP4bcXp8TSUj4ymkA-R9kZ9put4Ug
+TQID: 'https://experienceleague.adobe.com/IurdaUgr2R1vxfOP4bcXp8TSUj4ymkA-R9kZ9put4Ug'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
 subfeature_v2:
   - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Facebook API
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 243
+source-wordcount: '243'
 ht-degree: 0%
-
 ---
-
 # Parametri [!DNL Marketo Measure] {#marketo-measure-parameters}
 
 ## [!DNL Marketo Measure] parametri spiegati {#marketo-measure-parameters-explained}
@@ -35,28 +40,28 @@ Esempio di un URL con [!DNL Marketo Measure] parametri:
 ## Parametri AdWords {#adwords-parameters}
 
 * `_bk={keyword}`
-   * Rappresenta la parola chiave utilizzata nel motore di ricerca.
-   * È simile al parametro del termine UTM.
+  * Rappresenta la parola chiave utilizzata nel motore di ricerca.
+  * È simile al parametro del termine UTM.
 
 * `_bt={creative}`
-   * Rappresenta l’ID o il nome della creatività.
-   * È simile al parametro di contenuto UTM.
+  * Rappresenta l’ID o il nome della creatività.
+  * È simile al parametro di contenuto UTM.
 
 * `_bm={matchtype}`
-   * Rappresenta la corrispondenza con la parola chiave.
-   * I tipi di corrispondenza delle parole chiave aiutano a controllare quali ricerche attivano l’annuncio. Ad esempio, puoi utilizzare la corrispondenza ampia per mostrare l’annuncio a un pubblico ampio oppure puoi utilizzare la corrispondenza esatta per affinare su gruppi specifici di clienti.
-   * I tre tipi di corrispondenza sono: ampia, sfocata ed esatta.
+  * Rappresenta la corrispondenza con la parola chiave.
+  * I tipi di corrispondenza delle parole chiave aiutano a controllare quali ricerche attivano l’annuncio. Ad esempio, puoi utilizzare la corrispondenza ampia per mostrare l’annuncio a un pubblico ampio oppure puoi utilizzare la corrispondenza esatta per affinare su gruppi specifici di clienti.
+  * I tre tipi di corrispondenza sono: ampia, sfocata ed esatta.
 
 >[!TIP]
 >
 >Per ulteriori informazioni sui tipi di corrispondenza, [ecco un articolo AdWords pertinente](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
 
 * `_bn={network}`
-   * Rappresenta il tipo di rete dell&#39;annuncio - [visualizzazione o ricerca](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
-   * È simile al parametro Source UTM.
+  * Rappresenta il tipo di rete dell&#39;annuncio - [visualizzazione o ricerca](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
+  * È simile al parametro Source UTM.
 
 * `_bg={adgroupID}`
-   * Rappresenta l’ID del gruppo di annunci a cui appartiene l’annuncio
+  * Rappresenta l’ID del gruppo di annunci a cui appartiene l’annuncio
 
 >[!NOTE]
 >
@@ -72,4 +77,4 @@ Esempio di un URL con [!DNL Marketo Measure] parametri:
 ## Parametri Facebook {#facebook-parameters}
 
 * `_bf ={creative}`
-   * Rappresenta l’ID o il nome della creatività
+  * Rappresenta l’ID o il nome della creatività

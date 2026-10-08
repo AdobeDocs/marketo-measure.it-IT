@@ -4,20 +4,25 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Schema Data Warehouse
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-TQID: https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY
+TQID: 'https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 21775
+source-wordcount: '21775'
 ht-degree: 8%
-
 ---
-
 # Schema Data Warehouse {#data-warehouse-schema}
 
 Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti sui dati di attribuzione ovunque desideri e collegarli ad altri set di dati.
@@ -955,7 +960,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
         <p>La quantità di spesa importata per gli ultimi 30 giorni, applicabile solo ad AdWords.</p>
       </td>
       <td>
-        <p>17260.000000000000000000</p>
+        <p>17260,000000000000000000</p>
       </td>
     </tr>
     <tr>
@@ -2882,7 +2887,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch).</p>
       </td>
       <td>
-        <p>0.0153374234214425</p>
+        <p>0,0153374234214425</p>
       </td>
     </tr>
     <tr>
@@ -2896,7 +2901,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</p>
       </td>
       <td>
-        <p>0.0143061513081193</p>
+        <p>0,0143061513081193</p>
       </td>
     </tr>
     <tr>
@@ -6220,7 +6225,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un contatto a forma di U.</p>
       </td>
       <td>
-        <p>100.0000000000000000000</p>
+        <p>100,0000000000000000000</p>
       </td>
     </tr>
     <tr>
@@ -6276,7 +6281,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Quantità dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
-        <p>42000.00000000</p>
+        <p>42000,00000000</p>
       </td>
     </tr>
     <tr>
@@ -8721,7 +8726,7 @@ Opportunità importate dal sistema di origine.
         <p>Importo dell’offerta previsto o chiuso dall’opportunità, dal sistema di origine.</p>
       </td>
       <td>
-        <p>8988.00000000</p>
+        <p>8988,00000000</p>
       </td>
     </tr>
     <tr>

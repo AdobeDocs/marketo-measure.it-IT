@@ -3,13 +3,17 @@ description: Spiegazione di [!DNL Marketo Measure] approfondimenti - [!DNL Marke
 title: Spiegazione di [!DNL Marketo Measure] approfondimenti
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
-
 ---
-
 # Spiegazione di [!DNL Marketo Measure] approfondimenti {#marketo-measure-insights-explained}
 
 Scopri la visualizzazione Approfondimenti di [!DNL Marketo Measure] in [!DNL Salesforce], compresi gli elementi rappresentati dalle diverse icone e come utilizzare la funzione. Questa funzione è particolarmente utile per visualizzare le prime 20 sessioni di un lead, contatto o account.

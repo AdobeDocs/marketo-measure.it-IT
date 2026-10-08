@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874564
-description: Definizione di  [!DNL Marketo Measure] sessioni Web - [!DNL Marketo Measure]
-title: Definizione di  [!DNL Marketo Measure] sessioni Web
+description: Definizione di [!DNL Marketo Measure] sessioni Web - [!DNL Marketo Measure]
+title: Definizione di [!DNL Marketo Measure] sessioni Web
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 feature: Tracking
-TQID: https://experienceleague.adobe.com/eGTW-4FDBrucACn0d3nFeO9tMITP6MuDlsjA9w-FjGU
+TQID: 'https://experienceleague.adobe.com/eGTW-4FDBrucACn0d3nFeO9tMITP6MuDlsjA9w-FjGU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 827
+source-wordcount: '829'
 ht-degree: 0%
-
 ---
-
 # Definizione di [!DNL Marketo Measure] sessioni Web {#definition-of-marketo-measure-web-sessions}
 
 Scopri come [!DNL Marketo Measure] definisce le sessioni web.

@@ -3,18 +3,23 @@ description: Best practice per la mappatura dello staging - [!DNL Marketo Measur
 title: Best practice per la mappatura degli staging
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-TQID: https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg
+TQID: 'https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 479
+source-wordcount: '479'
 ht-degree: 0%
-
 ---
-
 # Best practice per la mappatura degli staging {#best-practices-for-stage-mapping}
 
 ## Panoramica {#overview}
@@ -30,17 +35,17 @@ Una funzione aggiuntiva gestita in questa sezione sono gli Stadi di Funnel, che 
 Sia che si stia valutando la mappatura dello staging per la prima volta o che si stia solo esaminando l&#39;ordine funnel, è importante tenere presenti le seguenti best practice.
 
 * L&#39;ordine è tutto!
-   * Considerando che [!DNL Marketo Measure] richiama sia gli stadi attivi che quelli inattivi dal CRM, confermare che tutti gli stadi che potrebbero essere utilizzati su un lead/contatto o un&#39;opportunità sono raggruppati e ordinati di conseguenza
+  * Considerando che [!DNL Marketo Measure] richiama sia gli stadi attivi che quelli inattivi dal CRM, confermare che tutti gli stadi che potrebbero essere utilizzati su un lead/contatto o un&#39;opportunità sono raggruppati e ordinati di conseguenza
 * Quando definisci una fase personalizzata, assicurati che il tracciamento della cronologia dei campi sia abilitato per tutti i campi utilizzati per definire la fase
 * Non utilizzare un campo formula per definire una fase personalizzata
-   * Un campo booleano è la best practice consigliata
+  * Un campo booleano è la best practice consigliata
 * La sezione Fase lead o fase contatto è divisa in Perso, Aperto e Convertito; verificare che le fasi siano nella sezione relativa alla fase appropriata
-   * Se una fase si trova nella sezione di fase errata, i dati di [!DNL Marketo Measure] potrebbero risultare molto errati
-   * Se sei un cliente Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
-      * b2b.personStatus
-      * b2b.isConverted
+  * Se una fase si trova nella sezione di fase errata, i dati di [!DNL Marketo Measure] potrebbero risultare molto errati
+  * Se sei un cliente Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}).
+    * b2b.personStatus
+    * b2b.isConverted
 * La sezione relativa alla fase Opportunità è divisa in Persa, Aperta e Vinta; verificare che le fasi si trovino nella sezione corrispondente
-   * Se una fase si trova nella sezione di fase errata, i dati dei ricavi [!DNL Marketo Measure] o della pipeline potrebbero essere molto errati
+  * Se una fase si trova nella sezione di fase errata, i dati dei ricavi [!DNL Marketo Measure] o della pipeline potrebbero essere molto errati
 * Evita di usare nomi di fase duplicati (il nostro sistema li rileverà e ne rimuoverà automaticamente uno).
 * Per impostare una regola che verifichi la presenza di valori NULL, lasciare vuota la casella di testo del valore.
 

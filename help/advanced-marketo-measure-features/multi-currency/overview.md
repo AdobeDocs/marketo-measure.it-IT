@@ -4,19 +4,21 @@ description: Panoramica - [!DNL Marketo Measure]
 title: Panoramica
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
 feature: Multi-Currency
-TQID: https://experienceleague.adobe.com/x-CcPqcp3SXgSToNxdrLNnkYf5DA7Be9nPPwHTxA8pM
+TQID: 'https://experienceleague.adobe.com/x-CcPqcp3SXgSToNxdrLNnkYf5DA7Be9nPPwHTxA8pM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: '334'
 ht-degree: 1%
-
 ---
-
 # Panoramica {#overview}
 
-Attualmente, l&#39;applicazione [!DNL Marketo Measure] supporta solo una singola valuta (che si presume essere USD), mentre sappiamo e sappiamo che ci sono clienti in tutto il mondo che devono segnalare la propria valuta aziendale e quella dell&#39;utente. Questa funzione consente agli utenti di passare dalle stesse valute utilizzate nel CRM per visualizzare le spese o i ricavi di vendita riportati in [!DNL Marketo Measure].
+Attualmente, l&#39;applicazione [!DNL Marketo Measure] supporta solo una singola valuta (che si presume essere USD), mentre sappiamo e siamo consapevoli che ci sono clienti in tutto il mondo che devono segnalare la propria valuta aziendale e quella dell&#39;utente. Questa funzione consente agli utenti di passare dalle stesse valute utilizzate nel CRM per visualizzare le spese o i ricavi di vendita riportati in [!DNL Marketo Measure].
 
 ## Disponibilità {#availability}
 

@@ -3,13 +3,17 @@ description: Domande frequenti sull’attribuzione delle attività per gli utent
 title: Domande frequenti sull’attribuzione delle attività
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '747'
 ht-degree: 0%
-
 ---
-
 # Domande frequenti sull’attribuzione delle attività {#activities-attribution-faq}
 
 [!DNL Marketo Measure] Le attività importano tutti i record Attività e generano punti di contatto per esse, consentendo a queste attività di ricevere il credito di attribuzione. Il caso d’uso più comune consiste nel tenere traccia delle attività del team vendite, in quanto solitamente creano un record di chiamate telefoniche o e-mail inviate ai potenziali clienti. Altre caratteristiche uniche che possono essere tracciate sono le interazioni di contenuto come download di risorse o visualizzazioni video.
@@ -68,6 +72,6 @@ Le istruzioni su come configurare le attività nell&#39;app [!UICONTROL Marketo]
 
 **In quale canale si trovano queste attività?**
 
-Quando vengono creati la regola Attività e il nome della campagna [!DNL Marketo Measure] corrispondente, utilizza le definizioni dei canali online per posizionare tali campagne nel canale di marketing corretto. [!DNL Marketo Measure] può definire i canali utilizzando non solo il mezzo e l’origine, ma anche la campagna.
+Quando vengono creati la regola Attività e il nome della campagna [!DNL Marketo Measure] corrispondente, utilizza le definizioni dei canali online per posizionare tali campagne nel canale di marketing corretto. [!DNL Marketo Measure] può definire i canali utilizzando non solo il supporto e l&#39;origine, ma anche la campagna.
 
 Nell&#39;esempio precedente, per assegnare la campagna &quot;Chiamata in uscita {Assigned To}&quot; al canale BDR, inserire una riga nel file CSV dei canali online per il canale BDR con una definizione di campagna &quot;Chiamata in uscita&#42;&quot;. L&#39;asterisco indica un valore jolly, pertanto tutte le campagne che iniziano con &quot;Chiamata in uscita&quot; ricadranno sotto il canale BDR, anziché dover creare una riga separata per ogni nome di campagna.

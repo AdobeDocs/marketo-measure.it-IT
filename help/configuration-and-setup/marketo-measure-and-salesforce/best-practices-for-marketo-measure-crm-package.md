@@ -1,20 +1,26 @@
 ---
-description: Best practice per  [!DNL Marketo Measure] pacchetto CRM - [!DNL Marketo Measure]
-title: 'Best practice per il pacchetto CRM [!DNL Marketo Measure] '
+description: Best practice per il pacchetto CRM [!DNL Marketo Measure] - [!DNL Marketo Measure]
+title: Best practice per il pacchetto CRM [!DNL Marketo Measure]
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/E8LQ0-uUC-xqhG9D7CSuprsjkABJ54azWFSEdiuFABk
+TQID: 'https://experienceleague.adobe.com/E8LQ0-uUC-xqhG9D7CSuprsjkABJ54azWFSEdiuFABk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 415
+source-wordcount: '423'
 ht-degree: 0%
-
 ---
-
 # Best practice per il pacchetto CRM [!DNL Marketo Measure] {#best-practices-for-marketo-measure-crm-package}
 
 >[!NOTE]
@@ -37,9 +43,9 @@ Questi pacchetti consentono agli utenti [!DNL Marketo Measure] di accedere facil
 Quando implementi e gestisci il pacchetto [!DNL Marketo Measure] [!DNL Salesforce], tieni presenti le seguenti best practice.
 
 * Verificare che tutti i membri del team necessari abbiano accesso alle cartelle dei report [!DNL Marketo Measure]. Ci dovrebbero essere 1-3 [!DNL Marketo Measure] cartelle (queste sono spiegate di seguito). Per aprire l&#39;accesso, l&#39;utente che ha installato i pacchetti deve condividere le cartelle dei report con gli utenti o i ruoli appropriati.
-   * **Rapporti Buyer Touchpoint** - disponibili per tutti
-   * **[!DNL Marketo Measure]rapporti di marketing basati sull&#39;account** - i rapporti verranno compilati solo per i clienti di livello 2 e superiore
-   * **Dashboard di Buyer Touchpoint** - disponibili per tutti, anche se questo pacchetto è facoltativo.
+  * **Rapporti Buyer Touchpoint** - disponibili per tutti
+  * **[!DNL Marketo Measure]rapporti di marketing basati sull&#39;account** - i rapporti verranno compilati solo per i clienti di livello 2 e superiore
+  * **Dashboard di Buyer Touchpoint** - disponibili per tutti, anche se questo pacchetto è facoltativo.
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 

@@ -1,15 +1,19 @@
 ---
-description: Aggiunta di  [!DNL Marketo Measure] JavaScript alle [!DNL Pardot] linee guida per gli utenti di Marketo Measure
-title: Aggiunta di  [!DNL Marketo Measure] JavaScript a  [!DNL Pardot] in corso
+description: Aggiunta di [!DNL Marketo Measure] JavaScript alle linee guida di [!DNL Pardot] per gli utenti Marketo Measure
+title: Aggiunta di [!DNL Marketo Measure] JavaScript a [!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '241'
 ht-degree: 2%
-
 ---
-
 # Aggiunta di [!DNL Marketo Measure] JavaScript a [!DNL Pardot] {#adding-marketo-measure-javascript-to-pardot}
 
 I moduli [!DNL Pardot] richiedono una gestione aggiuntiva all&#39;interno del modello di modulo, oltre a inserire lo script sul sito per consentire a [!DNL Marketo Measure] di riconoscere gli invii di moduli. Il processo è semplice e richiede solo il posizionamento dello script di monitoraggio [!DNL Marketo Measure] nel modello di modulo [!DNL Pardot].

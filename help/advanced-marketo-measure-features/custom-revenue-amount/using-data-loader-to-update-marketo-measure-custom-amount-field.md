@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874771
-description: Utilizzo di Data Loader per aggiornare [!DNL Marketo Measure] Campo importo personalizzato - [!DNL Marketo Measure]
+description: Utilizzo di Data Loader per aggiornare il campo personalizzato [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Utilizzo di Data Loader per aggiornare il campo personalizzato Importo di Marketo Measure
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 feature: Custom Revenue Amount
-TQID: https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0
+TQID: 'https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 191
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # Utilizzo di Data Loader per aggiornare il campo personalizzato dell&#39;importo [!DNL Marketo Measure] {#using-data-loader-to-update-marketo-measure-custom-amount-field}
 
 [!DNL Marketo Measure] consiglia di utilizzare Data Loader come opzione pratica per aggiornare i valori dell&#39;opportunità quando si utilizza un campo di ricavi personalizzato (viene utilizzato il campo Quantità preconfigurato) in [!DNL Marketo Measure]. Data Loader è da preferirsi rispetto all&#39;utilizzo dello script di aggiornamento [!DNL Marketo Measure], in quanto richiede agli utenti di disabilitare tutte le regole di convalida di Salesforce durante l&#39;esecuzione dello script [!DNL Marketo Measure].

@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure] manutenzione - [!DNL Marketo Measure]'
+description: Manutenzione di [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Manutenzione di [!DNL Marketo Measure]
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 1%
-
 ---
-
 
 # Manutenzione di [!DNL Marketo Measure] {#marketo-measure-maintenance}
 
@@ -42,7 +46,7 @@ Fai riferimento a [questo articolo](/help/channel-tracking-and-setup/online-cust
 
 **Valuta impostazioni soppressione punto di contatto (1x/trimestre)**
 
-Se vedi molti punti di contatto che preferisci non vengano considerati nella tua storia di attribuzione (ad esempio da [!DNL Login] o [!DNL Unsubscribe forms], una pagina carriere o un&#39;app interna), puoi valutare le impostazioni di soppressione dei punti di contatto esistenti. Una volta al trimestre, individua eventuali gruppi di punti di contatto che creano disturbi non necessari e aggiorna la logica di soppressione in modo appropriato. [Ecco un articolo utile](/help/channel-tracking-and-setup/touchpoint-removal-and-touchpoint-suppression.md) con la procedura guidata.
+Se vedi molti punti di contatto che preferisci non vengano considerati nella tua storia di attribuzione (ad esempio da [!DNL Login] o [!DNL Unsubscribe forms], una pagina carriere o un&#39;app interna), puoi valutare le impostazioni di soppressione dei punti di contatto esistenti. Una volta al trimestre, individua eventuali gruppi di punti di contatto che creano disturbi non necessari e aggiorna la logica di soppressione in modo appropriato. [Ecco un articolo utile](/help/channel-tracking-and-setup/touchpoint-removal-and-touchpoint-suppression.md) con le procedure.
 
 **Verifica la mappatura personalizzata dello stadio per la precisione (1x/trimestre) (se applicabile)**
 

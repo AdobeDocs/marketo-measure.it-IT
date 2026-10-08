@@ -3,14 +3,18 @@ description: Linee guida per l’installazione di canali personalizzati online p
 title: Impostazione canale personalizzato online
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
-
 ---
-
 # Impostazione canale personalizzato online {#online-custom-channel-setup}
 
 Per ottenere una reportistica accurata, i canali di marketing devono essere impostati in modo da riflettere la strategia UTM della tua organizzazione. Questa guida illustra il modo migliore per configurare le regole di canale personalizzate.
@@ -46,7 +50,7 @@ Il foglio di calcolo è composto da sette colonne:
 * **Pagina di destinazione:** aggiungi qui la pagina di destinazione
 * **Sito Web di riferimento:** gli URL dei siti Web che fanno riferimento al traffico delle pagine o la logica integrata di [!DNL Marketo Measure] (indicata tra parentesi)
 
-L’ottava colonna indica quali regole non è possibile eliminare dal foglio di calcolo con &quot;Non rimuovere&quot;. Nella parte superiore del foglio di calcolo sono presenti regole di canale predefinite che [!DNL Marketo Measure] consiglia di non modificare o rimuovere anche se non si utilizzano questi canali. [!DNL Marketo Measure] dispone di integrazioni approfondite con queste piattaforme, in modo che siano incluse per impostazione predefinita.
+L’ottava colonna indica quali regole non è possibile eliminare dal foglio di calcolo con &quot;Non rimuovere&quot;. Nella parte superiore del foglio di calcolo sono presenti regole di canale predefinite che [!DNL Marketo Measure] consiglia di non modificare o rimuovere anche se non si utilizzano questi canali. [!DNL Marketo Measure] ha integrazioni profonde con queste piattaforme, pertanto sono incluse per impostazione predefinita.
 
 Le righe rappresentano le regole e l&#39;ordine in cui [!DNL Marketo Measure] assegna la priorità ai dati. La prima riga ha priorità rispetto alla seconda riga, la seconda riga ha priorità rispetto alla terza e così via. Quando determina in quale canale di marketing e sottocanale inserire i punti di contatto, [!DNL Marketo Measure] legge dall&#39;alto verso il basso, da sinistra a destra, finché non trova una riga che soddisfa i criteri del punto di contatto. (Se un punto di contatto ha un `utm_source=Facebook`, viene inserito nel bucket del canale Social.Facebook a causa della regola 15 nella schermata).
 

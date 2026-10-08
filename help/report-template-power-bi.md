@@ -3,13 +3,17 @@ description: Modello di report [!DNL Marketo Measure] - Power BI - [!DNL Marketo
 title: Modello di report [!DNL Marketo Measure] - Power BI
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 0%
-
 ---
-
 # Modello di report [!DNL Marketo Measure] - Power BI {#marketo-measure-report-template-power-bi}
 
 ## Guida introduttuva {#getting-started}
@@ -99,7 +103,7 @@ Le tabelle e le colonne sono state rinominate per renderle più facili da usare 
 
 ### Segmenti rinominati {#renamed-segments}
 
-Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowflake dispongono di nomi di colonna generici. [!DNL BIZ_SEGMENT_NAMES] è una tabella di mappatura che elenca il nome di segmento generico e il nome di segmento personalizzato mappato, definiti nella sezione Segmenti nell&#39;interfaccia utente [!DNL Marketo Measure]. La tabella Nome segmento viene utilizzata per rinominare le colonne del segmento nelle tabelle Punto di contatto lead e Punto di contatto attribuzione. Se non esiste alcun segmento personalizzato, viene mantenuto il nome del segmento generico.
+Poiché i nomi dei segmenti sono personalizzabili, nel data warehouse di Snowflake dispongono di nomi di colonna generici. [!DNL BIZ_SEGMENT_NAMES] è una tabella di mappatura che elenca il nome del segmento generico e il nome del relativo segmento personalizzato mappato, definito nella sezione del segmento nell&#39;interfaccia utente [!DNL Marketo Measure]. La tabella Nome segmento viene utilizzata per rinominare le colonne del segmento nelle tabelle Punto di contatto lead e Punto di contatto attribuzione. Se non esiste alcun segmento personalizzato, viene mantenuto il nome del segmento generico.
 
 ![Poiché i nomi dei segmenti sono personalizzabili, in &#x200B;](assets/marketo-bi-4.png) sono presenti nomi di colonna generici
 

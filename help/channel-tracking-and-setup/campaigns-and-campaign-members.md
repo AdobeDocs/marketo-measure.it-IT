@@ -3,14 +3,18 @@ description: Guida alle campagne e ai membri della campagna per gli utenti di Ma
 title: Campagne e membri della campagna
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 0%
-
 ---
-
 # Campagne e membri della campagna {#campaigns-and-campaign-members}
 
 Le campagne [!DNL Salesforce] hanno lo scopo di tenere traccia degli elenchi di lead e contatti associati a un programma o a un&#39;attività di marketing. Si tratta solitamente di webinar, registrazioni o visite allo stand, ad esempio. Gli addetti al marketing possono scegliere se accreditare o meno una campagna in un percorso di punti di contatto.
@@ -80,7 +84,7 @@ Se [!UICONTROL Sync Type] è impostato su &quot;Includi solo i membri della camp
 
 * Data Buyer Touchpoint
 * Data della prima risposta
-   * La prima data di risposta viene impostata automaticamente non appena lo stato viene modificato in &quot;Risposta&quot; ed è un campo [!DNL Salesforce] standard che non può essere modificato
+  * La prima data di risposta viene impostata automaticamente non appena lo stato viene modificato in &quot;Risposta&quot; ed è un campo [!DNL Salesforce] standard che non può essere modificato
 
 * Data di creazione del membro della campagna
 
@@ -118,7 +122,7 @@ Scopri tutto sui costi delle campagne [&#x200B; in questo articolo](/help/crm-ca
 
 [!DNL Marketo Measure] tiene il passo con i record eliminati in Salesforce, sia che si tratti di lead, account o opportunità eliminati, in modo da visualizzare tali record nell&#39;API e tenere traccia del fatto che una voce è contrassegnata come &quot;IsDeleted&quot;. Sfortunatamente, con i membri della campagna, Salesforce ha introdotto un modo diverso di eliminare questi membri dalla campagna e in realtà sono solo contrassegnati come &quot;rimossi&quot; invece di &quot;eliminati&quot;, quindi il problema è che i punti di contatto erano ancora presenti in Salesforce che erano relativi ai membri della campagna eliminati.
 
-Per ovviare a questo problema, [!DNL Marketo Measure] ha creato un oggetto Cronologia [!DNL Marketo Measure] e un trigger da tenere traccia ogni volta che i membri della campagna vengono rimossi, quindi elimina il punto di contatto corrispondente. **Per utilizzare questa funzionalità è necessario [!DNL Marketo Measure] pacchetto Marketing Analytics V6.15 o versione successiva**.
+Per ovviare a questo problema, [!DNL Marketo Measure] ha creato un oggetto Cronologia [!DNL Marketo Measure] e un trigger da tenere traccia ogni volta che i membri della campagna vengono rimossi, quindi elimina il punto di contatto corrispondente. **Per utilizzare questa funzionalità, è necessario [!DNL Marketo Measure] pacchetto Marketing Analytics V6.15 o versione successiva**.
 
 >[!CAUTION]
 >
