@@ -4,16 +4,18 @@ description: IFrame Forms e [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: IFrame Forms e [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-TQID: https://experienceleague.adobe.com/qR5a7F-h839nvcMRlQ6x6qjkQK3plhZO30aEzqxD00s
+TQID: 'https://experienceleague.adobe.com/qR5a7F-h839nvcMRlQ6x6qjkQK3plhZO30aEzqxD00s'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 191
+source-wordcount: '191'
 ht-degree: 3%
-
 ---
-
 # IFrame Forms e [!DNL Marketo Measure] {#iframe-forms-and-marketo-measure}
 
 Con [!DNL Marketo Measure] una delle funzionalità principali consiste nel monitorare le attività di marketing digitale attraverso sessioni sul sito e l&#39;invio di moduli. In genere, quando Marketo JavaScript viene inserito nel sito, vengono automaticamente allegati a tutti i moduli del sito. Tuttavia, questa funzionalità è limitata se il modulo è contenuto in un IFrame.

@@ -3,19 +3,23 @@ description: Accesso a Data Warehouse - Account Reader - Documentazione del prod
 title: Accesso a Data Warehouse - Account Reader
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-TQID: https://experienceleague.adobe.com/3ZD-17UlkoJpMExA-ZdV-coGFa0DSeZMW0gjFZodlMM
+TQID: 'https://experienceleague.adobe.com/3ZD-17UlkoJpMExA-ZdV-coGFa0DSeZMW0gjFZodlMM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Security
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Accesso a Data Warehouse - Account Reader {#data-warehouse-access-reader-account}
 
 ## Collegamento di accesso a Snowflake {#snowflake-access-link}
@@ -72,14 +76,14 @@ Per accedere al data warehouse di Snowflake, devi passare all’URL specifico de
 >Ogni strumento ha requisiti di connessione diversi; si consiglia di consultare la documentazione dello strumento specifico che si sta tentando di connettere.
 
 * **URI** (sempre obbligatorio)
-   * Questo è il nome di dominio dell’account Snowflake. È contenuto all’interno di una parte del collegamento di accesso a Snowflake.
+  * Questo è il nome di dominio dell’account Snowflake. È contenuto all’interno di una parte del collegamento di accesso a Snowflake.
 * **Nome utente** (sempre obbligatorio)
-   * Il nome utente è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
+  * Il nome utente è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
 * **Password** (sempre richiesta)
-   * Questa è la password che hai impostato al primo accesso al tuo account Snowflake. Per reimpostare la password, seguire la procedura descritta in precedenza.
+  * Questa è la password che hai impostato al primo accesso al tuo account Snowflake. Per reimpostare la password, seguire la procedura descritta in precedenza.
 * **Nome database** (non sempre richiesto)
-   * Il database è ciò che memorizza i dati in Snowflake. Si tratta della risorsa di archiviazione. Il nome del database è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
+  * Il database è ciò che memorizza i dati in Snowflake. Si tratta della risorsa di archiviazione. Il nome del database è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
 * **Nome data warehouse** (non sempre obbligatorio)
-   * Il warehouse esegue le query in Snowflake. È la risorsa calcolata. Il nome del magazzino è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
+  * Il warehouse esegue le query in Snowflake. È la risorsa calcolata. Il nome del magazzino è elencato nella pagina delle informazioni di Data Warehouse in [!DNL Marketo Measure].
 
   ![](assets/data-warehouse-access-reader-account-9.png)

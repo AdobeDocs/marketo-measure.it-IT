@@ -3,14 +3,22 @@ description: API [!DNL Facebook] - [!DNL Marketo Measure]
 title: API [!DNL Facebook]
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 0%
-
+source-wordcount: '516'
+ht-degree: 1%
 ---
-
 # API [!DNL Facebook] {#facebook-api}
 
 ## Introduzione {#introduction}
@@ -87,7 +95,7 @@ Affinché l&#39;integrazione funzioni correttamente, è necessario abilitare l&#
    <td><p>"[!DNL Facebook]" o [utm_source] se fornito</p></td>
   </tr>
   <tr>
-   <td><p>Media</p></td>
+   <td><p>Canale</p></td>
    <td><p>"Social" o [utm_medium] se fornito</p></td>
   </tr>
   <tr>

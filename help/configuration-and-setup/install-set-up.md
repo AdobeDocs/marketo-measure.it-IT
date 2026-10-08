@@ -3,14 +3,23 @@ description: Installazione e configurazione del pacchetto Salesforce - [!DNL Mar
 title: Installazione e configurazione del pacchetto [!DNL Salesforce]
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
-
 ---
-
 # Installazione pacchetto Salesforce{#marketo-measure-salesforce-package-installation}
 
 Prima di installare il pacchetto di base [!DNL Marketo Measure] [!DNL Salesforce], è necessario determinare se si sta installando in una sandbox [!DNL Salesforce] prima di passare all&#39;istanza di produzione di Salesforce.
@@ -62,9 +71,9 @@ Passaggio 1: creare un profilo [!DNL Marketo Measure] specifico
 1. Assegna le seguenti autorizzazioni:
 
 * &quot;[!DNL Marketo Measure] set di autorizzazioni amministratore&quot;
-   * Il set di autorizzazioni gestite consente a un amministratore di SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
+  * Il set di autorizzazioni gestite consente a un amministratore di SFDC di creare, leggere, scrivere ed eliminare record da [!DNL Marketo Measure] oggetti.
 * &quot;Visualizza e modifica set di autorizzazioni lead convertiti&quot;
-   * Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
+  * Questo consente a [!DNL Marketo Measure] di decorare i lead dopo che sono stati convertiti in contatti. Se questo set di autorizzazioni non è abilitato, possono verificarsi significative lacune nel tracciamento dei dati.
 
 >[!NOTE]
 >
@@ -76,7 +85,7 @@ Passaggio 2: crea un utente [!DNL Marketo Measure] dedicato in modo da poter ten
 
 1. Abilita &quot;Utente marketing&quot; come autorizzazione a livello di utente.
 
-* La casella di controllo [!UICONTROL Marketing User] consente all&#39;utente di creare campagne e utilizzare l&#39;Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell’oggetto della campagna.
+* La casella di controllo [!UICONTROL Marketing User] consente all&#39;utente di creare campagne e utilizzare l&#39;Importazione guidata campagne. Se questa opzione non è selezionata, l’utente può solo visualizzare le campagne e la configurazione avanzata della campagna, modificare la cronologia della campagna per un singolo lead o contatto ed eseguire i rapporti sulle campagne. [!DNL Marketo Measure] deve essere in grado di leggere e scrivere nell&#39;oggetto della campagna.
 
 Passaggio 3: escludere questo profilo da tutti i trigger, i flussi di lavoro e i processi
 

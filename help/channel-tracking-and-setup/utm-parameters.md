@@ -3,14 +3,18 @@ description: Guida ai parametri UTM per gli utenti di Marketo Measure
 title: Parametri UTM
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
-
 ---
-
 # Parametri UTM {#utm-parameters}
 
 Assegnare tag agli URL è un modo semplice ed efficace per acquisire dati sulle attività di marketing digitale. Si tratta del processo di aggiunta di parametri alla fine degli URL che raccolgono e registrano dati. I parametri più comunemente utilizzati sono i moduli UTM (Urchin Tracking Modules), supportati da Google. Sono disponibili cinque parametri UTM principali: Medium, Source, Campaign, Content e Term. Questi sono descritti più dettagliatamente nella sezione successiva.
@@ -45,7 +49,7 @@ Scopri le [best practice per la configurazione dei parametri UTM](/help/channel-
 * Source identifica il sottocanale che è la sorgente del traffico.
 * Risponde alla domanda: &quot;Da dove viene questa persona?&quot;
 * In un esempio di social media, la fonte del traffico è la piattaforma di social media utilizzata.
-   * In questo esempio, [!DNL Facebook] è il valore Source. Altri esempi sono Twitter e Instagram. Se il Medium UTM è [!DNL Paid Search], il Source UTM potrebbe essere AdWords o BingAds.
+  * In questo esempio, [!DNL Facebook] è il valore Source. Altri esempi sono Twitter e Instagram. Se il Medium UTM è [!DNL Paid Search], il Source UTM potrebbe essere AdWords o BingAds.
 
 * Questo parametro è mappato al campo &#39;Touchpoint Source&#39; di [!DNL Marketo Measure] in SFDC.
 * _[!DNL Marketo Measure] Best Practice :_Questo parametro tiene traccia dell&#39;origine del traffico, pertanto non è adatto per indicare il tipo di annuncio, ad esempio retargeting, sponsorizzato e così via. È meglio utilizzarlo per tenere traccia del sottocanale di livello superiore. Ricordate, state rispondendo alla domanda &quot;Da dove viene il mio traffico?&quot; Stai cercando il referente. In questo esempio, UTM Source è il luogo in cui si trova l’annuncio (non la pagina web effettiva, in quanto viene tracciata automaticamente all’esterno dei tag). Se tieni traccia di una campagna e-mail goccia a goccia, la sorgente è la posta elettronica goccia a goccia.

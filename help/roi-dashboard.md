@@ -3,14 +3,18 @@ description: Esplora la dashboard del ROI per confrontare i ricavi e il ROI rela
 title: Dashboard ROI
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
-
 ---
-
 # Dashboard ROI {#roi-dashboard}
 
 La dashboard ROI offre agli addetti al marketing una visualizzazione granulare del ritorno sull’investimento per canali, sottocanali e campagne. Suddivide meticolosamente i modelli di costi e ricavi, evidenziando al contempo metriche quali costo per lead, offerta e opportunità, garantendo una comprensione completa dell’attribuzione marketing.
@@ -130,11 +134,11 @@ Tabella che mostra costi, nuovi lead, opportunità e offerte chiusi segmentati p
 Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 * Data
-   * In base a:
-      * Data di creazione: nuovi lead, nuove opportunità
-      * Data costo sostenuto: costo
-      * Data di chiusura: ricavi attribuiti (ROI semplice), offerte
-      * Data punto di contatto: punti di contatto da ricavi attribuiti realizzati (ROI realizzato)
+  * In base a:
+    * Data di creazione: nuovi lead, nuove opportunità
+    * Data costo sostenuto: costo
+    * Data di chiusura: ricavi attribuiti (ROI semplice), offerte
+    * Data punto di contatto: punti di contatto da ricavi attribuiti realizzati (ROI realizzato)
 * Modello di attribuzione
 * Canale, Sottocanale
 * Campaign

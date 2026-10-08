@@ -3,13 +3,17 @@ description: Integrazione dei programmi [!DNL Marketo Engage] - [!DNL Marketo Me
 title: Integrazione dei programmi [!DNL Marketo Engage]
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 1%
-
 ---
-
 # Integrazione dei programmi [!DNL Marketo Engage] {#marketo-engage-programs-integration}
 
 Attraverso l&#39;integrazione di [!DNL Marketo Measure] con i programmi [!DNL Marketo Engage], i nostri clienti possono iniziare a creare punti di contatto per il tracciamento dell&#39;attribuzione dalle iscrizioni al programma Marketo. Questa funzionalità consente agli addetti al marketing di iniziare a tenere traccia delle iscrizioni ai programmi di e-mail o di coinvolgimento che altrimenti non sarebbero visibili da JavaScript [!DNL Marketo Measure] e dovrebbero essere misurati all&#39;interno del percorso di attribuzione.
@@ -32,9 +36,9 @@ Tutti i livelli.
 
 1. Per iniziare a impostare le regole per i programmi Marketo, passare a **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Programs]**. Fai clic sull&#39;icona **+** per iniziare a creare la prima regola.
 
-   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a &#x200B;](assets/marketo-engage-programs-01.png)
+   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a ](assets/marketo-engage-programs-01.png)
 
-   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a &#x200B;](assets/marketo-engage-programs-06.png)
+   ![1. Per iniziare a impostare le regole per i programmi Marketo, passa a ](assets/marketo-engage-programs-06.png)
 
 1. Facoltativamente, puoi impostare un nome per la regola, se questo contribuisce a tenerne traccia. per definire la regola, seleziona innanzitutto il campo dall’elenco dei campi Programma e Iscrizione al programma. Continua a creare la regola selezionando l’operatore e il valore previsto da verificare.
 
@@ -42,7 +46,7 @@ Tutti i livelli.
 
 1. Aggiungi un’altra istruzione nella stessa casella per impostare un criterio &quot;e&quot; nella regola oppure fai clic sull’icona + all’esterno della casella per impostare un’istruzione &quot;o&quot;.
 
-   ![1. Aggiungi un&#39;altra istruzione nella stessa casella per impostare un &#x200B;](assets/bizible-discover-1.png)
+   ![1. Aggiungi un&#39;altra istruzione nella stessa casella per impostare un ](assets/bizible-discover-1.png)
 
 1. Scegli la data o il campo data/ora da utilizzare per il mapping alla data del punto di contatto. Per visualizzare l&#39;elenco dei valori disponibili da Marketo, immettere una parentesi graffa `{`. Verranno visualizzati i campi disponibili.
 
@@ -72,7 +76,7 @@ Dopo aver creato alcune regole, è possibile testarle per verificare che l&#39;i
 
    Le regole vengono eseguite su un campione di 5000 membri. Se il programma contiene più di 5000 membri, è possibile che non venga eseguita alcuna verifica della compatibilità di tutti i membri. Questo strumento serve semplicemente come un modo per verificare che le regole siano costruite correttamente.
 
-   ![Le regole vengono eseguite su un campione di 5000 membri. Se &#x200B;](assets/marketo-engage-programs-05.png)
+   ![Le regole vengono eseguite su un campione di 5000 membri. Se ](assets/marketo-engage-programs-05.png)
 
    È possibile fare clic sul conteggio membri per visualizzare un elenco degli ID Marketo People idonei all&#39;interno del programma.
 

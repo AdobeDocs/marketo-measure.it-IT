@@ -3,19 +3,23 @@ description: Procedure consigliate per l'utilizzo di un importo di ricavi person
 title: Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-TQID: https://experienceleague.adobe.com/r0HE7od6BWa4ntQMPyrVqQWwebruGyxM3lhOOu6-RWc
+TQID: 'https://experienceleague.adobe.com/r0HE7od6BWa4ntQMPyrVqQWwebruGyxM3lhOOu6-RWc'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 421
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # Procedure consigliate per l’utilizzo di un importo di ricavi personalizzato {#best-practices-for-utilizing-a-custom-revenue-amount}
 
 ## Panoramica {#overview}
@@ -31,10 +35,10 @@ Quando si imposta un importo di ricavi personalizzato, tenere presenti le best p
 Aspetti da considerare:
 
 * Seleziona il campo dei ricavi accurato e utilizzato per tutte le opportunità
-   * ARR o valore totale del contratto consigliato
+  * ARR o valore totale del contratto consigliato
 * Non utilizzare un campo formula
 * Se si utilizza un importo di ricavi personalizzato per le conversioni di valuta, il metodo preferito è la funzionalità [!UICONTROL Marketo Measure Multiple Currencies].
-   * La funzionalità [!DNL Marketo Measure] più valute fa riferimento ai tassi di conversione stabiliti in [!DNL Salesforce] per garantire al meglio l&#39;allineamento tra le conversioni di valuta. Ciò ti consente di continuare a utilizzare il campo standard &quot;Importo&quot; (predefinito SFDC) o qualsiasi altro campo personalizzato relativo ai tassi di conversione [!DNL Salesforce].
+  * La funzionalità [!DNL Marketo Measure] più valute fa riferimento ai tassi di conversione stabiliti in [!DNL Salesforce] per garantire al meglio l&#39;allineamento tra le conversioni di valuta. Ciò ti consente di continuare a utilizzare il campo standard &quot;Importo&quot; (predefinito SFDC) o qualsiasi altro campo personalizzato relativo ai tassi di conversione [!DNL Salesforce].
 * Se aggiorni il campo Importo a cui desideri fare riferimento [!DNL Marketo Measure], utilizza Data Loader per aggiornare le opportunità passate in modo da garantire che i dati dei ricavi siano coerenti e che il campo corretto venga popolato tramite il flusso di lavoro
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}

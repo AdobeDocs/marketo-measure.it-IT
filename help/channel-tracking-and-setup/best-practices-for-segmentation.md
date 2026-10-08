@@ -3,13 +3,17 @@ description: Tecniche consigliate per la segmentazione - Guida per gli utenti di
 title: Best practice per la segmentazione
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d3432b7d-03be-560e-8abb-8681f1afaeb4
+    internal-label: Segmentation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
-
 ---
-
 # Best practice per la segmentazione {#best-practices-for-segmentation}
 
 ## Panoramica {#overview}
@@ -30,11 +34,11 @@ Se definisci la segmentazione per la prima volta o esamini solo la segmentazione
 * Allinea il nome del segmento alla nomenclatura dell’organizzazione, ovvero categoria = nome filtro, segmento = valore filtro
 * Non utilizzare i campi formula nelle regole
 * Quando possibile, crea la segmentazione sia sul lead/contatto che sull’opportunità in modo da poterla utilizzare in tutto il funnel
-   * Se sei un cliente Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni qui](/help/data-integrity-requirement.md){target="_blank"}).
-      * b2b.personStatus
-      * b2b.isConverted
-   * Non tutte le categorie di segmenti verranno allineate in tutto funnel
-      * Ad esempio, una categoria di segmenti &quot;Tipo di opportunità&quot; non è correlata ai lead, tuttavia un segmento correlato a &quot;Area&quot; è probabilmente una categoria che può essere definita in funnel
+  * Se sei un cliente Marketo Measure Ultimate e hai impostato l&#39;oggetto dashboard predefinito come contatto, non utilizzare i due campi seguenti specifici per lead ([ulteriori informazioni qui](/help/data-integrity-requirement.md){target="_blank"}).
+    * b2b.personStatus
+    * b2b.isConverted
+  * Non tutte le categorie di segmenti verranno allineate in tutto funnel
+    * Ad esempio, una categoria di segmenti &quot;Tipo di opportunità&quot; non è correlata ai lead, tuttavia un segmento correlato a &quot;Area&quot; è probabilmente una categoria che può essere definita in funnel
 * Pensa al modo in cui attualmente desideri suddividere i tuoi dati, sia che si tratti di un CRM o di uno strumento BI, e considera la creazione di questo come un segmento in [!DNL Marketo Measure] in modo da poter avere lo stesso reporting in Discover
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}

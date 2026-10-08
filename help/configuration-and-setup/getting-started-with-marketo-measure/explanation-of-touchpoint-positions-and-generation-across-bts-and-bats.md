@@ -1,20 +1,23 @@
 ---
 description: Spiegazione delle posizioni dei punti di contatto e della generazione tra BT e BAT - [!DNL Marketo Measure]
-title: Spiegazione delle posizioni dei punti di contatto e della generazione tra BT e  [!DNL BATs]
+title: Spiegazione delle posizioni dei punti di contatto e della generazione tra BT e [!DNL BATs]
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/MrUpDP1i5V-j2RzGmndOxMf8V4qw86pVlkVR29JGCgU
+TQID: 'https://experienceleague.adobe.com/MrUpDP1i5V-j2RzGmndOxMf8V4qw86pVlkVR29JGCgU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: '789'
 ht-degree: 0%
-
 ---
-
 # Spiegazione delle posizioni dei punti di contatto e della generazione tra BT e [!DNL BATs] {#explanation-of-touchpoint-positions-and-generation-across-bts-and-bats}
 
 **Generazione di posizioni dei punti di contatto e flusso attraverso il Percorso di acquirenti**
@@ -116,10 +119,10 @@ L’esempio seguente mostra il flusso di dati dai punti di contatto dell’acqui
 **Opportunità** I dati di Buyer Attribution Touchpoint verrebbero letti come segue...
 
 * Primo contatto (FT) - Social a pagamento.Facebook - 8/26/2019
-   * (da **Persona B** perché hanno il _Primo contatto_ vero per l&#39;account/Opp)
+  * (da **Persona B** perché hanno il _Primo contatto_ vero per l&#39;account/Opp)
 * Creazione di lead (LC) - Ricerca organica.Google - 11/20/2019
-   * (da **Persona A** perché hanno la vera _Creazione lead_ per l&#39;account/Opp)
+  * (da **Persona A** perché hanno la vera _Creazione lead_ per l&#39;account/Opp)
 * Creazione di opportunità (OC) - Webinar - 3/4/2020
-   * Il punto di contatto LC post da **Persona A** sarebbe il punto di contatto _OC_ perché è stata l&#39;interazione più recente che abbiamo per l&#39;opportunità creata il 3/7/2020
+  * Il punto di contatto LC post da **Persona A** sarebbe il punto di contatto _OC_ perché è stata l&#39;interazione più recente che abbiamo per l&#39;opportunità creata il 3/7/2020
 * Vinto chiuso - E-mail - 5/1/2020
-   * Il punto di contatto PostLC della **persona B** sarebbe il _punto di contatto Chiuso con Won_, in quanto si tratta dell&#39;interazione più recente di cui disponiamo per la chiusura dell&#39;opportunità il 5/6/2020
+  * Il punto di contatto PostLC della **persona B** sarebbe il _punto di contatto Chiuso con Won_, in quanto si tratta dell&#39;interazione più recente di cui disponiamo per la chiusura dell&#39;opportunità il 5/6/2020

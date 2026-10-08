@@ -4,19 +4,23 @@ description: Glossario dei campi Marketo Measure - Marketo Measure - Documentazi
 title: Glossario dei campi Marketo Measure
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 feature: Fundamentals
-TQID: https://experienceleague.adobe.com/xpadEsIBtdeUuwq8ltJh8iknt4-r3yMZf9ymu1CwXM4
+TQID: 'https://experienceleague.adobe.com/xpadEsIBtdeUuwq8ltJh8iknt4-r3yMZf9ymu1CwXM4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Taxonomy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 3228
-ht-degree: 0%
-
+source-wordcount: '3246'
+ht-degree: 1%
 ---
-
 # Glossario dei campi Marketo Measure {#glossary-of-marketo-measure-fields}
 
 Questo articolo fornisce un glossario di tutti i campi Marketo Measure aggiunti al Salesforce dal pacchetto base di Marketo Measure. Troverai anche informazioni sull’oggetto sul quale è possibile trovare il campo e su come ogni campo viene compilato con le informazioni.

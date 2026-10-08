@@ -3,13 +3,22 @@ description: Guida all’attribuzione delle attività di Salesforce per gli uten
 title: Attribuzione attività Salesforce
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
-
 ---
-
 # Attribuzione attività Salesforce {#salesforce-activities-attribution}
 
 L&#39;integrazione delle attività di Salesforce [!DNL Marketo Measure] inserisce record Attività ed Evento specifici nel modello di attribuzione. Inizia a tenere traccia di elementi come e-mail di vendita o telefonate di vendita che non ricevevano il dovuto credito. Per configurare la regola delle attività, vai a [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. Da qui, passare alla scheda **[!UICONTROL Settings]** e fare clic sulla scheda **[!UICONTROL Activities]**.
@@ -23,11 +32,11 @@ Stai per utilizzare questo nome della campagna [!DNL Marketo Measure] per indica
 Acquisisci familiarità con questa gerarchia:
 
 * Channel
-   * Sottocanale
-      * Campaign
-      * Campaign
-   * Sottocanale
-      * Campaign
+  * Sottocanale
+    * Campaign
+    * Campaign
+  * Sottocanale
+    * Campaign
 
 >[!TIP]
 >
@@ -45,7 +54,7 @@ Le regole fungono da filtro per indicarci quali record sono idonei per l’attri
 >
 >I campi formula non possono essere utilizzati nelle regole e non verranno visualizzati nell&#39;elenco a discesa. Poiché le formule vengono calcolate in background e non modificano un record, [!DNL Marketo Measure] non è in grado di rilevare se un record soddisfa o meno una regola.
 >
->Assicurati di utilizzare i valori corretti per i campi ID come CrmEvent.CreatedById. [!DNL Salesforce IDs] hanno una lunghezza di 18 caratteri ( 0054H000007WmrfQAC).
+>Assicurati di utilizzare i valori corretti per i campi ID come CrmEvent.CreatedById. [!DNL Salesforce IDs] sono lunghi 18 caratteri ( 0054H000007WmrfQAC).
 
 Infine, scegli uno dei campi data o data/ora da utilizzare come data Buyer Touchpoint. È possibile selezionare i campi standard e personalizzati.
 
@@ -57,7 +66,7 @@ Infine, scegli uno dei campi data o data/ora da utilizzare come data Buyer Touch
 
 Non dimenticare di impostare regole diverse per Attività o Eventi. È necessario conoscere l&#39;oggetto utilizzato dal team vendite per registrare le attività.
 
-![Non dimenticare di impostare regole diverse per attività o eventi. Tu &#x200B;](assets/activities-attribution-5.png)
+![Non dimenticare di impostare regole diverse per attività o eventi. Tu ](assets/activities-attribution-5.png)
 
 Inserire questi nuovi punti di contatto nel [canale di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target="_blank"} appropriato. Per farlo, definisci il canale con la nuova mappatura Campaign appena creata.
 
@@ -80,7 +89,7 @@ Inserire questi nuovi punti di contatto nel [canale di marketing](https://experi
 | Corrisponde a qualsiasi | Più valori - Corrispondenza esatta |
 | Corrisponde a qualsiasi (contiene) | Più valori - &#42;valore&#42;, &#42;valore, &#42;valore&#42; |
 
-![| Corrisponde a qualsiasi (contiene) | Più valori - &42;valore&42;, &42;valore, &42;valore&42; |](assets/activities-attribution-8.png)
+![| Corrisponde A Qualsiasi (Contiene) | Più valori - &amp;42;valore&amp;42;, &amp;42;valore, &amp;42;valore&amp;42; |](assets/activities-attribution-8.png)
 
 Infine, ma non per importanza, puoi immettere i costi per i nuovi canali. Il caricamento della [spesa di marketing](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target="_blank"} ti consente di inserire la spesa a livello di canale, sottocanale o campagna. Con le nuove [!DNL Marketo Measure] campagne, puoi aggiungere questi costi correlati per mese, quindi visualizzare il ROI di ogni campagna.
 

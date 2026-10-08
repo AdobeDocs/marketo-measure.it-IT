@@ -4,20 +4,25 @@ description: Schema Data Warehouse - Marketo Measure - Documentazione del prodot
 title: Schema Data Warehouse
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-TQID: https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY
+TQID: 'https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 21775
+source-wordcount: '21775'
 ht-degree: 8%
-
 ---
-
 # Schema Data Warehouse {#data-warehouse-schema}
 
 Data Warehouse consente di tenere traccia di quanto desideri, creare rapporti sui dati di attribuzione ovunque desideri e collegarli ad altri set di dati.
@@ -955,7 +960,7 @@ Account annuncio importati da qualsiasi account annuncio collegato.
         <p>La quantità di spesa importata per gli ultimi 30 giorni, applicabile solo ad AdWords.</p>
       </td>
       <td>
-        <p>17260.000000000000000000</p>
+        <p>17260,000000000000000000</p>
       </td>
     </tr>
     <tr>
@@ -2882,7 +2887,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un contatto a forma di w (consultate Is_First_Touch, Is_Lead_Creation_Touch e Is_Opp_Creation_Touch).</p>
       </td>
       <td>
-        <p>0.0153374234214425</p>
+        <p>0,0153374234214425</p>
       </td>
     </tr>
     <tr>
@@ -2896,7 +2901,7 @@ Gruppi di annunci importati da qualsiasi account di annunci connesso.
         <p>Percentuale calcolata allocata a questo punto di contatto perché fa parte di un modello di percorso completo (consultate Is_First_Touch, Is_Lead_Creation_Touch, Is_Opp_Creation_Touch, Is_Closed_Touch).</p>
       </td>
       <td>
-        <p>0.0143061513081193</p>
+        <p>0,0143061513081193</p>
       </td>
     </tr>
     <tr>
@@ -6220,7 +6225,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>La percentuale calcolata che viene allocata a questo punto di contatto perché fa parte di un contatto a forma di U.</p>
       </td>
       <td>
-        <p>100.0000000000000000000</p>
+        <p>100,0000000000000000000</p>
       </td>
     </tr>
     <tr>
@@ -6276,7 +6281,7 @@ Unisce impressioni, visualizzazioni di pagina, visite, invii di moduli, punti di
         <p>Quantità dell’opportunità dal sistema di origine.</p>
       </td>
       <td>
-        <p>42000.00000000</p>
+        <p>42000,00000000</p>
       </td>
     </tr>
     <tr>
@@ -6671,7 +6676,7 @@ Invii di moduli acquisiti.
         <p>URL in cui è stato inviato il modulo, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6925,7 +6930,7 @@ Impression sparate e registrate. Questa tabella richiede una connessione DoubleC
       <td>
         <p>URL in cui è stata distribuita l’impression, inclusi eventuali parametri di query.</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -8721,7 +8726,7 @@ Opportunità importate dal sistema di origine.
         <p>Importo dell’offerta previsto o chiuso dall’opportunità, dal sistema di origine.</p>
       </td>
       <td>
-        <p>8988.00000000</p>
+        <p>8988,00000000</p>
       </td>
     </tr>
     <tr>
@@ -9340,7 +9345,7 @@ Visualizzazioni di pagina raccolte dalle visite web. Più visualizzazioni di pag
         <p>URL da cui ha avuto origine la visualizzazione pagina, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9919,7 +9924,7 @@ Sessioni elaborate dalle visualizzazioni di pagina. Più visualizzazioni di pagi
         <p>URL della prima visualizzazione pagina della sessione, inclusi eventuali parametri di query.</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -11620,7 +11625,7 @@ Punti di contatto dell’acquirente, tutti i punti di contatto associati a un le
         <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -12635,7 +12640,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>La prima pagina di destinazione della sessione che ha generato un punto di contatto. Una pagina di destinazione non elaborata conterrà tutti i parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti è fatto riferimento a "Landing Page - Raw" (Pagina di destinazione - Non elaborato).</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%measure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12683,7 +12688,7 @@ Tutti i punti di contatto creati da qualsiasi evento associato a un’e-mail.
         <p>Il primo modulo registrato in una sessione che ha generato un punto di contatto. Gli invii di moduli successivi non verranno visualizzati nella tabella Attribution_Touchpoints, ma nella tabella Form_Submits. Una pagina modulo non elaborata può contenere parametri di query nell’URL. Nel sistema di gestione delle relazioni con i clienti viene fatto riferimento a "URL modulo - Non elaborato".</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guida</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guida</p>
       </td>
     </tr>
     <tr>
@@ -13272,7 +13277,7 @@ Mappatura della tabella per mappare l&#39;ID sessione [!DNL Marketo Measure] su 
       <td>varchar</td>
       <td>URL della visualizzazione pagina, inclusi eventuali parametri di query.</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>

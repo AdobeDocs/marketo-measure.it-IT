@@ -3,13 +3,17 @@ description: Indicazioni di sincronizzazione di Campaign personalizzate per gli 
 title: Sincronizzazione campagna personalizzata
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 1%
-
 ---
-
 # Sincronizzazione campagna personalizzata {#custom-campaign-sync}
 
 Oggi, con il pacchetto [!DNL Marketo Measure] installato, è possibile indicare quali campagne includere come punto di contatto idoneo. Ci sono diversi ostacoli a questo come in precedenza esisteva. Una volta installato il pacchetto [!DNL Marketo Measure] nel CRM, l&#39;approvazione da parte del team di sicurezza potrebbe richiedere del tempo. Inoltre, l’utilizzo di un singolo elenco di selezione sull’oggetto Campaign non è flessibile. Con questa nuova funzionalità, non è necessario installare un pacchetto per iniziare a utilizzare i record dei membri di Campaign e Campaign. È possibile creare regole per definire esattamente quali record possono essere generati per definire esattamente quali record sono idonei.
@@ -76,7 +80,7 @@ Puoi controllare facilmente i punti di contatto dell’acquirente e i record di 
 
 1. Dopo aver fatto clic su [!UICONTROL Test], verranno visualizzati il nome della campagna e il numero di membri della campagna idonei per i punti di contatto. Di seguito verrà visualizzata una tabella che mostra tutte le regole che corrispondono al tuo ID campagna. Verranno visualizzate solo le corrispondenze.
 
-   ![1. Dopo aver fatto clic su Prova, verrà visualizzato il nome di &#x200B;](assets/offline-channels-17.png)
+   ![1. Dopo aver fatto clic su Prova, verrà visualizzato il nome di ](assets/offline-channels-17.png)
 
 1. È inoltre possibile fare clic sul conteggio dei membri per visualizzare un elenco dei lead e dei contatti e dei relativi ID che fanno parte dell’idoneità della regola Campaign. Questo è solo un set di esempio e visualizzerà fino a 50 in modo da poter avere un’idea di quali record sono idonei.
 

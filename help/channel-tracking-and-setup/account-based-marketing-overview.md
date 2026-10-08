@@ -3,13 +3,17 @@ description: Scopri Account-Based Marketing (ABM) e come Adobe Marketo Measure a
 title: Panoramica del marketing basato sull’account
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 96ef477f-0ffb-5375-8fca-6d27be6b7c00
+    internal-label: Account-based Marketing
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # Panoramica del marketing basato sull’account {#account-based-marketing-overview}
 
 Le sezioni seguenti forniscono una breve panoramica di ABM, dei componenti della funzionalità ABM [!DNL Marketo Measure] e di come aggiungerla al layout di pagina [!DNL Salesforce]. Per ulteriori informazioni su ABM, consulta il [blog ABM](https://business.adobe.com/blog/basics/account-based-marketing){target="_blank"} di Adobe.
@@ -18,7 +22,7 @@ Per istruzioni dettagliate sulla configurazione di ABM nell&#39;istanza [!DNL Sa
 
 ## Cos’è ABM {#what-is-abm}
 
-Il marketing basato sull&#39;account, ABM, è una strategia di marketing in cui il targeting e la vendita vengono effettuati a società e account nel loro complesso, non solo come individui. [!DNL Marketo Measure] Con la funzionalità di mappatura lead-account e il punteggio di coinvolgimento predittivo, i team di marketing e vendita possono implementare strategie ABM di successo.
+Il marketing basato sull&#39;account, ABM, è una strategia di marketing in cui il targeting e la vendita vengono effettuati a società e account nel loro complesso, non solo come individui. [!DNL Marketo Measure] consente ai team di marketing e vendite di eseguire strategie ABM di successo con la funzionalità di mappatura lead-account e il punteggio di coinvolgimento predittivo.
 
 Affinché il modello di marketing basato sull&#39;account possa iniziare a essere popolato nel CRM, [!DNL Marketo Measure] deve soddisfare i seguenti criteri:
 
@@ -68,8 +72,8 @@ Ci sono molti componenti che entrano nell’algoritmo che calcola l’PES. L’a
 >
 >Potresti notare un livello di &quot;N/A&quot; o &quot;-&quot; (il simbolo del trattino) nel Punteggio di Coinvolgimento Predittivo per alcuni Account.
 
-_Un livello &quot;N/D&quot; indica semplicemente che non sono presenti dati sufficienti in tale account per consentire al modello di generare un livello effettivo. Con più dati, alla fine verrà assegnato un livello._
-_Un livello di &quot;-&quot; (il simbolo del trattino) significa che questo account deve ancora essere elaborato dal processo ABM, a causa di vincoli di tempo, processi saltati occasionalmente e così via. Se ritieni che un account debba avere un livello, basato su altri account o intervalli di tempo simili, contatta e informa [!DNL Marketo Measure]._
+_Un livello &quot;N/D&quot; significa semplicemente che non sono disponibili dati sufficienti in tale account per consentire al modello di generare un livello effettivo. Con più dati, alla fine verrà assegnato un livello._
+_Un livello di &quot;-&quot; (il simbolo del trattino) indica che questo account deve ancora essere elaborato dal processo ABM, a causa di vincoli di tempo, processi saltati occasionalmente e così via. Se ritieni che un account debba avere un livello, basato su altri account o intervalli di tempo simili, contatta e informa [!DNL Marketo Measure]._
 
 ## Impostazione del layout di pagina ABM in [!DNL Salesforce] {#setting-up-abm-page-layout-in-salesforce}
 
@@ -87,7 +91,7 @@ Per iniziare a utilizzare PES, è necessario aggiungere il campo PES e l&#39;ele
 1. Passare quindi a **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Leads]** > **[!UICONTROL Page Layout]** e selezionare i layout di pagina appropriati da modificare.
 1. Fai clic su **[!UICONTROL Fields]** e aggiungi il campo [!UICONTROL Account] che si adatta alla pagina.
 
-   ![1. Fai clic su Campi e aggiungi il campo Account in cui &#x200B;](assets/account-marketing-5.png)
+   ![1. Fai clic su Campi e aggiungi il campo Account in cui ](assets/account-marketing-5.png)
 
 È tutto pronto!
 

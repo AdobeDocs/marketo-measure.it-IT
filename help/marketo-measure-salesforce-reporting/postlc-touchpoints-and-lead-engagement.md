@@ -3,13 +3,17 @@ description: Scopri come creare punti di contatto PostLC aggiornati e limitati p
 title: Punti di contatto PostLC e coinvolgimento lead
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # Punti di contatto PostLC e coinvolgimento lead {#postlc-touchpoints-and-lead-engagement}
 
 Sono disponibili [!DNL Marketo Measure] punti di contatto Post-Lead Creation (PostLC) per i clienti che utilizzano modelli di attribuzione multi-touch (W-Shape e versioni successive). Quando un lead o un contatto ritorna sul sito web e continua a compilare moduli, questi invii di moduli si registrano come punti di contatto PostLC. Questi punti di contatto consentono di vedere quali contenuti stanno guidando i lead a continuare a interagire con il sito, molto tempo dopo la loro prima conversione. I punti di contatto PostLC condividono il credito di attribuzione con tutti i punti di contatto intermediari all’interno di un’opportunità; il 10% di credito di attribuzione viene assegnato ai punti di contatto intermediari e viene distribuito equamente tra tutti i contatti.

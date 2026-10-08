@@ -3,20 +3,24 @@ description: Marketing Attribution
 title: Marketing Attribution
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 feature: Attribution
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 0%
-
+ht-degree: 4%
 ---
-
 
 # Marketing Attribution {#marketing-attribution}
 
 ## Benvenuti in Marketo Measure {#welcome-to-marketo-measure}
 
-Marketo Measure offre agli esperti di marketing insight le risorse di marketing più efficaci per incrementare le entrate dell’azienda. Marketo Measure è una soluzione di attribuzione marketing che tiene traccia automaticamente delle prestazioni dei canali e genera rapporti su di esse, fornendo visibilità sui canali che generano il maggior coinvolgimento dei clienti e consentendoti di ottimizzare le spese di marketing di conseguenza.
+Marketo Measure offre ai marketer insight sulle attività di marketing più efficaci per incrementare le entrate dell’azienda. Marketo Measure è una soluzione di attribuzione marketing che tiene traccia automaticamente delle prestazioni dei canali e genera rapporti su di esse, fornendo visibilità sui canali che generano il maggior coinvolgimento dei clienti e consentendoti di ottimizzare le spese di marketing di conseguenza.
 
 ## Marketing Attribution {#marketing-attribution-1}
 

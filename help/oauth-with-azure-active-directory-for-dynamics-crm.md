@@ -1,16 +1,23 @@
 ---
-description: OAuth con [!DNL Azure Active Directory] per le linee guida di Dynamics CRM per gli utenti di Marketo Measure
-title: OAuth con  [!DNL Azure Active Directory]  per Dynamics CRM
+description: OAuth con [!DNL Azure Active Directory] per le indicazioni di Dynamics CRM per gli utenti di Marketo Measure
+title: OAuth con [!DNL Azure Active Directory] per Dynamics CRM
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '933'
 ht-degree: 1%
-
 ---
-
 # OAuth con [!DNL Azure Active Directory] per Dynamics CRM {#oauth-with-azure-active-directory-for-dynamics-crm}
 
 ## Chi è interessato {#who-s-affected}
@@ -27,7 +34,7 @@ Questa configurazione è per i nuovi clienti [!DNL Marketo Measure] che utilizza
 
 1. Scegli il tenant di Azure AD facendo clic sul tuo account nell’angolo in alto a destra della pagina, quindi facendo clic sulla navigazione Switch Directory e selezionando il tenant appropriato. Ignora questo passaggio se disponi di un solo tenant Azure AD nel tuo account o se hai già selezionato il tenant Azure AD appropriato.
 
-   ![1. Scegli il tenant di Azure AD facendo clic sul tuo account in &#x200B;](assets/bizible-taxonomy-1.png)
+   ![1. Scegli il tenant di Azure AD facendo clic sul tuo account in ](assets/bizible-taxonomy-1.png)
 
 1. Cerca &quot;[!DNL Azure Active Directory]&quot; nella barra di ricerca e fai clic sul nome per aprire.
 
@@ -60,7 +67,7 @@ c. Specifica l&#39;URI di reindirizzamento. Per le applicazioni web, questo è l
 
 1. Passa alla scheda Autorizzazioni API e accertati che all’applicazione siano assegnate le autorizzazioni corrette.
 
-   ![1. Passa alla scheda Autorizzazioni API e assicurati che &#x200B;](assets/microsoft-guide-6.png)
+   ![1. Passa alla scheda Autorizzazioni API e assicurati che ](assets/microsoft-guide-6.png)
 
 1. Da qui immettere &quot;[!UICONTROL enterprise]&quot; nella casella di ricerca e fare clic su **[!UICONTROL Enterprise Applications]**.
 
@@ -78,7 +85,7 @@ c. Specifica l&#39;URI di reindirizzamento. Per le applicazioni web, questo è l
 
 1. Dalla scheda &quot;[!UICONTROL Users and Groups]&quot;, assicurarsi che &quot;Utenti e gruppi&quot; validi siano assegnati all&#39;applicazione.
 
-   ![1. Dalla scheda &quot;Utenti e gruppi&quot;, assicurati che &#x200B;](assets/microsoft-guide-10.png)
+   ![1. Dalla scheda &quot;Utenti e gruppi&quot;, assicurati che ](assets/microsoft-guide-10.png)
 
 ## Creazione di un utente dell&#39;applicazione {#creating-an-application-user}
 
@@ -114,7 +121,7 @@ a. L’ID client è l’ID del passaggio #7 nella sezione precedente. Se non l&#
 
 b. Segreto client è il segreto dell’applicazione creato nel portale Azure per l’applicazione in Certificati e segreti.
 
-![&#x200B; b. Segreto client è il segreto dell&#39;applicazione creato nel portale Azure](assets/microsoft-guide-11.png)
+![ b. Segreto client è il segreto dell&#39;applicazione creato nel portale Azure](assets/microsoft-guide-11.png)
 
 c. L’URI dell’ID applicazione è l’URL dell’API web di destinazione (risorsa protetta). Per trovare l&#39;URL dell&#39;ID app, nel portale Azure, fare clic su [!DNL Azure Active Directory], fare clic su Registrazioni applicazioni, aprire la pagina Impostazioni dell&#39;applicazione, quindi fare clic su Proprietà. Potrebbe anche essere una risorsa esterna come `https://graph.microsoft.com`. Questo è normalmente l’URL dell’istanza Dynamics.
 

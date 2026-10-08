@@ -1,15 +1,19 @@
 ---
 description: Procedure consigliate per l'implementazione di [!DNL Marketo Measure] linee guida di JavaScript per gli utenti di Marketo Measure
-title: Best practice per l'implementazione di [!DNL Marketo Measure] JavaScript
+title: Procedure consigliate per l'implementazione di [!DNL Marketo Measure] JavaScript
 exl-id: 0359ad27-81e8-4902-a23a-49a5646a44d0
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '377'
 ht-degree: 0%
-
 ---
-
 
 # Procedure consigliate per l&#39;implementazione di [!DNL Marketo Measure] JavaScript {#best-practices-for-implementing-marketo-measure-javascript}
 
@@ -31,16 +35,16 @@ Le incoerenze nella distribuzione del JavaScript [!DNL Marketo Measure] causeran
 Quando si tratta di implementare e gestire il JavaScript [!DNL Marketo Measure], tieni presenti le seguenti best practice.
 
 * Conferma che tutti i tuoi domini siano elencati nel tuo account [!DNL Marketo Measure]
-   * In caso di dubbi relativi ai tuoi domini, contatta il supporto tecnico
+  * In caso di dubbi relativi ai tuoi domini, contatta il supporto tecnico
 * Distribuire JavaScript su TUTTE le pagine.
-   * Se si inserisce JavaScript solo in determinate pagine, si verificheranno interruzioni nei dati della sessione che causeranno dati [!DNL Marketo Measure] errati
+  * Se si inserisce JavaScript solo in determinate pagine, si verificheranno interruzioni nei dati della sessione che causeranno dati [!DNL Marketo Measure] errati
 * Per un modulo sul sito da cui non si desidera creare punti di contatto, aggiungere lo script di esclusione [!DNL Marketo Measure]
-   * Questo script di esclusioni garantirà che i dati della sessione [!DNL Marketo Measure] non vengano interrotti e che i dati di origine rimangano attivi
-      * Di seguito sono riportati alcuni esempi di moduli comuni da eliminare:
-         * Accessi cliente
-         * Moduli per password dimenticate
-         * Annulla iscrizione moduli
-         * Moduli per la richiesta di lavoro
+  * Questo script di esclusioni garantirà che i dati della sessione [!DNL Marketo Measure] non vengano interrotti e che i dati di origine rimangano attivi
+    * Di seguito sono riportati alcuni esempi di moduli comuni da eliminare:
+      * Accessi cliente
+      * Moduli per password dimenticate
+      * Annulla iscrizione moduli
+      * Moduli per la richiesta di lavoro
 * Esaminare le sezioni &quot;Considerazioni aggiuntive&quot; e &quot;Forms per prestare maggiore attenzione&quot; della risorsa Aggiunta di script [!DNL Marketo Measure] elencata di seguito per verificare la presenza di scenari che potrebbero richiedere una gestione speciale
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}

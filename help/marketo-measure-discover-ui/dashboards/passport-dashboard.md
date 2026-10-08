@@ -3,18 +3,21 @@ description: Dashboard Passport - [!DNL Marketo Measure] - Prodotto
 title: Dashboard Passport
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-TQID: https://experienceleague.adobe.com/SlIfN-Y5sttJQUeLgA-JA-H-lbRJMS8BrgBYdnhmgZk
+TQID: 'https://experienceleague.adobe.com/SlIfN-Y5sttJQUeLgA-JA-H-lbRJMS8BrgBYdnhmgZk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Dashboard Passport {#passport-dashboard}
 
 Il dashboard Passport offre agli addetti al marketing una visualizzazione dinamica di lead, contatti e opportunità durante la transizione attraverso varie fasi entro un periodo specificato. Filtrando per una data specifica, gli utenti possono ottenere anche un’istantanea dei record per quel giorno.
@@ -23,7 +26,7 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 
 * Quanti lead, contatti o opportunità esistevano in ogni fase non terminale in un giorno scelto?
 * Durante un periodo specificato, quanti lead o contatti distinti sono progrediti in ogni fase transitoria?
-   * _Esempio_: se il Lead A si trovava nella fase 1 il 1/1/2023 e fosse avanzato alla fase 5 entro il 3/31/2023, l&#39;analisi Passport Q1 2023 conterà il Lead A nelle fasi da 1 a 5.
+  * _Esempio_: se il Lead A si trovava nella fase 1 il 1/1/2023 e fosse avanzato alla fase 5 entro il 3/31/2023, l&#39;analisi Passport Q1 2023 conterà il Lead A nelle fasi da 1 a 5.
 * Quante opportunità uniche sono passate attraverso ogni fase transitoria durante un determinato intervallo di tempo?
 
 ## Componenti del dashboard {#dashboard-components}
@@ -31,7 +34,7 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 ### Opportunità nella fase per nome fase {#opportunities-in-stage-by-stage-name}
 
 * Ogni fase mostra il numero di opportunità con punti di contatto che sono passate attraverso di esse in un determinato arco temporale.
-   * Se un’opportunità progredisce attraverso più fasi all’interno dell’intervallo, viene conteggiata in ogni fase che passa.
+  * Se un’opportunità progredisce attraverso più fasi all’interno dell’intervallo, viene conteggiata in ogni fase che passa.
 * Sono escluse le fasi terminali come &quot;Closed Won&quot; e &quot;Closed Lost&quot;.
 * Le date di inizio e di fine sono entrambe inclusive.
 
@@ -40,8 +43,8 @@ Il dashboard Passport offre agli addetti al marketing una visualizzazione dinami
 ### Lead o contatti nell&#39;area di visualizzazione per nome area di visualizzazione {#leads-or-contacts-in-stage-by-stage-name}
 
 * Ogni fase mostra il numero di lead o contatti con punti di contatto che li hanno attraversati in un determinato arco temporale.
-   * La visualizzazione di &quot;Lead&quot; o &quot;Contatto&quot; è determinata dalla preferenza impostata in: Impostazioni > Impostazioni attribuzione > Oggetto dashboard predefinito.
-   * Se un lead o un contatto progredisce attraverso più stadi all&#39;interno di tale estensione, viene conteggiato in ogni stadio che passa.
+  * La visualizzazione di &quot;Lead&quot; o &quot;Contatto&quot; è determinata dalla preferenza impostata in: Impostazioni > Impostazioni attribuzione > Oggetto dashboard predefinito.
+  * Se un lead o un contatto progredisce attraverso più stadi all&#39;interno di tale estensione, viene conteggiato in ogni stadio che passa.
 * Sono escluse le fasi terminali come &quot;Closed Won&quot; e &quot;Closed Lost&quot;.
 * Le date di inizio e di fine sono entrambe inclusive.
 

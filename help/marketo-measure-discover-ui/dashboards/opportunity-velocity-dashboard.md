@@ -3,19 +3,23 @@ description: Dashboard velocità opportunità - [!DNL Marketo Measure] - Prodott
 title: Dashboard velocità opportunità
 feature: Reporting
 exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
-TQID: https://experienceleague.adobe.com/Jo1bO9vUfT5yYLTe1NQZvNyQQVLnjqr-sbntl14lgX0
+TQID: 'https://experienceleague.adobe.com/Jo1bO9vUfT5yYLTe1NQZvNyQQVLnjqr-sbntl14lgX0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 380
+source-wordcount: '380'
 ht-degree: 1%
-
 ---
-
 # Dashboard velocità opportunità {#opportunity-velocity-dashboard}
 
 La dashboard di Velocity offre una visualizzazione dinamica del ritmo con cui i potenziali clienti passano attraverso il funnel di vendita, fornendo agli addetti al marketing e ai team di vendita informazioni essenziali sui tempi di conversione tra i vari canali. Questo strumento è prezioso per rispondere a domande chiave sul ciclo di vita delle opportunità e sull&#39;efficienza della progressione attraverso le fasi di vendita, consentendo di ottimizzare le strategie di coinvolgimento per accelerare la crescita e le conversioni.
@@ -78,7 +82,7 @@ Risposte alle domande del grafico:
 Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 * Data
-   * Basato su: Transizione in data
+  * Basato su: Transizione in data
 * Fase
 * Channel
 * Sottocanale

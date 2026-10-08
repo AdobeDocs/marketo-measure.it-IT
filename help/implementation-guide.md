@@ -3,13 +3,21 @@ description: '''[!DNL Marketo Measure] Guida all''implementazione di Ultimate - 
 title: Guida all'implementazione di Ultimate [!DNL Marketo Measure]
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 2%
-
 ---
-
 # Guida all&#39;implementazione di Ultimate [!DNL Marketo Measure] {#marketo-measure-ultimate-implementation-guide}
 
 Questo articolo funge da guida all’implementazione per Marketo Measure Ultimate e fornisce passaggi chiari e informazioni approfondite per garantire un’integrazione e un utilizzo corretti.
@@ -37,7 +45,7 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/migration-from-tier-t
 
 >[!NOTE]
 >
->Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
+>Consulta [Blocchi predefiniti di uno schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} per una panoramica di schemi, classi e gruppi di campi.
 
 **Schema XDM = Classe + Gruppo di campi schema&#42;**
 
@@ -46,17 +54,17 @@ Ulteriori informazioni su [Marketo Measure Ultimate](/help/migration-from-tier-t
 
 &#42; _Uno schema include una classe e zero o più gruppi di campi schema. Ciò significa che è possibile comporre uno schema di set di dati senza utilizzare i gruppi di campi._
 
-![&42; Uno schema comprende una classe e zero o più campi schema](assets/marketo-guide-1.png)
+![&amp;42; Uno schema comprende una classe e zero o più campi schema](assets/marketo-guide-1.png)
 
-[Panoramica sui set di dati](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/overview#){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
+[Panoramica sui set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview#){target="_blank"}: tutti i dati acquisiti correttamente in AEP vengono mantenuti all&#39;interno del Data Lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
 ## Creazione di uno schema {#creating-a-schema}
 
 È consigliabile utilizzare un’utility di generazione automatica per creare dieci schemi B2B standard.
 
-* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=it#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
+* I passaggi per scaricare e configurare l&#39;utilità [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
-Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli schemi dalla pagina Origini.
+Per coloro che dispongono di un _**diritto CDP**_: crea gli schemi dalla pagina Origini.
 
 * Da un’origine, seleziona Aggiungi dati > Usa modelli
 
@@ -72,7 +80,7 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
 >
 >Quando aggiungi un nuovo set di dati, ti consigliamo di creare un flusso invece di utilizzarne uno esistente.
 
-[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=it){target="_blank"}
+[Panoramica dei flussi di dati](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **Passaggi per creare un flusso di dati:**
 
@@ -87,7 +95,7 @@ Per coloro che dispongono di un _&#x200B;**diritto CDP**&#x200B;_: crea gli sche
    >* Se mappi un tipo di schema a un altro identico, l’operazione viene eseguita automaticamente.
    >* Potete anche importare la mappatura da un altro flusso nel sistema.
    >* È possibile mappare un campo Source a più campi di destinazione, ma non è possibile eseguire l&#39;operazione opposta.
-   >* È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it){target="_blank"}).
+   >* È possibile creare campi calcolati ([funzioni di mappatura della preparazione dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}).
 
    >[!CAUTION]
    >
@@ -115,7 +123,7 @@ Opzione 1: per eseguire le query direttamente dall’interfaccia utente, accedi 
 
 ![Opzione 1: per eseguire query direttamente dall&#39;interfaccia utente, accedere alle query](assets/marketo-guide-4.png)
 
-Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=it){target="_blank"} (più veloce e affidabile).
+Opzione 2: [Scaricare e utilizzare PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} (più veloce e affidabile).
 
 ## Attiva set di dati per Marketo Measure {#activate-dataset-for-marketo-measure}
 

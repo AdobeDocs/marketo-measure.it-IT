@@ -3,17 +3,23 @@ description: Linee guida per la gestione dei domini per gli utenti di Marketo Me
 title: Gestione del dominio
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # Gestione del dominio {#domain-management}
 
-Per i tenant abilitati per IMS che eseguono [!DNL Marketo Measure] nell&#39;interfaccia di Experience Cloud, [!DNL Marketo Measure] fornisce un&#39;interfaccia che consente agli utenti di gestire il proprio elenco di domini. [!DNL Marketo Measure] gli utenti devono prima verificare tutti i domini che desiderano monitorare in [Adobe Admin Console](https://adminconsole.adobe.com/). Una volta verificati i domini in Admin Console, gli utenti possono gestire se [!DNL Marketo Measure] utilizza questi domini per tenere traccia del traffico del sito Web.
+Per i tenant abilitati per IMS che eseguono [!DNL Marketo Measure] nell&#39;interfaccia Experience Cloud, [!DNL Marketo Measure] fornisce un&#39;interfaccia che consente agli utenti di gestire il proprio elenco di domini. Gli utenti di [!DNL Marketo Measure] devono prima verificare tutti i domini che desiderano monitorare in [Adobe Admin Console](https://adminconsole.adobe.com/). Una volta verificati i domini in Admin Console, gli utenti possono gestire se [!DNL Marketo Measure] utilizza questi domini per tenere traccia del traffico del sito Web.
 
 ## Aggiunta di domini in Admin Console {#adding-domains-in-admin-console}
 
@@ -21,7 +27,7 @@ Gli utenti IMS con accesso a Adobe Admin Console possono aggiungere e convalidar
 
 ![Gli utenti IMS con accesso a Adobe Admin Console possono aggiungere e](assets/domain-management-4.png)
 
-Le istruzioni per l&#39;aggiunta dei domini sono disponibili nella [documentazione di Admin Console](https://helpx.adobe.com/it/enterprise/using/add-domains-directories.html). Una volta aggiunto, il dominio deve essere [collegato a una directory](https://helpx.adobe.com/it/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
+Le istruzioni per l&#39;aggiunta dei domini sono disponibili nella [documentazione di Admin Console](https://helpx.adobe.com/enterprise/using/add-domains-directories.html). Una volta aggiunto, il dominio deve essere [collegato a una directory](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
 
 ## Gestione dei domini in [!DNL Marketo Measure] {#managing-domains-in-marketo-measure}
 
@@ -29,7 +35,7 @@ Dopo l&#39;aggiunta di un dominio in Admin Console, [!DNL Marketo Measure] sincr
 
 ![Dopo aver aggiunto un dominio in Admin Console, Marketo Measure](assets/domain-management-2.png)
 
-Nella pagina **[!UICONTROL Integration]** > **[!UICONTROL Domains]**, l&#39;utente visualizza tutti i domini registrati in Admin Console, insieme al relativo stato. Ogni dominio può essere abilitato o disabilitato. Se un dominio è abilitato, il monitoraggio [!DNL Marketo Measure] raccoglie tutto il traffico visualizzato in quel dominio. Se un dominio è disabilitato, [!DNL Marketo Measure] ignora il traffico proveniente da tale dominio e non crea punti di contatto o altri dati. [!DNL Marketo Measure] conferma la disattivazione di un dominio e avvisa in caso di ramificazioni:
+Nella pagina **[!UICONTROL Integration]** > **[!UICONTROL Domains]**, l&#39;utente visualizza tutti i domini registrati in Admin Console, insieme al relativo stato. Ogni dominio può essere abilitato o disabilitato. Se un dominio è abilitato, il monitoraggio [!DNL Marketo Measure] raccoglie tutto il traffico visualizzato in quel dominio. Se un dominio è disabilitato, [!DNL Marketo Measure] ignora il traffico proveniente da tale dominio e non crea punti di contatto o altri dati. [!DNL Marketo Measure] conferma la disabilitazione di un dominio e avvisa di eventuali ramificazioni:
 
 ![Nella pagina Domini di integrazione, l&#39;utente visualizza tutti i domini](assets/domain-management-3.png)
 

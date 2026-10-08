@@ -3,18 +3,21 @@ description: Best practice per i canali offline - [!DNL Marketo Measure]
 title: Best practice per i canali offline
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-TQID: https://experienceleague.adobe.com/p-xffnDY4cbrbz4dH1Z4MgWCOwuoP-IjDHU4YdTww8o
+TQID: 'https://experienceleague.adobe.com/p-xffnDY4cbrbz4dH1Z4MgWCOwuoP-IjDHU4YdTww8o'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1053
+source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # Best practice per i canali offline {#best-practices-for-offline-channels}
 
 ## Panoramica {#overview}
@@ -37,24 +40,24 @@ Il valore &quot;Canale di marketing&quot; per questi punti di contatto si basa s
 Per la mappatura dei canali offline per la prima volta o per una semplice revisione al fine di verificarne l’accuratezza, considera le seguenti best practice.
 
 * Creare un framework intenzionale per i canali offline
-   * Prenditi un po&#39; di tempo per pensare all&#39;organizzazione delle campagne di marketing e a come rientrano nel framework [!DNL Marketo Measure]. Determinare quali canali e sottocanali devono essere rappresentati nei canali offline e quali tipi di campagna CRM differenziano tali canali l’uno dall’altro
+  * Prenditi un po&#39; di tempo per pensare all&#39;organizzazione delle campagne di marketing e a come rientrano nel framework [!DNL Marketo Measure]. Determinare quali canali e sottocanali devono essere rappresentati nei canali offline e quali tipi di campagna CRM differenziano tali canali l’uno dall’altro
 * Utilizzare prima i valori &#39;Tipo&#39; della campagna CRM corrente
-   * I canali offline sono definiti da &quot;Tipo&quot; della campagna CRM, tuttavia, potrebbe essere necessario creare un valore &quot;Tipo&quot; della campagna CRM personalizzato per adattarlo ai valori ideali del canale offline e del sottocanale. I valori ideali della campagna CRM personalizzata &quot;Type&quot; devono avere la convenzione di denominazione riportata di seguito:
-      * CANALE - SOTTOCANALE
-      * Esempio: Event - Tradeshow
-      * In questo modo la mappatura a livello di sottocanale è il più semplice e pulito possibile
+  * I canali offline sono definiti da &quot;Tipo&quot; della campagna CRM, tuttavia, potrebbe essere necessario creare un valore &quot;Tipo&quot; della campagna CRM personalizzato per adattarlo ai valori ideali del canale offline e del sottocanale. I valori ideali della campagna CRM personalizzata &quot;Type&quot; devono avere la convenzione di denominazione riportata di seguito:
+    * CANALE - SOTTOCANALE
+    * Esempio: Event - Tradeshow
+    * In questo modo la mappatura a livello di sottocanale è il più semplice e pulito possibile
 * Un solo sottocanale può essere mappato a un solo &quot;tipo&quot; della campagna CRM
-   * È possibile mappare più &quot;Tipi&quot; di campagna CRM a un singolo canale, ma è possibile mappare un solo &quot;Tipo&quot; di campagna CRM a ciascun sottocanale all’interno di ciascun canale
+  * È possibile mappare più &quot;Tipi&quot; di campagna CRM a un singolo canale, ma è possibile mappare un solo &quot;Tipo&quot; di campagna CRM a ciascun sottocanale all’interno di ciascun canale
 * Solo i &#39;Tipi&#39; della campagna CRM OFFLINE devono essere mappati ai canali offline, in quanto solo le campagne offline devono essere sincronizzate con [!DNL Marketo Measure] per creare punti di contatto:
-   * I &#39;Tipi&#39; della campagna CRM online devono essere mappati su un [!UICONTROL Marketing Channel] = &quot;NULL&quot;. Questo valore è consigliato in quanto funge da &#39;flag rosso&#39; che indica che i canali offline sono stati esaminati e qualsiasi &#39;Tipo&#39; della campagna CRM mappato su &quot;NULL&quot; è un &#39;Tipo&#39; ONLINE e non deve essere sincronizzato con [!DNL Marketo Measure]. I punti di contatto relativi ai &#39;Tipi&#39; della campagna CRM online verranno già tracciati tramite la funzionalità e i canali online [!DNL Marketo Measure]. La sincronizzazione di queste campagne comporta il rischio di &quot;duplicare&quot; i punti di contatto/doppio conteggio
+  * I &#39;Tipi&#39; della campagna CRM online devono essere mappati su un [!UICONTROL Marketing Channel] = &quot;NULL&quot;. Questo valore è consigliato in quanto funge da &#39;flag rosso&#39; che indica che i canali offline sono stati esaminati e qualsiasi &#39;Tipo&#39; della campagna CRM mappato su &quot;NULL&quot; è un &#39;Tipo&#39; ONLINE e non deve essere sincronizzato con [!DNL Marketo Measure]. I punti di contatto relativi ai &#39;Tipi&#39; della campagna CRM online verranno già tracciati tramite la funzionalità e i canali online [!DNL Marketo Measure]. La sincronizzazione di queste campagne comporta il rischio di &quot;duplicare&quot; i punti di contatto/doppio conteggio
 
 ## Best practice | Sincronizzazione campagna offline {#best-practice-offline-campaign-sync}
 
 * Assicurati che il campo &quot;Tipo&quot; sia accurato in ogni campagna CRM
-   * &quot;Tipo&quot; determina il canale di marketing e il sottocanale per tutti i punti di contatto generati dalla campagna una volta sincronizzati
+  * &quot;Tipo&quot; determina il canale di marketing e il sottocanale per tutti i punti di contatto generati dalla campagna una volta sincronizzati
 * Sia che si utilizzi il metodo di sincronizzazione delle campagne basato su CRM (Abilita punti di contatto dell&#39;acquirente) o il metodo di sincronizzazione basato su app [!DNL Marketo Measure] (Sincronizzazione campagna personalizzata nella scheda &#39;[!UICONTROL Campaigns]&#39; delle impostazioni account [!UICONTROL Marketo Measure]), i punti di contatto offline devono essere creati solo se il membro della campagna ha un coinvolgimento offline effettivo con la campagna e il brand:
-   * Per i canali offline come eventi o webinar: le &quot;registrazioni&quot; vengono in genere tracciate tramite l&#39;invio di moduli sul sito Web e la funzionalità online di [!DNL Marketo Measure]. Pertanto, i membri della campagna con lo stato &quot;Registrato&quot; non devono ricevere un punto di contatto offline dalla campagna per evitare un doppio conteggio. I punti di contatto offline devono essere rappresentativi della &quot;partecipazione&quot; solo all’evento o al webinar.
-   * Alcuni canali offline come Syndication dei contenuti sono più semplici in quanto ogni membro della campagna ha lo stesso stato di &quot;risposta&quot;, il che significa che ha effettivamente risposto alla campagna. In questo caso, scarica i contenuti su un sito di terze parti e quindi dovrebbe ricevere un punto di contatto offline.
+  * Per i canali offline come eventi o webinar: le &quot;registrazioni&quot; vengono in genere tracciate tramite l&#39;invio di moduli sul sito Web e la funzionalità online di [!DNL Marketo Measure]. Pertanto, i membri della campagna con lo stato &quot;Registrato&quot; non devono ricevere un punto di contatto offline dalla campagna per evitare un doppio conteggio. I punti di contatto offline devono essere rappresentativi della &quot;partecipazione&quot; solo all’evento o al webinar.
+  * Alcuni canali offline come Syndication dei contenuti sono più semplici in quanto ogni membro della campagna ha lo stesso stato di &quot;risposta&quot;, il che significa che ha effettivamente risposto alla campagna. In questo caso, scarica i contenuti su un sito di terze parti e quindi dovrebbe ricevere un punto di contatto offline.
 * Quando si utilizza il metodo di sincronizzazione delle campagne personalizzate nell&#39;app [!DNL Marketo Measure], accertarsi che il campo &quot;Data punto di contatto&quot; sia basato sul campo data del membro della campagna o della campagna indicativo del momento in cui l&#39;interazione del punto di contatto si è effettivamente verificata
 * Utilizza il pulsante &quot;Bulk Update Touchpoint Date&quot; (Aggiorna data punto di contatto in blocco) se devi sovrascrivere &quot;Touchpoint Date&quot; (Data punto di contatto) per uno qualsiasi dei punti di contatto offline originati da una campagna CRM. La &quot;Data del punto di contatto&quot; deve essere il più accurata possibile per garantire che il punto di contatto contenga la &quot;Posizione del punto di contatto&quot; più accurata possibile e quindi l’importo corretto del credito di attribuzione
 

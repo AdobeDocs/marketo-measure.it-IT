@@ -3,14 +3,20 @@ description: Indicazioni sui costi del canale di marketing per gli utenti di Mar
 title: Costi canale di marketing
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
-
 ---
-
 # Costi canale di marketing {#marketing-channel-costs}
 
 Uno dei vantaggi principali dell&#39;utilizzo di [!DNL Marketo Measure] è la possibilità di collegare le attività di marketing direttamente all&#39;impatto sui ricavi, con la granularità desiderata. È possibile vedere il ritorno sull&#39;investimento a livello di punto di contatto. Per usufruire di questo vantaggio, i costi del canale devono essere caricati nell&#39;app [!DNL Marketo Measure]. I report sul ROI vengono creati automaticamente e sono disponibili nella **dashboard sul ROI marketing** in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
@@ -87,7 +93,7 @@ Spostarsi a destra dello schermo e fare clic su **[!UICONTROL Download Current C
 
 **Passaggio 3: aprire il file CSV e apportare le modifiche**
 
-Puoi importare il file e aprirlo utilizzando i fogli di Google, i numeri di Apple, Microsoft Excel o un software a tua scelta. [!DNL Marketo Measure] consiglia di utilizzare Google Sheets.
+Puoi importare il file e aprirlo utilizzando i fogli di Google, i numeri di Apple, Microsoft Excel o un software a tua scelta. [!DNL Marketo Measure] consiglia di utilizzare i fogli di Google.
 
 Dopo aver importato il foglio, apportare le modifiche desiderate, ad esempio aggiungere costi ai canali e ai sottocanali o aggiornare le informazioni esistenti.
 
@@ -95,7 +101,7 @@ Controlla le regole logiche nel foglio. Ogni riga deve contenere un canale e uno
 
 Ad esempio, per indicare Facebook come sottocanale e Social come canale, la regola deve essere scritta come segue: &quot;Social.Facebook&quot;. Allo stesso modo, per tenere traccia di un evento offline, la sintassi del canale dovrebbe essere: &quot;Events.Big Conference&quot;. L’immagine seguente mostra alcuni esempi:
 
-![Ad esempio, per indicare Facebook come sottocanale e Social come &#x200B;](assets/spend-management-2.png)
+![Ad esempio, per indicare Facebook come sottocanale e Social come ](assets/spend-management-2.png)
 
 _Note aggiuntive_:
 

@@ -3,13 +3,20 @@ description: '[!DNL Marketo Measure] oggetti Salesforce - [!DNL Marketo Measure]
 title: '[!DNL Marketo Measure] oggetti Salesforce'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure] oggetti Salesforce {#marketo-measure-salesforce-objects}
 
 >[!NOTE]
@@ -36,7 +43,7 @@ L&#39;oggetto [!UICONTROL Buyer Touchpoint] (BT) racconta la storia di marketing
 
 L&#39;oggetto BT è visibile nelle pagine Lead e Contatti come **Elenco correlato** (vedi immagine seguente).
 
-![L&#39;oggetto BT è visibile nelle pagine lead e contatti come &#x200B;](assets/bizible-taxonomy-1.png)
+![L&#39;oggetto BT è visibile nelle pagine lead e contatti come ](assets/bizible-taxonomy-1.png)
 
 Nell&#39;elenco correlato a BT vengono visualizzati tutti i punti di contatto appartenenti al lead o al contatto. Nell&#39;elenco sono presenti campi [!DNL Marketo Measure] personalizzati che forniscono ulteriori dettagli su ogni punto di contatto. Facendo clic sul numero Buyer Touchpoint ID si accede alla pagina Dettagli Buyer Touchpoint, che fornisce ulteriori dettagli sul punto di contatto, come la prima pagina Web visitata dal lead/contatto durante la sessione Web (**pagina di destinazione**).
 
@@ -46,7 +53,7 @@ L&#39;oggetto [!UICONTROL Buyer Attribution Touchpoint] racconta la storia delle
 
 I punti di contatto di attribuzione dell’acquirente (BAT) vengono creati solo dopo la creazione di un’opportunità relativa a contatti che dispongono di dati Buyer Touchpoint (BT). Le BAT non verranno create senza un’opportunità. Una volta creata l&#39;opportunità, l&#39;oggetto BAT utilizzerà il campo [!DNL Salesforce] *Importo* dell&#39;opportunità per capire il ricavo da attribuire ai punti di contatto.
 
-È necessario creare un **flusso di lavoro** se si utilizza un [campo Importo personalizzato](/help/channel-tracking-and-setup/using-a-custom-revenue-amount-field.md) per visualizzare le entrate nell&#39;oggetto opportunità. [!DNL Marketo Measure] non è in grado di leggere le informazioni visualizzate nei campi importo personalizzati e di conseguenza non è in grado di popolare i dati di attribuzione dei ricavi sui punti di contatto. Questo flusso di lavoro utilizzerà il campo **[!DNL Marketo Measure]Importo opportunità**, uno dei campi personalizzati di [!DNL Marketo Measure], per mappare il valore di ricavo dal campo Importo personalizzato al campo Importo opportunità.
+È necessario creare un **flusso di lavoro** se si utilizza un [campo Importo personalizzato](/help/channel-tracking-and-setup/using-a-custom-revenue-amount-field.md) per visualizzare le entrate nell&#39;oggetto opportunità. [!DNL Marketo Measure] non è in grado di leggere le informazioni visualizzate nei campi di importo personalizzati e di conseguenza non è in grado di popolare i dati di attribuzione dei ricavi sui punti di contatto. Questo flusso di lavoro utilizzerà il campo **[!DNL Marketo Measure]Importo opportunità**, uno dei campi personalizzati di [!DNL Marketo Measure], per mappare il valore di ricavo dal campo Importo personalizzato al campo Importo opportunità.
 
 ![È necessario creare un flusso di lavoro se si utilizza un campo Importo personalizzato](assets/connect-salesforce-1.png)
 

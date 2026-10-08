@@ -4,19 +4,23 @@ description: Campi punto di contatto - [!DNL Marketo Measure]
 title: Campi punto di contatto
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/f45LL11QRQWjzRDTMdsiSUKbB357lPibq8nFNVt75bk
+TQID: 'https://experienceleague.adobe.com/f45LL11QRQWjzRDTMdsiSUKbB357lPibq8nFNVt75bk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Customer experience
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1956
+source-wordcount: '1970'
 ht-degree: 0%
-
 ---
-
 # Campi punto di contatto {#touchpoint-fields}
 
 Storicamente, quando i clienti sono a bordo con [!DNL Marketo Measure] e nel caso in cui non disponiamo di un&#39;integrazione di tag diretta, il nostro team Customer Success spiega ai clienti come assegnare tag appropriati alle pagine di destinazione in modo che utilizzino il formato UTM corretto e possiamo risolvere i loro annunci. Alcuni di questi clienti non utilizzano UTM, ma utilizzano i propri parametri di assegnazione tag, il che significa che può richiedere molto tempo per modificare tutte le pagine di destinazione in tutte le reti pubblicitarie con una nuova struttura di tag applicata da [!DNL Marketo Measure]. Per adattarci alla loro struttura di tag, ora accettiamo parametri personalizzati che possono essere mappati con le nostre definizioni di regole. L’obiettivo è adattarsi all’utilizzo dei parametri di tracciamento personalizzati da parte dei clienti, in modo da non richiedere loro di modificare la struttura dell’URL.
@@ -54,9 +58,9 @@ Obiettivo: utilizza il valore di un campo personalizzato e inseriscilo nell’og
 * Utilizza l’operatore &quot;estrae&quot; perché è necessario estrarre il valore dal parametro
 * Per estrarre la stringa completa dal campo, verrà utilizzata l&#39;espressione &quot;(.&#42;)&quot;
 
-   * **(** segna l&#39;inizio dell&#39;estrazione
-   * **)** segna la fine dell&#39;estrazione
-   * **.&#42;** ci dice che stiamo estraendo la stringa completa
+  * **(** segna l&#39;inizio dell&#39;estrazione
+  * **)** segna la fine dell&#39;estrazione
+  * **.&#42;** ci dice che stiamo estraendo la stringa completa
 
 ![](assets/two.png)
 
@@ -72,11 +76,11 @@ Un caso d’uso comune che questa funzione abilita è quello di estrarre i valor
 * Utilizza l’operatore &quot;estrae&quot; perché è necessario estrarre il valore dal parametro
 * Per estrarre il valore della promozione, definiremo il valore come &quot;promo=(\w+)&quot;
 
-   * **(** segna l&#39;inizio dell&#39;estrazione
-   * **)** segna la fine dell&#39;estrazione
-   * **\w** indica che si sta estraendo una parola che include 0-9
-   * **+** estrarrà il valore completo del parametro senza alcun limite di caratteri
-   * Tieni presente che stai utilizzando una barra in avanti e non una barra indietro
+  * **(** segna l&#39;inizio dell&#39;estrazione
+  * **)** segna la fine dell&#39;estrazione
+  * **\w** indica che si sta estraendo una parola che include 0-9
+  * **+** estrarrà il valore completo del parametro senza alcun limite di caratteri
+  * Tieni presente che stai utilizzando una barra in avanti e non una barra indietro
 
 ![](assets/three.png)
 
@@ -91,10 +95,10 @@ Proviamo un esempio simile in cui estraiamo un codice di tracciamento come: `htt
 * Utilizza l’operatore &quot;estrae&quot; perché è necessario estrarre il valore dal parametro
 * Per estrarre il valore &quot;123456&quot;, definiremo il valore come &quot;cid=(\d{6})&quot;
 
-   * **(** segna l&#39;inizio dell&#39;estrazione
-   * **)** segna la fine dell&#39;estrazione
-   * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
-   * **{6}** è il numero di caratteri che si stanno estraendo
+  * **(** segna l&#39;inizio dell&#39;estrazione
+  * **)** segna la fine dell&#39;estrazione
+  * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
+  * **{6}** è il numero di caratteri che si stanno estraendo
 
 ![](assets/four.png)
 
@@ -110,20 +114,20 @@ Man mano che le pagine di destinazione si complicano e si hanno più parametri d
 * Utilizza l’operatore &quot;estrae&quot; perché è necessario estrarre il valore dal parametro
 * Per estrarre il valore &quot;US&quot;, definiremo il valore come &quot;country=(\w{2})&quot;
 
-   * **(** segna l&#39;inizio dell&#39;estrazione
-   * **)** segna la fine dell&#39;estrazione
-   * **\w** ci ha detto che stiamo estraendo una &quot;parola&quot;
-   * **{2}** è il numero di caratteri che si stanno estraendo
+  * **(** segna l&#39;inizio dell&#39;estrazione
+  * **)** segna la fine dell&#39;estrazione
+  * **\w** ci ha detto che stiamo estraendo una &quot;parola&quot;
+  * **{2}** è il numero di caratteri che si stanno estraendo
 
 * Creare un campo calcolato e etichettarlo come &quot;ID campagna personalizzato&quot;
 * Definisci la regola iniziando con la ricerca del campo Touchpoint.Session.LandingPage
 * Utilizza l’operatore &quot;estrae&quot; perché è necessario estrarre il valore dal parametro
 * Per estrarre il valore &quot;123456&quot;, definiremo il valore come &quot;campaign_ID=(\d{6})&quot;
 
-   * **(** segna l&#39;inizio dell&#39;estrazione
-   * **)** segna la fine dell&#39;estrazione
-   * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
-   * **{6}** è il numero di caratteri che si stanno estraendo
+  * **(** segna l&#39;inizio dell&#39;estrazione
+  * **)** segna la fine dell&#39;estrazione
+  * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
+  * **{6}** è il numero di caratteri che si stanno estraendo
 
 ![](assets/five.png)
 
@@ -148,14 +152,14 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 * Utilizza l&#39;operatore &quot;[!UICONTROL extracts]&quot; perché è necessario estrarre il valore dal parametro
 * Per estrarre il valore &quot;04&quot;, verrà definito il valore come &quot;BZ=(\d)-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}&quot;
 
-   * **(** segna l&#39;inizio dell&#39;estrazione
+  * **(** segna l&#39;inizio dell&#39;estrazione
 
-      * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi aperta
-   * **)** segna la fine dell&#39;estrazione
+    * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi aperta
+  * **)** segna la fine dell&#39;estrazione
 
-      * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi chiusa
-   * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
-   * **{2}** è il numero di caratteri che si stanno estraendo
+    * Tieni presente che poiché estraiamo solo le 4, solo le prime cifre hanno la parentesi chiusa
+  * **\d** ci ha detto che stiamo estraendo una &quot;cifra&quot;
+  * **{2}** è il numero di caratteri che si stanno estraendo
 
 
 
@@ -168,10 +172,10 @@ Ora che abbiamo imparato a estrarre e mappare i campi, combiniamo queste azioni 
 * In base alla mappatura e all’URL indicati sopra, il &quot;Region_Value&quot; di un punto di contatto con questa pagina di destinazione sarà &quot;EMEA&quot;
 * Ripeti l’estrazione e la mappatura per i rimanenti 4 set di cifre
 
-   * Per estrarre 01, è necessario definire il valore come &quot;BZ=\d{2}-**(\d{2})**-\d{2}-\d{2}-\d{2}&quot;
-   * Per estrarre il valore 09, è necessario definire il valore come &quot;BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}&quot;
-   * Per estrarre lo 03, è necessario definire il valore come &quot;BZ=\d{2}-\d{2}-\d{2}-**(\d{2})**-\d{2}&quot;
-   * Per estrarre il valore 10, definire il valore come &quot;BZ=\d{2}-\d{2}-\d{2}-\d{2}-**(\d{2})**&quot;
+  * Per estrarre 01, è necessario definire il valore come &quot;BZ=\d{2}-**(\d{2})**-\d{2}-\d{2}-\d{2}&quot;
+  * Per estrarre il valore 09, è necessario definire il valore come &quot;BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}&quot;
+  * Per estrarre lo 03, è necessario definire il valore come &quot;BZ=\d{2}-\d{2}-\d{2}-**(\d{2})**-\d{2}&quot;
+  * Per estrarre il valore 10, definire il valore come &quot;BZ=\d{2}-\d{2}-\d{2}-\d{2}-**(\d{2})**&quot;
 
 ![](assets/seven.png)
 

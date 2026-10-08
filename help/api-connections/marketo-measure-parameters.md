@@ -3,19 +3,27 @@ description: '[!DNL Marketo Measure] Parametri - [!DNL Marketo Measure]'
 title: Parametri [!DNL Marketo Measure]
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
-
 ---
-
 
 # Parametri [!DNL Marketo Measure] {#marketo-measure-parameters}
 
 ## [!DNL Marketo Measure] parametri spiegati {#marketo-measure-parameters-explained}
 
-Per ottenere ulteriori insight dall&#39;utilizzo di UTM, [!DNL Marketo Measure] aggiunge parametri personalizzati agli annunci in [!DNL Google] AdWords, Bing Ads e [!DNL Facebook] Ads. [!DNL Marketo Measure] si integra con queste piattaforme per automatizzare la maggior parte del processo di configurazione. Se si sceglie di utilizzare l&#39;assegnazione tag automatica, [!DNL Marketo Measure] aggiungerà automaticamente i relativi parametri agli URL degli annunci. [!DNL Marketo Measure] scarica automaticamente i costi di marketing dalle piattaforme e li carica nell&#39;app [!DNL Marketo Measure].
+Per ottenere ulteriori insight dall&#39;utilizzo di UTM, [!DNL Marketo Measure] aggiunge parametri personalizzati agli annunci in [!DNL Google] AdWords, Bing Ads e [!DNL Facebook] Ads. [!DNL Marketo Measure] si integra con queste piattaforme per automatizzare la maggior parte del processo di installazione. Se si sceglie di utilizzare l&#39;assegnazione tag automatica, [!DNL Marketo Measure] aggiungerà automaticamente i relativi parametri agli URL degli annunci. [!DNL Marketo Measure] scaricherà inoltre automaticamente i costi di marketing dalle piattaforme e li caricherà nell&#39;app [!DNL Marketo Measure].
 
 Esempio di URL senza parametri:
 
@@ -28,27 +36,27 @@ Esempio di un URL con [!DNL Marketo Measure] parametri:
 ## Parametri AdWords {#adwords-parameters}
 
 * `_bk={keyword}`
-   * Rappresenta la parola chiave utilizzata nel motore di ricerca.
-   * È simile al parametro del termine UTM.
+  * Rappresenta la parola chiave utilizzata nel motore di ricerca.
+  * È simile al parametro del termine UTM.
 
 * `_bt={creative}`
-   * Rappresenta l’ID o il nome della creatività.
-   * È simile al parametro di contenuto UTM.
+  * Rappresenta l’ID o il nome della creatività.
+  * È simile al parametro di contenuto UTM.
 
 * `_bm={matchtype}`
-   * Rappresenta la corrispondenza con la parola chiave.
-   * I tipi di corrispondenza delle parole chiave aiutano a controllare quali ricerche attivano l’annuncio. Ad esempio, puoi utilizzare la corrispondenza ampia per mostrare l’annuncio a un pubblico ampio oppure puoi utilizzare la corrispondenza esatta per affinare su gruppi specifici di clienti.
-   * I tre tipi di corrispondenza sono: ampia, sfocata ed esatta.
+  * Rappresenta la corrispondenza con la parola chiave.
+  * I tipi di corrispondenza delle parole chiave aiutano a controllare quali ricerche attivano l’annuncio. Ad esempio, puoi utilizzare la corrispondenza ampia per mostrare l’annuncio a un pubblico ampio oppure puoi utilizzare la corrispondenza esatta per affinare su gruppi specifici di clienti.
+  * I tre tipi di corrispondenza sono: ampia, sfocata ed esatta.
 
 >[!TIP]
 >Per ulteriori informazioni sui tipi di corrispondenza, [ecco un articolo AdWords pertinente](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
 
 * `_bn={network}`
-   * Rappresenta il tipo di rete dell&#39;annuncio - [visualizzazione o ricerca](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
-   * È simile al parametro Source UTM.
+  * Rappresenta il tipo di rete dell&#39;annuncio - [visualizzazione o ricerca](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
+  * È simile al parametro Source UTM.
 
 * `_bg={adgroupID}`
-   * Rappresenta l’ID del gruppo di annunci a cui appartiene l’annuncio
+  * Rappresenta l’ID del gruppo di annunci a cui appartiene l’annuncio
 
 >[!NOTE]
 >I parametri degli URL di reindirizzamento non sono supportati.
@@ -63,4 +71,4 @@ Esempio di un URL con [!DNL Marketo Measure] parametri:
 ## Parametri Facebook {#facebook-parameters}
 
 * `_bf ={creative}`
-   * Rappresenta l’ID o il nome della creatività
+  * Rappresenta l’ID o il nome della creatività

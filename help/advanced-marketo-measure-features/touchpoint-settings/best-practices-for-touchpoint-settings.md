@@ -3,19 +3,23 @@ description: Best practice per le impostazioni dei punti di contatto - [!DNL Mar
 title: Best practice per le impostazioni dei punti di contatto
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/57Y-eSngdDje7RcPmmKobrzk2-QWrRyxN2rIVtdrOLQ
+TQID: 'https://experienceleague.adobe.com/57Y-eSngdDje7RcPmmKobrzk2-QWrRyxN2rIVtdrOLQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 651
+source-wordcount: '651'
 ht-degree: 0%
-
 ---
-
 # Best practice per le impostazioni dei punti di contatto {#best-practices-for-touchpoint-settings}
 
 ## Panoramica {#overview}
@@ -29,13 +33,13 @@ La sezione [!UICONTROL Touchpoint Settings] dell&#39;app [!DNL Marketo Measure] 
 Nell&#39;app [!DNL Marketo Measure], la sezione [!UICONTROL Touchpoint Settings] verrà suddivisa in quattro sezioni chiave. Ogni sezione sopprime o rimuove un diverso set di dati. Utilizza il tasto seguente per assicurarti che le tue regole eliminino o rimuovano i punti di contatto desiderati.
 
 * Rimuovi punti di contatto dell&#39;acquirente da CRM
-   * Usa questa sezione quando vuoi creare una regola che rimuova **dati Buyer Touchpoint** (i punti di contatto associati all&#39;individuo, non l&#39;opportunità) dal tuo **CRM**
+  * Usa questa sezione quando vuoi creare una regola che rimuova **dati Buyer Touchpoint** (i punti di contatto associati all&#39;individuo, non l&#39;opportunità) dal tuo **CRM**
 * Elimina punti di contatto dell&#39;acquirente da CRM
-   * Usa questa sezione quando vuoi creare una regola che rimuova **dati Buyer Touchpoint** (i punti di contatto associati all&#39;individuo, non l&#39;opportunità) dal tuo **CRM** e **Discover**
+  * Usa questa sezione quando vuoi creare una regola che rimuova **dati Buyer Touchpoint** (i punti di contatto associati all&#39;individuo, non l&#39;opportunità) dal tuo **CRM** e **Discover**
 * Rimuovi punti di contatto di attribuzione buyer da CRM
-   * Usa questa sezione quando vuoi creare una regola che rimuova i dati di **Buyer Attribution Touchpoint** (i punti di contatto associati all&#39;opportunità e ai ricavi) dal tuo **CRM**
+  * Usa questa sezione quando vuoi creare una regola che rimuova i dati di **Buyer Attribution Touchpoint** (i punti di contatto associati all&#39;opportunità e ai ricavi) dal tuo **CRM**
 * Elimina punti di contatto di attribuzione buyer da CRM
-   * Usa questa sezione quando vuoi creare una regola che rimuova i dati di **Buyer Attribution Touchpoint** (i punti di contatto associati all&#39;opportunità e ai ricavi) dal tuo **CRM** e **Discover**
+  * Usa questa sezione quando vuoi creare una regola che rimuova i dati di **Buyer Attribution Touchpoint** (i punti di contatto associati all&#39;opportunità e ai ricavi) dal tuo **CRM** e **Discover**
 
 ## Best practice {#best-practice}
 
@@ -56,7 +60,7 @@ I motivi per rivedere le impostazioni di [!UICONTROL Touchpoint] includono...
 * Fatturato del team marketing
 * Aggiornamenti principali alla struttura del sito web
 * Identificazione dei dati del punto di contatto che non sono più utili
-   * Ogni volta che ti imbatti in dati punto di contatto che non dovresti ricevere il merito di attribuzione, le regole di [!DNL touchpoint suppression] sono la funzionalità per garantire la massima pulizia e precisione possibile dei tuoi dati.
+  * Ogni volta che ti imbatti in dati punto di contatto che non dovresti ricevere il merito di attribuzione, le regole di [!DNL touchpoint suppression] sono la funzionalità per garantire la massima pulizia e precisione possibile dei tuoi dati.
 * Modifiche ai campi utilizzati per definire le regole di soppressione o rimozione
 
 >[!MORELIKETHIS]

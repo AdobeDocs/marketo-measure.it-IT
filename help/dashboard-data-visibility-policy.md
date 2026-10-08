@@ -3,14 +3,18 @@ description: Descrive le regole di visibilità dei dati applicate in Discover da
 title: Criterio di visibilità dei dati del dashboard
 feature: Reporting
 exl-id: 5f6f7173-617e-459d-992f-8a8b6c2db7cb
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 6%
-
 ---
-
 # Criterio di visibilità dei dati del dashboard {#dashboard-data-visibility-policy}
 
 Per fornire un’esperienza migliore nelle dashboard, abbiamo stabilito criteri di visibilità dei dati per gli oggetti su cui eseguiamo i rapporti. È importante notare che, man mano che acquisisci familiarità con le nuove dashboard di Discover, potresti notare numeri più bassi rispetto alle vecchie dashboard. Ciò è dovuto a una modifica nella metodologia di rappresentazione dei dati, in cui le nuove dashboard dispongono ora di linee guida specifiche sulla visibilità. A differenza delle nostre vecchie dashboard di Discover, che mostrano tutti i dati disponibili, la nuova versione mostra solo i dati in base ai criteri di visibilità. Questo articolo mira a chiarire come sono le policy di visibilità per diversi oggetti di dati e a garantire la trasparenza e l’interpretazione accurata dei dati dai rapporti.

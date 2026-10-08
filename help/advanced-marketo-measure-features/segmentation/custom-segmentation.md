@@ -4,18 +4,21 @@ description: Segmentazione personalizzata - [!DNL Marketo Measure]
 title: Segmentazione personalizzata
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-TQID: https://experienceleague.adobe.com/COqmO8TXqg0Du1FmW4MDfi6Wz33uO8S2pGywUoc40KM
+TQID: 'https://experienceleague.adobe.com/COqmO8TXqg0Du1FmW4MDfi6Wz33uO8S2pGywUoc40KM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d3432b7d-03be-560e-8abb-8681f1afaeb4
+    internal-label: Segmentation
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 740
+source-wordcount: '740'
 ht-degree: 0%
-
 ---
-
 # Segmentazione personalizzata {#custom-segmentation}
 
 I segmenti consentono di filtrare i dati nel dashboard ROI [!DNL Marketo Measure] per eseguire un ulteriore drill-down su un set di dati specifico. Ad esempio, un segmento può essere definito per territorio geografico o sistema di scarpate.
@@ -72,9 +75,9 @@ Passaggio 4: Aggiungere Regole Di Filtro.
 * Fai clic sull’icona del cestino per eliminare un’intera categoria o una singola regola all’interno di una categoria. In alternativa, fai clic sull’icona della matita per modificare la categoria o la regola
 * Si noti che sono presenti un pulsante &quot;[!UICONTROL Save]&quot; e un pulsante &quot;Salva ed elabora&quot;. Utilizzare il pulsante Salva per salvare il lavoro e le modifiche nel tempo. Utilizzare il pulsante Salva ed elabora SOLO dopo aver verificato che:
 
-   * La mappatura è accurata
-   * Hai aggiunto tutti i segmenti di cui desideri tenere traccia all’interno di una categoria
-   * Il pulsante Salva ed elabora attiva [!DNL Marketo Measure] per sincronizzare tutti i punti di contatto e applicare le nuove informazioni aggiunte. Questo processo richiede 7 giorni e non è possibile modificare le regole durante questo periodo
+  * La mappatura è accurata
+  * Hai aggiunto tutti i segmenti di cui desideri tenere traccia all’interno di una categoria
+  * Il pulsante Salva ed elabora attiva [!DNL Marketo Measure] per sincronizzare tutti i punti di contatto e applicare le nuove informazioni aggiunte. Questo processo richiede 7 giorni e non è possibile modificare le regole durante questo periodo
 
 **_Note aggiuntive:_**
 

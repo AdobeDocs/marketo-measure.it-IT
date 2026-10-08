@@ -3,19 +3,23 @@ description: 'Impostazione modello personalizzato: abilita indicazioni per il tr
 title: Impostazione modello personalizzato - Abilita tracciamento cronologia campi
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
 feature: Custom Models
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
-
 ---
-
 # Impostazione modello personalizzato: abilita tracciamento cronologia campi {#custom-model-setup-enable-field-history-tracking}
 
 ## Perché e quando abilitare il tracciamento della cronologia dei campi {#why-and-when-to-enable-field-history-tracking}
 
-Se decidi di includere un campo personalizzato come fase nel modello di attribuzione personalizzato, il tracciamento della cronologia dei campi **deve essere abilitato** per questo campo. L&#39;abilitazione del tracciamento della cronologia dei campi consentirà a [!DNL Salesforce] di tenere traccia di qualsiasi modifica apportata al campo personalizzato creando un record nella tabella Tracciamento cronologia. [!DNL Marketo Measure] può scaricare quella tabella e utilizzare queste informazioni per misurare il giorno e l’ora in cui si è verificata una &quot;transizione&quot;. Senza il tracciamento della cronologia dei campi, [!DNL Marketo Measure] non è in grado di tenere traccia delle modifiche relative a questo campo.
+Se decidi di includere un campo personalizzato come fase nel modello di attribuzione personalizzato, il tracciamento della cronologia dei campi **deve essere abilitato** per questo campo. L&#39;abilitazione del tracciamento della cronologia dei campi consentirà a [!DNL Salesforce] di tenere traccia di qualsiasi modifica apportata al campo personalizzato creando un record nella tabella Tracciamento cronologia. [!DNL Marketo Measure] può scaricare tale tabella e utilizzare queste informazioni per misurare l&#39;ora e il giorno in cui si è verificata una &quot;transizione&quot;. Senza il tracciamento della cronologia dei campi, [!DNL Marketo Measure] non è in grado di tenere traccia delle modifiche relative a questo campo.
 
 Se nel modello personalizzato vengono utilizzati solo [!UICONTROL Lead Status] o gli stadi opportunità, non è necessario attivare il tracciamento della cronologia dei campi perché verrà tracciato automaticamente come transizione di stadio.
 

@@ -3,13 +3,17 @@ description: '''[!DNL Marketo Measure] integrazioni con Adobe Launch - [!DNL Mar
 title: Integrazioni [!DNL Marketo Measure] con Adobe Launch
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 5%
-
 ---
-
 # Integrazioni [!DNL Marketo Measure] con Adobe Launch {#marketo-measure-integrations-with-adobe-launch}
 
 L&#39;estensione Adobe Launch è progettata per gli utenti [!DNL Marketo Measure] esistenti che già utilizzano Adobe Launch sul loro sito Web. L’estensione funge da soluzione di gestione tag da utilizzare per configurare e caricare dinamicamente gli script sulle pagine in base a determinati eventi e condizioni.
@@ -22,11 +26,11 @@ Quando è installata e configurata in Adobe Launch, l&#39;estensione [!DNL Marke
 >
 >Consulta i seguenti collegamenti per ulteriori informazioni su Adobe Launch e le sue estensioni:
 >
->* [[!DNL Marketo Measure] Estensione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=it#catalog){target="_blank"}
->* [Panoramica di Adobe Launch](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=it){target="_blank"}
->* [Panoramica dell&#39;estensione Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=it){target="_blank"}
+>* [[!DNL Marketo Measure] Estensione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html#catalog){target="_blank"}
+>* [Panoramica di Adobe Launch](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+>* [Panoramica dell&#39;estensione Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html){target="_blank"}
 
-1. Crea una proprietà seguendo i passaggi [descritti in questo articolo](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=it#go-to-the-data-collection-interface){target="_blank"}.
+1. Crea una proprietà seguendo i passaggi [descritti in questo articolo](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}.
 
 1. Fai clic sulla proprietà creata.
 

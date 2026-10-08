@@ -3,13 +3,17 @@ description: Configurazione approfondimenti [!DNL Marketo Measure] - [!DNL Marke
 title: Configurazione approfondimenti [!DNL Marketo Measure]
 exl-id: f6fe296b-d22a-43f2-b124-5d4b2f74d67a
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 1%
-
 ---
-
 # Configurazione approfondimenti [!DNL Marketo Measure] {#marketo-measure-insights-configuration}
 
 L&#39;app area di lavoro Approfondimenti [!DNL Marketo Measure] deve essere aggiunta al layout della pagina lead ma richiede un&#39;ulteriore configurazione nella sezione App collegate della configurazione di [!DNL Salesforce]. Segui queste istruzioni per assicurarti che l’app Canvas disponga delle autorizzazioni appropriate.
@@ -24,6 +28,6 @@ L&#39;app area di lavoro Approfondimenti [!DNL Marketo Measure] deve essere aggi
 
 1. Una volta salvata la pagina, è possibile fare clic sul pulsante **[!UICONTROL Manage Profiles]**.
 
-   ![1. Una volta salvata la pagina, puoi fare clic su &#x200B;](assets/marketo-app-2.png)
+   ![1. Una volta salvata la pagina, puoi fare clic su ](assets/marketo-app-2.png)
 
 1. Selezionare tutti i profili che devono avere accesso a [!DNL Marketo Measure] Insights e fare clic su **[!UICONTROL Save]**.

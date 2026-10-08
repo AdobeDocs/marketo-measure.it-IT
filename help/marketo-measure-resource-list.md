@@ -3,13 +3,17 @@ description: Elenco risorse [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: Elenco risorse [!DNL Marketo Measure]
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 3%
-
 ---
-
 # Elenco risorse [!DNL Marketo Measure] {#marketo-measure-resource-list}
 
 Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiutarti a iniziare a utilizzare [!DNL Marketo Measure].
@@ -32,7 +36,7 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 * [Caricamento delle spese di marketing](/help/marketing-channel-costs.md)
 * [Riconnetti account annuncio](/help/api-connections/reauthorizing-connected-accounts.md)
 * [Aggiunta di  [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)
-   * [Escludi Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
+  * [Escludi Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
 
 **Generazione rapporti**
 
@@ -46,12 +50,12 @@ Di seguito sono riportati vari collegamenti ad articoli/video pertinenti per aiu
 
 ## Video {#videos}
 
-Ecco alcuni video    ti aiuterà a imparare a usare al meglio:
+Ecco un paio di video che ti aiutano a imparare a usare la velocità:
 
 * [[!DNL Marketo Measure] Corso di formazione introduttivo](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) (22 minuti)
-* [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (30-45 minuti)
+* [[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)
 
-**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (~30 minuti)**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (~30 minuti)**
 
 Questa serie di corsi è progettata come introduzione generale ai concetti di base che è necessario conoscere per padroneggiare [!DNL Marketo Measure]. Fornisce un&#39;introduzione al concetto di attribuzione, a ciò che [!DNL Marketo Measure] fa come strumento e al framework generale sul quale [!DNL Marketo Measure] opera.
 
@@ -63,7 +67,7 @@ Argomenti trattati:
 * Punti di contatto
 * Modelli di attribuzione
 
-**[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it) (30-45 minuti)**
+**[[!DNL Marketo Measure] Generazione di rapporti in SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) (30-45 minuti)**
 
 Questa serie di corsi è stata progettata come introduzione ai report azionari [!DNL Marketo Measure] installati in Salesforce. Questi report fungono da base per la maggior parte dei report che esegui con i dati di [!DNL Marketo Measure].
 
@@ -76,7 +80,7 @@ Argomenti trattati:
 * Rapporto Opportunità per ID
 * Rapporto Opportunità per canale
 
-**[Gestione canali](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it)**
+**[Gestione canali](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
 
 Questo corso illustra vari modi per personalizzare [!DNL Marketo Measure] in termini di tracciamento online e offline. Questo corso è più avanzato e potrebbe non essere pertinente per tutti gli utenti.
 
@@ -88,4 +92,4 @@ Argomenti trattati:
 * Campi membro campagna e campagna
 * Gestione dei canali offline
 
-Ecco tutti i [video di E-Learning per principianti](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=it).
+Ecco tutti i [video di E-Learning per principianti](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html).

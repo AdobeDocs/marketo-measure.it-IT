@@ -3,13 +3,21 @@ description: '''[!DNL Marketo Measure] Requisiti di integrità dei dati di Ultim
 title: '[!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimate'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1702'
-ht-degree: 21%
-
+ht-degree: 22%
 ---
-
 
 # [!DNL Marketo Measure] Requisiti di integrità dei dati di Ultimate {#marketo-measure-ultimate-data-integrity-requirement}
 
@@ -890,7 +898,7 @@ ht-degree: 21%
 
 ## Requisiti per i dati di conversione valuta {#currency-conversion-data-requirements}
 
-**Valuta predefinita**: in Marketo Measure, tutti i ricavi e i costi vengono convertiti in una valuta predefinita al momento della generazione del rapporto. Deve esistere un record con la stessa copertura data per la valuta target stessa (ad esempio, da USD a USD) con un tasso di conversione di 1.
+**Valuta predefinita**: in Marketo Measure, tutti i ricavi e i costi vengono convertiti in una valuta predefinita al momento della generazione del rapporto. Deve esistere un record con la stessa copertura data per la valuta di destinazione stessa (ad esempio, da USD a USD) con un tasso di conversione di 1.
 
 **Tassi di conversione**: ogni coppia (valuta di origine, valuta di destinazione) può avere più tassi di conversione per diversi periodi di date. Le percentuali devono coprire l&#39;intero intervallo di tempo compreso tra 0001-01-01 e 9999-12-31, in base all&#39;oggetto Salesforce DatedConversionRate.
 
@@ -1378,7 +1386,7 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 È consigliabile utilizzare un campo calcolato nel mapping dei campi per impostare il campo come predefinito su un valore non NULL. Di seguito sono riportati due esempi:
 
 * Se `opportunityName` di alcuni record opportunità sono nulli, crea e utilizza il seguente campo calcolato nella mappatura dei campi
-   * `iif(name != null && trim(name) != "", name, "Unknown")`
+  * `iif(name != null && trim(name) != "", name, "Unknown")`
 
 * Se `leadOperation.campaignProgression.campaignID` di alcuni record evento esperienza sono nulli, crea e utilizza il seguente campo calcolato nella mappatura dei campi
-   * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
+  * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`

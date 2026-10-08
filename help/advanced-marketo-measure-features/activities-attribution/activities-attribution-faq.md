@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874704
-description: Domande frequenti su Attribuzione attività - [!DNL Marketo Measure]
+description: Domande frequenti sull'attribuzione delle attività - [!DNL Marketo Measure]
 title: Domande frequenti sull’attribuzione delle attività
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-TQID: https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo
+TQID: 'https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: '765'
 ht-degree: 0%
-
 ---
-
 # Domande frequenti sull’attribuzione delle attività {#activities-attribution-faq}
 
 [!DNL Marketo Measure] Le attività importano tutti i record Attività e generano punti di contatto per esse, consentendo a queste attività di ricevere il credito di attribuzione. Il caso d’uso più comune consiste nel tenere traccia delle attività del team vendite, in quanto solitamente creano un record di chiamate telefoniche o e-mail inviate ai potenziali clienti. Altre caratteristiche uniche che possono essere tracciate sono le interazioni di contenuto come download di risorse o visualizzazioni video.

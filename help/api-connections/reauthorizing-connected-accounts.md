@@ -3,19 +3,25 @@ description: Indicazioni sulla riautorizzazione degli account connessi per gli u
 title: Autorizzazione di nuovo account collegati
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
-
 ---
-
 # Autorizzazione di nuovo account collegati {#reauthorizing-connected-accounts}
 
 Quando un account viene disconnesso dall&#39;account [!DNL Marketo Measure], lo stato della piattaforma cambia in &quot;Autorizzazione richiesta&quot; e viene visualizzata un&#39;icona a forma di chiave rossa.
 
-Se la piattaforma pubblicitaria viene disconnessa, [!DNL Marketo Measure] non sarà in grado di scaricare i dati sui costi o, se è abilitata l&#39;assegnazione automatica dei tag, aggiungere i parametri UTM [!DNL Marketo Measure] agli annunci appena creati. [!DNL Marketo Measure] non potrà aggiungere retroattivamente i parametri UTM ai punti di contatto creati dalla piattaforma pubblicitaria mentre l’account era disconnesso.
+Se la piattaforma pubblicitaria viene disconnessa, [!DNL Marketo Measure] non sarà in grado di scaricare i dati sui costi o, se è abilitata l&#39;assegnazione automatica dei tag, aggiungere i parametri UTM [!DNL Marketo Measure] agli annunci appena creati. [!DNL Marketo Measure] non potrà aggiungere retroattivamente i parametri UTM ai punti di contatto creati dalla piattaforma pubblicitaria mentre l&#39;account è stato disconnesso.
 
 Se la piattaforma CRM viene disconnessa, [!DNL Marketo Measure] non sarà in grado di aggiornare i dati di [!DNL Marketo Measure] né di inviare nuovi punti di contatto all&#39;organizzazione. Una volta ristabilita la connessione CRM, [!DNL Marketo Measure] invierà tutti i dati mancanti durante la disconnessione dell&#39;account.
 

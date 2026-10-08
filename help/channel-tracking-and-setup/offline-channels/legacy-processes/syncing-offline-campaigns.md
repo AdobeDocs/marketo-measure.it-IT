@@ -4,16 +4,18 @@ description: Sincronizzazione delle campagne offline - [!DNL Marketo Measure]
 title: Sincronizzazione delle campagne offline
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
+TQID: 'https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 727
+source-wordcount: '727'
 ht-degree: 0%
-
 ---
-
 # Sincronizzazione delle campagne offline {#syncing-offline-campaigns}
 
 Può essere difficile tracciare con precisione le campagne offline e capire in che modo si confrontano con le tue attività di marketing digitale. [!DNL Marketo Measure] consente di tenere traccia e attribuire punti di contatto alle campagne offline in [!DNL Salesforce], anche in situazioni in cui non viene creata una campagna di [!DNL Salesforce] fino a poche settimane dopo l&#39;evento.
@@ -77,6 +79,6 @@ Una volta selezionata una di queste selezioni, [!DNL Marketo Measure] assegnerà
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Tutorial: Mappatura Dei Canali Offline](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] Tutorial: Mappatura Dei Canali Offline](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/it/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] Esercitazioni: Campi Oggetto Campaign](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}

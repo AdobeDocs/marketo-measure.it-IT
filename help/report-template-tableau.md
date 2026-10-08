@@ -3,13 +3,17 @@ description: Modello di report [!DNL Marketo Measure] - Tableau - [!DNL Marketo 
 title: Modello report [!DNL Marketo Measure] - Tableau
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
-
 ---
-
 # Modello report [!DNL Marketo Measure] - Tableau {#marketo-measure-report-template-tableau}
 
 ## Guida introduttuva {#getting-started}
@@ -30,7 +34,7 @@ Devi impostare una connessione dati all’istanza Snowflake. A questo scopo, è 
 
 È inoltre necessario immettere un comando SQL iniziale. In questo modo è possibile utilizzare query personalizzate nel modello dati. Il comando da immettere è &quot;Usa schema `<your schema name>`&quot;. Puoi individuare il nome dello schema nella pagina [!UICONTROL data warehouse connections], consulta la documentazione di cui sopra.
 
-![Sarà inoltre necessario immettere un comando SQL iniziale. Questo supporta &#x200B;](assets/marketo-tableau-6.png)
+![Sarà inoltre necessario immettere un comando SQL iniziale. Questo supporta ](assets/marketo-tableau-6.png)
 
 ### Query SQL personalizzate {#custom-sql-queries}
 

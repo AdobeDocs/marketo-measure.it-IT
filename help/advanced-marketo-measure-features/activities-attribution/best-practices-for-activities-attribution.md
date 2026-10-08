@@ -1,18 +1,20 @@
 ---
-description: Best practice per l'attribuzione delle attività - [!DNL Marketo Measure]
+description: Attribuzione delle best practice per le attività - [!DNL Marketo Measure]
 title: Attribuzione delle best practice per le attività
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-TQID: https://experienceleague.adobe.com/hCGaaarnFmGXgMvu9N2l5JZIXJQ0oAsY214s1MFlS84
+TQID: 'https://experienceleague.adobe.com/hCGaaarnFmGXgMvu9N2l5JZIXJQ0oAsY214s1MFlS84'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # Attribuzione delle best practice per le attività {#best-practices-for-activities-attribution}
 
 ## Panoramica {#overview}
@@ -28,8 +30,8 @@ Per molte istanze di [!DNL Salesforce], l&#39;oggetto Attività può ospitare va
 Se definisci le regole di attività per la prima volta o esamini solo le regole di attività impostate in precedenza, tieni presente le seguenti best practice.
 
 * Inizia semplice
-   * Identifica alcuni tipi chiave di attività da incorporare nei dati di [!DNL Marketo Measure], quindi aggiungi altri tipi man mano che ti senti a tuo agio con l&#39;attribuzione di questi punti di contatto
-   * Come accennato, il caso d’uso principale di questa funzione consiste nel creare punti di contatto che tracciano l’efficacia del team di sviluppo delle vendite, in particolare chiamate telefoniche in uscita e e-mail in uscita.
+  * Identifica alcuni tipi chiave di attività da incorporare nei dati di [!DNL Marketo Measure], quindi aggiungi altri tipi man mano che ti senti a tuo agio con l&#39;attribuzione di questi punti di contatto
+  * Come accennato, il caso d’uso principale di questa funzione consiste nel creare punti di contatto che tracciano l’efficacia del team di sviluppo delle vendite, in particolare chiamate telefoniche in uscita e e-mail in uscita.
 
 >[!NOTE]
 >
@@ -37,11 +39,11 @@ Se definisci le regole di attività per la prima volta o esamini solo le regole 
 
 * Non utilizzare i campi formula per definire le regole
 * Creare regole specifiche e precise
-   * La soglia per la creazione di un punto di contatto Attività deve essere la stessa (o simile) di una compilazione di moduli o di un’iscrizione alla campagna: Risposte a un’e-mail in uscita o Conversazioni telefoniche completate
+  * La soglia per la creazione di un punto di contatto Attività deve essere la stessa (o simile) di una compilazione di moduli o di un’iscrizione alla campagna: Risposte a un’e-mail in uscita o Conversazioni telefoniche completate
 * Convalida sempre nuove regole in [!DNL Salesforce] prima di salvare ed elaborare
-   * La replica delle regole di attività in un tipo di rapporto &quot;Attività ed eventi&quot; consente di comprendere chiaramente quanti punti di contatto provengono dalla regola
+  * La replica delle regole di attività in un tipo di rapporto &quot;Attività ed eventi&quot; consente di comprendere chiaramente quanti punti di contatto provengono dalla regola
 * Lavora con il tuo team Sales Opp
-   * L’intervento del team più vicino ai tuoi record di attività o allo strumento di abilitazione delle vendite ti garantirà l’utilizzo dei campi corretti per definire le tue regole
+  * L’intervento del team più vicino ai tuoi record di attività o allo strumento di abilitazione delle vendite ti garantirà l’utilizzo dei campi corretti per definire le tue regole
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 

@@ -1,15 +1,23 @@
 ---
-description: Influenza degli strumenti di gestione delle offerte [!DNL Marketo Measure] indicazioni per gli utenti di Marketo Measure
-title: Effetti degli strumenti di gestione delle offerte [!DNL Marketo Measure]
+description: In che modo gli strumenti di gestione delle offerte influiscono sulla guida di [!DNL Marketo Measure] per gli utenti di Marketo Measure
+title: Effetti degli strumenti di gestione delle offerte su [!DNL Marketo Measure]
 exl-id: 67c00ad9-8b12-4238-8a1f-2d2f5ed04423
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 2%
-
 ---
-
 # Effetti degli strumenti di gestione delle offerte su [!DNL Marketo Measure] {#how-bid-management-tools-affect-marketo-measure}
 
 Scopri in che modo le piattaforme di gestione delle offerte influiscono sulla capacità di [!DNL Marketo Measure] di tenere traccia di AdWords e BingAds, nonché come impostare modelli di tracciamento con i nostri parametri per garantire che tutto venga tracciato correttamente.
@@ -26,10 +34,10 @@ Imposta un modello di tracciamento come segue:
 * Accanto a &quot;Modello di tracciamento&quot;, fare clic su **Modifica**.
 * Inserisci l’URL:
 
-   * Se TUTTI gli URL dell’annuncio hanno un &quot;?&quot; in essi, utilizza questo URL:
-      * `{lpurl}&_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
-   * Se NESSUNO degli URL dell’annuncio ha un &quot;?&quot; in essi, utilizza questo URL:
-      * `{lpurl}?_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
+  * Se TUTTI gli URL dell’annuncio hanno un &quot;?&quot; in essi, utilizza questo URL:
+    * `{lpurl}&_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
+  * Se NESSUNO degli URL dell’annuncio ha un &quot;?&quot; in essi, utilizza questo URL:
+    * `{lpurl}?_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
 
 
 ## Per gli account [!DNL Bing Ads] {#for-bing-ads-accounts}
@@ -42,7 +50,7 @@ Imposta un modello di tracciamento come segue:
 * Accanto a &quot;Modello di tracciamento&quot;, fare clic su **Modifica**.
 * Inserisci l’URL:
 
-   * Se TUTTI gli URL dell’annuncio hanno un &quot;?&quot; in essi, utilizza questo URL:
-      * `{lpurl}&_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`
-   * Se NESSUNO degli URL dell’annuncio ha un &quot;?&quot; in essi, utilizza questo URL:
-      * `{lpurl}?_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`
+  * Se TUTTI gli URL dell’annuncio hanno un &quot;?&quot; in essi, utilizza questo URL:
+    * `{lpurl}&_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`
+  * Se NESSUNO degli URL dell’annuncio ha un &quot;?&quot; in essi, utilizza questo URL:
+    * `{lpurl}?_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`

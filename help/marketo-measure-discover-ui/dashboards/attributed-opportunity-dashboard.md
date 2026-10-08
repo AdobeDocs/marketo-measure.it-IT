@@ -3,19 +3,23 @@ description: Dashboard opportunità attribuita - [!DNL Marketo Measure] - Prodot
 title: Dashboard opportunità attribuita
 feature: Reporting
 exl-id: b98cc45a-9483-42a5-8b75-b235273f867b
-TQID: https://experienceleague.adobe.com/OFUrPoJnkQyZe2PaUzj-byx92ovpbpGuLiW-e7MH6Os
+TQID: 'https://experienceleague.adobe.com/OFUrPoJnkQyZe2PaUzj-byx92ovpbpGuLiW-e7MH6Os'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 424
+source-wordcount: '424'
 ht-degree: 0%
-
 ---
-
 # Dashboard opportunità attribuita {#attributed-opportunity-dashboard}
 
 Il dashboard delle opportunità attribuite offre una panoramica completa del modo in cui le attività di marketing contribuiscono alle opportunità di pipeline sia nascenti che mature. Approfondisci i dettagli di ogni opportunità aperta e chiusa attribuibile alle tue strategie, con la flessibilità di filtrare per fase di opportunità, sottolineando l’intera portata dell’influenza del marketing oltre gli accordi conclusi.
@@ -77,7 +81,7 @@ Questo cruscotto è dotato delle seguenti impostazioni e filtri:
 
 * Data (basata sulla data di creazione dell’opportunità)
 * Modello di attribuzione
-   * Per le opportunità aperte, i modelli di attribuzione &quot;percorso completo&quot; e &quot;personalizzato&quot; offrono viste point-in-time e non rappresentano i risultati di attribuzione finali.
+  * Per le opportunità aperte, i modelli di attribuzione &quot;percorso completo&quot; e &quot;personalizzato&quot; offrono viste point-in-time e non rappresentano i risultati di attribuzione finali.
 * Fase dell’opportunità (in base alla fase corrente)
 * Canale, Sottocanale
 * Campaign

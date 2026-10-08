@@ -1,21 +1,25 @@
 ---
 unique-page-id: 18874678
-description: Informazioni sull'assegnazione tag di  [!DNL Marketo Measure] AdWords - [!DNL Marketo Measure]
-title: Informazioni sull'assegnazione di tag  [!DNL Marketo Measure] AdWords
+description: Informazioni sull'assegnazione tag di [!DNL Marketo Measure] AdWords - [!DNL Marketo Measure]
+title: Informazioni sull'assegnazione tag di [!DNL Marketo Measure] AdWords
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-TQID: https://experienceleague.adobe.com/k-rj5kIrgNp4ZebSopI3pwMVMn4lepWsLlpI8-nkoMk
+TQID: 'https://experienceleague.adobe.com/k-rj5kIrgNp4ZebSopI3pwMVMn4lepWsLlpI8-nkoMk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: '591'
 ht-degree: 1%
-
 ---
-
 # Informazioni sull&#39;assegnazione tag di [!DNL Marketo Measure] AdWords {#understanding-marketo-measure-adwords-tagging}
 
 Per tenere traccia degli annunci a un livello molto granulare, gli URL di destinazione dell’annuncio devono essere univoci. A questo scopo, l&#39;assegnazione automatica dei tag [!DNL Marketo Measure] aggiunge automaticamente i parametri di tracciamento agli URL di destinazione dell&#39;annuncio degli annunci [!DNL AdWords]. Vediamo un esempio qui sotto.

@@ -3,13 +3,17 @@ description: Guida agli scenari in fase di boomerang per gli utenti di Marketo M
 title: Scenari Boomerang Stage
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 1096bc28-f8ba-5a87-abf9-ad1b68c31f97
+    internal-label: Boomerang
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
-
 ---
-
 # Scenari Boomerang Stage {#boomerang-stage-scenarios}
 
 >[!AVAILABILITY]
@@ -38,7 +42,7 @@ In questo scenario, un cliente ha scelto di tenere traccia solo della **fase SQL
 
 La posizione del punto di contatto MQL non è etichettata con un numero. Questo perché non è stato selezionato per il tracciamento con punti di contatto Boomerang. Durante la creazione di punti di contatto per le fasi incluse nel modello personalizzato, ma non tracciate con Boomerang, [!DNL Marketo Measure] prende l&#39;ultima occorrenza da tale fase.
 
-Per la fase SAL, [!DNL Marketo Measure] ignora le prime due occorrenze di questa fase. [!DNL Marketo Measure] crea un punto di contatto SAL solo per l&#39;occorrenza _last_. Nell&#39;esempio precedente, ciò avviene immediatamente prima del punto di contatto OC.
+Per la fase SAL, [!DNL Marketo Measure] ignora le prime due occorrenze di questa fase. [!DNL Marketo Measure] crea solo un punto di contatto SAL per l&#39;occorrenza _last_. Nell&#39;esempio precedente, ciò avviene immediatamente prima del punto di contatto OC.
 
 La fase SQL viene tracciata con punti di contatto Boomerang, e tre punti di contatto sono stati creati ed etichettati di conseguenza.
 
@@ -48,7 +52,7 @@ Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che vi
 
 Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha scelto solo di tenere traccia della fase SQL con punti di contatto boomerang. MQL e SAL sono ancora tracciati, ma con la funzione di staging personalizzato [!DNL Marketo Measure].
 
-![Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha &#x200B;](assets/boomerang-stages-20.png)
+![Questo scenario utilizza gli stessi criteri dello scenario 2. Un cliente ha ](assets/boomerang-stages-20.png)
 
 In questo scenario, il lead non passa mai effettivamente alla fase SAL. Si converte in un contatto prima di raggiungere la fase SAL, essenzialmente &quot;saltando&quot; la fase SAL. In questa situazione, [!DNL Marketo Measure] presuppone che la SAL si verifichi con il punto di contatto OC e che sia la posizione SAL che OC appariranno sullo stesso punto di contatto.
 
@@ -88,7 +92,7 @@ Tutti i punti di contatto della Lead 1 sono inclusi nell&#39;opportunità, da FT
 
 L’MQL-01 (ultimo) da Lead 2 finisce per essere il punto di contatto MQL-04 (ultimo) sull’opportunità. Poiché questo scenario esamina i percorsi di più lead all’interno di un’opportunità, la posizione e la numerazione dei punti di contatto dei lead possono cambiare quando vengono tradotti come punti di contatto nell’opportunità. Analogamente, SQL-01 (ultimo) dal lead 2 diventa SQL-04 (ultimo) sull&#39;Opp. La SAL-01 (Last) del lead 2 diventa anche la SAL-02 (Last) dell’opportunità.
 
-Nell’opportunità sono inclusi solo 2 punti di contatto SAL. [!DNL Marketo Measure] non tenterà di forzare/creare punti di contatto per le transizioni dell’area di visualizzazione se non si sono verificate.
+Nell’opportunità sono inclusi solo 2 punti di contatto SAL. [!DNL Marketo Measure] non tenterà di forzare/creare punti di contatto per le transizioni di fase se non si sono verificate.
 
 Il percorso del punto di contatto del lead 3 inizia poco prima che si verifichi il contatto OC, ma molto tempo dopo che il lead 1 e il lead 2 hanno avuto il contatto FT e LC. In questo caso, FT e LC del lead 3 vengono visualizzati come punto di contatto del modulo nell’opportunità. Il lead 1 viene quindi convertito in un contatto con un&#39;opportunità, che viene considerato contatto OC.
 

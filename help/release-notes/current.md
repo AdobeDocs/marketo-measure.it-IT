@@ -1,24 +1,31 @@
 ---
-description: Note sulla versione corrente - [!DNL Marketo Measure]
+description: 'Note sulla versione corrente: [!DNL Marketo Measure]'
 title: Note sulla versione corrente
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-TQID: https://experienceleague.adobe.com/WCmnCEZ-aUK4OODKYLymgD8-Ohb6k-AIcJMVrBHMm2Y
+TQID: 'https://experienceleague.adobe.com/WCmnCEZ-aUK4OODKYLymgD8-Ohb6k-AIcJMVrBHMm2Y'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: ffecc0ee-70f2-5687-bca0-deee982ffbfa
+    internal-label: Release Notes
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Privacy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # Note sulla versione: 2024 {#release-notes-2024}
 
 Di seguito trovi tutte le funzioni nuove e aggiornate per le versioni del 2024.
@@ -33,13 +40,13 @@ Inoltre, le sessioni che utilizzano l’accesso tramite social network (Google, 
 
 Per i nuovi clienti, ora il comportamento predefinito è il riporto del canale di sessione. I clienti esistenti possono abilitare questa funzione attivando l’opzione Session Channel Carryover (Riporto canale sessione) in Settings (Impostazioni) > Everytouch Attribution (Attribuzione Everytouch). Una volta attivata, questa impostazione non può essere annullata.
 
-Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/it/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+Documentazione: [Definizione di sessioni Web Marketo Measure](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### Dashboard ROI per parola chiave
 
 La nuova dashboard del ROI delle parole chiave offre informazioni dettagliate sulle prestazioni delle campagne di ricerca a pagamento, fornendo una panoramica completa dei costi a livello di parola chiave, dei ricavi attribuiti e dei lead e delle opportunità generati. Questa dashboard consente di valutare il ROI di ogni parola chiave in Google Adwords, LinkedIn, Bing Ads e così via.
 
-Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/it/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+Documentazione: [Dashboard ROI per parole chiave](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### Regole di segmento migliorate
 

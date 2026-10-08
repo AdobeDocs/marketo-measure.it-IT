@@ -3,13 +3,17 @@ description: Guida all’impostazione delle fasi di boomerang per gli utenti di 
 title: Impostazione delle fasi del boomerang
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 1096bc28-f8ba-5a87-abf9-ad1b68c31f97
+    internal-label: Boomerang
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 6%
-
 ---
-
 # Impostazione delle fasi del boomerang {#setting-up-boomerang-stages}
 
 >[!AVAILABILITY]
@@ -54,7 +58,7 @@ Per abilitare [!UICONTROL Boomerang] fasi per il tuo account, devi essere un Amm
 
 1. Imposta la percentuale di attribuzione da allocare agli stadi boomerang inclusi nel modello personalizzato. Assicurati che l’attribuzione totale per tutte le fasi sia pari al 100%. Fai clic su **[!UICONTROL Save and Process]**.
 
-   ![1. Imposta la percentuale di attribuzione da allocare a &#x200B;](assets/boomerang-stages-24.png)
+   ![1. Imposta la percentuale di attribuzione da allocare a ](assets/boomerang-stages-24.png)
 
    >[!NOTE]
    >

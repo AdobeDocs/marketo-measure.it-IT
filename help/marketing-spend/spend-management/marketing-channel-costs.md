@@ -1,23 +1,28 @@
 ---
 unique-page-id: 18874602
-description: Costi canale di marketing -  [!DNL Marketo Measure]
+description: Costi canale di marketing - [!DNL Marketo Measure]
 title: Costi canale di marketing
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-TQID: https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk
+TQID: 'https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1277
+source-wordcount: '1277'
 ht-degree: 0%
-
 ---
-
 # Costi canale di marketing {#marketing-channel-costs}
 
 Uno dei vantaggi principali dell&#39;utilizzo di [!DNL Marketo Measure] è la possibilità di collegare le attività di marketing direttamente all&#39;impatto sui ricavi, con la granularità desiderata. È possibile vedere il ritorno sull&#39;investimento a livello di punto di contatto. Per usufruire di questo vantaggio, i costi del canale devono essere caricati nell&#39;app [!DNL Marketo Measure]. I report sul ROI vengono creati automaticamente e sono disponibili nella **dashboard sul ROI marketing** in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.

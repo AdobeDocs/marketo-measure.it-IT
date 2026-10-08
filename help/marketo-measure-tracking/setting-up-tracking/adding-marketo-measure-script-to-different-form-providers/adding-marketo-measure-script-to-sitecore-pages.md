@@ -1,22 +1,26 @@
 ---
 unique-page-id: 18874747
-description: Aggiunta di  [!DNL Marketo Measure] script alle pagine Sitecore in corso - [!DNL Marketo Measure]
-title: Aggiunta di  [!DNL Marketo Measure] script alle pagine Sitecore
+description: Aggiunta dello script [!DNL Marketo Measure] alle pagine Sitecore - [!DNL Marketo Measure]
+title: Aggiunta dello script [!DNL Marketo Measure] alle pagine Sitecore
 exl-id: 87ce1857-7532-45a7-8c39-255c6118b50a
 feature: Tracking
-TQID: https://experienceleague.adobe.com/sXO-rCY3NbxX0AztYt-o3f-tpJFlrncLIb7-NvEjZO0
+TQID: 'https://experienceleague.adobe.com/sXO-rCY3NbxX0AztYt-o3f-tpJFlrncLIb7-NvEjZO0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 114
+source-wordcount: '116'
 ht-degree: 0%
-
 ---
-
 # Aggiunta dello script [!DNL Marketo Measure] alle pagine Sitecore {#adding-marketo-measure-script-to-sitecore-pages}
 
 I sistemi di gestione dei contenuti possono richiedere ulteriori passaggi oltre l&#39;implementazione dello script standard per il riconoscimento degli invii di moduli da parte di [!DNL Marketo Measure]. Il processo seguente illustra come aggiungere JavaScript [!DNL Marketo Measure] alle pagine [!DNL Sitecore].

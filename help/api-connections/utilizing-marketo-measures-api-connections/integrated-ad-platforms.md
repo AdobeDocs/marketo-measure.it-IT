@@ -4,21 +4,25 @@ description: Piattaforme di annunci integrate - [!DNL Marketo Measure]
 title: Piattaforme di annunci integrate
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-TQID: https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0
+TQID: 'https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1763
+source-wordcount: '1763'
 ht-degree: 0%
-
 ---
-
 # Piattaforme di annunci integrate {#integrated-ad-platforms}
 
 [!DNL Marketo Measure] dispone di connessioni API con Google AdWords, Microsoft BingAds, [!DNL Facebook] Ads e DoubleClick Campaign Manager. Tramite queste connessioni API, [!DNL Marketo Measure] è in grado di estrarre facilmente i dati e inviarli al tuo CRM insieme all&#39;app Buyer esterna. Non è richiesto alcun caricamento manuale di costi o dati. Piuttosto, i tuoi account devono semplicemente essere connessi e autorizzati all&#39;app [!DNL Marketo Measure]. [!DNL Marketo Measure] scaricherà quindi automaticamente i costi di marketing dalle piattaforme e li caricherà nell&#39;app [!DNL Marketo Measure]. Se si sceglie di abilitare l&#39;assegnazione tag automatica per AdWords, BingAds o [!DNL Facebook] annunci, [!DNL Marketo Measure] aggiungerà automaticamente i relativi parametri agli URL dei propri annunci.
@@ -53,8 +57,8 @@ Il modello di tracciamento è uno strumento fornito da Google per aggiungere que
 * *Opzione B*: trovato reindirizzamento di terze parti. Se nel modello di tracciamento viene trovato un reindirizzamento di terze parti, [!DNL Marketo Measure] non può eseguire alcuna azione. Sarà necessario aggiungere manualmente i tag [!DNL Marketo Measure] al sistema di terze parti. Un esempio di reindirizzamento di terze parti potrebbe essere uno strumento di gestione delle offerte come Kenshoo o Marin. Ulteriori informazioni sugli effetti degli strumenti di gestione delle offerte [su [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 * *Opzione C*: nessun modello di tracciamento trovato. [!DNL Marketo Measure] eseguirà la scansione di tutti gli URL di destinazione dell&#39;annuncio per i parametri [!DNL Marketo Measure]. In base alla scansione, se:
-   * Sono stati trovati dei parametri: la configurazione è stata completata.
-   * Parametri non trovati: [!DNL Marketo Measure] aggiungerà i suoi parametri alla fine degli URL di destinazione dell&#39;annuncio. [!DNL Marketo Measure] aggiunge nuovi annunci entro due ore dalla loro creazione. I parametri non verranno aggiunti a un modello.
+  * Sono stati trovati dei parametri: la configurazione è stata completata.
+  * Parametri non trovati: [!DNL Marketo Measure] aggiungerà i suoi parametri alla fine degli URL di destinazione dell&#39;annuncio. [!DNL Marketo Measure] aggiunge nuovi annunci entro due ore dalla loro creazione. I parametri non verranno aggiunti a un modello.
 
 Ulteriori informazioni sulla [[!DNL AdWords] funzionalità di assegnazione tag automatica](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}.
 

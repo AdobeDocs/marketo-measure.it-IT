@@ -3,13 +3,17 @@ description: Tecniche consigliate per la guida del modello personalizzato per gl
 title: Best practice per il modello personalizzato
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
-
 ---
-
 # Best practice per il modello personalizzato {#best-practices-for-custom-model}
 
 ## Panoramica {#overview}
@@ -35,23 +39,23 @@ Esistono due aspetti chiave del modello di attribuzione personalizzato:
 Sia che si configuri il modello personalizzato per la prima volta, sia che si riveda ciò che è stato stabilito in precedenza, è importante tenere a mente le seguenti best practice.
 
 * Inizia semplice
-   * Identifica le fasi chiave da aggiungere al modello personalizzato che sono fondamentali per il reporting di [!DNL Marketo Measure]. In genere si tratta di fasi rispetto alle quali si effettua una misurazione comune o sulle quali si intende ottenere insight
-   * Puoi sempre aggiungere al modello personalizzato nel tempo
+  * Identifica le fasi chiave da aggiungere al modello personalizzato che sono fondamentali per il reporting di [!DNL Marketo Measure]. In genere si tratta di fasi rispetto alle quali si effettua una misurazione comune o sulle quali si intende ottenere insight
+  * Puoi sempre aggiungere al modello personalizzato nel tempo
 * Utilizza il modello di apprendimento automatico [!DNL Marketo Measure]
-   * Se hai difficoltà a decidere la percentuale di suddivisione dell&#39;attribuzione, il modello di apprendimento automatico [!DNL Marketo Measure] può aiutarti a prendere decisioni informate durante l&#39;impostazione del modello di attribuzione personalizzato.
-   * Quando si visualizza il modello di apprendimento automatico, le percentuali di attribuzione di ogni fase riflettono il potenziale impatto delle attività di marketing
-      * Una percentuale più elevata indica che il marketing può influenzare direttamente lo spostamento del funnel a quel punto
-      * Una percentuale di attribuzione più bassa indica che le fasi sono meno importanti per il monitoraggio del team
+  * Se hai difficoltà a decidere la percentuale di suddivisione dell&#39;attribuzione, il modello di apprendimento automatico [!DNL Marketo Measure] può aiutarti a prendere decisioni informate durante l&#39;impostazione del modello di attribuzione personalizzato.
+  * Quando si visualizza il modello di apprendimento automatico, le percentuali di attribuzione di ogni fase riflettono il potenziale impatto delle attività di marketing
+    * Una percentuale più elevata indica che il marketing può influenzare direttamente lo spostamento del funnel a quel punto
+    * Una percentuale di attribuzione più bassa indica che le fasi sono meno importanti per il monitoraggio del team
 * È necessario definire la parte superiore delle fasi di funnel in base alle fasi Lead o Contatto, non in entrambe
-   * Ciò significa che è necessario assicurarsi che tutte le persone passino attraverso quella fase sull&#39;oggetto relativo
-      * Ad esempio: se definisci la fase MQL dall&#39;oggetto Lead, tutte le persone devono entrare nel sistema come Lead ed essere contrassegnate come MQL nel proprio record Lead affinché [!DNL Marketo Measure] rifletta con precisione quale contatto è stato correlato alla transizione del Lead a MQL. In caso contrario, e alcuni utenti passano al contatto prima di diventare MQL come lead, [!DNL Marketo Measure] non sarà in grado di tenere conto accuratamente di questo nei tuoi dati del punto di contatto e dovremo presumere che la persona abbia già MQL&#39;d. [!DNL Marketo Measure] non può tenere conto del salto di fase, quindi dedurremo che le fasi sono state passate anche se non lo sono state.
+  * Ciò significa che è necessario assicurarsi che tutte le persone passino attraverso quella fase sull&#39;oggetto relativo
+    * Ad esempio: se definisci la fase MQL dall&#39;oggetto Lead, tutte le persone devono entrare nel sistema come Lead ed essere contrassegnate come MQL nel proprio record Lead affinché [!DNL Marketo Measure] rifletta con precisione quale contatto è stato correlato alla transizione del Lead a MQL. In caso contrario, e alcuni utenti passano al contatto prima di diventare MQL come lead, [!DNL Marketo Measure] non sarà in grado di tenere conto accuratamente di questo nei tuoi dati del punto di contatto e dovremo presumere che la persona abbia già MQL&#39;d. [!DNL Marketo Measure] non può tenere conto dell&#39;hopping di fase. Si dedurrà quindi che le fasi sono state passate anche se non lo sono state.
 * Assicurati che il tracciamento della cronologia dei campi sia abilitato per tutti i campi utilizzati per definire le fasi personalizzate che incorpori
 * Non utilizzare campi formula per definire una fase personalizzata
-   * Un campo booleano è una best practice consigliata
+  * Un campo booleano è una best practice consigliata
 * Non incorporare gli stadi personalizzati nel modello personalizzato che coincidono con una posizione del punto di contatto di Milestone [!DNL Marketo Measure] (FT, LC, OC, Closed Won/Lost)
-   * In caso contrario, queste posizioni si verificano sempre simultaneamente e possono causare un credito di attribuzione gonfiato a parti del funnel.
+  * In caso contrario, queste posizioni si verificano sempre simultaneamente e possono causare un credito di attribuzione gonfiato a parti del funnel.
 * Lavora con il tuo team Sales Opp
-   * L’intervento del team che lavora più da vicino con gli stadi e il loro significato garantiscono l’utilizzo degli stadi corretti e la loro corretta definizione
+  * L’intervento del team che lavora più da vicino con gli stadi e il loro significato garantiscono l’utilizzo degli stadi corretti e la loro corretta definizione
 
 ## Procedure consigliate per la manutenzione {#best-practice-for-maintenance}
 
