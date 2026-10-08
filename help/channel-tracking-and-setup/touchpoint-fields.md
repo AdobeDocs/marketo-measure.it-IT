@@ -55,7 +55,7 @@ Obiettivo: utilizza il valore di un campo personalizzato e inseriscilo nell’og
   * **)** segna la fine dell&#39;estrazione
   * **.&#42;** ci dice che stiamo estraendo la stringa completa
 
-![.&amp;42; indica che è in corso l&#39;estrazione della stringa completa](assets/touchpoint-fields-10.png)
+![.&42; indica che è in corso l&#39;estrazione della stringa completa](assets/touchpoint-fields-10.png)
 
 **Esempio #2**
 
