@@ -25,11 +25,11 @@ I parametri UTM possono essere aggiunti manualmente agli URL o aggiunti tramite 
 
 Per comprendere il funzionamento dei parametri UTM, vediamo un URL tipico senza UTM:
 
-`http://www.adobe.com`
+`http://www.adobe.com/it`
 
 Ora, estraiamo un URL con UTM:
 
-`http://www.adobe.com?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
+`http://www.adobe.com/it?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
 
 Il secondo collegamento contiene altro testo. I parametri UTM seguono sempre il dominio di primo livello (.com in questo esempio) e iniziano con un punto interrogativo. In seguito, l’ordine dei parametri non ha importanza, ma si consiglia di seguire una convenzione di denominazione coerente. Le e commerciali devono essere posizionate tra ciascun parametro per separare ogni UTM. Ora possiamo andare più in dettaglio su ciò che ogni parametro rappresenta.
 
